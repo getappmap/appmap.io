@@ -46,7 +46,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-[#010303]">
       <Header />
       <Hero />
       <WhatIsAppMap />

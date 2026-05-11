@@ -1,6 +1,6 @@
 export function FinalCTA() {
   return (
-    <section className="bg-gray-900">
+    <section className="bg-[#010303]">
       {/* CTA Section */}
       <div className="py-20 text-center">
         <h2 className="text-4xl font-medium text-gray-200 mb-8">
@@ -62,7 +62,7 @@ export function FinalCTA() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-900 py-16">
+      <footer className="bg-[#010303] py-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Docs Column */}

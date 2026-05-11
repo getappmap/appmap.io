@@ -136,7 +136,7 @@
   --font-sans: "Open Sans", system-ui, -apple-system, sans-serif;
   --font-body: "Open Sans", system-ui, -apple-system, sans-serif;
   --font-heading: "Lato", "Open Sans", sans-serif;
-  --color-appmap-bg: #010306;
+  --color-appmap-bg: #010303;
   --color-appmap-text: #e3e5e8;
   --color-appmap-accent: #c242b1;
   --color-appmap-accent-hover: #a63896;
@@ -148,11 +148,11 @@
   }
 
   html {
-    background-color: #010306;
+    background-color: #010303;
   }
 
   body {
-    background-color: #010306;
+    background-color: #010303;
     color: #e3e5e8;
     font-family: var(--font-body);
   }

@@ -28,7 +28,7 @@ export function Header({ className = '' }: HeaderProps) {
       </div>
 
       {/* Main navigation */}
-      <nav className={`bg-[#010306] ${className}`}>
+      <nav className={`bg-[#010303] ${className}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -104,7 +104,7 @@ export function Header({ className = '' }: HeaderProps) {
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-[#010306] border-t border-gray-800">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-[#010303] border-t border-gray-800">
               <a
                 href="/docs"
                 className="text-[#e3e5e8] hover:text-white block px-3 py-2 text-base font-medium"
