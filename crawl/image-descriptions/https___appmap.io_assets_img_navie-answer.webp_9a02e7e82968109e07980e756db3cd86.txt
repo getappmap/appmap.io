@@ -1,0 +1,21 @@
+This image shows the interface of AppMap Navie, an AI-powered development assistant. The interface displays a dark-themed layout with several distinct sections:
+
+**Left Panel:**
+- Header shows "AppMap Navie" with standard window controls (red, yellow, green dots)
+- A user query box containing a Java file path: "PhysicalFlowExtractor.java:187-253" with the full path "waltz-web/src/main/java/org/finos/waltz/web/endpoints/extracts/PhysicalFlowExtractor.java"
+- Below that is a user question starting with "@generate Update physical flow export to include data type via physical_spec_data_type and physical_specification tables"
+- A Navie response section showing "Project analysis complete. Found 2 relevant AppMaps"
+- Detailed explanation text about updating physical flow export functionality
+- A Java code snippet showing a method with syntax highlighting, including variables like `criticalityValue`, `transportValue`, `frequencyValue`, and `dataFormatKindValue`
+- At the bottom, a text input box asking "How can I help?"
+
+**Right Panel (Context section):**
+- "Context" header
+- "Code Snippets" section showing "41" items with a collapse arrow
+- "Data Requests" section showing "2" items
+- "Sequence Diagrams" section showing "4" items with an expand arrow
+- Two AppMap diagram previews:
+  1. "data-extract_physical-flows_all_APPLICATION_50.appmap.json" with an "Open AppMap Diagram" button
+  2. "api_logical-flow_view.appmap.json" with another "Open AppMap Diagram" button
+
+Both diagram previews show flowchart-like visualizations with connected nodes and pathways, typical of application mapping and data flow diagrams. The interface uses a professional dark blue color scheme with purple and teal accent colors for highlighting important elements.

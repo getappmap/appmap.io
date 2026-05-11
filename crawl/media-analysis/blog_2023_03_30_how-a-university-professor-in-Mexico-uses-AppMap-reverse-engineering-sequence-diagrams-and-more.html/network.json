@@ -1,0 +1,1414 @@
+{
+  "url": "https://appmap.io/blog/2023/03/30/how-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more",
+  "timestamp": "2026-04-01T01:34:31.017Z",
+  "loadTime": 12287,
+  "summary": {
+    "totalRequests": 80,
+    "successfulRequests": 68,
+    "failedRequests": 3,
+    "cachedRequests": 0,
+    "redirectedRequests": 0,
+    "slowRequests": 0
+  },
+  "requestsByType": {
+    "document": 4,
+    "stylesheet": 10,
+    "script": 32,
+    "image": 18,
+    "fetch": 8,
+    "font": 5,
+    "xhr": 3
+  },
+  "failedRequests": [
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u1h2v883218513za200zd883218513&_p=1775007259108&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1745145215.1775007260&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938465~115938468~116991817~117266401&sid=1775007259&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more&dt=AppMap%20%7C%20How%20a%20university%20professor%20in%20Mexico%20uses%20AppMap%3A%20Reverse%20engineering%2C%20sequence%20diagrams%2C%20and%20more&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=649",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007259531,
+        "duration": 174
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007259549,
+        "duration": 156
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u1h2v883218513za200zd883218513&_p=1775007259108&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1745145215.1775007260&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938465~115938468~116991817~117266401&sid=1775007259&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more&dt=AppMap%20%7C%20How%20a%20university%20professor%20in%20Mexico%20uses%20AppMap%3A%20Reverse%20engineering%2C%20sequence%20diagrams%2C%20and%20more&en=scroll&epn.percent_scrolled=90&_et=4938&tfd=10590",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007269468,
+        "duration": 35
+      }
+    }
+  ],
+  "slowRequests": [],
+  "allRequests": [
+    {
+      "url": "https://appmap.io/blog/2023/03/30/how-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007258879,
+        "endTime": 1775007258974,
+        "duration": 95
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007258985,
+        "endTime": 1775007259085,
+        "duration": 100
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 795
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007258985,
+        "endTime": 1775007259096,
+        "duration": 111
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007258988,
+        "endTime": 1775007259089,
+        "duration": 101
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007258988,
+        "endTime": 1775007259091,
+        "duration": 103
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007258988,
+        "endTime": 1775007259094,
+        "duration": 106
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007258988,
+        "endTime": 1775007259058,
+        "duration": 70
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1032
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007258988,
+        "endTime": 1775007259101,
+        "duration": 113
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 793
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007258991,
+        "endTime": 1775007259037,
+        "duration": 46
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007258991,
+        "endTime": 1775007259072,
+        "duration": 81
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007258991,
+        "endTime": 1775007259372,
+        "duration": 381
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173024,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007258991,
+        "endTime": 1775007259204,
+        "duration": 213
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 629,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007258991,
+        "endTime": 1775007259057,
+        "duration": 66
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 541,
+        "responseHeadersSize": 1030
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007258991,
+        "endTime": 1775007259066,
+        "duration": 75
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5980,
+        "responseHeadersSize": 1044
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007258991,
+        "endTime": 1775007259057,
+        "duration": 66
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1333,
+        "responseHeadersSize": 1044
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007258991,
+        "endTime": 1775007259063,
+        "duration": 72
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 986,
+        "responseHeadersSize": 1049
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007258991,
+        "endTime": 1775007259062,
+        "duration": 71
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 962,
+        "responseHeadersSize": 1041
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007258991,
+        "endTime": 1775007259059,
+        "duration": 68
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 862,
+        "responseHeadersSize": 1043
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007258991,
+        "endTime": 1775007259031,
+        "duration": 40
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 518
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/raising-hand-in-class.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007258991,
+        "endTime": 1775007259231,
+        "duration": 240
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 109558,
+        "responseHeadersSize": 469
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/ricardo.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007258991,
+        "endTime": 1775007259272,
+        "duration": 281
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 28793,
+        "responseHeadersSize": 590
+      }
+    },
+    {
+      "url": "https://platform.twitter.com/widgets.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007258991,
+        "endTime": 1775007259244,
+        "duration": 253
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 27597,
+        "responseHeadersSize": 643
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007258992,
+        "endTime": 1775007259193,
+        "duration": 201
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 457,
+        "responseHeadersSize": 564
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007258992,
+        "endTime": 1775007259207,
+        "duration": 215
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 641
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007258992,
+        "endTime": 1775007259199,
+        "duration": 207
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1042
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007258992,
+        "endTime": 1775007259193,
+        "duration": 201
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 809
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007259109,
+        "endTime": 1775007259199,
+        "duration": 90
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007259110,
+        "endTime": 1775007259203,
+        "duration": 93
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007259110,
+        "endTime": 1775007259203,
+        "duration": 93
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007259110,
+        "endTime": 1775007259199,
+        "duration": 89
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007259186,
+        "endTime": 1775007259326,
+        "duration": 140
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007259186,
+        "endTime": 1775007259279,
+        "duration": 93
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 105204,
+        "responseHeadersSize": 1076
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/webfonts/free-fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007259269,
+        "endTime": 1775007259343,
+        "duration": 74
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 118696,
+        "responseHeadersSize": 1131
+      }
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775007000000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007259283,
+        "endTime": 1775007259450,
+        "duration": 167
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007259286,
+        "endTime": 1775007259451,
+        "duration": 165
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007259286,
+        "endTime": 1775007259448,
+        "duration": 162
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://platform.twitter.com/widgets/widget_iframe.2f70fb173b9000da126c79afe2098f02.html?origin=https%3A%2F%2Fappmap.io",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007259316,
+        "endTime": 1775007259350,
+        "duration": 34
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 105429,
+        "responseHeadersSize": 636
+      }
+    },
+    {
+      "url": "https://syndication.twitter.com/settings?session_id=decaa5f03f5ec70d5b2f70d1d146910da2c9c328",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007259430,
+        "endTime": 1775007259681,
+        "duration": 251
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 337,
+        "responseHeadersSize": 561
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u1h2v883218513za200zd883218513&_p=1775007259108&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1745145215.1775007260&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938465~115938468~116991817~117266401&sid=1775007259&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more&dt=AppMap%20%7C%20How%20a%20university%20professor%20in%20Mexico%20uses%20AppMap%3A%20Reverse%20engineering%2C%20sequence%20diagrams%2C%20and%20more&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=649",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007259531,
+        "endTime": 1775007259705,
+        "duration": 174
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007259547,
+        "endTime": 1775007259648,
+        "duration": 101
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007259549,
+        "endTime": 1775007259705,
+        "duration": 156
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007259680,
+        "endTime": 1775007259723,
+        "duration": 43
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007259681,
+        "endTime": 1775007259728,
+        "duration": 47
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007259686,
+        "endTime": 1775007259806,
+        "duration": 120
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more&t=AppMap+%7C+How+a+university+professor+in+Mexico+uses+AppMap%3A+Reverse+engineering%2C+sequence+diagrams%2C+and+more&cts=1775007259727&rv=1&vi=79ffaf9e668f974c2f49d9b7f4873b72&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007259730,
+        "endTime": 1775007259876,
+        "duration": 146
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 1003
+      }
+    },
+    {
+      "url": "https://platform.twitter.com/js/tweet.d7aeb21a88e025d2ea5f5431a103f586.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007259741,
+        "endTime": 1775007259805,
+        "duration": 64
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2725,
+        "responseHeadersSize": 647
+      }
+    },
+    {
+      "url": "https://platform.twitter.com/embed/Tweet.html?creatorScreenName=Jen%20Wike%20Huger&dnt=false&embedId=twitter-widget-0&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideCard=false&hideThread=false&id=1638965747241168896&lang=en&origin=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F&sessionId=decaa5f03f5ec70d5b2f70d1d146910da2c9c328&siteScreenName=getappmap&theme=light&widgetsVersion=2615f7e52b7e0%3A1702314776716&width=550px",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007259843,
+        "endTime": 1775007259862,
+        "duration": 19
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 268,
+        "responseHeadersSize": 628
+      }
+    },
+    {
+      "url": "https://platform.twitter.com/embed/Tweet.html?creatorScreenName=Jen%20Wike%20Huger&dnt=false&embedId=twitter-widget-1&features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&frame=false&hideCard=false&hideThread=false&id=1638964842194169888&lang=en&origin=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F&sessionId=decaa5f03f5ec70d5b2f70d1d146910da2c9c328&siteScreenName=getappmap&theme=light&widgetsVersion=2615f7e52b7e0%3A1702314776716&width=550px",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007259843,
+        "endTime": 1775007259861,
+        "duration": 18
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 268,
+        "responseHeadersSize": 628
+      }
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.runtime.01bcb76409c00f15f058.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007259873,
+        "endTime": 1775007259900,
+        "duration": 27
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 4292,
+        "responseHeadersSize": 647
+      }
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.9449.78398904051446294e3d.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007259873,
+        "endTime": 1775007260023,
+        "duration": 150
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 163675,
+        "responseHeadersSize": 649
+      }
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.Tweet.23aa1579fc7458d3ccd1.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007259873,
+        "endTime": 1775007260023,
+        "duration": 150
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 12986,
+        "responseHeadersSize": 648
+      }
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.runtime.01bcb76409c00f15f058.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007259880
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.9449.78398904051446294e3d.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007259880
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.Tweet.23aa1579fc7458d3ccd1.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007259880
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.749.467388cca0b3fe9c3291.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007260021,
+        "endTime": 1775007260085,
+        "duration": 64
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6789,
+        "responseHeadersSize": 647
+      }
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.ondemand.i18n.en-js.19a28d85d7fc7916b4b1.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007260021,
+        "endTime": 1775007260085,
+        "duration": 64
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1583,
+        "responseHeadersSize": 647
+      }
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.ondemand.horizon-web.i18n.en-js.d681a6dcae4601184824.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007260021,
+        "endTime": 1775007260085,
+        "duration": 64
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 11289,
+        "responseHeadersSize": 648
+      }
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.749.467388cca0b3fe9c3291.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007260069
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.ondemand.i18n.en-js.19a28d85d7fc7916b4b1.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007260071
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.ondemand.horizon-web.i18n.en-js.d681a6dcae4601184824.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007260071
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.9203.1b3edf1dee6d205547e0.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007260082,
+        "endTime": 1775007260149,
+        "duration": 67
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 83854,
+        "responseHeadersSize": 648
+      }
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.ondemand.Tweet.6f4113224c313a1bdfb5.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007260085,
+        "endTime": 1775007260114,
+        "duration": 29
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 20893,
+        "responseHeadersSize": 648
+      }
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.9203.1b3edf1dee6d205547e0.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007260088
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://platform.twitter.com/embed/embed.ondemand.Tweet.6f4113224c313a1bdfb5.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007260088
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdn.syndication.twimg.com/tweet-result?features=tfw_timeline_list%3A%3Btfw_follower_count_sunset%3Atrue%3Btfw_tweet_edit_backend%3Aon%3Btfw_refsrc_session%3Aon%3Btfw_fosnr_soft_interventions_enabled%3Aon%3Btfw_mixed_media_15897%3Atreatment%3Btfw_experiments_cookie_expiration%3A1209600%3Btfw_show_birdwatch_pivots_enabled%3Aon%3Btfw_duplicate_scribes_to_settings%3Aon%3Btfw_use_profile_image_shape_enabled%3Aon%3Btfw_video_hls_dynamic_manifests_15082%3Atrue_bitrate%3Btfw_legacy_timeline_sunset%3Atrue%3Btfw_tweet_edit_frontend%3Aon&id=1638964842194169888&lang=en&token=3zyk1gdpt&yrxp6z=j1y2ww837cs8&50siv2=2ylm8ofdp09u&b8nzt7=2zycl78bud58&gxop0t=1q9sz8fyuoue&nzdgyh=111v88rujf0b&zpin0c=12q8v7t76na7",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007260156,
+        "endTime": 1775007260349,
+        "duration": 193
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1014,
+        "responseHeadersSize": 689
+      }
+    },
+    {
+      "url": "https://cdn.syndication.twimg.com/tweet-result?features=tfw_timeline_list%3A%3Btfw_follower_count_sunset%3Atrue%3Btfw_tweet_edit_backend%3Aon%3Btfw_refsrc_session%3Aon%3Btfw_fosnr_soft_interventions_enabled%3Aon%3Btfw_mixed_media_15897%3Atreatment%3Btfw_experiments_cookie_expiration%3A1209600%3Btfw_show_birdwatch_pivots_enabled%3Aon%3Btfw_duplicate_scribes_to_settings%3Aon%3Btfw_use_profile_image_shape_enabled%3Aon%3Btfw_video_hls_dynamic_manifests_15082%3Atrue_bitrate%3Btfw_legacy_timeline_sunset%3Atrue%3Btfw_tweet_edit_frontend%3Aon&id=1638965747241168896&lang=en&token=3zynq4iat&dcqrvr=chor780uswal&mqn4tj=1m79a8gjr4e9&2vmdxn=pd7qlj8hb35l&7bjaft=l468ew16a5to&ypxrq9=fazsm8vbsakv&ipvbtj=12n8q4b1wc1hm",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007260170,
+        "endTime": 1775007260658,
+        "duration": 488
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 981,
+        "responseHeadersSize": 690
+      }
+    },
+    {
+      "url": "https://syndication.twitter.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A1775007260393%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22tweet%22%2C%22action%22%3A%22results%22%2C%22section%22%3A%22main%22%7D%2C%22context%22%3A%22horizon%22%2C%22client_version%22%3A%222615f7e52b7e0%3A1702314776716%22%2C%22dnt%22%3Afalse%2C%22widget_id%22%3A%22twitter-widget-1%22%2C%22widget_origin%22%3A%22https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F%22%2C%22widget_frame%22%3A%22false%22%2C%22widget_partner%22%3A%22%22%2C%22widget_site_screen_name%22%3A%22getappmap%22%2C%22widget_site_user_id%22%3A%22%22%2C%22widget_creator_screen_name%22%3A%22JenWikeHuger%22%2C%22widget_creator_user_id%22%3A%22%22%2C%22widget_iframe_version%22%3A%22219f5079ae46e%3A1761525987824%22%2C%22item_ids%22%3A%5B%221638964842194169888%22%5D%2C%22item_details%22%3A%7B%221638964842194169888%22%3A%7B%22item_type%22%3A0%7D%7D%7D",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007260397,
+        "endTime": 1775007260449,
+        "duration": 52
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 43,
+        "responseHeadersSize": 495
+      }
+    },
+    {
+      "url": "https://pbs.twimg.com/profile_images/484491306282930177/sMpOZbpz_normal.jpeg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007260418,
+        "endTime": 1775007260702,
+        "duration": 284
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1883,
+        "responseHeadersSize": 844
+      }
+    },
+    {
+      "url": "https://pbs.twimg.com/media/Fr7F1qmWcAwM7y6?format=jpg&name=240x240",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007260419,
+        "endTime": 1775007260588,
+        "duration": 169
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 13649,
+        "responseHeadersSize": 845
+      }
+    },
+    {
+      "url": "https://pbs.twimg.com/media/Fr7F1qmWcAwM7y6?format=jpg&name=small",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007260422,
+        "endTime": 1775007260583,
+        "duration": 161
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 68418,
+        "responseHeadersSize": 846
+      }
+    },
+    {
+      "url": "https://syndication.twitter.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A1775007260579%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22tweet%22%2C%22action%22%3A%22FCP%22%2C%22component%22%3A%22performance%22%2C%22section%22%3A%22main%22%7D%2C%22context%22%3A%22horizon%22%2C%22client_version%22%3A%222615f7e52b7e0%3A1702314776716%22%2C%22dnt%22%3Afalse%2C%22widget_id%22%3A%22twitter-widget-1%22%2C%22widget_origin%22%3A%22https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F%22%2C%22widget_frame%22%3A%22false%22%2C%22widget_partner%22%3A%22%22%2C%22widget_site_screen_name%22%3A%22getappmap%22%2C%22widget_site_user_id%22%3A%22%22%2C%22widget_creator_screen_name%22%3A%22JenWikeHuger%22%2C%22widget_creator_user_id%22%3A%22%22%2C%22widget_iframe_version%22%3A%22219f5079ae46e%3A1761525987824%22%2C%22item_ids%22%3A%5B%221638964842194169888%22%5D%2C%22item_details%22%3A%7B%221638964842194169888%22%3A%7B%22item_type%22%3A0%7D%7D%2C%22duration_ms%22%3A728%7D",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007260580,
+        "endTime": 1775007260641,
+        "duration": 61
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 43,
+        "responseHeadersSize": 495
+      }
+    },
+    {
+      "url": "https://syndication.twitter.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A1775007260687%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22tweet%22%2C%22action%22%3A%22results%22%2C%22section%22%3A%22main%22%7D%2C%22context%22%3A%22horizon%22%2C%22client_version%22%3A%222615f7e52b7e0%3A1702314776716%22%2C%22dnt%22%3Afalse%2C%22widget_id%22%3A%22twitter-widget-0%22%2C%22widget_origin%22%3A%22https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F%22%2C%22widget_frame%22%3A%22false%22%2C%22widget_partner%22%3A%22%22%2C%22widget_site_screen_name%22%3A%22getappmap%22%2C%22widget_site_user_id%22%3A%22%22%2C%22widget_creator_screen_name%22%3A%22JenWikeHuger%22%2C%22widget_creator_user_id%22%3A%22%22%2C%22widget_iframe_version%22%3A%22219f5079ae46e%3A1761525987824%22%2C%22item_ids%22%3A%5B%221638965747241168896%22%5D%2C%22item_details%22%3A%7B%221638965747241168896%22%3A%7B%22item_type%22%3A0%7D%7D%7D",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007260690,
+        "endTime": 1775007260742,
+        "duration": 52
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 43,
+        "responseHeadersSize": 495
+      }
+    },
+    {
+      "url": "https://pbs.twimg.com/profile_images/484491306282930177/sMpOZbpz_normal.jpeg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007260700
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://pbs.twimg.com/media/Fr7GqTNWIAE77Az?format=jpg&name=240x240",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007260703,
+        "endTime": 1775007260731,
+        "duration": 28
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 10886,
+        "responseHeadersSize": 845
+      }
+    },
+    {
+      "url": "https://pbs.twimg.com/media/Fr7GqTNWIAE77Az?format=jpg&name=small",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007260704,
+        "endTime": 1775007260736,
+        "duration": 32
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 57993,
+        "responseHeadersSize": 846
+      }
+    },
+    {
+      "url": "https://syndication.twitter.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A1775007260862%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22tweet%22%2C%22action%22%3A%22FCP%22%2C%22component%22%3A%22performance%22%2C%22section%22%3A%22main%22%7D%2C%22context%22%3A%22horizon%22%2C%22client_version%22%3A%222615f7e52b7e0%3A1702314776716%22%2C%22dnt%22%3Afalse%2C%22widget_id%22%3A%22twitter-widget-0%22%2C%22widget_origin%22%3A%22https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F%22%2C%22widget_frame%22%3A%22false%22%2C%22widget_partner%22%3A%22%22%2C%22widget_site_screen_name%22%3A%22getappmap%22%2C%22widget_site_user_id%22%3A%22%22%2C%22widget_creator_screen_name%22%3A%22JenWikeHuger%22%2C%22widget_creator_user_id%22%3A%22%22%2C%22widget_iframe_version%22%3A%22219f5079ae46e%3A1761525987824%22%2C%22item_ids%22%3A%5B%221638965747241168896%22%5D%2C%22item_details%22%3A%7B%221638965747241168896%22%3A%7B%22item_type%22%3A0%7D%7D%2C%22duration_ms%22%3A1012%7D",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007260864,
+        "endTime": 1775007260917,
+        "duration": 53
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 43,
+        "responseHeadersSize": 495
+      }
+    },
+    {
+      "url": "https://syndication.twitter.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A1775007262957%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22tweet%22%2C%22action%22%3A%22impression%22%2C%22section%22%3A%22main%22%7D%2C%22context%22%3A%22horizon%22%2C%22client_version%22%3A%222615f7e52b7e0%3A1702314776716%22%2C%22dnt%22%3Afalse%2C%22widget_id%22%3A%22twitter-widget-0%22%2C%22widget_origin%22%3A%22https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F%22%2C%22widget_frame%22%3A%22false%22%2C%22widget_partner%22%3A%22%22%2C%22widget_site_screen_name%22%3A%22getappmap%22%2C%22widget_site_user_id%22%3A%22%22%2C%22widget_creator_screen_name%22%3A%22JenWikeHuger%22%2C%22widget_creator_user_id%22%3A%22%22%2C%22widget_iframe_version%22%3A%22219f5079ae46e%3A1761525987824%22%2C%22item_ids%22%3A%5B%221638965747241168896%22%5D%2C%22item_details%22%3A%7B%221638965747241168896%22%3A%7B%22item_type%22%3A0%7D%7D%7D",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007262968,
+        "endTime": 1775007263019,
+        "duration": 51
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 43,
+        "responseHeadersSize": 495
+      }
+    },
+    {
+      "url": "https://syndication.twitter.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A1775007263458%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22tweet%22%2C%22action%22%3A%22impression%22%2C%22section%22%3A%22main%22%7D%2C%22context%22%3A%22horizon%22%2C%22client_version%22%3A%222615f7e52b7e0%3A1702314776716%22%2C%22dnt%22%3Afalse%2C%22widget_id%22%3A%22twitter-widget-1%22%2C%22widget_origin%22%3A%22https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F%22%2C%22widget_frame%22%3A%22false%22%2C%22widget_partner%22%3A%22%22%2C%22widget_site_screen_name%22%3A%22getappmap%22%2C%22widget_site_user_id%22%3A%22%22%2C%22widget_creator_screen_name%22%3A%22JenWikeHuger%22%2C%22widget_creator_user_id%22%3A%22%22%2C%22widget_iframe_version%22%3A%22219f5079ae46e%3A1761525987824%22%2C%22item_ids%22%3A%5B%221638964842194169888%22%5D%2C%22item_details%22%3A%7B%221638964842194169888%22%3A%7B%22item_type%22%3A0%7D%7D%7D",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007263470,
+        "endTime": 1775007263523,
+        "duration": 53
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 43,
+        "responseHeadersSize": 495
+      }
+    },
+    {
+      "url": "https://syndication.twitter.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A1775007263958%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22tweet%22%2C%22action%22%3A%22seen%22%2C%22section%22%3A%22main%22%2C%22component%22%3A%22privacy-notice%22%7D%2C%22context%22%3A%22horizon%22%2C%22client_version%22%3A%222615f7e52b7e0%3A1702314776716%22%2C%22dnt%22%3Afalse%2C%22widget_id%22%3A%22twitter-widget-1%22%2C%22widget_origin%22%3A%22https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F%22%2C%22widget_frame%22%3A%22false%22%2C%22widget_partner%22%3A%22%22%2C%22widget_site_screen_name%22%3A%22getappmap%22%2C%22widget_site_user_id%22%3A%22%22%2C%22widget_creator_screen_name%22%3A%22JenWikeHuger%22%2C%22widget_creator_user_id%22%3A%22%22%2C%22widget_iframe_version%22%3A%22219f5079ae46e%3A1761525987824%22%2C%22item_ids%22%3A%5B%221638964842194169888%22%5D%2C%22item_details%22%3A%7B%221638964842194169888%22%3A%7B%22item_type%22%3A0%7D%7D%7D",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007263970,
+        "endTime": 1775007264029,
+        "duration": 59
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 43,
+        "responseHeadersSize": 496
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u1h2v883218513za200zd883218513&_p=1775007259108&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1745145215.1775007260&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938465~115938468~116991817~117266401&sid=1775007259&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more&dt=AppMap%20%7C%20How%20a%20university%20professor%20in%20Mexico%20uses%20AppMap%3A%20Reverse%20engineering%2C%20sequence%20diagrams%2C%20and%20more&en=scroll&epn.percent_scrolled=90&_et=4938&tfd=10590",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007269468,
+        "endTime": 1775007269503,
+        "duration": 35
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    }
+  ]
+}

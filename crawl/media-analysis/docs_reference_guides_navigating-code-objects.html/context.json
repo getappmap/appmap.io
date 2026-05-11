@@ -1,0 +1,203 @@
+{
+  "timestamp": "2026-04-01T01:47:42.872Z",
+  "crawlDirectory": "crawl/site/docs/reference/guides/navigating-code-objects.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 17,
+  "foundAssets": 6,
+  "notFoundAssets": 11,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/navigating-code-objects.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/navigating-code-objects.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 772,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/navigating-code-objects.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 773,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/first-fifteen-minutes/code-objects-view.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/first-fifteen-minutes/code-objects-view.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/navigating-code-objects.html",
+          "context": "<p>There are three sections to the Code Objects view. The first section is the Code view, this will show packages, classes, and functions, it will ... class=\"video-screenshot\" src=\"/assets/img/docs/first-fifteen-minutes/code-objects-view.webp\"></p>\n\n<h2 id=\"http-routes-list\">HTTP Routes List</h2>",
+          "lineNumber": 823,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/first-fifteen-minutes/code-objects-view.webp"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 38,
+            "end": 99
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/first-fifteen-minutes/code-objects-trace-view.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/first-fifteen-minutes/code-objects-trace-view.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/navigating-code-objects.html",
+          "context": "<p>Here is this route, and here it is shown in a trace view, and you’ll see the status code for that is 302 which is a redirect.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/docs/first-fifteen-minutes/code-objects-trace-view.webp\"></p>\n\n<h2 id=\"sql-query-list\">SQL Query List</h2>",
+          "lineNumber": 833,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/first-fifteen-minutes/code-objects-trace-view.webp"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 38,
+            "end": 105
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/first-fifteen-minutes/code-object-command-palette.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/first-fifteen-minutes/code-object-command-palette.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/navigating-code-objects.html",
+          "context": "<p>The command “Open code object in AppMap” can be used to find and open all the AppMap Diagrams that contain a particular code object (package, cl...enshot\" src=\"/assets/img/docs/first-fifteen-minutes/code-object-command-palette.webp\"></p>\n\n<p>To get here in VS Code open the command palette.</p>",
+          "lineNumber": 847,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/first-fifteen-minutes/code-object-command-palette.webp"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 38,
+            "end": 109
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://www.googletagmanager.com/td?id=G-216SS3H0RL&v=3&t=t&pid=1153020547&gtm=45je63u0v883218513za200zd883218513&seq=1&exp=0~115938465~115938469~116991817~117384405&dl=appmap.io%2Fdocs%2Freference%2Fguides%2Fnavigating-code-objects&tdp=G-216SS3H0RL;83218513;0;0;0&frm=0&rtg=83218513&slo=1&hlo=4&lst=3&bt=0&ct=3&z=0",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Fnavigating-code-objects.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Fnavigating-code-objects&t=AppMap+-+Docs+-+Guides+-+Navigating+Code+Objects&cts=1775008044160&rv=1&vi=0fdcf34cefa8fddb81fe6724dad097d3&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ecf2ea6d6731/1775008044283/XmLJcXJZQ5SV3US",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ecf38c7d6731/1775008044363/pP7Bn_uvXIHpykD",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Fnavigating-code-objects.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Fnavigating-code-objects&t=AppMap+-+Docs+-+Guides+-+Navigating+Code+Objects&cts=1775008048615&rv=1&vi=8ae50b0a04c532cd28081307fd337b0d&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ed0f59c36731/1775008048816/_G6RDO-m0O9i3g4",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ed0f59e36731/1775008048860/VcMHKr7OF_54Tyo",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ed5dd9706731/1775008061370/ZitkvLeuVua0tBq",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ed5e2a5b6731/1775008061417/cIMFVGS8DllxgFy",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

@@ -1,0 +1,2148 @@
+{
+  "url": "https://appmap.io/blog/2021/08/30/see-how-java-frameworks-like-spring-work-with-your-code",
+  "timestamp": "2026-04-01T01:27:30.639Z",
+  "loadTime": 13199,
+  "summary": {
+    "totalRequests": 137,
+    "successfulRequests": 120,
+    "failedRequests": 4,
+    "cachedRequests": 0,
+    "redirectedRequests": 0,
+    "slowRequests": 0
+  },
+  "requestsByType": {
+    "document": 2,
+    "stylesheet": 14,
+    "script": 71,
+    "image": 7,
+    "fetch": 31,
+    "font": 8,
+    "xhr": 1,
+    "media": 1,
+    "texttrack": 1,
+    "ping": 1
+  },
+  "failedRequests": [
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006838171,
+        "duration": 326
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775006837825&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=956735755.1775006838&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115616985~115938465~115938468~116133314~116991816~117384406&sid=1775006838&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F30%2Fsee-how-java-frameworks-like-spring-work-with-your-code&dt=AppMap%20%7C%20See%20how%20Java%20frameworks%20like%20Spring%20work%20with%20your%20code&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=809",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006838405,
+        "duration": 211
+      }
+    },
+    {
+      "url": "chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/img/installed.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "error": "net::ERR_UNKNOWN_URL_SCHEME",
+      "timing": {
+        "startTime": 1775006839489,
+        "duration": 500
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775006837825&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=956735755.1775006838&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=0~115616985~115938465~115938468~116133314~116991816~117384406&sid=1775006838&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F30%2Fsee-how-java-frameworks-like-spring-work-with-your-code&dt=AppMap%20%7C%20See%20how%20Java%20frameworks%20like%20Spring%20work%20with%20your%20code&en=scroll&epn.percent_scrolled=90&_et=5701&tfd=11506",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006849086,
+        "duration": 36
+      }
+    }
+  ],
+  "slowRequests": [],
+  "allRequests": [
+    {
+      "url": "https://appmap.io/blog/2021/08/30/see-how-java-frameworks-like-spring-work-with-your-code",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006837582,
+        "endTime": 1775006837693,
+        "duration": 111
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006837708,
+        "endTime": 1775006837786,
+        "duration": 78
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 1172
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006837708,
+        "endTime": 1775006837816,
+        "duration": 108
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006837708,
+        "endTime": 1775006837814,
+        "duration": 106
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006837708,
+        "endTime": 1775006837818,
+        "duration": 110
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006837708,
+        "endTime": 1775006837812,
+        "duration": 104
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006837708,
+        "endTime": 1775006837773,
+        "duration": 65
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1032
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006837708,
+        "endTime": 1775006837767,
+        "duration": 59
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 1169
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006837708,
+        "endTime": 1775006837749,
+        "duration": 41
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006837708,
+        "endTime": 1775006837800,
+        "duration": 92
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006837708,
+        "endTime": 1775006838098,
+        "duration": 390
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173018,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006837708,
+        "endTime": 1775006837960,
+        "duration": 252
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 630,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006837708,
+        "endTime": 1775006837781,
+        "duration": 73
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 541,
+        "responseHeadersSize": 1036
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006837709,
+        "endTime": 1775006837787,
+        "duration": 78
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5980,
+        "responseHeadersSize": 1064
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006837709,
+        "endTime": 1775006837791,
+        "duration": 82
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1333,
+        "responseHeadersSize": 1054
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006837709,
+        "endTime": 1775006837790,
+        "duration": 81
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 986,
+        "responseHeadersSize": 1043
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006837710,
+        "endTime": 1775006837790,
+        "duration": 80
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 962,
+        "responseHeadersSize": 1045
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006837710,
+        "endTime": 1775006837781,
+        "duration": 71
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 862,
+        "responseHeadersSize": 1049
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006837710,
+        "endTime": 1775006837753,
+        "duration": 43
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 519
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/1200x630-appmap-card.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006837710,
+        "endTime": 1775006837756,
+        "duration": 46
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 142872,
+        "responseHeadersSize": 609
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006837710,
+        "endTime": 1775006837799,
+        "duration": 89
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 457,
+        "responseHeadersSize": 564
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006837710,
+        "endTime": 1775006837912,
+        "duration": 202
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 642
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006837710,
+        "endTime": 1775006837904,
+        "duration": 194
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1040
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006837711,
+        "endTime": 1775006837912,
+        "duration": 201
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 1186
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006837825,
+        "endTime": 1775006837930,
+        "duration": 105
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006837827,
+        "endTime": 1775006837946,
+        "duration": 119
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006837827,
+        "endTime": 1775006837929,
+        "duration": 102
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006837827,
+        "endTime": 1775006837946,
+        "duration": 119
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.loom.com/embed/e19a40457e16417faba9eead19828bd9",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006837845,
+        "endTime": 1775006838161,
+        "duration": 316
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006837904,
+        "endTime": 1775006838051,
+        "duration": 147
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006837904,
+        "endTime": 1775006838058,
+        "duration": 154
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26596,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006837943,
+        "endTime": 1775006838058,
+        "duration": 115
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 105204,
+        "responseHeadersSize": 1080
+      }
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775006700000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006837978,
+        "endTime": 1775006838135,
+        "duration": 157
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006837978,
+        "endTime": 1775006838097,
+        "duration": 119
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006837978,
+        "endTime": 1775006838098,
+        "duration": 120
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/webfonts/free-fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006838051,
+        "endTime": 1775006838133,
+        "duration": 82
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 118696,
+        "responseHeadersSize": 1121
+      }
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006838145,
+        "endTime": 1775006838244,
+        "duration": 99
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006838170,
+        "endTime": 1775006838242,
+        "duration": 72
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006838171,
+        "endTime": 1775006838497,
+        "duration": 326
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://cdn.loom.com/assets/css/vendor-5-1abede4f734230d9.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838416,
+        "duration": 206
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/css/vendor-48-d4f9c068f095be5d.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838428,
+        "duration": 218
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/css/embed-video-cb77238b6760ae2c.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838436,
+        "duration": 226
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ds-cdn.prod-east.frontend.public.atl-paas.net/assets/font-rules/v5/atlassian-fonts.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838446,
+        "duration": 236
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ds-cdn.prod-east.frontend.public.atl-paas.net/assets/fonts/atlassian-sans/v3/AtlassianSans-latin.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838447,
+        "duration": 237
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 70176,
+        "responseHeadersSize": 1942
+      }
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/0runtime-5e39f04c15d57333.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838465,
+        "duration": 255
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-0-f2297a19836d9607.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838472,
+        "duration": 262
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-1-97995b9429243f8b.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838473,
+        "duration": 263
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-2-f61784394a6109f6.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838473,
+        "duration": 263
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-3-1f1266b857a7b07e.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838485,
+        "duration": 275
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-4-5e6d91a6ccb4a315.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838485,
+        "duration": 275
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-6-4214ac76df85737b.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838485,
+        "duration": 275
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-7-8ffc1d1642c901f9.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838485,
+        "duration": 275
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-8-42ff89a4d818dbe4.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838480,
+        "duration": 270
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-9-6ffb948a3e9901dc.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838486,
+        "duration": 276
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-10-50b6bb70750a0212.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838486,
+        "duration": 276
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-2b72e02e-b4543443c6d6ad4a.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838486,
+        "duration": 276
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-12-88a56e35156a0714.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838485,
+        "duration": 275
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-13-3fa6f36362ff0747.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838210,
+        "endTime": 1775006838514,
+        "duration": 304
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-14-d0acc190f4c5d227.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838214,
+        "endTime": 1775006838497,
+        "duration": 283
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-15-b95d19c64c5f00a6.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838214,
+        "endTime": 1775006838497,
+        "duration": 283
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-16-c4f40cbb7ca31d60.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838214,
+        "endTime": 1775006838497,
+        "duration": 283
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-17-051af5de216d4297.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838214,
+        "endTime": 1775006838517,
+        "duration": 303
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-18-49ca589237ab34f1.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838214,
+        "endTime": 1775006838543,
+        "duration": 329
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-19-eb81735dca769025.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838214,
+        "endTime": 1775006838516,
+        "duration": 302
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-20-b147d3528fc19e83.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838214,
+        "endTime": 1775006838514,
+        "duration": 300
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-21-7e2c493de6616084.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838214,
+        "endTime": 1775006838542,
+        "duration": 328
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-22-ec74c3d401e70b3b.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838214,
+        "endTime": 1775006838541,
+        "duration": 327
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-23-a7e156ed0e9a5896.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838214,
+        "endTime": 1775006838540,
+        "duration": 326
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-24-24ccb5d4606956a9.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838214,
+        "endTime": 1775006838541,
+        "duration": 327
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-25-331c9895444ec642.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838214,
+        "endTime": 1775006838642,
+        "duration": 428
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-26-0d2959ca1eb6fa7b.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838214,
+        "endTime": 1775006838616,
+        "duration": 402
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-518a401a-eaea0828c788f41f.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838214,
+        "endTime": 1775006838639,
+        "duration": 425
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-28-42ce82ec24df6501.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838215,
+        "endTime": 1775006838543,
+        "duration": 328
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-29-7bc63bea14abed4e.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838215,
+        "endTime": 1775006838648,
+        "duration": 433
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-30-ea848063ecd4986c.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838215,
+        "endTime": 1775006838623,
+        "duration": 408
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-31-db36d91d1ea03c9e.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838215,
+        "endTime": 1775006838676,
+        "duration": 461
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-32-afd955f0bfd3f50e.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838215,
+        "endTime": 1775006838696,
+        "duration": 481
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-33-84ac546620293c87.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838215,
+        "endTime": 1775006838676,
+        "duration": 461
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-34-5c44228496773c3f.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838215,
+        "endTime": 1775006838676,
+        "duration": 461
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-35-3a859de27d7c9fca.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838215,
+        "endTime": 1775006838676,
+        "duration": 461
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-36-e591c6db180fabea.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838696,
+        "duration": 474
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-37-f3279434aa29add0.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838696,
+        "duration": 474
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-38-a1cf1d3108f86ae4.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838722,
+        "duration": 500
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-39-aaf8b7d69bc3b593.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838692,
+        "duration": 470
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-40-da30138c4054f3c4.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838730,
+        "duration": 508
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-41-cfa1923f2e3c2ba0.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838730,
+        "duration": 508
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-42-43a322ece08bf801.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838722,
+        "duration": 500
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-43-ccba2f3985b22a74.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838716,
+        "duration": 494
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-44-842b0dfd5917066c.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838730,
+        "duration": 508
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-45-324ce713342aec8d.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838742,
+        "duration": 520
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-46-4d35da7a2a9f84f4.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838730,
+        "duration": 508
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-47-4134fedcdda5d467.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838722,
+        "duration": 500
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-48-548da16c3351579c.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838812,
+        "duration": 590
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/vendor-49-76271cf75067e9fd.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838790,
+        "duration": 568
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/embed-video-12dffe4bfaca1591.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006838222,
+        "endTime": 1775006838825,
+        "duration": 603
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006838289,
+        "endTime": 1775006838446,
+        "duration": 157
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006838289,
+        "endTime": 1775006838447,
+        "duration": 158
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 852
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775006837825&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=956735755.1775006838&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115616985~115938465~115938468~116133314~116991816~117384406&sid=1775006838&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F30%2Fsee-how-java-frameworks-like-spring-work-with-your-code&dt=AppMap%20%7C%20See%20how%20Java%20frameworks%20like%20Spring%20work%20with%20your%20code&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=809",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006838405,
+        "endTime": 1775006838616,
+        "duration": 211
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://o398470.ingest.sentry.io/api/5257803/envelope/?sentry_key=44839bac2d7547769e214445b25f43d9&sentry_version=7&sentry_client=sentry.javascript.browser%2F7.119.2",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006839446,
+        "endTime": 1775006840006,
+        "duration": 560
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2,
+        "responseHeadersSize": 510
+      }
+    },
+    {
+      "url": "chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/img/installed.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006839489,
+        "endTime": 1775006839989,
+        "duration": 500
+      },
+      "redirected": false,
+      "fromCache": false,
+      "failureText": "net::ERR_UNKNOWN_URL_SCHEME"
+    },
+    {
+      "url": "blob:https://www.loom.com/6562323b-af02-4c09-9003-5ec6fdf991d9",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006839496,
+        "endTime": 1775006840027,
+        "duration": 531
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 10285,
+        "responseHeadersSize": 44
+      }
+    },
+    {
+      "url": "https://cdn.loom.com/sessions/thumbnails/e19a40457e16417faba9eead19828bd9-00001.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006839979,
+        "endTime": 1775006839988,
+        "duration": 9
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5684,
+        "responseHeadersSize": 974
+      }
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/3398-7618750de14d90b3.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006839985,
+        "endTime": 1775006840010,
+        "duration": 25
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.loom.com/graphql",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006839985,
+        "endTime": 1775006841036,
+        "duration": 1051
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 121,
+        "responseHeadersSize": 891
+      }
+    },
+    {
+      "url": "https://www.loom.com/graphql",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006839986
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.loom.com/graphql",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006839986
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.loom.com/graphql",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006839986
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.loom.com/graphql",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006839986
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.loom.com/graphql",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006839986
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.loom.com/graphql",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006839986
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.loom.com/graphql",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006839986
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/9931-f62914e1c3dec24a.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006839986,
+        "endTime": 1775006840018,
+        "duration": 32
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/img/installed.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006839986
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://evs.sgmt.loom.com/yhPeelcEJD/eejxbDiFfK.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006839992,
+        "endTime": 1775006840132,
+        "duration": 140
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/sessions/thumbnails/e19a40457e16417faba9eead19828bd9-00001.mp4",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006840009,
+        "endTime": 1775006840346,
+        "duration": 337
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 206,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1383553,
+        "responseHeadersSize": 1133
+      }
+    },
+    {
+      "url": "https://cdn.loom.com/mediametadata/transcription/e19a40457e16417faba9eead19828bd9-1.json?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4ubG9vbS5jb20vbWVkaWFtZXRhZGF0YS90cmFuc2NyaXB0aW9uL2UxOWE0MDQ1N2UxNjQxN2ZhYmE5ZWVhZDE5ODI4YmQ5LTEuanNvbiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc3NTAwNzQzOH19fV19&Key-Pair-Id=APKAJQIC5BGSW7XXK7FQ&Signature=NOBUDfVS1sy7OKnMA32dWPjydhWgR3wPzFdApITmtCwKLc%7Evdf2y0cf24Xa%7E07JvQfRDMxvrNI2ORcFmpKJvB8W1L7gVTFdKkIGbhQA4KGeCa7MYUT46NNcRNcQX%7EM0cGtfaf3tmpX8g3GJZoCWJg9zC2PULrqnF5vJQ9YNeh2OvtpBXwZoppH6ZlCWuOMRl66mKMvIditGU4hg1i2c7xm6ElFrZNf7XX2ABsd%7ECDq2wuUdkV0I7ptKx5azTflBMJhXyfU92i114MZpeahOBl3PxNbTH8ILZ-XzoOF2YQF9gxpu0UGcXROkoAYM83HyQvrvJpt5jtdAR93Jpd3cddQ__",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006840108,
+        "endTime": 1775006840306,
+        "duration": 198
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7122,
+        "responseHeadersSize": 945
+      }
+    },
+    {
+      "url": "https://cdn.loom.com/mediametadata/captions/e19a40457e16417faba9eead19828bd9-1.vtt?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4ubG9vbS5jb20vbWVkaWFtZXRhZGF0YS9jYXB0aW9ucy9lMTlhNDA0NTdlMTY0MTdmYWJhOWVlYWQxOTgyOGJkOS0xLnZ0dCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc3NTAwNzQzOH19fV19&Key-Pair-Id=APKAJQIC5BGSW7XXK7FQ&Signature=a88%7Er-043l3IOtTiYw8PLmd9z1C2zYx-BhJ0jrXq8yxaBloxLFzxGLCqH0XbBVm6A%7ELT5tef6Prnvcd70tFYjSXzGk5MUluXwrpLeetGGtc6dITLsq9oRBnEMj0fenkP1JythvabZNoEkrXwGVy0oEwsIf52dS5078LUBA79Z7WAXr5ObeuXpNW-b8C4M2-5BTpNqmoZck7tOtP8Iod-%7EirDwTQHU2yr9tDdF%7EX56tKVrb%7EUd1UI7yrFXWiva5bqhHJgRT9BhV--zFQSIo4Q%7EQf21L%7EiC6WYQIDICiFocaKGpdijbHqAbt-iu9Nkaf6mEVYQ1D5-Doo-gikFxlZkcw__",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006840109,
+        "endTime": 1775006840308,
+        "duration": 199
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 10560,
+        "responseHeadersSize": 930
+      }
+    },
+    {
+      "url": "https://api-private.atlassian.com/gasv3/api/v1/metadata?product=loom&userId=&userIdType=&tenantId=null&tenantIdType=loomOrgId",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006840113,
+        "endTime": 1775006840351,
+        "duration": 238
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.loom.com/v1/users/feature_flag/bulk?flags=enable-dev-tools&statsigGates=rollout-limit-business-creator-lite,rich_text_comments,fullscreen_entry_point_for_comments,loom-mp4-regeneration-from-player-enabled,minimum_web_app_version,mwav_periodic_bad_builds_check&defaultValueMap={%22loom-mp4-regeneration-from-player-enabled%22:false}&hash=13a3368da8414fa891c62e5ac0b3bdee&extraProperties={}",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006840114,
+        "endTime": 1775006840351,
+        "duration": 237
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 907,
+        "responseHeadersSize": 4090
+      }
+    },
+    {
+      "url": "https://cdn.loom.com/assets/js/850-86a655b49b91f319.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006840191,
+        "endTime": 1775006840350,
+        "duration": 159
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.segment.com/v1/projects/rggRFsCK29LOKVGyTLpt9xoXVhNNXaP6/settings",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006840291,
+        "endTime": 1775006840581,
+        "duration": 290
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.loom.com/assets/fonts/NotoColorEmoji/NotoColorEmoji.9.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006840444,
+        "endTime": 1775006840536,
+        "duration": 92
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 128632,
+        "responseHeadersSize": 1145
+      }
+    },
+    {
+      "url": "https://www.loom.com/graphql",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006840617
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdn.segment.com/analytics-next/bundles/tsub-middleware.bundle.d94be5c4b3baf7f16aa2.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006840665,
+        "endTime": 1775006840702,
+        "duration": 37
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.loom.com/v1/users/feature_flag/bulk?flags=&statsigExperiments=empty-state-comment-suggestions-anonymous&defaultValueMap={}&hash=13a3368da8414fa891c62e5ac0b3bdee&extraProperties={}",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006840665,
+        "endTime": 1775006840833,
+        "duration": 168
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 141,
+        "responseHeadersSize": 4089
+      }
+    },
+    {
+      "url": "https://bad-builds.loom.com/bad_builds.json",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006840684,
+        "endTime": 1775006840832,
+        "duration": 148
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 332,
+        "responseHeadersSize": 1219
+      }
+    },
+    {
+      "url": "blob:https://www.loom.com/b9c06f23-b811-4111-ab4d-1d0bad12206b",
+      "method": "GET",
+      "resourceType": "texttrack",
+      "timing": {
+        "startTime": 1775006840685,
+        "endTime": 1775006840701,
+        "duration": 16
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 10560,
+        "responseHeadersSize": 52
+      }
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F30%2Fsee-how-java-frameworks-like-spring-work-with-your-code%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F30%2Fsee-how-java-frameworks-like-spring-work-with-your-code&t=AppMap+%7C+See+how+Java+frameworks+like+Spring+work+with+your+code&cts=1775006840809&rv=1&vi=8ab3aabcff7d35abd8bdbf19a392cf19&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006840814,
+        "endTime": 1775006840985,
+        "duration": 171
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 993
+      }
+    },
+    {
+      "url": "https://api.sgmt.loom.com/v1/p",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006840823,
+        "endTime": 1775006840991,
+        "duration": 168
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 21,
+        "responseHeadersSize": 185
+      }
+    },
+    {
+      "url": "https://api.sgmt.loom.com/v1/t",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006840825,
+        "endTime": 1775006840983,
+        "duration": 158
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 21,
+        "responseHeadersSize": 185
+      }
+    },
+    {
+      "url": "https://api.sgmt.loom.com/v1/t",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006840828
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.loom.com/graphql",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006840904
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://as.atlassian.com/api/v1/batch",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006841252,
+        "endTime": 1775006842234,
+        "duration": 982
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://as.atlassian.com/api/v1/batch",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006841474
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://as.atlassian.com/api/v1/batch",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006842138
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775006837825&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=956735755.1775006838&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=0~115616985~115938465~115938468~116133314~116991816~117384406&sid=1775006838&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F30%2Fsee-how-java-frameworks-like-spring-work-with-your-code&dt=AppMap%20%7C%20See%20how%20Java%20frameworks%20like%20Spring%20work%20with%20your%20code&en=scroll&epn.percent_scrolled=90&_et=5701&tfd=11506",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006849086,
+        "endTime": 1775006849122,
+        "duration": 36
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.loom.com/metrics/graphql",
+      "method": "POST",
+      "resourceType": "ping",
+      "timing": {
+        "startTime": 1775006849467,
+        "endTime": 1775006849563,
+        "duration": 96
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 103,
+        "responseHeadersSize": 975
+      }
+    }
+  ]
+}

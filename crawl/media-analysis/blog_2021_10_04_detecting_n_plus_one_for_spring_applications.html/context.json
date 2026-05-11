@@ -1,0 +1,117 @@
+{
+  "timestamp": "2026-04-01T01:29:42.216Z",
+  "crawlDirectory": "crawl/site/blog/2021/10/04/detecting_n_plus_one_for_spring_applications/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 7,
+  "foundAssets": 4,
+  "notFoundAssets": 3,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/10/04/detecting_n_plus_one_for_spring_applications/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/n-plus-1-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/n-plus-1-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/10/04/detecting_n_plus_one_for_spring_applications/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/10/04/detecting_n_plus_one_for_spring_applications/\">\n<meta property=\"og:site_name\" co...ts/n-plus-1-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-10-04T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/n-plus-1-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | How to detect and fix the N+1 problem for Java Spring framework applications\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * Lice"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/n-plus-1-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/10/04/detecting_n_plus_one_for_spring_applications/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/10/04/detecting_n_plus_one_for_spring_applications/\">\n<meta property=\"og:site_name\" co...ts/n-plus-1-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-10-04T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/n-plus-1-feature.webp",
+            "alt": "How to detect and fix the N+1 problem for Java Spring framework applications",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  How to detect and fix the N+1 problem for Java Spring framework applications\n  \n    We’re going to demonstrate how to identify the N+1 Query anti-pattern\nusing the AppMap plugin for Inte"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/n_one_1.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/n_one_1.jpg",
+          "foundInFile": "crawl/site/blog/2021/10/04/detecting_n_plus_one_for_spring_applications/index.html",
+          "context": "application, as they result in multiple expensive trips to the database.</p>\n\n<p><img src=\"/assets/img/posts/n_one_1.jpg\" alt=\"N+1 anti-pattern\" class=\"no-border-margin\"></p>\n\n<p>Detecting  N+1 queries is tricky, because they aren’t revealed by any mainstream testing strategy.</p>",
+          "lineNumber": 175,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/n_one_1.jpg",
+            "alt": "N+1 anti-pattern",
+            "class": "no-border-margin"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/10/04/detecting_n_plus_one_for_spring_applications/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 357,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803455994-ea5b9cd68171d6390757c6156cd8196922f4fe27492c1c55c2c8aef33c1876fd-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803455994-ea5b9cd68171d6390757c6156cd8196922f4fe27492c1c55c2c8aef33c1876fd-d?mw=800&mh=450",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F10%2F04%2Fdetecting_n_plus_one_for_spring_applications%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F10%2F04%2Fdetecting_n_plus_one_for_spring_applications&t=AppMap+%7C+How+to+detect+and+fix+the+N%2B1+problem+for+Java+Spring+framework+applications&cts=1775006970662&rv=1&vi=088783e955fccd0e9874a724bccc9567&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

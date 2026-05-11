@@ -1,0 +1,339 @@
+{
+  "timestamp": "2026-04-01T01:33:30.504Z",
+  "crawlDirectory": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 15,
+  "foundAssets": 14,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/mastodon-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/mastodon-feature.webp",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/\">\n<meta property=\"og:site_name\" content=\"...ts/mastodon-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2022-12-07T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/mastodon-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | The Fastest Way to Run Mastodon Tests\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license/f"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/mastodon-feature.webp",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/\">\n<meta property=\"og:site_name\" content=\"...ts/mastodon-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2022-12-07T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/mastodon-feature.webp",
+            "alt": "The Fastest Way to Run Mastodon Tests",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  The Fastest Way to Run Mastodon Tests\n  \n    \n  Mastodon (4-part series)\n  \n    \n      Installing AppMap in Mastodon with VS Code\n    \n    \n      Visualizing Mastodon Internals\n    \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-1.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-1.png",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "<p>Now with that test executed, there were 17 examples that succeeded and we get a single AppMap for each of those examples.</p>\n\n<p><img src=\"/ass...est-mastodon-tests-1.png\" alt=\"fastest mastodon tests\" class=\"no-border-margin\"></p>\n\n<h2 id=\"run-all-the-rspec-tests\">Run all the rspec tests</h2>",
+          "lineNumber": 232,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/fastest-mastodon-tests-1.png",
+            "alt": "fastest mastodon tests",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-3.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-3.png",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "<p>Additionally, with all the tests executed, AppMap will pin each function in your source code to show you which AppMap Diagrams this code was exe...odon-tests-3.png\" alt=\"fastest mastodon tests\" class=\"no-border-margin\"></p>\n\n<h2 id=\"save-hours-re-running-tests\">Save hours re-running tests</h2>",
+          "lineNumber": 250,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/fastest-mastodon-tests-3.png",
+            "alt": "fastest mastodon tests",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-4.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-4.png",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "</code></pre></div></div>\n\n<p><img src=\"/assets/img/posts/fastest-mastodon-tests-4.png\" alt=\"fastest mastodon tests\" class=\"no-border-margin\"></p>\n\n<p>After saving that change, we’ll get a notification at the bottom of our VS Code window which shows that 5 AppMap Diagrams are now out of date.</p>",
+          "lineNumber": 267,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/fastest-mastodon-tests-4.png",
+            "alt": "fastest mastodon tests",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-5.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-5.png",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "<p>After saving that change, we’ll get a notification at the bottom of our VS Code window which shows that 5 AppMap Diagrams are now out of date.</...todon tests\" class=\"no-border-margin\"></p>\n\n<p>Looking at the AppMap Diagrams in the left column you’ll see they’ll be marked as “Out of Date”.</p>",
+          "lineNumber": 271,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/fastest-mastodon-tests-5.png",
+            "alt": "fastest mastodon tests",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-6.jpeg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-6.jpeg",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "<p>Looking at the AppMap Diagrams in the left column you’ll see they’ll be marked as “Out of Date”.</p>\n\n<p><img src=\"/assets/img/posts/fastest-mas...der-margin\"></p>\n\n<p>We can now open the Command Palette in VS Code (View -&gt; Command Palette OR Shift+⌘+P on Mac OR Ctrl+Shift+P on Windows)</p>",
+          "lineNumber": 275,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/fastest-mastodon-tests-6.jpeg",
+            "alt": "fastest mastodon tests",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-7.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-7.png",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "<p>Search for “out of date” in the command picker and select “Copy Out-of-Date Tests to Clipboard”.</p>\n\n<p><img src=\"/assets/img/posts/fastest-mas...png\" alt=\"fastest mastodon tests\" class=\"no-border-margin\"></p>\n\n<p>You’ll get a popup letting you choose what format you want to copy them in.</p>",
+          "lineNumber": 281,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/fastest-mastodon-tests-7.png",
+            "alt": "fastest mastodon tests",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-8.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-8.png",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "<p>You’ll get a popup letting you choose what format you want to copy them in.</p>\n\n<p><img src=\"/assets/img/posts/fastest-mastodon-tests-8.png\" al...r-margin\"></p>\n\n<p>We’ll pick just the file names. This is the list we’ll pass to rspec. Now we can just re-run rspec and paste in our 5 tests.</p>",
+          "lineNumber": 285,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/fastest-mastodon-tests-8.png",
+            "alt": "fastest mastodon tests",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-9.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-9.png",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "<p>Start guard with <code class=\" highlighter-rouge language-plaintext\">bundle exec guard</code>, then as you code run <code class=\" highlighter-ro...s\" class=\"no-border-margin\"></p>\n\n<p>AppMap will touch those test files, updating the modification date on only the ones that need to be re-ran</p>",
+          "lineNumber": 321,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/fastest-mastodon-tests-9.png",
+            "alt": "fastest mastodon tests",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-10.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-10.png",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "<p>AppMap will touch those test files, updating the modification date on only the ones that need to be re-ran</p>\n\n<p><img src=\"/assets/img/posts/f...te tests. I then run “Touch Out-of-Date Test Files” and Guard will see those files change and automatically run only the necessary rspec tests.</p>",
+          "lineNumber": 325,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/fastest-mastodon-tests-10.png",
+            "alt": "fastest mastodon tests",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 368,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-2.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-2.mp4",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "\n<video class=\"video-wrapper\" playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n  <source src=\"/assets/img/posts/fastest-mastodon-tests-2.mp4\" type=\"video/mp4\">\n</video>\n",
+          "lineNumber": 243,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/posts/fastest-mastodon-tests-2.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n  \n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-11.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/fastest-mastodon-tests-11.mp4",
+          "foundInFile": "crawl/site/blog/2022/12/07/the-fastest-way-to-run-mastodon-tests/index.html",
+          "context": "\n<video class=\"video-wrapper\" playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n  <source src=\"/assets/img/posts/fastest-mastodon-tests-11.mp4\" type=\"video/mp4\">\n</video>\n",
+          "lineNumber": 330,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/posts/fastest-mastodon-tests-11.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n  \n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2022%2F12%2F07%2Fthe-fastest-way-to-run-mastodon-tests%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2022%2F12%2F07%2Fthe-fastest-way-to-run-mastodon-tests&t=AppMap+%7C+The+Fastest+Way+to+Run+Mastodon+Tests&cts=1775007195831&rv=1&vi=c2bf138cffd0a545fa0db615d87fdb7f&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

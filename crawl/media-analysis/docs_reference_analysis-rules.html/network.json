@@ -1,0 +1,697 @@
+{
+  "url": "https://appmap.io/docs/reference/analysis-rules",
+  "timestamp": "2026-04-01T01:44:20.922Z",
+  "loadTime": 32256,
+  "summary": {
+    "totalRequests": 38,
+    "successfulRequests": 35,
+    "failedRequests": 3,
+    "cachedRequests": 0,
+    "redirectedRequests": 0,
+    "slowRequests": 0
+  },
+  "requestsByType": {
+    "document": 1,
+    "stylesheet": 9,
+    "script": 10,
+    "image": 5,
+    "fetch": 7,
+    "font": 5,
+    "xhr": 1
+  },
+  "failedRequests": [
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775007829038&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=68589970.1775007829&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938465~115938469~116133312~116991816~117266401~117384406~118131810&sid=1775007829&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fanalysis-rules&dt=AppMap%20-%20Docs%20-%20Reference%20-%20Analysis%20Rules&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=546",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007829362,
+        "duration": 210
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007829423,
+        "duration": 150
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775007829038&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=68589970.1775007829&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938465~115938469~116133312~116991816~117266401~117384406~118131810&sid=1775007829&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fanalysis-rules&dt=AppMap%20-%20Docs%20-%20Reference%20-%20Analysis%20Rules&en=scroll&epn.percent_scrolled=90&_et=23020&tfd=28568",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007857380,
+        "duration": 37
+      }
+    }
+  ],
+  "slowRequests": [],
+  "allRequests": [
+    {
+      "url": "https://appmap.io/docs/reference/analysis-rules",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007828814,
+        "endTime": 1775007828901,
+        "duration": 87
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007828912,
+        "endTime": 1775007828982,
+        "duration": 70
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 1174
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007828912,
+        "endTime": 1775007829031,
+        "duration": 119
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007828912,
+        "endTime": 1775007829018,
+        "duration": 106
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007828912,
+        "endTime": 1775007829019,
+        "duration": 107
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007828915,
+        "endTime": 1775007829034,
+        "duration": 119
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007828915,
+        "endTime": 1775007828986,
+        "duration": 71
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1036
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007828916,
+        "endTime": 1775007828984,
+        "duration": 68
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 1165
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007828916,
+        "endTime": 1775007828958,
+        "duration": 42
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007828916,
+        "endTime": 1775007828992,
+        "duration": 76
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007828916,
+        "endTime": 1775007829264,
+        "duration": 348
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173015,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007828916,
+        "endTime": 1775007829188,
+        "duration": 272
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 626,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007828916,
+        "endTime": 1775007828974,
+        "duration": 58
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 518
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/vscode-icon.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007828916,
+        "endTime": 1775007828982,
+        "duration": 66
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1681,
+        "responseHeadersSize": 519
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/jetbrains.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007828916,
+        "endTime": 1775007829006,
+        "duration": 90
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1809,
+        "responseHeadersSize": 565
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007828916,
+        "endTime": 1775007829137,
+        "duration": 221
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 642
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007828916,
+        "endTime": 1775007829130,
+        "duration": 214
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1048
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007828916,
+        "endTime": 1775007829155,
+        "duration": 239
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 1184
+      }
+    },
+    {
+      "url": "https://appmap.io/application.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007828916,
+        "endTime": 1775007829160,
+        "duration": 244
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 574
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007829042,
+        "endTime": 1775007829161,
+        "duration": 119
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007829042,
+        "endTime": 1775007829161,
+        "duration": 119
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007829042,
+        "endTime": 1775007829175,
+        "duration": 133
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007829042,
+        "endTime": 1775007829161,
+        "duration": 119
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007829124,
+        "endTime": 1775007829324,
+        "duration": 200
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45712,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007829130,
+        "endTime": 1775007829258,
+        "duration": 128
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007829174,
+        "endTime": 1775007829325,
+        "duration": 151
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 128352,
+        "responseHeadersSize": 854
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007829272,
+        "endTime": 1775007829394,
+        "duration": 122
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007829272,
+        "endTime": 1775007829393,
+        "duration": 121
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775007600000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007829272,
+        "endTime": 1775007829394,
+        "duration": 122
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775007829038&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=68589970.1775007829&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938465~115938469~116133312~116991816~117266401~117384406~118131810&sid=1775007829&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fanalysis-rules&dt=AppMap%20-%20Docs%20-%20Reference%20-%20Analysis%20Rules&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=546",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007829362,
+        "endTime": 1775007829572,
+        "duration": 210
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007829422,
+        "endTime": 1775007829511,
+        "duration": 89
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007829423,
+        "endTime": 1775007829573,
+        "duration": 150
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007829426,
+        "endTime": 1775007829558,
+        "duration": 132
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007829552,
+        "endTime": 1775007829620,
+        "duration": 68
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007829554,
+        "endTime": 1775007829622,
+        "duration": 68
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 852
+      }
+    },
+    {
+      "url": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007829559,
+        "endTime": 1775007829667,
+        "duration": 108
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 35,
+        "responseHeadersSize": 690
+      }
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fanalysis-rules.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fanalysis-rules&t=AppMap+-+Docs+-+Reference+-+Analysis+Rules&cts=1775007829673&rv=1&vi=fbbbf09ae3e20f486b41716034da8109&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007829675,
+        "endTime": 1775007829813,
+        "duration": 138
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 997
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775007829038&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=68589970.1775007829&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938465~115938469~116133312~116991816~117266401~117384406~118131810&sid=1775007829&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fanalysis-rules&dt=AppMap%20-%20Docs%20-%20Reference%20-%20Analysis%20Rules&en=scroll&epn.percent_scrolled=90&_et=23020&tfd=28568",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007857380,
+        "endTime": 1775007857417,
+        "duration": 37
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    }
+  ]
+}

@@ -1,0 +1,697 @@
+{
+  "url": "https://appmap.io/docs/community",
+  "timestamp": "2026-04-01T01:41:49.930Z",
+  "loadTime": 8596,
+  "summary": {
+    "totalRequests": 38,
+    "successfulRequests": 35,
+    "failedRequests": 3,
+    "cachedRequests": 0,
+    "redirectedRequests": 0,
+    "slowRequests": 0
+  },
+  "requestsByType": {
+    "document": 1,
+    "stylesheet": 9,
+    "script": 10,
+    "image": 5,
+    "fetch": 7,
+    "font": 5,
+    "xhr": 1
+  },
+  "failedRequests": [
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007701706&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1514564051.1775007702&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115616986~115938466~115938468~116991817~117266402~117384406&sid=1775007701&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Fcommunity&dt=AppMap%20-%20Docs%20-%20Community%20-%20community.md&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=506",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007701984,
+        "duration": 160
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007702008,
+        "duration": 137
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007701706&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1514564051.1775007702&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115616986~115938466~115938468~116991817~117266402~117384406&sid=1775007701&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Fcommunity&dt=AppMap%20-%20Docs%20-%20Community%20-%20community.md&en=scroll&epn.percent_scrolled=90&_et=1405&tfd=6914",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007708391,
+        "duration": 36
+      }
+    }
+  ],
+  "slowRequests": [],
+  "allRequests": [
+    {
+      "url": "https://appmap.io/docs/community",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007701479,
+        "endTime": 1775007701577,
+        "duration": 98
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007701588,
+        "endTime": 1775007701653,
+        "duration": 65
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 1182
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007701588,
+        "endTime": 1775007701691,
+        "duration": 103
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007701588,
+        "endTime": 1775007701691,
+        "duration": 103
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007701589,
+        "endTime": 1775007701697,
+        "duration": 108
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007701591,
+        "endTime": 1775007701695,
+        "duration": 104
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007701591,
+        "endTime": 1775007701671,
+        "duration": 80
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1028
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007701591,
+        "endTime": 1775007701664,
+        "duration": 73
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 1165
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007701591,
+        "endTime": 1775007701637,
+        "duration": 46
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007701592,
+        "endTime": 1775007701672,
+        "duration": 80
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007701592,
+        "endTime": 1775007701918,
+        "duration": 326
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173018,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007701592,
+        "endTime": 1775007701815,
+        "duration": 223
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 626,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007701592,
+        "endTime": 1775007701620,
+        "duration": 28
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 519
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/vscode-icon.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007701592,
+        "endTime": 1775007701641,
+        "duration": 49
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1681,
+        "responseHeadersSize": 518
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/jetbrains.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007701592,
+        "endTime": 1775007701668,
+        "duration": 76
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1809,
+        "responseHeadersSize": 564
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007701592,
+        "endTime": 1775007701770,
+        "duration": 178
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 642
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007701592,
+        "endTime": 1775007701709,
+        "duration": 117
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1044
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007701592,
+        "endTime": 1775007701794,
+        "duration": 202
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 1186
+      }
+    },
+    {
+      "url": "https://appmap.io/application.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007701592,
+        "endTime": 1775007701794,
+        "duration": 202
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 574
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007701706,
+        "endTime": 1775007701797,
+        "duration": 91
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007701706,
+        "endTime": 1775007701800,
+        "duration": 94
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007701706,
+        "endTime": 1775007701796,
+        "duration": 90
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007701707,
+        "endTime": 1775007701797,
+        "duration": 90
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007701770,
+        "endTime": 1775007701954,
+        "duration": 184
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45712,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007701770,
+        "endTime": 1775007701951,
+        "duration": 181
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007701770,
+        "endTime": 1775007701955,
+        "duration": 185
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 128352,
+        "responseHeadersSize": 854
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007701845,
+        "endTime": 1775007701957,
+        "duration": 112
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007701846,
+        "endTime": 1775007701957,
+        "duration": 111
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775007600000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007701846,
+        "endTime": 1775007701957,
+        "duration": 111
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007701706&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1514564051.1775007702&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115616986~115938466~115938468~116991817~117266402~117384406&sid=1775007701&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Fcommunity&dt=AppMap%20-%20Docs%20-%20Community%20-%20community.md&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=506",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007701984,
+        "endTime": 1775007702144,
+        "duration": 160
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007702008,
+        "endTime": 1775007702104,
+        "duration": 96
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007702008,
+        "endTime": 1775007702145,
+        "duration": 137
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007702123,
+        "endTime": 1775007702189,
+        "duration": 66
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007702123,
+        "endTime": 1775007702196,
+        "duration": 73
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 852
+      }
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007702131,
+        "endTime": 1775007702216,
+        "duration": 85
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Fcommunity.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Fcommunity&t=AppMap+-+Docs+-+Community+-+community.md&cts=1775007702194&rv=1&vi=310270c6a38e0b77b08b509b99eb7f3b&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007702196,
+        "endTime": 1775007702347,
+        "duration": 151
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 999
+      }
+    },
+    {
+      "url": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007702216,
+        "endTime": 1775007702324,
+        "duration": 108
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 35,
+        "responseHeadersSize": 690
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007701706&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1514564051.1775007702&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115616986~115938466~115938468~116991817~117266402~117384406&sid=1775007701&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Fcommunity&dt=AppMap%20-%20Docs%20-%20Community%20-%20community.md&en=scroll&epn.percent_scrolled=90&_et=1405&tfd=6914",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007708391,
+        "endTime": 1775007708427,
+        "duration": 36
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    }
+  ]
+}

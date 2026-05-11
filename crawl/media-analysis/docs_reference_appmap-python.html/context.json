@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-04-01T01:46:27.214Z",
+  "crawlDirectory": "crawl/site/docs/reference/appmap-python.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 7,
+  "foundAssets": 3,
+  "notFoundAssets": 4,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/appmap-python.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/appmap-python.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 786,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/appmap-python.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 787,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1946437364-251e02f076581ff45b3fa086948923057dc97aeb934c36812488455b69096820-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fappmap-python.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fappmap-python&t=AppMap+-+Docs+-+Reference+-+AppMap+Agent+for+Python&cts=1775007967391&rv=1&vi=d82f1f13d0f9d208e89af65406082b1f&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1946437364-251e02f076581ff45b3fa086948923057dc97aeb934c36812488455b69096820-d?mw=1000&mh=584",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

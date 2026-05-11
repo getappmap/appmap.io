@@ -1,0 +1,2911 @@
+{
+  "url": "https://appmap.io/blog/2023/03/13/behind-the-scenes-at-techcrunch-disrupt-2022",
+  "timestamp": "2026-04-01T01:34:04.648Z",
+  "loadTime": 19476,
+  "summary": {
+    "totalRequests": 149,
+    "successfulRequests": 67,
+    "failedRequests": 11,
+    "cachedRequests": 0,
+    "redirectedRequests": 1,
+    "slowRequests": 43
+  },
+  "requestsByType": {
+    "document": 10,
+    "stylesheet": 20,
+    "script": 59,
+    "image": 19,
+    "fetch": 19,
+    "font": 10,
+    "xhr": 12
+  },
+  "failedRequests": [
+    {
+      "url": "https://player.vimeo.com/video/916048824",
+      "method": "GET",
+      "resourceType": "document",
+      "error": "HTTP 401 Unauthorized",
+      "timing": {
+        "startTime": 1775007225582,
+        "duration": 5012
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007225567&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1482282052.1775007226&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938465~115938468~116991816~117384405&sid=1775007225&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F13%2Fbehind-the-scenes-at-techcrunch-disrupt-2022&dt=AppMap%20%7C%20Behind%20the%20scenes%20at%20TechCrunch%20Disrupt%202022&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=598",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007225912,
+        "duration": 205
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007225957,
+        "duration": 4848
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53d8fcbd1798b0/1775007226642/ce37d0e51f464a6c97bbfe433e14c4522993be2f01698c299d02da0f032119cc/7gDDU5tpkYcEQt4",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775007227616,
+        "duration": 23
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53d8fbfaf898b0/1775007226562/9070a06a3296f3196b1ad71ed9fb4b8f474b638c7e901f9b7c1f5194982f9580/OZSCQNKvrEhpkH9",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775007227913,
+        "duration": 24
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007225567&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1482282052.1775007226&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=2&tag_exp=0~115938465~115938468~116991816~117384405&sid=1775007225&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F13%2Fbehind-the-scenes-at-techcrunch-disrupt-2022&dt=AppMap%20%7C%20Behind%20the%20scenes%20at%20TechCrunch%20Disrupt%202022&en=user_engagement&_et=4472&tfd=5073",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007230395,
+        "duration": 5
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53d9177f4a98b0/1775007231032/7f593b98297f13d24d4b231854c47273227dcf6409b251213f7a2cff3d2b3f7a/j6R1TGtEkWKzHZb",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775007231774,
+        "duration": 80
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53d9177f7298b0/1775007231082/1eb467efed18925e73d6489953af0cca144761d717b7d2ee3df62dbb16aa8aa3/z9kaufWZd2l_WNo",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775007232389,
+        "duration": 71
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007230446&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1482282052.1775007226&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=0~115938466~115938468~116991817&sid=1775007225&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F13%2Fbehind-the-scenes-at-techcrunch-disrupt-2022&dt=AppMap%20%7C%20Behind%20the%20scenes%20at%20TechCrunch%20Disrupt%202022&en=page_view&_ee=1&tfd=5260",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007235572,
+        "duration": 36
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007230446&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1482282052.1775007226&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938466~115938468~116991817&sid=1775007225&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F13%2Fbehind-the-scenes-at-techcrunch-disrupt-2022&dt=AppMap%20%7C%20Behind%20the%20scenes%20at%20TechCrunch%20Disrupt%202022&en=scroll&epn.percent_scrolled=90&_et=7484&tfd=12747",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007243059,
+        "duration": 35
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53d9662a7198b0/1775007243453/606c6f7c75ea19efc7504e655abd4677d08dfd6f5755bb4d2249341f87a873af/PQwHx57p6-FAMbY",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775007243985,
+        "duration": 23
+      }
+    }
+  ],
+  "slowRequests": [
+    {
+      "url": "https://appmap.io/blog/2023/03/13/behind-the-scenes-at-techcrunch-disrupt-2022",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007225314,
+        "endTime": 1775007230378,
+        "duration": 5064
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225422,
+        "endTime": 1775007230409,
+        "duration": 4987
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 795
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230409,
+        "duration": 4986
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230409,
+        "duration": 4986
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230409,
+        "duration": 4986
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230409,
+        "duration": 4986
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230409,
+        "duration": 4986
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1032
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230410,
+        "duration": 4987
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 793
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230436,
+        "duration": 5013
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230410,
+        "duration": 4987
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230410,
+        "duration": 4987
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173018,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230410,
+        "duration": 4987
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 629,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230414,
+        "duration": 4991
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 541,
+        "responseHeadersSize": 1034
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230414,
+        "duration": 4991
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5980,
+        "responseHeadersSize": 1048
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230414,
+        "duration": 4991
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1333,
+        "responseHeadersSize": 1046
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230415,
+        "duration": 4992
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 986,
+        "responseHeadersSize": 1057
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230415,
+        "duration": 4992
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 962,
+        "responseHeadersSize": 1051
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230415,
+        "duration": 4991
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 862,
+        "responseHeadersSize": 1047
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230439,
+        "duration": 5015
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 518
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/elizabeth-lawler-appmap-techcrunch.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230440,
+        "duration": 5016
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 181438,
+        "responseHeadersSize": 469
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230415,
+        "duration": 4991
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7917,
+        "responseHeadersSize": 788
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230491,
+        "duration": 5067
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 457,
+        "responseHeadersSize": 564
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230416,
+        "duration": 4992
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 642
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230416,
+        "duration": 4992
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1044
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230418,
+        "duration": 4994
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 809
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007225569,
+        "endTime": 1775007230447,
+        "duration": 4878
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007225569,
+        "endTime": 1775007230480,
+        "duration": 4911
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007225569,
+        "endTime": 1775007230481,
+        "duration": 4912
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007225569,
+        "endTime": 1775007230485,
+        "duration": 4916
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://player.vimeo.com/video/916048824",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007225582,
+        "endTime": 1775007230594,
+        "duration": 5012
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "Unauthorized",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5141,
+        "responseHeadersSize": 206
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007225628,
+        "endTime": 1775007230475,
+        "duration": 4847
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007225665,
+        "endTime": 1775007230475,
+        "duration": 4810
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 105204,
+        "responseHeadersSize": 1078
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/webfonts/free-fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007225720,
+        "endTime": 1775007230525,
+        "duration": 4805
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 118696,
+        "responseHeadersSize": 1133
+      }
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775007000000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225747,
+        "endTime": 1775007230601,
+        "duration": 4854
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225747,
+        "endTime": 1775007230601,
+        "duration": 4854
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225747,
+        "endTime": 1775007230601,
+        "duration": 4854
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225931,
+        "endTime": 1775007230612,
+        "duration": 4681
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 366
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225957,
+        "endTime": 1775007230651,
+        "duration": 4694
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007225957,
+        "endTime": 1775007230805,
+        "duration": 4848
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007225993,
+        "endTime": 1775007230790,
+        "duration": 4797
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007226100,
+        "endTime": 1775007230709,
+        "duration": 4609
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007226100,
+        "endTime": 1775007230709,
+        "duration": 4609
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007226299,
+        "endTime": 1775007243743,
+        "duration": 17444
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 86,
+        "responseHeadersSize": 223
+      }
+    }
+  ],
+  "allRequests": [
+    {
+      "url": "https://appmap.io/blog/2023/03/13/behind-the-scenes-at-techcrunch-disrupt-2022",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007225314,
+        "endTime": 1775007230378,
+        "duration": 5064
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225422,
+        "endTime": 1775007230409,
+        "duration": 4987
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 795
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230409,
+        "duration": 4986
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230409,
+        "duration": 4986
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230409,
+        "duration": 4986
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230409,
+        "duration": 4986
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230409,
+        "duration": 4986
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1032
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230410,
+        "duration": 4987
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 793
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230436,
+        "duration": 5013
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230410,
+        "duration": 4987
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230410,
+        "duration": 4987
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173018,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230410,
+        "duration": 4987
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 629,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230414,
+        "duration": 4991
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 541,
+        "responseHeadersSize": 1034
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230414,
+        "duration": 4991
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5980,
+        "responseHeadersSize": 1048
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230414,
+        "duration": 4991
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1333,
+        "responseHeadersSize": 1046
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230415,
+        "duration": 4992
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 986,
+        "responseHeadersSize": 1057
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225423,
+        "endTime": 1775007230415,
+        "duration": 4992
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 962,
+        "responseHeadersSize": 1051
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230415,
+        "duration": 4991
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 862,
+        "responseHeadersSize": 1047
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230439,
+        "duration": 5015
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 518
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/elizabeth-lawler-appmap-techcrunch.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230440,
+        "duration": 5016
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 181438,
+        "responseHeadersSize": 469
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230415,
+        "duration": 4991
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7917,
+        "responseHeadersSize": 788
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230491,
+        "duration": 5067
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 457,
+        "responseHeadersSize": 564
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230416,
+        "duration": 4992
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 642
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230416,
+        "duration": 4992
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1044
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225424,
+        "endTime": 1775007230418,
+        "duration": 4994
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 809
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007225569,
+        "endTime": 1775007230447,
+        "duration": 4878
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007225569,
+        "endTime": 1775007230480,
+        "duration": 4911
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007225569,
+        "endTime": 1775007230481,
+        "duration": 4912
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007225569,
+        "endTime": 1775007230485,
+        "duration": 4916
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://player.vimeo.com/video/916048824",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007225582,
+        "endTime": 1775007230594,
+        "duration": 5012
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "Unauthorized",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5141,
+        "responseHeadersSize": 206
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007225628,
+        "endTime": 1775007230475,
+        "duration": 4847
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007225665,
+        "endTime": 1775007230475,
+        "duration": 4810
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 105204,
+        "responseHeadersSize": 1078
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/webfonts/free-fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007225720,
+        "endTime": 1775007230525,
+        "duration": 4805
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 118696,
+        "responseHeadersSize": 1133
+      }
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775007000000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225747,
+        "endTime": 1775007230601,
+        "duration": 4854
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225747,
+        "endTime": 1775007230601,
+        "duration": 4854
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225747,
+        "endTime": 1775007230601,
+        "duration": 4854
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007225567&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1482282052.1775007226&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938465~115938468~116991816~117384405&sid=1775007225&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F13%2Fbehind-the-scenes-at-techcrunch-disrupt-2022&dt=AppMap%20%7C%20Behind%20the%20scenes%20at%20TechCrunch%20Disrupt%202022&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=598",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007225912,
+        "endTime": 1775007226117,
+        "duration": 205
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007225931,
+        "endTime": 1775007230612,
+        "duration": 4681
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 366
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007225957,
+        "endTime": 1775007230651,
+        "duration": 4694
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007225957,
+        "endTime": 1775007230805,
+        "duration": 4848
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007225993,
+        "endTime": 1775007230790,
+        "duration": 4797
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007226100,
+        "endTime": 1775007230709,
+        "duration": 4609
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007226100,
+        "endTime": 1775007230709,
+        "duration": 4609
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/g/ea2d291c0fdc/api.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007226102,
+        "endTime": 1775007226157,
+        "duration": 55
+      },
+      "redirected": true,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/dj8yn/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007226229,
+        "endTime": 1775007226265,
+        "duration": 36
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007226299,
+        "endTime": 1775007243743,
+        "duration": 17444
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 86,
+        "responseHeadersSize": 223
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/pvcye/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007226345,
+        "endTime": 1775007226379,
+        "duration": 34
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/31fd0433-8b8e-4e80-828e-bdbd40509ccd",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007226356
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007226419
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F13%2Fbehind-the-scenes-at-techcrunch-disrupt-2022%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F13%2Fbehind-the-scenes-at-techcrunch-disrupt-2022&t=AppMap+%7C+Behind+the+scenes+at+TechCrunch+Disrupt+2022&cts=1775007226432&rv=1&vi=4c358e37bd4aea74b098bb5c8d673c97&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007226434,
+        "endTime": 1775007226570,
+        "duration": 136
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 997
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/ac51d5a5-8246-461f-8057-c98233b73414",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007226449
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53d8fbfaf898b0/lMh7u6jS5pvH.iVYwYTU8iE60N0Xbx4mc_pZZBerntc-1775007226-1.2.1.1-eWra1o4NYDHEcU2XsTqlO0_jSxT2oB_guCIsWhGLJzteuSq2hHcVDWpzX_x5g4Fq",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007226543,
+        "endTime": 1775007228474,
+        "duration": 1931
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53d8fcbd1798b0/Vb4JRGZRwY2R1I.hBscHrDLPrq9ouuxpyUZaGxXV.bc-1775007226-1.2.1.1-lT_YI0.hBTWT5Gi4Uz.y8SXLk9Aa.3iX1rLlnAzpbG5hJR7QtirM5UiyV6kz5skB",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007226622,
+        "endTime": 1775007228928,
+        "duration": 2306
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/3b5ba90c-1ddc-41c2-a816-71ed3246f6ee",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007226706,
+        "endTime": 1775007227843,
+        "duration": 1137
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/06106573-cc4c-4a72-9ca0-3cea04e8910b",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007226824,
+        "endTime": 1775007228438,
+        "duration": 1614
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/3b5ba90c-1ddc-41c2-a816-71ed3246f6ee",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007227311
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/3b5ba90c-1ddc-41c2-a816-71ed3246f6ee",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007227311
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/06106573-cc4c-4a72-9ca0-3cea04e8910b",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007227428
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/06106573-cc4c-4a72-9ca0-3cea04e8910b",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007227431
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53d8fbfaf898b0/1775007226562/AzXf1mkXD6WXcz4",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007227479,
+        "endTime": 1775007227503,
+        "duration": 24
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 367,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53d8fcbd1798b0/1775007226642/ce37d0e51f464a6c97bbfe433e14c4522993be2f01698c299d02da0f032119cc/7gDDU5tpkYcEQt4",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007227616,
+        "endTime": 1775007227639,
+        "duration": 23
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53d8fcbd1798b0/1775007226643/4AzevW_xYUcL3l8",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007227696,
+        "endTime": 1775007227717,
+        "duration": 21
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 304,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/3b5ba90c-1ddc-41c2-a816-71ed3246f6ee",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007227777
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53d8fbfaf898b0/1775007226562/9070a06a3296f3196b1ad71ed9fb4b8f474b638c7e901f9b7c1f5194982f9580/OZSCQNKvrEhpkH9",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007227913,
+        "endTime": 1775007227937,
+        "duration": 24
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/06106573-cc4c-4a72-9ca0-3cea04e8910b",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007227990
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53d8fbfaf898b0/lMh7u6jS5pvH.iVYwYTU8iE60N0Xbx4mc_pZZBerntc-1775007226-1.2.1.1-eWra1o4NYDHEcU2XsTqlO0_jSxT2oB_guCIsWhGLJzteuSq2hHcVDWpzX_x5g4Fq",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007228408
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53d8fcbd1798b0/Vb4JRGZRwY2R1I.hBscHrDLPrq9ouuxpyUZaGxXV.bc-1775007226-1.2.1.1-lT_YI0.hBTWT5Gi4Uz.y8SXLk9Aa.3iX1rLlnAzpbG5hJR7QtirM5UiyV6kz5skB",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007228882
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/blog/2023/03/13/behind-the-scenes-at-techcrunch-disrupt-2022",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007230311
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007225567&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1482282052.1775007226&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=2&tag_exp=0~115938465~115938468~116991816~117384405&sid=1775007225&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F13%2Fbehind-the-scenes-at-techcrunch-disrupt-2022&dt=AppMap%20%7C%20Behind%20the%20scenes%20at%20TechCrunch%20Disrupt%202022&en=user_engagement&_et=4472&tfd=5073",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007230395,
+        "endTime": 1775007230400,
+        "duration": 5
+      },
+      "redirected": false,
+      "fromCache": false,
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007230409
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007230409
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007230409
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007230409
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007230409
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007230409
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007230410
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007230410
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230410
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230410
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230410
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007230414
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230414
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230414
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230415
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230415
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230415
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007230415
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/elizabeth-lawler-appmap-techcrunch.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007230415
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230415
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007230415
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230415
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230416
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230416
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007230447
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007230447
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007230447
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007230447
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://player.vimeo.com/video/916048824",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007230458
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007230475
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007230475
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/webfonts/free-fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007230524
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775007000000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230601
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230601
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230601
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230612
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/l5z0n/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007230622,
+        "endTime": 1775007230660,
+        "duration": 38
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/vt9a0/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007230627,
+        "endTime": 1775007230672,
+        "duration": 45
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007230643
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007230651
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007230652
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007230709
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007230709
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007230723
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007230743
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F13%2Fbehind-the-scenes-at-techcrunch-disrupt-2022%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F13%2Fbehind-the-scenes-at-techcrunch-disrupt-2022&t=AppMap+%7C+Behind+the+scenes+at+TechCrunch+Disrupt+2022&cts=1775007230796&rv=1&vi=ee687745b79af7c246830a14b41b1f28&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007230797,
+        "endTime": 1775007230889,
+        "duration": 92
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 1001
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/941cdaca-34f5-4f0a-a663-b974788fad02",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230819
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/44bb5d7c-f8dd-4106-a22c-df5689192bc8",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007230882
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53d9177f4a98b0/537w0aFBadxD7PKh1kFtTOs_mmHRF9I7Qbjg2lcQY_8-1775007230-1.2.1.1-Kp68SSvwtjCAVErt6dGzoS3rD4aw0VJGSduvtv2VtAzOZyCI4lLRRDexrUnJtwKh",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007231015,
+        "endTime": 1775007233614,
+        "duration": 2599
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53d9177f7298b0/K1x4ErQss.eCpUxqaFveNGt5gcmpEh1lN9JpLrZJu9g-1775007230-1.2.1.1-GZk2L_4RaFlcVT2WhD6lycyDTqk6.5_Q2rzGAZBNWcKVeqX8L6bgCofQmfI72Omm",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007231066,
+        "endTime": 1775007233200,
+        "duration": 2134
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/17826b8b-ac70-4e40-98a3-39186ee8f4cb",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007231182,
+        "endTime": 1775007232687,
+        "duration": 1505
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/b3022226-0a94-4d1f-a794-75b50374873e",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007231298,
+        "endTime": 1775007232106,
+        "duration": 808
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53d9177f4a98b0/1775007231032/7f593b98297f13d24d4b231854c47273227dcf6409b251213f7a2cff3d2b3f7a/j6R1TGtEkWKzHZb",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007231774,
+        "endTime": 1775007231854,
+        "duration": 80
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53d9177f7298b0/1775007231082/FdmiNBPRyBnmIkF",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007231882,
+        "endTime": 1775007231921,
+        "duration": 39
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 436,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/b3022226-0a94-4d1f-a794-75b50374873e",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007232054
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53d9177f4a98b0/1775007231033/eZEf6WJZI77anpg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007232375,
+        "endTime": 1775007232394,
+        "duration": 19
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 175,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53d9177f7298b0/1775007231082/1eb467efed18925e73d6489953af0cca144761d717b7d2ee3df62dbb16aa8aa3/z9kaufWZd2l_WNo",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007232389,
+        "endTime": 1775007232460,
+        "duration": 71
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/17826b8b-ac70-4e40-98a3-39186ee8f4cb",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007232454
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/17826b8b-ac70-4e40-98a3-39186ee8f4cb",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007232665
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/17826b8b-ac70-4e40-98a3-39186ee8f4cb",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007232667
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53d9177f7298b0/K1x4ErQss.eCpUxqaFveNGt5gcmpEh1lN9JpLrZJu9g-1775007230-1.2.1.1-GZk2L_4RaFlcVT2WhD6lycyDTqk6.5_Q2rzGAZBNWcKVeqX8L6bgCofQmfI72Omm",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007233156
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53d9177f4a98b0/537w0aFBadxD7PKh1kFtTOs_mmHRF9I7Qbjg2lcQY_8-1775007230-1.2.1.1-Kp68SSvwtjCAVErt6dGzoS3rD4aw0VJGSduvtv2VtAzOZyCI4lLRRDexrUnJtwKh",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007233564
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007230446&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1482282052.1775007226&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=0~115938466~115938468~116991817&sid=1775007225&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F13%2Fbehind-the-scenes-at-techcrunch-disrupt-2022&dt=AppMap%20%7C%20Behind%20the%20scenes%20at%20TechCrunch%20Disrupt%202022&en=page_view&_ee=1&tfd=5260",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007235572,
+        "endTime": 1775007235608,
+        "duration": 36
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007230446&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1482282052.1775007226&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938466~115938468~116991817&sid=1775007225&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F13%2Fbehind-the-scenes-at-techcrunch-disrupt-2022&dt=AppMap%20%7C%20Behind%20the%20scenes%20at%20TechCrunch%20Disrupt%202022&en=scroll&epn.percent_scrolled=90&_et=7484&tfd=12747",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007243059,
+        "endTime": 1775007243094,
+        "duration": 35
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rchcHLn_3GrHXAbGpem8D2dl4ZaJoiVRlDPH4zjmlTuTqE-1775007230-1.3.1.1-oGVRgkP6TU5Sqg6De.Y41QzS_nEJt5oG0fNitHUyp7w/vt9a0/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/failure_retry/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007243212,
+        "endTime": 1775007243244,
+        "duration": 32
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007243264
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/97abed49-c490-44ef-9fc7-4a73400ef722",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007243273
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53d9662a7198b0/NXLR1r3TtYJuQxm_UyOdnP9NyvhsaRadxIB4yckXHmI-1775007243-1.2.1.1-p5yaEXz1nmq7YfvPOcf1mNf.0foEcq8PCLMclRC4vFBAgNzi5OPYW62iLIUvbbMA",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007243432,
+        "endTime": 1775007243512,
+        "duration": 80
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/200b7ac9-1f7e-4604-8e49-89cb24d410bb",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007243578,
+        "endTime": 1775007244308,
+        "duration": 730
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rchNlVVedt.WBBNisHCuwtxjFel75RUFdzL.KTz6hORh7A-1775007230-1.3.1.1-cGkEDr_7QBjNfwxKC96wn37IAbu3HU.uQ968_nQHB68/l5z0n/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/failure_retry/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007243627,
+        "endTime": 1775007243672,
+        "duration": 45
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007243726
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/6d092c9b-57a8-4f0e-b90e-7dade0c9523f",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007243752
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53d9662a7198b0/1775007243452/ytKU2dLVoE4_lms",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007243869,
+        "endTime": 1775007243929,
+        "duration": 60
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 397,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53d968ba5c98b0/vipJVz68jlF.RCRBPQtxEFoQgfq.FKXCoHMOM.hwqCM-1775007243-1.2.1.1-8x3YYVOaGNe6_I2IwPaDx6sGcIdNPjymWcwmQt5AiZGqOss63wVKXwL1.cK0EUhC",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007243929,
+        "endTime": 1775007244067,
+        "duration": 138
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53d9662a7198b0/1775007243453/606c6f7c75ea19efc7504e655abd4677d08dfd6f5755bb4d2249341f87a873af/PQwHx57p6-FAMbY",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007243985,
+        "endTime": 1775007244008,
+        "duration": 23
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/5e00d6d3-15c0-43e3-b60e-d50e936cc778",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007244079,
+        "endTime": 1775007244516,
+        "duration": 437
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/5e00d6d3-15c0-43e3-b60e-d50e936cc778",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007244171
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/5e00d6d3-15c0-43e3-b60e-d50e936cc778",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007244172
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/200b7ac9-1f7e-4604-8e49-89cb24d410bb",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007244288
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/5e00d6d3-15c0-43e3-b60e-d50e936cc778",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007244406
+      },
+      "redirected": false,
+      "fromCache": false
+    }
+  ]
+}

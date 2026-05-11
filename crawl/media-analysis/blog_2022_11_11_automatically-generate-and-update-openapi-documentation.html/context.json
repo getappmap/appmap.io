@@ -1,0 +1,229 @@
+{
+  "timestamp": "2026-04-01T01:32:25.421Z",
+  "crawlDirectory": "crawl/site/blog/2022/11/11/automatically-generate-and-update-openapi-documentation/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 10,
+  "foundAssets": 9,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2022/11/11/automatically-generate-and-update-openapi-documentation/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/openapi-feature.png",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/openapi-feature.png",
+          "foundInFile": "crawl/site/blog/2022/11/11/automatically-generate-and-update-openapi-documentation/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2022/11/11/automatically-generate-and-update-openapi-documentation/\">\n<meta property=\"og:si...osts/openapi-feature.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2022-11-11T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/openapi-feature.png"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Automatically Generate and Update OpenAPI Documentation\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawe"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/openapi-feature.png",
+          "foundInFile": "crawl/site/blog/2022/11/11/automatically-generate-and-update-openapi-documentation/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2022/11/11/automatically-generate-and-update-openapi-documentation/\">\n<meta property=\"og:si...osts/openapi-feature.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2022-11-11T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/openapi-feature.png",
+            "alt": "Automatically Generate and Update OpenAPI Documentation",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Automatically Generate and Update OpenAPI Documentation\n  \n    The OpenAPI specification, which is formerly known as Swagger Specification, is a community driven open standard, programmi"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/generate-update-openapi-1.jpeg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/generate-update-openapi-1.jpeg",
+          "foundInFile": "crawl/site/blog/2022/11/11/automatically-generate-and-update-openapi-documentation/index.html",
+          "context": "</code></pre></div></div>\n\n<p><img src=\"/assets/img/posts/generate-update-openapi-1.jpeg\" alt=\"generate and update openapi\" class=\"no-border-margin\"></p>\n\n<h3 id=\"request-recording\">Request Recording</h3>",
+          "lineNumber": 302,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/generate-update-openapi-1.jpeg",
+            "alt": "generate and update openapi",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 61
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/generate-update-openapi-2.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/generate-update-openapi-2.png",
+          "foundInFile": "crawl/site/blog/2022/11/11/automatically-generate-and-update-openapi-documentation/index.html",
+          "context": "</code></pre></div></div>\n\n<p><img src=\"/assets/img/posts/generate-update-openapi-2.png\" alt=\"generate and update openapi\" class=\"no-border-margin\"...ort it into <a href=\"https://hoppscotch.io/\">Hoppscotch</a> as a new collection by navigating to the collections button on the right hand side.</p>",
+          "lineNumber": 328,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/generate-update-openapi-2.png",
+            "alt": "generate and update openapi",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/generate-update-openapi-3.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/generate-update-openapi-3.png",
+          "foundInFile": "crawl/site/blog/2022/11/11/automatically-generate-and-update-openapi-documentation/index.html",
+          "context": "<p>You can now take this file and import it into <a href=\"https://hoppscotch.io/\">Hoppscotch</a> as a new collection by navigating to the collectio...mg/posts/generate-update-openapi-3.png\" alt=\"generate and update openapi\" class=\"no-border-margin\"></p>\n\n<p>Select on the “Import/Export” icon.</p>",
+          "lineNumber": 332,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/generate-update-openapi-3.png",
+            "alt": "generate and update openapi",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/generate-update-openapi-4.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/generate-update-openapi-4.png",
+          "foundInFile": "crawl/site/blog/2022/11/11/automatically-generate-and-update-openapi-documentation/index.html",
+          "context": "<p>Select on the “Import/Export” icon.</p>\n\n<p><img src=\"/assets/img/posts/generate-update-openapi-4.png\" alt=\"generate and update openapi\" class=\"no-border-margin\"></p>\n\n<p>Choose to import from OpenAPI</p>",
+          "lineNumber": 336,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/generate-update-openapi-4.png",
+            "alt": "generate and update openapi",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/generate-update-openapi-5.jpeg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/generate-update-openapi-5.jpeg",
+          "foundInFile": "crawl/site/blog/2022/11/11/automatically-generate-and-update-openapi-documentation/index.html",
+          "context": "<p>Choose to import from OpenAPI</p>\n\n<p><img src=\"/assets/img/posts/generate-update-openapi-5.jpeg\" alt=\"generate and update openapi\" class=\"no-border-margin\"></p>\n\n<p>And then finally, select the OpenAPI file we created in the previous step.</p>",
+          "lineNumber": 340,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/generate-update-openapi-5.jpeg",
+            "alt": "generate and update openapi",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 61
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/generate-update-openapi-6.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/generate-update-openapi-6.png",
+          "foundInFile": "crawl/site/blog/2022/11/11/automatically-generate-and-update-openapi-documentation/index.html",
+          "context": "<p>And then finally, select the OpenAPI file we created in the previous step.</p>\n\n<p><img src=\"/assets/img/posts/generate-update-openapi-6.png\" al...d features, and finally export these OpenAPI specifications to your users so that they will know how to interact with your application as well.</p>",
+          "lineNumber": 344,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/generate-update-openapi-6.png",
+            "alt": "generate and update openapi",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2022/11/11/automatically-generate-and-update-openapi-documentation/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 372,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2022%2F11%2F11%2Fautomatically-generate-and-update-openapi-documentation%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2022%2F11%2F11%2Fautomatically-generate-and-update-openapi-documentation&t=AppMap+%7C+Automatically+Generate+and+Update+OpenAPI+Documentation&cts=1775007130348&rv=1&vi=fbb342b38770d6940454582a04d25d82&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

@@ -1,0 +1,1710 @@
+{
+  "url": "https://appmap.io/docs/using-navie-ai/choose-llm-provider",
+  "timestamp": "2026-04-01T01:54:22.357Z",
+  "loadTime": 21746,
+  "summary": {
+    "totalRequests": 104,
+    "successfulRequests": 78,
+    "failedRequests": 3,
+    "cachedRequests": 0,
+    "redirectedRequests": 0,
+    "slowRequests": 0
+  },
+  "requestsByType": {
+    "document": 7,
+    "stylesheet": 15,
+    "script": 29,
+    "image": 32,
+    "fetch": 8,
+    "font": 5,
+    "xhr": 1,
+    "ping": 7
+  },
+  "failedRequests": [
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775008440983&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=153648563.1775008441&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938466~115938468~116991817~117384406&sid=1775008441&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fchoose-llm-provider&dt=AppMap%20-%20Docs%20-%20Navie%20-%20Choosing%20an%20LLM%20Provider&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=615",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775008441378,
+        "duration": 143
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775008441398,
+        "duration": 123
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775008440983&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=153648563.1775008441&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938466~115938468~116991817~117384406&sid=1775008441&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fchoose-llm-provider&dt=AppMap%20-%20Docs%20-%20Navie%20-%20Choosing%20an%20LLM%20Provider&en=scroll&epn.percent_scrolled=90&_et=13398&tfd=19016",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775008459775,
+        "duration": 36
+      }
+    }
+  ],
+  "slowRequests": [],
+  "allRequests": [
+    {
+      "url": "https://appmap.io/docs/using-navie-ai/choose-llm-provider",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775008440762,
+        "endTime": 1775008440853,
+        "duration": 91
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008440867,
+        "endTime": 1775008440953,
+        "duration": 86
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 1174
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008440868,
+        "endTime": 1775008440970,
+        "duration": 102
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008440868,
+        "endTime": 1775008440975,
+        "duration": 107
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008440868,
+        "endTime": 1775008440977,
+        "duration": 109
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008440868,
+        "endTime": 1775008440975,
+        "duration": 107
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008440868,
+        "endTime": 1775008440956,
+        "duration": 88
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1028
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008440868,
+        "endTime": 1775008440945,
+        "duration": 77
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 1173
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008440868,
+        "endTime": 1775008440912,
+        "duration": 44
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008440868,
+        "endTime": 1775008440956,
+        "duration": 88
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008440868,
+        "endTime": 1775008441264,
+        "duration": 396
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173015,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008440868,
+        "endTime": 1775008441108,
+        "duration": 240
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 631,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440868,
+        "endTime": 1775008440913,
+        "duration": 45
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 518
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/vscode-icon.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440868,
+        "endTime": 1775008440903,
+        "duration": 35
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1681,
+        "responseHeadersSize": 519
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/jetbrains.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440868,
+        "endTime": 1775008440962,
+        "duration": 94
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1809,
+        "responseHeadersSize": 565
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/docs/navie-llm-configuration-dialog.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440868,
+        "endTime": 1775008441199,
+        "duration": 331
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 15166,
+        "responseHeadersSize": 655
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/navie-default-model.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441264,
+        "duration": 392
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 51642,
+        "responseHeadersSize": 514
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/navie-byok-openai-1.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441310,
+        "duration": 438
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 29924,
+        "responseHeadersSize": 514
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/navie-byok-openai-2.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441311,
+        "duration": 439
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 18116,
+        "responseHeadersSize": 514
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/navie-byok-jetbrains.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441305,
+        "duration": 433
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 49210,
+        "responseHeadersSize": 514
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/navie-byok-openai-3.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441222,
+        "duration": 350
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 50756,
+        "responseHeadersSize": 514
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/custom-model.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441305,
+        "duration": 433
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7978,
+        "responseHeadersSize": 513
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/create-anthropic-key.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441260,
+        "duration": 388
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 18504,
+        "responseHeadersSize": 514
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/give-anthropic-key-name.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441260,
+        "duration": 388
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7808,
+        "responseHeadersSize": 513
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441099,
+        "duration": 227
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7917,
+        "responseHeadersSize": 789
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/navie-gemini-config-1.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441189,
+        "duration": 317
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 27046,
+        "responseHeadersSize": 514
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/navie-gemini-config-2.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441260,
+        "duration": 388
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26786,
+        "responseHeadersSize": 514
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/lmstudio-run-local-server.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441260,
+        "duration": 388
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 57606,
+        "responseHeadersSize": 514
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/lmstudio-load-model.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441310,
+        "duration": 438
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 216354,
+        "responseHeadersSize": 515
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/lmstudio-confirm-running.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441310,
+        "duration": 438
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 74108,
+        "responseHeadersSize": 514
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/lmstudio-model-inspector.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441310,
+        "duration": 438
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 22290,
+        "responseHeadersSize": 514
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008440872,
+        "endTime": 1775008441099,
+        "duration": 227
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 642
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008440873,
+        "endTime": 1775008441094,
+        "duration": 221
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1050
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008440873,
+        "endTime": 1775008441094,
+        "duration": 221
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 1192
+      }
+    },
+    {
+      "url": "https://appmap.io/application.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008440873,
+        "endTime": 1775008441094,
+        "duration": 221
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 574
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008440984,
+        "endTime": 1775008441094,
+        "duration": 110
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008440986,
+        "endTime": 1775008441094,
+        "duration": 108
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008440986,
+        "endTime": 1775008441099,
+        "duration": 113
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008440986,
+        "endTime": 1775008441094,
+        "duration": 108
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://player.vimeo.com/video/1003330117",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775008440995,
+        "endTime": 1775008441546,
+        "duration": 551
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775008441081,
+        "endTime": 1775008441257,
+        "duration": 176
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45712,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775008441082,
+        "endTime": 1775008441216,
+        "duration": 134
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/video/1003330117",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775008441101
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://player.vimeo.com/video/970914908",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775008441108,
+        "endTime": 1775008441471,
+        "duration": 363
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK"
+    },
+    {
+      "url": "https://player.vimeo.com/video/970914884",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775008441116,
+        "endTime": 1775008441524,
+        "duration": 408
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK"
+    },
+    {
+      "url": "https://player.vimeo.com/video/992941358",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775008441121,
+        "endTime": 1775008441507,
+        "duration": 386
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK"
+    },
+    {
+      "url": "https://player.vimeo.com/video/969002308",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775008441125,
+        "endTime": 1775008441523,
+        "duration": 398
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775008441178,
+        "endTime": 1775008441310,
+        "duration": 132
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 128352,
+        "responseHeadersSize": 854
+      }
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775008200000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441206,
+        "endTime": 1775008441385,
+        "duration": 179
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441206,
+        "endTime": 1775008441384,
+        "duration": 178
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441207,
+        "endTime": 1775008441382,
+        "duration": 175
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775008440983&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=153648563.1775008441&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938466~115938468~116991817~117384406&sid=1775008441&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fchoose-llm-provider&dt=AppMap%20-%20Docs%20-%20Navie%20-%20Choosing%20an%20LLM%20Provider&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=615",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008441378,
+        "endTime": 1775008441521,
+        "duration": 143
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008441398,
+        "endTime": 1775008441453,
+        "duration": 55
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008441398,
+        "endTime": 1775008441521,
+        "duration": 123
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/player.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441431,
+        "endTime": 1775008441941,
+        "duration": 510
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 206879,
+        "responseHeadersSize": 573
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/vendor.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441431,
+        "endTime": 1775008441940,
+        "duration": 509
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 95364,
+        "responseHeadersSize": 574
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/css/player.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008441431,
+        "endTime": 1775008441911,
+        "duration": 480
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 21731,
+        "responseHeadersSize": 559
+      }
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1919728707-b86852a0af81df1e07c49b1dbddd2d9c4aeaa45749dc3564d971634be817561d-d?mw=80&q=85",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008441436,
+        "endTime": 1775008441923,
+        "duration": 487
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1421,
+        "responseHeadersSize": 528
+      }
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775008441440,
+        "endTime": 1775008441572,
+        "duration": 132
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775008441493,
+        "endTime": 1775008441587,
+        "duration": 94
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775008441493,
+        "endTime": 1775008441587,
+        "duration": 94
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 852
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/player.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441513
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/vendor.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441513
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/css/player.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008441513
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1884592541-06c80a1dc8f68d39c1b7e63ba9c8030fbaba693c1576c281bace655849942a0f-d?mw=80&q=85",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008441520,
+        "endTime": 1775008441649,
+        "duration": 129
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1660,
+        "responseHeadersSize": 529
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/player.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441528
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/vendor.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441528
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/css/player.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008441528
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/player.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441564
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/vendor.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441564
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/css/player.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008441564
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008441573,
+        "endTime": 1775008441910,
+        "duration": 337
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 35,
+        "responseHeadersSize": 690
+      }
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1908860256-0559e581ca3e846ea761c73a8390368862905e2bc787beb235cab62c173307de-d?mw=80&q=85",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008441582,
+        "endTime": 1775008441906,
+        "duration": 324
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1793,
+        "responseHeadersSize": 529
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/player.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441606
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/vendor.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441606
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/css/player.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008441606
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/player.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441721
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/vendor.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008441721
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/css/player.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008441721
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1882284654-a4e7402156a010179b440dce68a199e4b12ca15bdbf0b13f0d974a3b8d332461-d?mw=80&q=85",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008441727,
+        "endTime": 1775008441912,
+        "duration": 185
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 969,
+        "responseHeadersSize": 527
+      }
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1884592195-49ef9f208769d75d03b58d45c0d1957009599ee3a34fb9e911a3678e3c384153-d?mw=80&q=85",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008441921,
+        "endTime": 1775008441943,
+        "duration": 22
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1704,
+        "responseHeadersSize": 529
+      }
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1919728707-b86852a0af81df1e07c49b1dbddd2d9c4aeaa45749dc3564d971634be817561d-d?mw=80&q=85",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008441922
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fchoose-llm-provider.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fchoose-llm-provider&t=AppMap+-+Docs+-+Navie+-+Choosing+an+LLM+Provider&cts=1775008441970&rv=1&vi=61caf2cc1dfdf6937baa24abb807e1a4&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008441972,
+        "endTime": 1775008442126,
+        "duration": 154
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 1003
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008442089,
+        "endTime": 1775008442405,
+        "duration": 316
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 985,
+        "responseHeadersSize": 611
+      }
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1884592541-06c80a1dc8f68d39c1b7e63ba9c8030fbaba693c1576c281bace655849942a0f-d?mw=1000&mh=584",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008442090,
+        "endTime": 1775008442091,
+        "duration": 1
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14898,
+        "responseHeadersSize": 530
+      }
+    },
+    {
+      "url": "https://arclight.vimeo.com/add/player-stats?beacon=1&session-id=b2c966b81308f9f6b2f317ec4369078317b734f81775008441",
+      "method": "POST",
+      "resourceType": "ping",
+      "timing": {
+        "startTime": 1775008442091,
+        "endTime": 1775008442392,
+        "duration": 301
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 215
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008442124
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1919728707-b86852a0af81df1e07c49b1dbddd2d9c4aeaa45749dc3564d971634be817561d-d?mw=1000&mh=563",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008442124,
+        "endTime": 1775008442273,
+        "duration": 149
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 13435,
+        "responseHeadersSize": 529
+      }
+    },
+    {
+      "url": "https://arclight.vimeo.com/add/player-stats?beacon=1&session-id=273237fce60c762c60042f83ea0015f0344bfb4f1775008441",
+      "method": "POST",
+      "resourceType": "ping",
+      "timing": {
+        "startTime": 1775008442125,
+        "endTime": 1775008442405,
+        "duration": 280
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 215
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008442161
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1908860256-0559e581ca3e846ea761c73a8390368862905e2bc787beb235cab62c173307de-d?mw=1000&mh=563",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008442161,
+        "endTime": 1775008442195,
+        "duration": 34
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 17416,
+        "responseHeadersSize": 529
+      }
+    },
+    {
+      "url": "https://arclight.vimeo.com/add/player-stats?beacon=1&session-id=26a3bb5f1e55511270e41d5a4c914eb23bbbab6c1775008441",
+      "method": "POST",
+      "resourceType": "ping",
+      "timing": {
+        "startTime": 1775008442161,
+        "endTime": 1775008442405,
+        "duration": 244
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 215
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008442193
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1882284654-a4e7402156a010179b440dce68a199e4b12ca15bdbf0b13f0d974a3b8d332461-d?mw=1000&mh=584",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008442194,
+        "endTime": 1775008442233,
+        "duration": 39
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 41012,
+        "responseHeadersSize": 529
+      }
+    },
+    {
+      "url": "https://arclight.vimeo.com/add/player-stats?beacon=1&session-id=62c3156c4a43252f7976c0742a13d2fa82ba53181775008441",
+      "method": "POST",
+      "resourceType": "ping",
+      "timing": {
+        "startTime": 1775008442194,
+        "endTime": 1775008442415,
+        "duration": 221
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 215
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008442232
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1884592195-49ef9f208769d75d03b58d45c0d1957009599ee3a34fb9e911a3678e3c384153-d?mw=1000&mh=584",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008442232,
+        "endTime": 1775008442273,
+        "duration": 41
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14964,
+        "responseHeadersSize": 529
+      }
+    },
+    {
+      "url": "https://arclight.vimeo.com/add/player-stats?beacon=1&session-id=9911799071f6249df1032d2423be07224f6865e41775008441",
+      "method": "POST",
+      "resourceType": "ping",
+      "timing": {
+        "startTime": 1775008442232,
+        "endTime": 1775008442418,
+        "duration": 186
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 215
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008442272
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1919728707-b86852a0af81df1e07c49b1dbddd2d9c4aeaa45749dc3564d971634be817561d-d?mw=1000&mh=563",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008442272
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://arclight.vimeo.com/add/player-stats?beacon=1&session-id=914c1e1da15ce75bfe3b93c602c485fc25ed933f1775008441",
+      "method": "POST",
+      "resourceType": "ping",
+      "timing": {
+        "startTime": 1775008442273,
+        "endTime": 1775008442494,
+        "duration": 221
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 242
+      }
+    },
+    {
+      "url": "https://vimeo.com/ablincoln/vuid?pid=b2c966b81308f9f6b2f317ec4369078317b734f81775008441",
+      "method": "POST",
+      "resourceType": "ping",
+      "timing": {
+        "startTime": 1775008442417,
+        "endTime": 1775008442591,
+        "duration": 174
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "No Content"
+    },
+    {
+      "url": "https://orion.bendingspoons.com/v3/identity/settings",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008442596,
+        "endTime": 1775008442712,
+        "duration": 116
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775008440983&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=153648563.1775008441&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938466~115938468~116991817~117384406&sid=1775008441&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fchoose-llm-provider&dt=AppMap%20-%20Docs%20-%20Navie%20-%20Choosing%20an%20LLM%20Provider&en=scroll&epn.percent_scrolled=90&_et=13398&tfd=19016",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008459775,
+        "endTime": 1775008459811,
+        "duration": 36
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    }
+  ]
+}

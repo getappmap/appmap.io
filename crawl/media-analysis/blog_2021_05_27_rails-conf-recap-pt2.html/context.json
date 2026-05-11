@@ -1,0 +1,105 @@
+{
+  "timestamp": "2026-04-01T01:22:59.642Z",
+  "crawlDirectory": "crawl/site/blog/2021/05/27/rails-conf-recap-pt2/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 6,
+  "foundAssets": 3,
+  "notFoundAssets": 3,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/05/27/rails-conf-recap-pt2/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/railsconf-recap-2-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/railsconf-recap-2-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/05/27/rails-conf-recap-pt2/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/05/27/rails-conf-recap-pt2/\">\n<meta property=\"og:site_name\" content=\"AppMap\">\n<meta pr...onf-recap-2-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-05-27T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/railsconf-recap-2-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | RailsConf Recap Part 2: How to auto-document end-to-end flows with AppMap\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License",
+          "columnRange": {
+            "start": 35,
+            "end": 100
+          }
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/railsconf-recap-2-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/05/27/rails-conf-recap-pt2/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/05/27/rails-conf-recap-pt2/\">\n<meta property=\"og:site_name\" content=\"AppMap\">\n<meta pr...onf-recap-2-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-05-27T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/railsconf-recap-2-feature.webp",
+            "alt": "RailsConf Recap Part 2: How to auto-document end-to-end flows with AppMap",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  RailsConf Recap Part 2: How to auto-document end-to-end flows with AppMap\n  \n    In case you missed it, I’m recapping my recent RailsConf 2021 talk in a series of four, short blog posts.",
+          "columnRange": {
+            "start": 52,
+            "end": 100
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/05/27/rails-conf-recap-pt2/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 206,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/e675603c3ebb439f9f7e5a40a95bf531-00001.jpg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/e675603c3ebb439f9f7e5a40a95bf531-00001.mp4",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F05%2F27%2Frails-conf-recap-pt2%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F05%2F27%2Frails-conf-recap-pt2&t=AppMap+%7C+RailsConf+Recap+Part+2%3A+How+to+auto-document+end-to-end+flows+with+AppMap&cts=1775006571667&rv=1&vi=c67fa497c7ee4863af72f891ea599d2a&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

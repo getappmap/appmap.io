@@ -1,0 +1,180 @@
+{
+  "timestamp": "2026-04-01T01:15:24.856Z",
+  "crawlDirectory": "crawl/site/blog/2021/01/13/pre-debugging-with-appmap-in-vscode/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 9,
+  "foundAssets": 8,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/01/13/pre-debugging-with-appmap-in-vscode/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/pre-debugging-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/pre-debugging-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/01/13/pre-debugging-with-appmap-in-vscode/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/01/13/pre-debugging-with-appmap-in-vscode/\">\n<meta property=\"og:site_name\" content=\"Ap...e-debugging-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-01-13T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/pre-debugging-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Pre-debugging with AppMap in VSCode\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license/fre"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/pre-debugging-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/01/13/pre-debugging-with-appmap-in-vscode/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/01/13/pre-debugging-with-appmap-in-vscode/\">\n<meta property=\"og:site_name\" content=\"Ap...e-debugging-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-01-13T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/pre-debugging-feature.webp",
+            "alt": "Pre-debugging with AppMap in VSCode",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Pre-debugging with AppMap in VSCode\n  \n    You’ve got a bug to fix. You’ve got the code, you’ve got a development environment, you’ve got everything setup in VSCode. You’re ready to star"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/code-breakpoint.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/code-breakpoint.webp",
+          "foundInFile": "crawl/site/blog/2021/01/13/pre-debugging-with-appmap-in-vscode/index.html",
+          "context": "    <p>You’ve got a bug to fix. You’ve got the code, you’ve got a development environment, you’ve got everything setup in VSCode. You’re ready to s...<img src=\"/images/code-breakpoint.webp\" alt=\"Add breakpoint\"></p>\n<blockquote>\n  <p>A breakpoint will tell me exactly what’s going on in the code. ",
+          "lineNumber": 169,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/code-breakpoint.webp",
+            "alt": "Add breakpoint"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/failing-test-case.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/failing-test-case.webp",
+          "foundInFile": "crawl/site/blog/2021/01/13/pre-debugging-with-appmap-in-vscode/index.html",
+          "context": "</ul>\n\n<p><img src=\"/images/failing-test-case.webp\" alt=\"failing test case\"></p>\n<blockquote>\n  <p>A failing test case is the best way to start fixing a bug</p>",
+          "lineNumber": 214,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/failing-test-case.webp",
+            "alt": "failing test case"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/smooth-debugging.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/smooth-debugging.png",
+          "foundInFile": "crawl/site/blog/2021/01/13/pre-debugging-with-appmap-in-vscode/index.html",
+          "context": "<p>The AppMap framework provides full-featured interactive diagrams for viewing, searching and exploring AppMap Diagrams, and the AppMap VSCode ext...es/smooth-debugging.png\" alt=\"smooth pre-debugging\"></p>\n<blockquote>\n  <p>The AppMap extension provides a smooth pre-debugging user experience</p>",
+          "lineNumber": 224,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/smooth-debugging.png",
+            "alt": "smooth pre-debugging"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/code-flow-diagram.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/code-flow-diagram.webp",
+          "foundInFile": "crawl/site/blog/2021/01/13/pre-debugging-with-appmap-in-vscode/index.html",
+          "context": "<p>The visual AppMap is helpful for debugging in two ways. First, when you look at the Component diagram, you’re only seeing the classes and packag...ode-flow-diagram.webp\" alt=\"code flow diagram\"></p>\n<blockquote>\n  <p>Code flow, variable values, SQL, and source code, all integrated together</p>",
+          "lineNumber": 232,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/code-flow-diagram.webp",
+            "alt": "code flow diagram"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/hover-on-node.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/hover-on-node.png",
+          "foundInFile": "crawl/site/blog/2021/01/13/pre-debugging-with-appmap-in-vscode/index.html",
+          "context": "</ul>\n\n<p><img src=\"/images/hover-on-node.png\" alt=\"hovering on node\"></p>\n<blockquote>\n  <p>If there’s a problem with this flow, you definitely need to get to the bottom of it…</p>",
+          "lineNumber": 246,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/hover-on-node.png",
+            "alt": "hovering on node"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/01/13/pre-debugging-with-appmap-in-vscode/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 284,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F01%2F13%2Fpre-debugging-with-appmap-in-vscode%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F01%2F13%2Fpre-debugging-with-appmap-in-vscode&t=AppMap+%7C+Pre-debugging+with+AppMap+in+VSCode&cts=1775006113412&rv=1&vi=6d5c24c9557f23f5423a0b9179bba140&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

@@ -1,0 +1,1095 @@
+{
+  "url": "https://appmap.io/docs/using-navie-ai/navie-commands",
+  "timestamp": "2026-04-01T01:55:16.142Z",
+  "loadTime": 18758,
+  "summary": {
+    "totalRequests": 63,
+    "successfulRequests": 53,
+    "failedRequests": 3,
+    "cachedRequests": 0,
+    "redirectedRequests": 0,
+    "slowRequests": 0
+  },
+  "requestsByType": {
+    "document": 3,
+    "stylesheet": 11,
+    "script": 17,
+    "image": 15,
+    "fetch": 8,
+    "font": 5,
+    "xhr": 1,
+    "ping": 3
+  },
+  "failedRequests": [
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775008497856&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1341070925.1775008498&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115616986~115938466~115938468~116991816~117266400&sid=1775008498&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fnavie-commands&dt=AppMap%20-%20Docs%20-%20AppMap%20Navie%20-%20Navie%20Commands&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=667",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775008498207,
+        "duration": 214
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775008498237,
+        "duration": 190
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775008497856&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1341070925.1775008498&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115616986~115938466~115938468~116991816~117266400&sid=1775008498&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fnavie-commands&dt=AppMap%20-%20Docs%20-%20AppMap%20Navie%20-%20Navie%20Commands&en=scroll&epn.percent_scrolled=90&_et=10882&tfd=16551",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775008514086,
+        "duration": 35
+      }
+    }
+  ],
+  "slowRequests": [],
+  "allRequests": [
+    {
+      "url": "https://appmap.io/docs/using-navie-ai/navie-commands",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775008497536,
+        "endTime": 1775008497624,
+        "duration": 88
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008497635,
+        "endTime": 1775008497695,
+        "duration": 60
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 795
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008497641,
+        "endTime": 1775008497749,
+        "duration": 108
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008497641,
+        "endTime": 1775008497746,
+        "duration": 105
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008497641,
+        "endTime": 1775008497752,
+        "duration": 111
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008497641,
+        "endTime": 1775008497850,
+        "duration": 209
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008497641,
+        "endTime": 1775008497706,
+        "duration": 65
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1040
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008497641,
+        "endTime": 1775008497696,
+        "duration": 55
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 793
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008497641,
+        "endTime": 1775008497676,
+        "duration": 35
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008497641,
+        "endTime": 1775008497712,
+        "duration": 71
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008498092,
+        "duration": 450
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173018,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008497975,
+        "duration": 333
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 631,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008497684,
+        "duration": 42
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 519
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/vscode-icon.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008497680,
+        "duration": 38
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1681,
+        "responseHeadersSize": 519
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/jetbrains.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008497753,
+        "duration": 111
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1809,
+        "responseHeadersSize": 565
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/sequence-diagram-navie.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008497728,
+        "duration": 86
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 43586,
+        "responseHeadersSize": 522
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/entity-relationship-navie.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008497795,
+        "duration": 153
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 33482,
+        "responseHeadersSize": 522
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/flow-chart-navie.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008497938,
+        "duration": 296
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 25794,
+        "responseHeadersSize": 522
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/class-map-navie.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008497939,
+        "duration": 297
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 51954,
+        "responseHeadersSize": 522
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/navie-state-diagram.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008498081,
+        "duration": 439
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 61994,
+        "responseHeadersSize": 514
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008497843,
+        "duration": 201
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7917,
+        "responseHeadersSize": 788
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/product/review-command.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008498159,
+        "duration": 517
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 118262,
+        "responseHeadersSize": 515
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008497962,
+        "duration": 320
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 642
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008497962,
+        "duration": 320
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1044
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008497642,
+        "endTime": 1775008497963,
+        "duration": 321
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 809
+      }
+    },
+    {
+      "url": "https://appmap.io/application.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008497645,
+        "endTime": 1775008497965,
+        "duration": 320
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 574
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008497857,
+        "endTime": 1775008497974,
+        "duration": 117
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008497857,
+        "endTime": 1775008497968,
+        "duration": 111
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008497858,
+        "endTime": 1775008497965,
+        "duration": 107
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008497859,
+        "endTime": 1775008497974,
+        "duration": 115
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775008497937,
+        "endTime": 1775008498091,
+        "duration": 154
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45712,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775008497937,
+        "endTime": 1775008498086,
+        "duration": 149
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/video/985121150",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775008497962,
+        "endTime": 1775008498415,
+        "duration": 453
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK"
+    },
+    {
+      "url": "https://player.vimeo.com/video/985121150",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775008497968
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775008498024,
+        "endTime": 1775008498122,
+        "duration": 98
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 128352,
+        "responseHeadersSize": 854
+      }
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775008200000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008498124,
+        "endTime": 1775008498237,
+        "duration": 113
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008498124,
+        "endTime": 1775008498242,
+        "duration": 118
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008498124,
+        "endTime": 1775008498222,
+        "duration": 98
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775008497856&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1341070925.1775008498&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115616986~115938466~115938468~116991816~117266400&sid=1775008498&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fnavie-commands&dt=AppMap%20-%20Docs%20-%20AppMap%20Navie%20-%20Navie%20Commands&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=667",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008498207,
+        "endTime": 1775008498421,
+        "duration": 214
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008498235,
+        "endTime": 1775008498348,
+        "duration": 113
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008498237,
+        "endTime": 1775008498427,
+        "duration": 190
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775008498398,
+        "endTime": 1775008498431,
+        "duration": 33
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775008498398,
+        "endTime": 1775008498438,
+        "duration": 40
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 852
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/player.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008498400,
+        "endTime": 1775008498631,
+        "duration": 231
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 206879,
+        "responseHeadersSize": 574
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/vendor.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008498400,
+        "endTime": 1775008498622,
+        "duration": 222
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 95364,
+        "responseHeadersSize": 574
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/css/player.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008498400,
+        "endTime": 1775008498567,
+        "duration": 167
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 21731,
+        "responseHeadersSize": 559
+      }
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775008498407,
+        "endTime": 1775008498589,
+        "duration": 182
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1900618404-9f3ecab4016a110a9d8db91dfd1762fbf8b305eaca8da0786631835785c658b8-d?mw=80&q=85",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008498426,
+        "endTime": 1775008498618,
+        "duration": 192
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1821,
+        "responseHeadersSize": 528
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/player.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008498436
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/vendor.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008498436
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/css/player.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775008498436
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1900618404-9f3ecab4016a110a9d8db91dfd1762fbf8b305eaca8da0786631835785c658b8-d?mw=80&q=85",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008498454
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008498595,
+        "endTime": 1775008498748,
+        "duration": 153
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 35,
+        "responseHeadersSize": 690
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008498743,
+        "endTime": 1775008498836,
+        "duration": 93
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 985,
+        "responseHeadersSize": 612
+      }
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1900618404-9f3ecab4016a110a9d8db91dfd1762fbf8b305eaca8da0786631835785c658b8-d?mw=1000&mh=584",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008498747,
+        "endTime": 1775008498836,
+        "duration": 89
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 18677,
+        "responseHeadersSize": 529
+      }
+    },
+    {
+      "url": "https://arclight.vimeo.com/add/player-stats?beacon=1&session-id=e254dd6e3dd565137c9f7d6791767981cea55b591775008498",
+      "method": "POST",
+      "resourceType": "ping",
+      "timing": {
+        "startTime": 1775008498747,
+        "endTime": 1775008498899,
+        "duration": 152
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 215
+      }
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fnavie-commands.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fnavie-commands&t=AppMap+-+Docs+-+AppMap+Navie+-+Navie+Commands&cts=1775008498753&rv=1&vi=6cbad6fcdfcd2dcc99473cec68f99f84&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008498754,
+        "endTime": 1775008498890,
+        "duration": 136
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 1003
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775008498833
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1900618404-9f3ecab4016a110a9d8db91dfd1762fbf8b305eaca8da0786631835785c658b8-d?mw=1000&mh=584",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775008498836
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://arclight.vimeo.com/add/player-stats?beacon=1&session-id=f5fa57173debae30b2b631001d3885ec2e1a90a61775008498",
+      "method": "POST",
+      "resourceType": "ping",
+      "timing": {
+        "startTime": 1775008498836,
+        "endTime": 1775008498913,
+        "duration": 77
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 215
+      }
+    },
+    {
+      "url": "https://vimeo.com/ablincoln/vuid?pid=e254dd6e3dd565137c9f7d6791767981cea55b591775008498",
+      "method": "POST",
+      "resourceType": "ping",
+      "timing": {
+        "startTime": 1775008498836,
+        "endTime": 1775008498989,
+        "duration": 153
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "No Content"
+    },
+    {
+      "url": "https://orion.bendingspoons.com/v3/identity/settings",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008498917,
+        "endTime": 1775008499032,
+        "duration": 115
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775008497856&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1341070925.1775008498&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115616986~115938466~115938468~116991816~117266400&sid=1775008498&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fnavie-commands&dt=AppMap%20-%20Docs%20-%20AppMap%20Navie%20-%20Navie%20Commands&en=scroll&epn.percent_scrolled=90&_et=10882&tfd=16551",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775008514086,
+        "endTime": 1775008514121,
+        "duration": 35
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    }
+  ]
+}

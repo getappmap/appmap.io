@@ -1,0 +1,362 @@
+{
+  "timestamp": "2026-04-01T01:53:17.170Z",
+  "crawlDirectory": "crawl/site/docs/reference/vscode.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 22,
+  "foundAssets": 16,
+  "notFoundAssets": 6,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 782,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 783,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/select-copilot-model-1.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/select-copilot-model-1.webp",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "<p>Search for <code class=\"language-plaintext highlighter-rouge\">AppMap: Select Copilot Model</code> in the command palette.</p>\n\n<p><img src=\"/assets/img/product/select-copilot-model-1.webp\" alt=\"Select copilot model\"></p>\n\n<p>Then select the specific model you’d like to use with AppMap Navie</p>",
+          "lineNumber": 850,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/select-copilot-model-1.webp",
+            "alt": "Select copilot model"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/select-copilot-model-2.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/select-copilot-model-2.webp",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "<p>Then select the specific model you’d like to use with AppMap Navie</p>\n\n<p><img src=\"/assets/img/product/select-copilot-model-2.webp\" alt=\"Select copilot model\"></p>\n\n<h4 id=\"video-demo-\">Video Demo <!-- omit in toc -->",
+          "lineNumber": 854,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/select-copilot-model-2.webp",
+            "alt": "Select copilot model"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/goto-vscode-settings.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/goto-vscode-settings.webp",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "<p>In VS Code, go to settings.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/docs/goto-vscode-settings.webp\" alt=\"a screenshot of the Visual Studio Code menu\"></p>\n\n<p>Search for “appmap environment” to reveal “AppMap: Command Line Environment” setting.</p>",
+          "lineNumber": 873,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/goto-vscode-settings.webp",
+            "alt": "a screenshot of the Visual Studio Code menu"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 38,
+            "end": 80
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/search-for-appmap-environment.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/search-for-appmap-environment.webp",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "<p>Search for “appmap environment” to reveal “AppMap: Command Line Environment” setting.</p>\n\n<p><img class=\"video-screenshot\" alt=\"a screenshot of...fine the relevant environment variables according to the <a href=\"/docs/using-navie-ai/choose-llm-provider\">LLM Configuration</a> instructions.</p>",
+          "lineNumber": 877,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "alt": "a screenshot of the AppMap: Command Line Environment settings section",
+            "src": "/assets/img/docs/search-for-appmap-environment.webp"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 114,
+            "end": 165
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/navie-confirm-ui-vscode.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/navie-confirm-ui-vscode.webp",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "<p>After reloading you can confirm the model is configured correctly in the Navie Chat window.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/product/navie-confirm-ui-vscode.webp\"></p>\n\n<h2 id=\"appmap-panel\">",
+          "lineNumber": 887,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/navie-confirm-ui-vscode.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-run-with-tests.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-run-with-tests.webp",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "<p>To run your tests with AppMap enabled, navigate to the <code class=\"language-plaintext highlighter-rouge\">Testing</code> section of VS Code in t...e <a href=\"/docs/reference/appmap-java.html#requests-recording\">request recordings</a> or use <a href=\"#remote-recording\">remote recording</a>.</p>",
+          "lineNumber": 930,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/vscode-run-with-tests.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-run-with-appmap.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-run-with-appmap.webp",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "<p>To run your application with AppMap enabled, navigate to the <code class=\"language-plaintext highlighter-rouge\">Run and Debug</code> section of ... you will notice a new launch configuration in the <code class=\"language-plaintext highlighter-rouge\">.vscode</code> directory in your project.</p>",
+          "lineNumber": 934,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/vscode-run-with-appmap.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/vscode-launch-configuration.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/vscode-launch-configuration.webp",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "<p>After installing the VS Code AppMap extension for your Java project, you will notice a new launch configuration in the <code class=\"language-pla...=\"/assets/img/docs/vscode-launch-configuration.webp\"></p>\n\n<p>Next, click on the “Run and Debug” menu option in the left hand column of VS Code</p>",
+          "lineNumber": 938,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/vscode-launch-configuration.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/vscode-run-and-debug.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/vscode-run-and-debug.png",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "<p>Next, click on the “Run and Debug” menu option in the left hand column of VS Code</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/docs/vs...o the “Run with AppMap” launch configuration will start your Java application with the necessary AppMap configuration flags enabled by default.</p>",
+          "lineNumber": 942,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/vscode-run-and-debug.png"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/vscode-remote-start.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/vscode-remote-start.png",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "<p>To start a recording, click the remote recording button, or use the command <strong>AppMap: Start a Remote Recording</strong>.</p>\n\n<p><img src=... through its UI or API. Then use the stop remote recording button again, or use the command <strong>AppMap: Stop the Remote Recording</strong>.</p>",
+          "lineNumber": 977,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/vscode-remote-start.png",
+            "alt": "Start remote recording"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/vscode-remote-stop.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/vscode-remote-stop.png",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "<p>Interact with your app through its UI or API. Then use the stop remote recording button again, or use the command <strong>AppMap: Stop the Remot...s/img/docs/vscode-remote-stop.png\" alt=\"Stop remote recording\"></p>\n\n<p>You’ll be prompted to save the AppMap to a file, and it will be opened.</p>",
+          "lineNumber": 981,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/vscode-remote-stop.png",
+            "alt": "Stop remote recording"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/vscode-remote-save.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/vscode-remote-save.png",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "<p>You’ll be prompted to save the AppMap to a file, and it will be opened.</p>\n\n<p><img src=\"/assets/img/docs/vscode-remote-save.png\" alt=\"Prompt remote recording\"></p>\n\n<p>For more details about remote recording, see:</p>",
+          "lineNumber": 985,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/vscode-remote-save.png",
+            "alt": "Prompt remote recording"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/openapi/openapi-1.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/openapi/openapi-1.webp",
+          "foundInFile": "crawl/site/docs/reference/vscode.html",
+          "context": "<p>After <a href=\"/docs/recording-methods.html\">recording AppMap Data</a> for your project, open the command palette using <code class=\"language-pl... Postman.</a></p>\n\n<p><img src=\"/assets/img/openapi/openapi-1.webp\" alt=\"alt_text\" title=\"OpenAPI export to file\"></p>\n\n<h2 id=\"github-repository\">",
+          "lineNumber": 1016,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/openapi/openapi-1.webp",
+            "alt": "alt_text",
+            "title": "OpenAPI export to file"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1908129217-5eac0acadfeae15768db5d76dda677dbea2de0cfd9fd6322a69006ef7c63317c-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1880914428-9765cc859d212b296dd305240828f15551453e390f10b14c765c4ee2c0d8db26-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fvscode.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fvscode&t=AppMap+-+Docs+-+Reference+-+AppMap+for+Visual+Studio+Code&cts=1775008382082&rv=1&vi=55cd843fc3d6c25af0478e4c5685547e&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1880914428-9765cc859d212b296dd305240828f15551453e390f10b14c765c4ee2c0d8db26-d?mw=1000&mh=563",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1908129217-5eac0acadfeae15768db5d76dda677dbea2de0cfd9fd6322a69006ef7c63317c-d?mw=1000&mh=584",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

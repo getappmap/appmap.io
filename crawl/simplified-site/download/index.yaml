@@ -1,0 +1,357 @@
+tag: body
+children:
+  - tag: div
+    attributes:
+      id: hs-banner-parent
+    children:
+      - tag: div
+        attributes:
+          id: hs-eu-cookie-confirmation
+        children:
+          - tag: div
+            attributes:
+              id: hs-eu-cookie-confirmation-inner
+            children:
+              - tag: div
+                attributes:
+                  id: hs-eu-header-container
+                children:
+                  - tag: button
+                    attributes:
+                      id: hs-eu-close-button
+              - tag: div
+                attributes:
+                  id: hs-eu-policy-wording
+                children:
+                  - tag: p
+                    text: This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to im...
+              - tag: p
+                text: If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
+                attributes:
+                  id: hs-eu-cookie-disclaimer
+              - tag: div
+                attributes:
+                  id: hs-eu-cookie-confirmation-buttons-area
+                children:
+                  - tag: div
+                    attributes:
+                      id: hs-eu-confirmation-button-group
+                    children:
+                      - tag: button
+                        text: Cookies settings
+                        attributes:
+                          id: hs-eu-cookie-settings-button
+                      - tag: div
+                        attributes:
+                          id: hs-eu-opt-in-buttons
+                        children:
+                          - tag: button
+                            text: Accept
+                            attributes:
+                              id: hs-eu-confirmation-button
+                          - tag: button
+                            text: Decline
+                            attributes:
+                              id: hs-eu-decline-button
+  - tag: p
+    children:
+      - tag: b
+        text: To access the latest features
+      - tag: a
+        text: keep your code editor plug-in up to date.
+        attributes:
+          href: /docs/get-started-with-appmap/add-appmap-to-your-code-editor#keep-your-extension-up-to-date
+  - tag: nav
+    children:
+      - tag: a
+        attributes:
+          href: /
+      - tag: button
+        attributes:
+          type: button
+      - tag: div
+        attributes:
+          id: navbarText
+        children:
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Docs
+                    attributes:
+                      href: /docs
+              - tag: li
+                children:
+                  - tag: a
+                    text: Blog
+                    attributes:
+                      href: /blog
+              - tag: li
+                children:
+                  - tag: a
+                    text: Pricing
+                    attributes:
+                      href: /pricing
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Get AppMap
+                    attributes:
+                      href: /get-appmap
+              - tag: li
+                children:
+                  - tag: a
+                    text: Book a Demo
+                    attributes:
+                      id: book-demo-link
+                      href: https://meetings.hubspot.com/dustin294
+  - tag: div
+    attributes:
+      id: home-body
+    children:
+      - tag: section
+        children:
+          - tag: h1
+            text: Pricing
+          - tag: div
+            children:
+              - tag: div
+                children:
+                  - tag: div
+                    children:
+                      - tag: span
+                        text: Community Edition
+                  - tag: p
+                    text: AppMap in the code editor for personal use. Create Sequence Diagrams, Dependency Maps, Flame Graphs, and Trace Views. Includes Runtime Code Analysis in the editor, limited Navie use, and community sup...
+                  - tag: ul
+                    children:
+                      - tag: li
+                        text: Base product
+                      - tag: li
+                        text: Limited use of Navie
+                  - tag: p
+                    children:
+                      - tag: span
+                        text: $0
+              - tag: div
+                children:
+                  - tag: div
+                    children:
+                      - tag: span
+                        text: Professional
+                  - tag: p
+                    text: For professional users looking to to optimize code quality, streamline collaboration, and accelerate development cycles across their team.
+                  - tag: ul
+                    children:
+                      - tag: li
+                        text: Unlimited AppMap Diagrams
+                      - tag: li
+                        text: Unlimited use of Navie
+                      - tag: ul
+                        children:
+                          - tag: li
+                            text: Unlimited Navie Queries
+                          - tag: li
+                            text: Expanded AI Context Windows
+                          - tag: li
+                            text: Higher Token Limits
+                      - tag: li
+                        text: Support channels
+                      - tag: li
+                        text: Up to 20 users per site
+                  - tag: a
+                    text: $15 / user / month
+                    attributes:
+                      href: https://buy.stripe.com/14k3dBewneFS4lW8ww
+                  - tag: p
+                    text: 'Annual License:'
+                    children:
+                      - tag: a
+                        text: $12 / user / month
+                        attributes:
+                          href: https://buy.stripe.com/00g5lJ5ZRbtGdWw6op
+                  - tag: p
+                    children:
+                      - tag: a
+                        text: Manage subscription
+                        attributes:
+                          href: https://billing.stripe.com/p/login/14kcOoc0gbrIdqMeUU
+              - tag: div
+                children:
+                  - tag: div
+                    children:
+                      - tag: span
+                        text: Enterprise
+                  - tag: p
+                    text: Bulk discounts, and seamless integration with your existing enterprise infrastructure to improve code quality across your organization.
+                  - tag: ul
+                    children:
+                      - tag: li
+                        text: Support for on-prem
+                      - tag: li
+                        text: On-Prem Generative AI Model Integration, BYO Key
+                      - tag: li
+                        text: Priority support
+                      - tag: li
+                        text: Priority issues
+                      - tag: li
+                        text: Use of AppMap tools in CI, UAT, staging, and testing environments
+                      - tag: li
+                        text: Over 20 users per site
+                  - tag: p
+                    children:
+                      - tag: b
+                        text: 'Contact Sales:'
+                      - tag: a
+                        text: sales@appmap.io
+                        attributes:
+                          href: mailto:sales@appmap.io
+          - tag: div
+            text: By downloading and using AppMap you agree to the
+            children:
+              - tag: a
+                text: terms and conditions.
+                attributes:
+                  href: /community/terms-and-conditions.html
+  - tag: div
+    children:
+      - tag: footer
+        children:
+          - tag: div
+            children:
+              - tag: h5
+                text: Docs
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Get Started
+                        attributes:
+                          href: /docs/get-started-with-appmap/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Using Navie
+                        attributes:
+                          href: /docs/navie
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Troubleshooting
+                        attributes:
+                          href: /docs/troubleshooting
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Reference
+                        attributes:
+                          href: /docs/reference
+          - tag: div
+            children:
+              - tag: h5
+                text: Product
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Security FAQ
+                        attributes:
+                          href: /security
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Pricing
+                        attributes:
+                          href: /pricing
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Terms
+                        attributes:
+                          href: /community/terms-and-conditions.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Privacy Policy
+                        attributes:
+                          href: /community/privacy-policy
+          - tag: div
+            children:
+              - tag: h5
+                text: Company
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: About
+                        attributes:
+                          href: /company/about-appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Careers
+                        attributes:
+                          href: https://angel.co/company/appmap/jobs
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Contact
+                        attributes:
+                          href: /contact/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Brand Assets
+                        attributes:
+                          href: /company/brand-assets
+          - tag: div
+            children:
+              - tag: h5
+                text: Community
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: X
+                        attributes:
+                          href: https://twitter.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Slack
+                        attributes:
+                          href: https://appmap.io/slack
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: GitHub
+                        attributes:
+                          href: https://github.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Code of Conduct
+                        attributes:
+                          href: /community/code-of-conduct.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: YouTube
+                        attributes:
+                          href: https://www.youtube.com/@appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Blog
+                        attributes:
+                          href: /blog
+  - tag: iframe
+    attributes:
+      title: archetype

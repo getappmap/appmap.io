@@ -1,0 +1,128 @@
+{
+  "timestamp": "2026-04-01T01:39:21.317Z",
+  "crawlDirectory": "crawl/site/blog/2024/03/14/enterprise-challenges-in-AI-adoption/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 7,
+  "foundAssets": 4,
+  "notFoundAssets": 3,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2024/03/14/enterprise-challenges-in-AI-adoption/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/enterprise-adoption-curve.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/enterprise-adoption-curve.webp",
+          "foundInFile": "crawl/site/blog/2024/03/14/enterprise-challenges-in-AI-adoption/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2024/03/14/enterprise-challenges-in-AI-adoption/\">\n<meta property=\"og:site_name\" content=\"A...rise-adoption-curve.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2024-03-14T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/enterprise-adoption-curve.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Enterprise Challenges in AI Adoption\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license/fr",
+          "columnRange": {
+            "start": 35,
+            "end": 100
+          }
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/enterprise-adoption-curve.webp",
+          "foundInFile": "crawl/site/blog/2024/03/14/enterprise-challenges-in-AI-adoption/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2024/03/14/enterprise-challenges-in-AI-adoption/\">\n<meta property=\"og:site_name\" content=\"A...rise-adoption-curve.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2024-03-14T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/enterprise-adoption-curve.webp",
+            "alt": "Enterprise Challenges in AI Adoption",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Enterprise Challenges in AI Adoption\n  \n    Artificial intelligence (AI) enhanced development is the next movement in software development, following on the heels of DevOps/Cloud and Agi",
+          "columnRange": {
+            "start": 52,
+            "end": 100
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/non-it-barriers-to-rapid-generative-ai-adoption.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/non-it-barriers-to-rapid-generative-ai-adoption.webp",
+          "foundInFile": "crawl/site/blog/2024/03/14/enterprise-challenges-in-AI-adoption/index.html",
+          "context": "<p>The efficacy of AI in development for large heritage codebases is largely contingent upon its access to extensive sensitive databases, sensitive...from-the-disrupted/#:~:text=Most%20respondents%20hope%20to%20be,of%2C%20generative%20AI%20in%202023.\">Source: MIT Technology Review</a></cite></p>\n",
+          "lineNumber": 179,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/non-it-barriers-to-rapid-generative-ai-adoption.webp",
+            "alt": "Data Privacy"
+          },
+          "surroundingText": "\nSource: MIT Technology Review",
+          "columnRange": {
+            "start": 13,
+            "end": 83
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2024/03/14/enterprise-challenges-in-AI-adoption/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 244,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1802869952-287d01725aafa3805d7ef05dd422b165c373c6d7f48bf9b6ef97ca82a5fee964-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2024%2F03%2F14%2Fenterprise-challenges-in-AI-adoption%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2024%2F03%2F14%2Fenterprise-challenges-in-AI-adoption&t=AppMap+%7C+Enterprise+Challenges+in+AI+Adoption&cts=1775007550045&rv=1&vi=4df057281f3b87cfb3463124fe1a237d&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1802869952-287d01725aafa3805d7ef05dd422b165c373c6d7f48bf9b6ef97ca82a5fee964-d?mw=800&mh=468",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

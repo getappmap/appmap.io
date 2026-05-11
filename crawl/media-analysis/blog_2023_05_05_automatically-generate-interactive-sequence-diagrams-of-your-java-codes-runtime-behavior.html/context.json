@@ -1,0 +1,243 @@
+{
+  "timestamp": "2026-04-01T01:35:10.578Z",
+  "crawlDirectory": "crawl/site/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 12,
+  "foundAssets": 9,
+  "notFoundAssets": 3,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/automatically-create-diagrams-feature.png",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/automatically-create-diagrams-feature.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-...ate-diagrams-feature.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-05-05T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/automatically-create-diagrams-feature.png"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Automatically generate interactive sequence diagrams of your Java code's runtime behavior\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesom",
+          "columnRange": {
+            "start": 35,
+            "end": 111
+          }
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/automatically-create-diagrams-feature.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-...ate-diagrams-feature.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-05-05T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/automatically-create-diagrams-feature.png",
+            "alt": "Automatically generate interactive sequence diagrams of your Java code's runtime behavior",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Automatically generate interactive sequence diagrams of your Java code's runtime behavior\n  \n    The AppMap team is excited to announce that automatic, interactive sequence diagrams for ",
+          "columnRange": {
+            "start": 52,
+            "end": 111
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-1.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-1.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior/index.html",
+          "context": "<p>(<a href=\"https://marketplace.visualstudio.com/items?itemName=appland.appmap\">Also available in VS Code</a>)</p>\n\n<p><img src=\"/assets/img/posts...the best tools for developers and technical non-developers (like engineering managers and product managers) to use when discussing code design.</p>",
+          "lineNumber": 171,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/automatically-generate-interactive-sequence-diagrams-1.png",
+            "alt": "Automatically create sequence diagrams"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 89
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-2.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-2.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior/index.html",
+          "context": "<p>Once you <a href=\"https://plugins.jetbrains.com/plugin/16701-appmap\">install AppMap into IntelliJ</a> and generate your own sequence diagrams, y...e” in the diagram floats as you scroll down long interactions, making it easy to keep track of which lifeline is involved in any function call.</p>",
+          "lineNumber": 192,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/automatically-generate-interactive-sequence-diagrams-2.png",
+            "alt": "Automatically create sequence diagrams"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 89
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-3.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-3.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior/index.html",
+          "context": "<p>Lifelines can also be hidden to make the sequence diagram even more readable. This is especially useful if you want to hide calls to things whic...e-diagrams-3.png\" alt=\"Automatically create sequence diagrams\"></p>\n\n<h2 id=\"examine-loops-and-call-timings-\">Examine loops and call timings ➰</h2>",
+          "lineNumber": 198,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/automatically-generate-interactive-sequence-diagrams-3.png",
+            "alt": "Automatically create sequence diagrams"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 89
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-4.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-4.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior/index.html",
+          "context": "<p>Loops are automatically detected and rendered in a summarized fashion to prevent the sequence diagram from becoming too long. All function call ...rams-4.png\" alt=\"Automatically create sequence diagrams\"></p>\n\n<h2 id=\"always-accurate-sequence-diagrams-\">Always accurate sequence diagrams ✅</h2>",
+          "lineNumber": 203,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/automatically-generate-interactive-sequence-diagrams-4.png",
+            "alt": "Automatically create sequence diagrams"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 89
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-5.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-5.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior/index.html",
+          "context": "<p>AppMap captures all SQL queries made to a database while your application runs, even if your database queries are automatically generated by an ...ically-generate-interactive-sequence-diagrams-5.png\" alt=\"Automatically create sequence diagrams\"></p>\n\n<h2 id=\"3-simple-steps\">3 simple steps</h2>",
+          "lineNumber": 211,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/automatically-generate-interactive-sequence-diagrams-5.png",
+            "alt": "Automatically create sequence diagrams"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 89
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-6.jpeg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-6.jpeg",
+          "foundInFile": "crawl/site/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior/index.html",
+          "context": "</ol>\n\n<p><img src=\"/assets/img/posts/automatically-generate-interactive-sequence-diagrams-6.jpeg\" alt=\"Automatically create sequence diagrams\"></p>\n\n<h2 id=\"available-now-for-intellij-and-jetbrains\">Available now for IntelliJ and JetBrains</h2>",
+          "lineNumber": 220,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/automatically-generate-interactive-sequence-diagrams-6.jpeg",
+            "alt": "Automatically create sequence diagrams"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 90
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 249,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803456166-572bcde5778e4a7646b8c9bbb5e24d74f6df1fa4f79ca8628c16571f37104a63-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fautomatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fautomatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior&t=AppMap+%7C+Automatically+generate+interactive+sequence+diagrams+of+your+Java+code%27s+runtime+behavior&cts=1775007298803&rv=1&vi=c74e8c12deda013f234b411692c00740&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803456166-572bcde5778e4a7646b8c9bbb5e24d74f6df1fa4f79ca8628c16571f37104a63-d?mw=800&mh=450",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

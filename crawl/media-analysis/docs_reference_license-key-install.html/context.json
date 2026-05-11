@@ -1,0 +1,213 @@
+{
+  "timestamp": "2026-04-01T01:52:24.047Z",
+  "crawlDirectory": "crawl/site/docs/reference/license-key-install.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 12,
+  "foundAssets": 10,
+  "notFoundAssets": 2,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/license-key-install.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/license-key-install.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 775,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/license-key-install.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 776,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/license-key-vscode-1.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/license-key-vscode-1.webp",
+          "foundInFile": "crawl/site/docs/reference/license-key-install.html",
+          "context": "<p>2) Search for <code class=\"language-plaintext highlighter-rouge\">AppMap license</code></p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/li...p>\n\n<p>3) Enter the license key provided by the AppMap team and press <code class=\"language-plaintext highlighter-rouge\">Enter</code> to submit</p>",
+          "lineNumber": 820,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/license-key-vscode-1.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/license-key-vscode-2.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/license-key-vscode-2.webp",
+          "foundInFile": "crawl/site/docs/reference/license-key-install.html",
+          "context": "<p>3) Enter the license key provided by the AppMap team and press <code class=\"language-plaintext highlighter-rouge\">Enter</code> to submit</p>\n\n<p....webp\"></p>\n\n<p>4) Click <code class=\"language-plaintext highlighter-rouge\">Allow</code> to allow the AppMap extension to use your license key.</p>",
+          "lineNumber": 824,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/license-key-vscode-2.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/license-key-vscode-3.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/license-key-vscode-3.webp",
+          "foundInFile": "crawl/site/docs/reference/license-key-install.html",
+          "context": "<p>4) Click <code class=\"language-plaintext highlighter-rouge\">Allow</code> to allow the AppMap extension to use your license key.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/license-key-vscode-3.webp\"></p>\n\n<p>5) AppMap will be activated for Visual Studio Code.</p>",
+          "lineNumber": 828,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/license-key-vscode-3.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/license-key-jetbrains-1.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/license-key-jetbrains-1.webp",
+          "foundInFile": "crawl/site/docs/reference/license-key-install.html",
+          "context": "<p>1) Select <code class=\"language-plaintext highlighter-rouge\">Tools</code> from the main menu of your JetBrains Code Editor. Then select <code cl...</p>\n\n<p>2) Enter the license key provided by the AppMap team and press <code class=\"language-plaintext highlighter-rouge\">Ok</code> to submit.</p>",
+          "lineNumber": 839,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/license-key-jetbrains-1.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/license-key-jetbrains-2.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/license-key-jetbrains-2.webp",
+          "foundInFile": "crawl/site/docs/reference/license-key-install.html",
+          "context": "<p>2) Enter the license key provided by the AppMap team and press <code class=\"language-plaintext highlighter-rouge\">Ok</code> to submit.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/license-key-jetbrains-2.webp\"></p>\n\n<p>3) You will now be logged into AppMap for the IDE.</p>",
+          "lineNumber": 843,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/license-key-jetbrains-2.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/license-key-jetbrains-3.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/license-key-jetbrains-3.webp",
+          "foundInFile": "crawl/site/docs/reference/license-key-install.html",
+          "context": "<p>3) You will now be logged into AppMap for the IDE.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/license-key-jetbrains-3.webp\"></p>\n\n<h3 id=\"video-how-to-install-an-appmap-license-key-in-jetbrains\">Video: How to Install an AppMap license key in JetBrains</h3>",
+          "lineNumber": 847,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/license-key-jetbrains-3.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/video/appmap-license-key-jetbrains.webm",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/video/appmap-license-key-jetbrains.webm",
+          "foundInFile": "crawl/site/docs/reference/license-key-install.html",
+          "context": "  <img id=\"JetBrainsvideoPlaceholder\" src=\"/assets/img/appmap-license-jetbrains-placeholder.webp\" style=\"display:block; width: 100%;\">\n  <video id=...appmap-license-key-jetbrains.webm\" type=\"video/webm\">\n    <source src=\"/assets/video/appmap-license-key-jetbrains.mp4\" type=\"video/mp4\">\n  </video>",
+          "lineNumber": 854,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/video/appmap-license-key-jetbrains.webm",
+            "type": "video/webm"
+          },
+          "surroundingText": "\n    \n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Flicense-key-install.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Flicense-key-install&t=AppMap+-+Docs+-+Reference+-+License+Key+Installation&cts=1775008333388&rv=1&vi=be234e8e2f3db328a71ed1c945040fa8&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-04-01T01:17:24.698Z",
+  "crawlDirectory": "crawl/site/blog/2021/02/11/ruby-on-rails-is-the-worlds-fastest-web-framework-for-startups/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 5,
+  "foundAssets": 4,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/11/ruby-on-rails-is-the-worlds-fastest-web-framework-for-startups/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/ruby-on-rails.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/ruby-on-rails.webp",
+          "foundInFile": "crawl/site/blog/2021/02/11/ruby-on-rails-is-the-worlds-fastest-web-framework-for-startups/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/11/ruby-on-rails-is-the-worlds-fastest-web-framework-for-startups/\">\n<meta property...posts/ruby-on-rails.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-11T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/ruby-on-rails.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Ruby on Rails is the world’s fastest web framework for startups\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https:/"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/ruby-on-rails.webp",
+          "foundInFile": "crawl/site/blog/2021/02/11/ruby-on-rails-is-the-worlds-fastest-web-framework-for-startups/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/11/ruby-on-rails-is-the-worlds-fastest-web-framework-for-startups/\">\n<meta property...posts/ruby-on-rails.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-11T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/ruby-on-rails.webp",
+            "alt": "Ruby on Rails is the world’s fastest web framework for startups",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Ruby on Rails is the world’s fastest web framework for startups\n  \n    I’m a 48 year old developer and entrepreneur. I’ve developed professionally in C++, Java, Python, C#, Ruby, Go, and"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/apps-built-on-rails.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/apps-built-on-rails.jpg",
+          "foundInFile": "crawl/site/blog/2021/02/11/ruby-on-rails-is-the-worlds-fastest-web-framework-for-startups/index.html",
+          "context": "<p>As an entrepreneur, my definition of “speed” is “the amount of time and money it takes to reach an objective”. Code execution speed sometimes ma...t the job done”.\n​\n<img src=\"/assets/img/posts/apps-built-on-rails.jpg\" alt=\"Built on Rails\">\n​</p>\n<h2 id=\"hiring-for-rails\">Hiring for Rails</h2>",
+          "lineNumber": 171,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/apps-built-on-rails.jpg",
+            "alt": "Built on Rails"
+          },
+          "surroundingText": "As an entrepreneur, my definition of “speed” is “the amount of time and money it takes to reach an objective”. Code execution speed sometimes matters, because I want happy users. But once the app is f"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/11/ruby-on-rails-is-the-worlds-fastest-web-framework-for-startups/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 266,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F11%2Fruby-on-rails-is-the-worlds-fastest-web-framework-for-startups%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F11%2Fruby-on-rails-is-the-worlds-fastest-web-framework-for-startups&t=AppMap+%7C+Ruby+on+Rails+is+the+world%E2%80%99s+fastest+web+framework+for+startups&cts=1775006234322&rv=1&vi=7d8d441fe1c050b24e57580afb90c220&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

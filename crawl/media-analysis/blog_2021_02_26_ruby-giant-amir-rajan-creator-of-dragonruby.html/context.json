@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-04-01T01:19:13.443Z",
+  "crawlDirectory": "crawl/site/blog/2021/02/26/ruby-giant-amir-rajan-creator-of-dragonruby/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 5,
+  "foundAssets": 4,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/26/ruby-giant-amir-rajan-creator-of-dragonruby/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/ruby-giant-header.png",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/ruby-giant-header.png",
+          "foundInFile": "crawl/site/blog/2021/02/26/ruby-giant-amir-rajan-creator-of-dragonruby/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/26/ruby-giant-amir-rajan-creator-of-dragonruby/\">\n<meta property=\"og:site_name\" con...ts/ruby-giant-header.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-26T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/ruby-giant-header.png"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Ruby Giant - Amir Rajan, Creator of DragonRuby\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/ruby-giant-header.png",
+          "foundInFile": "crawl/site/blog/2021/02/26/ruby-giant-amir-rajan-creator-of-dragonruby/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/26/ruby-giant-amir-rajan-creator-of-dragonruby/\">\n<meta property=\"og:site_name\" con...ts/ruby-giant-header.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-26T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/ruby-giant-header.png",
+            "alt": "Ruby Giant - Amir Rajan, Creator of DragonRuby",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Ruby Giant - Amir Rajan, Creator of DragonRuby\n  \n    If you’ve been around the indie games community for a few years, you’ve probably heard of Amir Rajan. He’s a game developer and the "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/ruby-giant.jpeg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/ruby-giant.jpeg",
+          "foundInFile": "crawl/site/blog/2021/02/26/ruby-giant-amir-rajan-creator-of-dragonruby/index.html",
+          "context": "—\nThis is the first in a series of posts that highlight developers doing interesting or unexpected things with Ruby. I’m calling it…\n<img src=\"/assets/img/posts/ruby-giant.jpeg\" alt=\"Alt Text\"></p>\n\n<hr>",
+          "lineNumber": 204,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/ruby-giant.jpeg",
+            "alt": "Alt Text"
+          },
+          "surroundingText": "P.S.\nMy team at AppMap makes a VS Code extension that creates software design diagrams automatically in your code editor. The visual interface we created for the plug-in was influenced by game design "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/26/ruby-giant-amir-rajan-creator-of-dragonruby/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 238,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F26%2Fruby-giant-amir-rajan-creator-of-dragonruby%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F26%2Fruby-giant-amir-rajan-creator-of-dragonruby&t=AppMap+%7C+Ruby+Giant+-+Amir+Rajan%2C+Creator+of+DragonRuby&cts=1775006344043&rv=1&vi=1cd8dfe2d2aa1911226ed641afc11450&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "timestamp": "2026-04-01T01:18:47.285Z",
+  "crawlDirectory": "crawl/site/blog/2021/02/22/how-to-level-up-your-software-design-skills/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 8,
+  "foundAssets": 7,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/22/how-to-level-up-your-software-design-skills/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/level-up.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/level-up.webp",
+          "foundInFile": "crawl/site/blog/2021/02/22/how-to-level-up-your-software-design-skills/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/22/how-to-level-up-your-software-design-skills/\">\n<meta property=\"og:site_name\" con.../img/posts/level-up.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-22T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/level-up.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | How to level up your software design skills\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/lic"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/level-up.webp",
+          "foundInFile": "crawl/site/blog/2021/02/22/how-to-level-up-your-software-design-skills/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/22/how-to-level-up-your-software-design-skills/\">\n<meta property=\"og:site_name\" con.../img/posts/level-up.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-22T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/level-up.webp",
+            "alt": "How to level up your software design skills",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  How to level up your software design skills\n  \n    In September of 1995, I was a newly minted developer. I had some formal education in computer science and a master’s degree in engineer"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/plane-blueprint.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/plane-blueprint.webp",
+          "foundInFile": "crawl/site/blog/2021/02/22/how-to-level-up-your-software-design-skills/index.html",
+          "context": "<p>As I gained expertise with the techniques and tools of programming, my focus started to change. The work became less about HOW to wrangle the ma...(At the bottom of this article, you can read a bit about AppMap, a tool that I’ve developed to help developers produce great software designs).</p>",
+          "lineNumber": 171,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/plane-blueprint.webp",
+            "alt": "An awesome design - the X-15"
+          },
+          "surroundingText": "As I gained expertise with the techniques and tools of programming, my focus started to change. The work became less about HOW to wrangle the machine into doing what I needed it to do, and more about "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/raf-museum.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/raf-museum.webp",
+          "foundInFile": "crawl/site/blog/2021/02/22/how-to-level-up-your-software-design-skills/index.html",
+          "context": "<p>These senior folks know that when a code base loses its inherent quality and maintainability, all other considerations (features, usability, sta.../raf-museum.webp\" alt=\"RAF Museum, Hangar 2\">\n​</p>\n<h2 id=\"develop-and-refine-your-personal-process\">Develop and refine your personal process</h2>",
+          "lineNumber": 208,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/raf-museum.webp",
+            "alt": "RAF Museum, Hangar 2"
+          },
+          "surroundingText": "These senior folks know that when a code base loses its inherent quality and maintainability, all other considerations (features, usability, stability, performance, security, etc) are moot. If the cod"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/cost-to-fix.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/cost-to-fix.png",
+          "foundInFile": "crawl/site/blog/2021/02/22/how-to-level-up-your-software-design-skills/index.html",
+          "context": "  <li>If you spend inadequate time in a phase in order to “rush” the work and deliver quicker, you’ll almost always spend twice as much time getting the solution right as you would have if you were more deliberate.\n​\n<img src=\"/assets/img/posts/cost-to-fix.png\" alt=\"Cost to fix\"></li>\n</ol>\n",
+          "lineNumber": 220,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/cost-to-fix.png",
+            "alt": "Cost to fix"
+          },
+          "surroundingText": "If you spend inadequate time in a phase in order to “rush” the work and deliver quicker, you’ll almost always spend twice as much time getting the solution right as you would have if you were more del"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/solidus-appmap.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/solidus-appmap.webp",
+          "foundInFile": "crawl/site/blog/2021/02/22/how-to-level-up-your-software-design-skills/index.html",
+          "context": "<p>As you can see from this article, I’m passionate about software design. To help developers create great software designs, our team at AppMap has...thon.\n​\n<img src=\"/assets/img/posts/solidus-appmap.webp\" alt=\"AppMap of Solidus\"></p>\n\n<p><strong>State of Architecture Quality Survey</strong></p>",
+          "lineNumber": 243,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/solidus-appmap.webp",
+            "alt": "AppMap of Solidus"
+          },
+          "surroundingText": "As you can see from this article, I’m passionate about software design. To help developers create great software designs, our team at AppMap has created AppMap for VSCode. AppMap is a tool which creat"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/22/how-to-level-up-your-software-design-skills/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 275,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F22%2Fhow-to-level-up-your-software-design-skills%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F22%2Fhow-to-level-up-your-software-design-skills&t=AppMap+%7C+How+to+level+up+your+software+design+skills&cts=1775006314773&rv=1&vi=d183b6a3da18a44916eba6710853b55f&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

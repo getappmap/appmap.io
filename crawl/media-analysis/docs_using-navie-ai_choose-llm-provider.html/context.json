@@ -1,0 +1,419 @@
+{
+  "timestamp": "2026-04-01T01:54:23.242Z",
+  "crawlDirectory": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 29,
+  "foundAssets": 17,
+  "notFoundAssets": 12,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 772,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 773,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/navie-llm-configuration-dialog.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/navie-llm-configuration-dialog.png",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "<p>Select “GitHub Copilot”:</p>\n\n<p><img src=\"/assets/img/docs/navie-llm-configuration-dialog.png\" alt=\"Navie LLM configuration dialog\" class=\"video-screenshot\"></p>\n\n<h2 id=\"openai\">OpenAI</h2>",
+          "lineNumber": 853,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/navie-llm-configuration-dialog.png",
+            "alt": "Navie LLM configuration dialog",
+            "class": "video-screenshot"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 64
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/navie-byok-openai-1.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/navie-byok-openai-1.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "<p>In the modal, select the option to <code class=\"language-plaintext highlighter-rouge\">Use your own OpenAI API key</code></p>\n\n<p><img src=\"/asse...PI Key in the menu option, hit <code class=\"language-plaintext highlighter-rouge\">enter</code> and your code editor will be prompted to reload.</p>",
+          "lineNumber": 891,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/navie-byok-openai-1.webp",
+            "alt": "Use your own key modal"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/navie-byok-openai-2.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/navie-byok-openai-2.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "\n<p><strong>In VS Code:</strong>\n<img src=\"/assets/img/product/navie-byok-openai-2.webp\" alt=\"VS Code popup to store API Key\"></p>\n\n<p><strong>In JetBrains:</strong>",
+          "lineNumber": 896,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/navie-byok-openai-2.webp",
+            "alt": "VS Code popup to store API Key"
+          },
+          "surroundingText": "In VS Code:\n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/navie-byok-jetbrains.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/navie-byok-jetbrains.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "\n<p><strong>In JetBrains:</strong>\n<img src=\"/assets/img/product/navie-byok-jetbrains.webp\" alt=\"JetBrains popup to store API Key\"></p>\n\n<p><strong...y as an environment variable instead of using the <code class=\"language-plaintext highlighter-rouge\">gear</code> icon in the Navie chat window.</p>",
+          "lineNumber": 899,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/navie-byok-jetbrains.webp",
+            "alt": "JetBrains popup to store API Key"
+          },
+          "surroundingText": "In JetBrains:\n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/navie-byok-openai-3.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/navie-byok-openai-3.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "<p>After your code editor reloads, you can confirm your requests are being routed to OpenAI directly in the Navie Chat window. It will list the mod...ok-openai-3.webp\" alt=\"OpenAI location\"></p>\n\n<h4 id=\"modify-which-openai-model-to-use-\">Modify which OpenAI Model to use <!-- omit in toc --></h4>",
+          "lineNumber": 905,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/navie-byok-openai-3.webp",
+            "alt": "OpenAI location"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/custom-model.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/custom-model.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "<p>After setting your <code class=\"language-plaintext highlighter-rouge\">APPMAP_NAVIE_MODEL</code> with your chosen model reload/restart your code ....</p>\n\n<p><img src=\"/assets/img/product/custom-model.webp\" alt=\"JetBrains OpenAI key modal\"></p>\n\n<h2 id=\"anthropic-claude\">Anthropic (Claude)</h2>",
+          "lineNumber": 913,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/custom-model.webp",
+            "alt": "JetBrains OpenAI key modal"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/create-anthropic-key.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/create-anthropic-key.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "<p>Click the box to “Create Key”</p>\n\n<p><img src=\"/assets/img/product/create-anthropic-key.webp\" alt=\"Anthropic Create Key\"></p>\n\n<p>In the next box, give your key an easy to recognize name.</p>",
+          "lineNumber": 927,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/create-anthropic-key.webp",
+            "alt": "Anthropic Create Key"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/give-anthropic-key-name.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/give-anthropic-key-name.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "<p>In the next box, give your key an easy to recognize name.</p>\n\n<p><img src=\"/assets/img/product/give-anthropic-key-name.webp\" alt=\"Anthropic Key Name\"></p>\n\n<p>In your VS Code or JetBrains editor, configure the following environment variables.</p>",
+          "lineNumber": 931,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/give-anthropic-key-name.webp",
+            "alt": "Anthropic Key Name"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/navie-gemini-config-1.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/navie-gemini-config-1.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "</table>\n\n<p><img src=\"/assets/img/product/navie-gemini-config-1.webp\" alt=\"Configure navie environment variables\"></p>\n\n<p>You can confirm your model and API endpoint after making this change in the Navie chat window, which will display the currently configured language model backend.",
+          "lineNumber": 1017,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/navie-gemini-config-1.webp",
+            "alt": "Configure navie environment variables"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/navie-gemini-config-2.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/navie-gemini-config-2.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "\n<p>You can confirm your model and API endpoint after making this change in the Navie chat window, which will display the currently configured lang...\n<img src=\"/assets/img/product/navie-gemini-config-2.webp\" alt=\"confirm LLM backend and api endpoint\"></p>\n\n<h2 id=\"azure-openai\">Azure OpenAI</h2>",
+          "lineNumber": 1020,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/navie-gemini-config-2.webp",
+            "alt": "confirm LLM backend and api endpoint"
+          },
+          "surroundingText": "You can confirm your model and API endpoint after making this change in the Navie chat window, which will display the currently configured language model backend.\n",
+          "columnRange": {
+            "start": 10,
+            "end": 56
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/lmstudio-run-local-server.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/lmstudio-run-local-server.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "<p>After downloading a model to run, select the option to run a local server.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/product/lmstudio-run-local-server.webp\"></p>\n\n<p>In the next window, select which model you want to load into the local inference server.</p>",
+          "lineNumber": 1168,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/lmstudio-run-local-server.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/lmstudio-load-model.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/lmstudio-load-model.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "<p>In the next window, select which model you want to load into the local inference server.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/product/lmstudio-load-model.webp\"></p>\n\n<p>After loading your model, you can confirm it’s successfully running in the logs.</p>",
+          "lineNumber": 1172,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/lmstudio-load-model.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/lmstudio-confirm-running.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/lmstudio-confirm-running.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "<p>For example: <code class=\"language-plaintext highlighter-rouge\">http://localhost:1234/v1</code></p>\n\n<p><img class=\"video-screenshot\" src=\"/asse...y the name of the model and use this for the <code class=\"language-plaintext highlighter-rouge\">APPMAP_NAVIE_MODEL</code> environment variable.</p>",
+          "lineNumber": 1180,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/lmstudio-confirm-running.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/lmstudio-model-inspector.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/lmstudio-model-inspector.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/choose-llm-provider.html",
+          "context": "<p>For example: <code class=\"language-plaintext highlighter-rouge\">Meta-Llama-3-8B-Instruct-imatrix</code></p>\n\n<p><img class=\"video-screenshot\" sr...following environment variables based on your LM Studio configuration. Refer to the documentation above for steps specific to your code editor.</p>",
+          "lineNumber": 1186,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/lmstudio-model-inspector.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1919728707-b86852a0af81df1e07c49b1dbddd2d9c4aeaa45749dc3564d971634be817561d-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1884592541-06c80a1dc8f68d39c1b7e63ba9c8030fbaba693c1576c281bace655849942a0f-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1908860256-0559e581ca3e846ea761c73a8390368862905e2bc787beb235cab62c173307de-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1882284654-a4e7402156a010179b440dce68a199e4b12ca15bdbf0b13f0d974a3b8d332461-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1884592195-49ef9f208769d75d03b58d45c0d1957009599ee3a34fb9e911a3678e3c384153-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fchoose-llm-provider.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fchoose-llm-provider&t=AppMap+-+Docs+-+Navie+-+Choosing+an+LLM+Provider&cts=1775008441970&rv=1&vi=61caf2cc1dfdf6937baa24abb807e1a4&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1884592541-06c80a1dc8f68d39c1b7e63ba9c8030fbaba693c1576c281bace655849942a0f-d?mw=1000&mh=584",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1919728707-b86852a0af81df1e07c49b1dbddd2d9c4aeaa45749dc3564d971634be817561d-d?mw=1000&mh=563",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1908860256-0559e581ca3e846ea761c73a8390368862905e2bc787beb235cab62c173307de-d?mw=1000&mh=563",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1882284654-a4e7402156a010179b440dce68a199e4b12ca15bdbf0b13f0d974a3b8d332461-d?mw=1000&mh=584",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1884592195-49ef9f208769d75d03b58d45c0d1957009599ee3a34fb9e911a3678e3c384153-d?mw=1000&mh=584",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

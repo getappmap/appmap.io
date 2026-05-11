@@ -1,0 +1,267 @@
+{
+  "timestamp": "2026-04-01T01:37:11.225Z",
+  "crawlDirectory": "crawl/site/blog/2023/06/28/understanding-authorization-before-authentication/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 16,
+  "foundAssets": 9,
+  "notFoundAssets": 7,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2023/06/28/understanding-authorization-before-authentication/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-feature.webp",
+          "foundInFile": "crawl/site/blog/2023/06/28/understanding-authorization-before-authentication/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/06/28/understanding-authorization-before-authentication/\">\n<meta property=\"og:site_nam...before-auth-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-06-28T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/auth-before-auth-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Understanding authorization before authentication: Enhancing web API security\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * Lic",
+          "columnRange": {
+            "start": 35,
+            "end": 99
+          }
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-feature.webp",
+          "foundInFile": "crawl/site/blog/2023/06/28/understanding-authorization-before-authentication/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/06/28/understanding-authorization-before-authentication/\">\n<meta property=\"og:site_nam...before-auth-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-06-28T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/auth-before-auth-feature.webp",
+            "alt": "Understanding authorization before authentication: Enhancing web API security",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Understanding authorization before authentication: Enhancing web API security\n  \n    In today’s digital landscape, where data breaches and cyber attacks have become increasingly prevalen",
+          "columnRange": {
+            "start": 52,
+            "end": 99
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-1.jpeg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-1.jpeg",
+          "foundInFile": "crawl/site/blog/2023/06/28/understanding-authorization-before-authentication/index.html",
+          "context": "<p>Let’s examine a practical example to understand this better. Consider an e-commerce store built on a Ruby on Rails framework, a fork of the Spre...ep is missing when accessing the cart functionality. Clicking on the cart with an item already added to it does not prompt the user to sign in.</p>",
+          "lineNumber": 175,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/auth-before-auth-1.jpeg",
+            "alt": "authorization before authentication"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 54
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-2.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-2.png",
+          "foundInFile": "crawl/site/blog/2023/06/28/understanding-authorization-before-authentication/index.html",
+          "context": "<p>When looking at a sequence diagram of cart interaction you’ll notice that the authentication step is missing when accessing the cart functionali...is may be by design because the cart does not contain any personally identifiable information, the very next step in the purchase process does.</p>",
+          "lineNumber": 179,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/auth-before-auth-2.png",
+            "alt": "authorization before authentication"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 53
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-3.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-3.png",
+          "foundInFile": "crawl/site/blog/2023/06/28/understanding-authorization-before-authentication/index.html",
+          "context": "<p>While this may be by design because the cart does not contain any personally identifiable information, the very next step in the purchase proces...uthenticating that user. Any time that type of information is presented a user must be authenticated and authorized before viewing or updating.</p>",
+          "lineNumber": 183,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/auth-before-auth-3.png",
+            "alt": "authorization before authentication"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 53
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-4.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-4.png",
+          "foundInFile": "crawl/site/blog/2023/06/28/understanding-authorization-before-authentication/index.html",
+          "context": "<p>Inspecting the trace view and sequence diagram in AppMap, we trace the flow of events leading to the violation. We find that the “get cart” proc...t=\"authorization before authentication\"></p>\n\n<p><img src=\"/assets/img/posts/auth-before-auth-5.png\" alt=\"authorization before authentication\"></p>",
+          "lineNumber": 197,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/auth-before-auth-4.png",
+            "alt": "authorization before authentication"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 53
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-5.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-5.png",
+          "foundInFile": "crawl/site/blog/2023/06/28/understanding-authorization-before-authentication/index.html",
+          "context": "<p><img src=\"/assets/img/posts/auth-before-auth-4.png\" alt=\"authorization before authentication\"></p>\n\n<p><img src=\"/assets/img/posts/auth-before-a...hich resides outside of our application’s codebase. This presents a challenge since we lack direct control over Spree’s authentication process.</p>",
+          "lineNumber": 199,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/auth-before-auth-5.png",
+            "alt": "authorization before authentication"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 53
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-6.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/auth-before-auth-6.png",
+          "foundInFile": "crawl/site/blog/2023/06/28/understanding-authorization-before-authentication/index.html",
+          "context": "<p>As we explore the dependency map, we notice that the authorization call is sent to the Spree Order controller, which resides outside of our appl...at every request is assumed to come from an admin user, which is a major red flag. To mitigate this, we can implement the following strategies:</p>",
+          "lineNumber": 203,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/auth-before-auth-6.png",
+            "alt": "authorization before authentication"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 53
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2023/06/28/understanding-authorization-before-authentication/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 243,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://www.googletagmanager.com/a?id=G-216SS3H0RL&v=3&t=t&pid=1648673199&gtm=45je63u0v883218513za200zd883218513&cv=1&rv=63u0&tc=17&tag_exp=0~115616985~115938466~115938468~116133313~116991817~118089341&es=1&e=gtm.init&eid=2&u=AAAAAAAAAAAAAACA&h=Ag&tr=1ogt1pdatav2.1ccdgafirst.1setproductsettings.1ccdgaadslink.1ccdgaregscope.1ccdemdownload.1ccdemoutboundclick.1ccdempageview.1ccdemscroll.1ccdemsitesearch.1ccdemvideo.1ccdconversionmarking.1ogteventcreate.1ogteventcreate.1ccdautoredact.1ccdgalast&ti=2ogt1pdatav2.2ccdgafirst.2setproductsettings.2ccdgaadslink.2ccdgaregscope.2ccdemdownload.2ccdemoutboundclick.2ccdempageview.2ccdemscroll.2ccdemsitesearch.2ccdemvideo.2ccdconversionmarking.2ogteventcreate.2ogteventcreate.2ccdautoredact.2ccdgalast&z=0",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://www.googletagmanager.com/a?id=G-216SS3H0RL&v=3&t=t&pid=1648673199&gtm=45je63u0v883218513za200zd883218513&cv=1&rv=63u0&tc=17&tag_exp=0~115616985~115938466~115938468~116133313~116991817~118089341&es=1&e=gtm.js&eid=3&u=AAAAAAAAAAAAAACA&h=Ag&tr=1gct&ti=2gct&z=0",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://www.googletagmanager.com/a?id=G-216SS3H0RL&v=3&t=t&pid=1648673199&gtm=45je63u0v883218513za200zd883218513&cv=1&rv=63u0&tc=17&tag_exp=0~115616985~115938466~115938468~116133313~116991817~118089341&es=1&e=gtag.config&eid=9&u=AAAAAAAAAAAAACCA&ut=Ag&h=Ag&epr=1G.2G&z=0",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://www.googletagmanager.com/a?id=G-216SS3H0RL&v=3&t=t&pid=1648673199&gtm=45je63u0v883218513za200zd883218513&cv=1&rv=63u0&tc=17&tag_exp=0~115616985~115938466~115938468~116133313~116991817~118089341&es=1&e=gtm.dom&eid=10&u=AAAAAAAAAAAAACCA&ut=Ag&h=Ag&z=0",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://www.googletagmanager.com/a?id=G-216SS3H0RL&v=3&t=t&pid=1648673199&gtm=45je63u0v883218513za200zd883218513&cv=1&rv=63u0&tc=17&tag_exp=0~115616985~115938466~115938468~116133313~116991817~118089341&e=gtm.init&eid=2&u=AAAAAAAAAAAAACCA&ut=Ag&h=Ag&tr=5ogt1pdatav2.5ccdgafirst.5setproductsettings.5ccdgaadslink.5ccdgaregscope.5ccdemdownload.5ccdemoutboundclick.5ccdempageview.5ccdemscroll.5ccdemsitesearch.5ccdemvideo.5ccdconversionmarking.5ogteventcreate.5ogteventcreate.5ccdautoredact.5ccdgalast&ti=2ogt1pdatav2.2ccdgafirst.2setproductsettings.2ccdgaadslink.2ccdgaregscope.2ccdemdownload.2ccdemoutboundclick.2ccdempageview.2ccdemscroll.2ccdemsitesearch.2ccdemvideo.2ccdconversionmarking.2ogteventcreate.2ogteventcreate.2ccdautoredact.2ccdgalast&z=0",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F28%2Funderstanding-authorization-before-authentication%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F28%2Funderstanding-authorization-before-authentication&t=AppMap+%7C+Understanding+authorization+before+authentication%3A+Enhancing+web+API+security&cts=1775007419160&rv=1&vi=930aa0169bb5ba1fd6cff40a8b876135&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://www.googletagmanager.com/a?id=G-216SS3H0RL&v=3&t=t&pid=1648673199&gtm=45je63u0v883218513za200zd883218513&cv=1&rv=63u0&tc=17&tag_exp=0~115616985~115938466~115938468~116133313~116991817~118089341&es=1&e=*&eid=12&u=AgAAAAAAAAAAACCA&ut=Ag&h=Ag&epr=1G.2G&z=0",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

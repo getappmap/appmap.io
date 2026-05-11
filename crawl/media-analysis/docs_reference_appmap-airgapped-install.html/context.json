@@ -1,0 +1,502 @@
+{
+  "timestamp": "2026-04-01T01:44:45.395Z",
+  "crawlDirectory": "crawl/site/docs/reference/appmap-airgapped-install.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 27,
+  "foundAssets": 25,
+  "notFoundAssets": 2,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 780,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 781,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-1.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-1.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>Click on the VSIX file to save the file to your local machine.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/docs/offline-install-1.webp\"></p>\n\n<h3 id=\"download-the-appmap-jetbrains-plugin-zip\">Download the AppMap JetBrains Plugin (zip)</h3>",
+          "lineNumber": 917,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-1.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-1b.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-1b.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>Download the zip file and save locally.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/docs/offline-install-1b.webp\"></p>\n\n<h3 id=\"download-the-appmap-application-binaries\">Download the AppMap Application Binaries</h3>",
+          "lineNumber": 925,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-1b.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-2.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-2.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>Search within the page for a release with the name “@appland/appmap”.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/docs/offline-install-2.webp\"></p>\n\n<div class=\"alert alert-info\">NOTE: You may need to navigate to page 2 depending on the number of released AppMap binaries.</div>",
+          "lineNumber": 933,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-2.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-3.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-3.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>Click on the “Assets” button to expand all the available AppMap binaries.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/docs/offline-in...rating system and architecture. Optionally download the sha256 file as well if you wish to validate the files’ integrity on your local machine.</p>",
+          "lineNumber": 939,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-3.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-5.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-5.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>After opening the Command Palette, search for “install from VSIX”</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/docs/offline-install-5.webp\"></p>\n\n<p>In the following window, locate the VSIX you downloaded previously and select that for installation.</p>",
+          "lineNumber": 954,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-5.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-6.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-6.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>In the following window, locate the VSIX you downloaded previously and select that for installation.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/docs/offline-install-6.webp\"></p>\n\n",
+          "lineNumber": 958,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-6.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-7.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-7.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>Open your JetBrains editor, and open the “Settings” page.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/docs/offline-install-7.webp\"></p>\n\n<p>The settings page should look similar to below.</p>",
+          "lineNumber": 987,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-7.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-8.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-8.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>The settings page should look similar to below.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/docs/offline-install-8.webp\"></p>\n\n<p>Search for, or select the “Plugins” option, then select the gear icon and choose “Install Plugin from Disk”</p>",
+          "lineNumber": 991,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-8.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-9.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-9.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>Search for, or select the “Plugins” option, then select the gear icon and choose “Install Plugin from Disk”</p>\n\n<p><img class=\"video-screenshot....webp\"></p>\n\n<p>Select the path to the zip file you <a href=\"#download-the-appmap-jetbrains-plugin-zip\">downloaded in the previous section</a>.</p>",
+          "lineNumber": 995,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-9.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-10.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-10.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>After selecting the AppMap zip file, click “Accept” for the “Third-Party Plugins Notice”</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/...ept” to the JetBrains plugin notice you may need to go back to the previous “Install Plugin from Disk” step and repeat to install the plugin.</div>",
+          "lineNumber": 1001,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-10.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-11.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-11.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>When the plugin is successfully installed, you will see it in the settings page plugin list.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/...offline-install-11.webp\"></p>\n\n<p>If you don’t see it in the list, search for AppMap in the search box to confirm the installation is complete.</p>",
+          "lineNumber": 1007,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-11.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-12.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-12.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>If you don’t see it in the list, search for AppMap in the search box to confirm the installation is complete.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/docs/offline-install-12.webp\"></p>\n\n<p>After closing the settings page, the AppMap plugin will open.</p>",
+          "lineNumber": 1011,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-12.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-13.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-13.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>AppMap collects anonymous usage stats to improve the product, in the pop up on the bottom of the screen, choose to “Opt out” or simply close the popup to keep these anonymous product analytics enabled.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/docs/offline-install-13.webp\"></p>\n\n",
+          "lineNumber": 1017,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-13.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-4.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-4.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>In the Assets section, download the <code class=\"language-plaintext highlighter-rouge\">appmap-&lt;version&gt;.jar</code> file and optionally the...deo-screenshot\" src=\"/assets/img/docs/offline-install-4.webp\"></p>\n\n<h3 id=\"install-the-appmap-java-jar-file\">Install the AppMap Java Jar file</h3>",
+          "lineNumber": 1124,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-4.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-14.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-14.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "If the AppMap binaries are installed and executable, you should see a new Navie chat window open successfully.</p>\n\n<p><img class=\"video-screenshot...more information about the failure. Alternatively, you can navigate to the <a href=\"#accessing-navie-logs\">Navie logs</a> for more information.</p>",
+          "lineNumber": 1159,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-14.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-15.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/offline-install-15.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>If the binaries are not installed in the correct location, or are not executable, the AppMap Navie RPC service will be unable to start. In the e...eenshot\" src=\"/assets/img/docs/offline-install-15.webp\"></p>\n\n<h3 id=\"optional-record-a-java-application\">(Optional) Record a Java Application</h3>",
+          "lineNumber": 1163,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/offline-install-15.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/vscode-output-1.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/vscode-output-1.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>To open the Output window, on the menu bar, choose View &gt; Output, or in Windows press <code class=\"language-plaintext highlighter-rouge\">Ctrl...ts/img/docs/vscode-output-1.webp\" alt=\"Open View in VS Code\"></p>\n\n<p>When reviewing logs, pay attention to startup errors that might indicate:</p>",
+          "lineNumber": 1185,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/vscode-output-1.webp",
+            "alt": "Open View in VS Code"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/vscode-output-2.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/vscode-output-2.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>Click on the output log dropdown in the right corner to view a list of all the available output logs.</p>\n\n<p><img src=\"/assets/img/docs/vscode-...t logs list\"></p>\n\n<p>Select on the <code class=\"language-plaintext highlighter-rouge\">AppMap: Services</code> log to view the logs from Navie.</p>",
+          "lineNumber": 1198,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/vscode-output-2.webp",
+            "alt": "Open Output logs list"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/vscode-output-3.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/vscode-output-3.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>Select on the <code class=\"language-plaintext highlighter-rouge\">AppMap: Services</code> log to view the logs from Navie.</p>\n\n<p><img src=\"/assets/img/docs/vscode-output-3.webp\" alt=\"Select AppMap Services\"></p>\n\n<h4 id=\"jetbrains\">JetBrains</h4>",
+          "lineNumber": 1202,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/vscode-output-3.webp",
+            "alt": "Select AppMap Services"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains-debug-logs.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains-debug-logs.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>You can enable debug logging of Navie in your JetBrains code editor by first opening <code class=\"language-plaintext highlighter-rouge\">Help</co...nfiguration</code> enter <code class=\"language-plaintext highlighter-rouge\">appland</code> to enable DEBUG level logging for the AppMap plugin.</p>",
+          "lineNumber": 1208,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/jetbrains-debug-logs.webp",
+            "alt": "JetBrains Debug Log menu"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains-logging-configuration.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains-logging-configuration.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>In the <code class=\"language-plaintext highlighter-rouge\">Custom Debug Log Configuration</code> enter <code class=\"language-plaintext highlighte...plaintext highlighter-rouge\">Help</code> &gt; <code class=\"language-plaintext highlighter-rouge\">Show Log...</code> will open the IDE log file.</p>",
+          "lineNumber": 1212,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/jetbrains-logging-configuration.webp",
+            "alt": "JetBrains Debug Log Configuration"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 61
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains-show-log.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains-show-log.webp",
+          "foundInFile": "crawl/site/docs/reference/appmap-airgapped-install.html",
+          "context": "<p>Next, open <code class=\"language-plaintext highlighter-rouge\">Help</code> &gt; <code class=\"language-plaintext highlighter-rouge\">Show Log...</code> will open the IDE log file.</p>\n\n<p><img src=\"/assets/img/jetbrains-show-log.webp\" alt=\"JetBrains Debug Show Log\"></p>\n\n<h2 id=\"support\">",
+          "lineNumber": 1216,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/jetbrains-show-log.webp",
+            "alt": "JetBrains Debug Show Log"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fappmap-airgapped-install.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fappmap-airgapped-install&t=AppMap+-+Docs+-+Reference+-+AppMap+Offline+Install+for+Secure+Environments&cts=1775007863839&rv=1&vi=04d5540ff5bffb579af153b4ed171199&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

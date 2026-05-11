@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-04-01T01:36:34.671Z",
+  "crawlDirectory": "crawl/site/blog/2023/06/09/share-your-appmap-files-and-findings-with-your-team/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 4,
+  "foundAssets": 3,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2023/06/09/share-your-appmap-files-and-findings-with-your-team/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/share-your-appmaps-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/share-your-appmaps-feature.webp",
+          "foundInFile": "crawl/site/blog/2023/06/09/share-your-appmap-files-and-findings-with-your-team/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/06/09/share-your-appmap-files-and-findings-with-your-team/\">\n<meta property=\"og:site_n...our-appmaps-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-06-09T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/share-your-appmaps-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Share your AppMap files and findings with your team\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome",
+          "columnRange": {
+            "start": 35,
+            "end": 101
+          }
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/share-your-appmaps-feature.webp",
+          "foundInFile": "crawl/site/blog/2023/06/09/share-your-appmap-files-and-findings-with-your-team/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/06/09/share-your-appmap-files-and-findings-with-your-team/\">\n<meta property=\"og:site_n...our-appmaps-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-06-09T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/share-your-appmaps-feature.webp",
+            "alt": "Share your AppMap files and findings with your team",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Share your AppMap files and findings with your team\n  \n    AppMap is a powerful tool for developers to find and fix performance issues. Write and run your code, and then AppMap generates",
+          "columnRange": {
+            "start": 52,
+            "end": 101
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2023/06/09/share-your-appmap-files-and-findings-with-your-team/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 205,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F09%2Fshare-your-appmap-files-and-findings-with-your-team%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F09%2Fshare-your-appmap-files-and-findings-with-your-team&t=AppMap+%7C+Share+your+AppMap+files+and+findings+with+your+team&cts=1775007386255&rv=1&vi=ce40833cfb518107429c0a0d0081fd4a&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

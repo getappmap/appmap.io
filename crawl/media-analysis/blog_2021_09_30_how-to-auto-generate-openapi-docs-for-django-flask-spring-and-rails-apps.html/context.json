@@ -1,0 +1,145 @@
+{
+  "timestamp": "2026-04-01T01:29:28.130Z",
+  "crawlDirectory": "crawl/site/blog/2021/09/30/how-to-auto-generate-openapi-docs-for-django-flask-spring-and-rails-apps/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 14,
+  "foundAssets": 3,
+  "notFoundAssets": 11,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/09/30/how-to-auto-generate-openapi-docs-for-django-flask-spring-and-rails-apps/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/1200x630-appmap-card.png",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/1200x630-appmap-card.png",
+          "foundInFile": "crawl/site/blog/2021/09/30/how-to-auto-generate-openapi-docs-for-django-flask-spring-and-rails-apps/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/09/30/how-to-auto-generate-openapi-docs-for-django-flask-spring-and-rails-apps/\">\n<met...1200x630-appmap-card.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-09-30T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/logos/1200x630-appmap-card.png"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | How to auto-generate OpenAPI docs for Django, Flask, Spring and Rails apps\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * Licens"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/1200x630-appmap-card.png",
+          "foundInFile": "crawl/site/blog/2021/09/30/how-to-auto-generate-openapi-docs-for-django-flask-spring-and-rails-apps/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/09/30/how-to-auto-generate-openapi-docs-for-django-flask-spring-and-rails-apps/\">\n<met...1200x630-appmap-card.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-09-30T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/1200x630-appmap-card.png",
+            "alt": "How to auto-generate OpenAPI docs for Django, Flask, Spring and Rails apps",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  How to auto-generate OpenAPI docs for Django, Flask, Spring and Rails apps\n  \n    \n\n\n  \n    \n    \n  \n  \n\n\n\n\n\nThe OpenAPI Specification (also/previously called Swagger) helps developers m"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/09/30/how-to-auto-generate-openapi-docs-for-django-flask-spring-and-rails-apps/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 317,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803455891-e4e31a9c21e085afd4b22ae41d3653bcead44dacebd0ce1713df587ea2d04eba-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803455891-e4e31a9c21e085afd4b22ae41d3653bcead44dacebd0ce1713df587ea2d04eba-d?mw=800&mh=450",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F09%2F30%2Fhow-to-auto-generate-openapi-docs-for-django-flask-spring-and-rails-apps%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F09%2F30%2Fhow-to-auto-generate-openapi-docs-for-django-flask-spring-and-rails-apps&t=AppMap+%7C+How+to+auto-generate+OpenAPI+docs+for+Django%2C+Flask%2C+Spring+and+Rails+apps&cts=1775006947638&rv=1&vi=d5f502fb4518456e2c16d753175c0769&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53d22c1d3f4ff9/1775006947706/8ivnmC9klP3tOi8",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53d22d48ac4ff9/1775006948001/cPiTjgfHhypS7IE",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F09%2F30%2Fhow-to-auto-generate-openapi-docs-for-django-flask-spring-and-rails-apps%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F09%2F30%2Fhow-to-auto-generate-openapi-docs-for-django-flask-spring-and-rails-apps&t=AppMap+%7C+How+to+auto-generate+OpenAPI+docs+for+Django%2C+Flask%2C+Spring+and+Rails+apps&cts=1775006951992&rv=1&vi=2534c5b5d00f1afb4a61845ba6b07d3f&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53d248c8a04ff9/1775006952211/T_c1bhGUKokd9bq",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53d248e8dd4ff9/1775006952297/k31JRZbQfgPBu6N",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53d2984afc4ff9/1775006964769/NadLfEtWQeIDCI6",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53d29a8a344ff9/1775006965265/6OMUxIB0arBbVXl",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

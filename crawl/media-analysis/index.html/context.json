@@ -1,0 +1,324 @@
+{
+  "timestamp": "2026-04-01T01:13:48.128Z",
+  "crawlDirectory": "crawl/site/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 18,
+  "foundAssets": 16,
+  "notFoundAssets": 2,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 124,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/navie-answer.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/navie-answer.webp",
+          "foundInFile": "crawl/site/index.html",
+          "context": "  </div>\n  <div id=\"demo-container\" class=\"drop-shadow\">\n    <img src=\"assets/img/navie-answer.webp\">\n  </div>\n</section>",
+          "lineNumber": 180,
+          "elementType": "img",
+          "attributes": {
+            "src": "assets/img/navie-answer.webp"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/cognitive-zen-logo.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/cognitive-zen-logo.png",
+          "foundInFile": "crawl/site/index.html",
+          "context": "              <div class=\"marketing callout d-block w-100\">\n                <div class=\"review-source\">\n                  <img class=\"logo-xs\" src=\"/assets/img/cognitive-zen-logo.png\">\n                  <span class=\"reviewer\"><p>Cognitive Zen</p></span>\n                </div>",
+          "lineNumber": 241,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-xs",
+            "src": "/assets/img/cognitive-zen-logo.png"
+          },
+          "surroundingText": "\n                  \n                  Cognitive Zen\n                "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/y_combinator_logo.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/y_combinator_logo.svg",
+          "foundInFile": "crawl/site/index.html",
+          "context": "              <div class=\"marketing callout d-block w-100\">\n                <div class=\"review-source\">\n                  <img class=\"logo-xs\" src=\"/assets/img/y_combinator_logo.svg\">\n                  <span class=\"reviewer\"><p>Hacker News</p></span>\n                </div>",
+          "lineNumber": 256,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-xs",
+            "src": "/assets/img/y_combinator_logo.svg"
+          },
+          "surroundingText": "\n                  \n                  Hacker News\n                "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/x-logo.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/x-logo.svg",
+          "foundInFile": "crawl/site/index.html",
+          "context": "              <div class=\"marketing callout d-block w-100\">\n                <div class=\"review-source\">\n                  <img class=\"logo-xs\" src=\"/assets/img/x-logo.svg\">\n                  <span class=\"reviewer\"><p>Social</p></span>\n                </div>",
+          "lineNumber": 264,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-xs",
+            "src": "/assets/img/x-logo.svg"
+          },
+          "surroundingText": "\n                  \n                  Social\n                "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/index.html",
+          "context": "              <div class=\"marketing callout d-block w-100\">\n                <div class=\"review-source\">\n                  <img class=\"logo-xs\" src=\"/assets/img/vscode-icon.svg\">\n                  <span class=\"reviewer\"><p>Marketplace Review</p></span>\n                </div>",
+          "lineNumber": 277,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-xs",
+            "src": "/assets/img/vscode-icon.svg"
+          },
+          "surroundingText": "\n                  \n                  Marketplace Review\n                "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/index.html",
+          "context": "              <div class=\"marketing callout\">\n                <div class=\"review-source\">\n                  <img class=\"logo-xs\" src=\"/assets/img/jetbrains.svg\">\n                  <span class=\"reviewer\"><p>Marketplace Review</p></span>\n                </div>",
+          "lineNumber": 292,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-xs",
+            "src": "/assets/img/jetbrains.svg"
+          },
+          "surroundingText": "\n                  \n                  Marketplace Review\n                "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/nvidia-inception-badge.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/nvidia-inception-badge.png",
+          "foundInFile": "crawl/site/index.html",
+          "context": "</script>\n <section class=\"appmap-languages short\">\n  <img src=\"/assets/img/nvidia-inception-badge.png\" alt=\"NVidia Inception Program\">\n  <img src=...for-startups-badge.png\" alt=\"GitHub for Startups\">\n  <img src=\"/assets/img/appmap-techcrunch-finalist-ko.svg\" alt=\"2022 TechCrunch Finalist badge\">",
+          "lineNumber": 714,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/nvidia-inception-badge.png",
+            "alt": "NVidia Inception Program"
+          },
+          "surroundingText": "\n  \n  \n  \n  \n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/gh-for-startups-badge.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/gh-for-startups-badge.png",
+          "foundInFile": "crawl/site/index.html",
+          "context": " <section class=\"appmap-languages short\">\n  <img src=\"/assets/img/nvidia-inception-badge.png\" alt=\"NVidia Inception Program\">\n  <img src=\"/assets/i...appmap-techcrunch-finalist-ko.svg\" alt=\"2022 TechCrunch Finalist badge\">\n  <img src=\"/assets/img/mongo-db-partner-badge.png\" alt=\"MongoDB Partner\">",
+          "lineNumber": 715,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/gh-for-startups-badge.png",
+            "alt": "GitHub for Startups"
+          },
+          "surroundingText": "\n  \n  \n  \n  \n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/appmap-techcrunch-finalist-ko.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/appmap-techcrunch-finalist-ko.svg",
+          "foundInFile": "crawl/site/index.html",
+          "context": "  <img src=\"/assets/img/nvidia-inception-badge.png\" alt=\"NVidia Inception Program\">\n  <img src=\"/assets/img/gh-for-startups-badge.png\" alt=\"GitHub ...crunch-finalist-ko.svg\" alt=\"2022 TechCrunch Finalist badge\">\n  <img src=\"/assets/img/mongo-db-partner-badge.png\" alt=\"MongoDB Partner\">\n</section>",
+          "lineNumber": 716,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/appmap-techcrunch-finalist-ko.svg",
+            "alt": "2022 TechCrunch Finalist badge"
+          },
+          "surroundingText": "\n  \n  \n  \n  \n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/mongo-db-partner-badge.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/mongo-db-partner-badge.png",
+          "foundInFile": "crawl/site/index.html",
+          "context": "  <img src=\"/assets/img/gh-for-startups-badge.png\" alt=\"GitHub for Startups\">\n  <img src=\"/assets/img/appmap-techcrunch-finalist-ko.svg\" alt=\"2022 TechCrunch Finalist badge\">\n  <img src=\"/assets/img/mongo-db-partner-badge.png\" alt=\"MongoDB Partner\">\n</section>\n",
+          "lineNumber": 717,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/mongo-db-partner-badge.png",
+            "alt": "MongoDB Partner"
+          },
+          "surroundingText": "\n  \n  \n  \n  \n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/user-logos.svg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/video/review.webm",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/video/review.webm",
+          "foundInFile": "crawl/site/index.html",
+          "context": "  <div class=\"section-content\">\n    <video playsinline=\"\" loop=\"\" muted=\"\">\n      <source src=\"/assets/video/review.webm\" type=\"video/webm\">\n      <source src=\"/assets/video/review.mp4\" type=\"video/mp4\">\n    </video>",
+          "lineNumber": 561,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/video/review.webm",
+            "type": "video/webm"
+          },
+          "surroundingText": "\n      \n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/video/review-dashboard.webm",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/video/review-dashboard.webm",
+          "foundInFile": "crawl/site/index.html",
+          "context": "  <div class=\"section-content\">\n    <video playsinline=\"\" loop=\"\" muted=\"\">\n      <source src=\"/assets/video/review-dashboard.webm\" type=\"video/webm\">\n      <source src=\"/assets/video/review-dashboard.mp4\" type=\"video/mp4\">\n    </video>",
+          "lineNumber": 582,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/video/review-dashboard.webm",
+            "type": "video/webm"
+          },
+          "surroundingText": "\n      \n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/video/sequence_04.webm",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/video/sequence_04.webm",
+          "foundInFile": "crawl/site/index.html",
+          "context": "  <div class=\"section-content\">\n    <video playsinline=\"\" loop=\"\" muted=\"\">\n      <source src=\"/assets/video/sequence_04.webm\" type=\"video/webm\">\n      <source src=\"/assets/video/sequence_04b.mp4\" type=\"video/mp4\">\n    </video>",
+          "lineNumber": 602,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/video/sequence_04.webm",
+            "type": "video/webm"
+          },
+          "surroundingText": "\n      \n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/video/map-sm.webm",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/video/map-sm.webm",
+          "foundInFile": "crawl/site/index.html",
+          "context": "  <div class=\"section-content\">\n    <video playsinline=\"\" loop=\"\" muted=\"\">\n      <source src=\"/assets/video/map-sm.webm\" type=\"video/webm\">\n      <source src=\"/assets/video/map-sm.mp4\" type=\"video/mp4\">\n    </video>",
+          "lineNumber": 634,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/video/map-sm.webm",
+            "type": "video/webm"
+          },
+          "surroundingText": "\n      \n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/video/analyze-feature-movie-navie.webm",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/video/analyze-feature-movie-navie.webm",
+          "foundInFile": "crawl/site/index.html",
+          "context": "  <div class=\"section-content\">\n    <video playsinline=\"\" loop=\"\" muted=\"\">\n      <source src=\"/assets/video/analyze-feature-movie-navie.webm\" type=\"video/webm\">\n      <source src=\"/assets/video/analyze-feature-movie-navie.mp4\" type=\"video/mp4\">\n    </video>",
+          "lineNumber": 662,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/video/analyze-feature-movie-navie.webm",
+            "type": "video/webm"
+          },
+          "surroundingText": "\n      \n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2F&pu=https%3A%2F%2Fappmap.io%2F&t=AppMap+%7C+AppMap&cts=1775006016330&rv=1&vi=d50855cbaa4977cb1cf8aa6033694727&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

@@ -1,0 +1,3236 @@
+{
+  "url": "https://appmap.io/blog/2023/06/27/how-to-ensure-your-web-apis-are-safe",
+  "timestamp": "2026-04-01T01:36:56.448Z",
+  "loadTime": 20434,
+  "summary": {
+    "totalRequests": 164,
+    "successfulRequests": 73,
+    "failedRequests": 14,
+    "cachedRequests": 0,
+    "redirectedRequests": 1,
+    "slowRequests": 47
+  },
+  "requestsByType": {
+    "document": 10,
+    "stylesheet": 20,
+    "script": 58,
+    "image": 26,
+    "fetch": 22,
+    "font": 14,
+    "xhr": 14
+  },
+  "failedRequests": [
+    {
+      "url": "https://player.vimeo.com/video/916048999",
+      "method": "GET",
+      "resourceType": "document",
+      "error": "HTTP 401 Unauthorized",
+      "timing": {
+        "startTime": 1775007396505,
+        "duration": 4962
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007396493&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=161447549.1775007397&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938465~115938469~116991817~117266400&sid=1775007396&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&dt=AppMap%20%7C%20How%20to%20ensure%20your%20web%20APIs%20are%20safe&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=710",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007396870,
+        "duration": 224
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007396897,
+        "duration": 4657
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53dd28ce00ddaf/1775007397557/da71e43240f92a3fbf39f2fe9cea428a25e071019c8870f1b95240696c22c63c/_C2tEVJ3XnBq82h",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775007398326,
+        "duration": 107
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53dd280be6ddaf/1775007397465/ec473e4ed04b0bea027cb10aba0dbcc59d9448e4854c64c9ff0bbcd087983c7c/-7W7OGuMb01tHml",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775007399099,
+        "duration": 25
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/td?id=G-216SS3H0RL&v=3&t=t&pid=1665421385&gtm=45je63u0v883218513za200zd883218513&seq=2&exp=0~115938465~115938469~116991817~117266400&dl=appmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&tdp=G-216SS3H0RL;83218513;0;0;0&mde=G-216SS3H0RL;16_1;61_1&fin=1&z=0",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007401209,
+        "duration": 4
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL&is_td=1&v=3&t=t&pid=1665421385&gtm=45je63u0v883218513za200zd883218513&seq=2&exp=0~115938465~115938469~116991817~117266400&dl=appmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&tdp=G-216SS3H0RL;83218513;0;0;0&mde=G-216SS3H0RL;16_1;61_1&fin=1&z=0",
+      "method": "GET",
+      "resourceType": "script",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007401212,
+        "duration": 1
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007396493&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=161447549.1775007397&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=2&tag_exp=0~115938465~115938469~116991817~117266400&sid=1775007396&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&dt=AppMap%20%7C%20How%20to%20ensure%20your%20web%20APIs%20are%20safe&en=user_engagement&_et=4330&tfd=5043",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007401212,
+        "duration": 1
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53dd441e4bddaf/1775007401938/2a4e75865901b9250ff737dd9415c3413f0bdf707bcdf6629f5cb1981c37bafe/85q4g2pS-_Rcerm",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775007403362,
+        "duration": 45
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53dd443ea6ddaf/1775007402007/ea884aa339def7411f35c82aeb9d6f6db1c84ac985a3554e48e5ae36e0b492f1/pIykuXeTpsOMB9Q",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775007403972,
+        "duration": 23
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007401268&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=161447549.1775007397&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=0~115938466~115938468~116133314~116991816~117384406&sid=1775007396&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&dt=AppMap%20%7C%20How%20to%20ensure%20your%20web%20APIs%20are%20safe&en=page_view&_ee=1&tfd=5273",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007406429,
+        "duration": 37
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53dd9178a2ddaf/1775007414241/d8244f0ae62e735c2c5496a5b383cd220505c886fde1af000c1da870f22e77e8/Q-aaoZ7zfA4kLCQ",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775007414527,
+        "duration": 30
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007401268&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=161447549.1775007397&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938466~115938468~116133314~116991816~117384406&sid=1775007396&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&dt=AppMap%20%7C%20How%20to%20ensure%20your%20web%20APIs%20are%20safe&en=scroll&epn.percent_scrolled=90&_et=8451&tfd=13729",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007414886,
+        "duration": 35
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53dd94aa21ddaf/1775007414770/ffc6c4ea277d25754768ef04e9b5c65f634286b8a8359b4911b02bbc57e62aa9/6m4UZFc0UwEzfOc",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775007415659,
+        "duration": 23
+      }
+    }
+  ],
+  "slowRequests": [
+    {
+      "url": "https://appmap.io/blog/2023/06/27/how-to-ensure-your-web-apis-are-safe",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007396159,
+        "endTime": 1775007401192,
+        "duration": 5033
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396259,
+        "endTime": 1775007401222,
+        "duration": 4963
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 795
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401232,
+        "duration": 4969
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401232,
+        "duration": 4969
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401232,
+        "duration": 4969
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401233,
+        "duration": 4970
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401233,
+        "duration": 4970
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1032
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401233,
+        "duration": 4970
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 793
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401264,
+        "duration": 5001
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401233,
+        "duration": 4970
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401233,
+        "duration": 4970
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173018,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401235,
+        "duration": 4972
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 630,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401235,
+        "duration": 4972
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 541,
+        "responseHeadersSize": 1030
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401238,
+        "duration": 4975
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5980,
+        "responseHeadersSize": 1044
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401239,
+        "duration": 4976
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1333,
+        "responseHeadersSize": 1044
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401239,
+        "duration": 4975
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 986,
+        "responseHeadersSize": 1051
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401239,
+        "duration": 4975
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 962,
+        "responseHeadersSize": 1045
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401239,
+        "duration": 4975
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 862,
+        "responseHeadersSize": 1055
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401250,
+        "duration": 4986
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 519
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-feature.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401252,
+        "duration": 4988
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 285776,
+        "responseHeadersSize": 469
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401240,
+        "duration": 4976
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7917,
+        "responseHeadersSize": 788
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-1.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401286,
+        "duration": 5022
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 9662,
+        "responseHeadersSize": 646
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-2.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401308,
+        "duration": 5044
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 12126,
+        "responseHeadersSize": 647
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401326,
+        "duration": 5062
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 457,
+        "responseHeadersSize": 564
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401240,
+        "duration": 4976
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 642
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401240,
+        "duration": 4976
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1052
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401240,
+        "duration": 4976
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 809
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007396494,
+        "endTime": 1775007401286,
+        "duration": 4792
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007396495,
+        "endTime": 1775007401286,
+        "duration": 4791
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007396495,
+        "endTime": 1775007401308,
+        "duration": 4813
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007396495,
+        "endTime": 1775007401309,
+        "duration": 4814
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://player.vimeo.com/video/916048999",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007396505,
+        "endTime": 1775007401467,
+        "duration": 4962
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "Unauthorized",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5141,
+        "responseHeadersSize": 206
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007396556,
+        "endTime": 1775007401308,
+        "duration": 4752
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007396613,
+        "endTime": 1775007401308,
+        "duration": 4695
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 105204,
+        "responseHeadersSize": 1082
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007396617,
+        "endTime": 1775007401308,
+        "duration": 4691
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26596,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007396617,
+        "endTime": 1775007401308,
+        "duration": 4691
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 51912,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/webfonts/free-fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007396664,
+        "endTime": 1775007401352,
+        "duration": 4688
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 118696,
+        "responseHeadersSize": 1131
+      }
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775007300000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396670,
+        "endTime": 1775007401432,
+        "duration": 4762
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396670,
+        "endTime": 1775007401433,
+        "duration": 4763
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396670,
+        "endTime": 1775007401434,
+        "duration": 4764
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396877,
+        "endTime": 1775007401542,
+        "duration": 4665
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 366
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396897,
+        "endTime": 1775007401453,
+        "duration": 4556
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007396897,
+        "endTime": 1775007401554,
+        "duration": 4657
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007396938,
+        "endTime": 1775007401542,
+        "duration": 4604
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007397054,
+        "endTime": 1775007401525,
+        "duration": 4471
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007397054,
+        "endTime": 1775007401525,
+        "duration": 4471
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007397208,
+        "endTime": 1775007414571,
+        "duration": 17363
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 86,
+        "responseHeadersSize": 223
+      }
+    }
+  ],
+  "allRequests": [
+    {
+      "url": "https://appmap.io/blog/2023/06/27/how-to-ensure-your-web-apis-are-safe",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007396159,
+        "endTime": 1775007401192,
+        "duration": 5033
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396259,
+        "endTime": 1775007401222,
+        "duration": 4963
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 795
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401232,
+        "duration": 4969
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401232,
+        "duration": 4969
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401232,
+        "duration": 4969
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401233,
+        "duration": 4970
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401233,
+        "duration": 4970
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1032
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401233,
+        "duration": 4970
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 793
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401264,
+        "duration": 5001
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401233,
+        "duration": 4970
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401233,
+        "duration": 4970
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173018,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401235,
+        "duration": 4972
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 630,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401235,
+        "duration": 4972
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 541,
+        "responseHeadersSize": 1030
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401238,
+        "duration": 4975
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5980,
+        "responseHeadersSize": 1044
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396263,
+        "endTime": 1775007401239,
+        "duration": 4976
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1333,
+        "responseHeadersSize": 1044
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401239,
+        "duration": 4975
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 986,
+        "responseHeadersSize": 1051
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401239,
+        "duration": 4975
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 962,
+        "responseHeadersSize": 1045
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401239,
+        "duration": 4975
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 862,
+        "responseHeadersSize": 1055
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401250,
+        "duration": 4986
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 519
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-feature.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401252,
+        "duration": 4988
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 285776,
+        "responseHeadersSize": 469
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401240,
+        "duration": 4976
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7917,
+        "responseHeadersSize": 788
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-1.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401286,
+        "duration": 5022
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 9662,
+        "responseHeadersSize": 646
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-2.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401308,
+        "duration": 5044
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 12126,
+        "responseHeadersSize": 647
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401326,
+        "duration": 5062
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 457,
+        "responseHeadersSize": 564
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401240,
+        "duration": 4976
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 642
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401240,
+        "duration": 4976
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1052
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396264,
+        "endTime": 1775007401240,
+        "duration": 4976
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 809
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007396494,
+        "endTime": 1775007401286,
+        "duration": 4792
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007396495,
+        "endTime": 1775007401286,
+        "duration": 4791
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007396495,
+        "endTime": 1775007401308,
+        "duration": 4813
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007396495,
+        "endTime": 1775007401309,
+        "duration": 4814
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://player.vimeo.com/video/916048999",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007396505,
+        "endTime": 1775007401467,
+        "duration": 4962
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "Unauthorized",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5141,
+        "responseHeadersSize": 206
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007396556,
+        "endTime": 1775007401308,
+        "duration": 4752
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007396613,
+        "endTime": 1775007401308,
+        "duration": 4695
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 105204,
+        "responseHeadersSize": 1082
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007396617,
+        "endTime": 1775007401308,
+        "duration": 4691
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26596,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007396617,
+        "endTime": 1775007401308,
+        "duration": 4691
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 51912,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/webfonts/free-fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007396664,
+        "endTime": 1775007401352,
+        "duration": 4688
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 118696,
+        "responseHeadersSize": 1131
+      }
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775007300000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396670,
+        "endTime": 1775007401432,
+        "duration": 4762
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396670,
+        "endTime": 1775007401433,
+        "duration": 4763
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396670,
+        "endTime": 1775007401434,
+        "duration": 4764
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007396493&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=161447549.1775007397&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938465~115938469~116991817~117266400&sid=1775007396&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&dt=AppMap%20%7C%20How%20to%20ensure%20your%20web%20APIs%20are%20safe&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=710",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007396870,
+        "endTime": 1775007397094,
+        "duration": 224
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.googletagmanager.com/td?id=G-216SS3H0RL&v=3&t=t&pid=1665421385&gtm=45je63u0v883218513za200zd883218513&seq=1&exp=0~115938465~115938469~116991817~117266400&dl=appmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&tdp=G-216SS3H0RL;83218513;0;0;0&frm=0&rtg=83218513&slo=1&hlo=4&lst=3&bt=0&ct=3&z=0",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007396870,
+        "endTime": 1775007396933,
+        "duration": 63
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 747
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007396877,
+        "endTime": 1775007401542,
+        "duration": 4665
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 366
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007396897,
+        "endTime": 1775007401453,
+        "duration": 4556
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007396897,
+        "endTime": 1775007401554,
+        "duration": 4657
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007396938,
+        "endTime": 1775007401542,
+        "duration": 4604
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/g/ea2d291c0fdc/api.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007397027,
+        "endTime": 1775007397061,
+        "duration": 34
+      },
+      "redirected": true,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007397054,
+        "endTime": 1775007401525,
+        "duration": 4471
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007397054,
+        "endTime": 1775007401525,
+        "duration": 4471
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/4fz6y/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007397121,
+        "endTime": 1775007397155,
+        "duration": 34
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007397208,
+        "endTime": 1775007414571,
+        "duration": 17363
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 86,
+        "responseHeadersSize": 223
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/w6giv/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007397233,
+        "endTime": 1775007397273,
+        "duration": 40
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/5cd28ae4-5142-416b-acdd-c08d1c2fbdd0",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007397248
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007397316
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&t=AppMap+%7C+How+to+ensure+your+web+APIs+are+safe&cts=1775007397327&rv=1&vi=9623920aa5807b69214b53655fbfc2cf&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007397329,
+        "endTime": 1775007397465,
+        "duration": 136
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 1007
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/135785e9-0f55-491f-ab9b-dec773883a8a",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007397348
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53dd280be6ddaf/yMQKGU0TjjVqh4phnbiK39F3CPYbWpQU.cqnoeiTvAg-1775007397-1.2.1.1-.9IURw98ufjNkS1NaMH5CjDEoK_XFCwepu5Nl1TRKpPbzyoEwIpyl72ACvTmLhQ8",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007397443,
+        "endTime": 1775007399846,
+        "duration": 2403
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53dd28ce00ddaf/ToszmEk7aQecvPZ_4VNcY_Fhz3Kv6zGO4PB5R5_iY5I-1775007397-1.2.1.1-ivGfQSWdhhVqE00gwYgdjjMzOLiWayIkBwuiM9JRqqqObo69c6VjN2zs8p3_SMRV",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007397534,
+        "endTime": 1775007399869,
+        "duration": 2335
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/8ea2201a-00cd-48ba-9ac8-bed3d6fe3982",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007397632,
+        "endTime": 1775007399094,
+        "duration": 1462
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/8b4e9124-8123-444c-8752-1d15f275318e",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007397729,
+        "endTime": 1775007398829,
+        "duration": 1100
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53dd28ce00ddaf/1775007397557/da71e43240f92a3fbf39f2fe9cea428a25e071019c8870f1b95240696c22c63c/_C2tEVJ3XnBq82h",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007398326,
+        "endTime": 1775007398433,
+        "duration": 107
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53dd280be6ddaf/1775007397464/73WpXWADkWGg1m0",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007398674,
+        "endTime": 1775007398700,
+        "duration": 26
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 239,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/8ea2201a-00cd-48ba-9ac8-bed3d6fe3982",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007398769
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/8b4e9124-8123-444c-8752-1d15f275318e",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007398801
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53dd28ce00ddaf/1775007397557/jSZaZciUvvb2gu8",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007398888,
+        "endTime": 1775007398923,
+        "duration": 35
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 417,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/8ea2201a-00cd-48ba-9ac8-bed3d6fe3982",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007399076
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/8ea2201a-00cd-48ba-9ac8-bed3d6fe3982",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007399077
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53dd280be6ddaf/1775007397465/ec473e4ed04b0bea027cb10aba0dbcc59d9448e4854c64c9ff0bbcd087983c7c/-7W7OGuMb01tHml",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007399099,
+        "endTime": 1775007399124,
+        "duration": 25
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53dd280be6ddaf/yMQKGU0TjjVqh4phnbiK39F3CPYbWpQU.cqnoeiTvAg-1775007397-1.2.1.1-.9IURw98ufjNkS1NaMH5CjDEoK_XFCwepu5Nl1TRKpPbzyoEwIpyl72ACvTmLhQ8",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007399458
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53dd28ce00ddaf/ToszmEk7aQecvPZ_4VNcY_Fhz3Kv6zGO4PB5R5_iY5I-1775007397-1.2.1.1-ivGfQSWdhhVqE00gwYgdjjMzOLiWayIkBwuiM9JRqqqObo69c6VjN2zs8p3_SMRV",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007399822
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/blog/2023/06/27/how-to-ensure-your-web-apis-are-safe",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007401155
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.googletagmanager.com/td?id=G-216SS3H0RL&v=3&t=t&pid=1665421385&gtm=45je63u0v883218513za200zd883218513&seq=2&exp=0~115938465~115938469~116991817~117266400&dl=appmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&tdp=G-216SS3H0RL;83218513;0;0;0&mde=G-216SS3H0RL;16_1;61_1&fin=1&z=0",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007401209,
+        "endTime": 1775007401213,
+        "duration": 4
+      },
+      "redirected": false,
+      "fromCache": false,
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL&is_td=1&v=3&t=t&pid=1665421385&gtm=45je63u0v883218513za200zd883218513&seq=2&exp=0~115938465~115938469~116991817~117266400&dl=appmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&tdp=G-216SS3H0RL;83218513;0;0;0&mde=G-216SS3H0RL;16_1;61_1&fin=1&z=0",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401212,
+        "endTime": 1775007401213,
+        "duration": 1
+      },
+      "redirected": false,
+      "fromCache": false,
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007396493&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=161447549.1775007397&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=2&tag_exp=0~115938465~115938469~116991817~117266400&sid=1775007396&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&dt=AppMap%20%7C%20How%20to%20ensure%20your%20web%20APIs%20are%20safe&en=user_engagement&_et=4330&tfd=5043",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007401212,
+        "endTime": 1775007401213,
+        "duration": 1
+      },
+      "redirected": false,
+      "fromCache": false,
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007396493&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=161447549.1775007397&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=2&tag_exp=0%7E115938465%7E115938469%7E116991817%7E117266400&sid=1775007396&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&dt=AppMap+%7C+How+to+ensure+your+web+APIs+are+safe&en=user_engagement&_et=4330&tfd=5043&gaf=1",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007401213
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.googletagmanager.com/td?id=G-216SS3H0RL&v=3&t=t&pid=1665421385&gtm=45je63u0v883218513za200zd883218513&seq=2&exp=0~115938465~115938469~116991817~117266400&dl=appmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&tdp=G-216SS3H0RL;83218513;0;0;0&mde=G-216SS3H0RL;16_1;61_1&fin=1&z=0&img=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007401213
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007401222
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007401232
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007401232
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007401232
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007401233
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007401233
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007401233
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007401233
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401233
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401233
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401235
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007401235
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401238
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401239
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401239
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401239
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401239
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007401239
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-feature.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007401239
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401239
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-1.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007401240
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-2.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007401240
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007401240
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401240
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401240
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401240
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007401269
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007401269
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007401269
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007401269
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://player.vimeo.com/video/916048999",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007401284
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007401304
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007401308
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007401308
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007401308
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/webfonts/free-fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007401352
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775007300000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401431
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401432
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401434
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007401448
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007401452
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007401454
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007401525
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007401525
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401542
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/wrmsv/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007401604,
+        "endTime": 1775007401639,
+        "duration": 35
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/d81qn/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007401622,
+        "endTime": 1775007401654,
+        "duration": 32
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007401676
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007401710
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&t=AppMap+%7C+How+to+ensure+your+web+APIs+are+safe&cts=1775007401718&rv=1&vi=56ae4b58034066ab99684cafc27b0679&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007401722,
+        "endTime": 1775007401812,
+        "duration": 90
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 1007
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/415f4118-e996-4ebf-9d52-0300519e3c91",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401739
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/3c2819e7-d3d6-4ce7-bb4e-1ae42473a87a",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007401781
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53dd441e4bddaf/WqvLzw.ZZDhjaoOfg7x3T9zR9qfKLdXwvSGDbDTrRRY-1775007401-1.2.1.1-rXYDVRCGX_E2.0X0uUgT94hzCAjLpEuOTL1JIjxDXhTaHa9Mu2Q3AceCthlHwxZa",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007401920,
+        "endTime": 1775007403981,
+        "duration": 2061
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53dd443ea6ddaf/dohGlfDBzZ6FWqL7nYdtxuzBRtNp_fHKz4_hBHeys4s-1775007401-1.2.1.1-enactlmzKn9POt_V07tyjMT9.dIHKekDVncPXlRdQx4kYy1IGKFST7Bx.obOFK_7",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007401987,
+        "endTime": 1775007404486,
+        "duration": 2499
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/dec4c7b4-bad9-46fd-939b-f1e462723f7a",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007402067,
+        "endTime": 1775007402967,
+        "duration": 900
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/9e0c025e-4d07-4060-8c90-1ca7c4bb2ec5",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007402176,
+        "endTime": 1775007403536,
+        "duration": 1360
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/dec4c7b4-bad9-46fd-939b-f1e462723f7a",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007402601
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/dec4c7b4-bad9-46fd-939b-f1e462723f7a",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007402606
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/9e0c025e-4d07-4060-8c90-1ca7c4bb2ec5",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007402863
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/9e0c025e-4d07-4060-8c90-1ca7c4bb2ec5",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007402865
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/dec4c7b4-bad9-46fd-939b-f1e462723f7a",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007402944
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53dd443ea6ddaf/1775007402006/V0oWp44RZZ8GA7J",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007403322,
+        "endTime": 1775007403353,
+        "duration": 31
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 535,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53dd441e4bddaf/1775007401938/2a4e75865901b9250ff737dd9415c3413f0bdf707bcdf6629f5cb1981c37bafe/85q4g2pS-_Rcerm",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007403362,
+        "endTime": 1775007403407,
+        "duration": 45
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53dd441e4bddaf/1775007401938/_lgyKU5nHuoMfz-",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007403410,
+        "endTime": 1775007403438,
+        "duration": 28
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 292,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/9e0c025e-4d07-4060-8c90-1ca7c4bb2ec5",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007403479
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53dd441e4bddaf/WqvLzw.ZZDhjaoOfg7x3T9zR9qfKLdXwvSGDbDTrRRY-1775007401-1.2.1.1-rXYDVRCGX_E2.0X0uUgT94hzCAjLpEuOTL1JIjxDXhTaHa9Mu2Q3AceCthlHwxZa",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007403935
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53dd443ea6ddaf/1775007402007/ea884aa339def7411f35c82aeb9d6f6db1c84ac985a3554e48e5ae36e0b492f1/pIykuXeTpsOMB9Q",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007403972,
+        "endTime": 1775007403995,
+        "duration": 23
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53dd443ea6ddaf/dohGlfDBzZ6FWqL7nYdtxuzBRtNp_fHKz4_hBHeys4s-1775007401-1.2.1.1-enactlmzKn9POt_V07tyjMT9.dIHKekDVncPXlRdQx4kYy1IGKFST7Bx.obOFK_7",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007404442
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007401268&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=161447549.1775007397&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=0~115938466~115938468~116133314~116991816~117384406&sid=1775007396&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&dt=AppMap%20%7C%20How%20to%20ensure%20your%20web%20APIs%20are%20safe&en=page_view&_ee=1&tfd=5273",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007406429,
+        "endTime": 1775007406466,
+        "duration": 37
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rchtOAye7Tczytev5OSpzqgDC.At1qb5x2VOGwkoFeZQ1k-1775007401-1.3.1.1-Qukkl9U2oaV.VO850sF8W3TH_OSesgizBkMQ.Gr_TN8/wrmsv/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/failure_retry/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007413990,
+        "endTime": 1775007414021,
+        "duration": 31
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007414042
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/042c923e-f5d5-45b0-9cea-980419f59c2e",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007414053
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53dd9178a2ddaf/YP53m4om3I47CLNhtiyjg5Bn9MYfxDBZliD8xOXyp5Y-1775007414-1.2.1.1-cNRtxzoV4fgQg0K50fyMjAtXMwhXw.p4La5Pq_8s2n.y4gtVE_5_MPOYq_Dj2nD5",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007414223,
+        "endTime": 1775007415648,
+        "duration": 1425
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/645919f0-6e72-49ae-a1e4-3b900d79e8fd",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007414355,
+        "endTime": 1775007414847,
+        "duration": 492
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch7Ohod0Mf5S7uWwFx.VHIukU6KRaeJqqaGu7BoVCAVbI-1775007401-1.3.1.1-y60zD_wk63Yojth3Rivai7CFua661.x3H6czcO_lp1o/d81qn/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/failure_retry/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007414498,
+        "endTime": 1775007414535,
+        "duration": 37
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53dd9178a2ddaf/1775007414241/d8244f0ae62e735c2c5496a5b383cd220505c886fde1af000c1da870f22e77e8/Q-aaoZ7zfA4kLCQ",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007414527,
+        "endTime": 1775007414557,
+        "duration": 30
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007414554
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/39560edd-8f5e-427c-a3da-fe88c59ddbe4",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007414591
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53dd94aa21ddaf/ukkTsxyQkRh1SmucVIsGU3h9F6fZmQL7jYd09exMvhk-1775007414-1.2.1.1-rHk9cYbKgCZ7gtC1X_g.N_z7XF_aKK1VR7ztD1SOI94BLjfFDDEJe8el4FttfW4I",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007414751,
+        "endTime": 1775007416277,
+        "duration": 1526
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/645919f0-6e72-49ae-a1e4-3b900d79e8fd",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007414832
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007401268&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=161447549.1775007397&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938466~115938468~116133314~116991816~117384406&sid=1775007396&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&dt=AppMap%20%7C%20How%20to%20ensure%20your%20web%20APIs%20are%20safe&en=scroll&epn.percent_scrolled=90&_et=8451&tfd=13729",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007414886,
+        "endTime": 1775007414921,
+        "duration": 35
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/282113d6-17d2-4158-ae52-d94b98a9a512",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007414898,
+        "endTime": 1775007415131,
+        "duration": 233
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/282113d6-17d2-4158-ae52-d94b98a9a512",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007415093
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53dd9178a2ddaf/1775007414242/tAYF1ABtHmvjBMl",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007415122,
+        "endTime": 1775007415183,
+        "duration": 61
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 147,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53dd9178a2ddaf/YP53m4om3I47CLNhtiyjg5Bn9MYfxDBZliD8xOXyp5Y-1775007414-1.2.1.1-cNRtxzoV4fgQg0K50fyMjAtXMwhXw.p4La5Pq_8s2n.y4gtVE_5_MPOYq_Dj2nD5",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007415572
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53dd94aa21ddaf/1775007414770/ffc6c4ea277d25754768ef04e9b5c65f634286b8a8359b4911b02bbc57e62aa9/6m4UZFc0UwEzfOc",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007415659,
+        "endTime": 1775007415682,
+        "duration": 23
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53dd94aa21ddaf/1775007414770/teksHXbYB7DjCE1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007415757,
+        "endTime": 1775007415780,
+        "duration": 23
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 502,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53dd94aa21ddaf/ukkTsxyQkRh1SmucVIsGU3h9F6fZmQL7jYd09exMvhk-1775007414-1.2.1.1-rHk9cYbKgCZ7gtC1X_g.N_z7XF_aKK1VR7ztD1SOI94BLjfFDDEJe8el4FttfW4I",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007416234
+      },
+      "redirected": false,
+      "fromCache": false
+    }
+  ]
+}

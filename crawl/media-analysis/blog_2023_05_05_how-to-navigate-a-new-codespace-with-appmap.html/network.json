@@ -1,0 +1,1077 @@
+{
+  "url": "https://appmap.io/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap",
+  "timestamp": "2026-04-01T01:35:29.561Z",
+  "loadTime": 17618,
+  "summary": {
+    "totalRequests": 58,
+    "successfulRequests": 55,
+    "failedRequests": 3,
+    "cachedRequests": 0,
+    "redirectedRequests": 0,
+    "slowRequests": 0
+  },
+  "requestsByType": {
+    "document": 1,
+    "stylesheet": 10,
+    "script": 14,
+    "image": 20,
+    "fetch": 7,
+    "font": 5,
+    "xhr": 1
+  },
+  "failedRequests": [
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007312626,
+        "duration": 89
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007312322&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=949639395.1775007313&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938466~115938469~116133313~116991816&sid=1775007312&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fhow-to-navigate-a-new-codespace-with-appmap&dt=AppMap%20%7C%20How%20to%20navigate%20a%20new%20codebase%20with%20AppMap&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=694",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007312783,
+        "duration": 131
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007312322&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=949639395.1775007313&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=0~115938466~115938469~116133313~116991816&sid=1775007312&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fhow-to-navigate-a-new-codespace-with-appmap&dt=AppMap%20%7C%20How%20to%20navigate%20a%20new%20codebase%20with%20AppMap&en=scroll&epn.percent_scrolled=90&_et=9736&tfd=15433",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007327519,
+        "duration": 34
+      }
+    }
+  ],
+  "slowRequests": [],
+  "allRequests": [
+    {
+      "url": "https://appmap.io/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007312087,
+        "endTime": 1775007312187,
+        "duration": 100
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007312199,
+        "endTime": 1775007312259,
+        "duration": 60
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 795
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007312200,
+        "endTime": 1775007312313,
+        "duration": 113
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007312200,
+        "endTime": 1775007312309,
+        "duration": 109
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007312206,
+        "endTime": 1775007312312,
+        "duration": 106
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007312206,
+        "endTime": 1775007312307,
+        "duration": 101
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007312207,
+        "endTime": 1775007312270,
+        "duration": 63
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1034
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007312207,
+        "endTime": 1775007312269,
+        "duration": 62
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 793
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007312207,
+        "endTime": 1775007312241,
+        "duration": 34
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007312207,
+        "endTime": 1775007312292,
+        "duration": 85
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007312207,
+        "endTime": 1775007312647,
+        "duration": 440
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173018,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007312207,
+        "endTime": 1775007312435,
+        "duration": 228
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 634,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007312207,
+        "endTime": 1775007312275,
+        "duration": 68
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 541,
+        "responseHeadersSize": 1038
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007312207,
+        "endTime": 1775007312277,
+        "duration": 70
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5980,
+        "responseHeadersSize": 1042
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007312207,
+        "endTime": 1775007312290,
+        "duration": 83
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1333,
+        "responseHeadersSize": 1044
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007312207,
+        "endTime": 1775007312281,
+        "duration": 74
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 986,
+        "responseHeadersSize": 1041
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007312207,
+        "endTime": 1775007312291,
+        "duration": 84
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 962,
+        "responseHeadersSize": 1043
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007312208,
+        "endTime": 1775007312282,
+        "duration": 74
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 862,
+        "responseHeadersSize": 1043
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312208,
+        "endTime": 1775007312244,
+        "duration": 36
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 519
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigating-codebases-feature.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312208,
+        "endTime": 1775007312501,
+        "duration": 293
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 53528,
+        "responseHeadersSize": 617
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-1.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312208,
+        "endTime": 1775007312438,
+        "duration": 230
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 20602,
+        "responseHeadersSize": 662
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-2.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312208,
+        "endTime": 1775007312638,
+        "duration": 430
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 4876,
+        "responseHeadersSize": 660
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-3.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312208,
+        "endTime": 1775007312640,
+        "duration": 432
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 25756,
+        "responseHeadersSize": 662
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-4.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312208,
+        "endTime": 1775007312540,
+        "duration": 332
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14714,
+        "responseHeadersSize": 662
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-5.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312208,
+        "endTime": 1775007312633,
+        "duration": 425
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 12500,
+        "responseHeadersSize": 662
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-6.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312208,
+        "endTime": 1775007312571,
+        "duration": 363
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 15768,
+        "responseHeadersSize": 662
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-7.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312208,
+        "endTime": 1775007312634,
+        "duration": 426
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2958,
+        "responseHeadersSize": 660
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-8.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312208,
+        "endTime": 1775007312638,
+        "duration": 430
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 3814,
+        "responseHeadersSize": 660
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-9.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312208,
+        "endTime": 1775007312670,
+        "duration": 462
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 3526,
+        "responseHeadersSize": 660
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-10.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312208,
+        "endTime": 1775007312558,
+        "duration": 350
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 4830,
+        "responseHeadersSize": 661
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-11.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312208,
+        "endTime": 1775007312581,
+        "duration": 373
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 28106,
+        "responseHeadersSize": 663
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-12.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312209,
+        "endTime": 1775007312558,
+        "duration": 349
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 12424,
+        "responseHeadersSize": 663
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-13.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312209,
+        "endTime": 1775007312639,
+        "duration": 430
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 28128,
+        "responseHeadersSize": 663
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-14.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312209,
+        "endTime": 1775007312639,
+        "duration": 430
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 18056,
+        "responseHeadersSize": 663
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-15.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312209,
+        "endTime": 1775007312638,
+        "duration": 429
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 21366,
+        "responseHeadersSize": 663
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-16.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312209,
+        "endTime": 1775007312644,
+        "duration": 435
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26044,
+        "responseHeadersSize": 663
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312209,
+        "endTime": 1775007312406,
+        "duration": 197
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 457,
+        "responseHeadersSize": 563
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007312209,
+        "endTime": 1775007312479,
+        "duration": 270
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 642
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007312209,
+        "endTime": 1775007312409,
+        "duration": 200
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1042
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007312209,
+        "endTime": 1775007312407,
+        "duration": 198
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 809
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007312324,
+        "endTime": 1775007312412,
+        "duration": 88
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007312324,
+        "endTime": 1775007312412,
+        "duration": 88
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007312324,
+        "endTime": 1775007312414,
+        "duration": 90
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007312324,
+        "endTime": 1775007312412,
+        "duration": 88
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007312401,
+        "endTime": 1775007312571,
+        "duration": 170
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007312402,
+        "endTime": 1775007312523,
+        "duration": 121
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 105204,
+        "responseHeadersSize": 1078
+      }
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007312437,
+        "endTime": 1775007312646,
+        "duration": 209
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775007000000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007312438,
+        "endTime": 1775007312653,
+        "duration": 215
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007312438,
+        "endTime": 1775007312581,
+        "duration": 143
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/webfonts/free-fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007312476,
+        "endTime": 1775007312558,
+        "duration": 82
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 118696,
+        "responseHeadersSize": 1125
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007312623,
+        "endTime": 1775007312672,
+        "duration": 49
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007312626,
+        "endTime": 1775007312715,
+        "duration": 89
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007312701,
+        "endTime": 1775007312785,
+        "duration": 84
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007312703,
+        "endTime": 1775007312789,
+        "duration": 86
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007312712,
+        "endTime": 1775007312795,
+        "duration": 83
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007312322&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=949639395.1775007313&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938466~115938469~116133313~116991816&sid=1775007312&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fhow-to-navigate-a-new-codespace-with-appmap&dt=AppMap%20%7C%20How%20to%20navigate%20a%20new%20codebase%20with%20AppMap&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=694",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007312783,
+        "endTime": 1775007312914,
+        "duration": 131
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fhow-to-navigate-a-new-codespace-with-appmap%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fhow-to-navigate-a-new-codespace-with-appmap&t=AppMap+%7C+How+to+navigate+a+new+codebase+with+AppMap&cts=1775007312815&rv=1&vi=68460ee7e6c79084e932c5d6e4d9252c&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007312818,
+        "endTime": 1775007312956,
+        "duration": 138
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 1007
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775007312322&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=949639395.1775007313&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=2&tag_exp=0~115938466~115938469~116133313~116991816&sid=1775007312&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fhow-to-navigate-a-new-codespace-with-appmap&dt=AppMap%20%7C%20How%20to%20navigate%20a%20new%20codebase%20with%20AppMap&en=scroll&epn.percent_scrolled=90&_et=9736&tfd=15433",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007327519,
+        "endTime": 1775007327553,
+        "duration": 34
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "timestamp": "2026-04-01T01:43:00.980Z",
+  "crawlDirectory": "crawl/site/docs/get-started-with-appmap/navie-ai-quickstart.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 10,
+  "foundAssets": 8,
+  "notFoundAssets": 2,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/get-started-with-appmap/navie-ai-quickstart.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/get-started-with-appmap/navie-ai-quickstart.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 772,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/get-started-with-appmap/navie-ai-quickstart.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 773,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/open-navie.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/open-navie.png",
+          "foundInFile": "crawl/site/docs/get-started-with-appmap/navie-ai-quickstart.html",
+          "context": "<p>To open the Navie Chat, open the AppMap plugin in the sidebar menu for your code editor, and select the <code class=\"language-plaintext highligh.../code> option.</p>\n\n<p><img src=\"/assets/img/open-navie.png\" alt=\"Open Navie\"></p>\n\n<h2 id=\"ask-navie-about-your-app\">Ask Navie about your App</h2>",
+          "lineNumber": 816,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/open-navie.png",
+            "alt": "Open Navie"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/navie-context-window.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/navie-context-window.webp",
+          "foundInFile": "crawl/site/docs/get-started-with-appmap/navie-ai-quickstart.html",
+          "context": "</ul>\n\n<p><img src=\"/assets/img/navie-context-window.webp\" alt=\"Navie Context Window\"></p>\n\n<h2 id=\"review-your-code\">Review Your Code</h2>",
+          "lineNumber": 856,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/navie-context-window.webp",
+            "alt": "Navie Context Window"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/review_your_code_button.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/review_your_code_button.png",
+          "foundInFile": "crawl/site/docs/get-started-with-appmap/navie-ai-quickstart.html",
+          "context": "<p>To start a code review, click the <code class=\"language-plaintext highlighter-rouge\">Review Your Code</code> button in the Navie sidebar. This w...f suggested improvements for your codebase, including:</p>\n\n<p><img src=\"/assets/img/review_your_code_button.png\" alt=\"Review Your Code\"></p>\n\n<ul>",
+          "lineNumber": 865,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/review_your_code_button.png",
+            "alt": "Review Your Code"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/navie-appmap-data-exists.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/navie-appmap-data-exists.webp",
+          "foundInFile": "crawl/site/docs/get-started-with-appmap/navie-ai-quickstart.html",
+          "context": "<p>After your AppMap Data is generated, the Navie window will indicate the AppMap Data that exists for your project.</p>\n\n<p><img src=\"/assets/img/...t, asking questions to Navie will now include data flows, sequence diagrams, traces, in addition to the relevant code snippets for the project.</p>",
+          "lineNumber": 886,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/navie-appmap-data-exists.webp",
+            "alt": "Navie AppMap Data Exists"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/navie-appmap-context-window.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/navie-appmap-context-window.webp",
+          "foundInFile": "crawl/site/docs/get-started-with-appmap/navie-ai-quickstart.html",
+          "context": "<p>With this AppMap Data in your project, asking questions to Navie will now include data flows, sequence diagrams, traces, in addition to the rele...ject.</p>\n\n<p><img src=\"/assets/img/navie-appmap-context-window.webp\" alt=\"Navie AppMap context window 2\"></p>\n\n<h2 id=\"next-steps\">Next Steps</h2>",
+          "lineNumber": 890,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/navie-appmap-context-window.webp",
+            "alt": "Navie AppMap context window 2"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Fget-started-with-appmap%2Fnavie-ai-quickstart.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Fget-started-with-appmap%2Fnavie-ai-quickstart&t=AppMap+-+Docs+-+AppMap+in+your+Code+Editor+-+Navie+AI+Quickstart&cts=1775007769877&rv=1&vi=5cff245f289478676905a38305e044e3&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

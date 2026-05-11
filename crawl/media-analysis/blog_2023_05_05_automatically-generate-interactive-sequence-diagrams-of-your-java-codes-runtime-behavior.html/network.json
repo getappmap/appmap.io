@@ -1,0 +1,1087 @@
+{
+  "url": "https://appmap.io/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior",
+  "timestamp": "2026-04-01T01:35:10.245Z",
+  "loadTime": 12772,
+  "summary": {
+    "totalRequests": 59,
+    "successfulRequests": 56,
+    "failedRequests": 3,
+    "cachedRequests": 0,
+    "redirectedRequests": 0,
+    "slowRequests": 0
+  },
+  "requestsByType": {
+    "document": 2,
+    "stylesheet": 11,
+    "script": 18,
+    "image": 12,
+    "fetch": 7,
+    "font": 6,
+    "xhr": 1,
+    "ping": 2
+  },
+  "failedRequests": [
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u1h2v883218513za200zd883218513&_p=1775007298184&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1712938692.1775007299&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938466~115938468~116991816&sid=1775007298&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fautomatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior&dt=AppMap%20%7C%20Automatically%20generate%20interactive%20sequence%20diagrams%20of%20your%20Java%20code%27s%20runtime%20behavior&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=914",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007298536,
+        "duration": 240
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007298566,
+        "duration": 212
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u1h2v883218513za200zd883218513&_p=1775007298184&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1712938692.1775007299&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938466~115938468~116991816&sid=1775007298&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fautomatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior&dt=AppMap%20%7C%20Automatically%20generate%20interactive%20sequence%20diagrams%20of%20your%20Java%20code%27s%20runtime%20behavior&en=scroll&epn.percent_scrolled=90&_et=5167&tfd=11083",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775007308702,
+        "duration": 37
+      }
+    }
+  ],
+  "slowRequests": [],
+  "allRequests": [
+    {
+      "url": "https://appmap.io/blog/2023/05/05/automatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007297621,
+        "endTime": 1775007297703,
+        "duration": 82
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007297715,
+        "endTime": 1775007297782,
+        "duration": 67
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 795
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007297719,
+        "endTime": 1775007297822,
+        "duration": 103
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007297719,
+        "endTime": 1775007297842,
+        "duration": 123
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007297719,
+        "endTime": 1775007297824,
+        "duration": 105
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007297719,
+        "endTime": 1775007298178,
+        "duration": 459
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007297719,
+        "endTime": 1775007297797,
+        "duration": 78
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1038
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007297719,
+        "endTime": 1775007297791,
+        "duration": 72
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 793
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007297720,
+        "endTime": 1775007297749,
+        "duration": 29
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007297720,
+        "endTime": 1775007297813,
+        "duration": 93
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007297720,
+        "endTime": 1775007298453,
+        "duration": 733
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173024,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007297720,
+        "endTime": 1775007298362,
+        "duration": 642
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 634,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007297720,
+        "endTime": 1775007297802,
+        "duration": 82
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 541,
+        "responseHeadersSize": 1032
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007297720,
+        "endTime": 1775007297805,
+        "duration": 85
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5980,
+        "responseHeadersSize": 1044
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007297720,
+        "endTime": 1775007297809,
+        "duration": 89
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1333,
+        "responseHeadersSize": 1048
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007297720,
+        "endTime": 1775007297808,
+        "duration": 88
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 986,
+        "responseHeadersSize": 1039
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007297720,
+        "endTime": 1775007297809,
+        "duration": 89
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 962,
+        "responseHeadersSize": 1043
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007297720,
+        "endTime": 1775007297807,
+        "duration": 87
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 862,
+        "responseHeadersSize": 1049
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007297720,
+        "endTime": 1775007297753,
+        "duration": 33
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 519
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/automatically-create-diagrams-feature.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007297720,
+        "endTime": 1775007297915,
+        "duration": 195
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 33152,
+        "responseHeadersSize": 536
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-1.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007297720,
+        "endTime": 1775007297947,
+        "duration": 227
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 32740,
+        "responseHeadersSize": 679
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007297720,
+        "endTime": 1775007297993,
+        "duration": 273
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7917,
+        "responseHeadersSize": 788
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-2.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007297721,
+        "endTime": 1775007298185,
+        "duration": 464
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 27382,
+        "responseHeadersSize": 679
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-3.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007297721,
+        "endTime": 1775007298308,
+        "duration": 587
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 10118,
+        "responseHeadersSize": 679
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-4.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007297721,
+        "endTime": 1775007298405,
+        "duration": 684
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7986,
+        "responseHeadersSize": 678
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-5.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007297721,
+        "endTime": 1775007298436,
+        "duration": 715
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24506,
+        "responseHeadersSize": 679
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/automatically-generate-interactive-sequence-diagrams-6.jpeg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007297721,
+        "endTime": 1775007298474,
+        "duration": 753
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7486,
+        "responseHeadersSize": 688
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007297721,
+        "endTime": 1775007298290,
+        "duration": 569
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 457,
+        "responseHeadersSize": 563
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007297721,
+        "endTime": 1775007298296,
+        "duration": 575
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 642
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007297722,
+        "endTime": 1775007298290,
+        "duration": 568
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1044
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007297722,
+        "endTime": 1775007298240,
+        "duration": 518
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 809
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007298184,
+        "endTime": 1775007298295,
+        "duration": 111
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007298185,
+        "endTime": 1775007298296,
+        "duration": 111
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007298185,
+        "endTime": 1775007298295,
+        "duration": 110
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007298185,
+        "endTime": 1775007298296,
+        "duration": 111
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://player.vimeo.com/video/916048873",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775007298201,
+        "endTime": 1775007298522,
+        "duration": 321
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007298238,
+        "endTime": 1775007298379,
+        "duration": 141
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007298285,
+        "endTime": 1775007298388,
+        "duration": 103
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 105204,
+        "responseHeadersSize": 1076
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007298285,
+        "endTime": 1775007298385,
+        "duration": 100
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26596,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/webfonts/free-fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007298360,
+        "endTime": 1775007298435,
+        "duration": 75
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 118696,
+        "responseHeadersSize": 1133
+      }
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007298370,
+        "endTime": 1775007298543,
+        "duration": 173
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775007000000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007298370,
+        "endTime": 1775007298541,
+        "duration": 171
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007298370,
+        "endTime": 1775007298538,
+        "duration": 168
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u1h2v883218513za200zd883218513&_p=1775007298184&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1712938692.1775007299&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938466~115938468~116991816&sid=1775007298&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fautomatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior&dt=AppMap%20%7C%20Automatically%20generate%20interactive%20sequence%20diagrams%20of%20your%20Java%20code%27s%20runtime%20behavior&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=914",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007298536,
+        "endTime": 1775007298776,
+        "duration": 240
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/player.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007298546,
+        "endTime": 1775007298768,
+        "duration": 222
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 206879,
+        "responseHeadersSize": 573
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/js/vendor.module.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007298551,
+        "endTime": 1775007298763,
+        "duration": 212
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 95364,
+        "responseHeadersSize": 574
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/p/4.46.35/css/player.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007298551,
+        "endTime": 1775007298735,
+        "duration": 184
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 21731,
+        "responseHeadersSize": 559
+      }
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1803456166-572bcde5778e4a7646b8c9bbb5e24d74f6df1fa4f79ca8628c16571f37104a63-d?mw=80&q=85",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007298551,
+        "endTime": 1775007298735,
+        "duration": 184
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 633,
+        "responseHeadersSize": 527
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775007298566,
+        "endTime": 1775007298729,
+        "duration": 163
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007298566,
+        "endTime": 1775007298778,
+        "duration": 212
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007298758,
+        "endTime": 1775007298799,
+        "duration": 41
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775007298759,
+        "endTime": 1775007298805,
+        "duration": 46
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775007298772,
+        "endTime": 1775007298947,
+        "duration": 175
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fautomatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fautomatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior&t=AppMap+%7C+Automatically+generate+interactive+sequence+diagrams+of+your+Java+code%27s+runtime+behavior&cts=1775007298803&rv=1&vi=c74e8c12deda013f234b411692c00740&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007298807,
+        "endTime": 1775007298940,
+        "duration": 133
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 999
+      }
+    },
+    {
+      "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775007298933,
+        "endTime": 1775007298947,
+        "duration": 14
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 985,
+        "responseHeadersSize": 611
+      }
+    },
+    {
+      "url": "https://i.vimeocdn.com/video/1803456166-572bcde5778e4a7646b8c9bbb5e24d74f6df1fa4f79ca8628c16571f37104a63-d?mw=800&mh=450",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775007298933,
+        "endTime": 1775007298940,
+        "duration": 7
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 3452,
+        "responseHeadersSize": 529
+      }
+    },
+    {
+      "url": "https://arclight.vimeo.com/add/player-stats?beacon=1&session-id=a329aefbd20c1b75e2b96d265bba45312e7013a21775007298",
+      "method": "POST",
+      "resourceType": "ping",
+      "timing": {
+        "startTime": 1775007298933,
+        "endTime": 1775007299089,
+        "duration": 156
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 215
+      }
+    },
+    {
+      "url": "https://vimeo.com/ablincoln/vuid?pid=a329aefbd20c1b75e2b96d265bba45312e7013a21775007298",
+      "method": "POST",
+      "resourceType": "ping",
+      "timing": {
+        "startTime": 1775007298991,
+        "endTime": 1775007299152,
+        "duration": 161
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "No Content"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u1h2v883218513za200zd883218513&_p=1775007298184&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1712938692.1775007299&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938466~115938468~116991816&sid=1775007298&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fautomatically-generate-interactive-sequence-diagrams-of-your-java-codes-runtime-behavior&dt=AppMap%20%7C%20Automatically%20generate%20interactive%20sequence%20diagrams%20of%20your%20Java%20code%27s%20runtime%20behavior&en=scroll&epn.percent_scrolled=90&_et=5167&tfd=11083",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775007308702,
+        "endTime": 1775007308739,
+        "duration": 37
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    }
+  ]
+}

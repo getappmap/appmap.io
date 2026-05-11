@@ -1,0 +1,790 @@
+tag: body
+children:
+  - tag: div
+    attributes:
+      id: hs-banner-parent
+    children:
+      - tag: div
+        attributes:
+          id: hs-eu-cookie-confirmation
+        children:
+          - tag: div
+            attributes:
+              id: hs-eu-cookie-confirmation-inner
+            children:
+              - tag: div
+                attributes:
+                  id: hs-eu-header-container
+                children:
+                  - tag: button
+                    attributes:
+                      id: hs-eu-close-button
+              - tag: div
+                attributes:
+                  id: hs-eu-policy-wording
+                children:
+                  - tag: p
+                    text: This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to im...
+              - tag: p
+                text: If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
+                attributes:
+                  id: hs-eu-cookie-disclaimer
+              - tag: div
+                attributes:
+                  id: hs-eu-cookie-confirmation-buttons-area
+                children:
+                  - tag: div
+                    attributes:
+                      id: hs-eu-confirmation-button-group
+                    children:
+                      - tag: button
+                        text: Cookies settings
+                        attributes:
+                          id: hs-eu-cookie-settings-button
+                      - tag: div
+                        attributes:
+                          id: hs-eu-opt-in-buttons
+                        children:
+                          - tag: button
+                            text: Accept
+                            attributes:
+                              id: hs-eu-confirmation-button
+                          - tag: button
+                            text: Decline
+                            attributes:
+                              id: hs-eu-decline-button
+  - tag: p
+    children:
+      - tag: b
+        text: To access the latest features
+      - tag: a
+        text: keep your code editor plug-in up to date.
+        attributes:
+          href: /docs/get-started-with-appmap/add-appmap-to-your-code-editor#keep-your-extension-up-to-date
+  - tag: nav
+    children:
+      - tag: a
+        attributes:
+          href: /
+      - tag: button
+        attributes:
+          type: button
+      - tag: div
+        attributes:
+          id: navbarText
+        children:
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Docs
+                    attributes:
+                      href: /docs
+              - tag: li
+                children:
+                  - tag: a
+                    text: Blog
+                    attributes:
+                      href: /blog
+              - tag: li
+                children:
+                  - tag: a
+                    text: Pricing
+                    attributes:
+                      href: /pricing
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Get AppMap
+                    attributes:
+                      href: /get-appmap
+              - tag: li
+                children:
+                  - tag: a
+                    text: Book a Demo
+                    attributes:
+                      id: book-demo-link
+                      href: https://meetings.hubspot.com/dustin294
+  - tag: div
+    attributes:
+      id: home-body
+    children:
+      - tag: div
+        attributes:
+          id: tac
+        children:
+          - tag: h1
+            text: Privacy Policy
+          - tag: div
+            text: ‍
+            children:
+              - tag: em
+                text: 'Effective Date: March 6, 2024'
+              - tag: p
+                text: AppMap by AppLand, Inc. (“AppMap”) takes your privacy seriously. Please read this Privacy Policy to learn how AppMap uses personal data. By using, downloading, or accessing AppMap services in any mann...
+              - tag: p
+                text: Remember that your use of AppMap’s Services is at all times subject to our which incorporates this Privacy Policy.
+                children:
+                  - tag: a
+                    text: Terms of Service
+                    attributes:
+                      href: /community/terms-and-conditions
+              - tag: p
+                text: You may access this Privacy Policy in an alternative format by contacting
+                children:
+                  - tag: a
+                    text: privacy@appmap.io
+                    attributes:
+                      href: mailto:privacy@appmap.io
+              - tag: p
+                text: As we continually work to improve our Services, we may need to change this Privacy Policy from time to time. Upon such changes, we will alert you to any such changes by placing a notice on the AppMap ...
+              - tag: h2
+                text: What this Privacy Policy Covers
+              - tag: p
+                text: This Privacy Policy covers how we treat Personal Data that we gather when you access or use our Services. “Personal Data” means any information that identifies or relates to a particular individual an...
+              - tag: p
+                text: 'This privacy policy describes:'
+              - tag: ol
+                children:
+                  - tag: li
+                    text: Categories of Personal Data We Collect
+                  - tag: li
+                    text: Categories of Sources of Personal Data
+                  - tag: li
+                    text: Our Commercial or Business Purposes for Collecting Personal Data
+                  - tag: li
+                    text: How We Disclose Your Personal Data
+                  - tag: li
+                    text: Tracking Tools, Advertising and Opt-Out
+                  - tag: li
+                    text: Data Security and Retention
+                  - tag: li
+                    text: Personal Data of Children
+                  - tag: li
+                    text: Other State Law Privacy Rights
+                  - tag: li
+                    text: European Union Data Subject Rights
+                  - tag: li
+                    text: Changes to this Privacy Policy
+                  - tag: li
+                    text: Contact Information
+              - tag: h2
+                text: Categories of Personal Data We Collect
+              - tag: p
+                text: 'This list details the categories of Personal Data that we collect and have collected over the past 12 months:'
+              - tag: table
+                children:
+                  - tag: tbody
+                    children:
+                      - tag: tr
+                        children:
+                          - tag: th
+                            text: Categories of Personal Data We Collect
+                          - tag: th
+                            text: Example
+                          - tag: th
+                            text: Categories of Third Parties With Whom We Share this Personal Data
+                      - tag: tr
+                        children:
+                          - tag: td
+                            text: Profile or contact data
+                          - tag: td
+                            children:
+                              - tag: ul
+                                children:
+                                  - tag: li
+                                    text: First and last name
+                                  - tag: li
+                                    text: Email
+                                  - tag: li
+                                    text: Account credentials, such as when you access the Services using your GitHub/GitLab credentials
+                          - tag: td
+                            children:
+                              - tag: ul
+                                children:
+                                  - tag: li
+                                    text: Service Providers, including authentication services
+                                  - tag: li
+                                    text: Parties You Authorize, Access or Authenticate
+                      - tag: tr
+                        children:
+                          - tag: td
+                            text: Payment Data
+                          - tag: td
+                            children:
+                              - tag: ul
+                                children:
+                                  - tag: li
+                                    text: Billing contact first and last name
+                                  - tag: li
+                                    text: Billing address, phone number, and email
+                          - tag: td
+                            children:
+                              - tag: ul
+                                children:
+                                  - tag: li
+                                    text: Service providers (specifically our payment processing partners)
+                                  - tag: li
+                                    text: Parties You Authorize, Access or Authenticate
+                      - tag: tr
+                        children:
+                          - tag: td
+                            text: Commercial Data
+                          - tag: td
+                            children:
+                              - tag: ul
+                                children:
+                                  - tag: li
+                                    text: Purchase history
+                                  - tag: li
+                                    text: Consumer profiles
+                          - tag: td
+                            children:
+                              - tag: ul
+                                children:
+                                  - tag: li
+                                    text: Service Providers
+                                  - tag: li
+                                    text: Analytics Partners
+                      - tag: tr
+                        children:
+                          - tag: td
+                            text: Deployment Environment Data
+                          - tag: td
+                            children:
+                              - tag: ul
+                                children:
+                                  - tag: li
+                                    text: Type of device/operating system/browser used to access the Services
+                          - tag: td
+                            children:
+                              - tag: ul
+                                children:
+                                  - tag: li
+                                    text: Service Providers, such as JetBrains or VSCode
+                                  - tag: li
+                                    text: Testing and Continuous Integration Platform Providers
+                                  - tag: li
+                                    text: Parties You Authorize, Access or Authenticate
+                      - tag: tr
+                        children:
+                          - tag: td
+                            text: Web page interactions
+                          - tag: td
+                            children:
+                              - tag: ul
+                                children:
+                                  - tag: li
+                                    text: Referring webpage/source through which you accessed the Services
+                                  - tag: li
+                                    text: Non-identifiable request IDs
+                                  - tag: li
+                                    text: Statistics associated with the interaction between device or browser and the Services
+                          - tag: td
+                            children:
+                              - tag: ul
+                                children:
+                                  - tag: li
+                                    text: Service Providers
+                                  - tag: li
+                                    text: Analytics Partners
+                                  - tag: li
+                                    text: Parties You Authorize, Access or Authenticate
+                      - tag: tr
+                        children:
+                          - tag: td
+                            text: Professional or Employment-Related Data
+                          - tag: td
+                            children:
+                              - tag: ul
+                                children:
+                                  - tag: li
+                                    text: Job Title
+                                  - tag: li
+                                    text: Company
+                          - tag: td
+                            children:
+                              - tag: ul
+                                children:
+                                  - tag: li
+                                    text: Service Providers
+                                  - tag: li
+                                    text: Analytics Partners
+                      - tag: tr
+                        children:
+                          - tag: td
+                            text: Other Identifying Information that You Voluntarily Choose to Provide
+                          - tag: td
+                            text: Identifying information in emails, letters, or other communications you send us
+                          - tag: td
+                            text: Service Providers
+              - tag: h2
+                text: Categories of Sources of Personal Data
+              - tag: p
+                text: 'We collect Personal Data about you from the following categories of sources:'
+              - tag: h5
+                text: When you provide such information directly to us.
+              - tag: ul
+                children:
+                  - tag: li
+                    text: When you create an account or use our interactive tools and Services.
+                  - tag: li
+                    text: When you voluntarily provide information in free-form text boxes through the Services or through responses to surveys or questionnaires.
+                  - tag: li
+                    text: When you send us an email, help ticket, or otherwise contact us.
+              - tag: h5
+                text: When you use the Services and such information is collected automatically.
+              - tag: ul
+                children:
+                  - tag: li
+                    text: Through Cookies (defined in the “Tracking Tools, Advertising and Opt-Out” section below).
+                  - tag: li
+                    text: If you use a location-enabled browser, we may receive information about your location.
+                  - tag: li
+                    text: If you download and install certain applications and software we make available, we may receive and collect information transmitted from your computing device for the purpose of providing you the rele...
+              - tag: h5
+                text: From Third Party Vendors
+              - tag: ul
+                children:
+                  - tag: li
+                    text: We may use analytics providers to analyze how you interact and engage with theServices, or third parties may help us provide you with customer support.
+                  - tag: li
+                    text: We may use vendors to obtain information to generate leads and create user profiles.
+                  - tag: li
+                    text: We may buy or otherwise obtain information from data brokers from time to time.
+                  - tag: li
+                    text: We receive information about you from some of our vendors who assist us with marketing or promotional services related to how you interact with our websites, applications, products,Services, advertise...
+                  - tag: li
+                    text: If you provide your social network account credentials to us or otherwise sign in to the Services through a third-party site or service, including OAuth providers, some content and/or information in t...
+              - tag: h2
+                text: Our Commercial or Business Purposes for Collecting Personal Data
+              - tag: h5
+                text: Providing, Customizing and Improving the Services
+              - tag: ul
+                children:
+                  - tag: li
+                    text: Creating and managing your account or other user profiles.
+                  - tag: li
+                    text: Processing orders or other transactions; billing.
+                  - tag: li
+                    text: Providing you with the products, services or information you request.
+                  - tag: li
+                    text: Meeting or fulfilling the reason you provided the information to us.
+                  - tag: li
+                    text: Providing support and assistance for the Services.
+                  - tag: li
+                    text: Improving the Services, including testing, research, internal analytics and product development.
+                  - tag: li
+                    text: Personalizing the Services, website content and communications based on your preferences.
+                  - tag: li
+                    text: Doing fraud protection, security and debugging.
+                  - tag: li
+                    text: Carrying out other business purposes stated when collecting your Personal Data or as otherwise set forth in applicable data privacy laws.
+              - tag: h5
+                text: Marketing the Services
+              - tag: ul
+                children:
+                  - tag: li
+                    text: Marketing and selling the Services.
+              - tag: h5
+                text: Corresponding with You
+              - tag: ul
+                children:
+                  - tag: li
+                    text: Responding to correspondence that we receive from you, contacting you when necessary or requested, and sending you information about AppMap or the Services.
+                  - tag: li
+                    text: Sending emails and other communications according to your preferences or that display content that we think will interest you.
+              - tag: h5
+                text: Meeting Legal Requirements and Enforcing Legal Terms
+              - tag: ul
+                children:
+                  - tag: li
+                    text: Fulfilling our legal obligations under applicable law, regulation, court order or other legal process, such as preventing, detecting and investigating security incidents and potentially illegal or pro...
+                  - tag: li
+                    text: Protecting the rights, property or safety of you, AppMap or another party.
+                  - tag: li
+                    text: Enforcing any agreements with you.
+                  - tag: li
+                    text: Responding to claims that any posting or other content violates third-party rights.
+                  - tag: li
+                    text: Resolving disputes.
+              - tag: p
+                text: We will not collect additional categories of Personal Data or use the Personal Data we collected for materially different, unrelated or incompatible purposes without providing you notice.
+              - tag: h2
+                text: How We Disclose Your Personal Data
+              - tag: p
+                text: We disclose your Personal Data to the categories of service providers and other parties listed in this section. Depending on state laws that may be applicable to you, some of these disclosures may con...
+              - tag: h5
+                text: Service Providers
+              - tag: p
+                text: 'These parties help us provide the Services or perform business functions on our behalf. They include:'
+              - tag: ul
+                children:
+                  - tag: li
+                    text: Hosting, technology and communication providers.
+                  - tag: li
+                    text: Security and fraud prevention consultants.
+                  - tag: li
+                    text: Support and customer service vendors.
+                  - tag: li
+                    text: Product fulfillment and delivery providers.
+              - tag: h5
+                text: Payment processors
+              - tag: ul
+                children:
+                  - tag: li
+                    text: Our payment processing partners Hubspot Inc and Stripe, Inc., collectively “Payment Processors”, collects your voluntarily-provided payment card information necessary to process your payment.
+                  - tag: li
+                    text: Please see Payment Processor’s terms of service and privacy policy for information on its use and storage of your Personal Data.
+              - tag: h5
+                text: Analytics Partners
+              - tag: p
+                text: 'These parties provide analytics on web traffic or usage of the Services. They include:'
+              - tag: ul
+                children:
+                  - tag: li
+                    text: Companies that track how users found or were referred to the Services.
+                  - tag: li
+                    text: Companies that track how users interact with the Services.
+              - tag: h5
+                text: Parties You Authorize, Access or Authenticate
+              - tag: ul
+                children:
+                  - tag: li
+                    text: Third parties you access through the services.
+                  - tag: li
+                    text: Social media services.
+                  - tag: li
+                    text: Other users.
+              - tag: h5
+                text: Legal Obligations
+              - tag: p
+                text: We may share any Personal Data that we collect with third parties in conjunction with any of the activities set forth under“Meeting Legal Requirements and Enforcing Legal Terms” in the “Our Commercial...
+              - tag: h5
+                text: Business Transfers
+              - tag: p
+                text: All of your Personal Data that we collect may be transferred to a third party if we undergo a merger, acquisition, bankruptcy or other transaction in which that third party assumes control of our busi...
+              - tag: h5
+                text: Data that is Not Personal Data
+              - tag: p
+                text: We may create aggregated, de-identified or anonymized data from the Personal Data we collect, including by removing information that makes the data personally identifiable to a particular user. We may...
+              - tag: h2
+                text: Tracking Tools, Advertising and Opt-Out
+              - tag: p
+                text: The Services use cookies and similar technologies such as pixel tags, web beacons, clear GIFs and JavaScript (collectively, “Cookies”) to enable our servers to recognize your web browser, tell us how ...
+              - tag: p
+                text: 'We use the following types of cookies:'
+              - tag: ul
+                children:
+                  - tag: li
+                    text: Essential Cookies are required for providing you with features or services that you have requested. For example, certain Cookies enable you to log into secure areas of our Services. Disabling these Co...
+                    children:
+                      - tag: strong
+                        text: Essential Cookies.
+                  - tag: li
+                    text: Functional Cookies are used to record your choices and settings regarding our Services, maintain your preferences over time and recognize you when you return to our Services. These Cookies help us to ...
+                    children:
+                      - tag: strong
+                        text: Functional Cookies.
+                  - tag: li
+                    text: Performance/Analytical Cookies allow us to understand how visitors use our Services. They do this by collecting information about the number of visitors to the Services, what pages visitors view on ou...
+                    children:
+                      - tag: strong
+                        text: Performance/Analytical Cookies.
+              - tag: p
+                text: You can decide whether or not to accept Cookies through your internet browser’s settings. Most browsers have an option for turning off the Cookie feature, which will prevent your browser from acceptin...
+              - tag: p
+                text: To explore what Cookie settings are available to you, look in the “preferences” or“options” section of your browser’s menu. To find out more information aboutCookies, including information about how t...
+                children:
+                  - tag: a
+                    text: http://www.allaboutcookies.org/
+                    attributes:
+                      href: http://www.allaboutcookies.org/
+                  - tag: a
+                    text: https://ico.org.uk/for-the-public/online/cookies/
+                    attributes:
+                      href: https://ico.org.uk/for-the-public/online/cookies/
+              - tag: h2
+                text: Data Security and Retention
+              - tag: p
+                text: We seek to protect your Personal Data from unauthorized access, use and disclosure using appropriate physical, technical, organizational and administrative security measures based on the type of Perso...
+              - tag: p
+                text: We retain Personal Data about you for as long as you have an open account with us or as otherwise necessary to provide you with our Services. In some cases we retain Personal Data for longer, if doing...
+              - tag: h2
+                text: Personal Data of Children
+              - tag: p
+                text: As noted in the Terms of Use, we do not knowingly collect or solicit Personal Data about children under 16 years of age; if you are a child under the age of 16, please do not attempt to register for o...
+                children:
+                  - tag: a
+                    text: privacy@appmap.io
+                    attributes:
+                      href: mailto:privacy@appmap.io
+              - tag: h2
+                text: State Law Privacy Rights
+              - tag: h5
+                text: California Resident Rights
+              - tag: p
+                text: Under California Civil Code Sections 1798.83-1798.84, California residents are entitled to contact us to prevent disclosure of Personal Data to third parties for such third parties’ direct marketing p...
+                children:
+                  - tag: a
+                    text: privacy@appmap.io
+                    attributes:
+                      href: mailto:privacy@appmap.io
+              - tag: p
+                text: Your browser may offer you a “Do Not Track” option, which allows you to signal to operators of websites and web applications and services that you do not wish such operators to track certain of your o...
+                children:
+                  - tag: a
+                    text: www.allaboutdnt.com
+                    attributes:
+                      href: https://www.allaboutdnt.com
+              - tag: h5
+                text: Nevada Resident Rights
+              - tag: p
+                text: If you are a resident of Nevada, you have the right to opt-out of the sale of certain Personal Data to third parties who intend to license or sell that Personal Data. You can exercise this right by co...
+                children:
+                  - tag: a
+                    text: privacy@appmap.io
+                    attributes:
+                      href: mailto:privacy@appmap.io
+              - tag: h2
+                text: European Union Data Subject Rights
+              - tag: h5
+                text: EU and UK Residents
+              - tag: p
+                text: If you are a resident of the European Union (“EU”), United Kingdom ("UK"), Lichtenstein, Norway or Iceland, you may have additional rights under the EU or UK General DataProtection Regulation (the “GD...
+              - tag: p
+                text: For this section, we use the terms “Personal Data” and “processing” as they are defined in the GDPR, but “Personal Data” generally means information that can be used to individually identify a person,...
+              - tag: p
+                text: If there are any conflicts between this section and any other provision of this Privacy Policy, the policy or portion that is more protective of Personal Data shall control to the extent of such confl...
+              - tag: h5
+                text: Personal Data We Collect
+              - tag: p
+                text: The “Categories of Personal Data We Collect” section above details the Personal Data that we collect from you.
+              - tag: h5
+                text: Personal Data Use and Processing Grounds
+              - tag: p
+                text: The “Our Commercial or Business Purposes for Collecting Personal Data” section above explains how we use your Personal Data.
+              - tag: p
+                text: We will only process your Personal Data if we have a lawful basis for doing so. Lawful bases for processing include consent, contractual necessity and our “legitimate interests” or the legitimate inte...
+              - tag: ul
+                children:
+                  - tag: li
+                    text: 'Contractual Necessity: We process certain categories of Personal Data, such as your account login and payment information, as a matter of “contractual necessity”, meaning that we need to process the d...'
+                  - tag: li
+                    text: 'Legitimate Interest: We process the certain categories of Personal Data, such as commercial, analytical, and profile data when we believe it furthers the legitimate interest of us or third parties. We...'
+              - tag: p
+                text: 'Examples of these legitimate interests include:'
+              - tag: ul
+                children:
+                  - tag: li
+                    text: Providing, customizing and improving the Services.
+                  - tag: li
+                    text: Marketing the Services.
+                  - tag: li
+                    text: Corresponding with you.
+                  - tag: li
+                    text: Meeting legal requirements and enforcing legal terms.
+                  - tag: li
+                    text: Completing corporate transactions.
+                  - tag: li
+                    text: 'Consent: In some cases, we process Personal Data based on the consent you expressly grant to us at the time we collect such data. When we process Personal Data based on your consent, it will be expres...'
+                  - tag: li
+                    text: 'Other Processing Grounds: From time to time we may also need to process Personal Data to comply with a legal obligation, if it is necessary to protect the vital interests of you or other data subjects...'
+              - tag: h5
+                text: Sharing Personal Data
+              - tag: p
+                text: The “How We Share Your Personal Data”section above details how we share your Personal Data with third parties.
+              - tag: h5
+                text: EU Data Subject Rights
+              - tag: p
+                text: You have certain rights with respect to your Personal Data, including those set forth below. For more information about these rights, or to submit a request, please email us at .
+                children:
+                  - tag: a
+                    text: privacy@appmap.io
+                    attributes:
+                      href: mailto:privacy@appmap.io
+              - tag: p
+                text: Please note that in some circumstances, we may not be able to fully comply with your request, such as if it is frivolous or extremely impractical, if it jeopardizes the rights of others, or if it is n...
+              - tag: ul
+                children:
+                  - tag: li
+                    text: 'Access: You can request more information about the Personal Data we hold about you and request a copy of such Personal Data. You can also access certain of your Personal Data by emailing privacy@appma...'
+                  - tag: li
+                    text: 'Rectification: If you believe that any Personal Data we are holding about you is incorrect or incomplete, you can request that we correct or supplement such data. You can also correct some of this inf...'
+                  - tag: li
+                    text: 'Erasure: You can request that we erase some or all of your Personal Data from our systems.'
+                  - tag: li
+                    text: 'Withdrawal of Consent: If we are processing your Personal Data based on your consent (as indicated at the time of collection of such data), you have the right to withdraw your consent at any time. Ple...'
+                  - tag: li
+                    text: 'Portability: You can ask for a copy of your Personal Data in a machine-readable format. You can also request that we transmit the data to another controller where technically feasible.'
+                  - tag: li
+                    text: 'Objection: You can contact us to let us know that you object to the further use or disclosure of your Personal Data for certain purposes, such as for direct marketing purposes.'
+                  - tag: li
+                    text: 'Restriction of Processing: You can ask us to restrict further processing of your Personal Data.'
+                  - tag: li
+                    text: 'Right to File Complaint: You have the right to lodge a complaint about AppMap''s practices with respect to your Personal Data with the supervisory authority of your country or EU Member State. A list o...'
+                    children:
+                      - tag: a
+                        text: https://edpb.europa.eu/about-edpb/board/members_en
+                        attributes:
+                          href: https://edpb.europa.eu/about-edpb/board/members_en
+              - tag: h5
+                text: Transfers of Personal Data
+              - tag: p
+                text: The Services are hosted and operated in the United States (“U.S.”) through AppMap and its service providers, and if you do not reside in the U.S., laws in the U.S. may differ from the laws where you r...
+                children:
+                  - tag: a
+                    text: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32010D0087
+                    attributes:
+                      href: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32010D0087
+              - tag: h2
+                text: Contact Information
+              - tag: p
+                text: If you have any questions or comments about this Privacy Policy, the ways in which we collect and use your Personal Data or your choices and rights regarding such collection and use, please do not hes...
+                children:
+                  - tag: a
+                    text: privacy@appmap.io
+                    attributes:
+                      href: mailto:privacy@appmap.io
+  - tag: div
+    children:
+      - tag: footer
+        children:
+          - tag: div
+            children:
+              - tag: h5
+                text: Docs
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Get Started
+                        attributes:
+                          href: /docs/get-started-with-appmap/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Using Navie
+                        attributes:
+                          href: /docs/navie
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Troubleshooting
+                        attributes:
+                          href: /docs/troubleshooting
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Reference
+                        attributes:
+                          href: /docs/reference
+          - tag: div
+            children:
+              - tag: h5
+                text: Product
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Security FAQ
+                        attributes:
+                          href: /security
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Pricing
+                        attributes:
+                          href: /pricing
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Terms
+                        attributes:
+                          href: /community/terms-and-conditions.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Privacy Policy
+                        attributes:
+                          href: /community/privacy-policy
+          - tag: div
+            children:
+              - tag: h5
+                text: Company
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: About
+                        attributes:
+                          href: /company/about-appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Careers
+                        attributes:
+                          href: https://angel.co/company/appmap/jobs
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Contact
+                        attributes:
+                          href: /contact/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Brand Assets
+                        attributes:
+                          href: /company/brand-assets
+          - tag: div
+            children:
+              - tag: h5
+                text: Community
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: X
+                        attributes:
+                          href: https://twitter.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Slack
+                        attributes:
+                          href: https://appmap.io/slack
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: GitHub
+                        attributes:
+                          href: https://github.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Code of Conduct
+                        attributes:
+                          href: /community/code-of-conduct.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: YouTube
+                        attributes:
+                          href: https://www.youtube.com/@appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Blog
+                        attributes:
+                          href: /blog
+  - tag: iframe
+    attributes:
+      title: archetype

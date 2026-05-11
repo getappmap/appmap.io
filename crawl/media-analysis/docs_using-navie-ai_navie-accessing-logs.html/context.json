@@ -1,0 +1,198 @@
+{
+  "timestamp": "2026-04-01T01:54:35.290Z",
+  "crawlDirectory": "crawl/site/docs/using-navie-ai/navie-accessing-logs.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 11,
+  "foundAssets": 9,
+  "notFoundAssets": 2,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-accessing-logs.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-accessing-logs.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 775,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-accessing-logs.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 776,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/vscode-output-1.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/vscode-output-1.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-accessing-logs.html",
+          "context": "<p>To open the Output window, on the menu bar, choose View &gt; Output, or in Windows press <code class=\"language-plaintext highlighter-rouge\">Ctrl...webp\" alt=\"Open View in VS Code\"></p>\n\n<p>Click on the output log dropdown in the right corner to view a list of all the available output logs.</p>",
+          "lineNumber": 805,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/vscode-output-1.webp",
+            "alt": "Open View in VS Code"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/vscode-output-2.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/vscode-output-2.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-accessing-logs.html",
+          "context": "<p>Click on the output log dropdown in the right corner to view a list of all the available output logs.</p>\n\n<p><img src=\"/assets/img/docs/vscode-...t logs list\"></p>\n\n<p>Select on the <code class=\"language-plaintext highlighter-rouge\">AppMap: Services</code> log to view the logs from Navie.</p>",
+          "lineNumber": 809,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/vscode-output-2.webp",
+            "alt": "Open Output logs list"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/vscode-output-3.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/vscode-output-3.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-accessing-logs.html",
+          "context": "<p>Select on the <code class=\"language-plaintext highlighter-rouge\">AppMap: Services</code> log to view the logs from Navie.</p>\n\n<p><img src=\"/assets/img/docs/vscode-output-3.webp\" alt=\"Select AppMap Services\"></p>\n\n<h2 id=\"jetbrains\">",
+          "lineNumber": 813,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/vscode-output-3.webp",
+            "alt": "Select AppMap Services"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains-debug-logs.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains-debug-logs.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-accessing-logs.html",
+          "context": "<p>You can enable debug logging of Navie in your JetBrains code editor by first opening <code class=\"language-plaintext highlighter-rouge\">Help</co...nfiguration</code> enter <code class=\"language-plaintext highlighter-rouge\">appland</code> to enable DEBUG level logging for the AppMap plugin.</p>",
+          "lineNumber": 820,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/jetbrains-debug-logs.webp",
+            "alt": "JetBrains Debug Log menu"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains-logging-configuration.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains-logging-configuration.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-accessing-logs.html",
+          "context": "<p>In the <code class=\"language-plaintext highlighter-rouge\">Custom Debug Log Configuration</code> enter <code class=\"language-plaintext highlighte...plaintext highlighter-rouge\">Help</code> &gt; <code class=\"language-plaintext highlighter-rouge\">Show Log...</code> will open the IDE log file.</p>",
+          "lineNumber": 824,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/jetbrains-logging-configuration.webp",
+            "alt": "JetBrains Debug Log Configuration"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 61
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains-show-log.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains-show-log.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-accessing-logs.html",
+          "context": "<p>Next, open <code class=\"language-plaintext highlighter-rouge\">Help</code> &gt; <code class=\"language-plaintext highlighter-rouge\">Show Log...</code> will open the IDE log file.</p>\n\n<p><img src=\"/assets/img/jetbrains-show-log.webp\" alt=\"JetBrains Debug Show Log\"></p>\n\n          <hr>",
+          "lineNumber": 828,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/jetbrains-show-log.webp",
+            "alt": "JetBrains Debug Show Log"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fnavie-accessing-logs.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fnavie-accessing-logs&t=AppMap+-+Docs+-+Reference+-+Accessing+Navie+Logs&cts=1775008465664&rv=1&vi=773685a714e4a491b69db52c5b014ecf&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

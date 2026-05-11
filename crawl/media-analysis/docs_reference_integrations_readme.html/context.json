@@ -1,0 +1,156 @@
+{
+  "timestamp": "2026-04-01T01:51:31.097Z",
+  "crawlDirectory": "crawl/site/docs/reference/integrations/readme.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 9,
+  "foundAssets": 7,
+  "notFoundAssets": 2,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/readme.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/readme.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 772,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/readme.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 773,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/readme-api-documentation.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/readme-api-documentation.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/readme.html",
+          "context": "<p><a href=\"https://readme.com/\">Readme</a> is a powerful developer hub that can consume your OpenAPI definition and provide a simple way for users...g/readme-api-documentation.webp\"></p>\n\n<p>Simply access your Readme administration page, and go to <em>API Settings</em> to add a new endpoint.</p>",
+          "lineNumber": 797,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/readme-api-documentation.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/readme-github-action.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/readme-github-action.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/readme.html",
+          "context": "<p>Simply access your Readme administration page, and go to <em>API Settings</em> to add a new endpoint.</p>\n\n<p><img class=\"video-screenshot\" src=...he Readme API key as an <a href=\"https://docs.github.com/en/actions/security-guides/encrypted-secrets\">encrypted secret in your build task.</a></p>",
+          "lineNumber": 801,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/readme-github-action.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/readme-openapi-imported.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/readme-openapi-imported.png",
+          "foundInFile": "crawl/site/docs/reference/integrations/readme.html",
+          "context": "<p>After your build job completes you’ll see your API imported into Readme.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/readme-openapi-imported.png\"></p>\n\n<p>And when navigating into any of your API endpoints, you’ll see notifications that this API is _synced from Swagger.</p>",
+          "lineNumber": 817,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/readme-openapi-imported.png"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/readme-openapi-synced.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/readme-openapi-synced.png",
+          "foundInFile": "crawl/site/docs/reference/integrations/readme.html",
+          "context": "<p>And when navigating into any of your API endpoints, you’ll see notifications that this API is _synced from Swagger.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/readme-openapi-synced.png\"></p>\n\n          <hr>",
+          "lineNumber": 821,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/readme-openapi-synced.png"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fintegrations%2Freadme.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fintegrations%2Freadme&t=AppMap+-+Docs+-+Integrations+-+Readme&cts=1775008282563&rv=1&vi=3a47c57511ff5c19b28c8c531b1d35d4&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

@@ -1,0 +1,515 @@
+{
+  "timestamp": "2026-04-01T01:52:10.934Z",
+  "crawlDirectory": "crawl/site/docs/reference/jetbrains.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 28,
+  "foundAssets": 24,
+  "notFoundAssets": 4,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 782,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 783,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/goto-intellij-settings.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/goto-intellij-settings.webp",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "<p>In JetBrains, go to settings.</p>\n\n<p><img class=\"video-screenshot\" alt=\"a screenshot of the JetBrains menu\" src=\"/assets/img/docs/goto-intellij-settings.webp\"></p>\n\n<p>Go to <em>Tools</em> → <em>AppMap</em>.</p>",
+          "lineNumber": 845,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "alt": "a screenshot of the JetBrains menu",
+            "src": "/assets/img/docs/goto-intellij-settings.webp"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 79,
+            "end": 123
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/intellij-tools-appmap-settings.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/intellij-tools-appmap-settings.webp",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "<p>Go to <em>Tools</em> → <em>AppMap</em>.</p>\n\n<p><img class=\"video-screenshot\" alt=\"a screenshot of the AppMap settings in JetBrains\" src=\"/assets/img/docs/intellij-tools-appmap-settings.webp\"></p>\n\n<p>Enter the environment editor.",
+          "lineNumber": 849,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "alt": "a screenshot of the AppMap settings in JetBrains",
+            "src": "/assets/img/docs/intellij-tools-appmap-settings.webp"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 93,
+            "end": 145
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/intellij-enter-env-editor.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/intellij-enter-env-editor.webp",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "\n<p>Enter the environment editor.\n<img class=\"video-screenshot\" alt=\"a screenshot of the entering the AppMap environment editor in JetBrains\" src=\"...fine the relevant environment variables according to the <a href=\"/docs/using-navie-ai/choose-llm-provider\">LLM Configuration</a> instructions.</p>",
+          "lineNumber": 852,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "alt": "a screenshot of the entering the AppMap environment editor in JetBrains",
+            "src": "/assets/img/docs/intellij-enter-env-editor.webp"
+          },
+          "surroundingText": "Enter the environment editor.\n",
+          "columnRange": {
+            "start": 113,
+            "end": 160
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/intellij-env-editor.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/intellij-env-editor.webp",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "<p>Use the editor to define the relevant environment variables according to the <a href=\"/docs/using-navie-ai/choose-llm-provider\">LLM Configuratio... editor in JetBrains\" src=\"/assets/img/docs/intellij-env-editor.webp\"></p>\n\n<p><strong>Reload your IDE for the changes to take effect.</strong></p>",
+          "lineNumber": 856,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "alt": "a screenshot of the environment editor in JetBrains",
+            "src": "/assets/img/docs/intellij-env-editor.webp"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 96,
+            "end": 137
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/navie-confirm-ui-jetbrains.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/navie-confirm-ui-jetbrains.webp",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "<p>After reloading you can confirm the model is configured correctly in the Navie Chat window.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/product/navie-confirm-ui-jetbrains.webp\"></p>\n\n<h2 id=\"appmap-tool-window\">",
+          "lineNumber": 862,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/navie-confirm-ui-jetbrains.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/intellij-appmap-tool-window.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/intellij-appmap-tool-window.webp",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "<p>The AppMap tool window shows all AppMap Diagrams in your open projects. You can open it from the top level menu (<code class=\"language-plaintext...tab in the UI.</p>\n\n<p><img class=\"intellij-screenshot\" src=\"/assets/img/intellij-appmap-tool-window.webp\"></p>\n\n<p>AppMap tool window actions:</p>",
+          "lineNumber": 869,
+          "elementType": "img",
+          "attributes": {
+            "class": "intellij-screenshot",
+            "src": "/assets/img/intellij-appmap-tool-window.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains-run-main-with-appmap.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains-run-main-with-appmap.webp",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "<p>For example, if you right click on your main class file you’ll see a new menu item under “More Run/Debug” to <code class=\"language-plaintext hig...group of tests and use the custom button under “More Run/Debug” to <code class=\"language-plaintext highlighter-rouge\">Start with AppMap</code>.</p>",
+          "lineNumber": 890,
+          "elementType": "img",
+          "attributes": {
+            "class": "intellij-screenshot",
+            "src": "/assets/img/jetbrains-run-main-with-appmap.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains-run-test-with-appmap.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains-run-test-with-appmap.webp",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "<p>You can also use this custom button to run a specific test or group of tests with the <code class=\"language-plaintext highlighter-rouge\">Start w...\"intellij-screenshot\" src=\"/assets/img/jetbrains-run-test-with-appmap.webp\"></p>\n\n<h3 id=\"start-with-appmap-button\">“Start with AppMap” button</h3>",
+          "lineNumber": 894,
+          "elementType": "img",
+          "attributes": {
+            "class": "intellij-screenshot",
+            "src": "/assets/img/jetbrains-run-test-with-appmap.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/appmap-icon-in-main-toolbar.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/appmap-icon-in-main-toolbar.png",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "<p>For JetBrains versions <strong><em>2024.1 and earlier</em></strong> the “Start with AppMap” button is in the main toolbar.</p>\n\n<p><img class=\"i...g><em>2024.2 and later</em></strong> the “Start with AppMap” button is located in a dropdown menu, accessible by clicking on the vertical dots.</p>",
+          "lineNumber": 902,
+          "elementType": "img",
+          "attributes": {
+            "class": "intellij-screenshot",
+            "src": "/assets/img/appmap-icon-in-main-toolbar.png"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains-new-ui-dot-menu.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains-new-ui-dot-menu.png",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "<p>For JetBrains versions <strong><em>2024.2 and later</em></strong> the “Start with AppMap” button is located in a dropdown menu, accessible by cl...ot-menu.png\"></p>\n\n<h3 id=\"demo-video-recording-appmap-data-from-a-java-application\">Demo video: Recording AppMap Data from a Java application</h3>",
+          "lineNumber": 906,
+          "elementType": "img",
+          "attributes": {
+            "class": "intellij-screenshot",
+            "src": "/assets/img/jetbrains-new-ui-dot-menu.png"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/run-config-test.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/run-config-test.png",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "  <li>Open your test file in the editor. Each method marked with JUnit’s <code class=\"language-plaintext highlighter-rouge\">@Test</code> annotation...th AppMap”, or by clicking the AppMap run configuration button:\n<img class=\"intellij-screenshot\" src=\"/assets/img/run-config-test.png\">\n</li>\n</ol>",
+          "lineNumber": 927,
+          "elementType": "img",
+          "attributes": {
+            "class": "intellij-screenshot",
+            "src": "/assets/img/run-config-test.png"
+          },
+          "surroundingText": "Run the test(s) with AppMap by clicking the icon next to the test class and then selecting “Start with AppMap”, or by clicking the AppMap run configuration button:\n\n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/run-config-start.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/run-config-start.png",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "  <li>Open your application file in the editor.</li>\n  <li>Run your application with AppMap by clicking the icon next to the main class you wish to...pplication running, follow the <a href=\"#remote-recording\">remote recording</a> instructions below to (starting at step 3) create AppMap Data.</li>",
+          "lineNumber": 945,
+          "elementType": "img",
+          "attributes": {
+            "class": "intellij-screenshot",
+            "src": "/assets/img/run-config-start.png"
+          },
+          "surroundingText": "Run your application with AppMap by clicking the icon next to the main class you wish to run and then selecting “Start with AppMap”, or by clicking the AppMap run configuration button:\n\n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/intellij-remote-start.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/intellij-remote-start.png",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "  <li>Start your application with remote recording enabled. For Java, <a href=\"#running-a-java-application-with-appmap\">run your Java application w...g>.\n<img class=\"intellij-screenshot\" src=\"/assets/img/docs/intellij-remote-start.png\">\n</li>\n  <li>Enter the URL where your application is running.",
+          "lineNumber": 962,
+          "elementType": "img",
+          "attributes": {
+            "class": "intellij-screenshot",
+            "src": "/assets/img/docs/intellij-remote-start.png"
+          },
+          "surroundingText": "To start a recording, click the remote recording button, or use the command Start AppMap recording.\n\n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/intellij-remote-url.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/intellij-remote-url.png",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "</li>\n  <li>Enter the URL where your application is running.\n<img class=\"intellij-screenshot\" src=\"/assets/img/docs/intellij-remote-url.png\">\n</li>...teract with your app through its UI or API. Then click the button to stop the recording, or use the command <strong>Stop AppMap recording</strong>.",
+          "lineNumber": 965,
+          "elementType": "img",
+          "attributes": {
+            "class": "intellij-screenshot",
+            "src": "/assets/img/docs/intellij-remote-url.png"
+          },
+          "surroundingText": "Enter the URL where your application is running.\n\n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/intellij-remote-stop.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/intellij-remote-stop.png",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "</li>\n  <li>Interact with your app through its UI or API. Then click the button to stop the recording, or use the command <strong>Stop AppMap recor...ij-screenshot\" src=\"/assets/img/docs/intellij-remote-stop.png\">\n</li>\n  <li>You’ll be prompted to save the AppMap to a file, and it will be opened.",
+          "lineNumber": 968,
+          "elementType": "img",
+          "attributes": {
+            "class": "intellij-screenshot",
+            "src": "/assets/img/docs/intellij-remote-stop.png"
+          },
+          "surroundingText": "Interact with your app through its UI or API. Then click the button to stop the recording, or use the command Stop AppMap recording.\n\n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/intellij-remote-save.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/intellij-remote-save.png",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "</li>\n  <li>You’ll be prompted to save the AppMap to a file, and it will be opened.\n<img class=\"intellij-screenshot\" src=\"/assets/img/docs/intellij-remote-save.png\">\n</li>\n</ol>",
+          "lineNumber": 971,
+          "elementType": "img",
+          "attributes": {
+            "class": "intellij-screenshot",
+            "src": "/assets/img/docs/intellij-remote-save.png"
+          },
+          "surroundingText": "You’ll be prompted to save the AppMap to a file, and it will be opened.\n\n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/openapi/jetbrains-1.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/openapi/jetbrains-1.webp",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "<p>After <a href=\"/docs/recording-methods.html\">recording AppMap Data</a> for your project, select “Generate OpenAPI” from the AppMap instructions ...nt tools <a href=\"https://blog.postman.com/new-postman-integration-with-appmap-create-and-manage-always-accurate-collections/\">like Postman</a></p>",
+          "lineNumber": 1013,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/openapi/jetbrains-1.webp",
+            "alt": "Generate OpenAPI Link"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/openapi/jetbrains-2.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/openapi/jetbrains-2.webp",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "<p>Selecting the “Generate OpenAPI Definitions” button will open a new file with your OpenAPI definition document to save locally, share with your ...lections/\">like Postman</a></p>\n\n<p><img src=\"/assets/img/openapi/jetbrains-2.webp\" alt=\"OpenAPI Generation Screen\"></p>\n\n<h2 id=\"troubleshooting\">",
+          "lineNumber": 1017,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/openapi/jetbrains-2.webp",
+            "alt": "OpenAPI Generation Screen"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains-debug-logs.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains-debug-logs.webp",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "<p>You can enable debug logging of the AppMap plugin in your JetBrains code editor by first opening <code class=\"language-plaintext highlighter-rou...nfiguration</code> enter <code class=\"language-plaintext highlighter-rouge\">appland</code> to enable DEBUG level logging for the AppMap plugin.</p>",
+          "lineNumber": 1026,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/jetbrains-debug-logs.webp",
+            "alt": "JetBrains Debug Log menu"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains-logging-configuration.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains-logging-configuration.webp",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "<p>In the <code class=\"language-plaintext highlighter-rouge\">Custom Debug Log Configuration</code> enter <code class=\"language-plaintext highlighte...plaintext highlighter-rouge\">Help</code> &gt; <code class=\"language-plaintext highlighter-rouge\">Show Log...</code> will open the IDE log file.</p>",
+          "lineNumber": 1030,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/jetbrains-logging-configuration.webp",
+            "alt": "JetBrains Debug Log Configuration"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 61
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains-show-log.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains-show-log.webp",
+          "foundInFile": "crawl/site/docs/reference/jetbrains.html",
+          "context": "<p>Next, open <code class=\"language-plaintext highlighter-rouge\">Help</code> &gt; <code class=\"language-plaintext highlighter-rouge\">Show Log...</c...p><img src=\"/assets/img/jetbrains-show-log.webp\" alt=\"JetBrains Debug Show Log\"></p>\n\n<h3 id=\"downloading-plugin-logs\">Downloading Plugin Logs</h3>",
+          "lineNumber": 1034,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/jetbrains-show-log.webp",
+            "alt": "JetBrains Debug Show Log"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803514080-04abb44db0f8d19be40a7ea495d6f0fefbb339a740c38e01134a8493b038982b-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803514080-04abb44db0f8d19be40a7ea495d6f0fefbb339a740c38e01134a8493b038982b-d?mw=1000&mh=563",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fjetbrains.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fjetbrains&t=AppMap+-+Docs+-+Reference+-+AppMap+for+JetBrains&cts=1775008313272&rv=1&vi=d9a64619883e6d1644690e5e6d403bbf&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

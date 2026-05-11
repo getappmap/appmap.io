@@ -1,0 +1,2951 @@
+{
+  "url": "https://appmap.io/blog/2021/08/05/gitlab-commit-recap",
+  "timestamp": "2026-04-01T01:25:53.940Z",
+  "loadTime": 19422,
+  "summary": {
+    "totalRequests": 152,
+    "successfulRequests": 68,
+    "failedRequests": 12,
+    "cachedRequests": 0,
+    "redirectedRequests": 1,
+    "slowRequests": 42
+  },
+  "requestsByType": {
+    "document": 10,
+    "stylesheet": 20,
+    "script": 59,
+    "image": 20,
+    "fetch": 20,
+    "font": 9,
+    "xhr": 13,
+    "other": 1
+  },
+  "failedRequests": [
+    {
+      "url": "https://player.vimeo.com/video/916048617",
+      "method": "GET",
+      "resourceType": "document",
+      "error": "HTTP 401 Unauthorized",
+      "timing": {
+        "startTime": 1775006734913,
+        "duration": 5005
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775006734898&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=287362691.1775006735&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938465~115938469~116991816~117266401~118089341&sid=1775006735&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F05%2Fgitlab-commit-recap&dt=AppMap%20%7C%20GitLab%20Commit%20Recap%3A%20How%20to%20Upgrade%20Your%20Development%20Workflow%20with%20Runtime%20Code%20Maps&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=563",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006735228,
+        "duration": 207
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006735252,
+        "duration": 4804
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53cd019d9169d2/1775006735917/92dbd6899c5f6628da1530214d4cbf46c137be332e718fac33378572e930513e/l1Y7lRxPDx2MqRa",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775006737239,
+        "duration": 30
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53cd00ebc469d2/1775006735842/7ada220b2abcf9a2bb4bce78d68ded95ff42a73f8345b0f96e6bc0c785f4f0a3/UK8Jj_VJFDoWtHt",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775006737658,
+        "duration": 27
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775006734898&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=287362691.1775006735&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=2&tag_exp=0~115938465~115938469~116991816~117266401~118089341&sid=1775006735&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F05%2Fgitlab-commit-recap&dt=AppMap%20%7C%20GitLab%20Commit%20Recap%3A%20How%20to%20Upgrade%20Your%20Development%20Workflow%20with%20Runtime%20Code%20Maps&en=user_engagement&_et=4479&tfd=5046",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006739721,
+        "duration": 0
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53cd1cbd2669d2/1775006740391/70fb3c569d911112f338e3e9366b5be980dae30b1f3a2d69e11ac61f4f3c9c5b/wmb4VSTZB-z7hP2",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775006741050,
+        "duration": 79
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53cd1cbd3669d2/1775006740331/f01d8a7a493f351f57eb1adef0e1cf8d4ef896d5ff62b88a2e6092623e70650b/Cp4gUEQWioFt5HW",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775006741184,
+        "duration": 29
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775006739766&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=287362691.1775006735&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=0~115938465~115938469~116133312~116991817~117266401~118128923&sid=1775006735&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F05%2Fgitlab-commit-recap&dt=AppMap%20%7C%20GitLab%20Commit%20Recap%3A%20How%20to%20Upgrade%20Your%20Development%20Workflow%20with%20Runtime%20Code%20Maps&en=page_view&_ee=1&tfd=5253",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006744915,
+        "duration": 40
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775006739766&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=287362691.1775006735&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938465~115938469~116133312~116991817~117266401~118128923&sid=1775006735&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F05%2Fgitlab-commit-recap&dt=AppMap%20%7C%20GitLab%20Commit%20Recap%3A%20How%20to%20Upgrade%20Your%20Development%20Workflow%20with%20Runtime%20Code%20Maps&en=scroll&epn.percent_scrolled=90&_et=7953&tfd=13209",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006752873,
+        "duration": 37
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53cd69aead69d2/1775006752505/9108d4dd3c6cbafad1f5825600a19325fce754040ada02cd37fd9f9a1bfb8cf5/RA79AESRSeODFA0",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775006752874,
+        "duration": 22
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53cd6c4e8169d2/1775006753010/82d753321d7219478c306a5cae1e4f5987443073c9a16803558a52e873bf8f13/PrI3d910fvjMlbs",
+      "method": "GET",
+      "resourceType": "fetch",
+      "error": "HTTP 401 ",
+      "timing": {
+        "startTime": 1775006753346,
+        "duration": 33
+      }
+    }
+  ],
+  "slowRequests": [
+    {
+      "url": "https://appmap.io/blog/2021/08/05/gitlab-commit-recap",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006734664,
+        "endTime": 1775006739701,
+        "duration": 5037
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734769,
+        "endTime": 1775006739731,
+        "duration": 4962
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 1178
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734775,
+        "endTime": 1775006739732,
+        "duration": 4957
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734775,
+        "endTime": 1775006739732,
+        "duration": 4957
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734775,
+        "endTime": 1775006739735,
+        "duration": 4960
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734775,
+        "endTime": 1775006739735,
+        "duration": 4960
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734775,
+        "endTime": 1775006739738,
+        "duration": 4963
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1034
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734776,
+        "endTime": 1775006739739,
+        "duration": 4963
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 1161
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734776,
+        "endTime": 1775006739763,
+        "duration": 4987
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734776,
+        "endTime": 1775006739824,
+        "duration": 5048
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739739,
+        "duration": 4960
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173015,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739739,
+        "duration": 4960
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 626,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739739,
+        "duration": 4960
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 541,
+        "responseHeadersSize": 1028
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739739,
+        "duration": 4960
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5980,
+        "responseHeadersSize": 1050
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739740,
+        "duration": 4961
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1333,
+        "responseHeadersSize": 1048
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739741,
+        "duration": 4962
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 986,
+        "responseHeadersSize": 1045
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739741,
+        "duration": 4962
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 962,
+        "responseHeadersSize": 1049
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739745,
+        "duration": 4966
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 862,
+        "responseHeadersSize": 1041
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739760,
+        "duration": 4981
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 519
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/gitlab-commit-feature.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739777,
+        "duration": 4998
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 47043,
+        "responseHeadersSize": 544
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739746,
+        "duration": 4967
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7917,
+        "responseHeadersSize": 787
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006734780,
+        "endTime": 1775006739806,
+        "duration": 5026
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 457,
+        "responseHeadersSize": 563
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734780,
+        "endTime": 1775006739746,
+        "duration": 4966
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 642
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734780,
+        "endTime": 1775006739746,
+        "duration": 4966
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1050
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734780,
+        "endTime": 1775006739746,
+        "duration": 4966
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 1194
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006734898,
+        "endTime": 1775006739800,
+        "duration": 4902
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006734898,
+        "endTime": 1775006739800,
+        "duration": 4902
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006734898,
+        "endTime": 1775006739800,
+        "duration": 4902
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006734898,
+        "endTime": 1775006739800,
+        "duration": 4902
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://player.vimeo.com/video/916048617",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006734913,
+        "endTime": 1775006739918,
+        "duration": 5005
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "Unauthorized",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5141,
+        "responseHeadersSize": 206
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006734965,
+        "endTime": 1775006739800,
+        "duration": 4835
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/webfonts/free-fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006735050,
+        "endTime": 1775006739835,
+        "duration": 4785
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 118696,
+        "responseHeadersSize": 1133
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006735065,
+        "endTime": 1775006739950,
+        "duration": 4885
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006735065,
+        "endTime": 1775006739955,
+        "duration": 4890
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775006700000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006735065,
+        "endTime": 1775006739955,
+        "duration": 4890
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006735236,
+        "endTime": 1775006739931,
+        "duration": 4695
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 366
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006735252,
+        "endTime": 1775006739961,
+        "duration": 4709
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006735252,
+        "endTime": 1775006740056,
+        "duration": 4804
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006735288,
+        "endTime": 1775006740210,
+        "duration": 4922
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006735383,
+        "endTime": 1775006740029,
+        "duration": 4646
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006735384,
+        "endTime": 1775006740029,
+        "duration": 4645
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 852
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006735577,
+        "endTime": 1775006752814,
+        "duration": 17237
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 86,
+        "responseHeadersSize": 223
+      }
+    }
+  ],
+  "allRequests": [
+    {
+      "url": "https://appmap.io/blog/2021/08/05/gitlab-commit-recap",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006734664,
+        "endTime": 1775006739701,
+        "duration": 5037
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734769,
+        "endTime": 1775006739731,
+        "duration": 4962
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 1178
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734775,
+        "endTime": 1775006739732,
+        "duration": 4957
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734775,
+        "endTime": 1775006739732,
+        "duration": 4957
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734775,
+        "endTime": 1775006739735,
+        "duration": 4960
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734775,
+        "endTime": 1775006739735,
+        "duration": 4960
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734775,
+        "endTime": 1775006739738,
+        "duration": 4963
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1034
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734776,
+        "endTime": 1775006739739,
+        "duration": 4963
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 1161
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734776,
+        "endTime": 1775006739763,
+        "duration": 4987
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734776,
+        "endTime": 1775006739824,
+        "duration": 5048
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739739,
+        "duration": 4960
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173015,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739739,
+        "duration": 4960
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 626,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739739,
+        "duration": 4960
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 541,
+        "responseHeadersSize": 1028
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739739,
+        "duration": 4960
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5980,
+        "responseHeadersSize": 1050
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739740,
+        "duration": 4961
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1333,
+        "responseHeadersSize": 1048
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739741,
+        "duration": 4962
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 986,
+        "responseHeadersSize": 1045
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739741,
+        "duration": 4962
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 962,
+        "responseHeadersSize": 1049
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739745,
+        "duration": 4966
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 862,
+        "responseHeadersSize": 1041
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739760,
+        "duration": 4981
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 519
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/gitlab-commit-feature.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739777,
+        "duration": 4998
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 47043,
+        "responseHeadersSize": 544
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734779,
+        "endTime": 1775006739746,
+        "duration": 4967
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7917,
+        "responseHeadersSize": 787
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006734780,
+        "endTime": 1775006739806,
+        "duration": 5026
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 304,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 457,
+        "responseHeadersSize": 563
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734780,
+        "endTime": 1775006739746,
+        "duration": 4966
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 642
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734780,
+        "endTime": 1775006739746,
+        "duration": 4966
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1050
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006734780,
+        "endTime": 1775006739746,
+        "duration": 4966
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 1194
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006734898,
+        "endTime": 1775006739800,
+        "duration": 4902
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006734898,
+        "endTime": 1775006739800,
+        "duration": 4902
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006734898,
+        "endTime": 1775006739800,
+        "duration": 4902
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006734898,
+        "endTime": 1775006739800,
+        "duration": 4902
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://player.vimeo.com/video/916048617",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006734913,
+        "endTime": 1775006739918,
+        "duration": 5005
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "Unauthorized",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5141,
+        "responseHeadersSize": 206
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006734965,
+        "endTime": 1775006739800,
+        "duration": 4835
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/webfonts/free-fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006735050,
+        "endTime": 1775006739835,
+        "duration": 4785
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 118696,
+        "responseHeadersSize": 1133
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006735065,
+        "endTime": 1775006739950,
+        "duration": 4885
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006735065,
+        "endTime": 1775006739955,
+        "duration": 4890
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775006700000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006735065,
+        "endTime": 1775006739955,
+        "duration": 4890
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775006734898&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=287362691.1775006735&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938465~115938469~116991816~117266401~118089341&sid=1775006735&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F05%2Fgitlab-commit-recap&dt=AppMap%20%7C%20GitLab%20Commit%20Recap%3A%20How%20to%20Upgrade%20Your%20Development%20Workflow%20with%20Runtime%20Code%20Maps&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=563",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006735228,
+        "endTime": 1775006735435,
+        "duration": 207
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006735236,
+        "endTime": 1775006739931,
+        "duration": 4695
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 366
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006735252,
+        "endTime": 1775006739961,
+        "duration": 4709
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006735252,
+        "endTime": 1775006740056,
+        "duration": 4804
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006735288,
+        "endTime": 1775006740210,
+        "duration": 4922
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006735383,
+        "endTime": 1775006740029,
+        "duration": 4646
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006735384,
+        "endTime": 1775006740029,
+        "duration": 4645
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 852
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/g/ea2d291c0fdc/api.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006735407,
+        "endTime": 1775006735449,
+        "duration": 42
+      },
+      "redirected": true,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/t7auv/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006735500,
+        "endTime": 1775006735539,
+        "duration": 39
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006735577,
+        "endTime": 1775006752814,
+        "duration": 17237
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 86,
+        "responseHeadersSize": 223
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/agrm9/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006735610,
+        "endTime": 1775006735647,
+        "duration": 37
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/3f408489-4745-494f-aafe-02f27a914c51",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006735623
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006735690
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F05%2Fgitlab-commit-recap%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F05%2Fgitlab-commit-recap&t=AppMap+%7C+GitLab+Commit+Recap%3A+How+to+Upgrade+Your+Development+Workflow+with+Runtime+Code+Maps&cts=1775006735700&rv=1&vi=f6b649f24f6163497d2e78c3a21210b9&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006735705,
+        "endTime": 1775006735862,
+        "duration": 157
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 999
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/d001342e-adf3-4350-92b3-9c31e8613889",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006735716
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53cd00ebc469d2/DhmEQtDV2r5YdG15IIW8a.q_QJ1OYSh8Ozy89wGZ1MU-1775006735-1.2.1.1-.zHdPZvPwTNgrVAG36rSgR5FYIzIVPi8ueHMlbasnj9pty_6METfmsBoN9cL2KDq",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006735818,
+        "endTime": 1775006738174,
+        "duration": 2356
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53cd019d9169d2/t69TiiRi1NNB6mZR4KB9B6DXIEah4.qoHVkyMVeXSuA-1775006735-1.2.1.1-BP.vbwccH6X2S7iEpccPAzA_bnTiiJ0EIXMIWan.OwwearIV1S.0_PIfhH_WFsXJ",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006735894,
+        "endTime": 1775006737707,
+        "duration": 1813
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/02bb4d43-f0c4-4457-833f-ea48974ee874",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006736026,
+        "endTime": 1775006737780,
+        "duration": 1754
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/14515f79-d8c4-4ef3-80da-77ef348afc71",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006736213,
+        "endTime": 1775006737224,
+        "duration": 1011
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53cd019d9169d2/1775006735917/nZ_LBaGTWFhBc-b",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006736434,
+        "endTime": 1775006736570,
+        "duration": 136
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 238,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/02bb4d43-f0c4-4457-833f-ea48974ee874",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006736573
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/14515f79-d8c4-4ef3-80da-77ef348afc71",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006737093
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/14515f79-d8c4-4ef3-80da-77ef348afc71",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006737212
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/14515f79-d8c4-4ef3-80da-77ef348afc71",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006737213
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53cd019d9169d2/1775006735917/92dbd6899c5f6628da1530214d4cbf46c137be332e718fac33378572e930513e/l1Y7lRxPDx2MqRa",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006737239,
+        "endTime": 1775006737269,
+        "duration": 30
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53cd00ebc469d2/1775006735842/kXq7Co4GCQ32RuH",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006737252,
+        "endTime": 1775006737285,
+        "duration": 33
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 351,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53cd019d9169d2/t69TiiRi1NNB6mZR4KB9B6DXIEah4.qoHVkyMVeXSuA-1775006735-1.2.1.1-BP.vbwccH6X2S7iEpccPAzA_bnTiiJ0EIXMIWan.OwwearIV1S.0_PIfhH_WFsXJ",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006737639
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53cd00ebc469d2/1775006735842/7ada220b2abcf9a2bb4bce78d68ded95ff42a73f8345b0f96e6bc0c785f4f0a3/UK8Jj_VJFDoWtHt",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006737658,
+        "endTime": 1775006737685,
+        "duration": 27
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/02bb4d43-f0c4-4457-833f-ea48974ee874",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006737767
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/02bb4d43-f0c4-4457-833f-ea48974ee874",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006737768
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53cd00ebc469d2/DhmEQtDV2r5YdG15IIW8a.q_QJ1OYSh8Ozy89wGZ1MU-1775006735-1.2.1.1-.zHdPZvPwTNgrVAG36rSgR5FYIzIVPi8ueHMlbasnj9pty_6METfmsBoN9cL2KDq",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006738126
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/blog/2021/08/05/gitlab-commit-recap",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006739661
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775006734898&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=287362691.1775006735&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=2&tag_exp=0~115938465~115938469~116991816~117266401~118089341&sid=1775006735&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F05%2Fgitlab-commit-recap&dt=AppMap%20%7C%20GitLab%20Commit%20Recap%3A%20How%20to%20Upgrade%20Your%20Development%20Workflow%20with%20Runtime%20Code%20Maps&en=user_engagement&_et=4479&tfd=5046",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006739721,
+        "endTime": 1775006739721,
+        "duration": 0
+      },
+      "redirected": false,
+      "fromCache": false,
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006739728
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006739732
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006739732
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006739735
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006739735
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006739738
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006739738
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006739739
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739739
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739739
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739739
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006739739
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739739
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739740
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739740
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739741
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739745
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006739745
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/gitlab-commit-feature.jpg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006739746
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739746
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006739746
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739746
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739746
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739746
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "other",
+      "timing": {
+        "startTime": 1775006739747
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006739771
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006739771
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006739771
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006739771
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006739795
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://player.vimeo.com/video/916048617",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006739800
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006739816,
+        "endTime": 1775006739915,
+        "duration": 99
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 105204,
+        "responseHeadersSize": 1082
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/webfonts/free-fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006739835
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739931
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/2c7f9/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006739943,
+        "endTime": 1775006739982,
+        "duration": 39
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/cnto5/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/new/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006739950,
+        "endTime": 1775006739973,
+        "duration": 23
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739950
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739955
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775006700000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006739955
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006739961
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006739962
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006740029
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006740029
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006740042
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006740055
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006740064
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F05%2Fgitlab-commit-recap%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F05%2Fgitlab-commit-recap&t=AppMap+%7C+GitLab+Commit+Recap%3A+How+to+Upgrade+Your+Development+Workflow+with+Runtime+Code+Maps&cts=1775006740078&rv=1&vi=4f876716340dd09f9801c17b2f7c0b3d&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006740081,
+        "endTime": 1775006740201,
+        "duration": 120
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 1005
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/54263008-b251-4394-ad83-53d292c14647",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006740094
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/08766949-5d8f-4f7c-aadd-1e0e3d296980",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006740184
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53cd1cbd3669d2/ijtpwwjbKipwQKkFf4Ec2iEoBg6nVXxkyup20qhV7H8-1775006739-1.2.1.1-TH_mEmBy4fs_ogvM6fUutIefa.v7.AAhAPu3iVKFnVyI._9S7fCKu2KXKr4ZdN5E",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006740311,
+        "endTime": 1775006742245,
+        "duration": 1934
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53cd1cbd2669d2/tpk5ak5E2JhJ4tLp7aRLR6W7_OAsvdiGk0prz1LMEnw-1775006739-1.2.1.1-Z7R4dh0iQzw8KjKgC2RpcpCkIx2mQJ_TIY403i7l.0AG156o3t3_DpGJ9SzrQ7SD",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006740373,
+        "endTime": 1775006742663,
+        "duration": 2290
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/c9452c49-29bf-4ad0-9089-0bd43924476b",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006740468,
+        "endTime": 1775006741347,
+        "duration": 879
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/5416aeea-eb82-409b-b44c-9117427352e0",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006740557,
+        "endTime": 1775006742253,
+        "duration": 1696
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53cd1cbd2669d2/1775006740391/70fb3c569d911112f338e3e9366b5be980dae30b1f3a2d69e11ac61f4f3c9c5b/wmb4VSTZB-z7hP2",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006741050,
+        "endTime": 1775006741129,
+        "duration": 79
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53cd1cbd3669d2/1775006740331/f01d8a7a493f351f57eb1adef0e1cf8d4ef896d5ff62b88a2e6092623e70650b/Cp4gUEQWioFt5HW",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006741184,
+        "endTime": 1775006741213,
+        "duration": 29
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53cd1cbd3669d2/1775006740331/eqiJmhmbLeGJWui",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006741230,
+        "endTime": 1775006741256,
+        "duration": 26
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 438,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/c9452c49-29bf-4ad0-9089-0bd43924476b",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006741327
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53cd1cbd2669d2/1775006740391/R-d67GB8kdJIyJC",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006741643,
+        "endTime": 1775006741670,
+        "duration": 27
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 461,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/5416aeea-eb82-409b-b44c-9117427352e0",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006741758
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/5416aeea-eb82-409b-b44c-9117427352e0",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006741758
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53cd1cbd3669d2/ijtpwwjbKipwQKkFf4Ec2iEoBg6nVXxkyup20qhV7H8-1775006739-1.2.1.1-TH_mEmBy4fs_ogvM6fUutIefa.v7.AAhAPu3iVKFnVyI._9S7fCKu2KXKr4ZdN5E",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006742171
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/5416aeea-eb82-409b-b44c-9117427352e0",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006742232
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53cd1cbd2669d2/tpk5ak5E2JhJ4tLp7aRLR6W7_OAsvdiGk0prz1LMEnw-1775006739-1.2.1.1-Z7R4dh0iQzw8KjKgC2RpcpCkIx2mQJ_TIY403i7l.0AG156o3t3_DpGJ9SzrQ7SD",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006742617
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775006739766&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=287362691.1775006735&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&_s=1&tag_exp=0~115938465~115938469~116133312~116991817~117266401~118128923&sid=1775006735&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F05%2Fgitlab-commit-recap&dt=AppMap%20%7C%20GitLab%20Commit%20Recap%3A%20How%20to%20Upgrade%20Your%20Development%20Workflow%20with%20Runtime%20Code%20Maps&en=page_view&_ee=1&tfd=5253",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006744915,
+        "endTime": 1775006744955,
+        "duration": 40
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rchBamcoiGsG18IhNeLOfMeEHiuc1XoRdUm._Ecp_2MTLM-1775006739-1.3.1.1-WUNsT90uGn9srr7aOpMulY6F0uibyFB9Agnz9L_6ZO0/cnto5/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/failure_retry/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006752253,
+        "endTime": 1775006752285,
+        "duration": 32
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006752304
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/ce4853cf-f344-4e25-b771-a9ec17bfde17",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006752315
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53cd69aead69d2/RpR_6BBbxlPxSEL1hKlKya4.evLyI2rqgx_XG3l6UgI-1775006752-1.2.1.1-orl2_pq0IBbrVJp53SSBKY_253ICPYbVTZzvV68lb5CT7CzxTkolx2AJkG_Rz6mc",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006752487,
+        "endTime": 1775006753794,
+        "duration": 1307
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/4cfa70df-c629-44e5-af74-4152fd1b7247",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006752616,
+        "endTime": 1775006753030,
+        "duration": 414
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch4JkA3ctdJChF1agTA9DQih.1Rs__m69AYs4jnX.y0BU-1775006739-1.3.1.1-NQnLFJRZuXNuPTSeMi.XwLcn7WAZPpmc0POxYRT51GA/2c7f9/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/failure_retry/normal?lang=auto",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006752678,
+        "endTime": 1775006752709,
+        "duration": 31
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53cd69aead69d2/1775006752505/icxZ_VHkLO3iVZ-",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006752680,
+        "endTime": 1775006752700,
+        "duration": 20
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 492,
+        "responseHeadersSize": 224
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006752793
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/d4912c35-1143-4d5b-964f-c613392bd4f5",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006752822
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775006739766&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=287362691.1775006735&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938465~115938469~116133312~116991817~117266401~118128923&sid=1775006735&sct=1&seg=1&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F05%2Fgitlab-commit-recap&dt=AppMap%20%7C%20GitLab%20Commit%20Recap%3A%20How%20to%20Upgrade%20Your%20Development%20Workflow%20with%20Runtime%20Code%20Maps&en=scroll&epn.percent_scrolled=90&_et=7953&tfd=13209",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006752873,
+        "endTime": 1775006752910,
+        "duration": 37
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53cd69aead69d2/1775006752505/9108d4dd3c6cbafad1f5825600a19325fce754040ada02cd37fd9f9a1bfb8cf5/RA79AESRSeODFA0",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006752874,
+        "endTime": 1775006752896,
+        "duration": 22
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/4cfa70df-c629-44e5-af74-4152fd1b7247",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006752957
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53cd6c4e8169d2/8MTuWrbDKLtWaCI1va_1jFROh23ywPoDhR1meNUDrUk-1775006752-1.2.1.1-CK2xQRbygn55bVGTy5k6XB0rxkZtgP4KM8AC5hD8XW3J1xZzpQJf6sGSpo1xmQ.1",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006752990,
+        "endTime": 1775006753148,
+        "duration": 158
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/4cfa70df-c629-44e5-af74-4152fd1b7247",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006753018
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/4cfa70df-c629-44e5-af74-4152fd1b7247",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006753019
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/c14b52fc-4543-40fd-af3d-e4fd3116b64f",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006753159,
+        "endTime": 1775006753798,
+        "duration": 639
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 80,
+        "responseHeadersSize": 56
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/pat/9e53cd6c4e8169d2/1775006753010/82d753321d7219478c306a5cae1e4f5987443073c9a16803558a52e873bf8f13/PrI3d910fvjMlbs",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006753346,
+        "endTime": 1775006753379,
+        "duration": 33
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 401,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 2185
+      }
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/flow/ov1/1151758751:1774424211:4o8Wa4Enn-QTt2lnuwi1reIgADkO95lDbuYaz16VfCU/9e53cd69aead69d2/RpR_6BBbxlPxSEL1hKlKya4.evLyI2rqgx_XG3l6UgI-1775006752-1.2.1.1-orl2_pq0IBbrVJp53SSBKY_253ICPYbVTZzvV68lb5CT7CzxTkolx2AJkG_Rz6mc",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006753724
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "blob:https://challenges.cloudflare.com/c14b52fc-4543-40fd-af3d-e4fd3116b64f",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006753772
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53cd6c4e8169d2/1775006753011/r3kjV7iasX5tPGT",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006753831,
+        "endTime": 1775006753850,
+        "duration": 19
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 310,
+        "responseHeadersSize": 224
+      }
+    }
+  ]
+}

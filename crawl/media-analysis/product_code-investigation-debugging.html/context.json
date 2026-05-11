@@ -1,0 +1,178 @@
+{
+  "timestamp": "2026-04-01T01:57:03.372Z",
+  "crawlDirectory": "crawl/site/product/code-investigation-debugging.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 9,
+  "foundAssets": 8,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/product/code-investigation-debugging.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 122,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/visualize-and-understand-application-behavior.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/visualize-and-understand-application-behavior.png",
+          "foundInFile": "crawl/site/product/code-investigation-debugging.html",
+          "context": "        <h2 class=\"subhead\">AppMap can help you understand your application's behavior faster than you can possibly do with traditional methods lik...lity tool.</h2>\n      </div>\n      <img src=\"/assets/img/product/visualize-and-understand-application-behavior.png\" alt=\"\">\n    </div>\n  </section>",
+          "lineNumber": 163,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/visualize-and-understand-application-behavior.png",
+            "alt": ""
+          },
+          "surroundingText": "\n      \n        \n          Code Investigation and Debugging\n        \n        AppMap can help you understand your application's behavior faster than you can possibly do with traditional methods like re"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/follow-request-flows-sequence.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/follow-request-flows-sequence.jpg",
+          "foundInFile": "crawl/site/product/code-investigation-debugging.html",
+          "context": "  <section class=\"product-content two-col tuck\">\n    <div class=\"section-content\">\n      <img src=\"/assets/img/product/follow-request-flows-sequence.jpg\" alt=\"Follow request flows\">\n      <div class=\"content-wrap\">\n        <h2>Follow Request Flows</h2>",
+          "lineNumber": 169,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/follow-request-flows-sequence.jpg",
+            "alt": "Follow request flows"
+          },
+          "surroundingText": "\n      \n      \n        Follow Request Flows\n        AppMap's Sequence Diagram view allows you to see the events that occurred in your application while AppMap was recording. Events are shown in chrono"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/examine-runtime-dependencies.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/examine-runtime-dependencies.jpg",
+          "foundInFile": "crawl/site/product/code-investigation-debugging.html",
+          "context": "    </div>\n    <div class=\"section-content\">\n      <img src=\"/assets/img/product/examine-runtime-dependencies.jpg\" alt=\"Examine runtime dependencies\">\n      <div class=\"content-wrap\">\n        <h2>Examine Runtime Dependencies</h2> ",
+          "lineNumber": 178,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/examine-runtime-dependencies.jpg",
+            "alt": "Examine runtime dependencies"
+          },
+          "surroundingText": "\n      \n      \n        Examine Runtime Dependencies \n        AppMap can visually represent all actually-used dependencies within an application. For example, if your Ruby application uses Rails, OpenS",
+          "columnRange": {
+            "start": 16,
+            "end": 68
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/inspect-database-queries.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/inspect-database-queries.jpg",
+          "foundInFile": "crawl/site/product/code-investigation-debugging.html",
+          "context": "\n  <section class=\"product-content one-col\">\n    <img class=\"placeholder-image\" src=\"/assets/img/product/inspect-database-queries.jpg\" alt=\"\">\n    <div class=\"section-content\">\n      <h2>Inspect Database Queries</h2>",
+          "lineNumber": 188,
+          "elementType": "img",
+          "attributes": {
+            "class": "placeholder-image",
+            "src": "/assets/img/product/inspect-database-queries.jpg",
+            "alt": ""
+          },
+          "surroundingText": "\n    \n    \n      Inspect Database Queries\n      AppMap makes it simple to see how your application interacts with SQL databases. You can quickly discover query inefficiencies and anti-patterns that po"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/view-your-applications-code-objects.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/view-your-applications-code-objects.jpg",
+          "foundInFile": "crawl/site/product/code-investigation-debugging.html",
+          "context": "\n  <section class=\"product-content two-col\">\n    <img class=\"placeholder-image\" src=\"/assets/img/product/view-your-applications-code-objects.jpg\" alt=\"\">\n    <div class=\"section-content\">\n      <div class=\"content-wrap\">",
+          "lineNumber": 197,
+          "elementType": "img",
+          "attributes": {
+            "class": "placeholder-image",
+            "src": "/assets/img/product/view-your-applications-code-objects.jpg",
+            "alt": ""
+          },
+          "surroundingText": "\n    \n    \n      \n        View Your Application's Code Objects \n        AppMap automatically indexes your application's code objects (functions, APIs, DB queries) and presents them in an easily browsa",
+          "columnRange": {
+            "start": 40,
+            "end": 99
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/see-whats-important.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/see-whats-important.jpg",
+          "foundInFile": "crawl/site/product/code-investigation-debugging.html",
+          "context": "      </div>\n    </div>\n    <img class=\"placeholder-image\" src=\"/assets/img/product/see-whats-important.jpg\" alt=\"\">\n    <div class=\"section-content\">\n      <div class=\"content-wrap\">",
+          "lineNumber": 205,
+          "elementType": "img",
+          "attributes": {
+            "class": "placeholder-image",
+            "src": "/assets/img/product/see-whats-important.jpg",
+            "alt": ""
+          },
+          "surroundingText": "\n    \n    \n      \n        View Your Application's Code Objects \n        AppMap automatically indexes your application's code objects (functions, APIs, DB queries) and presents them in an easily browsa"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/product/code-investigation-debugging.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 219,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fproduct%2Fcode-investigation-debugging.html&pu=https%3A%2F%2Fappmap.io%2Fproduct%2Fcode-investigation-debugging&t=AppMap+%7C+Code+Investigation+and+Debugging&cts=1775008613946&rv=1&vi=2e720a7f8b0c6c0b3a6f6a082121295a&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

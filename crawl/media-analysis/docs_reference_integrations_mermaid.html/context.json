@@ -1,0 +1,156 @@
+{
+  "timestamp": "2026-04-01T01:50:57.862Z",
+  "crawlDirectory": "crawl/site/docs/reference/integrations/mermaid.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 9,
+  "foundAssets": 7,
+  "notFoundAssets": 2,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/mermaid.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/mermaid.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 772,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/mermaid.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 773,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/sequence-diagram-navie.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/sequence-diagram-navie.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/mermaid.html",
+          "context": "</code></pre></div></div>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/product/sequence-diagram-navie.webp\"></p>\n\n<div class=\"language-plaint...ter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>@diagram the entity relationships between products and other important data objects.",
+          "lineNumber": 802,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/sequence-diagram-navie.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/entity-relationship-navie.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/entity-relationship-navie.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/mermaid.html",
+          "context": "</code></pre></div></div>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/product/entity-relationship-navie.webp\"></p>\n\n<div class=\"language-plaintext highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>@diagram using a flow chart how product sales tax is calculated.",
+          "lineNumber": 807,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/entity-relationship-navie.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/flow-chart-navie.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/flow-chart-navie.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/mermaid.html",
+          "context": "</code></pre></div></div>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/product/flow-chart-navie.webp\"></p>\n\n<div class=\"language-plaintext hi...lass=\"highlight\"><pre class=\"highlight\"><code>@diagram create a detailed class map of the users, stores, products and other associated classes used",
+          "lineNumber": 812,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/flow-chart-navie.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/class-map-navie.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/class-map-navie.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/mermaid.html",
+          "context": "</code></pre></div></div>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/product/class-map-navie.webp\"></p>\n\n<h2 id=\"example-diagram-projects\">Example Diagram Projects</h2>",
+          "lineNumber": 817,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/class-map-navie.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fintegrations%2Fmermaid.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fintegrations%2Fmermaid&t=AppMap+-+Docs+-+Integrations+-+Mermaid&cts=1775008248299&rv=1&vi=7758dd48c2be7c29255c0bb23dbf4f6f&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

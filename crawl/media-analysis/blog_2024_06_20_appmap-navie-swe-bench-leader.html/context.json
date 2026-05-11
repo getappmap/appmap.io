@@ -1,0 +1,212 @@
+{
+  "timestamp": "2026-04-01T01:39:39.605Z",
+  "crawlDirectory": "crawl/site/blog/2024/06/20/appmap-navie-swe-bench-leader/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 10,
+  "foundAssets": 9,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2024/06/20/appmap-navie-swe-bench-leader/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/speed-run-swe-bench-header.jpg",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/speed-run-swe-bench-header.jpg",
+          "foundInFile": "crawl/site/blog/2024/06/20/appmap-navie-swe-bench-leader/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2024/06/20/appmap-navie-swe-bench-leader/\">\n<meta property=\"og:site_name\" content=\"AppMap\">...run-swe-bench-header.jpg\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2024-06-20T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/speed-run-swe-bench-header.jpg"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | AppMap speedruns to the top of the SWE Bench Leaderboard\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontaw",
+          "columnRange": {
+            "start": 35,
+            "end": 100
+          }
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/speed-run-swe-bench-header.jpg",
+          "foundInFile": "crawl/site/blog/2024/06/20/appmap-navie-swe-bench-leader/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2024/06/20/appmap-navie-swe-bench-leader/\">\n<meta property=\"og:site_name\" content=\"AppMap\">...run-swe-bench-header.jpg\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2024-06-20T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/speed-run-swe-bench-header.jpg",
+            "alt": "AppMap speedruns to the top of the SWE Bench Leaderboard",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  AppMap speedruns to the top of the SWE Bench Leaderboard\n  \n    \n  Start using Navie today!\n  Navie, the AI Software Architect is free and available to use immediately as part of the App",
+          "columnRange": {
+            "start": 52,
+            "end": 100
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navie-solution-architecture-desc-fix.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navie-solution-architecture-desc-fix.png",
+          "foundInFile": "crawl/site/blog/2024/06/20/appmap-navie-swe-bench-leader/index.html",
+          "context": "<p>The term “agent” is used to describe an AI program that is given a set of tools, and freedom to choose and use them. Navie is not agentic in thi...ng:2rem;\" src=\"/assets/img/posts/navie-solution-architecture-desc-fix.png\"></p>\n\n<p>The operation of Navie is divided into 3 high level phases:</p>",
+          "lineNumber": 196,
+          "elementType": "img",
+          "attributes": {
+            "id": "navie-solution-architecture",
+            "style": "background-color:white; padding:2rem;",
+            "src": "/assets/img/posts/navie-solution-architecture-desc-fix.png"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 92,
+            "end": 150
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/SWE-Bench-FULL-6-18-2024.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/SWE-Bench-FULL-6-18-2024.svg",
+          "foundInFile": "crawl/site/blog/2024/06/20/appmap-navie-swe-bench-leader/index.html",
+          "context": "<p><strong>Navie on SWE Bench</strong></p>\n\n<p><img src=\"/assets/img/posts/SWE-Bench-FULL-6-18-2024.svg\" alt=\"image\"></p>\n\n<p><strong>Navie on SWE Bench Lite</strong></p>",
+          "lineNumber": 278,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/SWE-Bench-FULL-6-18-2024.svg",
+            "alt": "image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/SWE-Bench-LITE-6-18-2024.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/SWE-Bench-LITE-6-18-2024.svg",
+          "foundInFile": "crawl/site/blog/2024/06/20/appmap-navie-swe-bench-leader/index.html",
+          "context": "<p><strong>Navie on SWE Bench Lite</strong></p>\n\n<p><img src=\"/assets/img/posts/SWE-Bench-LITE-6-18-2024.svg\" alt=\"image\"></p>\n\n<h2 id=\"cost-and-token-analysis\">Cost and Token Analysis</h2>",
+          "lineNumber": 282,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/SWE-Bench-LITE-6-18-2024.svg",
+            "alt": "image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navie-cost-swe-bench-full.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navie-cost-swe-bench-full.svg",
+          "foundInFile": "crawl/site/blog/2024/06/20/appmap-navie-swe-bench-leader/index.html",
+          "context": "<p><strong>Dollar Cost SWE Bench Full</strong></p>\n\n<p><img src=\"/assets/img/posts/navie-cost-swe-bench-full.svg\" alt=\"image\"></p>\n\n<p><em style=\"f...w.factory.ai/news/code-droid-technical-report\">blog post</a> indicating &lt;~2M average token count per inference using GPT4o list pricing</em></p>",
+          "lineNumber": 298,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navie-cost-swe-bench-full.svg",
+            "alt": "image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navie-cost-swe-bench-lite.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navie-cost-swe-bench-lite.svg",
+          "foundInFile": "crawl/site/blog/2024/06/20/appmap-navie-swe-bench-leader/index.html",
+          "context": "<p><strong>Dollar Cost SWE Bench Lite</strong></p>\n\n<p><img src=\"/assets/img/posts/navie-cost-swe-bench-lite.svg\" alt=\"image\"></p>\n\n<p><strong>Token Cost SWE Bench Full</strong></p>",
+          "lineNumber": 304,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navie-cost-swe-bench-lite.svg",
+            "alt": "image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/token-cost-swe-bench-full.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/token-cost-swe-bench-full.svg",
+          "foundInFile": "crawl/site/blog/2024/06/20/appmap-navie-swe-bench-leader/index.html",
+          "context": "<p><strong>Token Cost SWE Bench Full</strong></p>\n\n<p><img src=\"/assets/img/posts/token-cost-swe-bench-full.svg\" alt=\"image\"></p>\n\n<p>AppMap Navie ...verage of less than 2 million tokens per issue, but up to 13M maximum, can be projected to cost between $20 and $130 per instance using GPT-4o.</p>",
+          "lineNumber": 308,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/token-cost-swe-bench-full.svg",
+            "alt": "image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2024/06/20/appmap-navie-swe-bench-leader/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 384,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2024%2F06%2F20%2Fappmap-navie-swe-bench-leader%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2024%2F06%2F20%2Fappmap-navie-swe-bench-leader&t=AppMap+%7C+AppMap+speedruns+to+the+top+of+the+SWE+Bench+Leaderboard&cts=1775007563511&rv=1&vi=f2dedc12d1f8851eff9370250056c9c7&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

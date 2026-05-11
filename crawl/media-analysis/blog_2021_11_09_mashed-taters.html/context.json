@@ -1,0 +1,129 @@
+{
+  "timestamp": "2026-04-01T01:30:19.374Z",
+  "crawlDirectory": "crawl/site/blog/2021/11/09/mashed-taters/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 6,
+  "foundAssets": 5,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/11/09/mashed-taters/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/mashed-taters-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/mashed-taters-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/11/09/mashed-taters/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/11/09/mashed-taters/\">\n<meta property=\"og:site_name\" content=\"AppMap\">\n<meta property=...shed-taters-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-11-09T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/mashed-taters-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Early-Stage Product Development Can Feel Like A Pile Of Mashed Potatoes\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License -"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/mashed-taters-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/11/09/mashed-taters/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/11/09/mashed-taters/\">\n<meta property=\"og:site_name\" content=\"AppMap\">\n<meta property=...shed-taters-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-11-09T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/mashed-taters-feature.webp",
+            "alt": "Early-Stage Product Development Can Feel Like A Pile Of Mashed Potatoes",
+            "class": "post-image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/taters-2.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/taters-2.webp",
+          "foundInFile": "crawl/site/blog/2021/11/09/mashed-taters/index.html",
+          "context": "\n<p>I’m so fortunate to have a crew to think, communicate, build and refine with. We all believe in the power of creativity and expression to bring...th his idea, come back with a skeleton of the concept and then articulate to others what his “pile of mashed potatoes” could look like one day.</p>",
+          "lineNumber": 183,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/taters-2.webp",
+            "alt": "AppMap meeting",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "I’m so fortunate to have a crew to think, communicate, build and refine with. We all believe in the power of creativity and expression to bring forth the best ideas. And everyone’s medium is different"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/taters-1.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/taters-1.jpg",
+          "foundInFile": "crawl/site/blog/2021/11/09/mashed-taters/index.html",
+          "context": "\n<p>Have faith, keep pushing, and trust that your team will help craft your vision into something tangible and meaningful. When your “pile of mashe...hird-kind-ages-well-steven-spielberg/\"><img class=\"no-border-margin\" src=\"/assets/img/posts/taters-1.jpg\" alt=\"Close encounters\"></a></p>\n\n  </div>",
+          "lineNumber": 199,
+          "elementType": "img",
+          "attributes": {
+            "class": "no-border-margin",
+            "src": "/assets/img/posts/taters-1.jpg",
+            "alt": "Close encounters"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 124,
+            "end": 154
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/11/09/mashed-taters/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 211,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F11%2F09%2Fmashed-taters%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F11%2F09%2Fmashed-taters&t=AppMap+%7C+Early-Stage+Product+Development+Can+Feel+Like+A+Pile+Of+Mashed+Potatoes&cts=1775007009444&rv=1&vi=1604fd144b012cb81d75fe9ee0efff1d&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

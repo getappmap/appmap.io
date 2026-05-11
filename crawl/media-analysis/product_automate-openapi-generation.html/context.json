@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-04-01T01:56:51.623Z",
+  "crawlDirectory": "crawl/site/product/automate-openapi-generation.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 5,
+  "foundAssets": 4,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/product/automate-openapi-generation.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 122,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/appmap-openapi.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/appmap-openapi.svg",
+          "foundInFile": "crawl/site/product/automate-openapi-generation.html",
+          "context": "  <section class=\"product-hero\">\n    <div class=\"section-content\">\n      <img class=\"b-1\" src=\"/assets/img/product/appmap-openapi.svg\" alt=\"\">\n      <div class=\"content-wrap\">\n        <div class=\"hero-img\">",
+          "lineNumber": 156,
+          "elementType": "img",
+          "attributes": {
+            "class": "b-1",
+            "src": "/assets/img/product/appmap-openapi.svg",
+            "alt": ""
+          },
+          "surroundingText": "\n      \n      \n        \n          Automatically Generate OpenAPI Definitions\n        \n        Your development time is valuable. Don’t spend it writing and maintaining OpenAPI definitions.\n          A"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/generate-open-api-button.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/generate-open-api-button.png",
+          "foundInFile": "crawl/site/product/automate-openapi-generation.html",
+          "context": "  </section>\n  <section class=\"product-content horiz horiz-left tuck\">\n    <img class=\"placeholder-image\" src=\"/assets/img/product/generate-open-api-button.png\" alt=\"\">\n    <div class=\"section-content col-item\">\n      <div class=\"content-wrap\">",
+          "lineNumber": 168,
+          "elementType": "img",
+          "attributes": {
+            "class": "placeholder-image",
+            "src": "/assets/img/product/generate-open-api-button.png",
+            "alt": ""
+          },
+          "surroundingText": "\n    \n    \n      \n        Generate OpenAPI Definitions\n        Keeping definitions in sync and up to date with the API's latest behavior is time consuming and error prone. AppMap generates an OpenAPI "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/product/automate-openapi-generation.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 217,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fproduct%2Fautomate-openapi-generation.html&pu=https%3A%2F%2Fappmap.io%2Fproduct%2Fautomate-openapi-generation&t=AppMap+%7C+OpenAPI+Generation&cts=1775008602210&rv=1&vi=4733130b0f07155cda09ad59f2d17132&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

@@ -1,0 +1,919 @@
+{
+  "timestamp": "2026-04-01T01:39:50.982Z",
+  "crawlDirectory": "crawl/site/blog/gallery.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 41,
+  "foundAssets": 40,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 127,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/ai-code-reviews-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/ai-code-reviews-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2023/04/18/future-of-code-reviews-in-an-ai-world/\">\n        <img src=\"/assets/img/posts/ai-code-reviews-thumb.jpg\" alt=\"The future of code reviews in an AI world\">\n      </a>\n    ",
+          "lineNumber": 166,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/ai-code-reviews-thumb.jpg",
+            "alt": "The future of code reviews in an AI world"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 61
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/appmap-javascript-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/appmap-javascript-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2022/01/18/why-we-are-bringing-google-maps-for-code-to-node-js-apps/\">\n        <img src=\"/assets/img/posts/appmap-javascript-thumb.jpg\" alt=\"Why We’re Bringing “Google Maps for Code” to Node.js Apps\">\n      </a>\n    ",
+          "lineNumber": 170,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/appmap-javascript-thumb.jpg",
+            "alt": "Why We’re Bringing “Google Maps for Code” to Node.js Apps"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 63
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/november-update-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/november-update-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/12/01/november-update/\">\n        <img src=\"/assets/img/posts/november-update-thumb.jpg\" alt=\"AppLand Newsletter: November 2021\">\n      </a>\n    ",
+          "lineNumber": 174,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/november-update-thumb.jpg",
+            "alt": "AppLand Newsletter: November 2021"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 61
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/october-update-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/october-update-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/10/25/october-update/\">\n        <img src=\"/assets/img/posts/october-update-thumb.jpg\" alt=\"AppLand Newsletter: October 2021\">\n      </a>\n    ",
+          "lineNumber": 178,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/october-update-thumb.jpg",
+            "alt": "AppLand Newsletter: October 2021"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/n-plus-1-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/n-plus-1-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/10/04/detecting_n_plus_one_for_spring_applications/\">\n        <img src=\"/assets/img/posts/n-plus-1-thumb.jpg\" alt=\"How to detect and fix the N+1 problem for Java Spring framework applications\">\n      </a>\n    ",
+          "lineNumber": 182,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/n-plus-1-thumb.jpg",
+            "alt": "How to detect and fix the N+1 problem for Java Spring framework applications"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 54
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/before-after-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/before-after-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/\">\n        <img src=\"/assets/img/posts/before-after-thumb.jpg\" alt=\"Make performance fixes easy to review by showing the before and after\">\n      </a>\n    ",
+          "lineNumber": 186,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/before-after-thumb.jpg",
+            "alt": "Make performance fixes easy to review by showing the before and after"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 58
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/performance-data-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/performance-data-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps/\">\n        <img src=.../posts/performance-data-thumb.jpg\" alt=\"How to Quickly Identify and Fix Performance Flaws with Open Source, Interactive Code Maps\">\n      </a>\n    ",
+          "lineNumber": 190,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/performance-data-thumb.jpg",
+            "alt": "How to Quickly Identify and Fix Performance Flaws with Open Source, Interactive Code Maps"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 62
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/appland-data-leak-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/appland-data-leak-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/07/15/catching-tricky-bugs-with-runtime-code-analysis/\">\n        <img src=\"/assets/img/posts/appland-data-leak-thumb.jpg\" alt=\"Catching tricky bugs with runtime code analysis\">\n      </a>\n    ",
+          "lineNumber": 194,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/appland-data-leak-thumb.jpg",
+            "alt": "Catching tricky bugs with runtime code analysis"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 63
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/devrel-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/devrel-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/07/02/dev-rel-marketing-stack/\">\n        <img src=\"/assets/img/posts/devrel-thumb.jpg\" alt=\"How we’re building our DevRel stack\">\n      </a>\n    ",
+          "lineNumber": 198,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/devrel-thumb.jpg",
+            "alt": "How we’re building our DevRel stack"
+          },
+          "surroundingText": "\n        \n      "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/june-recap-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/june-recap-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/06/17/june-recap/\">\n        <img src=\"/assets/img/posts/june-recap-thumb.jpg\" alt=\"AppLand update: June 2021\">\n      </a>\n    ",
+          "lineNumber": 202,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/june-recap-thumb.jpg",
+            "alt": "AppLand update: June 2021"
+          },
+          "surroundingText": "\n        \n      "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/remote-recording-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/remote-recording-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/06/14/squash-bugs-faster-with-appmap-remote-recording/\">\n        <img src=\"/assets/img/posts/remote-recording-thumb.jpg\" alt=\"New AppMap Feature Alert: Squash Bugs Faster by Recording AppMap Data in Your Code Editor!\">\n      </a>\n    ",
+          "lineNumber": 206,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/remote-recording-thumb.jpg",
+            "alt": "New AppMap Feature Alert: Squash Bugs Faster by Recording AppMap Data in Your Code Editor!"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 62
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/railsconf_pt4_thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/railsconf_pt4_thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/06/10/rails-conf-recap-pt4/\">\n        <img src=\"/assets/img/posts/railsconf_pt4_thumb.jpg\" alt=\"RailsConf Recap Part 4: How to auto-document database schemas\">\n      </a>\n    ",
+          "lineNumber": 210,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/railsconf_pt4_thumb.jpg",
+            "alt": "RailsConf Recap Part 4: How to auto-document database schemas"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/railsconf_recap3_thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/railsconf_recap3_thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/06/08/rails-conf-recap-pt3/\">\n        <img src=\"/assets/img/posts/railsconf_recap3_thumb.jpg\" alt=\"RailsConf Recap Part 3: How to auto-document web services with Swagger/OpenAPI\">\n      </a>\n    ",
+          "lineNumber": 214,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/railsconf_recap3_thumb.jpg",
+            "alt": "RailsConf Recap Part 3: How to auto-document web services with Swagger/OpenAPI"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 62
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/railsconf2021-recap-1-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/railsconf2021-recap-1-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/05/25/rails-conf-recap-pt1/\">\n        <img src=\"/assets/img/posts/railsconf2021-recap-1-thumb.jpg\" alt=\"RailsConf Recap Part 1: Why We Need a New Way of Communicating and Explaining Our Code Design Decisions\">\n      </a>\n    ",
+          "lineNumber": 218,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/railsconf2021-recap-1-thumb.jpg",
+            "alt": "RailsConf Recap Part 1: Why We Need a New Way of Communicating and Explaining Our Code Design Decisions"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 67
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/django-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/django-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/04/13/how-to-spot-and-fix-django-orm-anti-patterns/\">\n        <img src=\"/assets/img/posts/django-thumb.jpg\" alt=\"How to spot and fix Django ORM anti-patterns\">\n      </a>\n    ",
+          "lineNumber": 222,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/django-thumb.jpg",
+            "alt": "How to spot and fix Django ORM anti-patterns"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 52
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/beginners-mindset-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/beginners-mindset-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/04/01/beginners-mind-how-to-effectively-review-your-own-code/\">\n        <img src=\"/assets/img/posts/beginners-mindset-thumb.jpg\" alt=\"Beginners mind - How to effectively review your own code\">\n      </a>\n    ",
+          "lineNumber": 226,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/beginners-mindset-thumb.jpg",
+            "alt": "Beginners mind - How to effectively review your own code"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 63
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/appland_autodocumenting_thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/appland_autodocumenting_thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/03/22/freedom-to-decide-responsibility-to-explain-how-and-why-to-automate-your-architecture-docs/\">\n        <img src...and_autodocumenting_thumb.jpg\" alt=\"Freedom to decide, responsibility to explain - How and why to automate your architecture docs\">\n      </a>\n    ",
+          "lineNumber": 230,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/appland_autodocumenting_thumb.jpg",
+            "alt": "Freedom to decide, responsibility to explain - How and why to automate your architecture docs"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 69
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/five_mistakes_thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/five_mistakes_thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/03/18/we-knocked-out-our-own-site-with-a-slow-query/\">\n        <img src=\"/assets/img/posts/five_mistakes_thumb.jpg\" alt=\"We knocked out our own site with a slow query\">\n      </a>\n    ",
+          "lineNumber": 234,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/five_mistakes_thumb.jpg",
+            "alt": "We knocked out our own site with a slow query"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/appland-new-frontier-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/appland-new-frontier-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/03/09/the-next-frontier-for-appland-software-design-observability-with-interactive-code-analysis/\">\n        <img src...osts/appland-new-frontier-thumb.jpg\" alt=\"The Next Frontier for AppLand: Software Design Observability with Runtime Code Analysis\">\n      </a>\n    ",
+          "lineNumber": 238,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/appland-new-frontier-thumb.jpg",
+            "alt": "The Next Frontier for AppLand: Software Design Observability with Runtime Code Analysis"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 66
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/appland-orbit-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/appland-orbit-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/03/05/celebrating-the-women-in-my-orbit/\">\n        <img src=\"/assets/img/posts/appland-orbit-thumb.jpg\" alt=\"Celebrating the Women in My Orbit\">\n      </a>\n    ",
+          "lineNumber": 242,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/appland-orbit-thumb.jpg",
+            "alt": "Celebrating the Women in My Orbit"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/scaling-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/scaling-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/03/02/scalable-json-processing-using-fs-promises-async-and-oboe/\">\n        <img src=\"/assets/img/posts/scaling-thumb.jpg\" alt=\"Scalable JSON processing using fs/promises, Async and Oboe\">\n      </a>\n    ",
+          "lineNumber": 246,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/scaling-thumb.jpg",
+            "alt": "Scalable JSON processing using fs/promises, Async and Oboe"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 53
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/pre-debugging-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/pre-debugging-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/03/02/explore-and-learn-any-python-library-using-visual-interactive-maps/\">\n        <img src=\"/assets/img/posts/pre-debugging-thumb.jpg\" alt=\"Explore and learn any Python library using visual, interactive maps\">\n      </a>\n    ",
+          "lineNumber": 250,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/pre-debugging-thumb.jpg",
+            "alt": "Explore and learn any Python library using visual, interactive maps"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/ruby-giant-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/ruby-giant-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/02/26/ruby-giant-amir-rajan-creator-of-dragonruby/\">\n        <img src=\"/assets/img/posts/ruby-giant-thumb.jpg\" alt=\"Ruby Giant - Amir Rajan, Creator of DragonRuby\">\n      </a>\n    ",
+          "lineNumber": 254,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/ruby-giant-thumb.jpg",
+            "alt": "Ruby Giant - Amir Rajan, Creator of DragonRuby"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 56
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/observability-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/observability-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/02/23/observability-of-software-design-what-it-is-and-why-it-matters/\">\n        <img src=\"/assets/img/posts/observability-thumb.jpg\" alt=\"Observability of software design - What it is and why it matters\">\n      </a>\n    ",
+          "lineNumber": 258,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/observability-thumb.jpg",
+            "alt": "Observability of software design - What it is and why it matters"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/level-up-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/level-up-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/02/22/how-to-level-up-your-software-design-skills/\">\n        <img src=\"/assets/img/posts/level-up-thumb.jpg\" alt=\"How to level up your software design skills\">\n      </a>\n    ",
+          "lineNumber": 262,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/level-up-thumb.jpg",
+            "alt": "How to level up your software design skills"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 54
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/bootstrap-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/bootstrap-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/02/16/startups-can-still-feel-good-about-choosing-boostrap-in-2021/\">\n        <img src=\"/assets/img/posts/bootstrap-thumb.jpg\" alt=\"Startups can still feel good about choosing Bootstrap in 2021\">\n      </a>\n    ",
+          "lineNumber": 266,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/bootstrap-thumb.jpg",
+            "alt": "Startups can still feel good about choosing Bootstrap in 2021"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 55
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/eager-loading-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/eager-loading-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/02/15/effective-sql-indexing-and-denormalizing-jsonb/\">\n        <img src=\"/assets/img/posts/eager-loading-thumb.jpg\" alt=\"Effective SQL - Indexing and denormalizing JSONB\">\n      </a>\n    ",
+          "lineNumber": 270,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/eager-loading-thumb.jpg",
+            "alt": "Effective SQL - Indexing and denormalizing JSONB"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/whiteboard-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/whiteboard-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/02/11/there-are-things-about-whiteboards-that-i-dont-miss/\">\n        <img src=\"/assets/img/posts/whiteboard-thumb.jpg\" alt=\"There are things about whiteboards that I don't miss\">\n      </a>\n    ",
+          "lineNumber": 278,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/whiteboard-thumb.jpg",
+            "alt": "There are things about whiteboards that I don't miss"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 56
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/ruby-framework-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/ruby-framework-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/02/11/ruby-on-rails-is-the-worlds-fastest-web-framework-for-startups/\">\n        <img src=\"/assets/img/posts/ruby-framework-thumb.jpg\" alt=\"Ruby on Rails is the world’s fastest web framework for startups\">\n      </a>\n    ",
+          "lineNumber": 282,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/ruby-framework-thumb.jpg",
+            "alt": "Ruby on Rails is the world’s fastest web framework for startups"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/appmap-ruby-thumb.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/appmap-ruby-thumb.png",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/02/09/how-pro-ruby-developers-customize-vs-code/\">\n        <img src=\"/assets/img/posts/appmap-ruby-thumb.png\" alt=\"How Pro Ruby Developers Customize VS Code\">\n      </a>\n    ",
+          "lineNumber": 286,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/appmap-ruby-thumb.png",
+            "alt": "How Pro Ruby Developers Customize VS Code"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 57
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/modularity-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/modularity-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/02/08/why-modularity-matters-lessons-from-maintaining-monoliths-at-scale/\">\n        <img src=\"/assets/img/posts/modularity-thumb.jpg\" alt=\"Why modularity matters - lessons from maintaining monoliths at scale\">\n      </a>\n    ",
+          "lineNumber": 290,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/modularity-thumb.jpg",
+            "alt": "Why modularity matters - lessons from maintaining monoliths at scale"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 56
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/five-things-saml-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/five-things-saml-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/02/03/five-things-i-learned-about-saml-from-studying-a-realistic-example/\">\n        <img src=\"/assets/img/posts/five-things-saml-thumb.jpg\" alt=\"Five things I learned about SAML from studying a realistic example\">\n      </a>\n    ",
+          "lineNumber": 294,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/five-things-saml-thumb.jpg",
+            "alt": "Five things I learned about SAML from studying a realistic example"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 62
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/appland-saml-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/appland-saml-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/02/02/unpacking-saml-with-appmap-and-vscode/\">\n        <img src=\"/assets/img/posts/appland-saml-thumb.jpg\" alt=\"Unpacking SAML with AppMap and VSCode\">\n      </a>\n    ",
+          "lineNumber": 298,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/appland-saml-thumb.jpg",
+            "alt": "Unpacking SAML with AppMap and VSCode"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 58
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/sql-view-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/sql-view-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/02/01/sql-query-from-the-view-considered-hazardous/\">\n        <img src=\"/assets/img/posts/sql-view-thumb.jpg\" alt=\"SQL query from the view: considered hazardous!\">\n      </a>\n    ",
+          "lineNumber": 302,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/sql-view-thumb.jpg",
+            "alt": "SQL query from the view: considered hazardous!"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 54
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/pre-debugging-thumb.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/pre-debugging-thumb.png",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2021/01/12/using-appland-and-vscode-to-ramp-up-on-a-codebase/\">\n        <img src=\"/assets/img/posts/pre-debugging-thumb.png\" alt=\"Using AppMap and VSCode to ramp up on a codebase\">\n      </a>\n    ",
+          "lineNumber": 310,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/pre-debugging-thumb.png",
+            "alt": "Using AppMap and VSCode to ramp up on a codebase"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/uncover-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/uncover-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2020/10/27/uncovering-critical-data-access-using-appmap-diagrams/\">\n        <img src=\"/assets/img/posts/uncover-thumb.jpg\" alt=\"Uncovering critical data access using AppMap Diagrams\">\n      </a>\n    ",
+          "lineNumber": 314,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/uncover-thumb.jpg",
+            "alt": "Uncovering critical data access using AppMap Diagrams"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 53
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/appmap-framework-thumb.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/appmap-framework-thumb.png",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2020/10/14/framework-for-monitoring-end-to-end-code-and-data-flows/\">\n        <img src=\"/assets/img/posts/appmap-framework-thumb.png\" alt=\"AppMap: A framework for monitoring end-to-end code and data flows\">\n      </a>\n    ",
+          "lineNumber": 318,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/appmap-framework-thumb.png",
+            "alt": "AppMap: A framework for monitoring end-to-end code and data flows"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 62
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/unblock-yourself-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/unblock-yourself-thumb.jpg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "    \n      <a href=\"/blog/2020/07/10/how-to-unblock-yourself-with-appland/\">\n        <img src=\"/assets/img/posts/unblock-yourself-thumb.jpg\" alt=\"How to unblock yourself with AppMap\">\n      </a>\n    ",
+          "lineNumber": 322,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/unblock-yourself-thumb.jpg",
+            "alt": "How to unblock yourself with AppMap"
+          },
+          "surroundingText": "\n        \n      ",
+          "columnRange": {
+            "start": 18,
+            "end": 62
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/gallery.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 334,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2Fgallery.html&pu=https%3A%2F%2Fappmap.io%2Fblog%2Fgallery&t=AppMap+%7C+Blog+-+Illustration+gallery&cts=1775007582028&rv=1&vi=7f021cd763ba1242b2dc13384d2325d4&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "timestamp": "2026-04-01T01:41:06.286Z",
+  "crawlDirectory": "crawl/site/contact/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 10,
+  "foundAssets": 2,
+  "notFoundAssets": 8,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/contact/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 122,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/Slack_Mark.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/Slack_Mark.svg",
+          "foundInFile": "crawl/site/contact/index.html",
+          "context": "      </p>\n      <a class=\"btn btn-ghost btn-lg-inline\" href=\"https://appmap.io/slack\">\n        <img src=\"/assets/img/Slack_Mark.svg\">\n        Join AppMap Slack\n      </a>",
+          "lineNumber": 174,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/Slack_Mark.svg"
+          },
+          "surroundingText": "\n        \n        Join AppMap Slack\n      "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/purple-contact-us-header.jpg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fcontact%2F&pu=https%3A%2F%2Fappmap.io%2Fcontact&t=AppMap+%7C+Contact&cts=1775007656711&rv=1&vi=a786761fd4f28f764e0d8d78ac630e98&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://forms-na1.hsforms.com/embed/v3/counters.gif?key=forms-embed-v2-DEFINITION_SUCCESS&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=15&fi=6dba8865-26d7-46c7-aa2a-4cd118cb6925&fci=76433741-ebe1-46ec-b8c6-e5cbd23dfb7b&ft=0&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fcontact%2F&pu=https%3A%2F%2Fappmap.io%2Fcontact&t=AppMap+%7C+Contact&cts=1775007656932&rv=1&vi=a786761fd4f28f764e0d8d78ac630e98&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://forms-na1.hsforms.com/embed/v3/counters.gif?key=forms-embed-v2-RENDER_SUCCESS&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://api.hubspot.com/viral-links/v1/tracking?viralLinkType=forms&deviceId=54136570-cc2d-4a32-8761-e84848e656a9&hubId=6936403",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://www.gstatic.com/recaptcha/api2/logo_48.png",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=17&fi=6dba8865-26d7-46c7-aa2a-4cd118cb6925&fci=76433741-ebe1-46ec-b8c6-e5cbd23dfb7b&ft=0&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fcontact%2F&pu=https%3A%2F%2Fappmap.io%2Fcontact&t=AppMap+%7C+Contact&cts=1775007659462&rv=1&vi=a786761fd4f28f764e0d8d78ac630e98&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

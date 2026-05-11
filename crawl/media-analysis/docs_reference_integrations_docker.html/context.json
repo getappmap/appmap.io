@@ -1,0 +1,175 @@
+{
+  "timestamp": "2026-04-01T01:50:45.948Z",
+  "crawlDirectory": "crawl/site/docs/reference/integrations/docker.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 10,
+  "foundAssets": 8,
+  "notFoundAssets": 2,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/docker.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/docker.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 772,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/docker.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 773,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/docker-appmaps.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/docker-appmaps.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/docker.html",
+          "context": "<p>After recording your AppMap Data, you’ll now see them in the VS Code or JetBrains extension.  The maps will also be visible in your local direct...sets/img/docs/guides/docker-appmaps.webp\"></p>\n\n<h2 id=\"how-to-run-appmap-inside-of-docker-compose\">How to run AppMap inside of Docker Compose</h2>",
+          "lineNumber": 842,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/guides/docker-appmaps.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/docker-file-share.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/docker-file-share.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/docker.html",
+          "context": "<p>You can now run <code class=\"language-plaintext highlighter-rouge\">docker compose up web</code> to launch this container using Docker Compose.  ...nshot\" src=\"/assets/img/docs/guides/docker-file-share.webp\"></p>\n\n<h2 id=\"troubleshooting-appmap-and-docker\">Troubleshooting AppMap and Docker</h2>",
+          "lineNumber": 873,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/guides/docker-file-share.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/docker-no-appmaps.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/docker-no-appmaps.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/docker.html",
+          "context": "<p>You may experience an issue on Linux where you have correctly bind mounted the <code class=\"language-plaintext highlighter-rouge\">tmp/appmap</co...e class=\"language-plaintext highlighter-rouge\">tmp/appmap</code> directory in your project file directory listing like in the screenshot below:</p>",
+          "lineNumber": 881,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/guides/docker-no-appmaps.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/docker-maps-directory.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/docker-maps-directory.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/docker.html",
+          "context": "<p>You can confirm this by looking in the <code class=\"language-plaintext highlighter-rouge\">tmp/appmap</code> directory in your project file direc...<p>You can see in that screenshot, a list of AppMap files are visible, and if we opened them in the editor, they would be visible as an AppMap.</p>",
+          "lineNumber": 885,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/guides/docker-maps-directory.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/docker-open-map.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/docker-open-map.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/docker.html",
+          "context": "<p>You can see in that screenshot, a list of AppMap files are visible, and if we opened them in the editor, they would be visible as an AppMap.</p>...>root</code> user, the AppMap editor extension is unable to index them, which is necessary for them to be visible in the code editor extension.</p>",
+          "lineNumber": 889,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/guides/docker-open-map.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fintegrations%2Fdocker.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fintegrations%2Fdocker&t=AppMap+-+Docs+-+Integrations+-+Docker&cts=1775008234858&rv=1&vi=19eb8bb1a6ddabd60f7192398acb8517&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "timestamp": "2026-04-01T01:48:09.128Z",
+  "crawlDirectory": "crawl/site/docs/reference/guides/reading-sql-in-appmap-diagrams.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 11,
+  "foundAssets": 7,
+  "notFoundAssets": 4,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/reading-sql-in-appmap-diagrams.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/reading-sql-in-appmap-diagrams.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 772,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/reading-sql-in-appmap-diagrams.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 773,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/view-all-sql-commands.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/view-all-sql-commands.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/reading-sql-in-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/view-all-sql-commands.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 808,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/view-all-sql-commands.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/search-for-specific-sql-commands.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/search-for-specific-sql-commands.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/reading-sql-in-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/search-for-specific-sql-commands.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 822,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/search-for-specific-sql-commands.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/view-specific-sql-executed-by-class.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/view-specific-sql-executed-by-class.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/reading-sql-in-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/view-specific-sql-executed-by-class.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 835,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/view-specific-sql-executed-by-class.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/navigate-the-trace-efficiently.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/navigate-the-trace-efficiently.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/reading-sql-in-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/navigate-the-trace-efficiently.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 851,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/navigate-the-trace-efficiently.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/3872950e96174da4a714211b2af7f56e-00001.jpg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/3872950e96174da4a714211b2af7f56e-00001.mp4",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Freading-sql-in-appmap-diagrams.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Freading-sql-in-appmap-diagrams&t=AppMap+-+Docs+-+Guides+-+Reading+SQL+in+AppMap+Diagrams&cts=1775008079074&rv=1&vi=7376f364ac6a8fc3ca9372d0855abea2&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

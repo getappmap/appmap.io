@@ -1,0 +1,115 @@
+{
+  "timestamp": "2026-04-01T01:57:26.955Z",
+  "crawlDirectory": "crawl/site/security.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 4,
+  "foundAssets": 3,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/security.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 124,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/appmap-architecture.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/appmap-architecture.webp",
+          "foundInFile": "crawl/site/security.html",
+          "context": "            <p class=\"security-answer\"><a href=\"/assets/img/product/appmap-architecture.webp\"><img src=\"/assets/img/product/appmap-architecture.webp\" class=\"placeholder-image\" style=\"max-width...",
+          "lineNumber": 200,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/appmap-architecture.webp",
+            "class": "placeholder-image",
+            "style": "max-width:800px;width:100%",
+            "alt": "AppMap's data architecture"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 48,
+            "end": 92
+          }
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/appmap-architecture.webp",
+          "foundInFile": "crawl/site/security.html",
+          "context": "            <p class=\"security-answer\"><a href=\"/assets/img/product/appmap-architecture.webp\"><img src=\"/assets/img/product/appmap-architecture.webp\" class=\"placeholder-image\" style=\"max-width...",
+          "lineNumber": 200,
+          "elementType": "a",
+          "attributes": {
+            "href": "/assets/img/product/appmap-architecture.webp"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 48,
+            "end": 92
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/navie-architecture.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/navie-architecture.webp",
+          "foundInFile": "crawl/site/security.html",
+          "context": "            </p><p class=\"security-answer\"><a href=\"/assets/img/product/navie-architecture.webp\"><img src=\"/assets/img/product/navie-architecture.webp\" class=\"placeholder-image\" id=\"appmap-navie-...",
+          "lineNumber": 202,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/product/navie-architecture.webp",
+            "class": "placeholder-image",
+            "id": "appmap-navie-architecture-diagram",
+            "style": "max-width:800px;width:100%",
+            "alt": "AppMap's data architecture"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 52,
+            "end": 95
+          }
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/navie-architecture.webp",
+          "foundInFile": "crawl/site/security.html",
+          "context": "            </p><p class=\"security-answer\"><a href=\"/assets/img/product/navie-architecture.webp\"><img src=\"/assets/img/product/navie-architecture.webp\" class=\"placeholder-image\" id=\"appmap-navie-...",
+          "lineNumber": 202,
+          "elementType": "a",
+          "attributes": {
+            "href": "/assets/img/product/navie-architecture.webp"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 52,
+            "end": 95
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fsecurity.html&pu=https%3A%2F%2Fappmap.io%2Fsecurity&t=AppMap+%7C+AppMap+Security+FAQ&cts=1775008637548&rv=1&vi=a0b1e401a1a2a47252b04c05450b98b0&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

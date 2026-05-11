@@ -1,0 +1,241 @@
+{
+  "timestamp": "2026-04-01T01:33:13.427Z",
+  "crawlDirectory": "crawl/site/blog/2022/11/29/automagically-generate-sequence-diagrams-of-your-codes-runtime-behavior/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 12,
+  "foundAssets": 9,
+  "notFoundAssets": 3,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2022/11/29/automagically-generate-sequence-diagrams-of-your-codes-runtime-behavior/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/sequence-feature.png",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/sequence-feature.png",
+          "foundInFile": "crawl/site/blog/2022/11/29/automagically-generate-sequence-diagrams-of-your-codes-runtime-behavior/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2022/11/29/automagically-generate-sequence-diagrams-of-your-codes-runtime-behavior/\">\n<meta...sts/sequence-feature.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2022-11-29T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/sequence-feature.png"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Auto-magically generate sequence diagrams of your code's runtime behavior\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/sequence-feature.png",
+          "foundInFile": "crawl/site/blog/2022/11/29/automagically-generate-sequence-diagrams-of-your-codes-runtime-behavior/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2022/11/29/automagically-generate-sequence-diagrams-of-your-codes-runtime-behavior/\">\n<meta...sts/sequence-feature.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2022-11-29T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/sequence-feature.png",
+            "alt": "Auto-magically generate sequence diagrams of your code's runtime behavior",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Auto-magically generate sequence diagrams of your code's runtime behavior\n  \n    Sequence diagrams are frequently described as “the best part of UML”. Their inherent structure - objects "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/automagically-3.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/automagically-3.png",
+          "foundInFile": "crawl/site/blog/2022/11/29/automagically-generate-sequence-diagrams-of-your-codes-runtime-behavior/index.html",
+          "context": "\n<p>Now, open VSCode Settings:\n<img src=\"/assets/img/posts/automagically-3.png\" alt=\"automagically generate sequence diagrams of runtime data\" class=\"no-border-margin\"></p>\n\n<p>Then search for “AppMap Sequence Diagram” and configure the location of the PlantUML JAR.</p>",
+          "lineNumber": 212,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/automagically-3.png",
+            "alt": "automagically generate sequence diagrams of runtime data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "Now, open VSCode Settings:\n",
+          "columnRange": {
+            "start": 10,
+            "end": 47
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/automagically-4.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/automagically-4.png",
+          "foundInFile": "crawl/site/blog/2022/11/29/automagically-generate-sequence-diagrams-of-your-codes-runtime-behavior/index.html",
+          "context": "<p>Then search for “AppMap Sequence Diagram” and configure the location of the PlantUML JAR.</p>\n\n<p><img src=\"/assets/img/posts/automagically-4.pn...cking the icon in the extensions sidebar, then right-click an AppMap to open the context menu. Choose “AppMap View: Generate Sequence Diagram”.</p>",
+          "lineNumber": 216,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/automagically-4.png",
+            "alt": "automagically generate sequence diagrams of runtime data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 50
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/automagically-5.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/automagically-5.png",
+          "foundInFile": "crawl/site/blog/2022/11/29/automagically-generate-sequence-diagrams-of-your-codes-runtime-behavior/index.html",
+          "context": "<p>You’re ready to generate a sequence diagram! Open the AppMap view by clicking the icon in the extensions sidebar, then right-click an AppMap to ...ime through, just hit Enter to accept the defaults. Once you’ve seen the generated diagram, you can customize its behavior using these options.</p>",
+          "lineNumber": 220,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/automagically-5.png",
+            "alt": "automagically generate sequence diagrams of runtime data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 50
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/automagically-6.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/automagically-6.png",
+          "foundInFile": "crawl/site/blog/2022/11/29/automagically-generate-sequence-diagrams-of-your-codes-runtime-behavior/index.html",
+          "context": "<p>Here’s a sequence diagram that I generated from the <a href=\"https://github.com/land-of-apps/sample_app_6th_ed\">Rails Sample App 6th Edition</a>...ighter-rouge language-plaintext\"> models</code>, to the database, and through <code class=\" highlighter-rouge language-plaintext\">views</code>.</p>",
+          "lineNumber": 230,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/automagically-6.png",
+            "alt": "automagically generate sequence diagrams of runtime data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 50
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/automagically-7.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/automagically-7.png",
+          "foundInFile": "crawl/site/blog/2022/11/29/automagically-generate-sequence-diagrams-of-your-codes-runtime-behavior/index.html",
+          "context": "<p>Here’s an example of a Loop, also from the Rails Sample App, in which a sequence of two SQL queries is repeated 29 times! This is a common perfo...(You can also use AppMap to <a href=\"/docs/reference/guides/using-appmap-analysis\">automatically identify performance flaws like this one.</a>)</p>",
+          "lineNumber": 240,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/automagically-7.png",
+            "alt": "automagically generate sequence diagrams of runtime data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 50
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/automagically-8.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/automagically-8.png",
+          "foundInFile": "crawl/site/blog/2022/11/29/automagically-generate-sequence-diagrams-of-your-codes-runtime-behavior/index.html",
+          "context": "<p>If you want to see the generated the PlantUML code, click an AppMap to open it and then go to the Explorer view. Next to the appmap.json file, y...\"></p>\n\n<p>You can take this UML file or SVG and drop it into any other tool, like a GitHub Issue, Jira ticket, pull request, or Slack message.</p>",
+          "lineNumber": 248,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/automagically-8.png",
+            "alt": "automagically generate sequence diagrams of runtime data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 50
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2022/11/29/automagically-generate-sequence-diagrams-of-your-codes-runtime-behavior/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 332,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803456181-b2fd84ae3146545cf774e90de47c71f368cc1d3d5a9100d2767130309ae41b0f-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2022%2F11%2F29%2Fautomagically-generate-sequence-diagrams-of-your-codes-runtime-behavior%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2022%2F11%2F29%2Fautomagically-generate-sequence-diagrams-of-your-codes-runtime-behavior&t=AppMap+%7C+Auto-magically+generate+sequence+diagrams+of+your+code%27s+runtime+behavior&cts=1775007179594&rv=1&vi=1abb0209a2baa624e79ffeba2c4dc447&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803456181-b2fd84ae3146545cf774e90de47c71f368cc1d3d5a9100d2767130309ae41b0f-d?mw=800&mh=450",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

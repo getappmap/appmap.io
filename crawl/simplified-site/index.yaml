@@ -1,0 +1,888 @@
+tag: body
+children:
+  - tag: div
+    attributes:
+      id: hs-banner-parent
+    children:
+      - tag: div
+        attributes:
+          id: hs-eu-cookie-confirmation
+        children:
+          - tag: div
+            attributes:
+              id: hs-eu-cookie-confirmation-inner
+            children:
+              - tag: div
+                attributes:
+                  id: hs-eu-header-container
+                children:
+                  - tag: button
+                    attributes:
+                      id: hs-eu-close-button
+              - tag: div
+                attributes:
+                  id: hs-eu-policy-wording
+                children:
+                  - tag: p
+                    text: This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to im...
+              - tag: p
+                text: If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
+                attributes:
+                  id: hs-eu-cookie-disclaimer
+              - tag: div
+                attributes:
+                  id: hs-eu-cookie-confirmation-buttons-area
+                children:
+                  - tag: div
+                    attributes:
+                      id: hs-eu-confirmation-button-group
+                    children:
+                      - tag: button
+                        text: Cookies settings
+                        attributes:
+                          id: hs-eu-cookie-settings-button
+                      - tag: div
+                        attributes:
+                          id: hs-eu-opt-in-buttons
+                        children:
+                          - tag: button
+                            text: Accept
+                            attributes:
+                              id: hs-eu-confirmation-button
+                          - tag: button
+                            text: Decline
+                            attributes:
+                              id: hs-eu-decline-button
+  - tag: p
+    children:
+      - tag: b
+        text: To access the latest features
+      - tag: a
+        text: keep your code editor plug-in up to date.
+        attributes:
+          href: /docs/get-started-with-appmap/add-appmap-to-your-code-editor#keep-your-extension-up-to-date
+  - tag: nav
+    children:
+      - tag: a
+        attributes:
+          href: /
+      - tag: button
+        attributes:
+          type: button
+      - tag: div
+        attributes:
+          id: navbarText
+        children:
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Docs
+                    attributes:
+                      href: /docs
+              - tag: li
+                children:
+                  - tag: a
+                    text: Blog
+                    attributes:
+                      href: /blog
+              - tag: li
+                children:
+                  - tag: a
+                    text: Pricing
+                    attributes:
+                      href: /pricing
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Get AppMap
+                    attributes:
+                      href: /get-appmap
+              - tag: li
+                children:
+                  - tag: a
+                    text: Book a Demo
+                    attributes:
+                      id: book-demo-link
+                      href: https://meetings.hubspot.com/dustin294
+  - tag: div
+    attributes:
+      id: home-body
+    children:
+      - tag: div
+        children:
+          - tag: section
+            children:
+              - tag: div
+                children:
+                  - tag: h1
+                    text: What AI Misses,
+                    children:
+                      - tag: span
+                        text: AppMap Finds
+                  - tag: div
+                    children:
+                      - tag: p
+                        text: Don't let buggy, misunderstood AI code slip through. AppMap goes beyond static analysis by reviewing how code actually runs, catching issues before they leave the editor.
+                      - tag: p
+                        children:
+                          - tag: a
+                            text: Get AppMap
+                            attributes:
+                              id: meet-navie-button
+                              href: /get-appmap
+                          - tag: a
+                            text: Book a Demo
+                            attributes:
+                              id: book-demo-button
+                              href: https://meetings.hubspot.com/dustin294
+              - tag: div
+                attributes:
+                  id: demo-container
+          - tag: section
+            children:
+              - tag: div
+                children:
+                  - tag: h2
+                    text: What is AppMap?
+                  - tag: p
+                    text: AppMap instruments your application to capture real-time snapshots of code execution, data flow, and behavior — every time your app runs, with zero effort and no code changes.
+                  - tag: p
+                    text: It brings runtime insight directly into your development environment, allowing your team to review code based on how it actually behaves, not just how it looks. With , , and , development teams can mo...
+                    children:
+                      - tag: span
+                        text: early bug detection
+                      - tag: span
+                        text: instant feedback
+                      - tag: span
+                        text: faster root cause analysis
+                  - tag: p
+                    text: Whether code is authored by a developer or generated by AI, AppMap helps your team ship with and .
+                    children:
+                      - tag: span
+                        text: greater confidence
+                      - tag: span
+                        text: fewer surprises in production
+              - tag: div
+                children:
+                  - tag: a
+                    text: Get AppMap
+                    attributes:
+                      id: meet-navie-button
+                      href: /get-appmap
+          - tag: section
+            children:
+              - tag: div
+                children:
+                  - tag: h2
+                    text: 100K+ Developers and Growing
+              - tag: div
+                children:
+                  - tag: p
+                    text: Join the community of developers using AppMap who work at places like these.
+          - tag: div
+            attributes:
+              id: user-testimonial-slides
+            children:
+              - tag: div
+                children:
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: div
+                            children:
+                              - tag: span
+                                children:
+                                  - tag: p
+                                    text: Cognitive Zen
+                          - tag: p
+                            text: '"AppMap improves the productivity of development teams on both fronts—coding and documentation. It has now become an inseparable part of our development process."'
+                          - tag: span
+                            children:
+                              - tag: p
+                                text: Venkat Bagam
+                      - tag: div
+                        children:
+                          - tag: div
+                            children:
+                              - tag: span
+                                children:
+                                  - tag: p
+                                    text: Hacker News
+                          - tag: p
+                            text: '"Probably one of the most powerful tools I have seen running in Visual studio code. their latest version includes a AI assistant that can feed from the appmaps + language models to build documentation...'
+                          - tag: span
+                            children:
+                              - tag: p
+                                text: glowzar777
+                      - tag: div
+                        children:
+                          - tag: div
+                            children:
+                              - tag: span
+                                children:
+                                  - tag: p
+                                    text: Social
+                          - tag: p
+                            text: '"Wow!🤯 @getappmap"'
+                          - tag: span
+                            children:
+                              - tag: p
+                                text: '@Elarabyelaidy'
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: div
+                            children:
+                              - tag: span
+                                children:
+                                  - tag: p
+                                    text: Marketplace Review
+                          - tag: div
+                            children:
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                          - tag: p
+                            text: '"Just by using the extension once, I identified two unnecessary dependencies in my app."'
+                          - tag: span
+                            children:
+                              - tag: p
+                                text: Hesbon, Python developer
+                      - tag: div
+                        children:
+                          - tag: div
+                            children:
+                              - tag: span
+                                children:
+                                  - tag: p
+                                    text: Marketplace Review
+                          - tag: div
+                            children:
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                          - tag: p
+                            text: '"Appmap is really great for developing quick understanding of a new codebase. It''s tracing functionality is absolutely super! It makes life easier. Also it''s great for writing documentation."'
+                          - tag: span
+                            children:
+                              - tag: p
+                                text: Daniyal, Developer
+                      - tag: div
+                        children:
+                          - tag: div
+                            children:
+                              - tag: span
+                                children:
+                                  - tag: p
+                                    text: Marketplace Review
+                          - tag: div
+                            children:
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                          - tag: p
+                            text: '"Great tool to gain intel if you start working on a project that''s already under development. I strongly recommend this to observe the request travel in your web app.'
+                          - tag: span
+                            children:
+                              - tag: p
+                                text: Triyank Kumar, Developer
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: div
+                            children:
+                              - tag: span
+                                children:
+                                  - tag: p
+                                    text: Marketplace Review
+                          - tag: div
+                            children:
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                          - tag: p
+                            text: '"It''s awesome plugin for sequence diagrams. And it''s AI tool is helpful for me."'
+                          - tag: span
+                            children:
+                              - tag: p
+                                text: Shaun Wang, Java developer
+                      - tag: div
+                        children:
+                          - tag: div
+                            children:
+                              - tag: span
+                                children:
+                                  - tag: p
+                                    text: Marketplace Review
+                          - tag: div
+                            children:
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                          - tag: p
+                            text: '"Helped me better understand and analyze the hierarchy and structure of my applications. Looks awesome, performs great, and provides truly invaluable feedback!"'
+                          - tag: span
+                            children:
+                              - tag: p
+                                text: Max, Java developer
+                      - tag: div
+                        children:
+                          - tag: div
+                            children:
+                              - tag: span
+                                children:
+                                  - tag: p
+                                    text: Marketplace Review
+                          - tag: div
+                            children:
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                              - tag: i
+                                text: star
+                          - tag: p
+                            text: '"Very good tool with Context-awareness."'
+                          - tag: span
+                            children:
+                              - tag: p
+                                text: Lutz Leonhardt, Developer
+          - tag: section
+            children:
+              - tag: h2
+                text: Review code , with review criteria.
+                children:
+                  - tag: span
+                    text: 125x faster
+                  - tag: span
+                    text: 3x more
+              - tag: p
+                text: Let AppMap perform a full-spectrum, runtime-aware review of your branch. Customize your review criteria or have AppMap compare your work to a technical specification. Then let it deliver clear, action...
+              - tag: div
+                children:
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: h3
+                            text: Correctness
+                          - tag: p
+                            text: Confirms your code does exactly what it's intended to do.
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: h3
+                            text: Code Quality
+                          - tag: p
+                            text: Ensures your changes follow best practices and are easy to read and maintain.
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: h3
+                            text: Documentation
+                          - tag: p
+                            text: Verifies that public-facing code is well-documented and understandable.
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: h3
+                            text: Security
+                          - tag: p
+                            text: Surface vulnerabilities and unsafe behaviors before they reach production.
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: h3
+                            text: Runtime Flaws
+                          - tag: p
+                            text: Detect errors and unexpected behaviors that only manifest during execution.
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: h3
+                            text: Testing & Coverage
+                          - tag: p
+                            text: Analyze test depth, edge cases, and highlight where coverage should be expanded.
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: h3
+                            text: Compatibility
+                          - tag: p
+                            text: Verifies your change won't break downstream consumers or integrations.
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: h3
+                            text: Performance
+                          - tag: p
+                            text: Identify hotspots, resource use, and bottlenecks.
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: h3
+                            text: Design & Architecture
+                          - tag: p
+                            text: Confirms your implementation follows established patterns and fits the system's structure.
+              - tag: p
+                text: See how we stack up against leading static code review solutions.
+              - tag: div
+                children:
+                  - tag: table
+                    children:
+                      - tag: thead
+                        children:
+                          - tag: tr
+                            children:
+                              - tag: th
+                                text: Capability
+                              - tag: th
+                                text: AppMap Review
+                              - tag: th
+                                text: Static Code Review
+                      - tag: tbody
+                        children:
+                          - tag: tr
+                            children:
+                              - tag: td
+                                text: Runtime-aware analysis
+                              - tag: td
+                                children:
+                                  - tag: span
+                                    text: Records real execution data (code + DB + I/O)
+                              - tag: td
+                                children:
+                                  - tag: span
+                                    text: Static diff only
+                          - tag: tr
+                            children:
+                              - tag: td
+                                text: Review domains (single pass)
+                              - tag: td
+                                children:
+                                  - tag: span
+                                    text: Comprehensive coverage spanning critical domains and runtime data sources
+                              - tag: td
+                                children:
+                                  - tag: span
+                                    text: General quality hints; no runtime checks
+                          - tag: tr
+                            children:
+                              - tag: td
+                                text: Missing-test detection
+                              - tag: td
+                                children:
+                                  - tag: span
+                                    text: Detailed detection by dynamic analysis
+                              - tag: td
+                                children:
+                                  - tag: span
+                                    text: Detection by LLM
+                          - tag: tr
+                            children:
+                              - tag: td
+                                text: Performance hotspots
+                              - tag: td
+                                children:
+                                  - tag: span
+                                    text: Observes slow queries, function calls, and hotspots
+                              - tag: td
+                                children:
+                                  - tag: span
+                                    text: Not included
+                          - tag: tr
+                            children:
+                              - tag: td
+                                text: Security insights
+                              - tag: td
+                                children:
+                                  - tag: span
+                                    text: Detects auth gaps, insecure tokens, leaked secrets, and other runtime issues
+                              - tag: td
+                                children:
+                                  - tag: span
+                                    text: Not included
+                          - tag: tr
+                            children:
+                              - tag: td
+                                text: Transparency
+                              - tag: td
+                                children:
+                                  - tag: span
+                                    text: Shows exactly what was recorded & scanned
+                              - tag: td
+                                children:
+                                  - tag: span
+                                    text: LLM output, often without context
+          - tag: section
+            children:
+              - tag: h2
+                text: ', reviewed in real time.'
+                children:
+                  - tag: span
+                    text: Real behavior
+              - tag: div
+                children:
+                  - tag: video
+                    children:
+                      - tag: source
+                        attributes:
+                          src: /assets/video/review.webm
+                          type: video/webm
+                      - tag: source
+                        attributes:
+                          src: /assets/video/review.mp4
+                          type: video/mp4
+                  - tag: div
+                    text: AppMap reviews code as you write it — right in your editor — using actual runtime behavior, not just static rules. That means you can catch bugs, misunderstandings, flawed behavior, and edge cases bef...
+          - tag: section
+            children:
+              - tag: h2
+                text: without reading every line.
+                children:
+                  - tag: span
+                    text: See the bigger picture
+              - tag: div
+                children:
+                  - tag: video
+                    children:
+                      - tag: source
+                        attributes:
+                          src: /assets/video/review-dashboard.webm
+                          type: video/webm
+                      - tag: source
+                        attributes:
+                          src: /assets/video/review-dashboard.mp4
+                          type: video/mp4
+                  - tag: div
+                    text: AppMap provides visibility into how both human- and AI-authored code is behaving across teams and where it introduces risk. Track issue resolution rates, remediation speed, and adoption trends — all w...
+          - tag: section
+            children:
+              - tag: h2
+                text: Your application runs. .
+                children:
+                  - tag: span
+                    text: AppMap watches
+              - tag: div
+                children:
+                  - tag: video
+                    children:
+                      - tag: source
+                        attributes:
+                          src: /assets/video/sequence_04.webm
+                          type: video/webm
+                      - tag: source
+                        attributes:
+                          src: /assets/video/sequence_04b.mp4
+                          type: video/mp4
+                  - tag: div
+                    children:
+                      - tag: p
+                        text: AppMap watches your application in action, recording how APIs, functions, and services actually behave. AppMap depicts this information as interactive diagrams that you can search and navigate.
+                      - tag: p
+                        text: You can see how functions, web APIs, databases, security, I/O, and other services all work together when your application runs. AppMap is an extension to your code editor, so its information is always...
+                        children:
+                          - tag: a
+                            text: documenting your internal APIs
+                            attributes:
+                              href: /product/automate-openapi-generation
+                          - tag: a
+                            text: reverse engineering
+                            attributes:
+                              href: /product/code-investigation-debugging
+          - tag: section
+            children:
+              - tag: h2
+                text: Your copilot thinks so.
+                children:
+                  - tag: span
+                    text: Missing context?
+              - tag: div
+                children:
+                  - tag: video
+                    children:
+                      - tag: source
+                        attributes:
+                          src: /assets/video/map-sm.webm
+                          type: video/webm
+                      - tag: source
+                        attributes:
+                          src: /assets/video/map-sm.mp4
+                          type: video/mp4
+                  - tag: div
+                    children:
+                      - tag: p
+                        text: Now your LLM-backed tools can answer questions like "What just happened?" with real runtime context.
+                      - tag: p
+                        text: 'What AppMap records:'
+                      - tag: ul
+                        children:
+                          - tag: li
+                            text: Function calls, return values, exceptions
+                          - tag: li
+                            text: HTTP requests and responses (status codes, headers, parameters)
+                          - tag: li
+                            text: SQL queries and database behavior
+                          - tag: li
+                            text: Security and auth events
+                          - tag: li
+                            text: Background jobs and message handling
+                          - tag: li
+                            text: Logging, serialization, and more
+          - tag: section
+            children:
+              - tag: h2
+                text: in. Intelligence out.
+                children:
+                  - tag: span
+                    text: Runtime context
+              - tag: div
+                children:
+                  - tag: video
+                    children:
+                      - tag: source
+                        attributes:
+                          src: /assets/video/analyze-feature-movie-navie.webm
+                          type: video/webm
+                      - tag: source
+                        attributes:
+                          src: /assets/video/analyze-feature-movie-navie.mp4
+                          type: video/mp4
+                  - tag: div
+                    children:
+                      - tag: p
+                        text: 'AppMap powers Navie, your AI assistant designed specifically to understand and improve code based on how it actually behaves. Navie uses static and runtime insights to help you:'
+                      - tag: ul
+                        children:
+                          - tag: li
+                            text: Debug complex issues
+                          - tag: li
+                            text: Ask deep, contextual questions about unfamiliar code
+                          - tag: li
+                            text: Make safer, more informed code changes
+                          - tag: li
+                            text: Get precise answers grounded in real application behavior
+                          - tag: li
+                            text: Perform runtime-aware code reviews
+              - tag: p
+                text: With flexible backend options (GitHub Copilot, OpenAI, Anthropic, Google or self-hosted), Navie supports secure, enterprise-ready AI development — with zero fine-tuning required.
+          - tag: div
+            children:
+              - tag: h2
+                text: Ready to get started?
+              - tag: a
+                text: Get AppMap
+                attributes:
+                  id: meet-navie-button
+                  href: /get-appmap
+          - tag: section
+            children:
+              - tag: img
+                attributes:
+                  src: /assets/img/nvidia-inception-badge.png
+                  alt: NVidia Inception Program
+              - tag: img
+                attributes:
+                  src: /assets/img/gh-for-startups-badge.png
+                  alt: GitHub for Startups
+              - tag: img
+                attributes:
+                  src: /assets/img/appmap-techcrunch-finalist-ko.svg
+                  alt: 2022 TechCrunch Finalist badge
+              - tag: img
+                attributes:
+                  src: /assets/img/mongo-db-partner-badge.png
+                  alt: MongoDB Partner
+  - tag: div
+    children:
+      - tag: footer
+        children:
+          - tag: div
+            children:
+              - tag: h5
+                text: Docs
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Get Started
+                        attributes:
+                          href: /docs/get-started-with-appmap/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Using Navie
+                        attributes:
+                          href: /docs/navie
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Troubleshooting
+                        attributes:
+                          href: /docs/troubleshooting
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Reference
+                        attributes:
+                          href: /docs/reference
+          - tag: div
+            children:
+              - tag: h5
+                text: Product
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Security FAQ
+                        attributes:
+                          href: /security
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Pricing
+                        attributes:
+                          href: /pricing
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Terms
+                        attributes:
+                          href: /community/terms-and-conditions.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Privacy Policy
+                        attributes:
+                          href: /community/privacy-policy
+          - tag: div
+            children:
+              - tag: h5
+                text: Company
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: About
+                        attributes:
+                          href: /company/about-appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Careers
+                        attributes:
+                          href: https://angel.co/company/appmap/jobs
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Contact
+                        attributes:
+                          href: /contact/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Brand Assets
+                        attributes:
+                          href: /company/brand-assets
+          - tag: div
+            children:
+              - tag: h5
+                text: Community
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: X
+                        attributes:
+                          href: https://twitter.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Slack
+                        attributes:
+                          href: https://appmap.io/slack
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: GitHub
+                        attributes:
+                          href: https://github.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Code of Conduct
+                        attributes:
+                          href: /community/code-of-conduct.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: YouTube
+                        attributes:
+                          href: https://www.youtube.com/@appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Blog
+                        attributes:
+                          href: /blog
+  - tag: iframe
+    attributes:
+      title: archetype

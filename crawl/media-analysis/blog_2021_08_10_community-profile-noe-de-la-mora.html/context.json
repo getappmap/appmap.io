@@ -1,0 +1,105 @@
+{
+  "timestamp": "2026-04-01T01:26:05.894Z",
+  "crawlDirectory": "crawl/site/blog/2021/08/10/community-profile-noe-de-la-mora/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 5,
+  "foundAssets": 4,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/08/10/community-profile-noe-de-la-mora/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/1200x630-appmap-card.png",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/1200x630-appmap-card.png",
+          "foundInFile": "crawl/site/blog/2021/08/10/community-profile-noe-de-la-mora/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/08/10/community-profile-noe-de-la-mora/\">\n<meta property=\"og:site_name\" content=\"AppMa...1200x630-appmap-card.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-08-10T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/logos/1200x630-appmap-card.png"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | AppLand Community Profiles\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license/free (Icons:"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/1200x630-appmap-card.png",
+          "foundInFile": "crawl/site/blog/2021/08/10/community-profile-noe-de-la-mora/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/08/10/community-profile-noe-de-la-mora/\">\n<meta property=\"og:site_name\" content=\"AppMa...1200x630-appmap-card.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-08-10T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/1200x630-appmap-card.png",
+            "alt": "AppLand Community Profiles",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  AppLand Community Profiles\n  \n    Community is a fundamental part of AppMap. Our community members and contributors span the globe, and play a key role in helping us make life better for"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/noe-de-la-mora-thumb.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/noe-de-la-mora-thumb.jpg",
+          "foundInFile": "crawl/site/blog/2021/08/10/community-profile-noe-de-la-mora/index.html",
+          "context": "<p><a href=\"https://www.linkedin.com/in/noedlm/\">LinkedIn</a>, <a href=\"https://github.com/noedlm\">Github</a>, <a href=\"https://twitter.com/noedlm\"...mora-thumb.jpg\" alt=\"Noe De la Mora\" class=\"nomargin\"></p>\n\n<h2 id=\"on-getting-into-software-development\">On Getting Into Software Development</h2>",
+          "lineNumber": 172,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/noe-de-la-mora-thumb.jpg",
+            "alt": "Noe De la Mora",
+            "class": "nomargin"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/08/10/community-profile-noe-de-la-mora/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 224,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F10%2Fcommunity-profile-noe-de-la-mora%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F10%2Fcommunity-profile-noe-de-la-mora&t=AppMap+%7C+AppLand+Community+Profiles&cts=1775006756513&rv=1&vi=d3997e18c1822e65ef21d0f3c7a149de&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

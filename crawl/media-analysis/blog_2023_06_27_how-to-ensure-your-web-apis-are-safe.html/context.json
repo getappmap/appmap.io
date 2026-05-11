@@ -1,0 +1,185 @@
+{
+  "timestamp": "2026-04-01T01:36:56.853Z",
+  "crawlDirectory": "crawl/site/blog/2023/06/27/how-to-ensure-your-web-apis-are-safe/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 15,
+  "foundAssets": 5,
+  "notFoundAssets": 10,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2023/06/27/how-to-ensure-your-web-apis-are-safe/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-feature.webp",
+          "foundInFile": "crawl/site/blog/2023/06/27/how-to-ensure-your-web-apis-are-safe/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/06/27/how-to-ensure-your-web-apis-are-safe/\">\n<meta property=\"og:site_name\" content=\"A...fe-web-apis-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-06-27T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | How to ensure your web APIs are safe\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license/fr",
+          "columnRange": {
+            "start": 35,
+            "end": 103
+          }
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-feature.webp",
+          "foundInFile": "crawl/site/blog/2023/06/27/how-to-ensure-your-web-apis-are-safe/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/06/27/how-to-ensure-your-web-apis-are-safe/\">\n<meta property=\"og:site_name\" content=\"A...fe-web-apis-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-06-27T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/ensure-safe-web-apis-feature.webp",
+            "alt": "How to ensure your web APIs are safe",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  How to ensure your web APIs are safe\n  \n    This article explores how to ensure your APIs are safe. Specifically, we address a critical issue that arises when incorrect database actions ",
+          "columnRange": {
+            "start": 52,
+            "end": 103
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-1.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-1.png",
+          "foundInFile": "crawl/site/blog/2023/06/27/how-to-ensure-your-web-apis-are-safe/index.html",
+          "context": "<p>To pinpoint the source of this issue, click on the caller function link in the side panel. Doing so jumps to the call stack within the trace vie... highlighter-rouge language-plaintext\">invoke before</code> function does give us a clue as to what is happening. The function looks like this:</p>",
+          "lineNumber": 199,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/ensure-safe-web-apis-1.png",
+            "alt": "ensure safe web api's"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-2.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/ensure-safe-web-apis-2.png",
+          "foundInFile": "crawl/site/blog/2023/06/27/how-to-ensure-your-web-apis-are-safe/index.html",
+          "context": "<p>Tracing our steps further, we explore the HTTP request by switching to the dependency map, focusing on the <code class=\" highlighter-rouge langu...\n\n<p>Inside the <code class=\" highlighter-rouge language-plaintext\">DashboardController</code>, I discover two important pieces of information:</p>",
+          "lineNumber": 212,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/ensure-safe-web-apis-2.png",
+            "alt": "ensure safe web api's"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2023/06/27/how-to-ensure-your-web-apis-are-safe/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 269,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://www.googletagmanager.com/td?id=G-216SS3H0RL&v=3&t=t&pid=1665421385&gtm=45je63u0v883218513za200zd883218513&seq=1&exp=0~115938465~115938469~116991817~117266400&dl=appmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&tdp=G-216SS3H0RL;83218513;0;0;0&frm=0&rtg=83218513&slo=1&hlo=4&lst=3&bt=0&ct=3&z=0",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&t=AppMap+%7C+How+to+ensure+your+web+APIs+are+safe&cts=1775007397327&rv=1&vi=9623920aa5807b69214b53655fbfc2cf&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53dd280be6ddaf/1775007397464/73WpXWADkWGg1m0",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53dd28ce00ddaf/1775007397557/jSZaZciUvvb2gu8",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F27%2Fhow-to-ensure-your-web-apis-are-safe&t=AppMap+%7C+How+to+ensure+your+web+APIs+are+safe&cts=1775007401718&rv=1&vi=56ae4b58034066ab99684cafc27b0679&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53dd443ea6ddaf/1775007402006/V0oWp44RZZ8GA7J",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53dd441e4bddaf/1775007401938/_lgyKU5nHuoMfz-",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53dd9178a2ddaf/1775007414242/tAYF1ABtHmvjBMl",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53dd94aa21ddaf/1775007414770/teksHXbYB7DjCE1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

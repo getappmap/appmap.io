@@ -1,0 +1,323 @@
+{
+  "timestamp": "2026-04-01T01:40:44.539Z",
+  "crawlDirectory": "crawl/site/company/about-appmap.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 17,
+  "foundAssets": 16,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 124,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/team/elizabeth-bw.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/team/elizabeth-bw.jpg",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "      <div class=\"sub-feature team\">\n        <div class=\"card\">\n          <img class=\"card-img-top\" src=\"/images/team/elizabeth-bw.jpg\" alt=\"Card image cap\">\n          <div class=\"card-body\">\n            <h5 class=\"card-title\">",
+          "lineNumber": 190,
+          "elementType": "img",
+          "attributes": {
+            "class": "card-img-top",
+            "src": "/images/team/elizabeth-bw.jpg",
+            "alt": "Card image cap"
+          },
+          "surroundingText": "\n          \n          \n            \n              \n                Elizabeth Lawler\n              \n            \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/team/kevin-bw.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/team/kevin-bw.jpg",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "        </div>\n        <div class=\"card\">\n          <img class=\"card-img-top\" src=\"/images/team/kevin-bw.jpg\" alt=\"Card image cap\">\n          <div class=\"card-body\">\n            <h5 class=\"card-title\">",
+          "lineNumber": 200,
+          "elementType": "img",
+          "attributes": {
+            "class": "card-img-top",
+            "src": "/images/team/kevin-bw.jpg",
+            "alt": "Card image cap"
+          },
+          "surroundingText": "\n          \n          \n            \n               Kevin Gilpin \n            \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/team/dustin-bw.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/team/dustin-bw.jpg",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "        </div>\n        <div class=\"card\">\n          <img class=\"card-img-top\" src=\"/images/team/dustin-bw.jpg\" alt=\"Card image cap\">\n          <div class=\"card-body\">\n            <h5 class=\"card-title\">",
+          "lineNumber": 208,
+          "elementType": "img",
+          "attributes": {
+            "class": "card-img-top",
+            "src": "/images/team/dustin-bw.jpg",
+            "alt": "Card image cap"
+          },
+          "surroundingText": "\n          \n          \n            \n              \n                Dustin Byrne\n              \n            \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/team/rafal-bw.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/team/rafal-bw.jpg",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "        </div>\n        <div class=\"card\">\n          <img class=\"card-img-top\" src=\"/images/team/rafal-bw.jpg\" alt=\"Card image cap\">\n          <div class=\"card-body\">\n            <h5 class=\"card-title\">",
+          "lineNumber": 218,
+          "elementType": "img",
+          "attributes": {
+            "class": "card-img-top",
+            "src": "/images/team/rafal-bw.jpg",
+            "alt": "Card image cap"
+          },
+          "surroundingText": "\n          \n          \n            \n               Rafal Rzepecki \n            \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/workbench-logo.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/workbench-logo.png",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "  <div class=\"investor-logos\">\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.work-bench.com\">\n      <img id=\"workbench\" src=\"/images/workbench-logo.png\">\n    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.unusual.vc\">",
+          "lineNumber": 230,
+          "elementType": "img",
+          "attributes": {
+            "id": "workbench",
+            "src": "/images/workbench-logo.png"
+          },
+          "surroundingText": "\n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/unusual-ventures-logo.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/unusual-ventures-logo.svg",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.unusual.vc\">\n      <img id=\"unusual\" src=\"/images/unusual-ventures-logo.svg\">\n    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.delltechnologiescapital.com/\">",
+          "lineNumber": 233,
+          "elementType": "img",
+          "attributes": {
+            "id": "unusual",
+            "src": "/images/unusual-ventures-logo.svg"
+          },
+          "surroundingText": "\n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/dell-tech-capital-logo.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/dell-tech-capital-logo.png",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.delltechnologiescapital.com/\">\n      <img id=\"dell\" src=\"/images/dell-tech-capital-logo.png\">\n    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://forgepointcap.com/\">",
+          "lineNumber": 236,
+          "elementType": "img",
+          "attributes": {
+            "id": "dell",
+            "src": "/images/dell-tech-capital-logo.png"
+          },
+          "surroundingText": "\n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/forgepointlogo.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/forgepointlogo.svg",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://forgepointcap.com/\">\n      <img id=\"forgepoint\" src=\"/images/forgepointlogo.svg\">\n    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.ventureguides.com/\">",
+          "lineNumber": 239,
+          "elementType": "img",
+          "attributes": {
+            "id": "forgepoint",
+            "src": "/images/forgepointlogo.svg"
+          },
+          "surroundingText": "\n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/venture-guides-logo.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/venture-guides-logo.png",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.ventureguides.com/\">\n      <img id=\"venture-guides\" src=\"/images/venture-guides-logo.png\">\n    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.argon.vc\">",
+          "lineNumber": 242,
+          "elementType": "img",
+          "attributes": {
+            "id": "venture-guides",
+            "src": "/images/venture-guides-logo.png"
+          },
+          "surroundingText": "\n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/argon-logo.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/argon-logo.png",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.argon.vc\">\n      <img id=\"argon\" src=\"/images/argon-logo.png\">\n    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.secureoctane.com/\">",
+          "lineNumber": 245,
+          "elementType": "img",
+          "attributes": {
+            "id": "argon",
+            "src": "/images/argon-logo.png"
+          },
+          "surroundingText": "\n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/secure-octane-logo.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/secure-octane-logo.jpg",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.secureoctane.com/\">\n      <img id=\"secure-octane\" src=\"/images/secure-octane-logo.jpg\">\n    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://uncorrelated.com/\">",
+          "lineNumber": 248,
+          "elementType": "img",
+          "attributes": {
+            "id": "secure-octane",
+            "src": "/images/secure-octane-logo.jpg"
+          },
+          "surroundingText": "\n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/uncorrelated-ventures-logo.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/uncorrelated-ventures-logo.jpg",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://uncorrelated.com/\">\n      <img id=\"uncorrelated\" src=\"/images/uncorrelated-ventures-logo.jpg\">\n    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.av.vc/\">",
+          "lineNumber": 251,
+          "elementType": "img",
+          "attributes": {
+            "id": "uncorrelated",
+            "src": "/images/uncorrelated-ventures-logo.jpg"
+          },
+          "surroundingText": "\n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/alumni-ventures-logo.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/alumni-ventures-logo.webp",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.av.vc/\">\n      <img id=\"alumni-ventures\" src=\"/images/alumni-ventures-logo.webp\">\n    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.koalabs.com/\">",
+          "lineNumber": 254,
+          "elementType": "img",
+          "attributes": {
+            "id": "alumni-ventures",
+            "src": "/images/alumni-ventures-logo.webp"
+          },
+          "surroundingText": "\n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/koa-labs-logo.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/koa-labs-logo.svg",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "    </a>\n    <a class=\"investor-single\" target=\"_blank\" href=\"https://www.koalabs.com/\">\n      <img id=\"koa-labs\" src=\"/images/koa-labs-logo.svg\">\n    </a>\n  </div>",
+          "lineNumber": 257,
+          "elementType": "img",
+          "attributes": {
+            "id": "koa-labs",
+            "src": "/images/koa-labs-logo.svg"
+          },
+          "surroundingText": "\n      \n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/Slack_Mark.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/Slack_Mark.svg",
+          "foundInFile": "crawl/site/company/about-appmap.html",
+          "context": "  <div class=\"slack-cta\">\n    <a href=\"https://appmap.io/slack\">\n      <img class=\"logo-small\" src=\"/assets/img/Slack_Mark.svg\">\n      <h3>Join the discussion on Slack</h3>\n    </a>",
+          "lineNumber": 268,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/Slack_Mark.svg"
+          },
+          "surroundingText": "\n      \n      Join the discussion on Slack\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fcompany%2Fabout-appmap.html&pu=https%3A%2F%2Fappmap.io%2Fcompany%2Fabout-appmap&t=AppMap+%7C+About&cts=1775007635904&rv=1&vi=0174c6fca1a26b0e67c82811511d8a38&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "timestamp": "2026-04-01T01:55:31.124Z",
+  "crawlDirectory": "crawl/site/docs/using-navie-ai/navie-opening.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 13,
+  "foundAssets": 11,
+  "notFoundAssets": 2,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-opening.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-opening.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 776,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-opening.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 777,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/navie-sidebar.png",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/navie-sidebar.png",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-opening.html",
+          "context": "<p>You can open Navie in the VSCode sidebar by expanding (if necessary) the Navie section and selecting the <code class=\"language-plaintext highlig...t\" src=\"/assets/img/product/navie-sidebar.png\"></p>\n\n<h3 id=\"via-the-vs-code-command-palette-\">Via the VS Code Command Palette <!-- omit in toc -->",
+          "lineNumber": 814,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/navie-sidebar.png"
+          },
+          "surroundingText": ""
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/navie-sidebar.png",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-opening.html",
+          "context": "<p>You can open Navie in the VSCode sidebar by expanding (if necessary) the Navie section and selecting the <code class=\"language-plaintext highlig...t\" src=\"/assets/img/product/navie-sidebar.png\"></p>\n\n<h3 id=\"via-the-vs-code-command-palette-\">Via the VS Code Command Palette <!-- omit in toc -->",
+          "lineNumber": 814,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/jetbrains-navie-sidebar.png"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/lightbulb.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/lightbulb.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-opening.html",
+          "context": "<p>Finally you can open Navie by selecting a block of text and using the lightbulb to ask Navie about your code.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/product/lightbulb.webp\"></p>\n\n<h2 id=\"in-jetbrains\">",
+          "lineNumber": 835,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/lightbulb.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/appmap-sidebar.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/appmap-sidebar.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-opening.html",
+          "context": "<p>You can open the AppMap plugin in your sidebar.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/product/appmap-sidebar.webp\"></p>\n\n<p>Then select <code class=\"language-plaintext highlighter-rouge\">New Navie Chat</code> from Navie menu option.</p>",
+          "lineNumber": 845,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/appmap-sidebar.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/jetbrains-navie-sidebar.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/jetbrains-navie-sidebar.png",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-opening.html",
+          "context": "<p>Then select <code class=\"language-plaintext highlighter-rouge\">New Navie Chat</code> from Navie menu option.</p>\n\n<p><img class=\"video-screensho...g/product/jetbrains-navie-sidebar.png\"></p>\n\n<h3 id=\"via-the-jetbrains-tools-menu-option-\">Via the JetBrains Tools menu option <!-- omit in toc -->",
+          "lineNumber": 849,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/jetbrains-navie-sidebar.png"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/tools-appmap-vscode.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/tools-appmap-vscode.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-opening.html",
+          "context": "<p>You can open Navie by clicking on the JetBrains menu option <code class=\"language-plaintext highlighter-rouge\">Tools</code> -&gt; <code class=\"l...ss=\"video-screenshot\" src=\"/assets/img/product/tools-appmap-vscode.webp\"></p>\n\n<p>AppMap Navie will open as a new tab in your JetBrains editor.</p>",
+          "lineNumber": 856,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/tools-appmap-vscode.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/ask-navie-vscode-window.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/ask-navie-vscode-window.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-opening.html",
+          "context": "<p>AppMap Navie will open as a new tab in your JetBrains editor.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/product/ask-navie-vscode-window.webp\"></p>\n\n<h2 id=\"from-within-an-appmap-diagram\">",
+          "lineNumber": 860,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/ask-navie-vscode-window.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/ask-navie-about-a-map.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/ask-navie-about-a-map.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-opening.html",
+          "context": "<p>Normally when asking Navie about your application, AppMap will search through the AppMap Data to find the ones that are most relevant to your qu...ntext will only include the single AppMap. You can opt to search the entire workspace by selecting the option to “Include the whole workspace”.</p>",
+          "lineNumber": 867,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/ask-navie-about-a-map.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/product/ask-single-map.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/product/ask-single-map.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-opening.html",
+          "context": "<p><strong>NOTE</strong>: When you “Ask Navie from within an AppMap your questions’ context will only include the single AppMap. You can opt to sea...e option to “Include the whole workspace”.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/product/ask-single-map.webp\"></p>\n\n          <hr>",
+          "lineNumber": 871,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/product/ask-single-map.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fnavie-opening.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fnavie-opening&t=AppMap+-+Docs+-+AppMap+Navie+-+Opening+Navie&cts=1775008519346&rv=1&vi=3c2c67c75a9ec8c69842b1a3d1df6594&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

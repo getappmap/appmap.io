@@ -1,0 +1,146 @@
+{
+  "timestamp": "2026-04-01T01:16:46.309Z",
+  "crawlDirectory": "crawl/site/blog/2021/02/04/eager-loading-and-the-n-plus-one-query-problem/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 7,
+  "foundAssets": 6,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/04/eager-loading-and-the-n-plus-one-query-problem/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/eager-loading-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/eager-loading-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/02/04/eager-loading-and-the-n-plus-one-query-problem/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/04/eager-loading-and-the-n-plus-one-query-problem/\">\n<meta property=\"og:site_name\" ...ger-loading-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-04T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/eager-loading-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Eager Loading and the N+1 Query Problem\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/eager-loading-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/02/04/eager-loading-and-the-n-plus-one-query-problem/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/04/eager-loading-and-the-n-plus-one-query-problem/\">\n<meta property=\"og:site_name\" ...ger-loading-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-04T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/eager-loading-feature.webp",
+            "alt": "Eager Loading and the N+1 Query Problem",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Eager Loading and the N+1 Query Problem\n  \n    Working with any popular programming framework today typically means using an object-relational mapping (ORM) library like Rails’ Active Re"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/create-micropost-trace.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/create-micropost-trace.webp",
+          "foundInFile": "crawl/site/blog/2021/02/04/eager-loading-and-the-n-plus-one-query-problem/index.html",
+          "context": "\n<blockquote>\n  <p><img src=\"/assets/img/posts/create-micropost-trace.webp\" alt=\"create micropost trace\"></p>\n</blockquote>\n",
+          "lineNumber": 288,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/create-micropost-trace.webp",
+            "alt": "create micropost trace"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/rails-queries-chart.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/rails-queries-chart.png",
+          "foundInFile": "crawl/site/blog/2021/02/04/eager-loading-and-the-n-plus-one-query-problem/index.html",
+          "context": "<p><strong>237</strong> queries is a lot for one test case[1]! I’ve recorded all of the 66 test cases in the Rails Sample App 6th Edition, and plot...g/posts/rails-queries-chart.png\" alt=\"number of sql queries in each test case\"></p>\n\n<p><em>Figure 1: A histogram for unoptimized queries</em>.</p>",
+          "lineNumber": 423,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/rails-queries-chart.png",
+            "alt": "number of sql queries in each test case"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 54
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/optimized-query-chart.jpeg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/optimized-query-chart.jpeg",
+          "foundInFile": "crawl/site/blog/2021/02/04/eager-loading-and-the-n-plus-one-query-problem/index.html",
+          "context": "<p>That 237 in Figure 1 really sticks out. Next, I have applied the eager loading fix and re-run the test cases. The number of queries drops to 72,...><img src=\"/assets/img/posts/optimized-query-chart.jpeg\" alt=\"eager loading fix\"></p>\n\n<p><em>Figure 2: A histogram for optimized queries</em>.</p>",
+          "lineNumber": 429,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/optimized-query-chart.jpeg",
+            "alt": "eager loading fix"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/04/eager-loading-and-the-n-plus-one-query-problem/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 594,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F04%2Feager-loading-and-the-n-plus-one-query-problem%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F04%2Feager-loading-and-the-n-plus-one-query-problem&t=AppMap+%7C+Eager+Loading+and+the+N%2B1+Query+Problem&cts=1775006186695&rv=1&vi=78e70584b722808a921b484bf0419a6d&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

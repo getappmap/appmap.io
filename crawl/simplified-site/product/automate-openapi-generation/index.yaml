@@ -1,0 +1,351 @@
+tag: body
+children:
+  - tag: div
+    attributes:
+      id: hs-banner-parent
+    children:
+      - tag: div
+        attributes:
+          id: hs-eu-cookie-confirmation
+        children:
+          - tag: div
+            attributes:
+              id: hs-eu-cookie-confirmation-inner
+            children:
+              - tag: div
+                attributes:
+                  id: hs-eu-header-container
+                children:
+                  - tag: button
+                    attributes:
+                      id: hs-eu-close-button
+              - tag: div
+                attributes:
+                  id: hs-eu-policy-wording
+                children:
+                  - tag: p
+                    text: This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to im...
+              - tag: p
+                text: If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
+                attributes:
+                  id: hs-eu-cookie-disclaimer
+              - tag: div
+                attributes:
+                  id: hs-eu-cookie-confirmation-buttons-area
+                children:
+                  - tag: div
+                    attributes:
+                      id: hs-eu-confirmation-button-group
+                    children:
+                      - tag: button
+                        text: Cookies settings
+                        attributes:
+                          id: hs-eu-cookie-settings-button
+                      - tag: div
+                        attributes:
+                          id: hs-eu-opt-in-buttons
+                        children:
+                          - tag: button
+                            text: Accept
+                            attributes:
+                              id: hs-eu-confirmation-button
+                          - tag: button
+                            text: Decline
+                            attributes:
+                              id: hs-eu-decline-button
+  - tag: p
+    children:
+      - tag: b
+        text: To access the latest features
+      - tag: a
+        text: keep your code editor plug-in up to date.
+        attributes:
+          href: /docs/get-started-with-appmap/add-appmap-to-your-code-editor#keep-your-extension-up-to-date
+  - tag: nav
+    children:
+      - tag: a
+        attributes:
+          href: /
+      - tag: button
+        attributes:
+          type: button
+      - tag: div
+        attributes:
+          id: navbarText
+        children:
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Docs
+                    attributes:
+                      href: /docs
+              - tag: li
+                children:
+                  - tag: a
+                    text: Blog
+                    attributes:
+                      href: /blog
+              - tag: li
+                children:
+                  - tag: a
+                    text: Pricing
+                    attributes:
+                      href: /pricing
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Get AppMap
+                    attributes:
+                      href: /get-appmap
+              - tag: li
+                children:
+                  - tag: a
+                    text: Book a Demo
+                    attributes:
+                      id: book-demo-link
+                      href: https://meetings.hubspot.com/dustin294
+  - tag: div
+    attributes:
+      id: product
+    children:
+      - tag: div
+        children:
+          - tag: div
+            children:
+              - tag: h1
+                text: Automatically Generate OpenAPI Definitions
+          - tag: h2
+            children:
+              - tag: b
+                text: Your development time is valuable. Don’t spend it writing and maintaining OpenAPI definitions.
+              - tag: p
+                text: AppMap records all the HTTP API behavior in your application and automatically generates OpenAPI definitions. It works automatically in your code editor and in CI, keeping your definitions in sync wit...
+      - tag: div
+        children:
+          - tag: h2
+            text: Generate OpenAPI Definitions
+          - tag: p
+            text: Keeping definitions in sync and up to date with the API's latest behavior is time consuming and error prone. AppMap generates an OpenAPI spec automatically in your code editor or in CI. Save time writ...
+          - tag: h2
+            text: Maintain your OpenAPI Definitions
+          - tag: p
+            text: OpenAPI definitions generated by AppMap can be used for anything you would do as part of your normal workflow, including loading into tools like Postman, or readme.com.
+          - tag: h2
+            text: Diff API Changes
+          - tag: p
+            text: Once AppMap's has been integrated into your CI system, you can use it within your code review workflow to see the API behavior differences caused by each code change.
+            children:
+              - tag: b
+                text: OpenAPI Generator
+      - tag: div
+        children:
+          - tag: div
+            children:
+              - tag: h4
+                text: Postman Integration with AppMap
+              - tag: p
+                text: AppMap allows developers to move to an API-first mode in almost no time. By creating OpenAPI definitions and updating them automatically in Postman, teams using AppMap can leverage all the valuable fe...
+                children:
+                  - tag: a
+                    text: Read the full blog post on the Postman site.
+                    attributes:
+                      href: https://blog.postman.com/new-postman-integration-with-appmap-create-and-manage-always-accurate-collections/
+          - tag: div
+            children:
+              - tag: h4
+                text: Automatically Generate OpenAPI Definitions for Mastodon
+              - tag: p
+                text: A real world example of keeping API documentation up to date by automating OpenAPI generation, includes the command for running AppMap OpenAPI generation from CI.
+                children:
+                  - tag: a
+                    text: Read the full blog post on dev.to.
+                    attributes:
+                      href: https://dev.to/appmap/automatically-generating-openapi-docs-for-mastodon-42ig
+      - tag: div
+        children:
+          - tag: h2
+            text: Get started for free
+          - tag: p
+            text: for your or , record AppMap Data, and start generating OpenAPI definitions.
+            children:
+              - tag: a
+                text: Install the AppMap extension
+                attributes:
+                  href: /download
+              - tag: b
+                text: Visual Studio Code
+              - tag: b
+                text: JetBrains Code editor
+      - tag: section
+        children:
+          - tag: div
+            children:
+              - tag: h2
+                text: Your Data is Your Data
+              - tag: p
+                text: With AppMap your source code and data never have to leave your local development environment. Many new developer tools require you to upload source code and grant privileges to your repo, but AppMap d...
+          - tag: div
+            children:
+              - tag: h2
+                text: Join Our Community
+              - tag: p
+                text: If you have any questions about how this is done, or would like an AppMap developer to help you get up and running, feel free to , introduce yourself, and ping us!
+                children:
+                  - tag: a
+                    text: drop into our Slack
+                    attributes:
+                      href: https://appmap.io/slack
+      - tag: div
+        children:
+          - tag: a
+            text: Get AppMap
+            attributes:
+              href: /get-appmap
+            children:
+              - tag: img
+                attributes:
+                  src: /assets/img/logos/appmap-icon-color.svg
+                  alt: AppMap logo
+  - tag: div
+    children:
+      - tag: footer
+        children:
+          - tag: div
+            children:
+              - tag: h5
+                text: Docs
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Get Started
+                        attributes:
+                          href: /docs/get-started-with-appmap/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Using Navie
+                        attributes:
+                          href: /docs/navie
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Troubleshooting
+                        attributes:
+                          href: /docs/troubleshooting
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Reference
+                        attributes:
+                          href: /docs/reference
+          - tag: div
+            children:
+              - tag: h5
+                text: Product
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Security FAQ
+                        attributes:
+                          href: /security
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Pricing
+                        attributes:
+                          href: /pricing
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Terms
+                        attributes:
+                          href: /community/terms-and-conditions.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Privacy Policy
+                        attributes:
+                          href: /community/privacy-policy
+          - tag: div
+            children:
+              - tag: h5
+                text: Company
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: About
+                        attributes:
+                          href: /company/about-appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Careers
+                        attributes:
+                          href: https://angel.co/company/appmap/jobs
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Contact
+                        attributes:
+                          href: /contact/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Brand Assets
+                        attributes:
+                          href: /company/brand-assets
+          - tag: div
+            children:
+              - tag: h5
+                text: Community
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: X
+                        attributes:
+                          href: https://twitter.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Slack
+                        attributes:
+                          href: https://appmap.io/slack
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: GitHub
+                        attributes:
+                          href: https://github.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Code of Conduct
+                        attributes:
+                          href: /community/code-of-conduct.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: YouTube
+                        attributes:
+                          href: https://www.youtube.com/@appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Blog
+                        attributes:
+                          href: /blog
+  - tag: iframe
+    attributes:
+      title: archetype

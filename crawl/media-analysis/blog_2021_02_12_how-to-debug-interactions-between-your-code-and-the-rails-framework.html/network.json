@@ -1,0 +1,1379 @@
+{
+  "url": "https://appmap.io/blog/2021/02/12/how-to-debug-interactions-between-your-code-and-the-rails-framework",
+  "timestamp": "2026-04-01T01:17:51.137Z",
+  "loadTime": 12779,
+  "summary": {
+    "totalRequests": 80,
+    "successfulRequests": 63,
+    "failedRequests": 3,
+    "cachedRequests": 0,
+    "redirectedRequests": 2,
+    "slowRequests": 1
+  },
+  "requestsByType": {
+    "document": 3,
+    "stylesheet": 14,
+    "script": 24,
+    "image": 11,
+    "fetch": 9,
+    "font": 8,
+    "xhr": 11
+  },
+  "failedRequests": [
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775006258723&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=2023058533.1775006259&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938465~115938469~116133312~116991816&sid=1775006259&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F12%2Fhow-to-debug-interactions-between-your-code-and-the-rails-framework&dt=AppMap%20%7C%20How%20to%20debug%20interactions%20between%20your%20code%20and%20the%20Rails%20framework%20(and%20other%20gems)&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=821",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006259327,
+        "duration": 249
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006259755,
+        "duration": 207
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775006258723&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=2023058533.1775006259&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938465~115938469~116133312~116991816&sid=1775006259&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F12%2Fhow-to-debug-interactions-between-your-code-and-the-rails-framework&dt=AppMap%20%7C%20How%20to%20debug%20interactions%20between%20your%20code%20and%20the%20Rails%20framework%20(and%20other%20gems)&en=scroll&epn.percent_scrolled=90&_et=5760&tfd=11584",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006270087,
+        "duration": 36
+      }
+    }
+  ],
+  "slowRequests": [
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006262524,
+        "endTime": 1775006266661,
+        "duration": 4137
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 31,
+        "responseHeadersSize": 360
+      }
+    }
+  ],
+  "allRequests": [
+    {
+      "url": "https://appmap.io/blog/2021/02/12/how-to-debug-interactions-between-your-code-and-the-rails-framework",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006258505,
+        "endTime": 1775006258584,
+        "duration": 79
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006258596,
+        "endTime": 1775006258681,
+        "duration": 85
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 1180
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006258717,
+        "duration": 116
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006258708,
+        "duration": 107
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006258711,
+        "duration": 110
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006258707,
+        "duration": 106
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006258682,
+        "duration": 81
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1032
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006258673,
+        "duration": 72
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 1173
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006258635,
+        "duration": 34
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006258699,
+        "duration": 98
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006259045,
+        "duration": 444
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173018,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006258856,
+        "duration": 255
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 626,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-a11y-dark.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006258683,
+        "duration": 82
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 541,
+        "responseHeadersSize": 1034
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006258694,
+        "duration": 93
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 5980,
+        "responseHeadersSize": 1046
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006258690,
+        "duration": 89
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1333,
+        "responseHeadersSize": 1052
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-ruby.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006258699,
+        "duration": 98
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 986,
+        "responseHeadersSize": 1045
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258601,
+        "endTime": 1775006258693,
+        "duration": 92
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 962,
+        "responseHeadersSize": 1043
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258602,
+        "endTime": 1775006258696,
+        "duration": 94
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 862,
+        "responseHeadersSize": 1039
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006258602,
+        "endTime": 1775006258641,
+        "duration": 39
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 518
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/posts/pre-debugging-feature.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006258602,
+        "endTime": 1775006258643,
+        "duration": 41
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 34684,
+        "responseHeadersSize": 476
+      }
+    },
+    {
+      "url": "https://vscode-appmap.s3.us-east-2.amazonaws.com/media/AppMap+extension+for+VSCode+-+quick+and+easy+setup.gif",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006258602,
+        "endTime": 1775006258958,
+        "duration": 356
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "OK",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2112532,
+        "responseHeadersSize": 416
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006258602,
+        "endTime": 1775006258701,
+        "duration": 99
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 457,
+        "responseHeadersSize": 564
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258602,
+        "endTime": 1775006258820,
+        "duration": 218
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 641
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258602,
+        "endTime": 1775006258816,
+        "duration": 214
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1048
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258602,
+        "endTime": 1775006258820,
+        "duration": 218
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 1188
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006258724,
+        "endTime": 1775006258834,
+        "duration": 110
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006258724,
+        "endTime": 1775006258834,
+        "duration": 110
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006258724,
+        "endTime": 1775006258832,
+        "duration": 108
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006258724,
+        "endTime": 1775006258836,
+        "duration": 112
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.youtube.com/embed/gE50vG7e_bs",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006258737,
+        "endTime": 1775006258898,
+        "duration": 161
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.youtube.com/embed/7bYCe5DnAR4",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006258740,
+        "endTime": 1775006258929,
+        "duration": 189
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006258815,
+        "endTime": 1775006258960,
+        "duration": 145
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006258815,
+        "endTime": 1775006258955,
+        "duration": 140
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26596,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006258843,
+        "endTime": 1775006258960,
+        "duration": 117
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 105204,
+        "responseHeadersSize": 1078
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258866,
+        "endTime": 1775006259045,
+        "duration": 179
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258867,
+        "endTime": 1775006259045,
+        "duration": 178
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775006100000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258867,
+        "endTime": 1775006259078,
+        "duration": 211
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/webfonts/free-fa-brands-400.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006258949,
+        "endTime": 1775006259048,
+        "duration": 99
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 118696,
+        "responseHeadersSize": 1117
+      }
+    },
+    {
+      "url": "https://www.youtube.com/s/player/4a6035e3/www-player.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006258975,
+        "endTime": 1775006259027,
+        "duration": 52
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 57855,
+        "responseHeadersSize": 717
+      }
+    },
+    {
+      "url": "https://www.youtube.com/s/_/ytembeds/_/ss/k=ytembeds.base.8L0UK0zLZXQ.L.W.O/am=AAAABQ/d=0/br=1/rs=AGKMywGu0fQBzucTMjQC10NB9hvoNRMZ2w",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006258975,
+        "endTime": 1775006259027,
+        "duration": 52
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 38896,
+        "responseHeadersSize": 910
+      }
+    },
+    {
+      "url": "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.Uzf3K-MYXBk.2021.O/am=AAAABQ/d=1/br=1/rs=AGKMywH6Ja59D2h0rgBlgPhH5qlrPGIPLA/m=root,base",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258975,
+        "endTime": 1775006259333,
+        "duration": 358
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 212259,
+        "responseHeadersSize": 918
+      }
+    },
+    {
+      "url": "https://www.youtube.com/s/player/4a6035e3/player_embed_es6.vflset/en_US/base.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258975,
+        "endTime": 1775006259336,
+        "duration": 361
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 440864,
+        "responseHeadersSize": 725
+      }
+    },
+    {
+      "url": "https://www.youtube.com/s/player/ace4b2f8/www-player.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006258995,
+        "endTime": 1775006259212,
+        "duration": 217
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 57855,
+        "responseHeadersSize": 718
+      }
+    },
+    {
+      "url": "https://www.youtube.com/s/_/ytembeds/_/ss/k=ytembeds.base.8L0UK0zLZXQ.L.W.O/am=AAAABQ/d=0/br=1/rs=AGKMywGu0fQBzucTMjQC10NB9hvoNRMZ2w",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006258995
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.Uzf3K-MYXBk.2021.O/am=AAAABQ/d=1/br=1/rs=AGKMywH6Ja59D2h0rgBlgPhH5qlrPGIPLA/m=root,base",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258995
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.youtube.com/s/player/ace4b2f8/player_embed_es6.vflset/en_US/base.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006258995,
+        "endTime": 1775006259337,
+        "duration": 342
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 440759,
+        "responseHeadersSize": 726
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006259033,
+        "endTime": 1775006259224,
+        "duration": 191
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 40128,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006259039
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775006258723&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=2023058533.1775006259&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938465~115938469~116133312~116991816&sid=1775006259&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F12%2Fhow-to-debug-interactions-between-your-code-and-the-rails-framework&dt=AppMap%20%7C%20How%20to%20debug%20interactions%20between%20your%20code%20and%20the%20Rails%20framework%20(and%20other%20gems)&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=821",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006259327,
+        "endTime": 1775006259576,
+        "duration": 249
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/id",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006259427,
+        "endTime": 1775006259663,
+        "duration": 236
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 302,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 710
+      }
+    },
+    {
+      "url": "https://static.doubleclick.net/instream/ad_status.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006259428,
+        "endTime": 1775006259588,
+        "duration": 160
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 29,
+        "responseHeadersSize": 759
+      }
+    },
+    {
+      "url": "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.Uzf3K-MYXBk.2021.O/am=AAAABQ/d=1/exm=base,root/ed=1/br=1/rs=AGKMywH6Ja59D2h0rgBlgPhH5qlrPGIPLA/m=r78Drb",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006259428,
+        "endTime": 1775006259587,
+        "duration": 159
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 133859,
+        "responseHeadersSize": 918
+      }
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/id",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006259443
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://static.doubleclick.net/instream/ad_status.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006259444
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.Uzf3K-MYXBk.2021.O/am=AAAABQ/d=1/exm=base,root/ed=1/br=1/rs=AGKMywH6Ja59D2h0rgBlgPhH5qlrPGIPLA/m=r78Drb",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006259444
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/id?slf_rd=1",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006259587,
+        "endTime": 1775006259729,
+        "duration": 142
+      },
+      "redirected": true,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 120,
+        "responseHeadersSize": 732
+      }
+    },
+    {
+      "url": "https://i.ytimg.com/vi/7bYCe5DnAR4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AGaBoAC4AOKAgwIABABGCkgTCh_MA8=&rs=AOn4CLCs-QNMdh-9wJYO4ZGXlOkEA8yznA",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006259661,
+        "endTime": 1775006259928,
+        "duration": 267
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 56496,
+        "responseHeadersSize": 680
+      }
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/id?slf_rd=1",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006259663
+      },
+      "redirected": true,
+      "fromCache": false
+    },
+    {
+      "url": "https://i.ytimg.com/vi/gE50vG7e_bs/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AGaBoAC4AOKAgwIABABGGUgQChOMA8=&rs=AOn4CLCbRUjaY9RlknZ1JtEhi4uQt3vc_g",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006259718,
+        "endTime": 1775006259928,
+        "duration": 210
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 60565,
+        "responseHeadersSize": 680
+      }
+    },
+    {
+      "url": "https://www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006259731,
+        "endTime": 1775006259793,
+        "duration": 62
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 272,
+        "responseHeadersSize": 709
+      }
+    },
+    {
+      "url": "https://www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006259733
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006259755,
+        "endTime": 1775006259806,
+        "duration": 51
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006259755,
+        "endTime": 1775006259962,
+        "duration": 207
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006259788,
+        "endTime": 1775006259940,
+        "duration": 152
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006259836,
+        "endTime": 1775006259940,
+        "duration": 104
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006259837,
+        "endTime": 1775006259940,
+        "duration": 103
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://www.google.com/js/th/PF32M1WFt3Opj6X4HHxBvSVo4hj3YoJbcs9XKKWIAD0.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006259961,
+        "endTime": 1775006260094,
+        "duration": 133
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23988,
+        "responseHeadersSize": 850
+      }
+    },
+    {
+      "url": "https://www.google.com/js/th/PF32M1WFt3Opj6X4HHxBvSVo4hj3YoJbcs9XKKWIAD0.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006259967
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F12%2Fhow-to-debug-interactions-between-your-code-and-the-rails-framework%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F12%2Fhow-to-debug-interactions-between-your-code-and-the-rails-framework&t=AppMap+%7C+How+to+debug+interactions+between+your+code+and+the+Rails+framework+(and+other+gems)&cts=1775006260140&rv=1&vi=0d27ca5f879ef57eff556b9b2801f0e1&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006260141,
+        "endTime": 1775006260324,
+        "duration": 183
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 997
+      }
+    },
+    {
+      "url": "https://www.youtube.com/generate_204?MCT0iA",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006260309,
+        "endTime": 1775006260346,
+        "duration": 37
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 170
+      }
+    },
+    {
+      "url": "https://www.youtube.com/generate_204?qpKb_g",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006260388,
+        "endTime": 1775006260450,
+        "duration": 62
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 170
+      }
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006260446,
+        "endTime": 1775006260534,
+        "duration": 88
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 126,
+        "responseHeadersSize": 349
+      }
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006260496
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006262524,
+        "endTime": 1775006266661,
+        "duration": 4137
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 31,
+        "responseHeadersSize": 360
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006262541
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_mE-3IpGU62tduKPV6wudyFDlSLi_97peCW_-v5B1g=s68-c-k-c0x00ffffff-no-rj",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006264084,
+        "endTime": 1775006264238,
+        "duration": 154
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1054,
+        "responseHeadersSize": 568
+      }
+    },
+    {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_mE-3IpGU62tduKPV6wudyFDlSLi_97peCW_-v5B1g=s68-c-k-c0x00ffffff-no-rj",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006264084
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006266086
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "method": "POST",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006266591
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0v883218513za200zd883218513&_p=1775006258723&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=2023058533.1775006259&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938465~115938469~116133312~116991816&sid=1775006259&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F12%2Fhow-to-debug-interactions-between-your-code-and-the-rails-framework&dt=AppMap%20%7C%20How%20to%20debug%20interactions%20between%20your%20code%20and%20the%20Rails%20framework%20(and%20other%20gems)&en=scroll&epn.percent_scrolled=90&_et=5760&tfd=11584",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006270087,
+        "endTime": 1775006270123,
+        "duration": 36
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    }
+  ]
+}

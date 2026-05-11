@@ -1,0 +1,204 @@
+{
+  "timestamp": "2026-04-01T01:47:21.550Z",
+  "crawlDirectory": "crawl/site/docs/reference/guides/handling-large-appmap-diagrams.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 17,
+  "foundAssets": 7,
+  "notFoundAssets": 10,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/handling-large-appmap-diagrams.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/handling-large-appmap-diagrams.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 772,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/handling-large-appmap-diagrams.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 773,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/pruned_stats_panel.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/pruned_stats_panel.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/handling-large-appmap-diagrams.html",
+          "context": "<p>When you attempt to open an AppMap in a code editor extension that is over 10 MB, it will be automatically pruned down to ~10 MB. The most frequ...ats Panel\"></p>\n\n<p>The automatic pruning might be sufficient, but if you want more control over what events are removed, you have two options:</p>",
+          "lineNumber": 811,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/pruned_stats_panel.webp",
+            "alt": "Pruned Stats Panel"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/giant_map_stats_panel.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/giant_map_stats_panel.jpg",
+          "foundInFile": "crawl/site/docs/reference/guides/handling-large-appmap-diagrams.html",
+          "context": "<p>When an AppMap Diagram is over 200 MB, we will <strong>not</strong> open it in the code editor extension because it could cause performance issu...e it will not contain the specified functions:</p>\n\n<p><img src=\"/assets/img/docs/giant_map_stats_panel.jpg\" alt=\"Giant Map Stats Panel\"></p>\n\n<ul>",
+          "lineNumber": 831,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/giant_map_stats_panel.jpg",
+            "alt": "Giant Map Stats Panel"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/large-appmap-list.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/large-appmap-list.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/handling-large-appmap-diagrams.html",
+          "context": "We’ll use the AppMap CLI to get information about the nosiest functions that we can exclude from a future AppMap recording.</p>\n\n<p><img src=\"/asse...appmap-list.webp\" alt=\"Large AppMap Diagrams\"></p>\n\n<p>First, you’ll need to ensure you have the AppMap CLI binaries installed on your machine.<br>",
+          "lineNumber": 856,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/large-appmap-list.webp",
+            "alt": "Large AppMap Diagrams"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/smaller-appmap.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/smaller-appmap.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/handling-large-appmap-diagrams.html",
+          "context": "be significantly reduced.</p>\n\n<p><img src=\"/assets/img/docs/guides/smaller-appmap.webp\" alt=\"Smaller AppMap\"></p>\n\n<h3 id=\"video-tutorial\">Video Tutorial</h3>",
+          "lineNumber": 924,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/smaller-appmap.webp",
+            "alt": "Smaller AppMap"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Fhandling-large-appmap-diagrams.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Fhandling-large-appmap-diagrams&t=AppMap+-+Docs+-+Guides+-+Handling+Large+AppMap+Diagrams&cts=1775008021708&rv=1&vi=63cd3cc09baa9f0965d27fb3d5273f33&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ec674b5da9a4/1775008021910/RA0uvL3v1veSo9u",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ec66a8f0a9a4/1775008021838/nwNvRtF3uPWlF91",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Fhandling-large-appmap-diagrams.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Fhandling-large-appmap-diagrams&t=AppMap+-+Docs+-+Guides+-+Handling+Large+AppMap+Diagrams&cts=1775008026110&rv=1&vi=32acbf3364a1c6e14b90eb0960f3bde4&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ec829b28a9a4/1775008026385/zPBcb5k00Ws_QcK",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ec828b0ea9a4/1775008026331/R-7593fwMC-g6NI",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ecce284ca9a4/1775008038353/A1AypGLi7SKZ6Ie",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ecd09934a9a4/1775008038825/Ra81quorZr947qw",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

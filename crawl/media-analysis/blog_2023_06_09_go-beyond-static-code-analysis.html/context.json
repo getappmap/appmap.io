@@ -1,0 +1,199 @@
+{
+  "timestamp": "2026-04-01T01:36:11.612Z",
+  "crawlDirectory": "crawl/site/blog/2023/06/09/go-beyond-static-code-analysis/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 10,
+  "foundAssets": 9,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2023/06/09/go-beyond-static-code-analysis/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-feature.jpg",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-feature.jpg",
+          "foundInFile": "crawl/site/blog/2023/06/09/go-beyond-static-code-analysis/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/06/09/go-beyond-static-code-analysis/\">\n<meta property=\"og:site_name\" content=\"AppMap\"...eyond-static-feature.jpg\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-06-09T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/beyond-static-feature.jpg"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Go beyond static code analysis: Understand how your data flows through a process from start to finish\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https:"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-feature.jpg",
+          "foundInFile": "crawl/site/blog/2023/06/09/go-beyond-static-code-analysis/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/06/09/go-beyond-static-code-analysis/\">\n<meta property=\"og:site_name\" content=\"AppMap\"...eyond-static-feature.jpg\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-06-09T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/beyond-static-feature.jpg",
+            "alt": "Go beyond static code analysis: Understand how your data flows through a process from start to finish",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Go beyond static code analysis: Understand how your data flows through a process from start to finish\n  \n    A tutorial for process recording for Java with AppMap.\n\nOnce you’ve recorded "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-1.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-1.png",
+          "foundInFile": "crawl/site/blog/2023/06/09/go-beyond-static-code-analysis/index.html",
+          "context": "<ol>\n  <li>Edit your run configuration by adding a specific variable to the virtual machine environment.\n<img src=\"/assets/img/posts/beyond-static-...uild and run” section. The field may be hidden by default, so if you don’t see it, select modify options, then under Java, select add “VM options.”",
+          "lineNumber": 181,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/beyond-static-1.png",
+            "alt": "go beyond static code image"
+          },
+          "surroundingText": "Edit your run configuration by adding a specific variable to the virtual machine environment.\n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-2.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-2.png",
+          "foundInFile": "crawl/site/blog/2023/06/09/go-beyond-static-code-analysis/index.html",
+          "context": "  <li>To do that, click on the drop-down in the upper right corner of your editor and select edit configurations.</li>\n  <li>From here, you should ...ge language-plaintext\">-Dappmap.recording.auto=true</code>\n<img src=\"/assets/img/posts/beyond-static-3.png\" alt=\"go beyond static code image\"></li>",
+          "lineNumber": 184,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/beyond-static-2.png",
+            "alt": "go beyond static code image"
+          },
+          "surroundingText": "From here, you should see a field labeled “VM options” under the “build and run” section. The field may be hidden by default, so if you don’t see it, select modify options, then under Java, select add"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-3.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-3.png",
+          "foundInFile": "crawl/site/blog/2023/06/09/go-beyond-static-code-analysis/index.html",
+          "context": "<img src=\"/assets/img/posts/beyond-static-2.png\" alt=\"go beyond static code image\"></li>\n  <li>A new field should appear labeled “VM Options,” insi...uage-plaintext\">-Dappmap.recording.auto=true</code>\n<img src=\"/assets/img/posts/beyond-static-3.png\" alt=\"go beyond static code image\"></li>\n</ol>\n",
+          "lineNumber": 186,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/beyond-static-3.png",
+            "alt": "go beyond static code image"
+          },
+          "surroundingText": "A new field should appear labeled “VM Options,” inside of which we are going to place this option: -Dappmap.recording.auto=true\n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-4.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-4.png",
+          "foundInFile": "crawl/site/blog/2023/06/09/go-beyond-static-code-analysis/index.html",
+          "context": "<p>It is not readily apparent, but there is a process recording running. You can verify that by looking at the bottom left-hand corner next to the ...-static-4.png\" alt=\"go beyond static code image\"></p>\n\n<h2 id=\"finally-interact-with-your-application\">Finally, interact with your application</h2>",
+          "lineNumber": 198,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/beyond-static-4.png",
+            "alt": "go beyond static code image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-5.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-5.png",
+          "foundInFile": "crawl/site/blog/2023/06/09/go-beyond-static-code-analysis/index.html",
+          "context": "</ol>\n\n<p><img src=\"/assets/img/posts/beyond-static-5.png\" alt=\"go beyond static code image\"></p>\n\n<p>The AppMap recording will stop as well. Soon you will see a new recording designated by a number in your list of AppMap Diagrams, it will be named by the date.</p>",
+          "lineNumber": 207,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/beyond-static-5.png",
+            "alt": "go beyond static code image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-6.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/beyond-static-6.png",
+          "foundInFile": "crawl/site/blog/2023/06/09/go-beyond-static-code-analysis/index.html",
+          "context": "<p>The AppMap recording will stop as well. Soon you will see a new recording designated by a number in your list of AppMap Diagrams, it will be nam...<p><img src=\"/assets/img/posts/beyond-static-6.png\" alt=\"go beyond static code image\"></p>\n\n<h2 id=\"how-to-use-your-maps\">How to use your maps</h2>",
+          "lineNumber": 211,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/beyond-static-6.png",
+            "alt": "go beyond static code image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2023/06/09/go-beyond-static-code-analysis/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 241,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F09%2Fgo-beyond-static-code-analysis%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F06%2F09%2Fgo-beyond-static-code-analysis&t=AppMap+%7C+Go+beyond+static+code+analysis%3A+Understand+how+your+data+flows+through+a+process+from+start+to+finish&cts=1775007360986&rv=1&vi=45870158701a360c12a48b038c3d6f7d&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

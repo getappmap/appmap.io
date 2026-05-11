@@ -132,13 +132,28 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
+@theme {
+  --font-sans: "Open Sans", system-ui, -apple-system, sans-serif;
+  --font-body: "Open Sans", system-ui, -apple-system, sans-serif;
+  --font-heading: "Lato", "Open Sans", sans-serif;
+  --color-appmap-bg: #010306;
+  --color-appmap-text: #e3e5e8;
+  --color-appmap-accent: #c242b1;
+  --color-appmap-accent-hover: #a63896;
+}
+
 @layer base {
   * {
     border-color: var(--color-border);
   }
 
+  html {
+    background-color: #010306;
+  }
+
   body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+    background-color: #010306;
+    color: #e3e5e8;
+    font-family: var(--font-body);
   }
 }

@@ -1,0 +1,389 @@
+tag: body
+children:
+  - tag: div
+    attributes:
+      id: hs-banner-parent
+    children:
+      - tag: div
+        attributes:
+          id: hs-eu-cookie-confirmation
+        children:
+          - tag: div
+            attributes:
+              id: hs-eu-cookie-confirmation-inner
+            children:
+              - tag: div
+                attributes:
+                  id: hs-eu-header-container
+                children:
+                  - tag: button
+                    attributes:
+                      id: hs-eu-close-button
+              - tag: div
+                attributes:
+                  id: hs-eu-policy-wording
+                children:
+                  - tag: p
+                    text: This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to im...
+              - tag: p
+                text: If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
+                attributes:
+                  id: hs-eu-cookie-disclaimer
+              - tag: div
+                attributes:
+                  id: hs-eu-cookie-confirmation-buttons-area
+                children:
+                  - tag: div
+                    attributes:
+                      id: hs-eu-confirmation-button-group
+                    children:
+                      - tag: button
+                        text: Cookies settings
+                        attributes:
+                          id: hs-eu-cookie-settings-button
+                      - tag: div
+                        attributes:
+                          id: hs-eu-opt-in-buttons
+                        children:
+                          - tag: button
+                            text: Accept
+                            attributes:
+                              id: hs-eu-confirmation-button
+                          - tag: button
+                            text: Decline
+                            attributes:
+                              id: hs-eu-decline-button
+  - tag: p
+    children:
+      - tag: b
+        text: To access the latest features
+      - tag: a
+        text: keep your code editor plug-in up to date.
+        attributes:
+          href: /docs/get-started-with-appmap/add-appmap-to-your-code-editor#keep-your-extension-up-to-date
+  - tag: nav
+    children:
+      - tag: a
+        attributes:
+          href: /
+      - tag: button
+        attributes:
+          type: button
+      - tag: div
+        attributes:
+          id: navbarText
+        children:
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Docs
+                    attributes:
+                      href: /docs
+              - tag: li
+                children:
+                  - tag: a
+                    text: Blog
+                    attributes:
+                      href: /blog
+              - tag: li
+                children:
+                  - tag: a
+                    text: Pricing
+                    attributes:
+                      href: /pricing
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Get AppMap
+                    attributes:
+                      href: /get-appmap
+              - tag: li
+                children:
+                  - tag: a
+                    text: Book a Demo
+                    attributes:
+                      id: book-demo-link
+                      href: https://meetings.hubspot.com/dustin294
+  - tag: div
+    attributes:
+      id: home-body
+    children:
+      - tag: div
+        attributes:
+          id: product
+        children:
+          - tag: h1
+            text: AppMap Security FAQ
+          - tag: div
+            children:
+              - tag: ol
+                children:
+                  - tag: li
+                    children:
+                      - tag: h4
+                        text: Will AppMap move code or data off of my personal dev environment?
+                      - tag: p
+                        text: If you are generating code maps, NO. AppMap runtime recordings and diagrams are created and stored locally on your machine, all graphs and visualizations of code are stored locally in your code editor...
+                      - tag: p
+                        text: If you are using AppMap integrations, YES. Users integrating AppMap with Confluence or using AppMap AI integrations including Navie involve moving AppMap json and/or code snippets from your code edito...
+                      - tag: p
+                        text: To learn more about Navie’s data architecture
+                        children:
+                          - tag: a
+                            text: see the diagram below.
+                            attributes:
+                              href: '#appmap-navie-architecture-diagram'
+                  - tag: li
+                    children:
+                      - tag: h4
+                        text: Is sign in required to use AppMap?
+                      - tag: p
+                        text: Authorization via GitHub, GitLab, or email is required to activate AppMap, and start using AppMap in your code editor.
+                  - tag: li
+                    children:
+                      - tag: h4
+                        text: Does activating via GitHub or GitLab give AppMap access to my code repository?
+                      - tag: p
+                        text: No. GitHub and GitLab are used as OAuth providers only. This allows AppMap to verify your identity, but does not grant access to code hosted with GitHub or GitLab.
+                  - tag: li
+                    children:
+                      - tag: h4
+                        text: What scope does AppMap access to authenticate users via GitHub or GitLab?
+                      - tag: h5
+                        text: For authentication with GitHub
+                      - tag: ul
+                        children:
+                          - tag: li
+                            text: Read access user email addresses ()
+                            children:
+                              - tag: a
+                                text: GitHub docs
+                                attributes:
+                                  href: https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps#:~:text=user%27s%20profile%20data.-,user%3Aemail,-Grants%20read%20access
+                      - tag: h5
+                        text: For authentication with GitLab
+                      - tag: ul
+                        children:
+                          - tag: li
+                            text: Read the authenticated user's personal information. Grants read-only access to the authenticated user's profile through the /user API endpoint, which includes username, public email, and full name. Al...
+                            children:
+                              - tag: a
+                                text: GitLab docs
+                                attributes:
+                                  href: https://docs.gitlab.com/ee/integration/oauth_provider.html#:~:text=the%20package%20registry.-,read_user,-Grants%20read%2Donly
+                      - tag: p
+                        text: AppMap does not require any permissions to your web hosted code.
+                  - tag: li
+                    children:
+                      - tag: h4
+                        text: Where are AppMap files stored?
+                      - tag: p
+                        text: AppMap files are stored in your local development project, typically in a directory within your project, created during the installation process.
+                        children:
+                          - tag: code
+                            text: tmp/appmap
+                      - tag: p
+                        text: AppMap does not upload or move your AppMap files out of your local environment.
+                      - tag: p
+                        text: For specifics regarding the location and configuration of AppMap files see the .
+                        children:
+                          - tag: a
+                            text: reference section of our documentation
+                            attributes:
+                              href: /docs/reference/
+                  - tag: li
+                    children:
+                      - tag: h4
+                        text: What is AppMap's data architecture?
+                      - tag: p
+                        text: AppMap agents are libraries that get loaded into your application, and write data to the local filesystem based on the application's runtime behavior.
+                      - tag: p
+                        text: These files are then read by the , or in the case of a CI deployment, by the AppMap CI tools.
+                        children:
+                          - tag: a
+                            text: AppMap code editor plugins
+                            attributes:
+                              href: /docs/get-started-with-appmap
+                      - tag: p
+                        text: The graphic below illustrates AppMap's data architecture.
+                      - tag: p
+                        children:
+                          - tag: a
+                            attributes:
+                              href: /assets/img/product/appmap-architecture.webp
+                            children:
+                              - tag: img
+                                attributes:
+                                  src: /assets/img/product/appmap-architecture.webp
+                                  alt: AppMap's data architecture
+                      - tag: p
+                        text: The graphic below illustrates AppMap Navie’s data architecture.
+                      - tag: p
+                        children:
+                          - tag: a
+                            attributes:
+                              href: /assets/img/product/navie-architecture.webp
+                            children:
+                              - tag: img
+                                attributes:
+                                  src: /assets/img/product/navie-architecture.webp
+                                  id: appmap-navie-architecture-diagram
+                                  alt: AppMap's data architecture
+                  - tag: li
+                    children:
+                      - tag: h4
+                        text: Who should I contact regarding specific security concerns?
+                      - tag: p
+                        text: We are happy to answer any specific questions you may have. Reach out directly to an AppMap team member in our or send an email to .
+                        children:
+                          - tag: a
+                            text: community Slack
+                            attributes:
+                              href: /slack
+                          - tag: a
+                            text: support@appmap.io
+                            attributes:
+                              href: mailto:support@appmap.io
+  - tag: div
+    children:
+      - tag: footer
+        children:
+          - tag: div
+            children:
+              - tag: h5
+                text: Docs
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Get Started
+                        attributes:
+                          href: /docs/get-started-with-appmap/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Using Navie
+                        attributes:
+                          href: /docs/navie
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Troubleshooting
+                        attributes:
+                          href: /docs/troubleshooting
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Reference
+                        attributes:
+                          href: /docs/reference
+          - tag: div
+            children:
+              - tag: h5
+                text: Product
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Security FAQ
+                        attributes:
+                          href: /security
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Pricing
+                        attributes:
+                          href: /pricing
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Terms
+                        attributes:
+                          href: /community/terms-and-conditions.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Privacy Policy
+                        attributes:
+                          href: /community/privacy-policy
+          - tag: div
+            children:
+              - tag: h5
+                text: Company
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: About
+                        attributes:
+                          href: /company/about-appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Careers
+                        attributes:
+                          href: https://angel.co/company/appmap/jobs
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Contact
+                        attributes:
+                          href: /contact/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Brand Assets
+                        attributes:
+                          href: /company/brand-assets
+          - tag: div
+            children:
+              - tag: h5
+                text: Community
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: X
+                        attributes:
+                          href: https://twitter.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Slack
+                        attributes:
+                          href: https://appmap.io/slack
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: GitHub
+                        attributes:
+                          href: https://github.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Code of Conduct
+                        attributes:
+                          href: /community/code-of-conduct.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: YouTube
+                        attributes:
+                          href: https://www.youtube.com/@appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Blog
+                        attributes:
+                          href: /blog
+  - tag: iframe
+    attributes:
+      title: archetype

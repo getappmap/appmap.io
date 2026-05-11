@@ -1,0 +1,131 @@
+{
+  "timestamp": "2026-04-01T01:15:59.673Z",
+  "crawlDirectory": "crawl/site/blog/2021/02/01/sql-query-from-the-view-considered-hazardous/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 6,
+  "foundAssets": 5,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/01/sql-query-from-the-view-considered-hazardous/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/sql-view-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/sql-view-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/02/01/sql-query-from-the-view-considered-hazardous/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/01/sql-query-from-the-view-considered-hazardous/\">\n<meta property=\"og:site_name\" co...ts/sql-view-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-01T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/sql-view-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | SQL query from the view: considered hazardous!\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/sql-view-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/02/01/sql-query-from-the-view-considered-hazardous/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/01/sql-query-from-the-view-considered-hazardous/\">\n<meta property=\"og:site_name\" co...ts/sql-view-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-01T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/sql-view-feature.webp",
+            "alt": "SQL query from the view: considered hazardous!",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  SQL query from the view: considered hazardous!\n  \n    Working with any popular programming framework today means using an object-relational mapping (ORM) library like Rails’ ActiveRecord"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/sql-query-from-the-view/microposts-being-loaded.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/sql-query-from-the-view/microposts-being-loaded.png",
+          "foundInFile": "crawl/site/blog/2021/02/01/sql-query-from-the-view-considered-hazardous/index.html",
+          "context": "<p>Here’s part of the AppMap <em>Trace</em> view that shows the <em>microposts</em> being loaded:</p>\n\n<p><img src=\"/images/sql-query-from-the-view...the rest of the trace looks like this: a long sequence of repeated, additional SQL queries as the <em>micropost</em> associated data is loaded.</p>",
+          "lineNumber": 201,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/sql-query-from-the-view/microposts-being-loaded.png",
+            "alt": "microposts being loaded"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 72
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/sql-query-from-the-view/repeated-sql.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/sql-query-from-the-view/repeated-sql.png",
+          "foundInFile": "crawl/site/blog/2021/02/01/sql-query-from-the-view-considered-hazardous/index.html",
+          "context": "<p>So far, so good. The problem is that the rest of the trace looks like this: a long sequence of repeated, additional SQL queries as the <em>micro...uery-from-the-view/repeated-sql.png\" alt=\"sequence of repeated SQL queries\"></p>\n\n<p>This anti-pattern is called an <em>N+1 query problem</em>.</p>",
+          "lineNumber": 205,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/sql-query-from-the-view/repeated-sql.png",
+            "alt": "sequence of repeated SQL queries"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 61
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/01/sql-query-from-the-view-considered-hazardous/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 266,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F01%2Fsql-query-from-the-view-considered-hazardous%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F01%2Fsql-query-from-the-view-considered-hazardous&t=AppMap+%7C+SQL+query+from+the+view%3A+considered+hazardous!&cts=1775006148204&rv=1&vi=aa4ac344673e67f540a3e9b67f5b062d&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

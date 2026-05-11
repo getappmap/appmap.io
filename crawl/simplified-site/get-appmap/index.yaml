@@ -1,0 +1,352 @@
+tag: body
+children:
+  - tag: div
+    attributes:
+      id: hs-banner-parent
+    children:
+      - tag: div
+        attributes:
+          id: hs-eu-cookie-confirmation
+        children:
+          - tag: div
+            attributes:
+              id: hs-eu-cookie-confirmation-inner
+            children:
+              - tag: div
+                attributes:
+                  id: hs-eu-header-container
+                children:
+                  - tag: button
+                    attributes:
+                      id: hs-eu-close-button
+              - tag: div
+                attributes:
+                  id: hs-eu-policy-wording
+                children:
+                  - tag: p
+                    text: This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to im...
+              - tag: p
+                text: If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
+                attributes:
+                  id: hs-eu-cookie-disclaimer
+              - tag: div
+                attributes:
+                  id: hs-eu-cookie-confirmation-buttons-area
+                children:
+                  - tag: div
+                    attributes:
+                      id: hs-eu-confirmation-button-group
+                    children:
+                      - tag: button
+                        text: Cookies settings
+                        attributes:
+                          id: hs-eu-cookie-settings-button
+                      - tag: div
+                        attributes:
+                          id: hs-eu-opt-in-buttons
+                        children:
+                          - tag: button
+                            text: Accept
+                            attributes:
+                              id: hs-eu-confirmation-button
+                          - tag: button
+                            text: Decline
+                            attributes:
+                              id: hs-eu-decline-button
+  - tag: p
+    children:
+      - tag: b
+        text: To access the latest features
+      - tag: a
+        text: keep your code editor plug-in up to date.
+        attributes:
+          href: /docs/get-started-with-appmap/add-appmap-to-your-code-editor#keep-your-extension-up-to-date
+  - tag: nav
+    children:
+      - tag: a
+        attributes:
+          href: /
+      - tag: button
+        attributes:
+          type: button
+      - tag: div
+        attributes:
+          id: navbarText
+        children:
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Docs
+                    attributes:
+                      href: /docs
+              - tag: li
+                children:
+                  - tag: a
+                    text: Blog
+                    attributes:
+                      href: /blog
+              - tag: li
+                children:
+                  - tag: a
+                    text: Pricing
+                    attributes:
+                      href: /pricing
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Get AppMap
+                    attributes:
+                      href: /get-appmap
+              - tag: li
+                children:
+                  - tag: a
+                    text: Book a Demo
+                    attributes:
+                      id: book-demo-link
+                      href: https://meetings.hubspot.com/dustin294
+  - tag: div
+    attributes:
+      id: home-body
+    children:
+      - tag: section
+        children:
+          - tag: div
+            children:
+              - tag: h1
+                text: Get AppMap
+              - tag: p
+                text: The AppMap extension includes Navie — the state of the art AI software architect with runtime context.
+          - tag: div
+            children:
+              - tag: div
+                children:
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: img
+                            attributes:
+                              src: /assets/img/vscode-icon.svg
+                              alt: Visual Studio Code logo
+                          - tag: span
+                            text: Visual Studio Code
+                      - tag: p
+                        text: AppMap is available in the marketplace as an extenstion for Visual Studio Code. Optionally, you can search for AppMap in the 'Extensions' tab of your code editor.
+                        children:
+                          - tag: a
+                            text: Install via the VS Code marketplace.
+                            attributes:
+                              href: https://marketplace.visualstudio.com/items?itemName=appland.appmap
+                  - tag: img
+                    attributes:
+                      src: /assets/img/vscode-ide.png
+                      alt: AppMap for Visual Studio Code
+              - tag: div
+                children:
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: img
+                            attributes:
+                              src: /assets/img/jetbrains.svg
+                              alt: JetBrains logo
+                          - tag: span
+                            text: JetBrains
+                      - tag: p
+                        text: AppMap is available in the marketplace as a plugin for JetBrains, PyCharm, IntelliJ, WebStorm, and RubyMine. Optionally, you can search for AppMap in the 'Plugins' tab of your code editor.
+                        children:
+                          - tag: a
+                            text: Install via the JetBrains marketplace.
+                            attributes:
+                              href: https://plugins.jetbrains.com/plugin/16701-appmap
+                  - tag: img
+                    attributes:
+                      src: /assets/img/intellij-ide.png
+                      alt: AppMap for JetBrains
+              - tag: div
+                children:
+                  - tag: div
+                    children:
+                      - tag: div
+                        children:
+                          - tag: img
+                            attributes:
+                              src: /assets/img/enterprise-icon.svg
+                              alt: Generic enterprise icon
+                          - tag: span
+                            text: Enterprise Support
+                      - tag: p
+                        text: for advanced runtime analysis features for compliance and security, and administrative controls.
+                        children:
+                          - tag: a
+                            text: Contact us
+                            attributes:
+                              href: /contact/sales
+                      - tag: ul
+                        children:
+                          - tag: li
+                            text: AppMap Service Deployment
+                          - tag: li
+                            text: Integration Support
+                          - tag: li
+                            text: Custom Security & Performance Scans
+                          - tag: li
+                            text: Enterprise SSO
+                          - tag: li
+                            text: Priority Support
+                  - tag: a
+                    text: Book a Demo
+                    attributes:
+                      id: book-demo-button
+                      href: https://meetings.hubspot.com/dustin294
+          - tag: div
+            text: By downloading and using AppMap you agree to the
+            children:
+              - tag: a
+                text: terms and conditions.
+                attributes:
+                  href: /community/terms-and-conditions.html
+  - tag: div
+    children:
+      - tag: footer
+        children:
+          - tag: div
+            children:
+              - tag: h5
+                text: Docs
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Get Started
+                        attributes:
+                          href: /docs/get-started-with-appmap/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Using Navie
+                        attributes:
+                          href: /docs/navie
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Troubleshooting
+                        attributes:
+                          href: /docs/troubleshooting
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Reference
+                        attributes:
+                          href: /docs/reference
+          - tag: div
+            children:
+              - tag: h5
+                text: Product
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Security FAQ
+                        attributes:
+                          href: /security
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Pricing
+                        attributes:
+                          href: /pricing
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Terms
+                        attributes:
+                          href: /community/terms-and-conditions.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Privacy Policy
+                        attributes:
+                          href: /community/privacy-policy
+          - tag: div
+            children:
+              - tag: h5
+                text: Company
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: About
+                        attributes:
+                          href: /company/about-appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Careers
+                        attributes:
+                          href: https://angel.co/company/appmap/jobs
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Contact
+                        attributes:
+                          href: /contact/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Brand Assets
+                        attributes:
+                          href: /company/brand-assets
+          - tag: div
+            children:
+              - tag: h5
+                text: Community
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: X
+                        attributes:
+                          href: https://twitter.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Slack
+                        attributes:
+                          href: https://appmap.io/slack
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: GitHub
+                        attributes:
+                          href: https://github.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Code of Conduct
+                        attributes:
+                          href: /community/code-of-conduct.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: YouTube
+                        attributes:
+                          href: https://www.youtube.com/@appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Blog
+                        attributes:
+                          href: /blog
+  - tag: iframe
+    attributes:
+      title: archetype

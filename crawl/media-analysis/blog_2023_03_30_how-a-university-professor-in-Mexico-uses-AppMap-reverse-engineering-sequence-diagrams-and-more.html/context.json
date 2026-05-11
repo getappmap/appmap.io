@@ -1,0 +1,177 @@
+{
+  "timestamp": "2026-04-01T01:34:31.439Z",
+  "crawlDirectory": "crawl/site/blog/2023/03/30/how-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 17,
+  "foundAssets": 4,
+  "notFoundAssets": 13,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2023/03/30/how-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/raising-hand-in-class.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/raising-hand-in-class.webp",
+          "foundInFile": "crawl/site/blog/2023/03/30/how-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/03/30/how-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-di...ising-hand-in-class.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-03-30T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/raising-hand-in-class.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | How a university professor in Mexico uses AppMap: Reverse engineering, sequence diagrams, and more\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://f"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/raising-hand-in-class.webp",
+          "foundInFile": "crawl/site/blog/2023/03/30/how-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/03/30/how-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-di...ising-hand-in-class.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-03-30T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/raising-hand-in-class.webp",
+            "alt": "How a university professor in Mexico uses AppMap: Reverse engineering, sequence diagrams, and more",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  How a university professor in Mexico uses AppMap: Reverse engineering, sequence diagrams, and more\n  \n    Ricardo has been a professor of Software Maintenance at the Tecnológico de Culia"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/ricardo.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/ricardo.jpg",
+          "foundInFile": "crawl/site/blog/2023/03/30/how-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more/index.html",
+          "context": "    <p>Ricardo has been a professor of Software Maintenance at the <a href=\"https://www.culiacan.tecnm.mx\">Tecnológico de Culiacán</a> in Mexico fo...jpg\" class=\"headshot\" alt=\"professor Ricardo\"></p>\n\n<p>In this interview, learn more about how he and his students use AppMap in the classroom.</p>",
+          "lineNumber": 169,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/ricardo.jpg",
+            "class": "headshot",
+            "alt": "professor Ricardo"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2023/03/30/how-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 223,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more&t=AppMap+%7C+How+a+university+professor+in+Mexico+uses+AppMap%3A+Reverse+engineering%2C+sequence+diagrams%2C+and+more&cts=1775007259727&rv=1&vi=79ffaf9e668f974c2f49d9b7f4873b72&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://syndication.twitter.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A1775007260393%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22tweet%22%2C%22action%22%3A%22results%22%2C%22section%22%3A%22main%22%7D%2C%22context%22%3A%22horizon%22%2C%22client_version%22%3A%222615f7e52b7e0%3A1702314776716%22%2C%22dnt%22%3Afalse%2C%22widget_id%22%3A%22twitter-widget-1%22%2C%22widget_origin%22%3A%22https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F%22%2C%22widget_frame%22%3A%22false%22%2C%22widget_partner%22%3A%22%22%2C%22widget_site_screen_name%22%3A%22getappmap%22%2C%22widget_site_user_id%22%3A%22%22%2C%22widget_creator_screen_name%22%3A%22JenWikeHuger%22%2C%22widget_creator_user_id%22%3A%22%22%2C%22widget_iframe_version%22%3A%22219f5079ae46e%3A1761525987824%22%2C%22item_ids%22%3A%5B%221638964842194169888%22%5D%2C%22item_details%22%3A%7B%221638964842194169888%22%3A%7B%22item_type%22%3A0%7D%7D%7D",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://pbs.twimg.com/profile_images/484491306282930177/sMpOZbpz_normal.jpeg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://pbs.twimg.com/media/Fr7F1qmWcAwM7y6?format=jpg&name=240x240",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://pbs.twimg.com/media/Fr7F1qmWcAwM7y6?format=jpg&name=small",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://syndication.twitter.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A1775007260579%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22tweet%22%2C%22action%22%3A%22FCP%22%2C%22component%22%3A%22performance%22%2C%22section%22%3A%22main%22%7D%2C%22context%22%3A%22horizon%22%2C%22client_version%22%3A%222615f7e52b7e0%3A1702314776716%22%2C%22dnt%22%3Afalse%2C%22widget_id%22%3A%22twitter-widget-1%22%2C%22widget_origin%22%3A%22https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F%22%2C%22widget_frame%22%3A%22false%22%2C%22widget_partner%22%3A%22%22%2C%22widget_site_screen_name%22%3A%22getappmap%22%2C%22widget_site_user_id%22%3A%22%22%2C%22widget_creator_screen_name%22%3A%22JenWikeHuger%22%2C%22widget_creator_user_id%22%3A%22%22%2C%22widget_iframe_version%22%3A%22219f5079ae46e%3A1761525987824%22%2C%22item_ids%22%3A%5B%221638964842194169888%22%5D%2C%22item_details%22%3A%7B%221638964842194169888%22%3A%7B%22item_type%22%3A0%7D%7D%2C%22duration_ms%22%3A728%7D",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://syndication.twitter.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A1775007260687%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22tweet%22%2C%22action%22%3A%22results%22%2C%22section%22%3A%22main%22%7D%2C%22context%22%3A%22horizon%22%2C%22client_version%22%3A%222615f7e52b7e0%3A1702314776716%22%2C%22dnt%22%3Afalse%2C%22widget_id%22%3A%22twitter-widget-0%22%2C%22widget_origin%22%3A%22https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F%22%2C%22widget_frame%22%3A%22false%22%2C%22widget_partner%22%3A%22%22%2C%22widget_site_screen_name%22%3A%22getappmap%22%2C%22widget_site_user_id%22%3A%22%22%2C%22widget_creator_screen_name%22%3A%22JenWikeHuger%22%2C%22widget_creator_user_id%22%3A%22%22%2C%22widget_iframe_version%22%3A%22219f5079ae46e%3A1761525987824%22%2C%22item_ids%22%3A%5B%221638965747241168896%22%5D%2C%22item_details%22%3A%7B%221638965747241168896%22%3A%7B%22item_type%22%3A0%7D%7D%7D",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://pbs.twimg.com/media/Fr7GqTNWIAE77Az?format=jpg&name=240x240",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://pbs.twimg.com/media/Fr7GqTNWIAE77Az?format=jpg&name=small",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://syndication.twitter.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A1775007260862%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22tweet%22%2C%22action%22%3A%22FCP%22%2C%22component%22%3A%22performance%22%2C%22section%22%3A%22main%22%7D%2C%22context%22%3A%22horizon%22%2C%22client_version%22%3A%222615f7e52b7e0%3A1702314776716%22%2C%22dnt%22%3Afalse%2C%22widget_id%22%3A%22twitter-widget-0%22%2C%22widget_origin%22%3A%22https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F%22%2C%22widget_frame%22%3A%22false%22%2C%22widget_partner%22%3A%22%22%2C%22widget_site_screen_name%22%3A%22getappmap%22%2C%22widget_site_user_id%22%3A%22%22%2C%22widget_creator_screen_name%22%3A%22JenWikeHuger%22%2C%22widget_creator_user_id%22%3A%22%22%2C%22widget_iframe_version%22%3A%22219f5079ae46e%3A1761525987824%22%2C%22item_ids%22%3A%5B%221638965747241168896%22%5D%2C%22item_details%22%3A%7B%221638965747241168896%22%3A%7B%22item_type%22%3A0%7D%7D%2C%22duration_ms%22%3A1012%7D",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://syndication.twitter.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A1775007262957%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22tweet%22%2C%22action%22%3A%22impression%22%2C%22section%22%3A%22main%22%7D%2C%22context%22%3A%22horizon%22%2C%22client_version%22%3A%222615f7e52b7e0%3A1702314776716%22%2C%22dnt%22%3Afalse%2C%22widget_id%22%3A%22twitter-widget-0%22%2C%22widget_origin%22%3A%22https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F%22%2C%22widget_frame%22%3A%22false%22%2C%22widget_partner%22%3A%22%22%2C%22widget_site_screen_name%22%3A%22getappmap%22%2C%22widget_site_user_id%22%3A%22%22%2C%22widget_creator_screen_name%22%3A%22JenWikeHuger%22%2C%22widget_creator_user_id%22%3A%22%22%2C%22widget_iframe_version%22%3A%22219f5079ae46e%3A1761525987824%22%2C%22item_ids%22%3A%5B%221638965747241168896%22%5D%2C%22item_details%22%3A%7B%221638965747241168896%22%3A%7B%22item_type%22%3A0%7D%7D%7D",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://syndication.twitter.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A1775007263458%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22tweet%22%2C%22action%22%3A%22impression%22%2C%22section%22%3A%22main%22%7D%2C%22context%22%3A%22horizon%22%2C%22client_version%22%3A%222615f7e52b7e0%3A1702314776716%22%2C%22dnt%22%3Afalse%2C%22widget_id%22%3A%22twitter-widget-1%22%2C%22widget_origin%22%3A%22https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F%22%2C%22widget_frame%22%3A%22false%22%2C%22widget_partner%22%3A%22%22%2C%22widget_site_screen_name%22%3A%22getappmap%22%2C%22widget_site_user_id%22%3A%22%22%2C%22widget_creator_screen_name%22%3A%22JenWikeHuger%22%2C%22widget_creator_user_id%22%3A%22%22%2C%22widget_iframe_version%22%3A%22219f5079ae46e%3A1761525987824%22%2C%22item_ids%22%3A%5B%221638964842194169888%22%5D%2C%22item_details%22%3A%7B%221638964842194169888%22%3A%7B%22item_type%22%3A0%7D%7D%7D",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://syndication.twitter.com/i/jot/embeds?l=%7B%22_category_%22%3A%22tfw_client_event%22%2C%22triggered_on%22%3A1775007263958%2C%22event_namespace%22%3A%7B%22client%22%3A%22tfw%22%2C%22page%22%3A%22tweet%22%2C%22action%22%3A%22seen%22%2C%22section%22%3A%22main%22%2C%22component%22%3A%22privacy-notice%22%7D%2C%22context%22%3A%22horizon%22%2C%22client_version%22%3A%222615f7e52b7e0%3A1702314776716%22%2C%22dnt%22%3Afalse%2C%22widget_id%22%3A%22twitter-widget-1%22%2C%22widget_origin%22%3A%22https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F03%2F30%2Fhow-a-university-professor-in-Mexico-uses-AppMap-reverse-engineering-sequence-diagrams-and-more%2F%22%2C%22widget_frame%22%3A%22false%22%2C%22widget_partner%22%3A%22%22%2C%22widget_site_screen_name%22%3A%22getappmap%22%2C%22widget_site_user_id%22%3A%22%22%2C%22widget_creator_screen_name%22%3A%22JenWikeHuger%22%2C%22widget_creator_user_id%22%3A%22%22%2C%22widget_iframe_version%22%3A%22219f5079ae46e%3A1761525987824%22%2C%22item_ids%22%3A%5B%221638964842194169888%22%5D%2C%22item_details%22%3A%7B%221638964842194169888%22%3A%7B%22item_type%22%3A0%7D%7D%7D",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

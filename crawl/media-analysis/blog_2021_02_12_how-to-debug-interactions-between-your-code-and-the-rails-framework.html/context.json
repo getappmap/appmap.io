@@ -1,0 +1,138 @@
+{
+  "timestamp": "2026-04-01T01:17:51.444Z",
+  "crawlDirectory": "crawl/site/blog/2021/02/12/how-to-debug-interactions-between-your-code-and-the-rails-framework/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 10,
+  "foundAssets": 4,
+  "notFoundAssets": 6,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/12/how-to-debug-interactions-between-your-code-and-the-rails-framework/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/pre-debugging-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/pre-debugging-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/02/12/how-to-debug-interactions-between-your-code-and-the-rails-framework/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/12/how-to-debug-interactions-between-your-code-and-the-rails-framework/\">\n<meta pro...e-debugging-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-12T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/pre-debugging-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | How to debug interactions between your code and the Rails framework (and other gems)\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/pre-debugging-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/02/12/how-to-debug-interactions-between-your-code-and-the-rails-framework/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/12/how-to-debug-interactions-between-your-code-and-the-rails-framework/\">\n<meta pro...e-debugging-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-12T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/pre-debugging-feature.webp",
+            "alt": "How to debug interactions between your code and the Rails framework (and other gems)",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  How to debug interactions between your code and the Rails framework (and other gems)\n  \n    Rails + Your Code = ❤️. Most of the time!\n\nThe one criticism that sticks to the Rails framewor"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://vscode-appmap.s3.us-east-2.amazonaws.com/media/AppMap+extension+for+VSCode+-+quick+and+easy+setup.gif",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://vscode-appmap.s3.us-east-2.amazonaws.com/media/AppMap+extension+for+VSCode+-+quick+and+easy+setup.gif",
+          "foundInFile": "crawl/site/blog/2021/02/12/how-to-debug-interactions-between-your-code-and-the-rails-framework/index.html",
+          "context": "<p>We will be using a an open source tool called <a href=\"http://bit.ly/appmap-vscode\">AppMap for VSCode</a> (disclaimer: I’m an AppMap developer)....id=\"1-install-and-configure-the-appmap-gem\">1. Install and configure the <code class=\" highlighter-rouge language-plaintext\">appmap</code> gem</h2>",
+          "lineNumber": 177,
+          "elementType": "img",
+          "attributes": {
+            "src": "https://vscode-appmap.s3.us-east-2.amazonaws.com/media/AppMap+extension+for+VSCode+-+quick+and+easy+setup.gif",
+            "alt": "Install appmap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 122
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/12/how-to-debug-interactions-between-your-code-and-the-rails-framework/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 291,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.ytimg.com/vi/7bYCe5DnAR4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AGaBoAC4AOKAgwIABABGCkgTCh_MA8=&rs=AOn4CLCs-QNMdh-9wJYO4ZGXlOkEA8yznA",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.ytimg.com/vi/gE50vG7e_bs/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AGaBoAC4AOKAgwIABABGGUgQChOMA8=&rs=AOn4CLCbRUjaY9RlknZ1JtEhi4uQt3vc_g",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F12%2Fhow-to-debug-interactions-between-your-code-and-the-rails-framework%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F12%2Fhow-to-debug-interactions-between-your-code-and-the-rails-framework&t=AppMap+%7C+How+to+debug+interactions+between+your+code+and+the+Rails+framework+(and+other+gems)&cts=1775006260140&rv=1&vi=0d27ca5f879ef57eff556b9b2801f0e1&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://www.youtube.com/generate_204?MCT0iA",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://www.youtube.com/generate_204?qpKb_g",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://yt3.ggpht.com/ytc/AIdro_mE-3IpGU62tduKPV6wudyFDlSLi_97peCW_-v5B1g=s68-c-k-c0x00ffffff-no-rj",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

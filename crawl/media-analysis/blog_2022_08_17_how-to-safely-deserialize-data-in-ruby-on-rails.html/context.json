@@ -1,0 +1,313 @@
+{
+  "timestamp": "2026-04-01T01:32:07.897Z",
+  "crawlDirectory": "crawl/site/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 15,
+  "foundAssets": 12,
+  "notFoundAssets": 3,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/deserialize-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/deserialize-feature.webp",
+          "foundInFile": "crawl/site/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/\">\n<meta property=\"og:site_name\"...deserialize-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2022-08-17T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/deserialize-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | How to Safely Deserialize Data in Ruby on Rails\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/deserialize-feature.webp",
+          "foundInFile": "crawl/site/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/\">\n<meta property=\"og:site_name\"...deserialize-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2022-08-17T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/deserialize-feature.webp",
+            "alt": "How to Safely Deserialize Data in Ruby on Rails",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  How to Safely Deserialize Data in Ruby on Rails\n  \n    \n\nSerialization is a way of taking data and storing it or transferring data to other systems, machines, or applications. Deserializ"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-1.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-1.png",
+          "foundInFile": "crawl/site/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/index.html",
+          "context": "<p>You can also use the VS Code extension and select on a record button or use the command palette to start a remote recording.</p>\n\n<p><img src=\"/...\" class=\"no-border-margin\">\n<img src=\"/assets/img/posts/safely-deserialize-data-2.png\" alt=\"safely deserialize data\" class=\"no-border-margin\"></p>\n",
+          "lineNumber": 219,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/safely-deserialize-data-1.png",
+            "alt": "safely deserialize data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "\n",
+          "columnRange": {
+            "start": 13,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-2.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-2.png",
+          "foundInFile": "crawl/site/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/index.html",
+          "context": "\n<p><img src=\"/assets/img/posts/safely-deserialize-data-1.png\" alt=\"safely deserialize data\" class=\"no-border-margin\">\n<img src=\"/assets/img/posts/...ing, we’ll enter the URL where our application is running, either localhost if you forwarded a port or the IP address of your docker container.</p>",
+          "lineNumber": 220,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/safely-deserialize-data-2.png",
+            "alt": "safely deserialize data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "\n",
+          "columnRange": {
+            "start": 10,
+            "end": 57
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-3.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-3.png",
+          "foundInFile": "crawl/site/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/index.html",
+          "context": "<p>When we use either of those ways to kick off a remote recording, we’ll enter the URL where our application is running, either localhost if you f...et flow. It’s important to keep your remote recordings specific towards a single user interaction, and keep them from growing needlessly large.</p>",
+          "lineNumber": 224,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/safely-deserialize-data-3.png",
+            "alt": "safely deserialize data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-4.jpg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-4.jpg",
+          "foundInFile": "crawl/site/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/index.html",
+          "context": "<p>With recording starting I will navigate through the user password reset flow. It’s important to keep your remote recordings specific towards a s...top the AppMap recording, and will enter a name for the AppMap we recorded, calling it “User Password Reset”, then the AppMap opens in VS Code.</p>",
+          "lineNumber": 228,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/safely-deserialize-data-4.jpg",
+            "alt": "safely deserialize data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-5.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-5.png",
+          "foundInFile": "crawl/site/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/index.html",
+          "context": "<p>Going back to VS Code I’ll stop the AppMap recording, and will enter a name for the AppMap we recorded, calling it “User Password Reset”, then t...\" class=\"no-border-margin\">\n<img src=\"/assets/img/posts/safely-deserialize-data-6.png\" alt=\"safely deserialize data\" class=\"no-border-margin\"></p>\n",
+          "lineNumber": 232,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/safely-deserialize-data-5.png",
+            "alt": "safely deserialize data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "\n",
+          "columnRange": {
+            "start": 13,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-6.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-6.png",
+          "foundInFile": "crawl/site/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/index.html",
+          "context": "\n<p><img src=\"/assets/img/posts/safely-deserialize-data-5.png\" alt=\"safely deserialize data\" class=\"no-border-margin\">\n<img src=\"/assets/img/posts/... access here</a>) locating our security issue. A deserialization of untrusted data, which would allow an attacker to exploit my web application</p>",
+          "lineNumber": 233,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/safely-deserialize-data-6.png",
+            "alt": "safely deserialize data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "\n",
+          "columnRange": {
+            "start": 10,
+            "end": 57
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-7.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-7.png",
+          "foundInFile": "crawl/site/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/index.html",
+          "context": "<p>The AppMap will be instantly scanned with AppMap Analysis (<a href=\"https://appland.com/appmap-analysis\">You can enable early access here</a>) l...king on the issue, I’ll get taken to the trace view in the AppMap where this issue occurs, I can see the parameters sent and the return values.</p>",
+          "lineNumber": 237,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/safely-deserialize-data-7.png",
+            "alt": "safely deserialize data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-8.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-8.png",
+          "foundInFile": "crawl/site/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/index.html",
+          "context": "<p>By clicking on the issue, I’ll get taken to the trace view in the AppMap where this issue occurs, I can see the parameters sent and the return v...age-plaintext\">PasswordResetsController#reset_password</code> function and I can navigate directly to that line of code from inside the AppMap.</p>",
+          "lineNumber": 241,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/safely-deserialize-data-8.png",
+            "alt": "safely deserialize data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-9.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/safely-deserialize-data-9.png",
+          "foundInFile": "crawl/site/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/index.html",
+          "context": "<p>From here we can see the code that calls this method call is the <code class=\" highlighter-rouge language-plaintext\">PasswordResetsController#re...ttps://github.com/OWASP/railsgoat/wiki/Extras:-Remote-Code-Execution\">According to the OWASP Railsgoat project</a> the issue with this code is:</p>",
+          "lineNumber": 245,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/safely-deserialize-data-9.png",
+            "alt": "safely deserialize data",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 60
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2022/08/17/how-to-safely-deserialize-data-in-ruby-on-rails/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 295,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803456111-d374c5abba07c0e958351c578ed1e194a0f2fe3802980d4a587a71f1e45dd8f2-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2022%2F08%2F17%2Fhow-to-safely-deserialize-data-in-ruby-on-rails%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2022%2F08%2F17%2Fhow-to-safely-deserialize-data-in-ruby-on-rails&t=AppMap+%7C+How+to+Safely+Deserialize+Data+in+Ruby+on+Rails&cts=1775007114594&rv=1&vi=b1bd1b0e50c7cbf9b816a6568cd4382b&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803456111-d374c5abba07c0e958351c578ed1e194a0f2fe3802980d4a587a71f1e45dd8f2-d?mw=800&mh=450",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

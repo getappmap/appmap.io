@@ -1,0 +1,105 @@
+{
+  "timestamp": "2026-04-01T01:30:07.010Z",
+  "crawlDirectory": "crawl/site/blog/2021/10/26/career-insights-from-a-developer-turned-cto-turned-vc/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 5,
+  "foundAssets": 4,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/10/26/career-insights-from-a-developer-turned-cto-turned-vc/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/bob-profile-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/bob-profile-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/10/26/career-insights-from-a-developer-turned-cto-turned-vc/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/10/26/career-insights-from-a-developer-turned-cto-turned-vc/\">\n<meta property=\"og:site...bob-profile-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-10-26T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/bob-profile-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Career Insights from a Developer-turned-CTO-turned-VC\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontaweso"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/bob-profile-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/10/26/career-insights-from-a-developer-turned-cto-turned-vc/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/10/26/career-insights-from-a-developer-turned-cto-turned-vc/\">\n<meta property=\"og:site...bob-profile-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-10-26T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/bob-profile-feature.webp",
+            "alt": "Career Insights from a Developer-turned-CTO-turned-VC",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Career Insights from a Developer-turned-CTO-turned-VC\n  \n    If you’re in the Boston startup scene, chances are you know Bob Mason. He’s the ultimate friend to founders, particularly hig"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/bob-doggo.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/bob-doggo.webp",
+          "foundInFile": "crawl/site/blog/2021/10/26/career-insights-from-a-developer-turned-cto-turned-vc/index.html",
+          "context": "<p>I also still lean on the scientific method in my work today. I’m always thinking, “Ok, this is what our baseline is, this is what we’re going to...I’ll never forget it.</p>\n\n<p><img src=\"/assets/img/posts/bob-doggo.webp\" alt=\"Bob hiking\" class=\"no-border-margin\"></p>\n\n<p>Thank you, Bob! 🤗</p>",
+          "lineNumber": 208,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/bob-doggo.webp",
+            "alt": "Bob hiking",
+            "class": "no-border-margin"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/10/26/career-insights-from-a-developer-turned-cto-turned-vc/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 236,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F10%2F26%2Fcareer-insights-from-a-developer-turned-cto-turned-vc%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F10%2F26%2Fcareer-insights-from-a-developer-turned-cto-turned-vc&t=AppMap+%7C+Career+Insights+from+a+Developer-turned-CTO-turned-VC&cts=1775006996139&rv=1&vi=af3a3352880e758d62069808e450326d&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

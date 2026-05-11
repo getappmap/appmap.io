@@ -1,0 +1,135 @@
+{
+  "timestamp": "2026-04-01T01:37:56.803Z",
+  "crawlDirectory": "crawl/site/blog/2023/07/31/introducing-flame-graphs/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 8,
+  "foundAssets": 5,
+  "notFoundAssets": 3,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2023/07/31/introducing-flame-graphs/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/flamegraph-intro-feature.jpg",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/flamegraph-intro-feature.jpg",
+          "foundInFile": "crawl/site/blog/2023/07/31/introducing-flame-graphs/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/07/31/introducing-flame-graphs/\">\n<meta property=\"og:site_name\" content=\"AppMap\">\n<met...egraph-intro-feature.jpg\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-07-31T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/flamegraph-intro-feature.jpg"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Introducing Flame graphs: It’s getting hot in here\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome."
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/flamegraph-intro-feature.jpg",
+          "foundInFile": "crawl/site/blog/2023/07/31/introducing-flame-graphs/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/07/31/introducing-flame-graphs/\">\n<meta property=\"og:site_name\" content=\"AppMap\">\n<met...egraph-intro-feature.jpg\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-07-31T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/flamegraph-intro-feature.jpg",
+            "alt": "Introducing Flame graphs: It’s getting hot in here",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Introducing Flame graphs: It’s getting hot in here\n  \n    Flame graphs help developers identify code bottlenecks and understand code execution patterns, so we’re excited to announce they"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/flamegraph-intro-1.jpeg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/flamegraph-intro-1.jpeg",
+          "foundInFile": "crawl/site/blog/2023/07/31/introducing-flame-graphs/index.html",
+          "context": "<p>Flame Graphs reveal crucial insights about application performance. Each function in the graph is labeled with its corresponding execution time ...support call, shedding light on the execution flow. This level of granularity empowers developers to tackle complex performance issues head-on.</p>",
+          "lineNumber": 200,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/flamegraph-intro-1.jpeg",
+            "alt": "AppMap flame graph"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/flamegraph-intro-2.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/flamegraph-intro-2.png",
+          "foundInFile": "crawl/site/blog/2023/07/31/introducing-flame-graphs/index.html",
+          "context": "<p>By examining the graph, developers can detect common issues like N+1 queries, a notorious problem in application development. The ability to vis...ency. The graph’s tally of execution times offers a comprehensive overview, ensuring developers can focus their efforts where they matter most.</p>",
+          "lineNumber": 208,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/flamegraph-intro-2.png",
+            "alt": "AppMap flame graph"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2023/07/31/introducing-flame-graphs/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 251,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803456560-05012c331e27e6e9f71b25140526b706e92a1ba1fc419291b3ec5557253fdc8f-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803456560-05012c331e27e6e9f71b25140526b706e92a1ba1fc419291b3ec5557253fdc8f-d?mw=800&mh=492",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F07%2F31%2Fintroducing-flame-graphs%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F07%2F31%2Fintroducing-flame-graphs&t=AppMap+%7C+Introducing+Flame+graphs%3A+It%E2%80%99s+getting+hot+in+here&cts=1775007466351&rv=1&vi=d9b197370fd603d1e1f2296e3f4ac58c&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

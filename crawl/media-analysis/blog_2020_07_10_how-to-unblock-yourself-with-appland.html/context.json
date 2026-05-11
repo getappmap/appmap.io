@@ -1,0 +1,223 @@
+{
+  "timestamp": "2026-04-01T01:14:30.852Z",
+  "crawlDirectory": "crawl/site/blog/2020/07/10/how-to-unblock-yourself-with-appland/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 10,
+  "foundAssets": 9,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2020/07/10/how-to-unblock-yourself-with-appland/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/unblock-yourself-illo.svg",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/unblock-yourself-illo.svg",
+          "foundInFile": "crawl/site/blog/2020/07/10/how-to-unblock-yourself-with-appland/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2020/07/10/how-to-unblock-yourself-with-appland/\">\n<meta property=\"og:site_name\" content=\"A...nblock-yourself-illo.svg\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2020-07-10T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/unblock-yourself-illo.svg"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | How to unblock yourself with AppMap\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license/fre"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/unblock-yourself-illo.svg",
+          "foundInFile": "crawl/site/blog/2020/07/10/how-to-unblock-yourself-with-appland/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2020/07/10/how-to-unblock-yourself-with-appland/\">\n<meta property=\"og:site_name\" content=\"A...nblock-yourself-illo.svg\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2020-07-10T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/unblock-yourself-illo.svg",
+            "alt": "How to unblock yourself with AppMap",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  How to unblock yourself with AppMap\n  \n    I was recently answering a question on StackOverflow when I began to think about a really common problem which is evident among the questions p"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/how-to-unblock-yourself-with-appland/configuration.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/how-to-unblock-yourself-with-appland/configuration.webp",
+          "foundInFile": "crawl/site/blog/2020/07/10/how-to-unblock-yourself-with-appland/index.html",
+          "context": "    <p><a href=\"https://app.land/scenarios/00087d38-6555-46e8-b713-f1c66615a742#event=6&amp;filterShow=sql_select%2Csql_insert%2Csql_update%2Ctrivi...D\">Configuration</a></p>\n\n    <p><img src=\"/images/how-to-unblock-yourself-with-appland/configuration.webp\" alt=\"Configuration\"></p>\n  </li>\n  <li>",
+          "lineNumber": 190,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/how-to-unblock-yourself-with-appland/configuration.webp",
+            "alt": "Configuration"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 17,
+            "end": 80
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/how-to-unblock-yourself-with-appland/host-keys.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/how-to-unblock-yourself-with-appland/host-keys.webp",
+          "foundInFile": "crawl/site/blog/2020/07/10/how-to-unblock-yourself-with-appland/index.html",
+          "context": "    <p><a href=\"https://app.land/scenarios/00087d38-6555-46e8-b713-f1c66615a742#event=6&amp;filterShow=sql_select%2Csql_insert%2Csql_update%2Ctrivi...oading host keys</a></p>\n\n    <p><img src=\"/images/how-to-unblock-yourself-with-appland/host-keys.webp\" alt=\"Loading host keys\"></p>\n  </li>\n  <li>",
+          "lineNumber": 195,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/how-to-unblock-yourself-with-appland/host-keys.webp",
+            "alt": "Loading host keys"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 17,
+            "end": 76
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/how-to-unblock-yourself-with-appland/startup-message.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/how-to-unblock-yourself-with-appland/startup-message.webp",
+          "foundInFile": "crawl/site/blog/2020/07/10/how-to-unblock-yourself-with-appland/index.html",
+          "context": "    <p><a href=\"https://app.land/scenarios/00087d38-6555-46e8-b713-f1c66615a742#event=150&amp;filterShow=sql_select%2Csql_insert%2Csql_update%2Ctri...rtup message</a></p>\n\n    <p><img src=\"/images/how-to-unblock-yourself-with-appland/startup-message.webp\" alt=\"Startup message\"></p>\n  </li>\n  <li>",
+          "lineNumber": 200,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/how-to-unblock-yourself-with-appland/startup-message.webp",
+            "alt": "Startup message"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 17,
+            "end": 82
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/how-to-unblock-yourself-with-appland/authentication.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/how-to-unblock-yourself-with-appland/authentication.webp",
+          "foundInFile": "crawl/site/blog/2020/07/10/how-to-unblock-yourself-with-appland/index.html",
+          "context": "    <p><a href=\"https://app.land/scenarios/00087d38-6555-46e8-b713-f1c66615a742#event=1286&amp;filterShow=sql_select%2Csql_insert%2Csql_update%2Ctr...key, and password]</p>\n\n    <p><img src=\"/images/how-to-unblock-yourself-with-appland/authentication.webp\" alt=\"Authentication\"></p>\n  </li>\n  <li>",
+          "lineNumber": 205,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/how-to-unblock-yourself-with-appland/authentication.webp",
+            "alt": "Authentication"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 17,
+            "end": 81
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/how-to-unblock-yourself-with-appland/command-execution.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/how-to-unblock-yourself-with-appland/command-execution.webp",
+          "foundInFile": "crawl/site/blog/2020/07/10/how-to-unblock-yourself-with-appland/index.html",
+          "context": "    <p><a href=\"https://app.land/scenarios/00087d38-6555-46e8-b713-f1c66615a742#event=2536&amp;filterShow=sql_select%2Csql_insert%2Csql_update%2Ctr...interactive)</p>\n\n    <p><img src=\"/images/how-to-unblock-yourself-with-appland/command-execution.webp\" alt=\"Command execution\"></p>\n  </li>\n  <li>",
+          "lineNumber": 210,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/how-to-unblock-yourself-with-appland/command-execution.webp",
+            "alt": "Command execution"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 17,
+            "end": 84
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/how-to-unblock-yourself-with-appland/closing-the-session.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/how-to-unblock-yourself-with-appland/closing-the-session.webp",
+          "foundInFile": "crawl/site/blog/2020/07/10/how-to-unblock-yourself-with-appland/index.html",
+          "context": "    <p><a href=\"https://app.land/scenarios/00087d38-6555-46e8-b713-f1c66615a742#event=7254&amp;filterShow=sql_select%2Csql_insert%2Csql_update%2Ctr...ssion</a></p>\n\n    <p><img src=\"/images/how-to-unblock-yourself-with-appland/closing-the-session.webp\" alt=\"Closing the session\"></p>\n  </li>\n</ol>",
+          "lineNumber": 215,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/how-to-unblock-yourself-with-appland/closing-the-session.webp",
+            "alt": "Closing the session"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 17,
+            "end": 86
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2020/07/10/how-to-unblock-yourself-with-appland/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 244,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2020%2F07%2F10%2Fhow-to-unblock-yourself-with-appland%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2020%2F07%2F10%2Fhow-to-unblock-yourself-with-appland&t=AppMap+%7C+How+to+unblock+yourself+with+AppMap&cts=1775006060259&rv=1&vi=9cb36f0815694019aa321cc5237768f1&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

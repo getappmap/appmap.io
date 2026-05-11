@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-04-01T01:17:37.068Z",
+  "crawlDirectory": "crawl/site/blog/2021/02/11/there-are-things-about-whiteboards-that-i-dont-miss/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 5,
+  "foundAssets": 4,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/11/there-are-things-about-whiteboards-that-i-dont-miss/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/whiteboard.png",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/whiteboard.png",
+          "foundInFile": "crawl/site/blog/2021/02/11/there-are-things-about-whiteboards-that-i-dont-miss/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/11/there-are-things-about-whiteboards-that-i-dont-miss/\">\n<meta property=\"og:site_n...img/posts/whiteboard.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-11T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/whiteboard.png"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | There are things about whiteboards that I don't miss\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesom"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/whiteboard.png",
+          "foundInFile": "crawl/site/blog/2021/02/11/there-are-things-about-whiteboards-that-i-dont-miss/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/11/there-are-things-about-whiteboards-that-i-dont-miss/\">\n<meta property=\"og:site_n...img/posts/whiteboard.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-11T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/whiteboard.png",
+            "alt": "There are things about whiteboards that I don't miss",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  There are things about whiteboards that I don't miss\n  \n    Attempting to drag whiteboard drawings into our remote workflow exposed how they had been slowing us down.\n\nSure, creating a w"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/vscode.gif",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/vscode.gif",
+          "foundInFile": "crawl/site/blog/2021/02/11/there-are-things-about-whiteboards-that-i-dont-miss/index.html",
+          "context": "<p>My team built our own tooling to do just that. It is available as an open source project. If you are Ruby developer feel free to check out our <...-scale-5hg1\">these</a> <a href=\"https://dev.to/kgilpin/unpacking-saml-with-appmaps-and-vscode-1i98\">posts</a> to see how we have been using it.</p>",
+          "lineNumber": 213,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/vscode.gif",
+            "alt": "Alt Text"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/11/there-are-things-about-whiteboards-that-i-dont-miss/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 245,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F11%2Fthere-are-things-about-whiteboards-that-i-dont-miss%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F11%2Fthere-are-things-about-whiteboards-that-i-dont-miss&t=AppMap+%7C+There+are+things+about+whiteboards+that+I+don%27t+miss&cts=1775006247169&rv=1&vi=9087376316f1b7402dc77015bb67b06d&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

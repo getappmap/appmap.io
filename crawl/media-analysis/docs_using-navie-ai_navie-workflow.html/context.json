@@ -1,0 +1,163 @@
+{
+  "timestamp": "2026-04-01T01:56:08.915Z",
+  "crawlDirectory": "crawl/site/docs/using-navie-ai/navie-workflow.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 11,
+  "foundAssets": 6,
+  "notFoundAssets": 5,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-workflow.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-workflow.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 774,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-workflow.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 775,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/command-palette-menu.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/command-palette-menu.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-workflow.html",
+          "context": "<p>To achieve the highest quality results when using Navie, we suggest using the following command modes when prompting Navie. Simply type <code cl...chat input to access the list of available command modes.</p>\n\n<p><img src=\"/assets/img/command-palette-menu.webp\" alt=\"Command Palette\"></p>\n\n<ol>",
+          "lineNumber": 804,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/command-palette-menu.webp",
+            "alt": "Command Palette"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/pinned-context.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/pinned-context.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-workflow.html",
+          "context": "<p><strong>Pin specific data files</strong> to your conversation with Navie to include data sources you know are relevant to the issue. This includ...n code from Navie responses</strong> to your conversation when a Navie response contains code that you want to reference in subsequent prompts.</p>",
+          "lineNumber": 863,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/pinned-context.webp",
+            "alt": "Relevant content pinned to the context window"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 44
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/pin-from-response.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/pin-from-response.webp",
+          "foundInFile": "crawl/site/docs/using-navie-ai/navie-workflow.html",
+          "context": "<p><strong>Pin code from Navie responses</strong> to your conversation when a Navie response contains code that you want to reference in subsequent...de class=\"language-plaintext highlighter-rouge\">@diagram</code> command to create visual explanations of the existing code or proposed changes.</p>",
+          "lineNumber": 867,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/pin-from-response.webp",
+            "alt": "Relevant content pinned to the context window"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 47
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/2037992932-4fc6985bd4f3da85e510483c2dba8d98648cd62bbb4fdd7c153abcbaa4918ffb-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/2037992932-4fc6985bd4f3da85e510483c2dba8d98648cd62bbb4fdd7c153abcbaa4918ffb-d?mw=1000&mh=563",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/portrait/101932382_60x60?sig=7b9de39f7c62046f7a3cd5c3f4ad9659cb954f3bb69af4c69b5b076ced795820&v=1&region=us",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fnavie-workflow.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Fusing-navie-ai%2Fnavie-workflow&t=AppMap+-+Docs+-+AppMap+Navie+-+Navie+Command+Workflow&cts=1775008557795&rv=1&vi=15e465ede3ac7a026943d080208095cf&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "timestamp": "2026-04-01T01:51:20.198Z",
+  "crawlDirectory": "crawl/site/docs/reference/integrations/postman.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 9,
+  "foundAssets": 7,
+  "notFoundAssets": 2,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/postman.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/postman.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 772,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/postman.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 773,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/openapi/postman-1.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/openapi/postman-1.png",
+          "foundInFile": "crawl/site/docs/reference/integrations/postman.html",
+          "context": "<p>To add your OpenAPI definition to Postman start by selecting the <em>Import</em> button found in the top right corner of the Postman UI.</p>\n\n<p... have committed the file to a repository or pushed to a 3rd party API hosting service you can select a code repository or link as the location.</p>",
+          "lineNumber": 799,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/openapi/postman-1.png"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/openapi/postman-2.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/openapi/postman-2.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/postman.html",
+          "context": "<p>Next, select the path to where you saved your OpenAPI definition. Alternatively if you have committed the file to a repository or pushed to a 3r...n-2.webp\"></p>\n\n<p>After Postman validates your OpenAPI definition, you can adjust any advanced settings or accept the default import settings.</p>",
+          "lineNumber": 803,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/openapi/postman-2.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/openapi/postman-3.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/openapi/postman-3.png",
+          "foundInFile": "crawl/site/docs/reference/integrations/postman.html",
+          "context": "<p>After Postman validates your OpenAPI definition, you can adjust any advanced settings or accept the default import settings.</p>\n\n<p><img class=...letes you’ll see a full tree view of your OpenAPI definitions that were generated by AppMap. You can now use Postman to interact with the APIs.</p>",
+          "lineNumber": 807,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/openapi/postman-3.png"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/openapi/postman-4.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/openapi/postman-4.png",
+          "foundInFile": "crawl/site/docs/reference/integrations/postman.html",
+          "context": "<p>After the import completes you’ll see a full tree view of your OpenAPI definitions that were generated by AppMap. You can now use Postman to int...g.postman.com/docs/getting-started/introduction/\">Postman documentation</a> for additional details on using Postman to interact with your APIs.</p>",
+          "lineNumber": 811,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/openapi/postman-4.png"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fintegrations%2Fpostman.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fintegrations%2Fpostman&t=AppMap+-+Docs+-+Integrations+-+Postman&cts=1775008271205&rv=1&vi=bd8f75cd3ff3da96b42b973f891d3852&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

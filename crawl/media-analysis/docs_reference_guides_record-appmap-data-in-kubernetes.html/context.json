@@ -1,0 +1,163 @@
+{
+  "timestamp": "2026-04-01T01:48:33.007Z",
+  "crawlDirectory": "crawl/site/docs/reference/guides/record-appmap-data-in-kubernetes.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 16,
+  "foundAssets": 4,
+  "notFoundAssets": 12,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/record-appmap-data-in-kubernetes.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/record-appmap-data-in-kubernetes.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 772,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/record-appmap-data-in-kubernetes.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 773,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/appmap-kubernetes-minikube.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/appmap-kubernetes-minikube.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/record-appmap-data-in-kubernetes.html",
+          "context": "<h3 id=\"appmap-and-minikube-architecture\">AppMap and minikube Architecture</h3>\n\n<p><img src=\"/assets/img/docs/appmap-kubernetes-minikube.webp\" alt=\"AppMap and minikube Architecture\"></p>\n\n<h3 id=\"mount-appmap-data-directory-into-minikube-host\">Mount AppMap Data Directory into minikube Host</h3>",
+          "lineNumber": 827,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/appmap-kubernetes-minikube.webp",
+            "alt": "AppMap and minikube Architecture"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 61
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1946437364-251e02f076581ff45b3fa086948923057dc97aeb934c36812488455b69096820-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1946437364-251e02f076581ff45b3fa086948923057dc97aeb934c36812488455b69096820-d?mw=1000&mh=584",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Frecord-appmap-data-in-kubernetes.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Frecord-appmap-data-in-kubernetes&t=AppMap+-+Docs+-+Guides+-+Record+AppMap+Data+in+Kubernetes&cts=1775008091831&rv=1&vi=35bf4007b90da408a223ac36db33074a&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ee1d8815f07c/1775008092029/TrQrmU9pBr9sXVV",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ee1cee50f07c/1775008091960/H09RqgYr3YWaf-e",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Frecord-appmap-data-in-kubernetes.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Frecord-appmap-data-in-kubernetes&t=AppMap+-+Docs+-+Guides+-+Record+AppMap+Data+in+Kubernetes&cts=1775008096162&rv=1&vi=252de2d783d075970492fa3ca317522f&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ee376b3df07c/1775008096304/_bG2rSacqX-STwV",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ee375b09f07c/1775008096253/q7Rw_kH1cU2HNsz",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ee868b5ff07c/1775008108811/l492wack0y2EKrh",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ee863a8af07c/1775008108766/ljVkmvPSrim_E6_",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

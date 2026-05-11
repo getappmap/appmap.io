@@ -1,0 +1,289 @@
+{
+  "timestamp": "2026-04-01T01:26:22.237Z",
+  "crawlDirectory": "crawl/site/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 14,
+  "foundAssets": 11,
+  "notFoundAssets": 3,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/performance-data-feature.jpg",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/performance-data-feature.jpg",
+          "foundInFile": "crawl/site/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-...ormance-data-feature.jpg\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-08-11T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/performance-data-feature.jpg"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | How to Quickly Identify and Fix Performance Flaws with Open Source, Interactive Code Maps\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesom"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/performance-data-feature.jpg",
+          "foundInFile": "crawl/site/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-...ormance-data-feature.jpg\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-08-11T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/performance-data-feature.jpg",
+            "alt": "How to Quickly Identify and Fix Performance Flaws with Open Source, Interactive Code Maps",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  How to Quickly Identify and Fix Performance Flaws with Open Source, Interactive Code Maps\n  \n    Almost always, the fastest way to address bugs is to first be able to replicate them in y"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-devto-01.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-devto-01.webp",
+          "foundInFile": "crawl/site/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps/index.html",
+          "context": "  <li><code class=\" highlighter-rouge language-plaintext\">00:02</code> It’s been brought to my attention that in our community app, listings of pas.../li>\n  <li><code class=\" highlighter-rouge language-plaintext\">00:39</code> Now let me run the test and see what’s going on in my application code:",
+          "lineNumber": 188,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/perf-data/perf-devto-01.webp",
+            "alt": "perf-devto-01",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "00:22 I’ll use a custom test that will amplify the performance difference between the two cases, simulating fetching and rendering of 1000 meetings. \n",
+          "columnRange": {
+            "start": 10,
+            "end": 56
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-devto-02.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-devto-02.webp",
+          "foundInFile": "crawl/site/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps/index.html",
+          "context": "  <li>To observe the behavior and measure the performance differences, I’m going to use the free and open source framework <a href=\"https://appmap....ture meetings took .16s while past meetings took a lot more time, .42s.</li>\n  <li>Let’s drill down and compare the code flows of the two requests.",
+          "lineNumber": 191,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/perf-data/perf-devto-02.webp",
+            "alt": "perf-devto-02",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "00:39 Now let me run the test and see what’s going on in my application code:\n",
+          "columnRange": {
+            "start": 10,
+            "end": 56
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-devto-03.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-devto-03.webp",
+          "foundInFile": "crawl/site/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps/index.html",
+          "context": "  <li>Now this is interesting, because the future meetings took .16s while past meetings took a lot more time, .42s.</li>\n  <li>Let’s drill down an...ildren vs. 1500 of the second one.</li>\n  <li><code class=\" highlighter-rouge language-plaintext\">01:15</code> Let’s look at the first flow, first.",
+          "lineNumber": 194,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/perf-data/perf-devto-03.webp",
+            "alt": "perf-devto-03",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "Let’s drill down and compare the code flows of the two requests.\n",
+          "columnRange": {
+            "start": 10,
+            "end": 56
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-devto-04.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-devto-04.webp",
+          "foundInFile": "crawl/site/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps/index.html",
+          "context": "  <li>This is a Django app and I can see that the renderer took <strong>.14s</strong> for future and .<strong>40s</strong> for past meetings. I can...\n  <li><code class=\" highlighter-rouge language-plaintext\">01:33</code> Let’s drill down to the second flow, the request to view all past meetings.",
+          "lineNumber": 197,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/perf-data/perf-devto-04.webp",
+            "alt": "perf-devto-04",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "01:15 Let’s look at the first flow, first.\n\nI can see that four SQL commands were executed for the future meetings request: The first lists all future meetings from the table, and the two following SQ",
+          "columnRange": {
+            "start": 10,
+            "end": 56
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-data-2.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-data-2.webp",
+          "foundInFile": "crawl/site/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps/index.html",
+          "context": "  <li><code class=\" highlighter-rouge language-plaintext\">01:33</code> Let’s drill down to the second flow, the request to view all past meetings.\n...calls, causing the observed N+1 problem.\n<img src=\"/assets/img/posts/perf-data/perf-data-5.webp\" alt=\"perf-devto-05\" class=\"no-border-margin\"></li>",
+          "lineNumber": 201,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/perf-data/perf-data-2.webp",
+            "alt": "perf-data-2",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "01:33 Let’s drill down to the second flow, the request to view all past meetings.\nThe second sequence starts with fetching all past meetings. What follows is very different though: The ORM runs three ",
+          "columnRange": {
+            "start": 10,
+            "end": 54
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-data-5.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-data-5.webp",
+          "foundInFile": "crawl/site/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps/index.html",
+          "context": "<img src=\"/assets/img/posts/perf-data/perf-data-2.webp\" alt=\"perf-data-2\" class=\"no-border-margin\"></li>\n  <li><code class=\" highlighter-rouge lang...n unnecessary strain on the database.</li>\n  <li><code class=\" highlighter-rouge language-plaintext\">02:34</code> Let’s fix and run the test again.",
+          "lineNumber": 203,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/perf-data/perf-data-5.webp",
+            "alt": "perf-devto-05",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "02:02 Let’s see what happens in the code that sets up the data entities. A quick glance in the view implementation reveals that the past meetings view lacks the select_related and prefetch_related met",
+          "columnRange": {
+            "start": 10,
+            "end": 54
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-devto-06.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-devto-06.webp",
+          "foundInFile": "crawl/site/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps/index.html",
+          "context": "  </li>\n  <li><code class=\" highlighter-rouge language-plaintext\">02:50</code> And here we can see that with the fix in place, the number of the da...to-06\" class=\"no-border-margin\">\n<img src=\"/assets/img/posts/perf-data/perf-devto-07.webp\" alt=\"perf-devto-07\" class=\"no-border-margin\"></li>\n</ul>",
+          "lineNumber": 220,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/perf-data/perf-devto-06.webp",
+            "alt": "perf-devto-06",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "02:50 And here we can see that with the fix in place, the number of the database queries dropped, and the performance of the past meetings flow has improved dramatically.\n\n",
+          "columnRange": {
+            "start": 10,
+            "end": 56
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-devto-07.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/perf-data/perf-devto-07.webp",
+          "foundInFile": "crawl/site/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps/index.html",
+          "context": "  <li><code class=\" highlighter-rouge language-plaintext\">02:50</code> And here we can see that with the fix in place, the number of the database q...o-06\" class=\"no-border-margin\">\n<img src=\"/assets/img/posts/perf-data/perf-devto-07.webp\" alt=\"perf-devto-07\" class=\"no-border-margin\"></li>\n</ul>\n",
+          "lineNumber": 221,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/perf-data/perf-devto-07.webp",
+            "alt": "perf-devto-07",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "02:50 And here we can see that with the fix in place, the number of the database queries dropped, and the performance of the past meetings flow has improved dramatically.\n\n",
+          "columnRange": {
+            "start": 10,
+            "end": 56
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/08/11/how-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 251,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/23bc4cda5f924ae1b0653523337af252-00001.jpg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/23bc4cda5f924ae1b0653523337af252-00001.mp4",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F11%2Fhow-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F11%2Fhow-to-quickly-identify-anmd-fix-performance-flaws-with-open-source-interactive-code-maps&t=AppMap+%7C+How+to+Quickly+Identify+and+Fix+Performance+Flaws+with+Open+Source%2C+Interactive+Code+Maps&cts=1775006770563&rv=1&vi=cfdca85ae79f9b38dfcadee36a4982cd&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

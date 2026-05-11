@@ -1,0 +1,382 @@
+tag: body
+children:
+  - tag: div
+    attributes:
+      id: hs-banner-parent
+    children:
+      - tag: div
+        attributes:
+          id: hs-eu-cookie-confirmation
+        children:
+          - tag: div
+            attributes:
+              id: hs-eu-cookie-confirmation-inner
+            children:
+              - tag: div
+                attributes:
+                  id: hs-eu-header-container
+                children:
+                  - tag: button
+                    attributes:
+                      id: hs-eu-close-button
+              - tag: div
+                attributes:
+                  id: hs-eu-policy-wording
+                children:
+                  - tag: p
+                    text: This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to im...
+              - tag: p
+                text: If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
+                attributes:
+                  id: hs-eu-cookie-disclaimer
+              - tag: div
+                attributes:
+                  id: hs-eu-cookie-confirmation-buttons-area
+                children:
+                  - tag: div
+                    attributes:
+                      id: hs-eu-confirmation-button-group
+                    children:
+                      - tag: button
+                        text: Cookies settings
+                        attributes:
+                          id: hs-eu-cookie-settings-button
+                      - tag: div
+                        attributes:
+                          id: hs-eu-opt-in-buttons
+                        children:
+                          - tag: button
+                            text: Accept
+                            attributes:
+                              id: hs-eu-confirmation-button
+                          - tag: button
+                            text: Decline
+                            attributes:
+                              id: hs-eu-decline-button
+  - tag: p
+    children:
+      - tag: b
+        text: To access the latest features
+      - tag: a
+        text: keep your code editor plug-in up to date.
+        attributes:
+          href: /docs/get-started-with-appmap/add-appmap-to-your-code-editor#keep-your-extension-up-to-date
+  - tag: nav
+    children:
+      - tag: a
+        attributes:
+          href: /
+      - tag: button
+        attributes:
+          type: button
+      - tag: div
+        attributes:
+          id: navbarText
+        children:
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Docs
+                    attributes:
+                      href: /docs
+              - tag: li
+                children:
+                  - tag: a
+                    text: Blog
+                    attributes:
+                      href: /blog
+              - tag: li
+                children:
+                  - tag: a
+                    text: Pricing
+                    attributes:
+                      href: /pricing
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Get AppMap
+                    attributes:
+                      href: /get-appmap
+              - tag: li
+                children:
+                  - tag: a
+                    text: Book a Demo
+                    attributes:
+                      id: book-demo-link
+                      href: https://meetings.hubspot.com/dustin294
+  - tag: div
+    attributes:
+      id: home-body
+    children:
+      - tag: div
+        attributes:
+          id: company
+        children:
+          - tag: h1
+            text: About AppMap
+          - tag: div
+            children:
+              - tag: div
+                children:
+                  - tag: p
+                    text: AppMap is an open source company that helps developers and their organizations keep their software aligned, clear, and secure through software design observability and runtime code analysis. We believ...
+                  - tag: p
+                    text: AppMap products dynamically discover, analyze and monitor architecture issues in code that other tools miss. Unlike legacy static code analysis systems, AppMap is dynamic, powering the streaming and i...
+                  - tag: p
+                    text: The AppMap team builds for developers because we are developers. Every team member has coded at some point in their career and holds deep DevOps, automation, cybersecurity and test-driven development ...
+                    children:
+                      - tag: a
+                        text: Slack
+                        attributes:
+                          href: https://appmap.io/slack
+                      - tag: a
+                        text: here
+                        attributes:
+                          href: https://github.com/getappmap
+                  - tag: p
+                    text: Together, let’s make life better for developers!
+              - tag: div
+                children:
+                  - tag: div
+                    children:
+                      - tag: img
+                        attributes:
+                          src: /images/team/elizabeth-bw.jpg
+                          alt: Card image cap
+                      - tag: div
+                        children:
+                          - tag: h5
+                            text: Elizabeth Lawler
+                            children:
+                              - tag: a
+                                attributes:
+                                  href: https://www.linkedin.com/in/elizabethlawler/
+                  - tag: div
+                    children:
+                      - tag: img
+                        attributes:
+                          src: /images/team/kevin-bw.jpg
+                          alt: Card image cap
+                      - tag: div
+                        children:
+                          - tag: h5
+                            children:
+                              - tag: a
+                                text: Kevin Gilpin
+                                attributes:
+                                  href: https://www.linkedin.com/in/kegilpin/
+                  - tag: div
+                    children:
+                      - tag: img
+                        attributes:
+                          src: /images/team/dustin-bw.jpg
+                          alt: Card image cap
+                      - tag: div
+                        children:
+                          - tag: h5
+                            children:
+                              - tag: a
+                                text: Dustin Byrne
+                                attributes:
+                                  href: https://www.linkedin.com/in/dustin-b-5aa5515a/
+                  - tag: div
+                    children:
+                      - tag: img
+                        attributes:
+                          src: /images/team/rafal-bw.jpg
+                          alt: Card image cap
+                      - tag: div
+                        children:
+                          - tag: h5
+                            children:
+                              - tag: a
+                                text: Rafal Rzepecki
+                                attributes:
+                                  href: https://www.linkedin.com/in/divide/
+              - tag: section
+                children:
+                  - tag: h2
+                    text: Our Investors
+                  - tag: div
+                    children:
+                      - tag: a
+                        attributes:
+                          href: https://www.work-bench.com
+                      - tag: a
+                        attributes:
+                          href: https://www.unusual.vc
+                      - tag: a
+                        attributes:
+                          href: https://www.delltechnologiescapital.com/
+                      - tag: a
+                        attributes:
+                          href: https://forgepointcap.com/
+                      - tag: a
+                        attributes:
+                          href: https://www.ventureguides.com/
+                      - tag: a
+                        attributes:
+                          href: https://www.argon.vc
+                      - tag: a
+                        attributes:
+                          href: https://www.secureoctane.com/
+                      - tag: a
+                        attributes:
+                          href: https://uncorrelated.com/
+                      - tag: a
+                        attributes:
+                          href: https://www.av.vc/
+                      - tag: a
+                        attributes:
+                          href: https://www.koalabs.com/
+      - tag: div
+        children:
+          - tag: a
+            attributes:
+              href: https://appmap.io/slack
+            children:
+              - tag: h3
+                text: Join the discussion on Slack
+  - tag: div
+    children:
+      - tag: footer
+        children:
+          - tag: div
+            children:
+              - tag: h5
+                text: Docs
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Get Started
+                        attributes:
+                          href: /docs/get-started-with-appmap/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Using Navie
+                        attributes:
+                          href: /docs/navie
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Troubleshooting
+                        attributes:
+                          href: /docs/troubleshooting
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Reference
+                        attributes:
+                          href: /docs/reference
+          - tag: div
+            children:
+              - tag: h5
+                text: Product
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Security FAQ
+                        attributes:
+                          href: /security
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Pricing
+                        attributes:
+                          href: /pricing
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Terms
+                        attributes:
+                          href: /community/terms-and-conditions.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Privacy Policy
+                        attributes:
+                          href: /community/privacy-policy
+          - tag: div
+            children:
+              - tag: h5
+                text: Company
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: About
+                        attributes:
+                          href: /company/about-appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Careers
+                        attributes:
+                          href: https://angel.co/company/appmap/jobs
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Contact
+                        attributes:
+                          href: /contact/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Brand Assets
+                        attributes:
+                          href: /company/brand-assets
+          - tag: div
+            children:
+              - tag: h5
+                text: Community
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: X
+                        attributes:
+                          href: https://twitter.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Slack
+                        attributes:
+                          href: https://appmap.io/slack
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: GitHub
+                        attributes:
+                          href: https://github.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Code of Conduct
+                        attributes:
+                          href: /community/code-of-conduct.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: YouTube
+                        attributes:
+                          href: https://www.youtube.com/@appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Blog
+                        attributes:
+                          href: /blog
+  - tag: iframe
+    attributes:
+      title: archetype

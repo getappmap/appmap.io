@@ -1,0 +1,281 @@
+{
+  "timestamp": "2026-04-01T01:26:51.176Z",
+  "crawlDirectory": "crawl/site/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 14,
+  "foundAssets": 11,
+  "notFoundAssets": 3,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/before-after-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/before-after-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/\">\n<meta property=\"og:si...efore-after-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-08-19T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/before-after-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Make performance fixes easy to review by showing the before and after\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - h"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/before-after-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/\">\n<meta property=\"og:si...efore-after-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-08-19T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/before-after-feature.webp",
+            "alt": "Make performance fixes easy to review by showing the before and after",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Make performance fixes easy to review by showing the before and after\n  \n    Fixing performance issues is often harder than fixing bugs, because success is harder to define and demonstra"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/before-after-1.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/before-after-1.png",
+          "foundInFile": "crawl/site/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/index.html",
+          "context": "  <li>\n    <p><code class=\" highlighter-rouge language-plaintext\">00:41</code> And this is the AppMap of my performance bug before the fix:\n<img src=\"/assets/img/posts/before-after-1.png\" alt=\"performance bug before fix\" class=\"no-border-margin\"></p>\n  </li>\n  <li>",
+          "lineNumber": 207,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/before-after-1.png",
+            "alt": "performance bug before fix",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "00:41 And this is the AppMap of my performance bug before the fix:\n",
+          "columnRange": {
+            "start": 10,
+            "end": 46
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/before-after-2.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/before-after-2.png",
+          "foundInFile": "crawl/site/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/index.html",
+          "context": "  <li>\n    <p><code class=\" highlighter-rouge language-plaintext\">01:06</code> And here is a new AppMap recorded from the same test after I applied the fix:\n<img src=\"/assets/img/posts/before-after-2.png\" alt=\"performance bug after fix\" class=\"no-border-margin\"></p>\n  </li>\n  <li>",
+          "lineNumber": 217,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/before-after-2.png",
+            "alt": "performance bug after fix",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "01:06 And here is a new AppMap recorded from the same test after I applied the fix:\n",
+          "columnRange": {
+            "start": 10,
+            "end": 46
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/before-after-3.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/before-after-3.png",
+          "foundInFile": "crawl/site/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/index.html",
+          "context": "  <li>\n    <p><code class=\" highlighter-rouge language-plaintext\">01:30</code> Now I’m ready to create a Pull Request with my fix and submit it for...re-and-after AppMap Diagram to my PR.\n<img src=\"/assets/img/posts/before-after-3.png\" alt=\"pr for fix\" class=\"no-border-margin\"></p>\n  </li>\n  <li>",
+          "lineNumber": 227,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/before-after-3.png",
+            "alt": "pr for fix",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "01:30 Now I’m ready to create a Pull Request with my fix and submit it for review. And since the AppMap helped me understand the bug and validate the fix, I’m going to attach the before-and-after AppM"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/before-after-4.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/before-after-4.png",
+          "foundInFile": "crawl/site/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/index.html",
+          "context": "  <li>\n    <p><code class=\" highlighter-rouge language-plaintext\">02:08</code> I open the AppMap, click the “Cloud upload” icon and confirm the act...t 2\" class=\"no-border-margin\">\n<img src=\"/assets/img/posts/before-after-6.png\" alt=\"linked appmap for pull request 3\" class=\"no-border-margin\"></p>",
+          "lineNumber": 234,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/before-after-4.png",
+            "alt": "linked appmap for pull request 1",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "02:08 I open the AppMap, click the “Cloud upload” icon and confirm the action. I can activate with my GitLab or GitHub account and my AppMap opens in the cloud. I can now get the sharing link and add ",
+          "columnRange": {
+            "start": 10,
+            "end": 46
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/before-after-5.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/before-after-5.png",
+          "foundInFile": "crawl/site/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/index.html",
+          "context": "    <p><code class=\" highlighter-rouge language-plaintext\">02:08</code> I open the AppMap, click the “Cloud upload” icon and confirm the action. I ...ss=\"no-border-margin\">\n<img src=\"/assets/img/posts/before-after-6.png\" alt=\"linked appmap for pull request 3\" class=\"no-border-margin\"></p>\n  </li>",
+          "lineNumber": 235,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/before-after-5.png",
+            "alt": "linked appmap for pull request 2",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "02:08 I open the AppMap, click the “Cloud upload” icon and confirm the action. I can activate with my GitLab or GitHub account and my AppMap opens in the cloud. I can now get the sharing link and add ",
+          "columnRange": {
+            "start": 10,
+            "end": 46
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/before-after-6.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/before-after-6.png",
+          "foundInFile": "crawl/site/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/index.html",
+          "context": "<img src=\"/assets/img/posts/before-after-4.png\" alt=\"linked appmap for pull request 1\" class=\"no-border-margin\">\n<img src=\"/assets/img/posts/before...border-margin\">\n<img src=\"/assets/img/posts/before-after-6.png\" alt=\"linked appmap for pull request 3\" class=\"no-border-margin\"></p>\n  </li>\n  <li>",
+          "lineNumber": 236,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/before-after-6.png",
+            "alt": "linked appmap for pull request 3",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "02:08 I open the AppMap, click the “Cloud upload” icon and confirm the action. I can activate with my GitLab or GitHub account and my AppMap opens in the cloud. I can now get the sharing link and add ",
+          "columnRange": {
+            "start": 10,
+            "end": 46
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/before-after-7.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/before-after-7.png",
+          "foundInFile": "crawl/site/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/index.html",
+          "context": "  <li>\n    <p><code class=\" highlighter-rouge language-plaintext\">02:40</code> When my teammates open the Merge request, they can instantly open an...ammates\" class=\"no-border-margin\">\n<img src=\"/assets/img/posts/before-after-8.png\" alt=\"share with teammates\" class=\"no-border-margin\"></p>\n  </li>",
+          "lineNumber": 243,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/before-after-7.png",
+            "alt": "share with teammates",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "02:40 When my teammates open the Merge request, they can instantly open and review my AppMap Diagram and the linked code in their web browser, or they can download the AppMap Diagram and open them in "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/before-after-8.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/before-after-8.png",
+          "foundInFile": "crawl/site/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/index.html",
+          "context": "    <p><code class=\" highlighter-rouge language-plaintext\">02:40</code> When my teammates open the Merge request, they can instantly open and revie...s\" class=\"no-border-margin\">\n<img src=\"/assets/img/posts/before-after-8.png\" alt=\"share with teammates\" class=\"no-border-margin\"></p>\n  </li>\n</ul>",
+          "lineNumber": 244,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/before-after-8.png",
+            "alt": "share with teammates",
+            "class": "no-border-margin"
+          },
+          "surroundingText": "02:40 When my teammates open the Merge request, they can instantly open and review my AppMap Diagram and the linked code in their web browser, or they can download the AppMap Diagram and open them in ",
+          "columnRange": {
+            "start": 10,
+            "end": 46
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/08/19/make-performance-fixes-easy-by-showing-before-and-after/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 280,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/70332034fb314d34a13e435ae07aa2b0-00001.jpg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/70332034fb314d34a13e435ae07aa2b0-00001.mp4",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F19%2Fmake-performance-fixes-easy-by-showing-before-and-after%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F19%2Fmake-performance-fixes-easy-by-showing-before-and-after&t=AppMap+%7C+Make+performance+fixes+easy+to+review+by+showing+the+before+and+after&cts=1775006798936&rv=1&vi=ca0281513fc0ec6891de575dd39bddd9&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

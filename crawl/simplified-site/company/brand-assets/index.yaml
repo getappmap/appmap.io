@@ -1,0 +1,407 @@
+tag: body
+children:
+  - tag: div
+    attributes:
+      id: hs-banner-parent
+    children:
+      - tag: div
+        attributes:
+          id: hs-eu-cookie-confirmation
+        children:
+          - tag: div
+            attributes:
+              id: hs-eu-cookie-confirmation-inner
+            children:
+              - tag: div
+                attributes:
+                  id: hs-eu-header-container
+                children:
+                  - tag: button
+                    attributes:
+                      id: hs-eu-close-button
+              - tag: div
+                attributes:
+                  id: hs-eu-policy-wording
+                children:
+                  - tag: p
+                    text: This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to im...
+              - tag: p
+                text: If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
+                attributes:
+                  id: hs-eu-cookie-disclaimer
+              - tag: div
+                attributes:
+                  id: hs-eu-cookie-confirmation-buttons-area
+                children:
+                  - tag: div
+                    attributes:
+                      id: hs-eu-confirmation-button-group
+                    children:
+                      - tag: button
+                        text: Cookies settings
+                        attributes:
+                          id: hs-eu-cookie-settings-button
+                      - tag: div
+                        attributes:
+                          id: hs-eu-opt-in-buttons
+                        children:
+                          - tag: button
+                            text: Accept
+                            attributes:
+                              id: hs-eu-confirmation-button
+                          - tag: button
+                            text: Decline
+                            attributes:
+                              id: hs-eu-decline-button
+  - tag: p
+    children:
+      - tag: b
+        text: To access the latest features
+      - tag: a
+        text: keep your code editor plug-in up to date.
+        attributes:
+          href: /docs/get-started-with-appmap/add-appmap-to-your-code-editor#keep-your-extension-up-to-date
+  - tag: nav
+    children:
+      - tag: a
+        attributes:
+          href: /
+      - tag: button
+        attributes:
+          type: button
+      - tag: div
+        attributes:
+          id: navbarText
+        children:
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Docs
+                    attributes:
+                      href: /docs
+              - tag: li
+                children:
+                  - tag: a
+                    text: Blog
+                    attributes:
+                      href: /blog
+              - tag: li
+                children:
+                  - tag: a
+                    text: Pricing
+                    attributes:
+                      href: /pricing
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Get AppMap
+                    attributes:
+                      href: /get-appmap
+              - tag: li
+                children:
+                  - tag: a
+                    text: Book a Demo
+                    attributes:
+                      id: book-demo-link
+                      href: https://meetings.hubspot.com/dustin294
+  - tag: div
+    attributes:
+      id: brand-assets
+    children:
+      - tag: div
+        children:
+          - tag: h1
+            text: AppMap Brand Assets
+          - tag: div
+            children:
+              - tag: ul
+                children:
+                  - tag: h3
+                    text: AppMap Logo
+                  - tag: li
+                    children:
+                      - tag: div
+                        children:
+                          - tag: span
+                            text: Color with white
+                      - tag: img
+                        attributes:
+                          src: /assets/img/brand-assets/appmap-logo-color.svg
+                          alt: AppMap color logo
+                      - tag: div
+                        children:
+                          - tag: a
+                            text: SVG
+                            attributes:
+                              href: /assets/img/brand-assets/appmap-logo-color.svg
+                          - tag: a
+                            text: PNG
+                            attributes:
+                              href: /assets/img/brand-assets/appmap-logo-color.png
+                  - tag: li
+                    children:
+                      - tag: div
+                        children:
+                          - tag: span
+                            text: Color with black
+                      - tag: img
+                        attributes:
+                          src: /assets/img/brand-assets/appmap-logo-color-black-thumb.svg
+                          alt: AppMap color logo
+                      - tag: div
+                        children:
+                          - tag: a
+                            text: SVG
+                            attributes:
+                              href: /assets/img/brand-assets/appmap-logo-color.svg
+                          - tag: a
+                            text: PNG
+                            attributes:
+                              href: /assets/img/brand-assets/appmap-logo-color-black.png
+                  - tag: li
+                    children:
+                      - tag: div
+                        children:
+                          - tag: span
+                            text: White
+                      - tag: img
+                        attributes:
+                          src: /assets/img/brand-assets/appmap-logo-white.svg
+                          alt: AppMap white logo
+                      - tag: div
+                        children:
+                          - tag: a
+                            text: SVG
+                            attributes:
+                              href: /assets/img/brand-assets/appmap-logo-white.svg
+                          - tag: a
+                            text: PNG
+                            attributes:
+                              href: /assets/img/brand-assets/appmap-logo-white.png
+                  - tag: li
+                    children:
+                      - tag: div
+                        children:
+                          - tag: span
+                            text: Black
+                      - tag: img
+                        attributes:
+                          src: /assets/img/brand-assets/appmap-logo-black-thumb.svg
+                          alt: AppMap black logo
+                      - tag: div
+                        children:
+                          - tag: a
+                            text: SVG
+                            attributes:
+                              href: /assets/img/brand-assets/appmap-logo-black.svg
+                          - tag: a
+                            text: PNG
+                            attributes:
+                              href: /assets/img/brand-assets/appmap-logo-black.png
+              - tag: ul
+                children:
+                  - tag: h3
+                    text: AppMap Icon
+                  - tag: li
+                    children:
+                      - tag: div
+                        children:
+                          - tag: span
+                            text: Color
+                      - tag: img
+                        attributes:
+                          src: /assets/img/brand-assets/appmap-icon-color.svg
+                          alt: AppMap color icon
+                      - tag: div
+                        children:
+                          - tag: a
+                            text: SVG
+                            attributes:
+                              href: /assets/img/brand-assets/appmap-icon-color.svg
+                          - tag: a
+                            text: PNG
+                            attributes:
+                              href: /assets/img/brand-assets/appmap-icon-color.png
+                  - tag: li
+                    children:
+                      - tag: div
+                        children:
+                          - tag: span
+                            text: White
+                      - tag: img
+                        attributes:
+                          src: /assets/img/brand-assets/appmap-icon-white.svg
+                          alt: AppMap white icon
+                      - tag: div
+                        children:
+                          - tag: a
+                            text: SVG
+                            attributes:
+                              href: /assets/img/brand-assets/appmap-icon-white.svg
+                          - tag: a
+                            text: PNG
+                            attributes:
+                              href: /assets/img/brand-assets/appmap-icon-white.png
+                  - tag: li
+                    children:
+                      - tag: div
+                        children:
+                          - tag: span
+                            text: Black
+                      - tag: img
+                        attributes:
+                          src: /assets/img/brand-assets/appmap-icon-black-thumb.svg
+                          alt: AppMap black icon
+                      - tag: div
+                        children:
+                          - tag: a
+                            text: SVG
+                            attributes:
+                              href: /assets/img/brand-assets/appmap-icon-black.svg
+                          - tag: a
+                            text: PNG
+                            attributes:
+                              href: /assets/img/brand-assets/appmap-icon-black.png
+  - tag: div
+    children:
+      - tag: footer
+        children:
+          - tag: div
+            children:
+              - tag: h5
+                text: Docs
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Get Started
+                        attributes:
+                          href: /docs/get-started-with-appmap/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Using Navie
+                        attributes:
+                          href: /docs/navie
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Troubleshooting
+                        attributes:
+                          href: /docs/troubleshooting
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Reference
+                        attributes:
+                          href: /docs/reference
+          - tag: div
+            children:
+              - tag: h5
+                text: Product
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Security FAQ
+                        attributes:
+                          href: /security
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Pricing
+                        attributes:
+                          href: /pricing
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Terms
+                        attributes:
+                          href: /community/terms-and-conditions.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Privacy Policy
+                        attributes:
+                          href: /community/privacy-policy
+          - tag: div
+            children:
+              - tag: h5
+                text: Company
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: About
+                        attributes:
+                          href: /company/about-appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Careers
+                        attributes:
+                          href: https://angel.co/company/appmap/jobs
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Contact
+                        attributes:
+                          href: /contact/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Brand Assets
+                        attributes:
+                          href: /company/brand-assets
+          - tag: div
+            children:
+              - tag: h5
+                text: Community
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: X
+                        attributes:
+                          href: https://twitter.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Slack
+                        attributes:
+                          href: https://appmap.io/slack
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: GitHub
+                        attributes:
+                          href: https://github.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Code of Conduct
+                        attributes:
+                          href: /community/code-of-conduct.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: YouTube
+                        attributes:
+                          href: https://www.youtube.com/@appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Blog
+                        attributes:
+                          href: /blog
+  - tag: iframe
+    attributes:
+      title: archetype

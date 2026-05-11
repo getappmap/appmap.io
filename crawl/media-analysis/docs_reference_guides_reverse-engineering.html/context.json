@@ -1,0 +1,384 @@
+{
+  "timestamp": "2026-04-01T01:49:08.748Z",
+  "crawlDirectory": "crawl/site/docs/reference/guides/reverse-engineering.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 19,
+  "foundAssets": 17,
+  "notFoundAssets": 2,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 772,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 773,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-01.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-01.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "<p>AppMap Diagrams that contain HTTP server requests contain the most rich and useful data. Open the AppMap view in your code editor. There you’ll ... AppMap of that route, it will open in your code editor. If there are multiple AppMap Diagrams of that route, you’ll be prompted to choose one.</p>",
+          "lineNumber": 955,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/image-01.webp",
+            "alt": "Inspect a request",
+            "title": "Inspect a request"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 50
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-02.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-02.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "<p>This is an example of a test case AppMap. It includes 4 HTTP server requests, plus code and SQL.</p>\n\n<p><img src=\"/assets/img/docs/guides/image...can <a href=\"/assets/appmaps/authn_provider_not_logged_in.appmap.json\">download this file</a> if you’d like to open it within your code editor.</p>",
+          "lineNumber": 961,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/image-02.webp",
+            "alt": "Sample AppMap",
+            "title": "Sample AppMap"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-03.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-03.png",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "<p>Open the AppMap stats using the icon in the top-right corner of the AppMap.</p>\n\n<p><img src=\"/assets/img/docs/guides/image-03.png\" alt=\"Show statistics\" title=\"Show statistics\"></p>\n\n<p>You’ll see a list of the most frequently occurring methods.</p>",
+          "lineNumber": 973,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/image-03.png",
+            "alt": "Show statistics",
+            "title": "Show statistics"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 49
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-04.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-04.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "<p>You’ll see a list of the most frequently occurring methods.</p>\n\n<p><img src=\"/assets/img/docs/guides/image-04.webp\" alt=\"Stats panel\" title=\"Stats panel\">\n<img src=\"/assets/img/docs/guides/image-05.png\" alt=\"Statistic\" title=\"Statistic\"></p>\n",
+          "lineNumber": 977,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/image-04.webp",
+            "alt": "Stats panel",
+            "title": "Stats panel"
+          },
+          "surroundingText": "\n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-05.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-05.png",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "\n<p><img src=\"/assets/img/docs/guides/image-04.webp\" alt=\"Stats panel\" title=\"Stats panel\">\n<img src=\"/assets/img/docs/guides/image-05.png\" alt=\"St...ne of these methods to reveal it in the diagram, and on the left hand side panel. Then click “Hide” to remove all occurrences from the display.</p>",
+          "lineNumber": 978,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/image-05.png",
+            "alt": "Statistic",
+            "title": "Statistic"
+          },
+          "surroundingText": "\n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-06.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-06.png",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "<p>Click on one of these methods to reveal it in the diagram, and on the left hand side panel. Then click “Hide” to remove all occurrences from the...ods\"></p>\n\n<p>To reveal it again, you can use “Reset all”, or open the Filter menu pop up where you will see a list of all hidden code objects.</p>",
+          "lineNumber": 982,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/image-06.png",
+            "alt": "Hiding methods",
+            "title": "Hiding methods"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-07.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-07.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "<p>You can clear the root by clicking <code class=\"language-plaintext highlighter-rouge\">Reset all</code>.</p>\n\n<p><img src=\"/assets/img/docs/guides/image-07.webp\" alt=\"Set as root\" title=\"Set as root\"></p>\n\n<h4 id=\"inspect-timing-and-performance\">Inspect timing and performance</h4>",
+          "lineNumber": 1001,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/image-07.webp",
+            "alt": "Set as root",
+            "title": "Set as root"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-08.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-08.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "<p>Use the filter <code class=\"language-plaintext highlighter-rouge\">Hide elapsed time under</code> to focus the diagram only on slow functions and...uides/image-08.webp\" alt=\"Hide elapsed time\" title=\"Hide elapsed time\"></p>\n\n<p>You can also drill into timing data using the Flame Graph view.</p>",
+          "lineNumber": 1006,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/image-08.webp",
+            "alt": "Hide elapsed time",
+            "title": "Hide elapsed time"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 50
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-09.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-09.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "<p>You can also drill into timing data using the Flame Graph view.</p>\n\n<p><img src=\"/assets/img/docs/guides/image-09.webp\" alt=\"Flame graph\" title=\"Flame graph\"></p>\n\n<h4 id=\"inspect-a-code-object\">Inspect a code object</h4>",
+          "lineNumber": 1010,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/image-09.webp",
+            "alt": "Flame graph",
+            "title": "Flame graph"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-10.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-10.png",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "<p>Expand the Code tree until you find the class or function you’re interested in. When you click on it, you’ll either be taken to the AppMap, or p... AppMap will open to the Dependency Map with the function pre-selected. You can click the “Eye” icon to open the event in the Sequence Diagram.</p>",
+          "lineNumber": 1017,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/image-10.png",
+            "alt": "Code objects",
+            "title": "Code objects"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-11.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-11.png",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "<p>The AppMap will open to the Dependency Map with the function pre-selected. You can click the “Eye” icon to open the event in the Sequence Diagram.</p>\n\n<p><img src=\"/assets/img/docs/guides/image-11.png\" alt=\"Eye icon\" title=\"Eye icon\"></p>\n\n<h4 id=\"checklist\">Checklist</h4>",
+          "lineNumber": 1021,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/image-11.png",
+            "alt": "Eye icon",
+            "title": "Eye icon"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-12.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-12.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "<p>In addition to code paths and exclusions, your team members might want to share AppMap Diagram configuration with each other as well - for examp...Clipboard</code> to place the Filter configuration on your clipboard. It will be a Base64 encoded string - which is just a wrapper around JSON.</p>",
+          "lineNumber": 1047,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/image-12.webp",
+            "alt": "Filter settings",
+            "title": "Filter settings"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 50
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-13.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-13.png",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "<p>You can use the Saved Filters within your own installation. To share Filter settings with other users, create a new entry in <code class=\"langua...s\" title=\"Copy filter settings\"></p>\n\n<p>Add that filter configuration to <code class=\"language-plaintext highlighter-rouge\">appmap.yml</code>:</p>",
+          "lineNumber": 1051,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/image-13.png",
+            "alt": "Copy filter settings",
+            "title": "Copy filter settings"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 49
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-14.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/guides/image-14.png",
+          "foundInFile": "crawl/site/docs/reference/guides/reverse-engineering.html",
+          "context": "<p>When a user wants to apply that filter to their AppMap, they can copy the filter string out of the <code class=\"language-plaintext highlighter-r...ngs\"></p>\n\n<p>Of course, you can also share filter strings using other channels, like Slack, or store them in a common location such as a Wiki.</p>",
+          "lineNumber": 1064,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/guides/image-14.png",
+            "alt": "Set filter settings",
+            "title": "Set filter settings"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 49
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Freverse-engineering.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Freverse-engineering&t=AppMap+-+Docs+-+Guides+-+Reverse+Engineering&cts=1775008128278&rv=1&vi=4eb6c094685aa2b1542c5ad6a7d492df&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

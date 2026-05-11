@@ -1,0 +1,251 @@
+{
+  "timestamp": "2026-04-01T01:50:32.364Z",
+  "crawlDirectory": "crawl/site/docs/reference/integrations/atlassian-confluence.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 14,
+  "foundAssets": 12,
+  "notFoundAssets": 2,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/atlassian-confluence.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/atlassian-confluence.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 772,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/atlassian-confluence.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 773,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/enter-edit-mode.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/enter-edit-mode.png",
+          "foundInFile": "crawl/site/docs/reference/integrations/atlassian-confluence.html",
+          "context": "  <li>\n    <p><strong>Enter Edit Mode:</strong> Click the pencil icon to switch to Edit Mode in Confluence.\n  <img class=\"video-screenshot\" src=\"/assets/img/enter-edit-mode.png\"></p>\n  </li>\n  <li>",
+          "lineNumber": 815,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/enter-edit-mode.png"
+          },
+          "surroundingText": "Enter Edit Mode: Click the pencil icon to switch to Edit Mode in Confluence.\n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/drag-and-drop-appmap.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/drag-and-drop-appmap.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/atlassian-confluence.html",
+          "context": "  <li>\n    <p><strong>Attach AppMap File:</strong> Drag and drop the AppMap file from your file system or Finder into the Confluence page.\n  <img class=\"video-screenshot\" src=\"/assets/img/drag-and-drop-appmap.webp\"></p>\n  </li>\n  <li>",
+          "lineNumber": 819,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/drag-and-drop-appmap.webp"
+          },
+          "surroundingText": "Attach AppMap File: Drag and drop the AppMap file from your file system or Finder into the Confluence page.\n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/insert-appmap.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/insert-appmap.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/atlassian-confluence.html",
+          "context": "  <li>\n    <p><strong>Insert AppMap:</strong> Click the plus sign to get the insert menu. Type in and select ‘AppMap’.\n  <img class=\"video-screensh...aceholder that looks like this will be added to the page: \n  <img class=\"video-screenshot\" src=\"/assets/img/appmap-placeholder-confluence.png\"></p>",
+          "lineNumber": 823,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/insert-appmap.webp"
+          },
+          "surroundingText": "Insert AppMap: Click the plus sign to get the insert menu. Type in and select ‘AppMap’.\n   \n  A placeholder that looks like this will be added to the page: \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/appmap-placeholder-confluence.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/appmap-placeholder-confluence.png",
+          "foundInFile": "crawl/site/docs/reference/integrations/atlassian-confluence.html",
+          "context": "  <img class=\"video-screenshot\" src=\"/assets/img/insert-appmap.webp\"> \n  A placeholder that looks like this will be added to the page: \n  <img clas...p-placeholder-confluence.png\"></p>\n  </li>\n  <li><strong>Choose AppMap:</strong> Click the pencil under the placeholder to open the AppMap options.",
+          "lineNumber": 825,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/appmap-placeholder-confluence.png"
+          },
+          "surroundingText": "Insert AppMap: Click the plus sign to get the insert menu. Type in and select ‘AppMap’.\n   \n  A placeholder that looks like this will be added to the page: \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/edit-menu-confluence.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/edit-menu-confluence.png",
+          "foundInFile": "crawl/site/docs/reference/integrations/atlassian-confluence.html",
+          "context": "  </li>\n  <li><strong>Choose AppMap:</strong> Click the pencil under the placeholder to open the AppMap options.\n  <img class=\"video-screenshot\" sr... you want to display from the dropdown menu and it will render.\n  <img class=\"video-screenshot\" src=\"/assets/img/select-an-appmap-confluence.webp\">",
+          "lineNumber": 828,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/edit-menu-confluence.png"
+          },
+          "surroundingText": "Choose AppMap: Click the pencil under the placeholder to open the AppMap options.\n  \nSelect the AppMap you want to display from the dropdown menu and it will render.\n  \n      If your AppMap does not r"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/select-an-appmap-confluence.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/select-an-appmap-confluence.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/atlassian-confluence.html",
+          "context": "  <img class=\"video-screenshot\" src=\"/assets/img/edit-menu-confluence.png\">\nSelect the AppMap you want to display from the dropdown menu and it wil... sure that you are working on a published document. AppMap Diagrams will not render until the document has been published at least once</p>\n  </li>",
+          "lineNumber": 830,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/select-an-appmap-confluence.webp"
+          },
+          "surroundingText": "Choose AppMap: Click the pencil under the placeholder to open the AppMap options.\n  \nSelect the AppMap you want to display from the dropdown menu and it will render.\n  \n      If your AppMap does not r"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/width-adjustments-confluence.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/width-adjustments-confluence.png",
+          "foundInFile": "crawl/site/docs/reference/integrations/atlassian-confluence.html",
+          "context": "  <li>\n    <p><strong>Adjust Width (Optional)</strong> The width adjustment controls at the bottom of the AppMap window can be used to view more of the AppMap inline.\n  <img class=\"video-screenshot\" src=\"/assets/img/width-adjustments-confluence.png\"></p>\n  </li>\n  <li>",
+          "lineNumber": 835,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/width-adjustments-confluence.png"
+          },
+          "surroundingText": "Adjust Width (Optional) The width adjustment controls at the bottom of the AppMap window can be used to view more of the AppMap inline.\n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/update-button-confluence.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/update-button-confluence.png",
+          "foundInFile": "crawl/site/docs/reference/integrations/atlassian-confluence.html",
+          "context": "  <li>\n    <p><strong>Save Changes:</strong> Click the ‘Update’ button to apply the changes to your Confluence page.\n  <img class=\"video-screenshot...-confluence.png\"></p>\n  </li>\n  <li><strong>Fullscreen Mode (Optional):</strong> Click on the ‘full screen’ icon in the AppMap use Fullscreen mode.",
+          "lineNumber": 839,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/update-button-confluence.png"
+          },
+          "surroundingText": "Save Changes: Click the ‘Update’ button to apply the changes to your Confluence page.\n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/full-screen-control-confluence.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/full-screen-control-confluence.png",
+          "foundInFile": "crawl/site/docs/reference/integrations/atlassian-confluence.html",
+          "context": "  </li>\n  <li><strong>Fullscreen Mode (Optional):</strong> Click on the ‘full screen’ icon in the AppMap use Fullscreen mode.\n  <img class=\"video-s...ke some help, <strong><a href=\"/slack\">join us in Slack</a>!</strong> You'll find the AppMap team there, along with other AppMap users.</p>\n  </li>",
+          "lineNumber": 842,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/full-screen-control-confluence.png"
+          },
+          "surroundingText": "Fullscreen Mode (Optional): Click on the ‘full screen’ icon in the AppMap use Fullscreen mode.\n  \n     If at any point you would like some help, join us in Slack! You'll find the AppMap team there, al"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fintegrations%2Fatlassian-confluence.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fintegrations%2Fatlassian-confluence&t=AppMap+-+Docs+-+Integrations+-+Atlassian+Confluence&cts=1775008221691&rv=1&vi=c66ffe22b6ddc8c2ceb99316fa18bbe5&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

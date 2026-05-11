@@ -1,0 +1,367 @@
+tag: body
+children:
+  - tag: div
+    attributes:
+      id: hs-banner-parent
+    children:
+      - tag: div
+        attributes:
+          id: hs-eu-cookie-confirmation
+        children:
+          - tag: div
+            attributes:
+              id: hs-eu-cookie-confirmation-inner
+            children:
+              - tag: div
+                attributes:
+                  id: hs-eu-header-container
+                children:
+                  - tag: button
+                    attributes:
+                      id: hs-eu-close-button
+              - tag: div
+                attributes:
+                  id: hs-eu-policy-wording
+                children:
+                  - tag: p
+                    text: This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to im...
+              - tag: p
+                text: If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
+                attributes:
+                  id: hs-eu-cookie-disclaimer
+              - tag: div
+                attributes:
+                  id: hs-eu-cookie-confirmation-buttons-area
+                children:
+                  - tag: div
+                    attributes:
+                      id: hs-eu-confirmation-button-group
+                    children:
+                      - tag: button
+                        text: Cookies settings
+                        attributes:
+                          id: hs-eu-cookie-settings-button
+                      - tag: div
+                        attributes:
+                          id: hs-eu-opt-in-buttons
+                        children:
+                          - tag: button
+                            text: Accept
+                            attributes:
+                              id: hs-eu-confirmation-button
+                          - tag: button
+                            text: Decline
+                            attributes:
+                              id: hs-eu-decline-button
+  - tag: p
+    children:
+      - tag: b
+        text: To access the latest features
+      - tag: a
+        text: keep your code editor plug-in up to date.
+        attributes:
+          href: /docs/get-started-with-appmap/add-appmap-to-your-code-editor#keep-your-extension-up-to-date
+  - tag: nav
+    children:
+      - tag: a
+        attributes:
+          href: /
+      - tag: button
+        attributes:
+          type: button
+      - tag: div
+        attributes:
+          id: navbarText
+        children:
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Docs
+                    attributes:
+                      href: /docs
+              - tag: li
+                children:
+                  - tag: a
+                    text: Blog
+                    attributes:
+                      href: /blog
+              - tag: li
+                children:
+                  - tag: a
+                    text: Pricing
+                    attributes:
+                      href: /pricing
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Get AppMap
+                    attributes:
+                      href: /get-appmap
+              - tag: li
+                children:
+                  - tag: a
+                    text: Book a Demo
+                    attributes:
+                      id: book-demo-link
+                      href: https://meetings.hubspot.com/dustin294
+  - tag: div
+    attributes:
+      id: contact-us
+    children:
+      - tag: div
+        children:
+          - tag: h1
+            text: Contact us
+          - tag: p
+            text: We'd love to hear from you!
+      - tag: section
+        children:
+          - tag: div
+            children:
+              - tag: div
+                children:
+                  - tag: h2
+                    text: Talk to an expert
+                  - tag: p
+                    text: For technical assistance you can speak directly with AppMap team members in our , or send an email to
+                    children:
+                      - tag: a
+                        text: community Slack
+                        attributes:
+                          href: /slack
+                      - tag: a
+                        text: support@appmap.io
+                        attributes:
+                          href: mailto:support@appmap.io
+                  - tag: a
+                    text: Join AppMap Slack
+                    attributes:
+                      href: https://appmap.io/slack
+                  - tag: div
+                    children:
+                      - tag: p
+                        text: This is also super easy to fill out and a quick way to share your feedback, ideas, and issues with us.
+                        children:
+                          - tag: a
+                            text: general feedback form
+                            attributes:
+                              href: /product/feedback/general.html
+              - tag: div
+                children:
+                  - tag: h2
+                    text: Sales
+                  - tag: p
+                    text: To speak with an AppMap Sales Representative, please fill out the , or email us at .
+                    children:
+                      - tag: a
+                        text: sales contact form
+                        attributes:
+                          href: /contact/sales
+                      - tag: a
+                        text: sales@appmap.io
+                        attributes:
+                          href: mailto:sales@appmap.io
+                  - tag: a
+                    text: Contact Sales
+                    attributes:
+                      href: /contact/sales
+              - tag: div
+                children:
+                  - tag: h2
+                    text: Partnership and media inquiries
+                  - tag: p
+                    text: Please direct all general business, partnership, and media-related inquiries to
+                    children:
+                      - tag: a
+                        text: info@appmap.io
+                        attributes:
+                          href: mailto:info@appmap.io
+              - tag: div
+                children:
+                  - tag: h2
+                    text: Address
+                  - tag: p
+                    text: 'AppMap. Inc. 68 Harrison Avenue #605, PMB 22032 Boston, MA 02111'
+          - tag: div
+            children:
+              - tag: h3
+                text: Get monthly updates
+              - tag: p
+                text: Sign up to get the latest scoop on new projects, releases and events, updates from our community, and other exciting news from AppMap.
+              - tag: div
+                attributes:
+                  id: hbspt-form-98d50381-c2b2-4f79-9ef5-9b07dff3cf44
+                children:
+                  - tag: iframe
+                    attributes:
+                      id: hs-form-iframe-0
+                      title: Form 0
+                  - tag: div
+                    attributes:
+                      id: hs-outer-captcha-target-0
+                    children:
+                      - tag: div
+                        children:
+                          - tag: div
+                            children:
+                              - tag: iframe
+                                attributes:
+                                  title: reCAPTCHA
+                                  name: a-v29qglz2n96
+                                  src: https://www.google.com/recaptcha/enterprise/anchor?ar=1&k=6Ld_ad8ZAAAAAAqr0ePo1dUfAi0m4KPkCMQYwPPm&co=aHR0cHM6Ly9hcHBtYXAuaW86NDQz&hl=en&v=kUYUkUlSyqkjTSMaN2w3RaOh&size=invisible&badge=inline&anchor-ms=20000&execute-ms=30000&cb=ticxxdz3o2x7
+                          - tag: textarea
+                            attributes:
+                              id: g-recaptcha-response
+                              name: g-recaptcha-response
+  - tag: div
+    children:
+      - tag: footer
+        children:
+          - tag: div
+            children:
+              - tag: h5
+                text: Docs
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Get Started
+                        attributes:
+                          href: /docs/get-started-with-appmap/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Using Navie
+                        attributes:
+                          href: /docs/navie
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Troubleshooting
+                        attributes:
+                          href: /docs/troubleshooting
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Reference
+                        attributes:
+                          href: /docs/reference
+          - tag: div
+            children:
+              - tag: h5
+                text: Product
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Security FAQ
+                        attributes:
+                          href: /security
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Pricing
+                        attributes:
+                          href: /pricing
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Terms
+                        attributes:
+                          href: /community/terms-and-conditions.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Privacy Policy
+                        attributes:
+                          href: /community/privacy-policy
+          - tag: div
+            children:
+              - tag: h5
+                text: Company
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: About
+                        attributes:
+                          href: /company/about-appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Careers
+                        attributes:
+                          href: https://angel.co/company/appmap/jobs
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Contact
+                        attributes:
+                          href: /contact/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Brand Assets
+                        attributes:
+                          href: /company/brand-assets
+          - tag: div
+            children:
+              - tag: h5
+                text: Community
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: X
+                        attributes:
+                          href: https://twitter.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Slack
+                        attributes:
+                          href: https://appmap.io/slack
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: GitHub
+                        attributes:
+                          href: https://github.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Code of Conduct
+                        attributes:
+                          href: /community/code-of-conduct.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: YouTube
+                        attributes:
+                          href: https://www.youtube.com/@appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Blog
+                        attributes:
+                          href: /blog
+  - tag: iframe
+    attributes:
+      title: archetype
+  - tag: div
+    children:
+      - tag: div
+        children:
+          - tag: iframe
+            attributes:
+              title: recaptcha challenge expires in two minutes
+              name: c-v29qglz2n96
+              src: https://www.google.com/recaptcha/enterprise/bframe?hl=en&v=kUYUkUlSyqkjTSMaN2w3RaOh&k=6Ld_ad8ZAAAAAAqr0ePo1dUfAi0m4KPkCMQYwPPm&bft=0dAFcWeA5MU5CU-BIaaasNR4eLUxJhScZdPaa8duZ-h2hp8lxJxKUZsoJUxroRGykLVEry3gcMZDlMFjwCZW1ou0o4Q-60T9Az7w

@@ -1,0 +1,85 @@
+{
+  "timestamp": "2026-04-01T01:29:04.994Z",
+  "crawlDirectory": "crawl/site/blog/2021/09/27/community-profile-hillary-kiptoo/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 4,
+  "foundAssets": 3,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/09/27/community-profile-hillary-kiptoo/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/hillary-kiptoo-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/hillary-kiptoo-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/09/27/community-profile-hillary-kiptoo/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/09/27/community-profile-hillary-kiptoo/\">\n<meta property=\"og:site_name\" content=\"AppMa...lary-kiptoo-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-09-27T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/hillary-kiptoo-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | AppMap Community Profiles\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license/free (Icons: "
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/hillary-kiptoo-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/09/27/community-profile-hillary-kiptoo/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/09/27/community-profile-hillary-kiptoo/\">\n<meta property=\"og:site_name\" content=\"AppMa...lary-kiptoo-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-09-27T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/hillary-kiptoo-feature.webp",
+            "alt": "AppMap Community Profiles",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  AppMap Community Profiles\n  \n    Community is a fundamental part of AppLand. Our community members and contributors span the globe, and play a key role in helping us make life better for"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/09/27/community-profile-hillary-kiptoo/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 222,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F09%2F27%2Fcommunity-profile-hillary-kiptoo%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F09%2F27%2Fcommunity-profile-hillary-kiptoo&t=AppMap+%7C+AppMap+Community+Profiles&cts=1775006936138&rv=1&vi=9e1a06dcd5f345b9ed80d284fe3bef06&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

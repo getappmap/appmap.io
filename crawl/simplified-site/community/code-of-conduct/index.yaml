@@ -1,0 +1,393 @@
+tag: body
+children:
+  - tag: div
+    attributes:
+      id: hs-banner-parent
+    children:
+      - tag: div
+        attributes:
+          id: hs-eu-cookie-confirmation
+        children:
+          - tag: div
+            attributes:
+              id: hs-eu-cookie-confirmation-inner
+            children:
+              - tag: div
+                attributes:
+                  id: hs-eu-header-container
+                children:
+                  - tag: button
+                    attributes:
+                      id: hs-eu-close-button
+              - tag: div
+                attributes:
+                  id: hs-eu-policy-wording
+                children:
+                  - tag: p
+                    text: This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to im...
+              - tag: p
+                text: If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
+                attributes:
+                  id: hs-eu-cookie-disclaimer
+              - tag: div
+                attributes:
+                  id: hs-eu-cookie-confirmation-buttons-area
+                children:
+                  - tag: div
+                    attributes:
+                      id: hs-eu-confirmation-button-group
+                    children:
+                      - tag: button
+                        text: Cookies settings
+                        attributes:
+                          id: hs-eu-cookie-settings-button
+                      - tag: div
+                        attributes:
+                          id: hs-eu-opt-in-buttons
+                        children:
+                          - tag: button
+                            text: Accept
+                            attributes:
+                              id: hs-eu-confirmation-button
+                          - tag: button
+                            text: Decline
+                            attributes:
+                              id: hs-eu-decline-button
+  - tag: p
+    children:
+      - tag: b
+        text: To access the latest features
+      - tag: a
+        text: keep your code editor plug-in up to date.
+        attributes:
+          href: /docs/get-started-with-appmap/add-appmap-to-your-code-editor#keep-your-extension-up-to-date
+  - tag: nav
+    children:
+      - tag: a
+        attributes:
+          href: /
+      - tag: button
+        attributes:
+          type: button
+      - tag: div
+        attributes:
+          id: navbarText
+        children:
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Docs
+                    attributes:
+                      href: /docs
+              - tag: li
+                children:
+                  - tag: a
+                    text: Blog
+                    attributes:
+                      href: /blog
+              - tag: li
+                children:
+                  - tag: a
+                    text: Pricing
+                    attributes:
+                      href: /pricing
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Get AppMap
+                    attributes:
+                      href: /get-appmap
+              - tag: li
+                children:
+                  - tag: a
+                    text: Book a Demo
+                    attributes:
+                      id: book-demo-link
+                      href: https://meetings.hubspot.com/dustin294
+  - tag: div
+    attributes:
+      id: home-body
+    children:
+      - tag: div
+        attributes:
+          id: tac
+        children:
+          - tag: h1
+            text: Code of Conduct
+          - tag: div
+            children:
+              - tag: h2
+                text: Contributor Covenant Code of Conduct
+              - tag: h4
+                text: Our Pledge
+              - tag: div
+                text: We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnici...
+              - tag: div
+                text: We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
+              - tag: h4
+                text: Our Standards
+              - tag: p
+                children:
+                  - tag: strong
+                    text: 'Examples of behavior that contributes to a positive environment for our community include:'
+              - tag: ul
+                children:
+                  - tag: li
+                    text: Demonstrating empathy and kindness toward other people
+                  - tag: li
+                    text: Being respectful of differing opinions, viewpoints, and experiences
+                  - tag: li
+                    text: Giving and gracefully accepting constructive feedback
+                  - tag: li
+                    text: Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience
+                  - tag: li
+                    text: Focusing on what is best not just for us as individuals, but for the overall community
+              - tag: p
+                children:
+                  - tag: strong
+                    text: 'Examples of unacceptable behavior include:'
+              - tag: ul
+                children:
+                  - tag: li
+                    text: The use of sexualized language or imagery, and sexual attention or advances of any kind
+                  - tag: li
+                    text: Trolling, insulting or derogatory comments, and personal or political attacks
+                  - tag: li
+                    text: Public or private harassment
+                  - tag: li
+                    text: Publishing others' private information, such as a physical or email address, without their explicit permission
+                  - tag: li
+                    text: Contacting individual members, contributors, or leaders privately, outside designated community mechanisms, without their explicit permission
+                  - tag: li
+                    text: Other conduct which could reasonably be considered inappropriate in a professional setting
+              - tag: h4
+                text: Enforcement Responsibilities
+              - tag: div
+                text: Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inap...
+              - tag: div
+                text: Community leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and wi...
+              - tag: h4
+                text: Scope
+              - tag: p
+                text: This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include ...
+              - tag: h4
+                text: Enforcement
+              - tag: p
+                text: Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at opensource@github.com. All complaints will be reviewed and i...
+              - tag: p
+                text: All community leaders are obligated to respect the privacy and security of the reporter of any incident.
+              - tag: h4
+                text: Enforcement Guidelines
+              - tag: p
+                text: 'Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:'
+              - tag: ol
+                children:
+                  - tag: li
+                    children:
+                      - tag: h5
+                        text: Correction
+                      - tag: div
+                        text: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.
+                        children:
+                          - tag: strong
+                            text: 'Community Impact:'
+                      - tag: div
+                        text: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.
+                        children:
+                          - tag: strong
+                            text: 'Consequence:'
+                  - tag: li
+                    children:
+                      - tag: h5
+                        text: Warning
+                      - tag: div
+                        text: A violation through a single incident or series of actions.
+                        children:
+                          - tag: strong
+                            text: 'Community Impact:'
+                      - tag: div
+                        text: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time....
+                        children:
+                          - tag: strong
+                            text: 'Consequence:'
+                  - tag: li
+                    children:
+                      - tag: h5
+                        text: Temporary Ban
+                      - tag: div
+                        text: A serious violation of community standards, including sustained inappropriate behavior.
+                        children:
+                          - tag: strong
+                            text: 'Community Impact:'
+                      - tag: div
+                        text: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited...
+                        children:
+                          - tag: strong
+                            text: 'Consequence:'
+                  - tag: li
+                    children:
+                      - tag: h5
+                        text: Permanent Ban
+                      - tag: div
+                        text: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.
+                        children:
+                          - tag: strong
+                            text: 'Community Impact:'
+                      - tag: div
+                        text: A permanent ban from any sort of public interaction within the community.
+                        children:
+                          - tag: strong
+                            text: 'Consequence:'
+              - tag: h4
+                text: Attribution
+              - tag: div
+                text: This Code of Conduct is adapted from the Contributor Covenant, version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
+              - tag: div
+                text: Community Impact Guidelines were inspired by Mozilla's code of conduct enforcement ladder.
+              - tag: div
+                text: For answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq.
+              - tag: div
+                text: Translations are available at https://www.contributor-covenant.org/translations.
+  - tag: div
+    children:
+      - tag: footer
+        children:
+          - tag: div
+            children:
+              - tag: h5
+                text: Docs
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Get Started
+                        attributes:
+                          href: /docs/get-started-with-appmap/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Using Navie
+                        attributes:
+                          href: /docs/navie
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Troubleshooting
+                        attributes:
+                          href: /docs/troubleshooting
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Reference
+                        attributes:
+                          href: /docs/reference
+          - tag: div
+            children:
+              - tag: h5
+                text: Product
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Security FAQ
+                        attributes:
+                          href: /security
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Pricing
+                        attributes:
+                          href: /pricing
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Terms
+                        attributes:
+                          href: /community/terms-and-conditions.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Privacy Policy
+                        attributes:
+                          href: /community/privacy-policy
+          - tag: div
+            children:
+              - tag: h5
+                text: Company
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: About
+                        attributes:
+                          href: /company/about-appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Careers
+                        attributes:
+                          href: https://angel.co/company/appmap/jobs
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Contact
+                        attributes:
+                          href: /contact/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Brand Assets
+                        attributes:
+                          href: /company/brand-assets
+          - tag: div
+            children:
+              - tag: h5
+                text: Community
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: X
+                        attributes:
+                          href: https://twitter.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Slack
+                        attributes:
+                          href: https://appmap.io/slack
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: GitHub
+                        attributes:
+                          href: https://github.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Code of Conduct
+                        attributes:
+                          href: /community/code-of-conduct.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: YouTube
+                        attributes:
+                          href: https://www.youtube.com/@appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Blog
+                        attributes:
+                          href: /blog
+  - tag: iframe
+    attributes:
+      title: archetype

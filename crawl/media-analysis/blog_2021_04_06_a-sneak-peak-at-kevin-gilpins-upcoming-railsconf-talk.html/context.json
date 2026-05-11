@@ -1,0 +1,85 @@
+{
+  "timestamp": "2026-04-01T01:21:18.460Z",
+  "crawlDirectory": "crawl/site/blog/2021/04/06/a-sneak-peak-at-kevin-gilpins-upcoming-railsconf-talk/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 4,
+  "foundAssets": 3,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/04/06/a-sneak-peak-at-kevin-gilpins-upcoming-railsconf-talk/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/rails-conf-post.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/rails-conf-post.webp",
+          "foundInFile": "crawl/site/blog/2021/04/06/a-sneak-peak-at-kevin-gilpins-upcoming-railsconf-talk/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/04/06/a-sneak-peak-at-kevin-gilpins-upcoming-railsconf-talk/\">\n<meta property=\"og:site...sts/rails-conf-post.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-04-06T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/rails-conf-post.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | A Sneak Peek at Kevin Gilpin’s Upcoming RailsConf Talk \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawe"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/rails-conf-post.webp",
+          "foundInFile": "crawl/site/blog/2021/04/06/a-sneak-peak-at-kevin-gilpins-upcoming-railsconf-talk/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/04/06/a-sneak-peak-at-kevin-gilpins-upcoming-railsconf-talk/\">\n<meta property=\"og:site...sts/rails-conf-post.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-04-06T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/rails-conf-post.webp",
+            "alt": "A Sneak Peek at Kevin Gilpin’s Upcoming RailsConf Talk ",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  A Sneak Peek at Kevin Gilpin’s Upcoming RailsConf Talk \n  \n    We’re proud to announce that AppMap’s Founder and CTO, Kevin Gilpin, will be speaking at RailsConf 2021! Kevin’s presentati"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/04/06/a-sneak-peak-at-kevin-gilpins-upcoming-railsconf-talk/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 201,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F04%2F06%2Fa-sneak-peak-at-kevin-gilpins-upcoming-railsconf-talk%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F04%2F06%2Fa-sneak-peak-at-kevin-gilpins-upcoming-railsconf-talk&t=AppMap+%7C+A+Sneak+Peek+at+Kevin+Gilpin%E2%80%99s+Upcoming+RailsConf+Talk&cts=1775006470087&rv=1&vi=6261e64f4627c850c514bdf8729263a5&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

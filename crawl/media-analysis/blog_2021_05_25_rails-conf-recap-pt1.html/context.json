@@ -1,0 +1,105 @@
+{
+  "timestamp": "2026-04-01T01:22:46.433Z",
+  "crawlDirectory": "crawl/site/blog/2021/05/25/rails-conf-recap-pt1/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 6,
+  "foundAssets": 3,
+  "notFoundAssets": 3,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/05/25/rails-conf-recap-pt1/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/railsconf2021-recap-1-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/railsconf2021-recap-1-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/05/25/rails-conf-recap-pt1/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/05/25/rails-conf-recap-pt1/\">\n<meta property=\"og:site_name\" content=\"AppMap\">\n<meta pr...021-recap-1-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-05-25T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/railsconf2021-recap-1-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | RailsConf Recap Part 1: Why We Need a New Way of Communicating and Explaining Our Code Design Decisions\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - http",
+          "columnRange": {
+            "start": 35,
+            "end": 104
+          }
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/railsconf2021-recap-1-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/05/25/rails-conf-recap-pt1/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/05/25/rails-conf-recap-pt1/\">\n<meta property=\"og:site_name\" content=\"AppMap\">\n<meta pr...021-recap-1-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-05-25T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/railsconf2021-recap-1-feature.webp",
+            "alt": "RailsConf Recap Part 1: Why We Need a New Way of Communicating and Explaining Our Code Design Decisions",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  RailsConf Recap Part 1: Why We Need a New Way of Communicating and Explaining Our Code Design Decisions\n  \n    Last month, I gave a talk at RailsConf 2021 on how to teach your code to de",
+          "columnRange": {
+            "start": 52,
+            "end": 104
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/05/25/rails-conf-recap-pt1/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 218,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/3c36342693654d468b8e27061d21aea1-00001.jpg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/3c36342693654d468b8e27061d21aea1-00001.mp4",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F05%2F25%2Frails-conf-recap-pt1%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F05%2F25%2Frails-conf-recap-pt1&t=AppMap+%7C+RailsConf+Recap+Part+1%3A+Why+We+Need+a+New+Way+of+Communicating+and+Explaining+Our+Code+Design+Decisions&cts=1775006558468&rv=1&vi=ba96d996b7471ffddd34bca1c603bb72&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

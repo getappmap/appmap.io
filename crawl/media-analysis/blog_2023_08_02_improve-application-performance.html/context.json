@@ -1,0 +1,209 @@
+{
+  "timestamp": "2026-04-01T01:38:19.492Z",
+  "crawlDirectory": "crawl/site/blog/2023/08/02/improve-application-performance/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 16,
+  "foundAssets": 7,
+  "notFoundAssets": 9,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2023/08/02/improve-application-performance/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/improve-perf-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/improve-perf-feature.webp",
+          "foundInFile": "crawl/site/blog/2023/08/02/improve-application-performance/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/08/02/improve-application-performance/\">\n<meta property=\"og:site_name\" content=\"AppMap...mprove-perf-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-08-02T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/improve-perf-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Improve application performance: How to find and fix slow function calls, HTTP requests, and SQL queries\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - htt"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/improve-perf-feature.webp",
+          "foundInFile": "crawl/site/blog/2023/08/02/improve-application-performance/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/08/02/improve-application-performance/\">\n<meta property=\"og:site_name\" content=\"AppMap...mprove-perf-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-08-02T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/improve-perf-feature.webp",
+            "alt": "Improve application performance: How to find and fix slow function calls, HTTP requests, and SQL queries",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Improve application performance: How to find and fix slow function calls, HTTP requests, and SQL queries\n  \n    Runtime analysis is the latest and greatest way for developers to find, fl"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/improve-perf-2.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/improve-perf-2.png",
+          "foundInFile": "crawl/site/blog/2023/08/02/improve-application-performance/index.html",
+          "context": "<p>For some context, the example we are dissecting today is an e-commerce merch store. To make sure we are all on the same page, the AppMap we are ...ts/img/posts/improve-perf-2.png\" alt=\"Improve application performance\"></p>\n\n<p>When we dig a little deeper and see what is actually happening.</p>",
+          "lineNumber": 191,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/improve-perf-2.png",
+            "alt": "Improve application performance"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/improve-perf-3.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/improve-perf-3.png",
+          "foundInFile": "crawl/site/blog/2023/08/02/improve-application-performance/index.html",
+          "context": "<p>When we dig a little deeper and see what is actually happening.</p>\n\n<p><img src=\"/assets/img/posts/improve-perf-3.png\" alt=\"Improve application...need to be rendered, some containing caching operations themselves, we start to understand exactly why this function runs for such a long time.</p>",
+          "lineNumber": 195,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/improve-perf-3.png",
+            "alt": "Improve application performance"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/improve-perf-4.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/improve-perf-4.png",
+          "foundInFile": "crawl/site/blog/2023/08/02/improve-application-performance/index.html",
+          "context": "<p>We can see that <code class=\" highlighter-rouge language-plaintext\">Render_to_body</code> calls <code class=\" highlighter-rouge language-plainte...ing at the trace view, we can see just how many children are spawned and will complete before we can return from the original calling function.</p>",
+          "lineNumber": 199,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/improve-perf-4.png",
+            "alt": "Improve application performance"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/improve-perf-5.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/improve-perf-5.png",
+          "foundInFile": "crawl/site/blog/2023/08/02/improve-application-performance/index.html",
+          "context": "<p>Looking at the trace view, we can see just how many children are spawned and will complete before we can return from the original calling functi... introduced a performance concern. We need to be careful that we don’t abstract which can impact the performance of our application at runtime.</p>",
+          "lineNumber": 203,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/improve-perf-5.png",
+            "alt": "Improve application performance"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2023/08/02/improve-application-performance/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 255,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F08%2F02%2Fimprove-application-performance%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F08%2F02%2Fimprove-application-performance&t=AppMap+%7C+Improve+application+performance%3A+How+to+find+and+fix+slow+function+calls%2C+HTTP+requests%2C+and+SQL+queries&cts=1775007479398&rv=1&vi=ee50a22db59274dba3399e1d8ab60121&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53df28fb4be76e/1775007479528/O753W7rpIMi5s-i",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53df29bc36e76e/1775007479622/5FL6OokZtd8BPlA",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F08%2F02%2Fimprove-application-performance%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F08%2F02%2Fimprove-application-performance&t=AppMap+%7C+Improve+application+performance%3A+How+to+find+and+fix+slow+function+calls%2C+HTTP+requests%2C+and+SQL+queries&cts=1775007483872&rv=1&vi=f906d5815ad5cff8538739b2ef794bcf&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53df45798fe76e/1775007484089/LZwM2ISDkRjAa6l",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53df4589a5e76e/1775007484144/5OY7ldHa6rNtzbe",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53df923a0ae76e/1775007496301/nh_aXbjUw51pH-D",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53df94ecc0e76e/1775007496810/lJ-jHyBqT1cx8s9",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

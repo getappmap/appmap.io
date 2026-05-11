@@ -1,0 +1,347 @@
+tag: body
+children:
+  - tag: div
+    attributes:
+      id: hs-banner-parent
+    children:
+      - tag: div
+        attributes:
+          id: hs-eu-cookie-confirmation
+        children:
+          - tag: div
+            attributes:
+              id: hs-eu-cookie-confirmation-inner
+            children:
+              - tag: div
+                attributes:
+                  id: hs-eu-header-container
+                children:
+                  - tag: button
+                    attributes:
+                      id: hs-eu-close-button
+              - tag: div
+                attributes:
+                  id: hs-eu-policy-wording
+                children:
+                  - tag: p
+                    text: This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to im...
+              - tag: p
+                text: If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
+                attributes:
+                  id: hs-eu-cookie-disclaimer
+              - tag: div
+                attributes:
+                  id: hs-eu-cookie-confirmation-buttons-area
+                children:
+                  - tag: div
+                    attributes:
+                      id: hs-eu-confirmation-button-group
+                    children:
+                      - tag: button
+                        text: Cookies settings
+                        attributes:
+                          id: hs-eu-cookie-settings-button
+                      - tag: div
+                        attributes:
+                          id: hs-eu-opt-in-buttons
+                        children:
+                          - tag: button
+                            text: Accept
+                            attributes:
+                              id: hs-eu-confirmation-button
+                          - tag: button
+                            text: Decline
+                            attributes:
+                              id: hs-eu-decline-button
+  - tag: p
+    children:
+      - tag: b
+        text: To access the latest features
+      - tag: a
+        text: keep your code editor plug-in up to date.
+        attributes:
+          href: /docs/get-started-with-appmap/add-appmap-to-your-code-editor#keep-your-extension-up-to-date
+  - tag: nav
+    children:
+      - tag: a
+        attributes:
+          href: /
+      - tag: button
+        attributes:
+          type: button
+      - tag: div
+        attributes:
+          id: navbarText
+        children:
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Docs
+                    attributes:
+                      href: /docs
+              - tag: li
+                children:
+                  - tag: a
+                    text: Blog
+                    attributes:
+                      href: /blog
+              - tag: li
+                children:
+                  - tag: a
+                    text: Pricing
+                    attributes:
+                      href: /pricing
+          - tag: ul
+            children:
+              - tag: li
+                children:
+                  - tag: a
+                    text: Get AppMap
+                    attributes:
+                      href: /get-appmap
+              - tag: li
+                children:
+                  - tag: a
+                    text: Book a Demo
+                    attributes:
+                      id: book-demo-link
+                      href: https://meetings.hubspot.com/dustin294
+  - tag: div
+    attributes:
+      id: product
+    children:
+      - tag: div
+        children:
+          - tag: div
+            children:
+              - tag: h1
+                text: Code Investigation and Debugging
+          - tag: h2
+            text: AppMap can help you understand your application's behavior faster than you can possibly do with traditional methods like reading code or viewing stack traces. And when you have an issue to debug, AppM...
+      - tag: section
+        children:
+          - tag: div
+            children:
+              - tag: img
+                attributes:
+                  src: /assets/img/product/follow-request-flows-sequence.jpg
+                  alt: Follow request flows
+              - tag: div
+                children:
+                  - tag: h2
+                    text: Follow Request Flows
+                  - tag: p
+                    text: AppMap's view allows you to see the events that occurred in your application while AppMap was recording. Events are shown in chronological order within an interactive sequence view that allows for eas...
+                    children:
+                      - tag: strong
+                        text: Sequence Diagram
+                  - tag: p
+                    text: The gives even deeper information about application behavior, allowing you to follow requests all the way through to your database and back. You'll see the values of function parameters, call timings,...
+                    children:
+                      - tag: strong
+                        text: Trace View
+          - tag: div
+            children:
+              - tag: img
+                attributes:
+                  src: /assets/img/product/examine-runtime-dependencies.jpg
+                  alt: Examine runtime dependencies
+              - tag: div
+                children:
+                  - tag: h2
+                    text: Examine Runtime Dependencies
+                  - tag: p
+                    text: AppMap can visually represent all actually-used dependencies within an application. For example, if your Ruby application uses Rails, OpenSSL, and a PostgreSQL database, you will see each of those dep...
+                    children:
+                      - tag: strong
+                        text: Dependency View
+                  - tag: p
+                    text: Importantly, only dependencies that are used by your application at runtime are shown by AppMap. This allows you to determine if, for example, a 3rd-party library with a known vulnerability is truly u...
+      - tag: div
+        children:
+          - tag: h2
+            text: Inspect Database Queries
+          - tag: p
+            text: AppMap makes it simple to see how your application interacts with SQL databases. You can quickly discover query inefficiencies and anti-patterns that pose hidden scalability and reliability risks even...
+          - tag: p
+            text: With AppMap, not only are trips to database logs no longer required to see the SQL commands, but the commands are also directly linked to the code that initiates their execution, helping you understan...
+      - tag: section
+        children:
+          - tag: div
+            children:
+              - tag: h2
+                text: View Your Application's Code Objects
+              - tag: p
+                text: AppMap automatically indexes your application's code objects (functions, APIs, DB queries) and presents them in an easily browsable and searchable catalog, right in your code editor.
+              - tag: p
+                text: Whether you're learning a new code base or trying to debug a production issue, having all the important parts of your application's runtime behavior available at your fingertips dramatically reduces e...
+          - tag: div
+            children:
+              - tag: h2
+                text: See What's Important, Not The Internals
+              - tag: p
+                text: AppMap knows how popular frameworks like Spring, Rails, Django, and Express work. That means that when you view an AppMap, you'll only see the important parts of how an API request is handled.
+              - tag: p
+                text: For example, instead of seeing dozens of internal events related to how a framework receives data over TCP, manages its thread pools, and unmarshals payloads, you'll instead see something simple like ...
+                children:
+                  - tag: code
+                    text: HTTP POST
+              - tag: p
+                text: Since it knows how these frameworks operate internally, AppMap will also automatically label framework function calls that provide important services. For example, AppMap will apply the label to an Op...
+                children:
+                  - tag: code
+                    text: crypto.decrypt
+                  - tag: code
+                    text: security.authentication
+      - tag: div
+        children:
+          - tag: a
+            text: Get AppMap
+            attributes:
+              href: /get-appmap
+            children:
+              - tag: img
+                attributes:
+                  src: /assets/img/logos/appmap-icon-color.svg
+                  alt: AppMap logo
+  - tag: div
+    children:
+      - tag: footer
+        children:
+          - tag: div
+            children:
+              - tag: h5
+                text: Docs
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Get Started
+                        attributes:
+                          href: /docs/get-started-with-appmap/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Using Navie
+                        attributes:
+                          href: /docs/navie
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Troubleshooting
+                        attributes:
+                          href: /docs/troubleshooting
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Reference
+                        attributes:
+                          href: /docs/reference
+          - tag: div
+            children:
+              - tag: h5
+                text: Product
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Security FAQ
+                        attributes:
+                          href: /security
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Pricing
+                        attributes:
+                          href: /pricing
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Terms
+                        attributes:
+                          href: /community/terms-and-conditions.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Privacy Policy
+                        attributes:
+                          href: /community/privacy-policy
+          - tag: div
+            children:
+              - tag: h5
+                text: Company
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: About
+                        attributes:
+                          href: /company/about-appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Careers
+                        attributes:
+                          href: https://angel.co/company/appmap/jobs
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Contact
+                        attributes:
+                          href: /contact/
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Brand Assets
+                        attributes:
+                          href: /company/brand-assets
+          - tag: div
+            children:
+              - tag: h5
+                text: Community
+              - tag: ul
+                children:
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: X
+                        attributes:
+                          href: https://twitter.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Slack
+                        attributes:
+                          href: https://appmap.io/slack
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: GitHub
+                        attributes:
+                          href: https://github.com/getappmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Code of Conduct
+                        attributes:
+                          href: /community/code-of-conduct.html
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: YouTube
+                        attributes:
+                          href: https://www.youtube.com/@appmap
+                  - tag: li
+                    children:
+                      - tag: a
+                        text: Blog
+                        attributes:
+                          href: /blog
+  - tag: iframe
+    attributes:
+      title: archetype

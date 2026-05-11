@@ -1,0 +1,103 @@
+{
+  "timestamp": "2026-04-01T01:19:40.927Z",
+  "crawlDirectory": "crawl/site/blog/2021/03/02/scalable-json-processing-using-fs-promises-async-and-oboe/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 7,
+  "foundAssets": 3,
+  "notFoundAssets": 4,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/03/02/scalable-json-processing-using-fs-promises-async-and-oboe/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/appland-scaling-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/appland-scaling-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/03/02/scalable-json-processing-using-fs-promises-async-and-oboe/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/03/02/scalable-json-processing-using-fs-promises-async-and-oboe/\">\n<meta property=\"og:...and-scaling-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-03-02T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/appland-scaling-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Scalable JSON processing using fs/promises, Async and Oboe\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://font"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/appland-scaling-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/03/02/scalable-json-processing-using-fs-promises-async-and-oboe/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/03/02/scalable-json-processing-using-fs-promises-async-and-oboe/\">\n<meta property=\"og:...and-scaling-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-03-02T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/appland-scaling-feature.webp",
+            "alt": "Scalable JSON processing using fs/promises, Async and Oboe",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Scalable JSON processing using fs/promises, Async and Oboe\n  \n    I’m working on an OSS project called AppMap for VS Code which records execution traces of test cases and running program"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/03/02/scalable-json-processing-using-fs-promises-async-and-oboe/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 342,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.ytimg.com/vi_webp/N9YELxzVxYE/hqdefault.webp",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F03%2F02%2Fscalable-json-processing-using-fs-promises-async-and-oboe%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F03%2F02%2Fscalable-json-processing-using-fs-promises-async-and-oboe&t=AppMap+%7C+Scalable+JSON+processing+using+fs%2Fpromises%2C+Async+and+Oboe&cts=1775006370535&rv=1&vi=7952452875933bbfaa9f64a4b60c4ac9&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://www.youtube.com/generate_204?UiFXhA",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://yt3.ggpht.com/ytc/AIdro_mE-3IpGU62tduKPV6wudyFDlSLi_97peCW_-v5B1g=s68-c-k-c0x00ffffff-no-rj",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

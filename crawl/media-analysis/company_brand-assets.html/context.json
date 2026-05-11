@@ -1,0 +1,259 @@
+{
+  "timestamp": "2026-04-01T01:40:54.639Z",
+  "crawlDirectory": "crawl/site/company/brand-assets.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 9,
+  "foundAssets": 8,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 3,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 122,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 122,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/brand-assets/appmap-logo-color.svg",
+            "alt": "AppMap color logo"
+          },
+          "surroundingText": "\n          \n            Color with white\n          \n          \n          \n            SVG\n            PNG\n          \n        "
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 122,
+          "elementType": "a",
+          "attributes": {
+            "download": "appmap-logo-color.svg",
+            "class": "btn btn-ghost download",
+            "href": "/assets/img/brand-assets/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n            SVG\n            PNG\n          "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-logo-color.svg",
+      "totalReferences": 3,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "            <span class=\"subhead\">Color with white</span>\n          </div>\n          <img src=\"/assets/img/brand-assets/appmap-logo-color.svg\" alt=...oads\">\n            <a download=\"appmap-logo-color.svg\" class=\"btn btn-ghost download\" href=\"/assets/img/brand-assets/appmap-logo-color.svg\">SVG</a>",
+          "lineNumber": 164,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/brand-assets/appmap-logo-color.svg",
+            "alt": "AppMap color logo"
+          },
+          "surroundingText": "\n          \n            Color with white\n          \n          \n          \n            SVG\n            PNG\n          \n        "
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "            <span class=\"subhead\">Color with white</span>\n          </div>\n          <img src=\"/assets/img/brand-assets/appmap-logo-color.svg\" alt=...oads\">\n            <a download=\"appmap-logo-color.svg\" class=\"btn btn-ghost download\" href=\"/assets/img/brand-assets/appmap-logo-color.svg\">SVG</a>",
+          "lineNumber": 164,
+          "elementType": "a",
+          "attributes": {
+            "download": "appmap-logo-color.svg",
+            "class": "btn btn-ghost download",
+            "href": "/assets/img/brand-assets/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n            SVG\n            PNG\n          "
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 122,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-logo-color-black-thumb.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-logo-color-black-thumb.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "            <span class=\"subhead\">Color with black</span>\n          </div>\n          <img src=\"/assets/img/brand-assets/appmap-logo-color-black-thu...\n            <a download=\"appmap-logo-color-black.svg\" class=\"btn btn-ghost download\" href=\"/assets/img/brand-assets/appmap-logo-color.svg\">SVG</a>",
+          "lineNumber": 174,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/brand-assets/appmap-logo-color-black-thumb.svg",
+            "alt": "AppMap color logo"
+          },
+          "surroundingText": "\n          \n            Color with black\n          \n          \n          \n            SVG\n            PNG\n          \n        ",
+          "columnRange": {
+            "start": 20,
+            "end": 78
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-logo-white.svg",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-logo-white.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "            <span class=\"subhead\">White</span>\n          </div>\n          <img src=\"/assets/img/brand-assets/appmap-logo-white.svg\" alt=\"AppMap whi...oads\">\n            <a download=\"appmap-logo-white.svg\" class=\"btn btn-ghost download\" href=\"/assets/img/brand-assets/appmap-logo-white.svg\">SVG</a>",
+          "lineNumber": 184,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/brand-assets/appmap-logo-white.svg",
+            "alt": "AppMap white logo"
+          },
+          "surroundingText": "\n          \n            White\n          \n          \n          \n            SVG\n            PNG\n          \n        "
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-logo-white.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "            <span class=\"subhead\">White</span>\n          </div>\n          <img src=\"/assets/img/brand-assets/appmap-logo-white.svg\" alt=\"AppMap whi...oads\">\n            <a download=\"appmap-logo-white.svg\" class=\"btn btn-ghost download\" href=\"/assets/img/brand-assets/appmap-logo-white.svg\">SVG</a>",
+          "lineNumber": 184,
+          "elementType": "a",
+          "attributes": {
+            "download": "appmap-logo-white.svg",
+            "class": "btn btn-ghost download",
+            "href": "/assets/img/brand-assets/appmap-logo-white.svg"
+          },
+          "surroundingText": "\n            SVG\n            PNG\n          "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-logo-black-thumb.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-logo-black-thumb.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "            <span class=\"subhead\">Black</span>\n          </div>\n          <img src=\"/assets/img/brand-assets/appmap-logo-black-thumb.svg\" alt=\"AppM...oads\">\n            <a download=\"appmap-logo-black.svg\" class=\"btn btn-ghost download\" href=\"/assets/img/brand-assets/appmap-logo-black.svg\">SVG</a>",
+          "lineNumber": 194,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/brand-assets/appmap-logo-black-thumb.svg",
+            "alt": "AppMap black logo"
+          },
+          "surroundingText": "\n          \n            Black\n          \n          \n          \n            SVG\n            PNG\n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-icon-color.svg",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "            <span class=\"subhead\">Color</span>\n          </div>\n          <img src=\"/assets/img/brand-assets/appmap-icon-color.svg\" alt=\"AppMap col...oads\">\n            <a download=\"appmap-icon-color.svg\" class=\"btn btn-ghost download\" href=\"/assets/img/brand-assets/appmap-icon-color.svg\">SVG</a>",
+          "lineNumber": 208,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/brand-assets/appmap-icon-color.svg",
+            "alt": "AppMap color icon"
+          },
+          "surroundingText": "\n          \n            Color\n          \n          \n          \n            SVG\n            PNG\n          \n        "
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "            <span class=\"subhead\">Color</span>\n          </div>\n          <img src=\"/assets/img/brand-assets/appmap-icon-color.svg\" alt=\"AppMap col...oads\">\n            <a download=\"appmap-icon-color.svg\" class=\"btn btn-ghost download\" href=\"/assets/img/brand-assets/appmap-icon-color.svg\">SVG</a>",
+          "lineNumber": 208,
+          "elementType": "a",
+          "attributes": {
+            "download": "appmap-icon-color.svg",
+            "class": "btn btn-ghost download",
+            "href": "/assets/img/brand-assets/appmap-icon-color.svg"
+          },
+          "surroundingText": "\n            SVG\n            PNG\n          "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-icon-white.svg",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-icon-white.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "            <span class=\"subhead\">White</span>\n          </div>\n          <img src=\"/assets/img/brand-assets/appmap-icon-white.svg\" alt=\"AppMap whi...oads\">\n            <a download=\"appmap-icon-white.svg\" class=\"btn btn-ghost download\" href=\"/assets/img/brand-assets/appmap-icon-white.svg\">SVG</a>",
+          "lineNumber": 218,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/brand-assets/appmap-icon-white.svg",
+            "alt": "AppMap white icon"
+          },
+          "surroundingText": "\n          \n            White\n          \n          \n          \n            SVG\n            PNG\n          \n        "
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-icon-white.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "            <span class=\"subhead\">White</span>\n          </div>\n          <img src=\"/assets/img/brand-assets/appmap-icon-white.svg\" alt=\"AppMap whi...oads\">\n            <a download=\"appmap-icon-white.svg\" class=\"btn btn-ghost download\" href=\"/assets/img/brand-assets/appmap-icon-white.svg\">SVG</a>",
+          "lineNumber": 218,
+          "elementType": "a",
+          "attributes": {
+            "download": "appmap-icon-white.svg",
+            "class": "btn btn-ghost download",
+            "href": "/assets/img/brand-assets/appmap-icon-white.svg"
+          },
+          "surroundingText": "\n            SVG\n            PNG\n          "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-icon-black-thumb.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/brand-assets/appmap-icon-black-thumb.svg",
+          "foundInFile": "crawl/site/company/brand-assets.html",
+          "context": "            <span class=\"subhead\">Black</span>\n          </div>\n          <img src=\"/assets/img/brand-assets/appmap-icon-black-thumb.svg\" alt=\"AppM...oads\">\n            <a download=\"appmap-icon-black.svg\" class=\"btn btn-ghost download\" href=\"/assets/img/brand-assets/appmap-icon-black.svg\">SVG</a>",
+          "lineNumber": 228,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/brand-assets/appmap-icon-black-thumb.svg",
+            "alt": "AppMap black icon"
+          },
+          "surroundingText": "\n          \n            Black\n          \n          \n          \n            SVG\n            PNG\n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fcompany%2Fbrand-assets.html&pu=https%3A%2F%2Fappmap.io%2Fcompany%2Fbrand-assets&t=AppMap+%7C+Brand+assets&cts=1775007646683&rv=1&vi=06039384fb0e5fff5e8ab14430883902&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

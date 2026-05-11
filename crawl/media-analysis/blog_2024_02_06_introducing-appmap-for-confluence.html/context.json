@@ -1,0 +1,103 @@
+{
+  "timestamp": "2026-04-01T01:39:06.987Z",
+  "crawlDirectory": "crawl/site/blog/2024/02/06/introducing-appmap-for-confluence/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 7,
+  "foundAssets": 3,
+  "notFoundAssets": 4,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2024/02/06/introducing-appmap-for-confluence/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/appmap-for-confluence.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/appmap-for-confluence.webp",
+          "foundInFile": "crawl/site/blog/2024/02/06/introducing-appmap-for-confluence/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2024/02/06/introducing-appmap-for-confluence/\">\n<meta property=\"og:site_name\" content=\"AppM...pmap-for-confluence.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2024-02-06T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/appmap-for-confluence.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Introducing AppMap for Confluence\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license/free "
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/appmap-for-confluence.webp",
+          "foundInFile": "crawl/site/blog/2024/02/06/introducing-appmap-for-confluence/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2024/02/06/introducing-appmap-for-confluence/\">\n<meta property=\"og:site_name\" content=\"AppM...pmap-for-confluence.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2024-02-06T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/appmap-for-confluence.webp",
+            "alt": "Introducing AppMap for Confluence",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Introducing AppMap for Confluence\n  \n    \n\nYou can now share visual depictions of your application’s runtime behavior with your team by embedding AppMap Diagrams directly into your confl"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2024/02/06/introducing-appmap-for-confluence/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 204,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.ytimg.com/vi/In7q3SCA474/sddefault.jpg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://yt3.ggpht.com/tb4SYXqBkNgnsJm__eI-ufiq07ix2YFv5A87PFNFnDikOVrV0ISrWsDHBgg90d5m-jUr__aYoA=s68-c-k-c0x00ffffff-no-rj",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2024%2F02%2F06%2Fintroducing-appmap-for-confluence%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2024%2F02%2F06%2Fintroducing-appmap-for-confluence&t=AppMap+%7C+Introducing+AppMap+for+Confluence&cts=1775007538217&rv=1&vi=bcf355b94f19a6f0a7bb32f75f9a8647&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://www.youtube.com/generate_204?fUM1GQ",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

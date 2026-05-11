@@ -1,0 +1,127 @@
+{
+  "timestamp": "2026-04-01T01:16:12.478Z",
+  "crawlDirectory": "crawl/site/blog/2021/02/02/unpacking-saml-with-appmap-and-vscode/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 6,
+  "foundAssets": 5,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/02/unpacking-saml-with-appmap-and-vscode/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/appland-saml-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/appland-saml-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/02/02/unpacking-saml-with-appmap-and-vscode/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/02/unpacking-saml-with-appmap-and-vscode/\">\n<meta property=\"og:site_name\" content=\"...ppland-saml-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-02T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/appland-saml-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Unpacking SAML with AppMap and VSCode\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/license/f"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/appland-saml-feature.webp",
+          "foundInFile": "crawl/site/blog/2021/02/02/unpacking-saml-with-appmap-and-vscode/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/02/02/unpacking-saml-with-appmap-and-vscode/\">\n<meta property=\"og:site_name\" content=\"...ppland-saml-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-02-02T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/appland-saml-feature.webp",
+            "alt": "Unpacking SAML with AppMap and VSCode",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Unpacking SAML with AppMap and VSCode\n  \n    I recently came across a thorough blog post from Osso on the ins and outs of the SAML authentication protocol. In a former life, I was co-fou"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/unpacking-saml-with-appmaps-and-vscode/login-flow.gif",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/unpacking-saml-with-appmaps-and-vscode/login-flow.gif",
+          "foundInFile": "crawl/site/blog/2021/02/02/unpacking-saml-with-appmap-and-vscode/index.html",
+          "context": "<p>The login flow looks like this:</p>\n\n<p><img src=\"/images/unpacking-saml-with-appmaps-and-vscode/login-flow.gif\" alt=\"login flow\"></p>\n\n<h2 id=\"opening-the-appmap-in-vscode\">Opening the AppMap in VSCode</h2>",
+          "lineNumber": 203,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/unpacking-saml-with-appmaps-and-vscode/login-flow.gif",
+            "alt": "login flow"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/images/unpacking-saml-with-appmaps-and-vscode/using-vscode-extension.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/images/unpacking-saml-with-appmaps-and-vscode/using-vscode-extension.png",
+          "foundInFile": "crawl/site/blog/2021/02/02/unpacking-saml-with-appmap-and-vscode/index.html",
+          "context": "<p><a href=\"https://www.loom.com/share/9a0105e6bb0848b6a800f272b25d4fc9\"><img src=\"/images/unpacking-saml-with-appmaps-and-vscode/using-vscode-extension.png\" alt=\"using AppMap extension for VSCode\"></a></p>",
+          "lineNumber": 209,
+          "elementType": "img",
+          "attributes": {
+            "src": "/images/unpacking-saml-with-appmaps-and-vscode/using-vscode-extension.png",
+            "alt": "using AppMap extension for VSCode"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 83,
+            "end": 156
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/02/02/unpacking-saml-with-appmap-and-vscode/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 261,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F02%2Funpacking-saml-with-appmap-and-vscode%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F02%2F02%2Funpacking-saml-with-appmap-and-vscode&t=AppMap+%7C+Unpacking+SAML+with+AppMap+and+VSCode&cts=1775006162062&rv=1&vi=7fbabb8bdb0cc299f95b268674baadf2&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

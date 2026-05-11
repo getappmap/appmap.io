@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-04-01T01:27:02.393Z",
+  "crawlDirectory": "crawl/site/blog/2021/08/23/free-cbd-for-developers/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 4,
+  "foundAssets": 2,
+  "notFoundAssets": 2,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/08/23/free-cbd-for-developers/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 100,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/Slack_Mark.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/Slack_Mark.svg",
+          "foundInFile": "crawl/site/blog/2021/08/23/free-cbd-for-developers/index.html",
+          "context": "  <div class=\"slack-cta\">\n    <a href=\"https://appmap.io/slack\">\n      <img class=\"logo-small\" src=\"/assets/img/Slack_Mark.svg\">\n      <h3>Join the discussion on Slack</h3>\n    </a>",
+          "lineNumber": 175,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/Slack_Mark.svg"
+          },
+          "surroundingText": "\n      \n      Join the discussion on Slack\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/cbd/cbd-map-5b.png",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F08%2F23%2Ffree-cbd-for-developers&t=Free+CBD+for+Developers!&cts=1775006814011&rv=1&vi=5e74f653fd8cd697709e29ca948d2b2f&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

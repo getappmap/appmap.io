@@ -1,0 +1,157 @@
+{
+  "timestamp": "2026-04-01T01:28:29.395Z",
+  "crawlDirectory": "crawl/site/blog/2021/09/07/mapping-java-applications-tutorial/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 16,
+  "foundAssets": 3,
+  "notFoundAssets": 13,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2021/09/07/mapping-java-applications-tutorial/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/1200x630-appmap-card.png",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/1200x630-appmap-card.png",
+          "foundInFile": "crawl/site/blog/2021/09/07/mapping-java-applications-tutorial/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/09/07/mapping-java-applications-tutorial/\">\n<meta property=\"og:site_name\" content=\"App...1200x630-appmap-card.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-09-07T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/logos/1200x630-appmap-card.png"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | A Step-by-Step Guide for Installing and Using AppMap for Java\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://f"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/1200x630-appmap-card.png",
+          "foundInFile": "crawl/site/blog/2021/09/07/mapping-java-applications-tutorial/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2021/09/07/mapping-java-applications-tutorial/\">\n<meta property=\"og:site_name\" content=\"App...1200x630-appmap-card.png\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2021-09-07T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/1200x630-appmap-card.png",
+            "alt": "A Step-by-Step Guide for Installing and Using AppMap for Java",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  A Step-by-Step Guide for Installing and Using AppMap for Java\n  \n    Thanks to everyone who attended our recent workshop for the Boston Java Meetup Group! If you weren’t able to join us,"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2021/09/07/mapping-java-applications-tutorial/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 423,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/387e1cc505bc4feb897d176c4a8d8fa1-1630430866403.jpg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/ddc7967772fd43e3be76c79df2abe8a0-00001.jpg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/92206e534554440da4cf7168485f94c7-00001.jpg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/a0fa7cd6f27c4746921cbae162daf45c-00001.jpg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/387e1cc505bc4feb897d176c4a8d8fa1-1630430866403.mp4",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/ddc7967772fd43e3be76c79df2abe8a0-00001.mp4",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/92206e534554440da4cf7168485f94c7-00001.mp4",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/0b84ff0fb16844359fdb441962695252-00001.jpg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/643c97a3a61a4b82854d79799ebc272b-00001.jpg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/a0fa7cd6f27c4746921cbae162daf45c-00001.mp4",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/0b84ff0fb16844359fdb441962695252-00001.mp4",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/643c97a3a61a4b82854d79799ebc272b-00001.mp4",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F09%2F07%2Fmapping-java-applications-tutorial%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2021%2F09%2F07%2Fmapping-java-applications-tutorial&t=AppMap+%7C+A+Step-by-Step+Guide+for+Installing+and+Using+AppMap+for+Java&cts=1775006898806&rv=1&vi=c1a24d26a18ffdcf789634d833612c76&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

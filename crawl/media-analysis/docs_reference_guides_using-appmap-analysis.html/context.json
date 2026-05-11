@@ -1,0 +1,318 @@
+{
+  "timestamp": "2026-04-01T01:49:36.013Z",
+  "crawlDirectory": "crawl/site/docs/reference/guides/using-appmap-analysis.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 23,
+  "foundAssets": 13,
+  "notFoundAssets": 10,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-analysis.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-analysis.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 772,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-analysis.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 773,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/appmap-analysis-1.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/appmap-analysis-1.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-analysis.html",
+          "context": "<p>Let’s look at a sample Ruby on rails application, where AppMap has already been installed and AppMap Data has been generated. From the test case...event contained secret data by clicking on the finding will be taken directly to the line of code where this event occurs by hovering over the pin.",
+          "lineNumber": 885,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/appmap-analysis-1.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/appmap-analysis-2.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/appmap-analysis-2.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-analysis.html",
+          "context": "\n<p>You can see one of the issues we’ve found is that a log event contained secret data by clicking on the finding will be taken directly to the li...hot\" src=\"/assets/img/appmap-analysis-2.webp\"></p>\n\n<h2 id=\"use-labels-to-visually-explore-your-code\">Use labels to visually explore your code</h2>",
+          "lineNumber": 888,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/appmap-analysis-2.webp"
+          },
+          "surroundingText": "You can see one of the issues we’ve found is that a log event contained secret data by clicking on the finding will be taken directly to the line of code where this event occurs by hovering over the p"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/appmap-analysis-3.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/appmap-analysis-3.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-analysis.html",
+          "context": "\n<p>We know exactly where to look to avoid false positives. Developers can extend their labels, whether it’s a common library or not with simple co...the exact location of the AppMap, where the secret was generated. Additionally, you can open the code, combining a visual model alongside the code.",
+          "lineNumber": 895,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/appmap-analysis-3.webp"
+          },
+          "surroundingText": "We know exactly where to look to avoid false positives. Developers can extend their labels, whether it’s a common library or not with simple code comments on their functions.\n"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/appmap-analysis-4.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/appmap-analysis-4.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-analysis.html",
+          "context": "\n<p>If you search for the secret label, you’ll see the location in the code where this event occurs by clicking on the function, you’ll be taken to...\n<img class=\"video-screenshot\" src=\"/assets/img/appmap-analysis-4.webp\"></p>\n\n<h2 id=\"configuring-analysis-checks\">Configuring Analysis Checks</h2>",
+          "lineNumber": 898,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/appmap-analysis-4.webp"
+          },
+          "surroundingText": "If you search for the secret label, you’ll see the location in the code where this event occurs by clicking on the function, you’ll be taken to the exact location of the AppMap, where the secret was g"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/enable-jetbrains-scanner.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/enable-jetbrains-scanner.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-analysis.html",
+          "context": "<p>Open the JetBrains settings page and search for <code class=\"language-plaintext highlighter-rouge\">appmap scanner</code>.  Ensure the box is che... you will see the <code class=\"language-plaintext highlighter-rouge\">Runtime Analysis</code> section with any findings within your AppMap data.</p>",
+          "lineNumber": 833,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/enable-jetbrains-scanner.webp"
+          },
+          "surroundingText": "\n          \n            \n              \n            \n          \n          AppMap Analysis\n\nWhen there is AppMap Data available in your project, AppMap Runtime Analysis can scan them to detect flaws in"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains-runtime-analysis.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains-runtime-analysis.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-analysis.html",
+          "context": "<p>After applying this change, <strong>restart</strong> your JetBrains editor and in the AppMap plugin you will see the <code class=\"language-plain...within your AppMap data.</p>\n\n<img class=\"video-screenshot\" src=\"/assets/img/jetbrains-runtime-analysis.webp\">\n\n<h3 id=\"in-vs-code\">In VS Code</h3>",
+          "lineNumber": 837,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/jetbrains-runtime-analysis.webp"
+          },
+          "surroundingText": "\n          \n            \n              \n            \n          \n          AppMap Analysis\n\nWhen there is AppMap Data available in your project, AppMap Runtime Analysis can scan them to detect flaws in"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/enable-vscode-scanner.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/enable-vscode-scanner.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-analysis.html",
+          "context": "<p>Open the VS Code settings page and search for <code class=\"language-plaintext highlighter-rouge\">appmap scanner</code>.  Ensure the box is check... you will see the <code class=\"language-plaintext highlighter-rouge\">Runtime Analysis</code> section with any findings within your AppMap data.</p>",
+          "lineNumber": 843,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/enable-vscode-scanner.webp"
+          },
+          "surroundingText": "\n          \n            \n              \n            \n          \n          AppMap Analysis\n\nWhen there is AppMap Data available in your project, AppMap Runtime Analysis can scan them to detect flaws in"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-runtime-analysis.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-runtime-analysis.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-analysis.html",
+          "context": "<p>After applying this change, <strong>reload</strong> your VS Code editor and in the AppMap plugin you will see the <code class=\"language-plaintex... AppMap data.</p>\n\n<img class=\"video-screenshot\" src=\"/assets/img/vscode-runtime-analysis.webp\">\n\n<h2 id=\"navigate-findings\">Navigate Findings</h2>",
+          "lineNumber": 847,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/vscode-runtime-analysis.webp"
+          },
+          "surroundingText": "\n          \n            \n              \n            \n          \n          AppMap Analysis\n\nWhen there is AppMap Data available in your project, AppMap Runtime Analysis can scan them to detect flaws in"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/runtime-analysis-sidebar-findings.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/runtime-analysis-sidebar-findings.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-analysis.html",
+          "context": "<p>Findings are displayed In the Runtime Analysis sidebar pane sorted by impact category and type.</p>\n\n<img class=\"video-screenshot\" src=\"/assets/... in the Runtime Analysis sidebar will open the ‘Runtime Analysis Summary’ window which contains a summary of findings for a particular project.</p>",
+          "lineNumber": 853,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/runtime-analysis-sidebar-findings.webp"
+          },
+          "surroundingText": "\n          \n            \n              \n            \n          \n          AppMap Analysis\n\nWhen there is AppMap Data available in your project, AppMap Runtime Analysis can scan them to detect flaws in"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/runtime-analysis-overview-dashboard.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/runtime-analysis-overview-dashboard.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-analysis.html",
+          "context": "<p>Clicking the ‘Overview’ link in the Runtime Analysis sidebar will open the ‘Runtime Analysis Summary’ window which contains a summary of finding...src=\"/assets/img/docs/runtime-analysis-overview-dashboard.webp\">\n\n<!-- from https://www.chunkhang.com/blog/responsive-youtube-video-with-jekyll -->",
+          "lineNumber": 857,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/docs/runtime-analysis-overview-dashboard.webp"
+          },
+          "surroundingText": "\n          \n            \n              \n            \n          \n          AppMap Analysis\n\nWhen there is AppMap Data available in your project, AppMap Runtime Analysis can scan them to detect flaws in"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Fusing-appmap-analysis.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Fusing-appmap-analysis&t=AppMap+-+Docs+-+Guides+-+Using+AppMap+Analysis&cts=1775008151442&rv=1&vi=a08c3dc8c7821461a4ea2c9a6d8dc418&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ef921b4b87f4/1775008151634/ohI4s2TwYl3jFNb",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53ef9169bc87f4/1775008151572/HARY6bNX7WwUZXo",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Fusing-appmap-analysis.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Fusing-appmap-analysis&t=AppMap+-+Docs+-+Guides+-+Using+AppMap+Analysis&cts=1775008155935&rv=1&vi=7ecebbbd6c432e85be0e9c581ecca1a6&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53efad9df787f4/1775008156179/XMUEQKgMAB6KJ-q",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53efadae0f87f4/1775008156226/baDkAF0BUpS-0tk",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53effc3a3e87f4/1775008168603/GwsYwRJf2uEDkmm",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/d/9e53effc8b0887f4/1775008168673/3J577kmKhKTeOfZ",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

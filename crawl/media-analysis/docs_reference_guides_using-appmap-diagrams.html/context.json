@@ -1,0 +1,816 @@
+{
+  "timestamp": "2026-04-01T01:50:08.242Z",
+  "crawlDirectory": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 43,
+  "foundAssets": 39,
+  "notFoundAssets": 4,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 778,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 779,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/install-open-source-client.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/install-open-source-client.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "            <h5>Install and configure the AppMap agent for your language</h5>\n                <div class=\"steps-img-container\">\n                    <img src=\"/assets/img/install-open-source-client.svg\">\n                </div>\n        </div>",
+          "lineNumber": 825,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/install-open-source-client.svg"
+          },
+          "surroundingText": "\n                    \n                "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/generate-appmaps-from-test-cases.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/generate-appmaps-from-test-cases.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "        <h5>AppMap agent records executing code as JSON files</h5>\n        <div class=\"steps-img-container\">\n            <img src=\"/assets/img/generate-appmaps-from-test-cases.svg\">\n        </div>\n    </div>",
+          "lineNumber": 831,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/generate-appmaps-from-test-cases.svg"
+          },
+          "surroundingText": "\n            \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/appmap-in-ide-sm.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/appmap-in-ide-sm.svg",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "\n            <div class=\"steps-img-container\">\n                <img src=\"/assets/img/appmap-in-ide-sm.svg\">\n            </div>\n    </div>",
+          "lineNumber": 838,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/appmap-in-ide-sm.svg"
+          },
+          "surroundingText": "\n                \n            "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/appmap-stats.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/appmap-stats.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<p>Includes the frequency of specific function calls and the size represented within the AppMap.  This is helpful when <a href=\"/docs/reference/gui...g/docs/appmap-stats.webp\"></p>\n\n<h4 id=\"expand-and-collapse-the-depth-of-sequence-diagrams\">Expand and Collapse the Depth of Sequence Diagrams</h4>",
+          "lineNumber": 875,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/appmap-stats.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/dependency-map-overview.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/dependency-map-overview.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "</ul>\n\n<p><img src=\"/assets/img/docs/dependency-map-overview.webp\" alt=\"Dependency map overview\" title=\"Dependency map overview\"></p>\n\n<h4 id=\"expand-and-collapse-packages-and-web-service-endpoints\">Expand and collapse packages and Web Service endpoints:</h4>",
+          "lineNumber": 907,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/dependency-map-overview.webp",
+            "alt": "Dependency map overview",
+            "title": "Dependency map overview"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 58
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/trace-is-fully-interactive.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/trace-is-fully-interactive.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "</ul>\n\n<p><img src=\"/assets/img/docs/trace-is-fully-interactive.webp\" alt=\"Trace view is fully interactive\" title=\"Trace view is fully interactive\"></p>\n\n<h4 id=\"expand-and-collapse-execution-paths\">Expand and collapse execution paths</h4>",
+          "lineNumber": 965,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/trace-is-fully-interactive.webp",
+            "alt": "Trace view is fully interactive",
+            "title": "Trace view is fully interactive"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 61
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/find-sequence-diagram.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/find-sequence-diagram.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<p>The AppMap extensions for Visual Studio Code and JetBrains include support for viewing AppMap Data as sequence diagrams. Simply open any AppMap ...docs/find-sequence-diagram.webp\" alt=\"Open sequence diagram\" title=\"Open sequence diagram\"></p>\n\n<p>Sequence Diagrams follow these conventions:</p>",
+          "lineNumber": 1023,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/find-sequence-diagram.webp",
+            "alt": "Open sequence diagram",
+            "title": "Open sequence diagram"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 56
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/hide-lifeline-sequence-diagram.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/hide-lifeline-sequence-diagram.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<p>By default, AppMap Sequence Diagrams will contain “lifelines” for each of the actors in your application. If you would prefer not to see any of ...agram\"></p>\n\n<p>Lifelines that have been hidden can be re-shown using the “Filters” control, or by resetting the map using the “Clear” control.</p>",
+          "lineNumber": 1041,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/hide-lifeline-sequence-diagram.webp",
+            "alt": "Hide lifeline in sequence diagram",
+            "title": "Hide lifeline in sequence diagram"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 65
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/show-lifeline-sequence-diagram.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/show-lifeline-sequence-diagram.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<p>Lifelines that have been hidden can be re-shown using the “Filters” control, or by resetting the map using the “Clear” control.</p>\n\n<p><img src...\" title=\"Show lifeline in sequence diagram\"></p>\n\n<h3 id=\"collapsing-sections-of-a-sequence-diagram\">Collapsing sections of a Sequence Diagram</h3>",
+          "lineNumber": 1045,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/show-lifeline-sequence-diagram.webp",
+            "alt": "Show lifeline in sequence diagram",
+            "title": "Show lifeline in sequence diagram"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 65
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/collapse-sequence-diagram.gif",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/collapse-sequence-diagram.gif",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<p>Function calls that contain other events can be collapsed to make the diagram easier to read. This is done using the <code class=\"language-plain...m\"></p>\n\n<p>Clicking on the <code class=\"language-plaintext highlighter-rouge\">[+]</code> control will expand the same sequence set once again.</p>",
+          "lineNumber": 1051,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/collapse-sequence-diagram.gif",
+            "alt": "Collapse sequence diagram",
+            "title": "Collapse sequence diagram"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 59
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/export-sequence-diagram.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/export-sequence-diagram.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<p>To export a sequence diagram, click on <code class=\"language-plaintext highlighter-rouge\">EXPORT</code> and the SVG data will appear in a new fi...e=\"Export sequence diagram\">\n<img src=\"/assets/img/docs/save-sequence-diagram.webp\" alt=\"Save sequence diagram\" title=\"Save sequence diagram\"></p>\n",
+          "lineNumber": 1061,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/export-sequence-diagram.webp",
+            "alt": "Export sequence diagram",
+            "title": "Export sequence diagram"
+          },
+          "surroundingText": "\n",
+          "columnRange": {
+            "start": 13,
+            "end": 58
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/save-sequence-diagram.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/save-sequence-diagram.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "\n<p><img src=\"/assets/img/docs/export-sequence-diagram.webp\" alt=\"Export sequence diagram\" title=\"Export sequence diagram\">\n<img src=\"/assets/img/d...-sequence-diagram.webp\" alt=\"Save sequence diagram\" title=\"Save sequence diagram\"></p>\n\n<h3 id=\"3rd-party-integrations\">3rd Party Integrations</h3>",
+          "lineNumber": 1062,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/save-sequence-diagram.webp",
+            "alt": "Save sequence diagram",
+            "title": "Save sequence diagram"
+          },
+          "surroundingText": "\n",
+          "columnRange": {
+            "start": 10,
+            "end": 53
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-5.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-5.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<p>Flame Graphs make it easy to see how much time is spent in each function, and which calls are the most expensive.</p>\n\n<p><img src=\"/assets/img/docs/flamegraph-5.webp\" alt=\"flame graph image\"></p>\n\n<h3 id=\"how-to-read-a-flame-graph\">How to read a Flame Graph</h3>",
+          "lineNumber": 1091,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/flamegraph-5.webp",
+            "alt": "flame graph image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-8.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-8.webp",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<p>The lowest layer in a Flame Graph represents the AppMap Data recording, and it contains the recording’s name. For an AppMap Flame Graph created ...d left-to-right for subsequent calls. To illustrate, the events in the map below are numbered according to the sequence in which they occurred.</p>",
+          "lineNumber": 1097,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/flamegraph-8.webp",
+            "alt": "flame graph image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-9.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-9.png",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<p>Events in a Flame Graph are ordered bottom-up for functions calling other functions, and left-to-right for subsequent calls. To illustrate, the ...s database queries, and yellow represents outgoing calls to other services. The lowest level of the Flame Graph, the map name, is colored teal.</p>",
+          "lineNumber": 1101,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/flamegraph-9.png",
+            "alt": "flame graph image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-4.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-4.png",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<p>Each event cell also shows the elapsed time spent executing it. This may be displayed in ms (milliseconds) or µ (microseconds).</p>\n\n<p><img src...ge\"></p>\n\n<p>Timing data and event names may not always fit on small cells. These can be revealed by hovering your mouse pointer over the cell.</p>",
+          "lineNumber": 1107,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/flamegraph-4.png",
+            "alt": "flame graph image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-7.gif",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-7.gif",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<p>Similarly, you can select an event in a Sequence Diagram or Trace View and click “Show in Flame Graph” to see it displayed in a Flame Graph diag...g src=\"/assets/img/docs/flamegraph-7.gif\" alt=\"flame graph image\"></p>\n\n<h3 id=\"identifying-performance-issues\">Identifying Performance Issues</h3>",
+          "lineNumber": 1137,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/flamegraph-7.gif",
+            "alt": "flame graph image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-expensive.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-expensive.png",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<p>Expensive functions are those that are slow due to them doing a lot of computation and not spending much time waiting on other functions to retu...ctions and queries.</p>\n\n<p><img src=\"/assets/img/docs/flamegraph-expensive.png\" alt=\"flame graph image\"></p>\n\n<h4 id=\"n1-queries\">N+1 Queries</h4>",
+          "lineNumber": 1147,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/flamegraph-expensive.png",
+            "alt": "flame graph image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-1.gif",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-1.gif",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<p>AppMap Analysis automatically detects <a href=\"/docs/reference/analysis-rules#n-plus-one-query\">N+1 queries</a>, which are identical database qu...assets/img/docs/flamegraph-1.gif\" alt=\"flame graph image\"></p>\n\n<h4 id=\"delays-from-external-service-calls\">Delays from external service calls</h4>",
+          "lineNumber": 1153,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/flamegraph-1.gif",
+            "alt": "flame graph image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-external-svc.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-external-svc.png",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<p>Performance problems can sometimes be caused by latency in external services. In the example graph below, the event in yellow represents a call ...PI.</p>\n\n<p><img src=\"/assets/img/docs/flamegraph-external-svc.png\" alt=\"flame graph image\"></p>\n<div class=\"footnotes\" role=\"doc-endnotes\">\n  <ol>",
+          "lineNumber": 1159,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/docs/flamegraph-external-svc.png",
+            "alt": "flame graph image"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/navigate-to-interest.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/navigate-to-interest.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/navigate-to-interest.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 857,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/navigate-to-interest.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/filter-appmaps.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/filter-appmaps.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/filter-appmaps.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 867,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/filter-appmaps.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/sequence-diagram-expand.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/sequence-diagram-expand.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/sequence-diagram-expand.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 883,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/sequence-diagram-expand.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/expand-and-collapse-packages.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/expand-and-collapse-packages.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/expand-and-collapse-packages.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 912,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/expand-and-collapse-packages.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/view-detailed-information-about-dependencies.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/view-detailed-information-about-dependencies.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/view-detailed-information-about-dependencies.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 919,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/view-detailed-information-about-dependencies.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  ",
+          "columnRange": {
+            "start": 17,
+            "end": 82
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/list-the-functions-of-a-class.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/list-the-functions-of-a-class.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/list-the-functions-of-a-class.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 926,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/list-the-functions-of-a-class.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/dependency-explore-callers-and-callees.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/dependency-explore-callers-and-callees.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/dependency-explore-callers-and-callees.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 933,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/dependency-explore-callers-and-callees.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/view-sql-queries-in-dependency-map.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/view-sql-queries-in-dependency-map.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/view-sql-queries-in-dependency-map.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 940,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/view-sql-queries-in-dependency-map.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/open-source-from-dependency-map.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/open-source-from-dependency-map.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/open-source-from-dependency-map.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 947,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/open-source-from-dependency-map.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/expand-and-collapse-execution-paths.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/expand-and-collapse-execution-paths.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/expand-and-collapse-execution-paths.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 970,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/expand-and-collapse-execution-paths.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/trace-explore-callers-and-callees.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/trace-explore-callers-and-callees.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/trace-explore-callers-and-callees.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 977,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/trace-explore-callers-and-callees.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/view-variable-names-and-values.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/view-variable-names-and-values.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/view-variable-names-and-values.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 984,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/view-variable-names-and-values.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/view-sql-queries.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/view-sql-queries.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/view-sql-queries.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 991,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/view-sql-queries.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/open-source-code-right-to-the-line.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/open-source-code-right-to-the-line.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/open-source-code-right-to-the-line.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 998,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/open-source-code-right-to-the-line.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-6.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-6.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/flamegraph-6.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 1117,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/flamegraph-6.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-2.mp4",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/docs/flamegraph-2.mp4",
+          "foundInFile": "crawl/site/docs/reference/guides/using-appmap-diagrams.html",
+          "context": "<div class=\"video-container\">\n  <video playsinline=\"\" loop=\"\" autoplay=\"\" muted=\"\">\n    <source src=\"/assets/img/docs/flamegraph-2.mp4\" type=\"video/mp4\">\n  </video>\n</div>",
+          "lineNumber": 1125,
+          "elementType": "source",
+          "attributes": {
+            "src": "/assets/img/docs/flamegraph-2.mp4",
+            "type": "video/mp4"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/de75ba638d57418da2d42417936cdf95-00001.jpg",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://cdn.loom.com/sessions/thumbnails/de75ba638d57418da2d42417936cdf95-00001.mp4",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Fusing-appmap-diagrams.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fguides%2Fusing-appmap-diagrams&t=AppMap+-+Docs+-+Guides+-+Using+AppMap+Diagrams&cts=1775008185613&rv=1&vi=ba5629dede43b6d9fe497e16fd35898b&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

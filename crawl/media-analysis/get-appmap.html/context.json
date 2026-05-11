@@ -1,0 +1,140 @@
+{
+  "timestamp": "2026-04-01T01:56:30.506Z",
+  "crawlDirectory": "crawl/site/get-appmap.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 7,
+  "foundAssets": 6,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/get-appmap.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 122,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/get-appmap.html",
+          "context": "          <div class=\"caption-ide\">\n            <div class=\"wrap ide-name\">\n              <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n              <span>Visual Studio Code</span>\n            </div>",
+          "lineNumber": 165,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n              \n              Visual Studio Code\n            ",
+          "columnRange": {
+            "start": 43,
+            "end": 70
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-ide.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-ide.png",
+          "foundInFile": "crawl/site/get-appmap.html",
+          "context": "            </p>\n          </div>\n          <img src=\"/assets/img/vscode-ide.png\" alt=\"AppMap for Visual Studio Code\">\n        </div>\n      <div class=\"figure-caption\">",
+          "lineNumber": 171,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/vscode-ide.png",
+            "alt": "AppMap for Visual Studio Code"
+          },
+          "surroundingText": "\n          \n            \n              \n              Visual Studio Code\n            \n            Install via the VS Code marketplace. AppMap is available in the marketplace as an extenstion for Visua"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/get-appmap.html",
+          "context": "        <div class=\"caption-ide\">\n          <div class=\"wrap ide-name\">\n            <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n            <span>JetBrains</span>\n          </div>",
+          "lineNumber": 176,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n            \n            JetBrains\n          "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/intellij-ide.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/intellij-ide.png",
+          "foundInFile": "crawl/site/get-appmap.html",
+          "context": "          </p>\n        </div>\n        <img src=\"/assets/img/intellij-ide.png\" alt=\"AppMap for JetBrains\">\n      </div>\n      <div class=\"figure-caption\">",
+          "lineNumber": 182,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/intellij-ide.png",
+            "alt": "AppMap for JetBrains"
+          },
+          "surroundingText": "\n        \n          \n            \n            JetBrains\n          \n          Install via the JetBrains marketplace. AppMap is available in the marketplace as a plugin for JetBrains, PyCharm, IntelliJ,"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/enterprise-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/enterprise-icon.svg",
+          "foundInFile": "crawl/site/get-appmap.html",
+          "context": "        <div class=\"caption-ide\">\n          <div class=\"wrap ide-name\">\n              <img class=\"logo-small\" src=\"/assets/img/enterprise-icon.svg\" alt=\"Generic enterprise icon\">\n              <span>Enterprise Support</span>\n          </div>",
+          "lineNumber": 187,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/enterprise-icon.svg",
+            "alt": "Generic enterprise icon"
+          },
+          "surroundingText": "\n              \n              Enterprise Support\n          ",
+          "columnRange": {
+            "start": 43,
+            "end": 74
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fget-appmap.html&pu=https%3A%2F%2Fappmap.io%2Fget-appmap&t=AppMap+%7C+Get+AppMap&cts=1775008583032&rv=1&vi=b263e29e15d36c59e5af7a32fd792aa1&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

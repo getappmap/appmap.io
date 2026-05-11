@@ -1,0 +1,97 @@
+{
+  "timestamp": "2026-04-01T01:31:40.878Z",
+  "crawlDirectory": "crawl/site/blog/2022/02/01/visualize-nodejs-in-under-5-minutes/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 6,
+  "foundAssets": 3,
+  "notFoundAssets": 3,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2022/02/01/visualize-nodejs-in-under-5-minutes/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/viz-feature.webp",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/viz-feature.webp",
+          "foundInFile": "crawl/site/blog/2022/02/01/visualize-nodejs-in-under-5-minutes/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2022/02/01/visualize-nodejs-in-under-5-minutes/\">\n<meta property=\"og:site_name\" content=\"Ap...g/posts/viz-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2022-02-01T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/viz-feature.webp"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | Visualize the architecture of your Node.js app in under 5 minutes\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https"
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/viz-feature.webp",
+          "foundInFile": "crawl/site/blog/2022/02/01/visualize-nodejs-in-under-5-minutes/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2022/02/01/visualize-nodejs-in-under-5-minutes/\">\n<meta property=\"og:site_name\" content=\"Ap...g/posts/viz-feature.webp\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2022-02-01T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/viz-feature.webp",
+            "alt": "Visualize the architecture of your Node.js app in under 5 minutes",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  Visualize the architecture of your Node.js app in under 5 minutes\n  \n    \n\n\n  \n    \n    \n  \n  \n\n\nAppMap is an open source VSCode extension which helps you improve your code by showing yo"
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2022/02/01/visualize-nodejs-in-under-5-minutes/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 208,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803456068-592f9cd1240e179d079b00289dca4573172e4d386b2489331d30a1f221aa74f6-d?mw=80&q=85",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://i.vimeocdn.com/video/1803456068-592f9cd1240e179d079b00289dca4573172e4d386b2489331d30a1f221aa74f6-d?mw=800&mh=450",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2022%2F02%2F01%2Fvisualize-nodejs-in-under-5-minutes%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2022%2F02%2F01%2Fvisualize-nodejs-in-under-5-minutes&t=AppMap+%7C+Visualize+the+architecture+of+your+Node.js+app+in+under+5+minutes&cts=1775007092465&rv=1&vi=eef71ed241643687f88650ca63ccbf78&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

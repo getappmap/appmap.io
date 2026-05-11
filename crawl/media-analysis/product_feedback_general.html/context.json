@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-04-01T01:57:15.370Z",
+  "crawlDirectory": "crawl/site/product/feedback/general.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 8,
+  "foundAssets": 1,
+  "notFoundAssets": 7,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/product/feedback/general.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 122,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fproduct%2Ffeedback%2Fgeneral.html&pu=https%3A%2F%2Fappmap.io%2Fproduct%2Ffeedback%2Fgeneral&t=AppMap+%7C+Product+feedback&cts=1775008625725&rv=1&vi=ba073e3844307b68da6cf2197e8936f7&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://forms-na1.hsforms.com/embed/v3/counters.gif?key=forms-embed-v2-DEFINITION_SUCCESS&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=15&fi=9c0b949b-6121-4dc7-bcf1-5fb952ae39b9&fci=25e855a1-f062-4cf4-9f98-29bf97f792e6&ft=0&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fproduct%2Ffeedback%2Fgeneral.html&pu=https%3A%2F%2Fappmap.io%2Fproduct%2Ffeedback%2Fgeneral&t=AppMap+%7C+Product+feedback&cts=1775008625895&rv=1&vi=ba073e3844307b68da6cf2197e8936f7&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://forms-na1.hsforms.com/embed/v3/counters.gif?key=forms-embed-v2-RENDER_SUCCESS&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=17&fi=9c0b949b-6121-4dc7-bcf1-5fb952ae39b9&fci=25e855a1-f062-4cf4-9f98-29bf97f792e6&ft=0&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&bfp=864a476291a8db3ddd2a39e3d9c6ba3b&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fproduct%2Ffeedback%2Fgeneral.html&pu=https%3A%2F%2Fappmap.io%2Fproduct%2Ffeedback%2Fgeneral&t=AppMap+%7C+Product+feedback&cts=1775008625907&rv=1&vi=ba073e3844307b68da6cf2197e8936f7&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://www.gstatic.com/recaptcha/api2/logo_48.png",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://api.hubspot.com/viral-links/v1/tracking?viralLinkType=forms&deviceId=14d31d73-801d-44b0-bbc4-8573475cae4d&hubId=6936403",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

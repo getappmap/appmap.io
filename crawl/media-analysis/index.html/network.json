@@ -1,0 +1,1201 @@
+{
+  "url": "https://appmap.io/",
+  "timestamp": "2026-04-01T01:13:47.622Z",
+  "loadTime": 12317,
+  "summary": {
+    "totalRequests": 62,
+    "successfulRequests": 43,
+    "failedRequests": 8,
+    "cachedRequests": 0,
+    "redirectedRequests": 0,
+    "slowRequests": 5
+  },
+  "requestsByType": {
+    "document": 1,
+    "stylesheet": 9,
+    "script": 11,
+    "image": 13,
+    "fetch": 7,
+    "font": 4,
+    "media": 16,
+    "xhr": 1
+  },
+  "failedRequests": [
+    {
+      "url": "https://appmap.io/assets/video/review.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006015795,
+        "duration": 3358
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/video/review-dashboard.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006015798,
+        "duration": 3855
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/video/sequence_04.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006015798,
+        "duration": 4529
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/video/map-sm.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006015860,
+        "duration": 4732
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/video/analyze-feature-movie-navie.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006015860,
+        "duration": 5211
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775006015670&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=2076867510.1775006016&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938465~115938468~116991817&sid=1775006016&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2F&dt=AppMap%20%7C%20AppMap&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=669",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006016127,
+        "duration": 271
+      }
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006016232,
+        "duration": 253
+      }
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775006015670&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=2076867510.1775006016&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938465~115938468~116991817&sid=1775006016&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2F&dt=AppMap%20%7C%20AppMap&en=scroll&epn.percent_scrolled=90&_et=4939&tfd=10608",
+      "method": "POST",
+      "resourceType": "fetch",
+      "error": "net::ERR_ABORTED",
+      "timing": {
+        "startTime": 1775006026062,
+        "duration": 36
+      }
+    }
+  ],
+  "slowRequests": [
+    {
+      "url": "https://appmap.io/assets/video/review.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006015795,
+        "endTime": 1775006019153,
+        "duration": 3358
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 206,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 3989998,
+        "responseHeadersSize": 544
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://appmap.io/assets/video/review-dashboard.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006015798,
+        "endTime": 1775006019653,
+        "duration": 3855
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 206,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1524301,
+        "responseHeadersSize": 545
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://appmap.io/assets/video/sequence_04.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006015798,
+        "endTime": 1775006020327,
+        "duration": 4529
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 206,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 785442,
+        "responseHeadersSize": 542
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://appmap.io/assets/video/map-sm.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006015860,
+        "endTime": 1775006020592,
+        "duration": 4732
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 206,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 156320,
+        "responseHeadersSize": 542
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://appmap.io/assets/video/analyze-feature-movie-navie.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006015860,
+        "endTime": 1775006021071,
+        "duration": 5211
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 206,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 775278,
+        "responseHeadersSize": 542
+      },
+      "failureText": "net::ERR_ABORTED"
+    }
+  ],
+  "allRequests": [
+    {
+      "url": "https://appmap.io/",
+      "method": "GET",
+      "resourceType": "document",
+      "timing": {
+        "startTime": 1775006015457,
+        "endTime": 1775006015540,
+        "duration": 83
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006015555,
+        "endTime": 1775006015637,
+        "duration": 82
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 26291,
+        "responseHeadersSize": 1178
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006015555,
+        "endTime": 1775006015665,
+        "duration": 110
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006015556,
+        "endTime": 1775006015658,
+        "duration": 102
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006015556,
+        "endTime": 1775006015664,
+        "duration": 108
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006015556,
+        "endTime": 1775006015665,
+        "duration": 109
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006015556,
+        "endTime": 1775006015636,
+        "duration": 80
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 14850,
+        "responseHeadersSize": 1030
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006015556,
+        "endTime": 1775006015639,
+        "duration": 83
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 7896,
+        "responseHeadersSize": 1171
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/css/main.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006015556,
+        "endTime": 1775006015589,
+        "duration": 33
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://kit.fontawesome.com/256119c631.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006015556,
+        "endTime": 1775006015645,
+        "duration": 89
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-216SS3H0RL",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006015559,
+        "endTime": 1775006015953,
+        "duration": 394
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 173015,
+        "responseHeadersSize": 604
+      }
+    },
+    {
+      "url": "https://js.hs-scripts.com/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006015559,
+        "endTime": 1775006015829,
+        "duration": 270
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 630,
+        "responseHeadersSize": 745
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006015559,
+        "endTime": 1775006015643,
+        "duration": 84
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 21678,
+        "responseHeadersSize": 1047
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006015559,
+        "endTime": 1775006015593,
+        "duration": 34
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 2425,
+        "responseHeadersSize": 518
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/navie-answer.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006015559,
+        "endTime": 1775006015828,
+        "duration": 269
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 158254,
+        "responseHeadersSize": 469
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/cognitive-zen-logo.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006015561,
+        "endTime": 1775006015864,
+        "duration": 303
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 28854,
+        "responseHeadersSize": 643
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/y_combinator_logo.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006015561,
+        "endTime": 1775006015939,
+        "duration": 378
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 616,
+        "responseHeadersSize": 556
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/x-logo.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006015561,
+        "endTime": 1775006015876,
+        "duration": 315
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 308,
+        "responseHeadersSize": 556
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/vscode-icon.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006015561,
+        "endTime": 1775006015788,
+        "duration": 227
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1681,
+        "responseHeadersSize": 565
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/jetbrains.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006015561,
+        "endTime": 1775006015791,
+        "duration": 230
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1809,
+        "responseHeadersSize": 565
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/nvidia-inception-badge.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006015561,
+        "endTime": 1775006015908,
+        "duration": 347
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 8412,
+        "responseHeadersSize": 646
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/gh-for-startups-badge.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006015561,
+        "endTime": 1775006015908,
+        "duration": 347
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 4942,
+        "responseHeadersSize": 645
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/img/appmap-techcrunch-finalist-ko.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006015561,
+        "endTime": 1775006015902,
+        "duration": 341
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://appmap.io/assets/img/mongo-db-partner-badge.png",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006015561,
+        "endTime": 1775006015908,
+        "duration": 347
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 12516,
+        "responseHeadersSize": 647
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006015561,
+        "endTime": 1775006015809,
+        "duration": 248
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 24038,
+        "responseHeadersSize": 641
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006015562,
+        "endTime": 1775006015805,
+        "duration": 243
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 6646,
+        "responseHeadersSize": 1046
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006015562,
+        "endTime": 1775006015805,
+        "duration": 243
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23377,
+        "responseHeadersSize": 1188
+      }
+    },
+    {
+      "url": "https://appmap.io/application.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006015562,
+        "endTime": 1775006015808,
+        "duration": 246
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1,
+        "responseHeadersSize": 574
+      }
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006015670,
+        "endTime": 1775006015843,
+        "duration": 173
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-shims.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006015670,
+        "endTime": 1775006015842,
+        "duration": 172
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v5-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006015670,
+        "endTime": 1775006015831,
+        "duration": 161
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://ka-f.fontawesome.com/releases/v6.7.2/css/free-v4-font-face.min.css?token=256119c631",
+      "method": "GET",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006015671,
+        "endTime": 1775006015856,
+        "duration": 185
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://appmap.io/assets/img/user-logos.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006015784,
+        "endTime": 1775006015952,
+        "duration": 168
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006015785,
+        "endTime": 1775006016019,
+        "duration": 234
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 48320,
+        "responseHeadersSize": 852
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006015785,
+        "endTime": 1775006016026,
+        "duration": 241
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 128352,
+        "responseHeadersSize": 852
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/video/review.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006015795,
+        "endTime": 1775006019153,
+        "duration": 3358
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 206,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 3989998,
+        "responseHeadersSize": 544
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://appmap.io/assets/video/review-dashboard.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006015798,
+        "endTime": 1775006019653,
+        "duration": 3855
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 206,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 1524301,
+        "responseHeadersSize": 545
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://appmap.io/assets/video/sequence_04.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006015798,
+        "endTime": 1775006020327,
+        "duration": 4529
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 206,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 785442,
+        "responseHeadersSize": 542
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://appmap.io/assets/video/map-sm.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006015860,
+        "endTime": 1775006020592,
+        "duration": 4732
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 206,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 156320,
+        "responseHeadersSize": 542
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://appmap.io/assets/video/analyze-feature-movie-navie.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006015860,
+        "endTime": 1775006021071,
+        "duration": 5211
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 206,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 775278,
+        "responseHeadersSize": 542
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1775005800000/6936403.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006015968,
+        "endTime": 1775006016192,
+        "duration": 224
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hscollectedforms.net/collectedforms.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006015969,
+        "endTime": 1775006016189,
+        "duration": 220
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/6936403/banner.js",
+      "method": "GET",
+      "resourceType": "script",
+      "timing": {
+        "startTime": 1775006015969,
+        "endTime": 1775006016189,
+        "duration": 220
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775006015670&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=2076867510.1775006016&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&tag_exp=0~115938465~115938468~116991817&sid=1775006016&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2F&dt=AppMap%20%7C%20AppMap&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=669",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006016127,
+        "endTime": 1775006016398,
+        "duration": 271
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "timing": {
+        "startTime": 1775006016232,
+        "endTime": 1775006016301,
+        "duration": 69
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://js.hs-banner.com/v2/activity/view",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006016232,
+        "endTime": 1775006016485,
+        "duration": 253
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "failureText": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://forms.hscollectedforms.net/collected-forms/v1/config/json?portalId=6936403&utk=",
+      "method": "GET",
+      "resourceType": "xhr",
+      "timing": {
+        "startTime": 1775006016310,
+        "endTime": 1775006016485,
+        "duration": 175
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": ""
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006016337,
+        "endTime": 1775006016482,
+        "duration": 145
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23580,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "timing": {
+        "startTime": 1775006016337,
+        "endTime": 1775006016482,
+        "duration": 145
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 23040,
+        "responseHeadersSize": 853
+      }
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2F&pu=https%3A%2F%2Fappmap.io%2F&t=AppMap+%7C+AppMap&cts=1775006016330&rv=1&vi=d50855cbaa4977cb1cf8aa6033694727&nc=true&ce=false&cc=1",
+      "method": "GET",
+      "resourceType": "image",
+      "timing": {
+        "startTime": 1775006016337,
+        "endTime": 1775006016482,
+        "duration": 145
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 200,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 45,
+        "responseHeadersSize": 997
+      }
+    },
+    {
+      "url": "https://appmap.io/assets/video/review.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006019056
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/video/review.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006019117
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/video/review-dashboard.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006019556
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/video/review-dashboard.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006019618
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/video/sequence_04.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006020057
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/video/map-sm.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006020057
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/video/map-sm.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006020104
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/video/sequence_04.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006020282
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/video/map-sm.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006020559
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/video/analyze-feature-movie-navie.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006020559
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://appmap.io/assets/video/analyze-feature-movie-navie.webm",
+      "method": "GET",
+      "resourceType": "media",
+      "timing": {
+        "startTime": 1775006021033
+      },
+      "redirected": false,
+      "fromCache": false
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-216SS3H0RL&gtm=45je63u0h1v883218513za200zd883218513&_p=1775006015670&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=2076867510.1775006016&ul=en-us%40posix&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B99.0.0.0%7CHeadlessChrome%3B139.0.7258.5%7CChromium%3B139.0.7258.5&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEA&_s=2&tag_exp=0~115938465~115938468~116991817&sid=1775006016&sct=1&seg=0&dl=https%3A%2F%2Fappmap.io%2F&dt=AppMap%20%7C%20AppMap&en=scroll&epn.percent_scrolled=90&_et=4939&tfd=10608",
+      "method": "POST",
+      "resourceType": "fetch",
+      "timing": {
+        "startTime": 1775006026062,
+        "endTime": 1775006026098,
+        "duration": 36
+      },
+      "redirected": false,
+      "fromCache": false,
+      "status": 204,
+      "statusText": "",
+      "size": {
+        "requestBodySize": 0,
+        "responseBodySize": 0,
+        "responseHeadersSize": 785
+      },
+      "failureText": "net::ERR_ABORTED"
+    }
+  ]
+}

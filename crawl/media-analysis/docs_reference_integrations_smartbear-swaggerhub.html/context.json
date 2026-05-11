@@ -1,0 +1,175 @@
+{
+  "timestamp": "2026-04-01T01:51:49.132Z",
+  "crawlDirectory": "crawl/site/docs/reference/integrations/smartbear-swaggerhub.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 10,
+  "foundAssets": 8,
+  "notFoundAssets": 2,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/smartbear-swaggerhub.html",
+          "context": "      <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 125,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/vscode-icon.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/smartbear-swaggerhub.html",
+          "context": "      <div class=\"docs-cta\">\n        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class=\"logo-small\" src=\"/assets/img/jetbrains.svg\" alt=\"JetBrains logo\">\n        </div>",
+          "lineNumber": 772,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/vscode-icon.svg",
+            "alt": "Visual Studio Code logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/jetbrains.svg",
+          "foundInFile": "crawl/site/docs/reference/integrations/smartbear-swaggerhub.html",
+          "context": "        <div class=\"logos\">\n          <img class=\"logo-small\" src=\"/assets/img/vscode-icon.svg\" alt=\"Visual Studio Code logo\">\n          <img class...class=\"btn btn-primary\" data-event-category=\"docs_engagement\" data-event-action=\"install_free_extension\" data-event-label=\"install_free_extension\">",
+          "lineNumber": 773,
+          "elementType": "img",
+          "attributes": {
+            "class": "logo-small",
+            "src": "/assets/img/jetbrains.svg",
+            "alt": "JetBrains logo"
+          },
+          "surroundingText": "\n          \n          \n        "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/swaggerhub-api.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/swaggerhub-api.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/smartbear-swaggerhub.html",
+          "context": "<p>After your build job completes, you’ll see your latest version of your API imported into SwaggerHub.</p>\n\n<p><img class=\"video-screenshot\" src=\"...></p>\n\n<p>Next, navigate to your SwaggerHub Portal administration page, select on your project and find the latest release of the uploaded API.</p>",
+          "lineNumber": 841,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/swaggerhub-api.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/swaggerhub-portal-link.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/swaggerhub-portal-link.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/smartbear-swaggerhub.html",
+          "context": "<p>Next, navigate to your SwaggerHub Portal administration page, select on your project and find the latest release of the uploaded API.</p>\n\n<p><i...g/swaggerhub-portal-link.webp\"></p>\n\n<p>When you are ready to publish this API to your users and customers, simply click the “Link API” button.</p>",
+          "lineNumber": 845,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/swaggerhub-portal-link.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/swaggerhub-publish.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/swaggerhub-publish.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/smartbear-swaggerhub.html",
+          "context": "<p>When you are ready to publish this API to your users and customers, simply click the “Link API” button.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/swaggerhub-publish.webp\"></p>\n\n<p>After it’s published, you’ll see the latest revision now available in your SwaggerHub Portal</p>",
+          "lineNumber": 849,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/swaggerhub-publish.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/swaggerhub-portal.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/swaggerhub-portal.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/smartbear-swaggerhub.html",
+          "context": "<p>After it’s published, you’ll see the latest revision now available in your SwaggerHub Portal</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/...id=\"disable-deployment-when-runtime-openapi-diverges-from-swaggerhub-api\">Disable Deployment when Runtime OpenAPI Diverges from SwaggerHub API</h2>",
+          "lineNumber": 853,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/swaggerhub-portal.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/swaggerhub-github-build-failure.webp",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/swaggerhub-github-build-failure.webp",
+          "foundInFile": "crawl/site/docs/reference/integrations/smartbear-swaggerhub.html",
+          "context": "<p>With this configuration enabled, when a user makes a commit which changes the routes that are NOT currently in the published API spec on Swagger... or remove the offending changes.</p>\n\n<p><img class=\"video-screenshot\" src=\"/assets/img/swaggerhub-github-build-failure.webp\"></p>\n\n          <hr>",
+          "lineNumber": 899,
+          "elementType": "img",
+          "attributes": {
+            "class": "video-screenshot",
+            "src": "/assets/img/swaggerhub-github-build-failure.webp"
+          },
+          "surroundingText": ""
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://forms.hsforms.com/embed/v3/counters.gif?key=collected-forms-embed-js-form-bind&count=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fintegrations%2Fsmartbear-swaggerhub.html&pu=https%3A%2F%2Fappmap.io%2Fdocs%2Freference%2Fintegrations%2Fsmartbear-swaggerhub&t=AppMap+-+Docs+-+Integrations+-+SmartBear+SwaggerHub&cts=1775008297978&rv=1&vi=69e7b7948f912790208a26d21cc224b4&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}

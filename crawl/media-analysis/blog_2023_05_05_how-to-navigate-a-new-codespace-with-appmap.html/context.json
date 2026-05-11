@@ -1,0 +1,461 @@
+{
+  "timestamp": "2026-04-01T01:35:30.068Z",
+  "crawlDirectory": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+  "mediaUrlsSource": "input",
+  "totalMediaAssets": 20,
+  "foundAssets": 19,
+  "notFoundAssets": 1,
+  "analysis": [
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "    <nav class=\"navbar navbar-expand-lg navbar-dark\">\n  <a class=\"navbar-brand\" href=\"/\">\n    <img src=\"/assets/img/logos/appmap-logo-color.svg\">\n ...er\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+          "lineNumber": 128,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-logo-color.svg"
+          },
+          "surroundingText": "\n    \n  "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigating-codebases-feature.jpg",
+      "totalReferences": 2,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigating-codebases-feature.jpg",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/\">\n<meta property=\"og:site_name\" con...ng-codebases-feature.jpg\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-05-05T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "meta",
+          "attributes": {
+            "property": "og:image",
+            "content": "https://appmap.io/assets/img/posts/navigating-codebases-feature.jpg"
+          },
+          "surroundingText": "\n    \n    \n    AppMap | How to navigate a new codebase with AppMap\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*!\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\n * License - https://fontawesome.com/lice",
+          "columnRange": {
+            "start": 35,
+            "end": 102
+          }
+        },
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigating-codebases-feature.jpg",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<meta property=\"og:url\" content=\"https://appmap.io/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/\">\n<meta property=\"og:site_name\" con...ng-codebases-feature.jpg\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"article:published_time\" content=\"2023-05-05T00:00:00+00:00\">",
+          "lineNumber": 99,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigating-codebases-feature.jpg",
+            "alt": "How to navigate a new codebase with AppMap",
+            "class": "post-image"
+          },
+          "surroundingText": "\n  \n    \n  \n  How to navigate a new codebase with AppMap\n  \n    In the tech industry, changing jobs feels inevitable. Whether moving on to advance your career or being caught up in an unfortunate layo",
+          "columnRange": {
+            "start": 52,
+            "end": 102
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-1.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-1.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>Next, from the three dots menu in the upper right-hand corner near the run button, select <code class=\" highlighter-rouge language-plaintext\">St...ap-1.png\" alt=\"Start PetClinicIntegrationTests with AppMap\"></p>\n\n<p>Open the AppMap plugin by selecting the icon from the right-hand menu bar.</p>",
+          "lineNumber": 206,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-1.png",
+            "alt": "Start PetClinicIntegrationTests with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 72
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-2.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-2.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>Open the AppMap plugin by selecting the icon from the right-hand menu bar.</p>\n\n<p><img src=\"/assets/img/posts/navigate-a-new-codebase-with-appm...o tests. One is for a “find all” action, and one is for “owner details.” We can select either to view it. Let’s take a look at “owner details.”</p>",
+          "lineNumber": 210,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-2.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 72
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-3.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-3.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>AppMap automatically generates maps for us. If you’re following along, you should see two tests. One is for a “find all” action, and one is for ... we need to update the pet, not the owner which isn’t on the list. Let’s create another map and see if we can learn more about our application.</p>",
+          "lineNumber": 214,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-3.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 72
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-4.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-4.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>Next, we will start the application the same way we did when mapping tests, but this time select <code class=\" highlighter-rouge language-plaint...o navigate a new codebase with AppMap\"></p>\n\n<p>From the AppMap plugin menu, click the round gray record button in the upper right-hand corner.</p>",
+          "lineNumber": 227,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-4.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 72
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-5.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-5.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>From the AppMap plugin menu, click the round gray record button in the upper right-hand corner.</p>\n\n<p><img src=\"/assets/img/posts/navigate-a-n...gate a new codebase with AppMap\"></p>\n\n<p>A pop-up menu should appear, select the remote URL from the drop-down menu and click start recording.</p>",
+          "lineNumber": 231,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-5.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 72
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-6.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-6.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>A pop-up menu should appear, select the remote URL from the drop-down menu and click start recording.</p>\n\n<p><img src=\"/assets/img/posts/naviga...e application running; if it does not, open a browser and navigate to the remote URL you selected. If you’re following along, the remote URL is</p>",
+          "lineNumber": 235,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-6.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 72
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-7.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-7.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>Now that the application is running, we can start using it. First, let’s add an owner. Select find owners and then click the “Add Owner” button....-appmap-7.png\" alt=\"How to navigate a new codebase with AppMap\"></p>\n\n<p>Fill out the form with whatever data you would like and add the owner.</p>",
+          "lineNumber": 243,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-7.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 72
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-8.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-8.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>Fill out the form with whatever data you would like and add the owner.</p>\n\n<p><img src=\"/assets/img/posts/navigate-a-new-codebase-with-appmap-8.png\" alt=\"How to navigate a new codebase with AppMap\"></p>\n\n<p>On the next screen, select “Add Pet” fill in the details, and add the pet.</p>",
+          "lineNumber": 247,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-8.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 72
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-9.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-9.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>On the next screen, select “Add Pet” fill in the details, and add the pet.</p>\n\n<p><img src=\"/assets/img/posts/navigate-a-new-codebase-with-appmap-9.png\" alt=\"How to navigate a new codebase with AppMap\"></p>\n\n<p>Once we have added a pet successfully, we will see this screen.</p>",
+          "lineNumber": 251,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-9.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 72
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-10.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-10.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>Once we have added a pet successfully, we will see this screen.</p>\n\n<p><img src=\"/assets/img/posts/navigate-a-new-codebase-with-appmap-10.png\" ...codebase with AppMap\"></p>\n\n<p>Let’s head back to our IDE and stop the recording by selecting the grey square button in the AppMap plugin menu.</p>",
+          "lineNumber": 255,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-10.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 73
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-11.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-11.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>Let’s head back to our IDE and stop the recording by selecting the grey square button in the AppMap plugin menu.</p>\n\n<p><img src=\"/assets/img/p...\" alt=\"How to navigate a new codebase with AppMap\"></p>\n\n<p>A new pop-up should appear. Let’s name our map “add pet” and select stop recording.</p>",
+          "lineNumber": 259,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-11.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 73
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-12.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-12.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>A new pop-up should appear. Let’s name our map “add pet” and select stop recording.</p>\n\n<p><img src=\"/assets/img/posts/navigate-a-new-codebase-with-appmap-12.png\" alt=\"How to navigate a new codebase with AppMap\"></p>\n\n<p>Congrats, you just generated your first map.</p>",
+          "lineNumber": 263,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-12.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 73
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-13.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-13.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>It takes a moment for AppMap to process, then once complete, you should see the new map open in your IDE. The map itself is stored locally in a ... used one, take the time to <a href=\"/docs/reference/guides/using-appmap-diagrams.html#sequence-diagram\">learn about</a> them and what they do.</p>",
+          "lineNumber": 269,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-13.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 73
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-14.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-14.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>These views are great, but if you can’t use them to your advantage, they are just cool pictures. With that in mind let’s use them. The real powe...enu lists functions, inbound connections, queries, and the file path to the PetController. We can even see the creation form we need to change.</p>",
+          "lineNumber": 278,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-14.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 73
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-15.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-15.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>First, open the dependency map and click the plus buttons to expand the colored boxes until you see the owner controller. When you click on the ...anced-formatting/attaching-files\">attach it to our pull request</a> for our team to check over which helps them understand my new code as well.</p>",
+          "lineNumber": 282,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-15.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 73
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-16.png",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/posts/navigate-a-new-codebase-with-appmap-16.png",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "<p>We can open the controller to change it right from here. We click the open in a new tab icon in the file path box, or we can click on the functi...tand what it’s connected to, and made a change. The more we view and study these maps, the better we will know how they work and are connected.</p>",
+          "lineNumber": 286,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/posts/navigate-a-new-codebase-with-appmap-16.png",
+            "alt": "How to navigate a new codebase with AppMap"
+          },
+          "surroundingText": "",
+          "columnRange": {
+            "start": 13,
+            "end": 73
+          }
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+      "totalReferences": 1,
+      "references": [
+        {
+          "mediaUrl": "https://appmap.io/assets/img/logos/appmap-icon-color.svg",
+          "foundInFile": "crawl/site/blog/2023/05/05/how-to-navigate-a-new-codespace-with-appmap/index.html",
+          "context": "  <div class=\"section-content\">\n    <a href=\"/get-appmap\">\n      <img src=\"/assets/img/logos/appmap-icon-color.svg\" alt=\"AppMap logo\">\n      Get AppMap\n    </a>",
+          "lineNumber": 319,
+          "elementType": "img",
+          "attributes": {
+            "src": "/assets/img/logos/appmap-icon-color.svg",
+            "alt": "AppMap logo"
+          },
+          "surroundingText": "\n      \n      Get AppMap\n    "
+        }
+      ],
+      "status": "found"
+    },
+    {
+      "mediaUrl": "https://track.hubspot.com/__ptq.gif?k=1&sd=1280x720&cd=24-bit&cs=UTF-8&ln=en-us%40posix&v=1.1&a=6936403&rcu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fhow-to-navigate-a-new-codespace-with-appmap%2F&pu=https%3A%2F%2Fappmap.io%2Fblog%2F2023%2F05%2F05%2Fhow-to-navigate-a-new-codespace-with-appmap&t=AppMap+%7C+How+to+navigate+a+new+codebase+with+AppMap&cts=1775007312815&rv=1&vi=68460ee7e6c79084e932c5d6e4d9252c&nc=true&ce=false&cc=1",
+      "totalReferences": 0,
+      "references": [],
+      "status": "not-found"
+    }
+  ]
+}
