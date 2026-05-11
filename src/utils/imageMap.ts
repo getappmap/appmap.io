@@ -6,6 +6,7 @@
 // Import all images as ES modules
 import appmapLogo from "@/assets/images/appmap-logo.svg";
 import userLogos from "@/assets/images/user-logos.svg";
+import navieAnswer from "@/assets/images/navie-answer.webp";
 
 /**
  * Image mapping from JSON paths to imported asset URLs
@@ -16,11 +17,15 @@ const imageMap: Record<string, string> = {
   "/assets/images/appmap-logo.svg": appmapLogo,
   "/images/appmap-logo.svg": appmapLogo,
   "/assets/img/logos/appmap-logo-color.svg": appmapLogo,
-  
+
   // User/Company logos
   "/assets/img/user-logos.svg": userLogos,
   "/images/user-logos.svg": userLogos,
   "/user-logos.svg": userLogos,
+
+  // Hero image (Navie answer screenshot)
+  "/assets/img/navie-answer.webp": navieAnswer,
+  "/assets/images/navie-answer.webp": navieAnswer,
 };
 
 /**
