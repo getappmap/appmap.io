@@ -54,7 +54,6 @@ export function BiggerPictureDemo() {
               muted
               loop
               playsInline
-              poster="/assets/video/review-dashboard-poster.jpg"
             >
               <source src="/assets/video/review-dashboard.webm" type="video/webm" />
               <source src="/assets/video/review-dashboard.mp4" type="video/mp4" />

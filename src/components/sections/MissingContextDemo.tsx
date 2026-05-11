@@ -80,7 +80,6 @@ export function MissingContextDemo() {
               muted
               loop
               playsInline
-              poster="/assets/video/map-sm-poster.jpg"
             >
               <source src="/assets/video/map-sm.webm" type="video/webm" />
               <source src="/assets/video/map-sm.mp4" type="video/mp4" />

@@ -45,7 +45,6 @@ export function ApplicationRunsDemo() {
               muted
               loop
               playsInline
-              poster="/assets/video/sequence-poster.jpg"
             >
               <source src="/assets/video/sequence_04.webm" type="video/webm" />
               <source src="/assets/video/sequence_04b.mp4" type="video/mp4" />

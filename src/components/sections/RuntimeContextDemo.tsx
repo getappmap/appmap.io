@@ -45,7 +45,6 @@ export function RuntimeContextDemo() {
               muted
               loop
               playsInline
-              poster="/assets/video/navie-poster.jpg"
             >
               <source src="/assets/video/analyze-feature-movie-navie.webm" type="video/webm" />
               <source src="/assets/video/analyze-feature-movie-navie.mp4" type="video/mp4" />

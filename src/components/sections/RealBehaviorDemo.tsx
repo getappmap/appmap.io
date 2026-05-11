@@ -45,7 +45,6 @@ export function RealBehaviorDemo() {
               muted
               loop
               playsInline
-              poster="/assets/video/review-poster.jpg"
             >
               <source src="/assets/video/review.webm" type="video/webm" />
               <source src="/assets/video/review.mp4" type="video/mp4" />
