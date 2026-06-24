@@ -136,10 +136,23 @@
   --font-sans: "Open Sans", system-ui, -apple-system, sans-serif;
   --font-body: "Open Sans", system-ui, -apple-system, sans-serif;
   --font-heading: "Lato", "Open Sans", sans-serif;
-  --color-appmap-bg: #010303;
-  --color-appmap-text: #e3e5e8;
-  --color-appmap-accent: #c242b1;
-  --color-appmap-accent-hover: #a63896;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  /* AppMap repositioning palette (matches appmap_mockup.html) */
+  --color-am-bg: #0d0a1a;
+  --color-am-bg2: #16112b;
+  --color-am-card: #1c1538;
+  --color-am-line: #2c2353;
+  --color-am-ink: #f2effb;
+  --color-am-muted: #a99fc7;
+  --color-am-brand: #ff07aa;
+  --color-am-brand-d: #d6008f;
+  --color-am-violet: #8b5cf6;
+  --color-am-violet-l: #a78bfa;
+  --color-am-coral: #fb7185;
+  --color-am-amber: #fbbf24;
 }
 
 @layer base {
@@ -148,12 +161,14 @@
   }
 
   html {
-    background-color: #010303;
+    background-color: #0d0a1a;
+    scroll-behavior: smooth;
   }
 
   body {
-    background-color: #010303;
-    color: #e3e5e8;
+    background-color: #0d0a1a;
+    color: #f2effb;
     font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
   }
 }
