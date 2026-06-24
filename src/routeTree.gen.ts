@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as PlatformRouteImport } from './routes/platform'
 import { Route as EnterpriseRouteImport } from './routes/enterprise'
 import { Route as CompatibilityRouteImport } from './routes/compatibility'
@@ -17,6 +18,11 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as NavieSplatRouteImport } from './routes/navie.$'
 import { Route as DocsNavieSplatRouteImport } from './routes/docs.navie.$'
 
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PlatformRoute = PlatformRouteImport.update({
   id: '/platform',
   path: '/platform',
@@ -59,6 +65,7 @@ export interface FileRoutesByFullPath {
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/platform': typeof PlatformRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -68,6 +75,7 @@ export interface FileRoutesByTo {
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/platform': typeof PlatformRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -78,6 +86,7 @@ export interface FileRoutesById {
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/platform': typeof PlatformRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -89,6 +98,7 @@ export interface FileRouteTypes {
     | '/compatibility'
     | '/enterprise'
     | '/platform'
+    | '/sitemap.xml'
     | '/navie/$'
     | '/docs/navie/$'
   fileRoutesByTo: FileRoutesByTo
@@ -98,6 +108,7 @@ export interface FileRouteTypes {
     | '/compatibility'
     | '/enterprise'
     | '/platform'
+    | '/sitemap.xml'
     | '/navie/$'
     | '/docs/navie/$'
   id:
@@ -107,6 +118,7 @@ export interface FileRouteTypes {
     | '/compatibility'
     | '/enterprise'
     | '/platform'
+    | '/sitemap.xml'
     | '/navie/$'
     | '/docs/navie/$'
   fileRoutesById: FileRoutesById
@@ -117,12 +129,20 @@ export interface RootRouteChildren {
   CompatibilityRoute: typeof CompatibilityRoute
   EnterpriseRoute: typeof EnterpriseRoute
   PlatformRoute: typeof PlatformRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   NavieSplatRoute: typeof NavieSplatRoute
   DocsNavieSplatRoute: typeof DocsNavieSplatRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/platform': {
       id: '/platform'
       path: '/platform'
@@ -181,6 +201,7 @@ const rootRouteChildren: RootRouteChildren = {
   CompatibilityRoute: CompatibilityRoute,
   EnterpriseRoute: EnterpriseRoute,
   PlatformRoute: PlatformRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   NavieSplatRoute: NavieSplatRoute,
   DocsNavieSplatRoute: DocsNavieSplatRoute,
 }
