@@ -1,44 +1,55 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import { Header } from "@/components/layout/Header";
-import { Hero } from "@/components/sections/Hero";
-import { WhatIsAppMap } from "@/components/sections/WhatIsAppMap";
-import SocialProof from "@/components/sections/SocialProof";
-import { FeaturesReview } from "@/components/sections/FeaturesReview";
-import { RealBehaviorDemo } from "@/components/sections/RealBehaviorDemo";
-import { BiggerPictureDemo } from "@/components/sections/BiggerPictureDemo";
-import { ApplicationRunsDemo } from "@/components/sections/ApplicationRunsDemo";
-import { MissingContextDemo } from "@/components/sections/MissingContextDemo";
-import { RuntimeContextDemo } from "@/components/sections/RuntimeContextDemo";
-import { FinalCTA } from "@/components/sections/FinalCTA";
+import { HomeHero } from "@/components/sections/home/HomeHero";
+import { VibeLoop } from "@/components/sections/home/VibeLoop";
+import { OneVsFifteen } from "@/components/sections/home/OneVsFifteen";
+import { TrustBar } from "@/components/sections/home/TrustBar";
+import { WhatYourAgentSaw } from "@/components/sections/home/WhatYourAgentSaw";
+import { FeaturesStay } from "@/components/sections/home/FeaturesStay";
+import { HowItWorks } from "@/components/sections/home/HowItWorks";
+import { HomeCompatibility } from "@/components/sections/home/HomeCompatibility";
+import { Reviews } from "@/components/sections/home/Reviews";
+import { ClosingCTA } from "@/components/sections/home/ClosingCTA";
 
+const title = "AppMap: Runtime Context for AI Coding Agents";
 const description =
-  "Cutting edge AI for challenging dev work. Dev-centric observability + AI delivers the smartest answers in your code editor.";
+  "AppMap records how your code actually runs and serves it to any AI coding agent over MCP. Cheaper, more reliable agent work. Open source, local-only.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AppMap | AppMap" },
+      { title },
       { name: "description", content: description },
-      { name: "author", content: "getappmap" },
-      { property: "og:title", content: "AppMap" },
-      { property: "og:locale", content: "en_US" },
+      { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: "https://appmap.io/" },
-      { property: "og:site_name", content: "AppMap" },
+      { property: "og:url", content: "/" },
+      { property: "og:locale", content: "en_US" },
       {
         property: "og:image",
         content: "https://appmap.io/assets/img/logos/1200x630-appmap-card.png",
       },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
       {
-        property: "twitter:image",
+        name: "twitter:image",
         content: "https://appmap.io/assets/img/logos/1200x630-appmap-card.png",
       },
-      { property: "twitter:title", content: "AppMap" },
-      { name: "twitter:site", content: "@getappmap" },
-      { name: "twitter:creator", content: "@getappmap" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          name: "AppMap",
+          applicationCategory: "DeveloperApplication",
+          operatingSystem: "Windows, macOS, Linux",
+          description,
+          offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+        }),
+      },
     ],
   }),
   component: Index,
@@ -46,18 +57,20 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen bg-[#010303]">
+    <div className="min-h-screen bg-[#0d0a1a]">
       <Header />
-      <Hero />
-      <WhatIsAppMap />
-      <SocialProof />
-      <FeaturesReview />
-      <RealBehaviorDemo />
-      <BiggerPictureDemo />
-      <ApplicationRunsDemo />
-      <MissingContextDemo />
-      <RuntimeContextDemo />
-      <FinalCTA />
+      <main>
+        <HomeHero />
+        <VibeLoop />
+        <OneVsFifteen />
+        <TrustBar />
+        <WhatYourAgentSaw />
+        <FeaturesStay />
+        <HowItWorks />
+        <HomeCompatibility />
+        <Reviews />
+        <ClosingCTA />
+      </main>
     </div>
   );
 }

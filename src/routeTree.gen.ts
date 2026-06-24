@@ -9,38 +9,168 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as PlatformRouteImport } from './routes/platform'
+import { Route as EnterpriseRouteImport } from './routes/enterprise'
+import { Route as CompatibilityRouteImport } from './routes/compatibility'
+import { Route as BenchmarksRouteImport } from './routes/benchmarks'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as NavieSplatRouteImport } from './routes/navie.$'
+import { Route as DocsNavieSplatRouteImport } from './routes/docs.navie.$'
 
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlatformRoute = PlatformRouteImport.update({
+  id: '/platform',
+  path: '/platform',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnterpriseRoute = EnterpriseRouteImport.update({
+  id: '/enterprise',
+  path: '/enterprise',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CompatibilityRoute = CompatibilityRouteImport.update({
+  id: '/compatibility',
+  path: '/compatibility',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BenchmarksRoute = BenchmarksRouteImport.update({
+  id: '/benchmarks',
+  path: '/benchmarks',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NavieSplatRoute = NavieSplatRouteImport.update({
+  id: '/navie/$',
+  path: '/navie/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DocsNavieSplatRoute = DocsNavieSplatRouteImport.update({
+  id: '/docs/navie/$',
+  path: '/docs/navie/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/benchmarks': typeof BenchmarksRoute
+  '/compatibility': typeof CompatibilityRoute
+  '/enterprise': typeof EnterpriseRoute
+  '/platform': typeof PlatformRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/navie/$': typeof NavieSplatRoute
+  '/docs/navie/$': typeof DocsNavieSplatRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/benchmarks': typeof BenchmarksRoute
+  '/compatibility': typeof CompatibilityRoute
+  '/enterprise': typeof EnterpriseRoute
+  '/platform': typeof PlatformRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/navie/$': typeof NavieSplatRoute
+  '/docs/navie/$': typeof DocsNavieSplatRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/benchmarks': typeof BenchmarksRoute
+  '/compatibility': typeof CompatibilityRoute
+  '/enterprise': typeof EnterpriseRoute
+  '/platform': typeof PlatformRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/navie/$': typeof NavieSplatRoute
+  '/docs/navie/$': typeof DocsNavieSplatRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/benchmarks'
+    | '/compatibility'
+    | '/enterprise'
+    | '/platform'
+    | '/sitemap.xml'
+    | '/navie/$'
+    | '/docs/navie/$'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/benchmarks'
+    | '/compatibility'
+    | '/enterprise'
+    | '/platform'
+    | '/sitemap.xml'
+    | '/navie/$'
+    | '/docs/navie/$'
+  id:
+    | '__root__'
+    | '/'
+    | '/benchmarks'
+    | '/compatibility'
+    | '/enterprise'
+    | '/platform'
+    | '/sitemap.xml'
+    | '/navie/$'
+    | '/docs/navie/$'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BenchmarksRoute: typeof BenchmarksRoute
+  CompatibilityRoute: typeof CompatibilityRoute
+  EnterpriseRoute: typeof EnterpriseRoute
+  PlatformRoute: typeof PlatformRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  NavieSplatRoute: typeof NavieSplatRoute
+  DocsNavieSplatRoute: typeof DocsNavieSplatRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/platform': {
+      id: '/platform'
+      path: '/platform'
+      fullPath: '/platform'
+      preLoaderRoute: typeof PlatformRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/enterprise': {
+      id: '/enterprise'
+      path: '/enterprise'
+      fullPath: '/enterprise'
+      preLoaderRoute: typeof EnterpriseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/compatibility': {
+      id: '/compatibility'
+      path: '/compatibility'
+      fullPath: '/compatibility'
+      preLoaderRoute: typeof CompatibilityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/benchmarks': {
+      id: '/benchmarks'
+      path: '/benchmarks'
+      fullPath: '/benchmarks'
+      preLoaderRoute: typeof BenchmarksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,11 +178,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/navie/$': {
+      id: '/navie/$'
+      path: '/navie/$'
+      fullPath: '/navie/$'
+      preLoaderRoute: typeof NavieSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/docs/navie/$': {
+      id: '/docs/navie/$'
+      path: '/docs/navie/$'
+      fullPath: '/docs/navie/$'
+      preLoaderRoute: typeof DocsNavieSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BenchmarksRoute: BenchmarksRoute,
+  CompatibilityRoute: CompatibilityRoute,
+  EnterpriseRoute: EnterpriseRoute,
+  PlatformRoute: PlatformRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  NavieSplatRoute: NavieSplatRoute,
+  DocsNavieSplatRoute: DocsNavieSplatRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
