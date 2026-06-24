@@ -1,5 +1,2 @@
 User-agent: *
 Allow: /
-
-# Crawl delay for responsible crawling  
-Crawl-delay: 1
