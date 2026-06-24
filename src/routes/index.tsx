@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 import { HomeHero } from "@/components/sections/home/HomeHero";
 import { VibeLoop } from "@/components/sections/home/VibeLoop";
+import { PainStats } from "@/components/sections/home/PainStats";
 import { OneVsFifteen } from "@/components/sections/home/OneVsFifteen";
 import { TrustBar } from "@/components/sections/home/TrustBar";
 import { WhatYourAgentSaw } from "@/components/sections/home/WhatYourAgentSaw";
@@ -62,6 +63,7 @@ function Index() {
       <main>
         <HomeHero />
         <VibeLoop />
+        <PainStats />
         <OneVsFifteen />
         <TrustBar />
         <WhatYourAgentSaw />
