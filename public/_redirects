@@ -3,3 +3,5 @@
 /docs/navie       /how-it-works  301
 /docs/navie/*     /how-it-works  301
 /platform         /how-it-works  301
+/blog/2024/06/20/appmap-navie-swe-bench-leader   /blog/2024/06/20/appmap-swe-bench-leader  301
+/blog/2024/06/20/appmap-navie-swe-bench-leader/  /blog/2024/06/20/appmap-swe-bench-leader  301
