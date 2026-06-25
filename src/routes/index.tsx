@@ -84,9 +84,9 @@ function Index() {
         <ReviewLoop />
         <PainStats />
         <OneVsFifteen />
-        <TrustBar />
         <ReviewWhatAIDid />
         <BehavioralReview />
+        <TrustBar />
         <Reviews />
         <HowItWorksReveal />
         <ClosingCTA />

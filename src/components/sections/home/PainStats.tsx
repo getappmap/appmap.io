@@ -3,20 +3,8 @@ const SMARTBEAR = "https://smartbear.com/news/news-releases/smartbear-survey-70-
 
 const stats = [
   {
-    number: "42%",
-    body: "of committed code is already AI-generated, on track for 65% by 2027",
-    sourceLabel: "Sonar, 2026",
-    sourceUrl: SONAR,
-  },
-  {
     number: "96%",
     body: "of developers do not fully trust AI-generated code",
-    sourceLabel: "Sonar, 2026",
-    sourceUrl: SONAR,
-  },
-  {
-    number: "48%",
-    body: "always verify it before committing. Barely half",
     sourceLabel: "Sonar, 2026",
     sourceUrl: SONAR,
   },
@@ -31,12 +19,6 @@ const stats = [
     body: "hit quality issues last year because code outran testing",
     sourceLabel: "SmartBear, 2026",
     sourceUrl: SMARTBEAR,
-  },
-  {
-    number: "38%",
-    body: "say reviewing AI code takes more effort than reviewing a human's",
-    sourceLabel: "Sonar, 2026",
-    sourceUrl: SONAR,
   },
 ];
 
