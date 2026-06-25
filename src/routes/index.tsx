@@ -2,20 +2,19 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { Header } from "@/components/layout/Header";
 import { HomeHero } from "@/components/sections/home/HomeHero";
-import { VibeLoop } from "@/components/sections/home/VibeLoop";
+import { ReviewLoop } from "@/components/sections/home/ReviewLoop";
 import { PainStats } from "@/components/sections/home/PainStats";
 import { OneVsFifteen } from "@/components/sections/home/OneVsFifteen";
 import { TrustBar } from "@/components/sections/home/TrustBar";
-import { WhatYourAgentSaw } from "@/components/sections/home/WhatYourAgentSaw";
-import { FeaturesStay } from "@/components/sections/home/FeaturesStay";
-import { HowItWorks } from "@/components/sections/home/HowItWorks";
-import { HomeCompatibility } from "@/components/sections/home/HomeCompatibility";
+import { ReviewWhatAIDid } from "@/components/sections/home/ReviewWhatAIDid";
+import { BehavioralReview } from "@/components/sections/home/BehavioralReview";
 import { Reviews } from "@/components/sections/home/Reviews";
+import { HowItWorksReveal } from "@/components/sections/home/HowItWorksReveal";
 import { ClosingCTA } from "@/components/sections/home/ClosingCTA";
 
-const title = "AppMap: Runtime Context for AI Coding Agents";
+const title = "AppMap: Understand AI-generated code, in your editor";
 const description =
-  "AppMap records how your code actually runs and serves it to any AI coding agent over MCP. Cheaper, more reliable agent work. Open source, local-only.";
+  "AppMap helps developers and AI agents understand what your software actually does. Review every AI-generated change as runtime behavior, not just a diff. Free and open source.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -62,15 +61,14 @@ function Index() {
       <Header />
       <main>
         <HomeHero />
-        <VibeLoop />
+        <ReviewLoop />
         <PainStats />
         <OneVsFifteen />
         <TrustBar />
-        <WhatYourAgentSaw />
-        <FeaturesStay />
-        <HowItWorks />
-        <HomeCompatibility />
+        <ReviewWhatAIDid />
+        <BehavioralReview />
         <Reviews />
+        <HowItWorksReveal />
         <ClosingCTA />
       </main>
     </div>
