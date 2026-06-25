@@ -75,10 +75,6 @@ export function PainStats() {
             </li>
           ))}
         </ul>
-
-        <p className="mt-10 max-w-3xl text-[16px] text-[#f2effb]">
-          The volume is climbing, the trust is not, and the testing cannot keep up. AppMap closes that gap.
-        </p>
       </div>
     </section>
   );
