@@ -23,12 +23,18 @@ export function OneVsFifteen() {
                 1 query · get_call_tree
               </span>
             </div>
-            <img
-              src="https://appmap.io/assets/img/docs/trace-is-fully-interactive.webp"
-              alt="The AppMap call tree returned by a single get_call_tree query"
-              className="block w-full bg-[#0d0a1a]"
-              loading="lazy"
-            />
+            <div className="bg-[#0d0a1a] p-5 font-mono text-[12.5px] leading-[1.7] text-[#cdd8ee]">
+              <div className="text-[#a78bfa]">POST /charge</div>
+              <div className="ml-3">PaymentController#charge</div>
+              <div className="ml-6 text-[#a99fc7]">ChargeService#authorize</div>
+              <div className="ml-9 text-[#a99fc7]">RetryPolicy#wrap</div>
+              <div className="ml-12 text-[#ff07aa]">LedgerService#write</div>
+              <div className="ml-[60px] text-[#a78bfa]">SQL INSERT INTO ledger ...</div>
+              <div className="ml-6 text-[#a99fc7]">IdempotencyStore#check</div>
+              <div className="ml-9 text-[#a78bfa]">SQL SELECT id FROM idempotency ...</div>
+              <div className="ml-3 text-[#a99fc7]">→ 200 OK · 142ms</div>
+              <div className="mt-3 text-[#a78bfa]">// returned by 1 get_call_tree call</div>
+            </div>
           </div>
 
           <div className="overflow-hidden rounded-xl border border-[#2c2353] bg-[#1c1538]">

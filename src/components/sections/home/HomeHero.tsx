@@ -1,4 +1,5 @@
 import { VSCODE_INSTALL_URL, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
+import { Em } from "@/components/common/Em";
 
 
 export function HomeHero() {
@@ -21,7 +22,7 @@ export function HomeHero() {
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
           AppMap helps developers and AI agents alike understand what your software{" "}
-          <span className="text-[#ff07aa]">actually does</span>. As you work in your editor, it captures how your software behaves and transforms every AI-generated change into something you can explore, review, and trust.
+          <Em>actually does</Em>. As you work in your editor, it captures how your software behaves and transforms every AI-generated change into something you can explore, review, and trust.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">

@@ -17,7 +17,7 @@ const features = [
   },
   {
     title: "Review evidence",
-    body: "Every claim about the change is backed by a slice of the actual run, ready to share on the PR.",
+    body: "The behavioral model travels with the pull request, so every reviewer sees what the change does.",
   },
   {
     title: "One trace, every view",

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from "@/assets/images/appmap-logo.svg";
 
 export const VSCODE_INSTALL_URL =
   "https://marketplace.visualstudio.com/items?itemName=appland.appmap";
@@ -27,11 +28,7 @@ export function Header({ className = "" }: HeaderProps) {
     >
       <div className="mx-auto flex h-16 max-w-[1120px] items-center gap-7 px-6">
         <a href="/" className="flex items-center gap-2">
-          <img
-            src="https://appmap.io/assets/img/logos/appmap-logo-color.svg"
-            alt="AppMap"
-            className="h-[26px] w-auto"
-          />
+          <img src={logo} alt="AppMap" className="h-[26px] w-auto" />
         </a>
 
         <nav className="ml-1 hidden gap-6 md:flex">
