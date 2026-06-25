@@ -89,7 +89,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "Organization",
           name: "AppMap",
           url: "https://appmap.io",
-          logo: "https://appmap.io/assets/img/logos/appmap-logo-color.svg",
           sameAs: [
             "https://github.com/getappmap",
             "https://twitter.com/getappmap",

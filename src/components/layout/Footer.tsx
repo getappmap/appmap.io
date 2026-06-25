@@ -1,3 +1,5 @@
+import logo from "@/assets/images/appmap-logo.svg";
+
 const cols: { heading: string; links: { label: string; href: string }[] }[] = [
   {
     heading: "Platform",
@@ -33,11 +35,7 @@ export function Footer() {
     <footer className="border-t border-[#2c2353] bg-[#0d0a1a] px-6 pt-12 pb-16 text-sm text-[#a99fc7]">
       <div className="mx-auto grid max-w-[1120px] grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
-          <img
-            src="https://appmap.io/assets/img/logos/appmap-logo-color.svg"
-            alt="AppMap"
-            className="h-7 w-auto"
-          />
+          <img src={logo} alt="AppMap" className="h-7 w-auto" />
           <p className="mt-4 max-w-xs text-[13.5px] leading-relaxed">
             Understand AI-generated code before you trust it.
           </p>

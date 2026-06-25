@@ -25,16 +25,8 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: description },
       { property: "og:url", content: "/" },
       { property: "og:locale", content: "en_US" },
-      {
-        property: "og:image",
-        content: "https://appmap.io/assets/img/logos/1200x630-appmap-card.png",
-      },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
-      {
-        name: "twitter:image",
-        content: "https://appmap.io/assets/img/logos/1200x630-appmap-card.png",
-      },
     ],
     links: [{ rel: "canonical", href: "/" }],
     scripts: [
@@ -46,8 +38,22 @@ export const Route = createFileRoute("/")({
           name: "AppMap",
           applicationCategory: "DeveloperApplication",
           operatingSystem: "Windows, macOS, Linux",
-          description,
+          description:
+            "AppMap helps developers and AI agents understand what AI-written code actually does at runtime.",
           offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "AppMap",
+          url: "https://appmap.io",
+          sameAs: [
+            "https://github.com/getappmap",
+            "https://twitter.com/getappmap",
+          ],
         }),
       },
     ],
