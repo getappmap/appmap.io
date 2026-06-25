@@ -4,7 +4,7 @@ import logo from "@/assets/images/appmap-logo.svg";
 export const VSCODE_INSTALL_URL =
   "https://marketplace.visualstudio.com/items?itemName=appland.appmap";
 export const JETBRAINS_INSTALL_URL =
-  "https://plugins.jetbrains.com/plugin/16701-appmap";
+  "https://plugins.jetbrains.com/plugin/16701-appmap-free-ai-architect";
 export const GITHUB_URL = "https://github.com/getappmap";
 
 const navLinks = [
