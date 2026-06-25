@@ -1,0 +1,5 @@
+/navie            /how-it-works  301
+/navie/*          /how-it-works  301
+/docs/navie       /how-it-works  301
+/docs/navie/*     /how-it-works  301
+/platform         /how-it-works  301

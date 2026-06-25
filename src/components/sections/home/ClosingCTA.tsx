@@ -19,11 +19,10 @@ export function ClosingCTA() {
           }}
         >
           <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-            Map your code. For you and your agent.
+            Understand AI-generated code before you trust it.
           </h2>
           <p className="mx-auto mt-3 max-w-[640px] text-[16px] text-[#a99fc7]">
-            Install the extension, record a run, and point your agent at the
-            MCP server. Free and open source.
+            Install the extension and start understanding what your software actually does, right in your editor. Free and open source.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3.5">
             <a

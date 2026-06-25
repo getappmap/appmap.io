@@ -6,7 +6,8 @@ const BASE_URL = "";
 
 const entries = [
   { path: "/", priority: "1.0", changefreq: "weekly" as const },
-  { path: "/platform", priority: "0.9", changefreq: "weekly" as const },
+  { path: "/how-it-works", priority: "0.9", changefreq: "weekly" as const },
+  { path: "/architecture", priority: "0.8", changefreq: "monthly" as const },
   { path: "/benchmarks", priority: "0.9", changefreq: "monthly" as const },
   { path: "/compatibility", priority: "0.8", changefreq: "monthly" as const },
   { path: "/enterprise", priority: "0.8", changefreq: "monthly" as const },

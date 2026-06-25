@@ -4,37 +4,37 @@ const SMARTBEAR = "https://smartbear.com/news/news-releases/smartbear-survey-70-
 const stats = [
   {
     number: "42%",
-    body: "of committed code is already AI-generated, on track for 65% by 2027.",
+    body: "of committed code is already AI-generated, on track for 65% by 2027",
     sourceLabel: "Sonar, 2026",
     sourceUrl: SONAR,
   },
   {
     number: "96%",
-    body: "of developers do not fully trust AI-generated code.",
+    body: "of developers do not fully trust AI-generated code",
     sourceLabel: "Sonar, 2026",
     sourceUrl: SONAR,
   },
   {
     number: "48%",
-    body: "always verify it before committing. Barely half.",
+    body: "always verify it before committing. Barely half",
     sourceLabel: "Sonar, 2026",
     sourceUrl: SONAR,
   },
   {
     number: "70%",
-    body: "of software leaders say application quality has already degraded as AI sped up delivery.",
+    body: "of software leaders say quality has already degraded as AI sped up delivery",
     sourceLabel: "SmartBear, 2026",
     sourceUrl: SMARTBEAR,
   },
   {
     number: "60%",
-    body: "hit quality issues in the past year because code outran testing.",
+    body: "hit quality issues last year because code outran testing",
     sourceLabel: "SmartBear, 2026",
     sourceUrl: SMARTBEAR,
   },
   {
     number: "38%",
-    body: "say reviewing AI code takes more effort than reviewing a human's.",
+    body: "say reviewing AI code takes more effort than reviewing a human's",
     sourceLabel: "Sonar, 2026",
     sourceUrl: SONAR,
   },
@@ -77,10 +77,7 @@ export function PainStats() {
         </ul>
 
         <p className="mt-10 max-w-3xl text-[16px] text-[#f2effb]">
-          The volume is climbing, the trust is not, and the testing cannot keep
-          up. AppMap closes that gap. Every AI change comes back as a
-          behavioral review, a picture of what really happened, and a test
-          that stays.
+          The volume is climbing, the trust is not, and the testing cannot keep up. AppMap closes that gap.
         </p>
       </div>
     </section>
