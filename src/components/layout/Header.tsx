@@ -7,13 +7,11 @@ export const JETBRAINS_INSTALL_URL =
 export const GITHUB_URL = "https://github.com/getappmap";
 
 const navLinks = [
-  { label: "Platform", href: "/platform" },
+  { label: "How it works", href: "/how-it-works" },
   { label: "Benchmarks", href: "/benchmarks" },
   { label: "Compatibility", href: "/compatibility" },
   { label: "Enterprise", href: "/enterprise" },
   { label: "Docs", href: "/docs" },
-  { label: "Blog", href: "/blog" },
-  { label: "Pricing", href: "/pricing" },
 ];
 
 export interface HeaderProps {
@@ -49,12 +47,6 @@ export function Header({ className = "" }: HeaderProps) {
         </nav>
 
         <div className="ml-auto hidden items-center gap-3 md:flex">
-          <a
-            href={GITHUB_URL}
-            className="rounded-lg border border-[#2c2353] px-4 py-2 text-[14px] font-semibold text-[#f2effb] transition-colors hover:border-[#a99fc7]"
-          >
-            GitHub
-          </a>
           <a
             href={VSCODE_INSTALL_URL}
             className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-4 py-2 text-[14px] font-semibold text-white shadow-[0_6px_24px_-6px_rgba(255,7,170,0.5)] transition-[filter] hover:brightness-110"
