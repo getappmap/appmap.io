@@ -4,14 +4,20 @@ const items = [
   {
     title: "The call tree",
     body: "The request path the agent queried.",
+    image: "/img/appmap/call-tree.webp",
+    alt: "AppMap call tree showing the request path through the application.",
   },
   {
     title: "The queries",
     body: "The SQL it ran, with the data.",
+    image: "/img/appmap/queries.jpg",
+    alt: "AppMap view of the SQL queries executed during a request, with bindings.",
   },
   {
     title: "The metadata",
     body: "Functions, APIs, and objects in the run.",
+    image: "/img/appmap/code-map.jpg",
+    alt: "AppMap code map of functions, APIs, and objects exercised during a run.",
   },
 ];
 
@@ -31,9 +37,15 @@ export function ReviewWhatAIDid() {
               key={it.title}
               className="rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] p-6"
             >
-              <div className="flex aspect-[16/9] items-center justify-center rounded-lg border border-dashed border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg)] text-[12px] text-[color:var(--color-am-muted)]">
-                {it.title} preview
-              </div>
+              <img
+                src={it.image}
+                alt={it.alt}
+                width={800}
+                height={450}
+                loading="lazy"
+                decoding="async"
+                className="aspect-[16/9] w-full rounded-lg border border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] object-cover"
+              />
               <div className="mt-4 text-[13.5px] text-[color:var(--color-am-muted)]">
                 <b className="block text-[15px] font-semibold text-[color:var(--color-am-ink)]">
                   {it.title}
