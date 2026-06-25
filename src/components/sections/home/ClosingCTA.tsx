@@ -44,16 +44,20 @@ export function ClosingCTA() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-8 opacity-90">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-10 opacity-90">
           {badges.map((b) =>
             b.src ? (
-              <img
+              <div
                 key={b.label}
-                src={b.src}
-                alt={b.label}
-                className="h-12 w-auto object-contain"
-                loading="lazy"
-              />
+                className="flex h-12 w-40 items-center justify-center"
+              >
+                <img
+                  src={b.src}
+                  alt={b.label}
+                  className="max-h-full max-w-full object-contain"
+                  loading="lazy"
+                />
+              </div>
             ) : (
               <span
                 key={b.label}
