@@ -1,42 +1,58 @@
-## Goal
+## AppMap Site Rebuild — Verification + Gap Closure Pass
 
-Publish the 2024 SWE-bench writeup under a clean, Navie-free URL on this site, and 301 the old `/blog/2024/06/20/appmap-navie-swe-bench-leader/` path to it.
+Most of this spec is already implemented from prior turns. This pass is a careful audit against the verbatim copy, plus filling the few remaining gaps and running the verification checklist.
 
-## Changes
+### 1. Audit existing implementation (read-only)
+Re-read each file against the spec and fix any drift:
+- `src/components/sections/home/HomeHero.tsx` — confirm eyebrow, H1 two lines, subhead with `<Em>actually does</Em>`, CTA labels + marketplace links, microcopy, video placeholder captions.
+- `src/components/sections/home/ReviewLoop.tsx` — confirm heading, subhead ("the change" not "it"), 4 steps verbatim, payoff line, **supporting line present**.
+- `src/components/sections/home/PainStats.tsx` — confirm all 6 stats verbatim with source links to Sonar/SmartBear URLs, closing line.
+- `src/components/sections/home/OneVsFifteen.tsx` — confirm heading, intro, both panel labels, monospace block verbatim, caption.
+- `src/components/sections/home/TrustBar.tsx` — confirm 4 cells.
+- `src/components/sections/home/ReviewWhatAIDid.tsx` — heading with `<Em>actually did</Em>`, intro, 3 cards.
+- `src/components/sections/home/BehavioralReview.tsx` — heading, intro, sequence-diagram placeholder + caption, 6 feature cards (no "test" card), "Review evidence" copy correct.
+- `src/components/sections/home/Reviews.tsx` — heading/sub + 6 quotes.
+- `src/components/sections/home/HowItWorksReveal.tsx` — text left + hub-and-spoke SVG right, caption.
+- `src/components/sections/home/ClosingCTA.tsx` — heading/sub/CTAs + 4 badges normalized.
+- `src/routes/index.tsx` — section order matches spec.
+- `src/routes/how-it-works.tsx` — hero, 6 capture cards, 3 view cards, 4 MCP cards, "See what your agent read" + benchmarks link, "Where the model lives" link to /architecture.
+- `src/routes/architecture.tsx` — hero, two code blocks, "One model. Many consumers." + chip row.
+- `src/routes/benchmarks.tsx` — headline numbers, grouped bars, cost bars + table, caveat, SWE-bench card linking the clean internal URL.
+- `src/routes/compatibility.tsx` — hero, 6 agent cards, "Bring your own model" section, IDE chip row.
+- `src/routes/enterprise.tsx` — 4 cards, hero sub, CTAs (Book a Demo only here).
+- `src/components/layout/Header.tsx` / `Footer.tsx` — nav + footer columns match.
+- `src/routes/navie.$.tsx`, `src/routes/docs.navie.$.tsx`, `src/routes/platform.tsx` — confirm 301 redirects.
+- `public/_redirects` — host-level 301s for all three legacy paths + old SWE-bench URL.
+- `src/routes/sitemap[.]xml.tsx`, `public/llms.txt` — updated.
 
-**1. New blog route** — `src/routes/blog.2024.06.20.appmap-swe-bench-leader.tsx`
+Patch any file that drifts from verbatim copy.
 
-- URL: `/blog/2024/06/20/appmap-swe-bench-leader/`
-- `head()` with title, description, og:title, og:description, og:type=article, canonical to the new path.
-- Layout matches site dark theme (same `#0e0a1f` / `#16112b` / `#2c2353` tokens as benchmarks).
-- Article shell: small back link to `/benchmarks`, date "June 20, 2024", H1, lede, body, closing CTA.
+### 2. Gaps to fill
 
-Rewritten copy (Navie removed from hero, one historical sentence kept):
+**`<Em>` component.** If not already a shared component, extract `src/components/common/Em.tsx` rendering `<span className="text-[color:var(--am-brand)]">{children}</span>`. Use only in HomeHero subhead + ReviewWhatAIDid heading.
 
-- **H1:** "AppMap leads SWE-bench on cost-efficient runtime analysis"
-- **Lede:** "AppMap solved 14.6% of the full SWE-bench in under four hours, ahead of Amazon Q and eight other tools, at 5 to 30 percent of the cost of other solvers."
-- **Historical context (verbatim):** "In 2024, AppMap's earlier AI workflow demonstrated the cost advantage of runtime-grounded software analysis on SWE-bench."
-- **Body sections:** "What we ran" (full SWE-bench, runtime-grounded analysis, hard budget caps), "Results" (14.6% solve, sub-4-hour runtime, 5–30% of competitor cost), "Why cost matters" (runtime context vs brute-force prompting), "What's next" (link to current `/benchmarks` writeup).
-- **Closing:** primary "Get AppMap" → `VSCODE_INSTALL_URL`, secondary "See the current benchmark" → `/benchmarks`.
+**FAQ + JSON-LD on `/how-it-works`.**
+- Add FAQ section with the 7 questions listed in the spec, verbatim answers grounded in existing copy (concise, plain).
+- Add FAQPage JSON-LD via the route's `head().scripts`.
+- Add the "What is AppMap?" block above the FAQ using the exact sentence specified.
 
-**2. Redirect old URL** — `public/_redirects`
+**Home JSON-LD.** Add SoftwareApplication + Organization JSON-LD in `src/routes/index.tsx` `head().scripts`.
 
-Append:
-```
-/blog/2024/06/20/appmap-navie-swe-bench-leader            /blog/2024/06/20/appmap-swe-bench-leader  301
-/blog/2024/06/20/appmap-navie-swe-bench-leader/           /blog/2024/06/20/appmap-swe-bench-leader  301
-```
+**Per-route head().** Confirm title/description/canonical on every route (`/`, `/how-it-works`, `/architecture`, `/benchmarks`, `/compatibility`, `/enterprise`, blog article). Add any missing.
 
-**3. Update internal link** — `src/routes/benchmarks.tsx` "Not our first benchmark" card
+### 3. Verification (run after edits)
+- `bun run build` clean.
+- `rg -i 'navie|runtime intelligence|behavioral intelligence|ai software architect|choose your llm' src public` → only redirect route files.
+- `rg -i 'appmap-navie-swe-bench-leader' src public` → only `_redirects`.
+- `rg 'appmap.io/assets/(img|video)' src public` → zero.
+- `curl -I` against dev server for `/navie/x`, `/docs/navie/x`, `/platform` → confirm real `301`. If the TanStack `beforeLoad` redirect serves as 200 + client redirect in SSR, rely on `public/_redirects` host-level 301s and note this for the user.
+- Playwright headless 1280×1800 screenshots of the 6 pages; spot-check magenta `actually does` / `actually did` rendering and PainStats source links.
 
-Change `href="https://appmap.io/blog/2024/06/20/appmap-navie-swe-bench-leader/"` → `href="/blog/2024/06/20/appmap-swe-bench-leader/"`. Drop `target="_blank"` / `rel="noopener noreferrer"` since it's now an internal route.
+### 4. Out of scope (call out, do not do)
+- Real `map-sm.webm` / `sequence_04.webm` swaps beyond what's already wired.
+- `/ai-code-review` category landing page.
+- "Top-4 bank" copy softening (needs user confirmation).
+- og:image generation.
 
-**4. Sitemap** — `src/routes/sitemap[.]xml.tsx`
-
-Add an entry for `/blog/2024/06/20/appmap-swe-bench-leader/` with `changefreq: "yearly"`, `priority: "0.6"`.
-
-## Out of scope
-
-- No `/blog` index page (the existing `/blog` link in `FinalCTA.tsx` already 404s; not part of this request).
-- No edits to `navie.$.tsx` or other redirects.
-- No content rewrite of `benchmarks.tsx` beyond the one href.
+### Deliverable
+A short report listing: what was already correct, what was patched, verification command output, and the two pre-publish items still pending user input (real visuals + bank clearance).
