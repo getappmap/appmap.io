@@ -1,4 +1,6 @@
+import { useRef, useEffect } from "react";
 import { VSCODE_INSTALL_URL, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
+
 
 export function HomeHero() {
   return (
