@@ -90,7 +90,7 @@ function CompatibilityPage() {
               ))}
             </div>
             <div className="mt-8">
-              <a href={VSCODE_INSTALL_URL} className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
+              <a href={VSCODE_INSTALL_URL} target="_blank" rel="noopener noreferrer" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                 Get AppMap
               </a>
             </div>
