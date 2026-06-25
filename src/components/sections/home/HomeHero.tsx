@@ -1,5 +1,6 @@
 import { VSCODE_INSTALL_URL, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
 import { Em } from "@/components/common/Em";
+import { MotionOrPoster } from "@/components/common/MotionOrPoster";
 
 
 export function HomeHero() {
@@ -48,17 +49,14 @@ export function HomeHero() {
         </div>
 
         <div className="mt-11">
-          <video
-            className="aspect-[16/9] w-full rounded-xl border border-dashed border-[#2c2353] bg-[#16112b] shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            <source src="/assets/video/map-sm.webm" type="video/webm" />
-            <source src="/assets/video/map-sm.mp4" type="video/mp4" />
-            An AppMap dependency map
-          </video>
+          <MotionOrPoster
+            src="/video/dependency-map.mp4"
+            poster="/img/appmap/dependency-map.webp"
+            alt="AppMap dependency map of a running application, showing packages, classes, and the calls between them."
+            width={1600}
+            height={900}
+            className="aspect-[16/9] w-full rounded-xl border border-[#2c2353] bg-[#16112b] object-cover shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
+          />
           <div className="mt-4 flex flex-wrap justify-center gap-3">
             <div className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-sm text-[#a99fc7]">
               You read the map in your editor
