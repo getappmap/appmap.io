@@ -44,6 +44,11 @@ export const Route = createFileRoute("/how-it-works")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:url", content: "/how-it-works" },
+      { property: "og:image", content: "/og/og-card.png" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "/og/og-card.png" },
     ],
     links: [{ rel: "canonical", href: "/how-it-works" }],
     scripts: [

@@ -1,67 +1,50 @@
 ## Goal
 
-Replace placeholder blocks on the home page (and the optional "Record once" cards on `/how-it-works`) with real AppMap diagram visuals downloaded from appmap.io. No Navie chrome. Closes ship-gate item 1.
+Ship a fresh 1200×630 social card carrying the new positioning and wire it in as `og:image` / `twitter:image`.
 
-## Step 1 — Download assets into the repo
+## Step 1 — Generate the card
 
-Create `public/img/appmap/` and `public/video/` (the latter already exists as `public/assets/video/` — new clips will live in `public/video/` per spec).
+Use `imagegen` (premium tier — text legibility matters) to produce `public/og/og-card.png`, 1200×630.
 
-Stills → `public/img/appmap/`:
-- `dependency-map.webp` ← `https://appmap.io/assets/img/docs/dependency-map-overview.webp`
-- `call-tree.webp` ← `https://appmap.io/assets/img/docs/trace-is-fully-interactive.webp`
-- `sequence.jpg` ← `https://appmap.io/assets/img/product/follow-request-flows-sequence.jpg`
-- `queries.jpg` ← `https://appmap.io/assets/img/product/inspect-database-queries.jpg`
-- `code-map.jpg` ← `https://appmap.io/assets/img/product/view-your-applications-code-objects.jpg`
-- `flamegraph.webp` (optional) ← `https://appmap.io/assets/img/docs/flamegraph-5.webp`
+Design brief:
+- Dark purple background matching the site (`#0d0a1a` → `#16112b` radial), with subtle magenta `#ff07aa` and violet `#8b5cf6` glow accents in the corners (mirrors the hero).
+- Big white headline, two lines, tight tracking: **"Understand AI-generated code before you trust it."**
+- Small magenta eyebrow above the headline: **APPMAP**
+- Small muted footer line bottom-left: "appmap.io"
+- No product screenshot, no logos beyond the wordmark — keep it text-forward so it reads at thumbnail size.
 
-Motion clips → `public/video/`:
-- `dependency-map.mp4` ← `…/docs/expand-and-collapse-packages.mp4` (hero)
-- `call-tree.mp4` ← `…/docs/expand-and-collapse-execution-paths.mp4`
-- `queries.mp4` ← `…/docs/view-sql-queries.mp4`
-- `metadata.mp4` ← `…/docs/navigate-to-interest.mp4`
-- `sequence.mp4` ← `…/docs/sequence-diagram-expand.mp4`
+After generating, inspect the PNG to confirm the text is legible and spelled correctly. If the model garbles the typography (common failure for text-heavy cards), regenerate with a tighter prompt or fall back to compositing the headline in code over a generated background.
 
-Verify after download: each file is Navie-free (`rg -i navie public/img public/video` returns zero) and shows pure diagram chrome.
+## Step 2 — Wire it into head metadata
 
-## Step 2 — Swap per component
+Per the head-meta rules, `og:image` lives on **leaf routes only** (root would override every child). Add `og:image` + `twitter:image` + dimensions to:
 
-**`src/components/sections/home/HomeHero.tsx`** — swap the current `map-sm.webm` video block for `dependency-map.mp4` with `poster="/img/appmap/dependency-map.webp"`, `autoplay loop muted playsinline preload="metadata"`. Keep the two side caption chips. The hero is the LCP element: also preload `dependency-map.webp` via the route `head().links` in `src/routes/index.tsx` with `fetchpriority="high"`. Use eager loading on the poster image fallback.
+- `src/routes/index.tsx`
+- `src/routes/how-it-works.tsx`
+- `src/routes/architecture.tsx`
+- `src/routes/benchmarks.tsx`
+- `src/routes/compatibility.tsx`
+- `src/routes/enterprise.tsx`
+- `src/routes/blog.2024.06.20.appmap-swe-bench-leader.tsx`
 
-**`src/components/sections/home/BehavioralReview.tsx`** — swap the `sequence_04.webm` video to use `sequence.mp4` (download) with `poster="/img/appmap/sequence.jpg"`. Keep the caption. Lazy below the fold.
+Each gets:
+```
+{ property: "og:image", content: "/og/og-card.png" },
+{ property: "og:image:width", content: "1200" },
+{ property: "og:image:height", content: "630" },
+{ name: "twitter:image", content: "/og/og-card.png" },
+{ name: "twitter:card", content: "summary_large_image" },
+```
 
-**`src/components/sections/home/ReviewWhatAIDid.tsx`** — replace the "{title} preview" placeholder div in each of the 3 cards with an `<img>` (lazy):
-- Call tree → `/img/appmap/call-tree.webp`
-- Queries → `/img/appmap/queries.jpg`
-- Metadata → `/img/appmap/code-map.jpg`
+(Single shared card for launch; per-page variants can come later.)
 
-Apply real, descriptive alt text (e.g. "AppMap call tree showing the request path"). Add `decoding="async"`, explicit width/height attrs to prevent CLS, keep rounded/border classes.
+## Step 3 — Verify
 
-**`/how-it-works` "Record once. Use it everywhere." cards** (optional upgrade) — same treatment: dependency map, queries, code map stills.
+- View the generated PNG and confirm the tagline is rendered cleanly.
+- `bun run build` clean.
+- Tell the user that link-preview platforms cache the previous card — they'll need to force a refresh in each platform's debugger (LinkedIn Post Inspector, Twitter Card Validator, Facebook Sharing Debugger) for shared URLs to update.
 
-## Step 3 — Styling rules
+## Out of scope
 
-- Full-width images: `w-full h-auto block rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)]`.
-- Always include explicit `width`/`height` or `aspect-ratio` to reserve space (CLS).
-- Light-background `.jpg` screenshots: wrap in `--am-bg2` padding with `--am-line` border so they don't clash with the dark theme.
-- Prefer `.webp` over `.jpg` where both exist.
-
-## Step 3b — Video attributes
-
-`autoPlay loop muted playsInline preload="metadata"` with matching `poster`. Add a small client guard so `prefers-reduced-motion: reduce` and narrow viewports render the poster `<img>` instead of autoplaying — implement as a tiny `MotionOrPoster` helper in `src/components/common/` to share between Hero and BehavioralReview.
-
-## Step 4 — Verify
-
-- `rg -i navie public/img public/video` → zero matches.
-- Visual check: each downloaded image shows only diagram views (no Navie chat panel).
-- `bun run build` clean; Playwright screenshot of home + `/how-it-works` to confirm images render and layout doesn't shift.
-
-## Out of scope (call out, don't do)
-
-- Regenerating the OG/social card with the new tagline — flagged in the brief; ask before doing.
-- Reshooting any screenshot that looks like an older AppMap UI — flag during verify if spotted.
-
-## Technical notes
-
-- Download via `curl -fSL <url> -o <path>` in a single batched shell call.
-- Reference assets as plain `/img/appmap/...` and `/video/...` paths (served from `public/`); no `lovable-assets` upload — these are launch-time product visuals, small enough to ship in-repo and need stable paths for the spec.
-- New shared helper file: `src/components/common/MotionOrPoster.tsx`.
+- Per-page bespoke OG variants.
+- Updating the legacy `1200x630-appmap-card.png` on appmap.io itself (handled by the appmap.io repo, not this build).
