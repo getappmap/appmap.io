@@ -1,12 +1,25 @@
 import { VSCODE_INSTALL_URL, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
 import nvidiaBadge from "@/assets/badges/nvidia-inception-badge.png";
-import githubBadge from "@/assets/badges/github-for-startups-badge.png";
 import mongoBadge from "@/assets/badges/mongo-db-partner-badge.png";
 import techcrunchBadge from "@/assets/badges/appmap-techcrunch-finalist-ko.svg";
 
-const badges: { label: string; src?: string }[] = [
+function GitHubForStartupsMark() {
+  return (
+    <div className="flex items-center gap-2 text-[#f2effb]">
+      <svg viewBox="0 0 16 16" aria-hidden="true" className="h-7 w-7 fill-current">
+        <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+      <div className="flex flex-col leading-tight">
+        <span className="text-[15px] font-bold tracking-tight">GitHub</span>
+        <span className="text-[10px] uppercase tracking-[0.12em] text-[#a99fc7]">for Startups</span>
+      </div>
+    </div>
+  );
+}
+
+const badges: { label: string; src?: string; render?: () => React.ReactNode }[] = [
   { label: "NVIDIA Inception", src: nvidiaBadge },
-  { label: "GitHub for Startups", src: githubBadge },
+  { label: "GitHub for Startups", render: () => <GitHubForStartupsMark /> },
   { label: "MongoDB Partner", src: mongoBadge },
   { label: "TechCrunch Finalist", src: techcrunchBadge },
 ];
@@ -59,12 +72,12 @@ export function ClosingCTA() {
                 />
               </div>
             ) : (
-              <span
+              <div
                 key={b.label}
-                className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2 text-[13px] text-[#a99fc7]"
+                className="flex h-12 w-40 items-center justify-center"
               >
-                {b.label}
-              </span>
+                {b.render?.()}
+              </div>
             )
           )}
         </div>
