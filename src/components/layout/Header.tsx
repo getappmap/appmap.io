@@ -46,6 +46,8 @@ export function Header({ className = "" }: HeaderProps) {
         <div className="ml-auto hidden items-center gap-3 md:flex">
           <a
             href={VSCODE_INSTALL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-4 py-2 text-[14px] font-semibold text-white shadow-[0_6px_24px_-6px_rgba(255,7,170,0.5)] transition-[filter] hover:brightness-110"
           >
             Get AppMap
@@ -78,12 +80,16 @@ export function Header({ className = "" }: HeaderProps) {
             <div className="mt-3 flex flex-col gap-3 border-t border-[#2c2353] pt-3">
               <a
                 href={VSCODE_INSTALL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-4 py-2 text-center text-sm font-semibold text-white"
               >
                 Get AppMap
               </a>
               <a
                 href={GITHUB_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-lg border border-[#2c2353] px-4 py-2 text-center text-sm font-semibold text-[#f2effb]"
               >
                 GitHub
