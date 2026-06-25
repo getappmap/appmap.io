@@ -231,9 +231,7 @@ function BenchmarksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Not our first benchmark.</h2>
             <a
-              href="https://appmap.io/blog/2024/06/20/appmap-navie-swe-bench-leader/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/blog/2024/06/20/appmap-swe-bench-leader/"
               className="mt-6 block rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 transition hover:border-[#ff07aa]"
             >
               <p className="text-[16px] text-[#f2effb]">
