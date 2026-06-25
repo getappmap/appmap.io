@@ -1,10 +1,13 @@
 import { VSCODE_INSTALL_URL, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
+import nvidiaBadge from "@/assets/badges/nvidia-inception-badge.png";
+import mongoBadge from "@/assets/badges/mongo-db-partner-badge.png";
+import techcrunchBadge from "@/assets/badges/appmap-techcrunch-finalist-ko.svg";
 
-const badges = [
-  "NVIDIA Inception",
-  "GitHub for Startups",
-  "MongoDB Partner",
-  "TechCrunch Finalist",
+const badges: { label: string; src?: string }[] = [
+  { label: "NVIDIA Inception", src: nvidiaBadge },
+  { label: "GitHub for Startups" },
+  { label: "MongoDB Partner", src: mongoBadge },
+  { label: "TechCrunch Finalist", src: techcrunchBadge },
 ];
 
 export function ClosingCTA() {
@@ -40,15 +43,25 @@ export function ClosingCTA() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-5 text-[13px] text-[#a99fc7] opacity-80">
-          {badges.map((b) => (
-            <span
-              key={b}
-              className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2"
-            >
-              {b}
-            </span>
-          ))}
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-8 opacity-90">
+          {badges.map((b) =>
+            b.src ? (
+              <img
+                key={b.label}
+                src={b.src}
+                alt={b.label}
+                className="h-12 w-auto object-contain"
+                loading="lazy"
+              />
+            ) : (
+              <span
+                key={b.label}
+                className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2 text-[13px] text-[#a99fc7]"
+              >
+                {b.label}
+              </span>
+            )
+          )}
         </div>
       </div>
     </section>
