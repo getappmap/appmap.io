@@ -1,3 +1,5 @@
+import { MotionOrPoster } from "@/components/common/MotionOrPoster";
+
 const features = [
   {
     title: "Runtime code review",
@@ -37,16 +39,14 @@ export function BehavioralReview() {
         </p>
 
         <div className="mt-8">
-          <video
-            className="aspect-[16/8] w-full rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            <source src="/assets/video/sequence_04.webm" type="video/webm" />
-            <source src="/assets/video/sequence_04b.mp4" type="video/mp4" />
-          </video>
+          <MotionOrPoster
+            src="/video/sequence.mp4"
+            poster="/img/appmap/sequence.jpg"
+            alt="AppMap sequence diagram of one request, showing the full call path from HTTP to database."
+            width={1600}
+            height={800}
+            className="aspect-[16/8] w-full rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] object-cover shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
+          />
           <div className="mt-3 text-center text-[13px] text-[color:var(--color-am-muted)]">
             Sequence diagram view, fully interactive. One recording, the full request path from HTTP to database.
           </div>
