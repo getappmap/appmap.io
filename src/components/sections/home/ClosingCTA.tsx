@@ -17,7 +17,7 @@ function GitHubForStartupsMark() {
   );
 }
 
-const badges: { label: string; src?: string; render?: () => JSX.Element }[] = [
+const badges: { label: string; src?: string; render?: () => React.ReactNode }[] = [
   { label: "NVIDIA Inception", src: nvidiaBadge },
   { label: "GitHub for Startups", render: () => <GitHubForStartupsMark /> },
   { label: "MongoDB Partner", src: mongoBadge },
