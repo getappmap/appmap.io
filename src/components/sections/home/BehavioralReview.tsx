@@ -37,9 +37,16 @@ export function BehavioralReview() {
         </p>
 
         <div className="mt-8">
-          <div className="flex aspect-[16/8] w-full items-center justify-center rounded-xl border border-dashed border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] text-[14px] text-[color:var(--color-am-muted)]">
-            Sequence diagram preview
-          </div>
+          <video
+            className="aspect-[16/8] w-full rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src="/assets/video/sequence_04.webm" type="video/webm" />
+            <source src="/assets/video/sequence_04b.mp4" type="video/mp4" />
+          </video>
           <div className="mt-3 text-center text-[13px] text-[color:var(--color-am-muted)]">
             Sequence diagram view, fully interactive. One recording, the full request path from HTTP to database.
           </div>
