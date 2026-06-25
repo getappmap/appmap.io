@@ -33,6 +33,13 @@ export const Route = createFileRoute("/benchmarks")({
   component: BenchmarksPage,
 });
 
+const headlineNumbers = [
+  { n: "100%", l: "root-cause accuracy with runtime context at a 3-call budget" },
+  { n: "28%", l: "static baseline at the same budget" },
+  { n: "~3.4x", l: "less inference spend to reach the same verified-fix rate" },
+  { n: "7 pts", l: "how close a compact pipeline lands to a frontier baseline, at half the cost" },
+];
+
 const setup = [
   { title: "Private codebase", body: "A 50-module Spring Boot app with no public training-data overlap. Results reflect investigation, not memory." },
   { title: "Symptom-only reports", body: "Written like support tickets. No shared identifiers with the fix. No leaked file paths." },
@@ -55,9 +62,7 @@ const cost = [
 
 const Caveat = () => (
   <p className="mt-7 max-w-[680px] border-l-2 border-[#2c2353] pl-4 text-[13.5px] text-[#7c8aa6]">
-    One internal study. Claude model family (Sonnet 4.6, Haiku 4.5). Not yet
-    replicated outside our team. We publish the method and per-fixture data so
-    you can check it.
+    One internal study. Claude model family. Not yet replicated outside our team. We publish the method and the per-fixture data so you can check it.
   </p>
 );
 
@@ -77,6 +82,21 @@ function BenchmarksPage() {
               A controlled study with the runtime trace as the only variable
               between two identical agent pipelines.
             </p>
+          </div>
+        </section>
+
+        <section className="px-6 py-16">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">The headline numbers</h2>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {headlineNumbers.map((h) => (
+                <div key={h.l} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                  <div className="text-[40px] font-extrabold leading-none tracking-[-1px] text-[#ff07aa]">{h.n}</div>
+                  <p className="mt-3 text-[14px] text-[#a99fc7]">{h.l}</p>
+                </div>
+              ))}
+            </div>
+            <Caveat />
           </div>
         </section>
 
@@ -204,6 +224,23 @@ function BenchmarksPage() {
                 Read the Methodology
               </a>
             </div>
+          </div>
+        </section>
+
+        <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Not our first benchmark.</h2>
+            <a
+              href="https://appmap.io/blog/2024/06/20/appmap-navie-swe-bench-leader/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 block rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 transition hover:border-[#ff07aa]"
+            >
+              <p className="text-[16px] text-[#f2effb]">
+                14.6% on the full SWE-bench, ahead of Amazon Q and eight other tools, finished in under four hours at 5 to 30 percent of the cost of other solvers.
+              </p>
+              <span className="mt-3 inline-block text-[13.5px] font-semibold text-[#ff07aa]">Read the post →</span>
+            </a>
           </div>
         </section>
       </main>

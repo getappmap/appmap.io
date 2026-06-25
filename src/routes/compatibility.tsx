@@ -82,24 +82,13 @@ function CompatibilityPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Lower inference cost wherever inference runs</h2>
             <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
-              Whoever runs the agent pays for the tokens. AppMap raises the
-              value of each call, so the agent takes fewer steps to the same
-              answer. That holds across editors, models, and vendors. AppMap
-              does not compete with your agent. It makes your agent more
-              efficient.
+              Whoever runs the agent pays for the tokens. AppMap raises the value of each call, so the agent takes fewer steps to the same answer. That holds across editors, models, and vendors.
             </p>
-          </div>
-        </section>
-
-        <section className="px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Where it runs</h2>
-            <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
-              Ships as a published extension in Visual Studio Code and the
-              JetBrains IDEs, plus an open-source CLI, and runs in CI. The MCP
-              server ships in the CLI. Traces are generated locally with no
-              external dependency.
-            </p>
+            <div className="mt-7 flex flex-wrap gap-2.5">
+              {["Visual Studio Code", "JetBrains IDEs", "CLI", "CI"].map((c) => (
+                <span key={c} className="rounded-full border border-[#2c2353] bg-[#1c1538] px-4 py-2 text-[13.5px] text-[#f2effb]">{c}</span>
+              ))}
+            </div>
             <div className="mt-8">
               <a href={VSCODE_INSTALL_URL} className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                 Get AppMap
