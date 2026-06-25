@@ -74,9 +74,24 @@ const capture = [
 ];
 
 const views = [
-  { title: "Dependency map", body: "The whole running app at a glance: services, code, SQL, and how they connect." },
-  { title: "SQL inspection", body: "Every query the run made, with its bindings and where it came from." },
-  { title: "Code map", body: "Packages, classes, and functions, navigable from the same recording." },
+  {
+    title: "Dependency map",
+    body: "The whole running app at a glance: services, code, SQL, and how they connect.",
+    image: "/img/appmap/dependency-map.webp",
+    alt: "AppMap dependency map of a running application.",
+  },
+  {
+    title: "SQL inspection",
+    body: "Every query the run made, with its bindings and where it came from.",
+    image: "/img/appmap/queries.jpg",
+    alt: "AppMap SQL inspection view of executed queries.",
+  },
+  {
+    title: "Code map",
+    body: "Packages, classes, and functions, navigable from the same recording.",
+    image: "/img/appmap/code-map.jpg",
+    alt: "AppMap code map of packages, classes, and functions.",
+  },
 ];
 
 const mcp = [
@@ -123,6 +138,15 @@ function HowItWorksPage() {
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {views.map((v) => (
                 <div key={v.title} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                  <img
+                    src={v.image}
+                    alt={v.alt}
+                    width={800}
+                    height={450}
+                    loading="lazy"
+                    decoding="async"
+                    className="mb-4 aspect-[16/9] w-full rounded-lg border border-[#2c2353] bg-[#16112b] object-cover"
+                  />
                   <h3 className="text-[17px] font-bold text-[#f2effb]">{v.title}</h3>
                   <p className="mt-2 text-[14.5px] text-[#a99fc7]">{v.body}</p>
                 </div>
