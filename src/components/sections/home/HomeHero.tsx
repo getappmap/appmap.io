@@ -1,4 +1,4 @@
-import { VSCODE_INSTALL_URL, JETBRAINS_INSTALL_URL, GITHUB_URL } from "@/components/layout/Header";
+import { VSCODE_INSTALL_URL, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
 
 export function HomeHero() {
   return (
@@ -11,17 +11,16 @@ export function HomeHero() {
     >
       <div className="mx-auto max-w-[1120px]">
         <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">
-          Open source runtime code maps
+          Understand AI-generated code, in your editor
         </div>
         <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.2px] text-[#f2effb] sm:text-[54px] sm:tracking-[-1.5px]">
-          A live map of how your code runs.
+          AI writes code in seconds.
           <br />
-          For you and your AI agent.
+          Understanding it shouldn't take hours.
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          AppMap traces your running app and draws it as an always-accurate map,
-          for root cause analysis, code quality, and architecture. You read it
-          in your editor. Your agent reads it over MCP. Free and open source.
+          AppMap helps developers and AI agents alike understand what your software{" "}
+          <span className="text-[#ff07aa]">actually does</span>. As you work in your editor, it captures how your software behaves and transforms every AI-generated change into something you can explore, review, and trust.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
@@ -39,38 +38,20 @@ export function HomeHero() {
           </a>
         </div>
         <div className="mt-3.5 text-[13.5px] text-[#a99fc7]">
-          Free and open source. Also available as a CLI.{" "}
-          <a href={GITHUB_URL} className="text-[#ff07aa] hover:underline">
-            View on GitHub
-          </a>{" "}
-          ·{" "}
-          <a href="/benchmarks" className="text-[#ff07aa] hover:underline">
-            Read the benchmark
-          </a>
+          Free and open source. Also available as a CLI.
         </div>
 
         <div className="mt-11">
-          <video
-            className="block w-full rounded-xl border border-[#2c2353] bg-[#16112b] shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster="https://appmap.io/assets/img/docs/dependency-map-overview.webp"
-          >
-            <source src="https://appmap.io/assets/video/map-sm.webm" type="video/webm" />
-          </video>
+          <div className="flex aspect-[16/9] w-full items-center justify-center rounded-xl border border-dashed border-[#2c2353] bg-[#16112b] text-[14px] text-[#a99fc7] shadow-[0_12px_40px_rgba(0,0,0,0.35)]">
+            An AppMap dependency map
+          </div>
           <div className="mt-4 flex flex-wrap justify-center gap-3">
             <div className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-sm text-[#a99fc7]">
-              <b className="font-semibold text-[#ff07aa]">You</b> read the map in your editor
+              You read the map in your editor
             </div>
             <div className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-sm text-[#a99fc7]">
-              <b className="font-semibold text-[#a78bfa]">Your agent</b> reads the same run over MCP
+              Your agent reads the same run over MCP
             </div>
-          </div>
-          <div className="mt-3 text-center text-[13px] text-[#a99fc7]">
-            An AppMap dependency map. The whole running app at a glance: services,
-            code, SQL, and how they connect.
           </div>
         </div>
       </div>

@@ -2,7 +2,8 @@ const cols: { heading: string; links: { label: string; href: string }[] }[] = [
   {
     heading: "Platform",
     links: [
-      { label: "How it works", href: "/platform" },
+      { label: "How it works", href: "/how-it-works" },
+      { label: "Architecture", href: "/architecture" },
       { label: "Benchmarks", href: "/benchmarks" },
       { label: "Compatibility", href: "/compatibility" },
       { label: "Security FAQ", href: "/enterprise" },
@@ -22,17 +23,7 @@ const cols: { heading: string; links: { label: string; href: string }[] }[] = [
     links: [
       { label: "About", href: "/company/about-appmap" },
       { label: "Contact", href: "/contact" },
-      { label: "Brand Assets", href: "/company/brand-assets" },
-    ],
-  },
-  {
-    heading: "Community",
-    links: [
       { label: "GitHub", href: "https://github.com/getappmap" },
-      { label: "Slack", href: "https://appmap.io/slack" },
-      { label: "X", href: "https://twitter.com/getappmap" },
-      { label: "YouTube", href: "https://www.youtube.com/@getappmap" },
-      { label: "Blog", href: "/blog" },
     ],
   },
 ];
@@ -48,8 +39,7 @@ export function Footer() {
             className="h-7 w-auto"
           />
           <p className="mt-4 max-w-xs text-[13.5px] leading-relaxed">
-            The runtime map of how your code runs, for you and your AI agent.
-            Open source, local-only.
+            Understand AI-generated code before you trust it.
           </p>
         </div>
         {cols.map((col) => (

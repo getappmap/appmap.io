@@ -1,28 +1,12 @@
 # AppMap
 
-AppMap is the runtime-context layer for AI coding agents. It records how your
-code actually runs and serves that trace to any AI coding agent over the
-Model Context Protocol (MCP). Free, open source, local-only.
-
-## What it does
-- Traces a running application or test suite without code changes.
-- Exposes the trace to any MCP-capable agent (Claude Code, Cursor, GitHub
-  Copilot, Windsurf, Cline, Google Antigravity) through a few high-density
-  queries: get_call_tree, find_calls, find_queries, find_requests.
-- Renders the same trace to developers as a dependency map, sequence
-  diagram, call tree, flame graph, OpenAPI diff, and runtime code review.
-
-## Why it matters
-In a controlled internal study (Claude Sonnet 4.6 + Haiku 4.5, not yet
-independently replicated), agents with runtime context held 100% root-cause
-accuracy under a 3-call diagnostic budget where static-analysis agents fell
-to 28%. The runtime lane reached the same verified-fix rate for ~3.4× less
-inference spend.
+AppMap helps developers and AI agents understand what AI-written code actually does at runtime. It builds a behavioral model of how your software runs, in your editor, so every change can be reviewed and trusted. The model can travel with the pull request and is read by any AI agent over MCP. Free, open source, local.
 
 ## Where to look
 - Home: https://appmap.io/
-- Platform (what it records, the MCP server): https://appmap.io/platform
+- How it works: https://appmap.io/how-it-works
+- Architecture: https://appmap.io/architecture
 - Benchmarks: https://appmap.io/benchmarks
-- Compatibility (agents and models): https://appmap.io/compatibility
-- Enterprise (airgapped, on-prem, no egress): https://appmap.io/enterprise
+- Compatibility: https://appmap.io/compatibility
+- Enterprise: https://appmap.io/enterprise
 - GitHub: https://github.com/getappmap
