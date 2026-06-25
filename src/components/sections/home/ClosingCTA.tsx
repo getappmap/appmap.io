@@ -1,11 +1,12 @@
 import { VSCODE_INSTALL_URL, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
 import nvidiaBadge from "@/assets/badges/nvidia-inception-badge.png";
+import githubBadge from "@/assets/badges/github-for-startups-badge.png";
 import mongoBadge from "@/assets/badges/mongo-db-partner-badge.png";
 import techcrunchBadge from "@/assets/badges/appmap-techcrunch-finalist-ko.svg";
 
 const badges: { label: string; src?: string }[] = [
   { label: "NVIDIA Inception", src: nvidiaBadge },
-  { label: "GitHub for Startups" },
+  { label: "GitHub for Startups", src: githubBadge },
   { label: "MongoDB Partner", src: mongoBadge },
   { label: "TechCrunch Finalist", src: techcrunchBadge },
 ];
