@@ -1,5 +1,6 @@
 import { VSCODE_INSTALL_URL, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
 
+
 export function HomeHero() {
   return (
     <section
@@ -42,9 +43,17 @@ export function HomeHero() {
         </div>
 
         <div className="mt-11">
-          <div className="flex aspect-[16/9] w-full items-center justify-center rounded-xl border border-dashed border-[#2c2353] bg-[#16112b] text-[14px] text-[#a99fc7] shadow-[0_12px_40px_rgba(0,0,0,0.35)]">
+          <video
+            className="aspect-[16/9] w-full rounded-xl border border-dashed border-[#2c2353] bg-[#16112b] shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src="/assets/video/map-sm.webm" type="video/webm" />
+            <source src="/assets/video/map-sm.mp4" type="video/mp4" />
             An AppMap dependency map
-          </div>
+          </video>
           <div className="mt-4 flex flex-wrap justify-center gap-3">
             <div className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-sm text-[#a99fc7]">
               You read the map in your editor
