@@ -166,11 +166,51 @@ function HowItWorksPage() {
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One run, fully captured</h2>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <p className="mt-3 max-w-[720px] text-[15px] text-[#a99fc7]">
+              One execution. Six signals tap off the same run, all written into one behavioral model.
+            </p>
+
+            {/* Desktop flow: spine + 3-above / 3-below nodes */}
+            <div className="relative mt-12 hidden lg:block">
+              {/* spine */}
+              <div className="pointer-events-none absolute left-0 right-0 top-1/2 -translate-y-1/2">
+                <div className="mx-12 flex items-center gap-3">
+                  <span className="rounded-md border border-[#ff07aa]/40 bg-[#1c1538] px-3 py-1.5 text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Request</span>
+                  <span className="h-[2px] flex-1 bg-gradient-to-r from-[#ff07aa] via-[#a21caf] to-[#ff07aa] shadow-[0_0_18px_rgba(255,7,170,0.45)]" />
+                  <span className="rounded-md border border-[#ff07aa]/40 bg-[#1c1538] px-3 py-1.5 text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Response</span>
+                </div>
+              </div>
+
+              <div className="relative grid grid-cols-3 gap-x-6">
+                {/* top row */}
+                {capture.filter((c) => c.side === "top").map((c) => (
+                  <FlowNode key={c.title} c={c} side="top" />
+                ))}
+              </div>
+              <div className="h-[88px]" aria-hidden />
+              <div className="relative grid grid-cols-3 gap-x-6">
+                {capture.filter((c) => c.side === "bottom").map((c) => (
+                  <FlowNode key={c.title} c={c} side="bottom" />
+                ))}
+              </div>
+            </div>
+
+            {/* Mobile/tablet: vertical stack */}
+            <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:hidden">
               {capture.map((c) => (
-                <div key={c.title} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                  <h3 className="text-[17px] font-bold text-[#f2effb]">{c.title}</h3>
-                  <p className="mt-2 text-[14.5px] text-[#a99fc7]">{c.body}</p>
+                <div key={c.title} className="flex items-center gap-3 rounded-xl border border-[#2c2353] bg-[#1c1538] p-3">
+                  <img
+                    src={c.image}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    style={{ objectPosition: c.objectPosition }}
+                    className="h-[60px] w-[100px] flex-shrink-0 rounded-md border border-[#2c2353] bg-[#16112b] object-cover"
+                  />
+                  <div>
+                    <div className="text-[14px] font-bold text-[#f2effb]">{c.title}</div>
+                    <div className="text-[12.5px] text-[#a99fc7]">{c.descriptor}</div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -290,12 +330,63 @@ function HowItWorksPage() {
                     {f.q}
                   </summary>
                   <p className="mt-3 text-[14.5px] leading-[1.6] text-[#a99fc7]">{f.a}</p>
+                  {f.doc ? (
+                    <a
+                      href={f.doc.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 inline-block text-[13.5px] font-semibold text-[#ff07aa] hover:underline"
+                    >
+                      Read: {f.doc.label} →
+                    </a>
+                  ) : null}
                 </details>
               ))}
+            </div>
+            <div className="mt-6 flex justify-end">
+              <a
+                href="https://appmap.io/docs/appmap-docs.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[14px] font-semibold text-[#ff07aa] hover:underline"
+              >
+                Full technical documentation →
+              </a>
             </div>
           </div>
         </section>
       </main>
+    </div>
+  );
+}
+
+function FlowNode({
+  c,
+  side,
+}: {
+  c: { title: string; descriptor: string; image: string; objectPosition: string };
+  side: "top" | "bottom";
+}) {
+  return (
+    <div className="relative flex flex-col items-center">
+      {side === "bottom" ? (
+        <div className="mb-2 h-10 w-px bg-gradient-to-b from-transparent to-[#8b5cf6]" aria-hidden />
+      ) : null}
+      <div className="w-full max-w-[220px] rounded-lg border border-[#2c2353] bg-[#16112b] p-2 shadow-[0_8px_24px_rgba(0,0,0,0.35)]">
+        <img
+          src={c.image}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          style={{ objectPosition: c.objectPosition }}
+          className="h-[72px] w-full rounded-md border border-[#2c2353] bg-[#1c1538] object-cover"
+        />
+        <div className="mt-2 text-center text-[13.5px] font-bold text-[#f2effb]">{c.title}</div>
+        <div className="text-center text-[12px] text-[#a99fc7]">{c.descriptor}</div>
+      </div>
+      {side === "top" ? (
+        <div className="mt-2 h-10 w-px bg-gradient-to-b from-[#8b5cf6] to-transparent" aria-hidden />
+      ) : null}
     </div>
   );
 }
