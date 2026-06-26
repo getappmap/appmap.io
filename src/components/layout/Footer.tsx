@@ -15,9 +15,9 @@ const cols: { heading: string; links: { label: string; href: string }[] }[] = [
   {
     heading: "Docs",
     links: [
-      { label: "Get Started", href: "/docs" },
-      { label: "Reference", href: "/docs/reference" },
-      { label: "Troubleshooting", href: "/docs/troubleshooting" },
+      { label: "Get Started", href: "https://appmap.io/docs/appmap-docs.html" },
+      { label: "Reference", href: "https://appmap.io/docs/appmap-docs.html" },
+      { label: "Troubleshooting", href: "https://appmap.io/docs/appmap-docs.html" },
     ],
   },
   {
@@ -49,6 +49,8 @@ export function Footer() {
               <a
                 key={l.label}
                 href={l.href}
+                target={l.href.startsWith("http") ? "_blank" : undefined}
+                rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="block py-1.5 text-[#a99fc7] transition-colors hover:text-[#ff07aa]"
               >
                 {l.label}

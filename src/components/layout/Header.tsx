@@ -12,7 +12,7 @@ const navLinks = [
   { label: "Benchmarks", href: "/benchmarks" },
   { label: "Compatibility", href: "/compatibility" },
   { label: "Enterprise", href: "/enterprise" },
-  { label: "Docs", href: "/docs" },
+  { label: "Docs", href: "https://appmap.io/docs/appmap-docs.html" },
 ];
 
 export interface HeaderProps {
@@ -36,6 +36,8 @@ export function Header({ className = "" }: HeaderProps) {
             <a
               key={l.label}
               href={l.href}
+              target={l.href.startsWith("http") ? "_blank" : undefined}
+              rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
               className="text-[14.5px] text-[#a99fc7] transition-colors hover:text-[#f2effb]"
             >
               {l.label}
@@ -73,7 +75,7 @@ export function Header({ className = "" }: HeaderProps) {
         <div className="border-t border-[#2c2353] bg-[#0d0a1a] px-6 py-4 md:hidden">
           <div className="flex flex-col gap-3">
             {navLinks.map((l) => (
-              <a key={l.label} href={l.href} className="text-[#a99fc7] hover:text-[#f2effb]">
+              <a key={l.label} href={l.href} target={l.href.startsWith("http") ? "_blank" : undefined} rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined} className="text-[#a99fc7] hover:text-[#f2effb]">
                 {l.label}
               </a>
             ))}
