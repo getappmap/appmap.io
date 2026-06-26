@@ -294,6 +294,14 @@ function HowItWorksPage() {
                 <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">
                   For a security patch, dependency upgrade, or refactor, behavior should not change. If the after-trace diverges from the baseline, AppMap flags a regression, even when the tests stay green.
                 </p>
+                <img
+                  src="/img/appmap/waltzbehaviorheld_branded.svg"
+                  alt="AppMap recordings of FINOS Waltz: GET /api/involvement-kind, baseline vs after an unrelated change, status, auth path, and query count match."
+                  loading="lazy"
+                  decoding="async"
+                  className="mt-5 w-full h-auto rounded-lg border border-[#2c2353] bg-[#0d0a1a]"
+                />
+                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap recording · FINOS Waltz</p>
               </div>
               <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
                 <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGED · BEHAVIOR CHANGED</div>
@@ -301,6 +309,14 @@ function HowItWorksPage() {
                 <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">
                   For an N+1 fix, a new timeout, a circuit breaker, or added audit logging, behavior should change in a specific way. If the trace does not change, the fix did not land.
                 </p>
+                <img
+                  src="/img/appmap/waltzbeforeafter_branded.svg"
+                  alt="AppMap recordings of FINOS Waltz involvement-kind permission lookup: baseline 7 per-id SELECTs replaced by a single batched findAll, 6 fewer round-trips."
+                  loading="lazy"
+                  decoding="async"
+                  className="mt-5 w-full h-auto rounded-lg border border-[#2c2353] bg-[#0d0a1a]"
+                />
+                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap recording · FINOS Waltz</p>
               </div>
             </div>
 

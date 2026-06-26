@@ -1,39 +1,28 @@
-## Scope
+## Scope (Part B from the addendum)
 
-Implement the addendum on `/how-it-works` in two passes. No other pages touched. No approved deviations reverted.
+Wire the three uploaded Waltz SVGs into the Golden trace section on `/how-it-works`.
 
-### A. "One run, fully captured" — flow graphic with thumbnails
+## Steps
 
-Replace the 6-card grid in `src/routes/how-it-works.tsx` with a single inline SVG flow:
+1. Copy the two provided SVGs into `public/img/appmap/`:
+   - `waltzbehaviorheld_branded.svg`
+   - `waltzbeforeafter_branded.svg`
+   (Anchor `waltzinvolvementkind_branded.svg` was not uploaded; defer until provided.)
 
-- Magenta spine from **Request** → **Response** (`#ff07aa`), thin violet tap connectors (`#8b5cf6`) to 6 signal nodes (3 above, 3 below).
-- Each node = a 120×72 thumbnail (`object-cover` crop of the real image) + title + 3-word descriptor, framed `border-[#2c2353] rounded-md bg-[#16112b]`.
-- Mapping uses files already in `public/img/appmap/`:
-  - Function calls → `call-tree.webp`
-  - SQL queries → `queries.jpg`
-  - HTTP traffic → `sequence.jpg`
-  - Exceptions → `sequence.jpg` (tighter crop via `object-position`) — fallback to abstract dot node if illegible
-  - Class map → `code-map.jpg`
-  - Full path → `dependency-map.webp`
-- Static crops only (respects reduced motion; no autoplay).
-- Layout: SVG spine sits behind a CSS grid of 6 nodes for responsiveness; collapses to vertical stack under `sm`.
+2. In `src/routes/how-it-works.tsx`, inside the "Golden AppMap traces make behavior reviewable" section:
+   - Inside the **Invariant behavior** card, append an `<img>` of `waltzbehaviorheld_branded.svg` (alt: "AppMap recordings of FINOS Waltz: GET /api/involvement-kind, baseline vs after an unrelated change, status, auth path, and query count match."), framed `border border-[#2c2353] rounded-lg bg-[#0d0a1a]`, `w-full h-auto`, `loading="lazy"`.
+   - Inside the **Expected change** card, append an `<img>` of `waltzbeforeafter_branded.svg` (alt: "AppMap recordings of FINOS Waltz involvement-kind permission lookup: baseline 7 per-id SELECTs replaced by a single batched findAll, 6 fewer round-trips.").
+   - Add one caption line under each image (small `text-[12px] text-[#a99fc7]`) noting "Real AppMap recording · FINOS Waltz".
 
-### C. FAQ — depth + docs link
+3. No other edits. No copy changes to the surrounding cards. No reverts.
 
-In `src/routes/how-it-works.tsx`:
+## Deferred
 
-- Extend four answers per spec (MCP, behavioral model, storage, no-egress) with one extra sentence each.
-- Add a `doc` field (`{href,label}`) to those four FAQ entries; render a small `Read: <label> →` link under the answer in magenta.
-- After the `<details>` list, add a single right-aligned link: **Full technical documentation →** to `https://appmap.io/docs/appmap-docs.html` (new tab).
-- FAQPage JSON-LD: keep the extended sentence in `acceptedAnswer.text`; doc links stay UI-only.
-
-### B. Golden trace Waltz visuals — DEFERRED
-
-The three `waltz*_branded.svg` files were not in this turn's uploads and I will not fabricate "real AppMap recordings." Current synthetic-free state is preserved: the two Golden trace cards stay text-only until you upload the SVGs. Once uploaded I'll drop them into `public/img/appmap/`, wire them into the Invariant + Expected-change cards, and add `waltzinvolvementkind_branded.svg` as the anchor visual above the two cards.
+- `waltzinvolvementkind_branded.svg` anchor visual — add when uploaded.
+- Backing `.appmap.json` rigor artifact — out of scope for this pass.
 
 ## Technical notes
 
-- All work confined to `src/routes/how-it-works.tsx` plus the existing images in `public/img/appmap/`.
-- No new dependencies, no route changes, no header/footer changes.
-- Tokens used: `#ff07aa`, `#8b5cf6`, `#a78bfa`, `#f2effb`, `#a99fc7`, `#1c1538`, `#16112b`, `#2c2353`.
-- Verify with a production build after the edit.
+- Files referenced by literal path under `public/`, no bundler import.
+- SVGs already use site tokens; no recolor needed.
+- Verify with a production build.
