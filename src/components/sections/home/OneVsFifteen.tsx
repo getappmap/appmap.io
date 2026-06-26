@@ -9,8 +9,7 @@ export function OneVsFifteen() {
           Your agent reads the whole call tree in a single{" "}
           <code className="font-mono text-[#f2effb]">get_call_tree</code> query.
           Rebuilding the same picture by hand takes roughly fifteen
-          grep-and-read steps. That is why accuracy holds when the tool-call
-          budget is tight.
+          grep-and-read steps.
         </p>
 
         <div className="mt-10 grid gap-4 lg:grid-cols-2">
