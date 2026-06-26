@@ -29,9 +29,8 @@ export function PainStats() {
         <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
           The code is shipping. The confidence is not.
         </h2>
-        <p className="mt-3 max-w-[680px] text-[17px] text-[#a99fc7]">
-          AI writes more of your codebase every month. Almost no one knows what
-          it actually does.
+        <p className="mt-3 text-[17px] text-[#a99fc7]">
+          AI writes more of your codebase every month. Almost no one knows what it actually does.
         </p>
 
         <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
