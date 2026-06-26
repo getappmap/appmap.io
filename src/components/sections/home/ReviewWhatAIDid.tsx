@@ -29,7 +29,7 @@ export function ReviewWhatAIDid() {
           Review what your AI <Em>actually did</Em>.
         </h2>
         <p className="mt-3 max-w-[700px] text-[16px] text-[color:var(--color-am-muted)]">
-          AppMap shows the change as evidence you can read: the call tree, the queries, the data. Approve it with confidence, or catch where it went wrong, without reverse-engineering the diff.
+          AppMap shows the change as evidence you can read: the call tree, the queries, the data. Approve it with confidence, or catch where it went wrong.
         </p>
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           {items.map((it) => (
