@@ -74,12 +74,48 @@ export const Route = createFileRoute("/how-it-works")({
 });
 
 const capture = [
-  { title: "Function calls", body: "Parameters, receivers, and return values for every call." },
-  { title: "SQL queries", body: "Bound parameters and the database query plan." },
-  { title: "HTTP traffic", body: "Requests and responses, with status, headers, and parameters." },
-  { title: "Exceptions", body: "Class, message, and the source line that threw them." },
-  { title: "Class map", body: "Packages, classes, and functions tied to source files." },
-  { title: "Full path", body: "The whole flow from request to database." },
+  {
+    title: "Function calls",
+    descriptor: "Params and returns",
+    image: "/img/appmap/call-tree.webp",
+    objectPosition: "left top",
+    side: "top" as const,
+  },
+  {
+    title: "SQL queries",
+    descriptor: "Bindings and plan",
+    image: "/img/appmap/queries.jpg",
+    objectPosition: "left top",
+    side: "bottom" as const,
+  },
+  {
+    title: "HTTP traffic",
+    descriptor: "Requests and responses",
+    image: "/img/appmap/sequence.jpg",
+    objectPosition: "left top",
+    side: "top" as const,
+  },
+  {
+    title: "Exceptions",
+    descriptor: "Class, message, source",
+    image: "/img/appmap/sequence.jpg",
+    objectPosition: "right center",
+    side: "bottom" as const,
+  },
+  {
+    title: "Class map",
+    descriptor: "Packages and classes",
+    image: "/img/appmap/code-map.jpg",
+    objectPosition: "center",
+    side: "top" as const,
+  },
+  {
+    title: "Full path",
+    descriptor: "Request to database",
+    image: "/img/appmap/dependency-map.webp",
+    objectPosition: "center",
+    side: "bottom" as const,
+  },
 ];
 
 const views = [
