@@ -75,7 +75,7 @@ export function Header({ className = "" }: HeaderProps) {
         <div className="border-t border-[#2c2353] bg-[#0d0a1a] px-6 py-4 md:hidden">
           <div className="flex flex-col gap-3">
             {navLinks.map((l) => (
-              <a key={l.label} href={l.href} className="text-[#a99fc7] hover:text-[#f2effb]">
+              <a key={l.label} href={l.href} target={l.href.startsWith("http") ? "_blank" : undefined} rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined} className="text-[#a99fc7] hover:text-[#f2effb]">
                 {l.label}
               </a>
             ))}
