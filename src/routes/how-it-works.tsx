@@ -16,11 +16,13 @@ const faqs = [
   },
   {
     q: "What is the behavioral model of your software?",
-    a: "It is the continuously updated record of how your application runs: function calls, SQL queries, HTTP traffic, exceptions, and the relationships between them. Every map, view, and review is drawn from that one model.",
+    a: "It is the continuously updated record of how your application runs: function calls, SQL queries, HTTP traffic, exceptions, and the relationships between them. Every map, view, and review is drawn from that one model. Captured via a language agent (Java -javaagent, Python, Ruby, Node) from tests, requests, or a running process.",
+    doc: { href: "https://appmap.io/docs/get-started-with-appmap/making-appmap-data.html", label: "How AppMap data is made" },
   },
   {
     q: "How does AppMap work with MCP?",
-    a: "AppMap exposes the behavioral model over the Model Context Protocol. Agents call queries like get_call_tree, find_calls, find_queries, and find_requests to read the same evidence you see in your editor.",
+    a: "AppMap exposes the behavioral model over the Model Context Protocol. Agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
+    doc: { href: "https://appmap.io/docs/reference/appmap-mcp.html", label: "AppMap MCP reference" },
   },
   {
     q: "Does AppMap replace Cursor, Copilot, Claude Code, or Windsurf?",
@@ -29,10 +31,12 @@ const faqs = [
   {
     q: "Does AppMap send code or runtime data to the cloud?",
     a: "No. AppMap records and analyzes behavior locally. The model stays with your editor and your repository by default, with no egress.",
+    doc: { href: "https://appmap.io/security", label: "AppMap security" },
   },
   {
     q: "Where does AppMap store runtime behavior?",
-    a: "In the editor it lives alongside your working session. When persisted, it lives in a .appmap directory in your repository, versioned with the rest of your source.",
+    a: "In the editor it lives alongside your working session. When persisted, it lives in a .appmap directory in your repository, versioned with the rest of your source. Persisted as .appmap.json files, archived per git revision and compared with appmap compare.",
+    doc: { href: "https://appmap.io/docs/reference/appmap-client-cli.html", label: "AppMap client CLI reference" },
   },
 ];
 
