@@ -83,6 +83,23 @@ function EnterprisePage() {
             </div>
           </div>
         </section>
+
+        <section className="px-6 py-20">
+          <div className="mx-auto grid max-w-[1120px] gap-6 lg:grid-cols-2">
+            <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-8">
+              <h2 className="text-[24px] font-extrabold tracking-[-0.6px] text-[#f2effb]">Start without CI</h2>
+              <p className="mt-3 text-[15px] leading-[1.6] text-[#a99fc7]">
+                You do not need to instrument CI to begin. AppMap records from a running process, so teams start in the editor or in environments that already run: a local run, a focused test, a smoke script, an API call, or a QA environment. No full enterprise-stack build required to capture a baseline.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-8">
+              <h2 className="text-[24px] font-extrabold tracking-[-0.6px] text-[#f2effb]">Governed behavior baselines</h2>
+              <p className="mt-3 text-[15px] leading-[1.6] text-[#a99fc7]">
+                Promote only the high-value flows into governed golden traces, then enforce them in CI when you are ready. Each baseline is reviewed and versioned in <code className="font-mono text-[#f2effb]">.appmap/golden/</code>, so behavioral contracts are auditable and owned, not ad hoc. Begin lightweight in the editor; graduate the flows that matter into the pipeline.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );

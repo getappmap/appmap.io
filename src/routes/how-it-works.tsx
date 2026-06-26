@@ -202,6 +202,45 @@ function HowItWorksPage() {
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Golden AppMap traces make behavior reviewable</h2>
+            <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
+              A Golden AppMap trace is an AppMap runtime recording promoted into a behavioral baseline. The diff shows what changed; a golden trace shows whether the behavior changed correctly.
+            </p>
+
+            <div className="mt-8 grid gap-4 lg:grid-cols-2">
+              <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGED · BEHAVIOR HELD</div>
+                <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Invariant behavior</h3>
+                <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">
+                  For a security patch, dependency upgrade, or refactor, behavior should not change. If the after-trace diverges from the baseline, AppMap flags a regression, even when the tests stay green.
+                </p>
+              </div>
+              <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGED · BEHAVIOR CHANGED</div>
+                <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Expected change</h3>
+                <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">
+                  For an N+1 fix, a new timeout, a circuit breaker, or added audit logging, behavior should change in a specific way. If the trace does not change, the fix did not land.
+                </p>
+              </div>
+            </div>
+
+            <p className="mt-8 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
+              Deterministic traces compare byte-for-byte. Real-world traces compare normalized behavior: request path, status, SQL shape, downstream calls, control execution, and data movement.
+            </p>
+            <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
+              Golden traces do not require every developer to run the full enterprise stack. A baseline can come from a local run, a focused test, a smoke script, an API call, a QA environment, or an existing running process.
+            </p>
+
+            <div className="mt-8">
+              <Link to="/architecture" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
+                Where the model lives →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Frequently asked questions</h2>
             <div className="mt-8 divide-y divide-[#2c2353] rounded-2xl border border-[#2c2353] bg-[#1c1538]">
               {faqs.map((f) => (
