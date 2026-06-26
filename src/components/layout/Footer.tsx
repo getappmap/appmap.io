@@ -15,9 +15,9 @@ const cols: { heading: string; links: { label: string; href: string }[] }[] = [
   {
     heading: "Docs",
     links: [
-      { label: "Get Started", href: "/docs" },
-      { label: "Reference", href: "/docs/reference" },
-      { label: "Troubleshooting", href: "/docs/troubleshooting" },
+      { label: "Get Started", href: "https://appmap.io/docs/appmap-docs.html" },
+      { label: "Reference", href: "https://appmap.io/docs/appmap-docs.html" },
+      { label: "Troubleshooting", href: "https://appmap.io/docs/appmap-docs.html" },
     ],
   },
   {
