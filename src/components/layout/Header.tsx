@@ -36,6 +36,8 @@ export function Header({ className = "" }: HeaderProps) {
             <a
               key={l.label}
               href={l.href}
+              target={l.href.startsWith("http") ? "_blank" : undefined}
+              rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
               className="text-[14.5px] text-[#a99fc7] transition-colors hover:text-[#f2effb]"
             >
               {l.label}
