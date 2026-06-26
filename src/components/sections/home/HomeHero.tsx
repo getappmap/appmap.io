@@ -14,7 +14,7 @@ export function HomeHero() {
     >
       <div className="mx-auto max-w-[1120px]">
         <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">
-          Understand AI-generated code, in your editor
+          Runtime evidence for AI code review
         </div>
         <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.2px] text-[#f2effb] sm:text-[54px] sm:tracking-[-1.5px]">
           AI writes code in seconds.
@@ -22,8 +22,7 @@ export function HomeHero() {
           Understanding it shouldn't take hours.
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          AppMap helps developers and AI agents alike understand what your software{" "}
-          <Em>actually does</Em>. As you work in your editor, it captures how your software behaves and transforms every AI-generated change into something you can explore, review, and trust.
+          AppMap records what your software <Em>actually does</Em> as it runs, while you work in your editor. It turns every AI-generated change into visual runtime evidence people can inspect and agents can query, so reviewers can trust the behavior before they approve the change.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
@@ -58,13 +57,16 @@ export function HomeHero() {
             className="aspect-[16/9] w-full rounded-xl border border-[#2c2353] bg-[#16112b] object-cover shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
           />
           <div className="mt-4 flex flex-wrap justify-center gap-3">
-            <div className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-sm text-[#a99fc7]">
-              You read the map in your editor
+          <div className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-sm text-[#a99fc7]">
+              People see the map
             </div>
             <div className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-sm text-[#a99fc7]">
-              Your agent reads the same run over MCP
+              Agents query the trace
             </div>
           </div>
+          <p className="mt-3 text-center text-[13px] text-[#a99fc7]">
+            One run. Many views. Same ground truth.
+          </p>
         </div>
       </div>
     </section>

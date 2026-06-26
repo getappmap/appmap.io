@@ -98,6 +98,12 @@ function EnterprisePage() {
                 Promote only the high-value flows into governed golden traces, then enforce them in CI when you are ready. Each baseline is reviewed and versioned in <code className="font-mono text-[#f2effb]">.appmap/golden/</code>, so behavioral contracts are auditable and owned, not ad hoc. Begin lightweight in the editor; graduate the flows that matter into the pipeline.
               </p>
             </div>
+            <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-8">
+              <h2 className="text-[24px] font-extrabold tracking-[-0.6px] text-[#f2effb]">Independent runtime evidence</h2>
+              <p className="mt-3 text-[15px] leading-[1.6] text-[#a99fc7]">
+                Architecture governance cannot rely on the AI grading its own homework. AppMap adds an independent evidence layer inside your environment: runtime behavior captured from the application itself, outside the AI's reasoning loop. The agent can consume it, the reviewer can see the same evidence, and the organization can govern against it. The AI explains the evidence; it does not create the evidence.
+              </p>
+            </div>
           </div>
         </section>
       </main>
