@@ -18,8 +18,8 @@ const features = [
     body: "Behavior changes show up as a concrete delta between auto-generated API definitions.",
   },
   {
-    title: "Review evidence",
-    body: "The behavioral model travels with the pull request, so every reviewer sees what the change does.",
+    title: "Golden trace review",
+    body: "Promote an AppMap recording into a behavioral baseline. AppMap compares before and after, so every reviewer sees whether behavior held or changed as intended.",
   },
   {
     title: "One trace, every view",

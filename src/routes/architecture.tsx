@@ -52,6 +52,17 @@ const chips = [
   "Confluence, as a mirror",
 ];
 
+const goldenTree = `repo/
+  src/
+  .appmap/
+    golden/
+      checkout-flow/
+        manifest.json        # the flow, its routes, how to reproduce it
+        baseline.appmap.json  # the approved before-trace
+        fingerprint.txt       # normalized behavioral hash of the baseline
+        normalization.yml     # volatile fields to ignore (timestamps, ids, durations)
+      README.md               # what golden traces are and how to update them`;
+
 function ArchitecturePage() {
   return (
     <div className="min-h-screen bg-[#0d0a1a]">
@@ -87,6 +98,19 @@ function ArchitecturePage() {
                 <span key={c} className="rounded-full border border-[#2c2353] bg-[#1c1538] px-4 py-2 text-[13.5px] text-[#f2effb]">{c}</span>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Where golden traces live</h2>
+            <p className="mt-3 max-w-[820px] text-[16px] text-[#a99fc7]">
+              Approved baselines live next to the code, in <code className="font-mono text-[#f2effb]">.appmap/golden/</code>. Each baseline is a behavioral contract for one flow: the approved before-trace, a normalized fingerprint, and the rules for what runtime noise to ignore. Promote a trace into the baseline the same way you merge code, with review.
+            </p>
+            <pre className="mt-8 overflow-x-auto rounded-xl border border-[#2c2353] bg-[#1c1538] p-6 font-mono text-[13px] leading-[1.7] text-[#cdd8ee]">{goldenTree}</pre>
+            <p className="mt-6 max-w-[820px] text-[15px] text-[#f2effb]">
+              A golden trace is reviewed and versioned like any other contract in the repo. Changing the baseline is a pull request, not a silent overwrite.
+            </p>
           </div>
         </section>
       </main>

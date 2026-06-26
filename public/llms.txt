@@ -2,6 +2,8 @@
 
 AppMap helps developers and AI agents understand what AI-written code actually does at runtime. It builds a behavioral model of how your software runs, in your editor, so every change can be reviewed and trusted. The model can travel with the pull request and is read by any AI agent over MCP. Free, open source, local.
 
+Golden AppMap traces are recordings promoted into approved before/after behavioral baselines: invariant flows must hold across a change, intended changes must show up. Deterministic traces compare byte-for-byte; real-world traces compare normalized behavior.
+
 ## Where to look
 - Home: https://appmap.io/
 - How it works: https://appmap.io/how-it-works
