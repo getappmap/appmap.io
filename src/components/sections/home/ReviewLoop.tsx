@@ -49,6 +49,11 @@ export function ReviewLoop() {
         <p className="mt-3 max-w-3xl text-[14px] text-[color:var(--color-am-muted)]">
           A pull request already carries code, comments, and CI checks. AppMap adds one more: behavioral evidence of what the change does.
         </p>
+        <div className="mt-6 rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] p-5">
+          <p className="text-[14px] leading-[1.55] text-[color:var(--color-am-muted)]">
+            For AI-generated software, governance needs evidence outside the AI's own reasoning. AppMap provides it: independent runtime evidence observed from the running system. The agent can explain the evidence; it does not create it.
+          </p>
+        </div>
       </div>
     </section>
   );
