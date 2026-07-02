@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { VSCODE_INSTALL_URL } from "@/components/layout/Header";
 
 export const Route = createFileRoute("/blog/2024/06/20/appmap-swe-bench-leader")({
   head: () => ({
@@ -112,14 +111,12 @@ function SweBenchPost() {
         </p>
 
         <div className="mt-12 flex flex-wrap gap-3.5 border-t border-[#2c2353] pt-10">
-          <a
-            href={VSCODE_INSTALL_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/get-appmap"
             className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)] transition hover:brightness-110"
           >
             Get AppMap
-          </a>
+          </Link>
           <Link
             to="/benchmarks"
             className="rounded-lg border border-[#2c2353] px-5 py-2.5 text-[14px] font-semibold text-[#f2effb] transition hover:border-[#a99fc7]"
