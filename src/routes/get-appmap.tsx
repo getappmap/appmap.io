@@ -111,7 +111,7 @@ function GetAppMapPage() {
         <section className="px-6 pb-24">
           <div className="mx-auto max-w-[1120px] text-center">
             <p className="text-[14.5px] text-[#a99fc7]">
-              Free for individual developers and small teams. Over 20 users, CI enforcement, or internal telemetry routing comes with a{" "}
+              Free for individuals everywhere and for organizations under 250 employees. At larger organizations, pilots, CI enforcement, and telemetry routing come with a{" "}
               <Link to="/enterprise" className="font-semibold text-[#ff07aa] hover:underline">
                 support contract
               </Link>
