@@ -3,7 +3,7 @@ import { Header } from "@/components/layout/Header";
 
 const title = "Get AppMap | AppMap";
 const description =
-  "Three ways in. Same ground truth. Install AppMap for VS Code, JetBrains, or use the CLI and MCP.";
+  "One engine. Install it your way. VS Code, JetBrains, or straight from the terminal: every path ends at the same ground truth.";
 
 export const Route = createFileRoute("/get-appmap")({
   head: () => ({
@@ -38,8 +38,11 @@ function GetAppMapPage() {
               Get AppMap
             </div>
             <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-              Three ways in. Same ground truth.
+              One engine. Install it your way.
             </h1>
+            <p className="mt-5 max-w-3xl text-[18px] leading-relaxed text-[#a99fc7]">
+              VS Code, JetBrains, or straight from the terminal: every path ends at the same ground truth.
+            </p>
           </div>
         </section>
 
@@ -81,22 +84,17 @@ function GetAppMapPage() {
           </div>
         </section>
 
-        <section className="px-6 pb-10">
+        <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px] text-center">
-            <p className="text-[14.5px] text-[#a99fc7]">
-              Terminal only? Install the AppMap CLI and connect any MCP client. Follow the{" "}
+            <p className="mb-8 text-[18px] leading-[1.7] text-[#f2effb]">
+              <span className="font-semibold">Terminal only?</span> Install the AppMap CLI and connect any MCP client. Follow the{" "}
               <Link to="/cli-quickstart" className="font-semibold text-[#ff07aa] hover:underline">
                 CLI quickstart
               </Link>
               . If you installed one of our extensions, you already have the CLI.
             </p>
-          </div>
-        </section>
-
-        <section className="px-6 pb-24">
-          <div className="mx-auto max-w-[1120px] text-center">
-            <p className="text-[14.5px] text-[#a99fc7]">
-              Always free at your desk. When your organization standardizes on AppMap, we support you.{" "}
+            <p className="text-[18px] leading-[1.7] text-[#f2effb]">
+              <span className="font-semibold">Always free at your desk.</span> When your organization standardizes on AppMap, we support you.{" "}
               <Link to="/pricing" className="font-semibold text-[#ff07aa] hover:underline">
                 See pricing
               </Link>
