@@ -26,8 +26,6 @@ export const Route = createFileRoute("/get-appmap")({
 
 const primaryBtn =
   "inline-block rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-4 py-2 text-[13.5px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]";
-const secondaryBtn =
-  "inline-block rounded-lg border border-[#2c2353] px-4 py-2 text-[13.5px] font-semibold text-[#f2effb] hover:border-[#a99fc7]";
 
 function GetAppMapPage() {
   return (
@@ -46,11 +44,11 @@ function GetAppMapPage() {
         </section>
 
         <section className="px-6 pb-24">
-          <div className="mx-auto grid max-w-[1120px] gap-6 md:grid-cols-3">
+          <div className="mx-auto grid max-w-[1120px] gap-6 md:grid-cols-2">
             <div className="flex flex-col rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
               <h2 className="text-[19px] font-bold text-[#f2effb]">VS Code</h2>
               <p className="mt-3 flex-1 text-[14.5px] leading-[1.6] text-[#a99fc7]">
-                Install the AppMap extension from the Visual Studio Code Marketplace. The extension bundles the CLI and keeps the query index fresh automatically.
+                The easiest way to install: the extension bundles the CLI and the MCP server, and keeps the index running automatically.
               </p>
               <div className="mt-5">
                 <a
@@ -67,7 +65,7 @@ function GetAppMapPage() {
             <div className="flex flex-col rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
               <h2 className="text-[19px] font-bold text-[#f2effb]">JetBrains</h2>
               <p className="mt-3 flex-1 text-[14.5px] leading-[1.6] text-[#a99fc7]">
-                Install the AppMap plugin for IntelliJ, PyCharm, WebStorm, RubyMine, and other JetBrains IDEs. The extension bundles the CLI and keeps the query index fresh automatically.
+                The easiest way to install: the extension bundles the CLI and the MCP server, and keeps the index running automatically.
               </p>
               <div className="mt-5">
                 <a
@@ -80,31 +78,18 @@ function GetAppMapPage() {
                 </a>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div className="flex flex-col rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-              <h2 className="text-[19px] font-bold text-[#f2effb]">CLI and MCP</h2>
-              <p className="mt-3 flex-1 text-[14.5px] leading-[1.6] text-[#a99fc7]">
-                Terminal first? Install the AppMap CLI, record your tests, and point any MCP client at appmap query mcp.
-              </p>
-              <div className="mt-5 flex flex-wrap gap-2.5">
-                <a
-                  href="https://appmap.io/docs/reference/appmap-client-cli.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={primaryBtn}
-                >
-                  Install the CLI
-                </a>
-                <a
-                  href="https://appmap.io/docs/reference/appmap-mcp.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={secondaryBtn}
-                >
-                  MCP reference
-                </a>
-              </div>
-            </div>
+        <section className="px-6 pb-10">
+          <div className="mx-auto max-w-[1120px] text-center">
+            <p className="text-[14.5px] text-[#a99fc7]">
+              Terminal only? Install the AppMap CLI and connect any MCP client. Follow the{" "}
+              <Link to="/cli-quickstart" className="font-semibold text-[#ff07aa] hover:underline">
+                CLI quickstart
+              </Link>
+              . If you installed one of our extensions, you already have the CLI.
+            </p>
           </div>
         </section>
 
