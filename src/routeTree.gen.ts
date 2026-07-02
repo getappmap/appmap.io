@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SecurityFaqRouteImport } from './routes/security-faq'
+import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PlatformRouteImport } from './routes/platform'
 import { Route as HowItWorksRouteImport } from './routes/how-it-works'
 import { Route as GetAppmapRouteImport } from './routes/get-appmap'
@@ -33,6 +34,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const SecurityFaqRoute = SecurityFaqRouteImport.update({
   id: '/security-faq',
   path: '/security-faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PlatformRoute = PlatformRouteImport.update({
@@ -113,6 +119,7 @@ export interface FileRoutesByFullPath {
   '/get-appmap': typeof GetAppmapRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
+  '/pricing': typeof PricingRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/navie/$': typeof NavieSplatRoute
@@ -130,6 +137,7 @@ export interface FileRoutesByTo {
   '/get-appmap': typeof GetAppmapRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
+  '/pricing': typeof PricingRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/navie/$': typeof NavieSplatRoute
@@ -148,6 +156,7 @@ export interface FileRoutesById {
   '/get-appmap': typeof GetAppmapRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
+  '/pricing': typeof PricingRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/navie/$': typeof NavieSplatRoute
@@ -167,6 +176,7 @@ export interface FileRouteTypes {
     | '/get-appmap'
     | '/how-it-works'
     | '/platform'
+    | '/pricing'
     | '/security-faq'
     | '/sitemap.xml'
     | '/navie/$'
@@ -184,6 +194,7 @@ export interface FileRouteTypes {
     | '/get-appmap'
     | '/how-it-works'
     | '/platform'
+    | '/pricing'
     | '/security-faq'
     | '/sitemap.xml'
     | '/navie/$'
@@ -201,6 +212,7 @@ export interface FileRouteTypes {
     | '/get-appmap'
     | '/how-it-works'
     | '/platform'
+    | '/pricing'
     | '/security-faq'
     | '/sitemap.xml'
     | '/navie/$'
@@ -219,6 +231,7 @@ export interface RootRouteChildren {
   GetAppmapRoute: typeof GetAppmapRoute
   HowItWorksRoute: typeof HowItWorksRoute
   PlatformRoute: typeof PlatformRoute
+  PricingRoute: typeof PricingRoute
   SecurityFaqRoute: typeof SecurityFaqRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   NavieSplatRoute: typeof NavieSplatRoute
@@ -240,6 +253,13 @@ declare module '@tanstack/react-router' {
       path: '/security-faq'
       fullPath: '/security-faq'
       preLoaderRoute: typeof SecurityFaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/platform': {
@@ -347,6 +367,7 @@ const rootRouteChildren: RootRouteChildren = {
   GetAppmapRoute: GetAppmapRoute,
   HowItWorksRoute: HowItWorksRoute,
   PlatformRoute: PlatformRoute,
+  PricingRoute: PricingRoute,
   SecurityFaqRoute: SecurityFaqRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   NavieSplatRoute: NavieSplatRoute,
