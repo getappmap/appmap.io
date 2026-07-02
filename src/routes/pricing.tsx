@@ -1,0 +1,155 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+
+const title = "Pricing | AppMap";
+const description =
+  "Free at the desk for every developer and for organizations under 250 employees. Enterprise support contract for standardization at scale.";
+const url = "https://hello-bright-start-736.lovable.app/pricing";
+
+export const Route = createFileRoute("/pricing")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:url", content: url },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: url }],
+  }),
+  component: PricingPage,
+});
+
+const primaryBtn =
+  "inline-flex w-full items-center justify-center rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-4 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]";
+const accent = "font-semibold text-[#ff07aa] hover:underline";
+
+function Check() {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      className="mt-[3px] h-4 w-4 flex-none text-[#ff07aa]"
+      aria-hidden="true"
+    >
+      <path
+        fill="currentColor"
+        d="M8.143 13.314 4.9 10.07l-1.414 1.415 4.657 4.656L18.657 5.628 17.243 4.214z"
+      />
+    </svg>
+  );
+}
+
+function Bullets({ items }: { items: string[] }) {
+  return (
+    <ul className="mt-6 space-y-3">
+      {items.map((b) => (
+        <li key={b} className="flex gap-3 text-[14.5px] leading-[1.55] text-[#f2effb]">
+          <Check />
+          <span>{b}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+const community = [
+  "Sequence diagrams, dependency maps, flame graphs, and trace views",
+  "Runtime code analysis in the editor",
+  "The AppMap CLI and MCP server, for any AI agent",
+  "VS Code and JetBrains extensions",
+  "Community support",
+];
+
+const enterprise = [
+  "Everything in Community",
+  "Paid pilots with hands-on coaching for every team",
+  "AppMap in CI: behavioral review on every pull request",
+  "Telemetry routing to your internal observability stack",
+  "On-prem and airgapped deployment, internal distribution",
+  "Priority support and SLAs",
+];
+
+function PricingPage() {
+  return (
+    <div className="min-h-screen bg-[#0d0a1a] text-[#f2effb]">
+      <Header />
+      <main>
+        <section className="px-6 pt-16 pb-10">
+          <div className="mx-auto max-w-[1040px]">
+            <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">
+              Pricing
+            </div>
+            <h1 className="mt-4 text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
+              Free at the desk. Supported at scale.
+            </h1>
+          </div>
+        </section>
+
+        <section className="px-6 pb-14">
+          <div className="mx-auto grid max-w-[1040px] gap-6 md:grid-cols-2">
+            {/* Community */}
+            <div className="flex flex-col rounded-2xl border border-[#2c2353] bg-[#1c1538] p-8">
+              <h2 className="text-[22px] font-bold text-[#f2effb]">Community</h2>
+              <div className="mt-4 text-[40px] font-extrabold leading-none text-[#f2effb]">
+                $0
+              </div>
+              <p className="mt-3 text-[14px] text-[#a99fc7]">
+                For every developer, and for organizations under 250 employees.
+              </p>
+              <div className="mt-6 border-t border-[#2c2353]" />
+              <Bullets items={community} />
+              <div className="mt-8 flex-1" />
+              <Link to="/get-appmap" className={primaryBtn}>
+                Get AppMap
+              </Link>
+            </div>
+
+            {/* Enterprise */}
+            <div className="flex flex-col rounded-2xl border border-[#ff07aa]/40 bg-[#1c1538] p-8">
+              <h2 className="text-[22px] font-bold text-[#f2effb]">Enterprise</h2>
+              <div className="mt-4 flex h-[40px] items-center text-[28px] font-extrabold leading-none text-[#f2effb]">
+                Support contract
+              </div>
+              <p className="mt-3 text-[14px] text-[#a99fc7]">
+                For organizations of 250 or more employees standardizing on AppMap.
+              </p>
+              <div className="mt-6 border-t border-[#2c2353]" />
+              <Bullets items={enterprise} />
+              <div className="mt-8 flex-1" />
+              <Link to="/book-a-demo" className={primaryBtn}>
+                Book a Demo
+              </Link>
+              <p className="mt-3 text-center text-[13.5px] text-[#a99fc7]">
+                or email{" "}
+                <a href="mailto:elizabeth@appmap.io" className={accent}>
+                  elizabeth@appmap.io
+                </a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="px-6 pb-24">
+          <div className="mx-auto max-w-[1040px] text-center">
+            <p className="text-[13px] text-[#a99fc7]">
+              By downloading and using AppMap you agree to the{" "}
+              <a
+                href="https://appmap.io/community/terms-and-conditions.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={accent}
+              >
+                terms and conditions
+              </a>
+              .
+            </p>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+}
