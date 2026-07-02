@@ -24,12 +24,12 @@ const reviewerImages = [
 
 const pilotSteps = [
   {
-    h: "Start in the editor.",
-    b: "One application, one non-functional concern, real runtime evidence on day one.",
+    h: "Start without CI",
+    b: "You do not need to instrument CI to begin. AppMap records from a running process, so teams start in the editor or in environments that already run: a local run, a focused test, a smoke script, an API call, or a QA environment. No full enterprise-stack build required to capture a baseline.",
   },
   {
-    h: "Promote what matters.",
-    b: "The flows you have promised to protect become governed baselines in your repository, by pull request.",
+    h: "Governed behavior baselines",
+    b: "Promote only the high-value flows into governed golden traces, then enforce them in CI when you are ready. Each baseline is reviewed and versioned in your repository, so behavioral contracts are auditable and owned, not ad hoc. Begin lightweight in the editor; graduate the flows that matter into the pipeline.",
   },
   {
     h: "Enforce when ready.",
@@ -134,38 +134,14 @@ function EnterprisePage() {
           </div>
         </section>
 
-        <section className="px-6 py-20">
-          <div className="mx-auto grid max-w-[1120px] gap-6 lg:grid-cols-2">
-            <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-8">
-              <h2 className="text-[24px] font-extrabold tracking-[-0.6px] text-[#f2effb]">Start without CI</h2>
-              <p className="mt-3 text-[15px] leading-[1.6] text-[#a99fc7]">
-                You do not need to instrument CI to begin. AppMap records from a running process, so teams start in the editor or in environments that already run: a local run, a focused test, a smoke script, an API call, or a QA environment. No full enterprise-stack build required to capture a baseline.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-8">
-              <h2 className="text-[24px] font-extrabold tracking-[-0.6px] text-[#f2effb]">Governed behavior baselines</h2>
-              <p className="mt-3 text-[15px] leading-[1.6] text-[#a99fc7]">
-                Promote only the high-value flows into governed golden traces, then enforce them in CI when you are ready. Each baseline is reviewed and versioned in your repository, so behavioral contracts are auditable and owned, not ad hoc. Begin lightweight in the editor; graduate the flows that matter into the pipeline.
-              </p>
-              <figure className="mt-5 rounded-lg border border-[#2c2353] bg-[#0d0a1a] p-2">
-                <img
-                  src="/img/appmap/waltzbehaviorheld_branded.svg"
-                  alt="AppMap recordings of FINOS Waltz: same endpoint before and after an unrelated change, status, auth path and query count match."
-                  className="w-full h-auto rounded"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <figcaption className="px-1 pt-2 text-[12px] text-[#a99fc7]">
-                  Real AppMap recording · FINOS Waltz
-                </figcaption>
-              </figure>
-            </div>
-            <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-8">
-              <h2 className="text-[24px] font-extrabold tracking-[-0.6px] text-[#f2effb]">Independent runtime evidence</h2>
-              <p className="mt-3 text-[15px] leading-[1.6] text-[#a99fc7]">
-                Architecture governance cannot rely on the AI grading its own homework. AppMap adds an independent evidence layer inside your environment: runtime behavior captured from the application itself, outside the AI's reasoning loop. The agent can consume it, the reviewer can see the same evidence, and the organization can govern against it. The AI explains the evidence; it does not create the evidence.
-              </p>
-            </div>
+        <DeploymentDiagram />
+
+        <section className="px-6 py-16">
+          <div className="mx-auto max-w-[840px] border-t border-b border-[#2c2353] py-10 text-center">
+            <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Independent runtime evidence</div>
+            <p className="mt-4 text-[17px] leading-[1.65] text-[#f2effb]">
+              Architecture governance cannot rely on the AI grading its own homework. AppMap adds an independent evidence layer inside your environment: runtime behavior captured from the application itself, outside the AI's reasoning loop. The agent can consume it, the reviewer can see the same evidence, and the organization can govern against it. The AI explains the evidence; it does not create the evidence.
+            </p>
           </div>
         </section>
 
@@ -195,12 +171,29 @@ function EnterprisePage() {
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">From pilot to policy</h2>
-            <ol className="mt-8 grid gap-4 sm:grid-cols-3">
+            <ol className="mt-8 grid gap-4 lg:grid-cols-3 lg:items-start">
               {pilotSteps.map((s, i) => (
-                <li key={s.h} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                <li
+                  key={s.h}
+                  className={`rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 ${i === 1 ? "lg:row-span-2" : ""}`}
+                >
                   <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Step {i + 1}</div>
                   <h3 className="mt-2 text-[17px] font-bold text-[#f2effb]">{s.h}</h3>
                   <p className="mt-2 text-[14.5px] leading-[1.55] text-[#a99fc7]">{s.b}</p>
+                  {i === 1 && (
+                    <figure className="mt-5 rounded-lg border border-[#2c2353] bg-[#0d0a1a] p-2">
+                      <img
+                        src="/img/appmap/waltzbehaviorheld_branded.svg"
+                        alt="AppMap recordings of FINOS Waltz: same endpoint before and after an unrelated change, status, auth path and query count match."
+                        className="w-full h-auto rounded"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <figcaption className="px-1 pt-2 text-[12px] text-[#a99fc7]">
+                        Real AppMap recording · FINOS Waltz
+                      </figcaption>
+                    </figure>
+                  )}
                 </li>
               ))}
             </ol>
