@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "@tanstack/react-router";
 import logo from "@/assets/images/appmap-logo.svg";
 
 export const VSCODE_INSTALL_URL =
@@ -27,22 +28,32 @@ export function Header({ className = "" }: HeaderProps) {
       className={`sticky top-0 z-50 border-b border-[#2c2353] bg-[rgba(13,10,26,0.85)] backdrop-blur-md ${className}`}
     >
       <div className="mx-auto flex h-16 max-w-[1120px] items-center gap-7 px-6">
-        <a href="/" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <img src={logo} alt="AppMap" className="h-[26px] w-auto" />
-        </a>
+        </Link>
 
         <nav className="ml-1 hidden gap-6 md:flex">
-          {navLinks.map((l) => (
-            <a
-              key={l.label}
-              href={l.href}
-              target={l.href.startsWith("http") ? "_blank" : undefined}
-              rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
-              className="text-[14.5px] text-[#a99fc7] transition-colors hover:text-[#f2effb]"
-            >
-              {l.label}
-            </a>
-          ))}
+          {navLinks.map((l) =>
+            l.href.startsWith("http") ? (
+              <a
+                key={l.label}
+                href={l.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[14.5px] text-[#a99fc7] transition-colors hover:text-[#f2effb]"
+              >
+                {l.label}
+              </a>
+            ) : (
+              <Link
+                key={l.label}
+                to={l.href as never}
+                className="text-[14.5px] text-[#a99fc7] transition-colors hover:text-[#f2effb]"
+              >
+                {l.label}
+              </Link>
+            )
+          )}
         </nav>
 
         <div className="ml-auto hidden items-center gap-3 md:flex">
@@ -74,11 +85,29 @@ export function Header({ className = "" }: HeaderProps) {
       {open && (
         <div className="border-t border-[#2c2353] bg-[#0d0a1a] px-6 py-4 md:hidden">
           <div className="flex flex-col gap-3">
-            {navLinks.map((l) => (
-              <a key={l.label} href={l.href} target={l.href.startsWith("http") ? "_blank" : undefined} rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined} className="text-[#a99fc7] hover:text-[#f2effb]">
-                {l.label}
-              </a>
-            ))}
+            {navLinks.map((l) =>
+              l.href.startsWith("http") ? (
+                <a
+                  key={l.label}
+                  href={l.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setOpen(false)}
+                  className="text-[#a99fc7] hover:text-[#f2effb]"
+                >
+                  {l.label}
+                </a>
+              ) : (
+                <Link
+                  key={l.label}
+                  to={l.href as never}
+                  onClick={() => setOpen(false)}
+                  className="text-[#a99fc7] hover:text-[#f2effb]"
+                >
+                  {l.label}
+                </Link>
+              )
+            )}
             <div className="mt-3 flex flex-col gap-3 border-t border-[#2c2353] pt-3">
               <a
                 href={VSCODE_INSTALL_URL}

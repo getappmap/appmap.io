@@ -1,4 +1,5 @@
 import logo from "@/assets/images/appmap-logo.svg";
+import { Link } from "@tanstack/react-router";
 
 const cols: { heading: string; links: { label: string; href: string }[] }[] = [
   {
@@ -44,15 +45,25 @@ export function Footer() {
               {col.heading}
             </h4>
             {col.links.map((l) => (
-              <a
-                key={l.label}
-                href={l.href}
-                target={l.href.startsWith("http") ? "_blank" : undefined}
-                rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="block py-1.5 text-[#a99fc7] transition-colors hover:text-[#ff07aa]"
-              >
-                {l.label}
-              </a>
+              l.href.startsWith("http") ? (
+                <a
+                  key={l.label}
+                  href={l.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block py-1.5 text-[#a99fc7] transition-colors hover:text-[#ff07aa]"
+                >
+                  {l.label}
+                </a>
+              ) : (
+                <Link
+                  key={l.label}
+                  to={l.href as never}
+                  className="block py-1.5 text-[#a99fc7] transition-colors hover:text-[#ff07aa]"
+                >
+                  {l.label}
+                </Link>
+              )
             ))}
           </div>
         ))}
