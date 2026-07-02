@@ -9,7 +9,6 @@ const cols: { heading: string; links: { label: string; href: string }[] }[] = [
       { label: "Benchmarks", href: "/benchmarks" },
       { label: "Compatibility", href: "/compatibility" },
       { label: "Security FAQ", href: "/enterprise" },
-      { label: "Pricing", href: "/pricing" },
     ],
   },
   {
@@ -23,8 +22,7 @@ const cols: { heading: string; links: { label: string; href: string }[] }[] = [
   {
     heading: "Company",
     links: [
-      { label: "About", href: "/company/about-appmap" },
-      { label: "Contact", href: "/contact" },
+      { label: "Contact", href: "https://meetings.hubspot.com/dustin294" },
       { label: "GitHub", href: "https://github.com/getappmap" },
     ],
   },
