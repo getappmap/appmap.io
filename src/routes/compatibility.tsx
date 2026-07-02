@@ -1,9 +1,9 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
-const title = "AppMap Compatibility: Works With Every AI Coding Agent";
+const title = "AppMap Compatibility: Humans See the Map. Agents Query the Trace.";
 const description =
-  "Model-agnostic and agent-agnostic. Works with Claude Code, Cursor, GitHub Copilot, Windsurf, Cline, Antigravity, and any MCP client.";
+  "AppMap speaks MCP to every agent, and plain pictures to every person. No lock-in either way.";
 
 export const Route = createFileRoute("/compatibility")({
   head: () => ({
@@ -33,6 +33,21 @@ const agents = [
   { name: "Google Antigravity", body: "Agent-first development environment." },
 ];
 
+const peopleCards = [
+  {
+    label: "In the editor",
+    body: "sequence diagrams, dependency maps, flame graphs, and trace views, generated from real runs",
+  },
+  {
+    label: "In the pull request",
+    body: "behavioral review comments reviewers can read without running anything",
+  },
+  {
+    label: "Everywhere you work",
+    body: "In VS Code, JetBrains, the CLI, and CI",
+  },
+];
+
 function CompatibilityPage() {
   return (
     <div className="min-h-screen bg-[#0d0a1a]">
@@ -42,20 +57,17 @@ function CompatibilityPage() {
           <div className="mx-auto max-w-[1120px]">
             <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Compatibility</div>
             <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-              No lock-in. Better context.
+              Humans see the map. Agents query the trace.
             </h1>
             <p className="mt-5 max-w-[720px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              AppMap speaks the open Model Context Protocol. It works with the
-              agents and models your team already picked, and the ones it picks
-              next.
+              AppMap speaks MCP to every agent, and plain pictures to every person. No lock-in either way.
             </p>
           </div>
         </section>
 
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Bring your own agent</h2>
-            <p className="mt-3 max-w-[700px] text-[16px] text-[#a99fc7]">AppMap is the context source. The agent stays yours.</p>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">For your agents</h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {agents.map((a) => (
                 <div key={a.name} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
@@ -68,37 +80,44 @@ function CompatibilityPage() {
               ))}
             </div>
             <p className="mt-6 text-[15px] text-[#f2effb]">And any MCP client. If it speaks the protocol, it can read an AppMap trace.</p>
-          </div>
-        </section>
 
-        <section className="px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Bring your own model</h2>
+            <h3 className="mt-14 text-[22px] font-extrabold tracking-[-0.5px] text-[#f2effb] sm:text-[26px]">Bring your own model</h3>
             <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
               The model behind the agent does not matter. The trace is the
               same evidence for a frontier model or a compact one, hosted or
               self-hosted. In our test it let a compact model match a frontier
               model.
             </p>
-          </div>
-        </section>
 
-        <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Lower inference cost wherever inference runs</h2>
+            <h3 className="mt-12 text-[22px] font-extrabold tracking-[-0.5px] text-[#f2effb] sm:text-[26px]">Lower inference cost wherever inference runs</h3>
             <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
               Whoever runs the agent pays for the tokens. AppMap raises the value of each call, so the agent takes fewer steps to the same answer. That holds across editors, models, and vendors.
             </p>
-            <div className="mt-7 flex flex-wrap gap-2.5">
-              {["Visual Studio Code", "JetBrains IDEs", "CLI", "CI"].map((c) => (
-                <span key={c} className="rounded-full border border-[#2c2353] bg-[#1c1538] px-4 py-2 text-[13.5px] text-[#f2effb]">{c}</span>
+          </div>
+        </section>
+
+        <section className="px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">For your people</h2>
+            <div className="mt-8 grid gap-4 sm:grid-cols-1 lg:grid-cols-3">
+              {peopleCards.map((c) => (
+                <div key={c.label} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                  <div className="flex items-center gap-2">
+                    <span className="inline-block h-1.5 w-1.5 rounded-full bg-[#ff07aa]" style={{ boxShadow: "0 0 10px #ff07aa" }} />
+                    <h3 className="text-[17px] font-bold text-[#f2effb]">{c.label}</h3>
+                  </div>
+                  <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">{c.body}</p>
+                </div>
               ))}
             </div>
-            <div className="mt-8">
-              <Link to="/get-appmap" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
-                Get AppMap
-              </Link>
-            </div>
+          </div>
+        </section>
+
+        <section className="px-6 py-24">
+          <div className="mx-auto max-w-[1120px] text-center">
+            <p className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
+              One run. Many views. Same ground truth.
+            </p>
           </div>
         </section>
       </main>
