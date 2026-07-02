@@ -1,29 +1,24 @@
-# Enrich Enterprise Security FAQ
+## Move Security FAQ to its own page
 
-## Scope
-`src/routes/enterprise.tsx` — the Security FAQ accordion section only.
+### 1. New route `src/routes/security-faq.tsx`
+- `createFileRoute("/security-faq")` with head(): title "Security FAQ — AppMap", matching description, og:title/og:description/og:url `/security-faq`, twitter card + canonical (mirroring the enterprise route pattern, minus the enterprise-specific og:image reuse — keep the shared `/og/og-card.png`).
+- Page chrome: same `<Header />` + dark page wrapper as `enterprise.tsx`.
+- Hero section (same styling tokens as enterprise hero):
+  - Kicker: `SECURITY FAQ` (`#ff07aa`, uppercase, tracked).
+  - Headline: `Runtime evidence, locked to your environment.`
+- FAQ section: exact markup ported from `enterprise.tsx` lines 375–400 — the `securityFaqs` array with all six items (three original + three added), the accordion `<details>` block, and the "Read: AppMap security →" link to `https://appmap.io/security` (unchanged).
+- The `securityFaqs` array moves into this new file. No em-dashes, no banned terms.
 
-## What to change
-1. Append three new entries to the `securityFaqs` array, placed after the existing three items.
-2. Keep the existing native `<details>`/`<summary>` accordion markup and styling unchanged.
-3. Leave the existing "Read: AppMap security" link at the bottom untouched.
+### 2. `src/routes/enterprise.tsx`
+- Delete the `securityFaqs` const (lines 4–29).
+- Delete the entire Security FAQ `<section id="security-faq">` (lines 375–400). Page now ends after the "From pilot to policy" section with its Book a Demo button.
+- Hero button "Read the Security FAQ" (line 270) becomes a TanStack `<Link to="/security-faq">` with the same classes. Add `Link` to the `@tanstack/react-router` import.
 
-## New FAQ items (verbatim copy)
+### 3. `src/components/layout/Footer.tsx`
+- Change `{ label: "Security FAQ", href: "/enterprise" }` → `href: "/security-faq"`.
 
-**4. Is sign in required to use AppMap?**
-> Activation requires authorization via GitHub, GitLab, or email. That is identity verification only; it happens once, in the editor.
+### 4. Router registration
+- TanStack file-based routing auto-picks up `src/routes/security-faq.tsx`; `routeTree.gen.ts` regenerates on next dev/build run. No manual edits.
 
-**5. Does signing in with GitHub or GitLab give AppMap access to my code?**
-> No. GitHub and GitLab act as OAuth identity providers only. The requested scopes cover your email address and public profile, nothing else. AppMap requires no permissions to your hosted code.
-
-**6. Where are AppMap files stored?**
-> In your local development project, typically in a tmp/appmap directory created at install time. AppMap does not upload or move them out of your environment.
-
-## Rules enforced
-- No em-dashes in any new copy.
-- No use of "Navie" or other AI-integration product names.
-- All factual claims match the approved wording above exactly.
-
-## Out of scope
-- No changes to the accordion component, styling tokens, section layout, or the closing external link.
-- No changes to any other section of the page.
+### Out of scope
+No changes to accordion styling, FAQ copy, other Enterprise sections, or unrelated components.
