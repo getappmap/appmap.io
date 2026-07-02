@@ -237,9 +237,9 @@ function EnterprisePageInner() {
                 egress. Cleared at a top-4 U.S. bank and in use at scale.
               </p>
               <div className="mt-8 flex flex-wrap gap-3.5">
-                <a href="https://meetings.hubspot.com/dustin294" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
+                <Link to="/book-a-demo" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                   Book a Demo
-                </a>
+                </Link>
                 <Link to="/security-faq" className="rounded-lg border border-[#2c2353] px-5 py-2.5 text-[14px] font-semibold text-[#f2effb] hover:border-[#a99fc7]">
                   Read the Security FAQ
                 </Link>
@@ -338,9 +338,9 @@ function EnterprisePageInner() {
               ))}
             </ol>
             <div className="mt-10">
-              <a href="https://meetings.hubspot.com/dustin294" className="inline-block rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
+              <Link to="/book-a-demo" className="inline-block rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                 Book a Demo
-              </a>
+              </Link>
             </div>
           </div>
         </section>

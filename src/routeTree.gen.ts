@@ -13,8 +13,10 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SecurityFaqRouteImport } from './routes/security-faq'
 import { Route as PlatformRouteImport } from './routes/platform'
 import { Route as HowItWorksRouteImport } from './routes/how-it-works'
+import { Route as GetAppmapRouteImport } from './routes/get-appmap'
 import { Route as EnterpriseRouteImport } from './routes/enterprise'
 import { Route as CompatibilityRouteImport } from './routes/compatibility'
+import { Route as BookADemoRouteImport } from './routes/book-a-demo'
 import { Route as BenchmarksRouteImport } from './routes/benchmarks'
 import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as IndexRouteImport } from './routes/index'
@@ -42,6 +44,11 @@ const HowItWorksRoute = HowItWorksRouteImport.update({
   path: '/how-it-works',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GetAppmapRoute = GetAppmapRouteImport.update({
+  id: '/get-appmap',
+  path: '/get-appmap',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EnterpriseRoute = EnterpriseRouteImport.update({
   id: '/enterprise',
   path: '/enterprise',
@@ -50,6 +57,11 @@ const EnterpriseRoute = EnterpriseRouteImport.update({
 const CompatibilityRoute = CompatibilityRouteImport.update({
   id: '/compatibility',
   path: '/compatibility',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookADemoRoute = BookADemoRouteImport.update({
+  id: '/book-a-demo',
+  path: '/book-a-demo',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BenchmarksRoute = BenchmarksRouteImport.update({
@@ -88,8 +100,10 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/architecture': typeof ArchitectureRoute
   '/benchmarks': typeof BenchmarksRoute
+  '/book-a-demo': typeof BookADemoRoute
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
+  '/get-appmap': typeof GetAppmapRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
   '/security-faq': typeof SecurityFaqRoute
@@ -102,8 +116,10 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/architecture': typeof ArchitectureRoute
   '/benchmarks': typeof BenchmarksRoute
+  '/book-a-demo': typeof BookADemoRoute
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
+  '/get-appmap': typeof GetAppmapRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
   '/security-faq': typeof SecurityFaqRoute
@@ -117,8 +133,10 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/architecture': typeof ArchitectureRoute
   '/benchmarks': typeof BenchmarksRoute
+  '/book-a-demo': typeof BookADemoRoute
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
+  '/get-appmap': typeof GetAppmapRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
   '/security-faq': typeof SecurityFaqRoute
@@ -133,8 +151,10 @@ export interface FileRouteTypes {
     | '/'
     | '/architecture'
     | '/benchmarks'
+    | '/book-a-demo'
     | '/compatibility'
     | '/enterprise'
+    | '/get-appmap'
     | '/how-it-works'
     | '/platform'
     | '/security-faq'
@@ -147,8 +167,10 @@ export interface FileRouteTypes {
     | '/'
     | '/architecture'
     | '/benchmarks'
+    | '/book-a-demo'
     | '/compatibility'
     | '/enterprise'
+    | '/get-appmap'
     | '/how-it-works'
     | '/platform'
     | '/security-faq'
@@ -161,8 +183,10 @@ export interface FileRouteTypes {
     | '/'
     | '/architecture'
     | '/benchmarks'
+    | '/book-a-demo'
     | '/compatibility'
     | '/enterprise'
+    | '/get-appmap'
     | '/how-it-works'
     | '/platform'
     | '/security-faq'
@@ -176,8 +200,10 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ArchitectureRoute: typeof ArchitectureRoute
   BenchmarksRoute: typeof BenchmarksRoute
+  BookADemoRoute: typeof BookADemoRoute
   CompatibilityRoute: typeof CompatibilityRoute
   EnterpriseRoute: typeof EnterpriseRoute
+  GetAppmapRoute: typeof GetAppmapRoute
   HowItWorksRoute: typeof HowItWorksRoute
   PlatformRoute: typeof PlatformRoute
   SecurityFaqRoute: typeof SecurityFaqRoute
@@ -217,6 +243,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HowItWorksRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/get-appmap': {
+      id: '/get-appmap'
+      path: '/get-appmap'
+      fullPath: '/get-appmap'
+      preLoaderRoute: typeof GetAppmapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/enterprise': {
       id: '/enterprise'
       path: '/enterprise'
@@ -229,6 +262,13 @@ declare module '@tanstack/react-router' {
       path: '/compatibility'
       fullPath: '/compatibility'
       preLoaderRoute: typeof CompatibilityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/book-a-demo': {
+      id: '/book-a-demo'
+      path: '/book-a-demo'
+      fullPath: '/book-a-demo'
+      preLoaderRoute: typeof BookADemoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/benchmarks': {
@@ -280,8 +320,10 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ArchitectureRoute: ArchitectureRoute,
   BenchmarksRoute: BenchmarksRoute,
+  BookADemoRoute: BookADemoRoute,
   CompatibilityRoute: CompatibilityRoute,
   EnterpriseRoute: EnterpriseRoute,
+  GetAppmapRoute: GetAppmapRoute,
   HowItWorksRoute: HowItWorksRoute,
   PlatformRoute: PlatformRoute,
   SecurityFaqRoute: SecurityFaqRoute,

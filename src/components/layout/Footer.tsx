@@ -23,7 +23,7 @@ const cols: { heading: string; links: { label: string; href: string }[] }[] = [
   {
     heading: "Company",
     links: [
-      { label: "Contact", href: "https://meetings.hubspot.com/dustin294" },
+      { label: "Contact", href: "mailto:elizabeth@appmap.io" },
       { label: "GitHub", href: "https://github.com/getappmap" },
     ],
   },
@@ -45,12 +45,12 @@ export function Footer() {
               {col.heading}
             </h4>
             {col.links.map((l) => (
-              l.href.startsWith("http") ? (
+              l.href.startsWith("http") || l.href.startsWith("mailto:") ? (
                 <a
                   key={l.label}
                   href={l.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target={l.href.startsWith("http") ? "_blank" : undefined}
+                  rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="block py-1.5 text-[#a99fc7] transition-colors hover:text-[#ff07aa]"
                 >
                   {l.label}

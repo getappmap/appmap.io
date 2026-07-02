@@ -11,8 +11,8 @@ const securityFaqs = [
     a: "In the editor it lives alongside your working session. When persisted, it lives in a .appmap directory in your repository, versioned with the rest of your source. Persisted as .appmap.json files, archived per git revision and compared with appmap compare.",
   },
   {
-    q: "How does AppMap work with MCP?",
-    a: "AppMap exposes the behavioral model over the Model Context Protocol. Agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
+    q: "Where are AppMap files stored?",
+    a: "In your local development project, typically in a tmp/appmap directory created at install time. AppMap does not upload or move them out of your environment.",
   },
   {
     q: "Is sign in required to use AppMap?",
@@ -23,12 +23,12 @@ const securityFaqs = [
     a: "No. GitHub and GitLab act as OAuth identity providers only. The requested scopes cover your email address and public profile, nothing else. AppMap requires no permissions to your hosted code.",
   },
   {
-    q: "Where are AppMap files stored?",
-    a: "In your local development project, typically in a tmp/appmap directory created at install time. AppMap does not upload or move them out of your environment.",
+    q: "How does AppMap work with MCP?",
+    a: "AppMap exposes the behavioral model over the Model Context Protocol. Agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
   },
 ];
 
-const title = "Security FAQ — AppMap";
+const title = "Security FAQ | AppMap";
 const description =
   "How AppMap handles code, runtime data, sign in, and file storage. Runtime evidence, locked to your environment.";
 
