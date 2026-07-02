@@ -18,7 +18,7 @@ const pilotSteps = [
   },
   {
     h: "Enforce when ready.",
-    b: "The same review runs in your pipeline, and AppMap coaches each team to set it up for their own use.",
+    b: "The same review runs in your pipeline, and AppMap coaches each team to set it up for their own use. CI enforcement and telemetry routing are part of the enterprise service.",
   },
 ];
 
