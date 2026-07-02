@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SecurityFaqRouteImport } from './routes/security-faq'
 import { Route as PlatformRouteImport } from './routes/platform'
 import { Route as HowItWorksRouteImport } from './routes/how-it-works'
 import { Route as EnterpriseRouteImport } from './routes/enterprise'
@@ -24,6 +25,11 @@ import { Route as Blog20240620AppmapSweBenchLeaderRouteImport } from './routes/b
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SecurityFaqRoute = SecurityFaqRouteImport.update({
+  id: '/security-faq',
+  path: '/security-faq',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PlatformRoute = PlatformRouteImport.update({
@@ -86,6 +92,7 @@ export interface FileRoutesByFullPath {
   '/enterprise': typeof EnterpriseRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
+  '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
@@ -99,6 +106,7 @@ export interface FileRoutesByTo {
   '/enterprise': typeof EnterpriseRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
+  '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
@@ -113,6 +121,7 @@ export interface FileRoutesById {
   '/enterprise': typeof EnterpriseRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
+  '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
@@ -128,6 +137,7 @@ export interface FileRouteTypes {
     | '/enterprise'
     | '/how-it-works'
     | '/platform'
+    | '/security-faq'
     | '/sitemap.xml'
     | '/navie/$'
     | '/docs/navie/$'
@@ -141,6 +151,7 @@ export interface FileRouteTypes {
     | '/enterprise'
     | '/how-it-works'
     | '/platform'
+    | '/security-faq'
     | '/sitemap.xml'
     | '/navie/$'
     | '/docs/navie/$'
@@ -154,6 +165,7 @@ export interface FileRouteTypes {
     | '/enterprise'
     | '/how-it-works'
     | '/platform'
+    | '/security-faq'
     | '/sitemap.xml'
     | '/navie/$'
     | '/docs/navie/$'
@@ -168,6 +180,7 @@ export interface RootRouteChildren {
   EnterpriseRoute: typeof EnterpriseRoute
   HowItWorksRoute: typeof HowItWorksRoute
   PlatformRoute: typeof PlatformRoute
+  SecurityFaqRoute: typeof SecurityFaqRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   NavieSplatRoute: typeof NavieSplatRoute
   DocsNavieSplatRoute: typeof DocsNavieSplatRoute
@@ -181,6 +194,13 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/security-faq': {
+      id: '/security-faq'
+      path: '/security-faq'
+      fullPath: '/security-faq'
+      preLoaderRoute: typeof SecurityFaqRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/platform': {
@@ -264,6 +284,7 @@ const rootRouteChildren: RootRouteChildren = {
   EnterpriseRoute: EnterpriseRoute,
   HowItWorksRoute: HowItWorksRoute,
   PlatformRoute: PlatformRoute,
+  SecurityFaqRoute: SecurityFaqRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   NavieSplatRoute: NavieSplatRoute,
   DocsNavieSplatRoute: DocsNavieSplatRoute,
