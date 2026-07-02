@@ -1,34 +1,28 @@
-Update /get-appmap so the two lines below the extension cards read clearly as a single, distinct section.
+## Goal
+Revise the `/get-appmap` page with a new headline, subline, and improved typography for the two closing paragraphs. No copy changes in the cards or closing paragraphs other than what is specified.
 
-### Current state
-The "Terminal only?" paragraph and the "Always free at your desk." paragraph are in separate `<section>` elements with `text-[14.5px] text-[#a99fc7]` and modest vertical padding. They are small, dim, and visually disconnected.
+## Headline section
+- Replace `Three ways in. Same ground truth.` with `One engine. Install it your way.`
+- Add a subline directly under the `<h1>`: `VS Code, JetBrains, or straight from the terminal: every path ends at the same ground truth.` Render it in muted color (use the existing muted text color `#a99fc7` or its semantic equivalent) at roughly `17-18px` with `leading-relaxed`.
+- Update the `<meta name="description">` and `og:description` to reflect the new headline and subline.
 
-### Changes
+## Extension cards
+- Leave the VS Code and JetBrains cards exactly as they are (card styling, buttons, copy, links, layout). Do not touch this section.
 
-**1. Merge into one section**
-- Move both paragraphs into a single `<section>` so they read as one block.
-- Remove the now-empty intermediate `<section>`.
+## Closing text block (two lines)
+- Combine the two `<section>` elements into a single section so they read as one distinct closing block.
+- Body text color: change from `#a99fc7` to `#f2effb`.
+- Body text size: change from `text-[14.5px]` to `text-[18px]`.
+- Line height: add comfortable line height (`leading-[1.7]` or `leading-relaxed`).
+- Vertical spacing: add generous padding (`py-20` or `py-16`) on the wrapping section, and `mb-6` or `mb-8` between the two paragraphs to separate them.
+- Keep the block centered and constrained to `max-w-[1120px] mx-auto`.
+- Leading phrases: render `Terminal only?` and `Always free at your desk.` in `font-semibold`.
+- Links: keep the existing `CLI quickstart` and `See pricing` links in accent pink (`text-[#ff07aa]`) with `hover:underline`.
+- No other copy changes: every other word stays exactly as written.
 
-**2. Typography**
-- Change body text size from `text-[14.5px]` to `text-[18px]`.
-- Change body text color from `text-[#a99fc7]` to `text-[#f2effb]`.
-- Add `leading-relaxed` (or equivalent `leading-[1.7]`) for readability.
-- Keep `<Link>` text in the existing accent pink (`text-[#ff07aa]`) with `hover:underline`.
+## Rules
+- No em-dashes anywhere.
+- Do not use Navie, Runtime Intelligence, or Behavioral Intelligence.
 
-**3. Vertical spacing**
-- Give the new section generous vertical breathing room: `py-20` (or `py-16` if that feels too much) and a top margin / separator so it sits apart from the cards above.
-- Add a `mb-6` (or equivalent) between the two paragraphs so they do not crowd each other.
-
-**4. Layout**
-- Center-align the text block: `text-center` on the wrapper.
-- Constrain width to the same container as the cards (`max-w-[1120px] mx-auto`).
-
-**5. No copy changes**
-- Every word, link destination, and mailto stays exactly as written.
-
-### Files touched
+## File touched
 - `src/routes/get-appmap.tsx` only.
-
-### Rules applied
-- No em-dashes.
-- Never use Navie, Runtime Intelligence, or Behavioral Intelligence.
