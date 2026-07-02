@@ -1,9 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
-// TODO: replace with the real Google Calendar appointment-schedule link for elizabeth@appmap.io
 const BOOKING_URL =
-  "https://calendar.google.com/calendar/appointments/schedules/REPLACE_ME?gv=true";
+  "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3vJ9fnl7qYTBT2rvePqOQ-9_FABHI0_VkxE_iDLfmfQojUBXGVCOByrkeEz9CbPTpoLjgY1oQ-?gv=true";
 
 const title = "Book a demo | AppMap";
 const description =
