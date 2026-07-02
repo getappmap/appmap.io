@@ -26,8 +26,6 @@ export const Route = createFileRoute("/get-appmap")({
 
 const primaryBtn =
   "inline-block rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-4 py-2 text-[13.5px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]";
-const secondaryBtn =
-  "inline-block rounded-lg border border-[#2c2353] px-4 py-2 text-[13.5px] font-semibold text-[#f2effb] hover:border-[#a99fc7]";
 
 function GetAppMapPage() {
   return (
