@@ -44,7 +44,7 @@ export function HomeHero() {
           </a>
         </div>
         <div className="mt-3.5 text-[13.5px] text-[#a99fc7]">
-          Free and open source. Also available as a CLI.
+          Free for every developer. Organizational scale comes with a support contract.
         </div>
 
         <div className="mt-11">

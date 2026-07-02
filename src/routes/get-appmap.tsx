@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
 const title = "Get AppMap | AppMap";
@@ -105,6 +105,18 @@ function GetAppMapPage() {
                 </a>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="px-6 pb-24">
+          <div className="mx-auto max-w-[1120px] text-center">
+            <p className="text-[14.5px] text-[#a99fc7]">
+              Free for individual developers and small teams. Over 20 users, CI enforcement, or internal telemetry routing comes with a{" "}
+              <Link to="/enterprise" className="font-semibold text-[#ff07aa] hover:underline">
+                support contract
+              </Link>
+              .
+            </p>
           </div>
         </section>
       </main>

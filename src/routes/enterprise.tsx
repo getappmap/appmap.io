@@ -18,7 +18,7 @@ const pilotSteps = [
   },
   {
     h: "Enforce when ready.",
-    b: "The same review runs in your pipeline, and AppMap coaches each team to set it up for their own use.",
+    b: "The same review runs in your pipeline, and AppMap coaches each team to set it up for their own use. CI enforcement and telemetry routing are part of the enterprise service.",
   },
 ];
 
@@ -337,6 +337,18 @@ function EnterprisePageInner() {
                 </li>
               ))}
             </ol>
+            <div className="mx-auto mt-12 max-w-[840px] border-t border-b border-[#2c2353] py-10 text-center">
+              <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">
+                Where the commercial line is
+              </div>
+              <p className="mt-4 text-[17px] leading-[1.65] text-[#f2effb]">
+                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, and every map they make. Organizational scale is a commercial relationship. Groups of more than 20 users require a support contract, and the CI review pipeline and internal telemetry routing are provided as paid services. If AppMap has already spread inside your organization,{" "}
+                <Link to="/book-a-demo" className="font-semibold text-[#ff07aa] hover:underline">
+                  talk to us
+                </Link>
+                .
+              </p>
+            </div>
             <div className="mt-10">
               <Link to="/book-a-demo" className="inline-block rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                 Book a Demo
