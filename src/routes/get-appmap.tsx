@@ -82,17 +82,24 @@ function GetAppMapPage() {
               </div>
             </div>
           </div>
+
+          <div className="mx-auto mt-6 max-w-[1120px]">
+            <div className="flex flex-col rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+              <h2 className="text-[19px] font-bold text-[#f2effb]">Command line</h2>
+              <p className="mt-3 flex-1 text-[14.5px] leading-[1.6] text-[#a99fc7]">
+                Install the AppMap CLI and connect any MCP client over MCP. If you installed one of our extensions, you already have the CLI.
+              </p>
+              <div className="mt-5">
+                <Link to="/cli-quickstart" className={primaryBtn}>
+                  CLI quickstart
+                </Link>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px] text-center">
-            <p className="mb-8 text-[18px] leading-[1.7] text-[#f2effb]">
-              <span className="font-semibold">Terminal only?</span> Install the AppMap CLI and connect any MCP client. Follow the{" "}
-              <Link to="/cli-quickstart" className="font-semibold text-[#ff07aa] hover:underline">
-                CLI quickstart
-              </Link>
-              . If you installed one of our extensions, you already have the CLI.
-            </p>
             <p className="text-[18px] leading-[1.7] text-[#f2effb]">
               <span className="font-semibold">Always free at your desk.</span> When your organization standardizes on AppMap, we support you.{" "}
               <Link to="/pricing" className="font-semibold text-[#ff07aa] hover:underline">
