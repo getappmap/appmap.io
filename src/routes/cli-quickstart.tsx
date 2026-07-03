@@ -150,7 +150,7 @@ function CliQuickstartPage() {
               </a>
             </div>
             <p className="mt-6 text-[14.5px] text-[#a99fc7]">
-              Already using a VS Code or JetBrains extension? The CLI is bundled; you have all of this today.
+              <span className="font-semibold text-[#f2effb]">Already using a VS Code or JetBrains extension? The CLI is bundled; you have all of this today.</span>
             </p>
           </div>
         </section>
