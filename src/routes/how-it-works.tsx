@@ -321,7 +321,7 @@ function HowItWorksPage() {
             </div>
 
             <p className="mt-8 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              Deterministic traces compare byte-for-byte. Real-world traces compare normalized behavior: request path, status, SQL shape, downstream calls, control execution, and data movement.
+              AppMap compares a structural digest of the run: request path, status codes, call-tree structure, SQL shape, and downstream calls. Timing, ids, and captured values are not in it.
             </p>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
               Golden traces do not require every developer to run the full enterprise stack. A baseline can come from a local run, a focused test, a smoke script, an API call, a QA environment, or an existing running process.
