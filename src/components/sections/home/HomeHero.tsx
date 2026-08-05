@@ -17,12 +17,12 @@ export function HomeHero() {
           Runtime evidence for AI-assisted development
         </div>
         <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.2px] text-[#f2effb] sm:text-[54px] sm:tracking-[-1.5px]">
-          Every AI coding tool can read your source code.
+          Your AI reads the code.
           <br />
-          AppMap shows it what <Em>actually happened</Em>.
+          AppMap shows what <Em>actually happened</Em>.
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          Source code tells you what software could do. Runtime behavior tells you what it actually did. AppMap records every execution once, producing diagrams developers can understand and evidence AI can trust.
+          One recorded application run produces diagrams developers can understand and evidence AI can trust.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
