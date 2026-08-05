@@ -2,6 +2,8 @@
 
 Homepage only. The /how-it-works thesis insertion is deferred to a separate language pass. HomeHero untouched. No cards, lists, stats, quotes, images, videos, buttons, badges, or metadata change.
 
+Scope exception: the customer-reference cleanup in the second half of this plan is an explicit exception to the homepage-only, no-stats, and no-metadata constraints above. Both workstreams are approved in this build, limited strictly to the files and strings specified.
+
 ## 1. src/routes/index.tsx
 
 Reorder the sections below HomeHero to: PainStats, ReviewWhatAIDid, OneVsFifteen, ReviewLoop, BehavioralReview, TrustBar, Reviews, HowItWorksReveal, ClosingCTA.
@@ -49,17 +51,27 @@ Remove all customer-specific or customer-inferable references. Do not name, rank
 
 ### TrustBar (`src/components/sections/home/TrustBar.tsx`)
 - Remove the cell "Top-4 / U.S. bank in production".
-- The grid becomes three aggregate cells: "~140K active editor installs", "100K+ developer community", "2020 open source since". Grid classes adjust from four columns to three.
+- Change "active editor installs" to "editor installs".
+- The grid becomes three aggregate cells: "~140K editor installs", "100K+ developer community", "2020 open source since".
+- Grid classes become `grid-cols-1 sm:grid-cols-3` so no cell is orphaned at intermediate widths.
 
 ### /enterprise (`src/routes/enterprise.tsx`)
 - Meta description: drop "Cleared at a top-4 U.S. bank." It becomes "Local by design. Airgapped and on-prem ready. Auditable, open-source clients."
 - Hero paragraph: drop the final sentence "Cleared at a top-4 U.S. bank and in use at scale." The paragraph ends at "No data egress."
 - Architecture and trust cards: delete the entire "Cleared where it is hardest" card (it names ranking, industry, geography, purchase year, renewal, and production status). The section keeps three cards: "Airgapped and on-prem ready", "No egress, by design", "Trust, but verify". No replacement card is added.
+- Change that card grid from `sm:grid-cols-2` to `grid-cols-1 md:grid-cols-3` so the three remaining cards render as equal columns at desktop widths.
+- FINOS Waltz figure on this page: caption becomes "Public open-source demo: FINOS Waltz", and alt text becomes "AppMap demo recordings of the public open-source FINOS Waltz project, comparing the same endpoint before and after an unrelated change."
+
+These two grid adjustments are the only authorized layout changes in this build.
 
 ## Explicitly kept
 
 - Marketplace review quotations and install and community counts (aggregate, non-customer).
 - Partner and program badges in ClosingCTA (NVIDIA Inception, MongoDB, GitHub for Startups, TechCrunch), which are program affiliations, not customers.
-- FINOS Waltz recordings and captions. Waltz is a public open-source project used as a demo subject, not a customer reference. Confirmed: keep.
+- FINOS Waltz recordings. Waltz is a public open-source project used as a demo subject, not a customer reference. Confirmed: keep, with the caption and alt text on /enterprise relabeled as above. The Waltz figures on /how-it-works are outside this build's scope and stay untouched.
+
+## Verification after build
+
+Search the repository for: top-4, Top-4, U.S. bank, Cleared where it is hardest, Bought in 2025, Renewed in 2026, in use at scale. Expect zero matches in site copy. Then capture full-page desktop and mobile screenshots of the homepage and /enterprise.
 
 Nothing else on either page changes.
