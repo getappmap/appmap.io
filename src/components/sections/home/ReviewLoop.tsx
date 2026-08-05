@@ -25,7 +25,7 @@ export function ReviewLoop() {
           Stop reviewing code. Start reviewing behavior.
         </h2>
         <p className="mt-3 max-w-[680px] text-[17px] text-[color:var(--color-am-muted)]">
-          You let AI write the change. AppMap shows everyone what the change actually does, not just what the diff says.
+          In code review, developers inspect the diagrams and AI tools query the evidence from the same recorded run. The team reviews behavior, not just the diff.
         </p>
 
         <ol className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
