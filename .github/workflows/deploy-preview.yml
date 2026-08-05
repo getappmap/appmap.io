@@ -11,8 +11,36 @@ permissions:
   pull-requests: write
 
 jobs:
-  deploy:
-    uses: ./.github/workflows/deploy.yml
-    with:
-      branch: ${{ github.ref_name }}
-    secrets: inherit
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build site
+        run: bun run build
+
+      - name: Upload preview version
+        id: upload
+        run: |
+          set -o pipefail
+          bunx wrangler versions upload 2>&1 | tee upload_output.txt
+          PREVIEW_URL=$(grep -o 'https://[a-zA-Z0-9.-]*\.workers\.dev' upload_output.txt | head -1 || echo "")
+          echo "PREVIEW_URL=$PREVIEW_URL" >> "$GITHUB_OUTPUT"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Add preview URL to summary
+        if: steps.upload.outputs.PREVIEW_URL
+        run: |
+          echo "## 🚀 Preview Deployment" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "**Preview URL:** ${{ steps.upload.outputs.PREVIEW_URL }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "**Branch:** \`${{ github.ref_name }}\`" >> "$GITHUB_STEP_SUMMARY"
