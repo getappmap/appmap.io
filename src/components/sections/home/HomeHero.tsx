@@ -14,15 +14,15 @@ export function HomeHero() {
     >
       <div className="mx-auto max-w-[1120px]">
         <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">
-          Runtime evidence for AI code review
+          Runtime evidence for AI-assisted development
         </div>
         <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.2px] text-[#f2effb] sm:text-[54px] sm:tracking-[-1.5px]">
-          AI writes code in seconds.
+          Every AI coding tool can read your source code.
           <br />
-          Understanding it shouldn't take hours.
+          AppMap shows it what <Em>actually happened</Em>.
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          AppMap records what your software <Em>actually does</Em> as it runs, while you work in your editor. It turns every AI-generated change into visual runtime evidence people can inspect and agents can query, so reviewers can trust the behavior before they approve the change.
+          Source code tells you what software could do. Runtime behavior tells you what it actually did. AppMap records every execution once, producing diagrams developers can understand and evidence AI can trust.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
@@ -58,10 +58,10 @@ export function HomeHero() {
           />
           <div className="mt-4 flex flex-wrap justify-center gap-3">
           <div className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-sm text-[#a99fc7]">
-              People see the map
+              The diagrams are for people
             </div>
             <div className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-sm text-[#a99fc7]">
-              Agents query the trace
+              The data is for the AI
             </div>
           </div>
           <p className="mt-3 text-center text-[13px] text-[#a99fc7]">
