@@ -24,16 +24,16 @@ Reorder the sections below HomeHero to: PainStats, ReviewWhatAIDid, OneVsFifteen
 ## 5. HowItWorksReveal
 
 - Headline unchanged.
-- Intro becomes "AppMap captures a real application run as a structured recording. Developers explore it as maps, traces, and diagrams. AI tools query the same runtime evidence."
+- Intro becomes "AppMap captures a real application run as a structured recording. Developers explore it through diagrams and traces. AI tools query the same runtime evidence."
 - SVG center labels change from "Behavioral" / "model" to "AppMap" / "recording".
 - SVG aria-label becomes "Hub-and-spoke diagram. A central AppMap recording connects to six uses: Dependency map, Call tree, Sequence diagram, Your AI agent, Runtime review, and CI."
-- Caption becomes "One recording. Every visual view and AI query draws from the same runtime evidence."
+- Caption becomes "One recording. Developer views and AI queries draw from the same runtime evidence."
 - No structural or visual diagram changes.
 
 ## 6. ClosingCTA
 
 - Headline becomes "Understand what your software actually does."
-- Intro becomes "Record a real application run once. See it as diagrams in your editor and give your AI tools the same runtime evidence. Start free in VS Code or JetBrains."
+- Intro becomes "Record one real application run. Explore it through diagrams in your editor and give your AI tools the same runtime evidence. Start free in VS Code or JetBrains."
 
 ## Rules observed
 
@@ -60,6 +60,6 @@ Remove all customer-specific or customer-inferable references. Do not name, rank
 
 - Marketplace review quotations and install and community counts (aggregate, non-customer).
 - Partner and program badges in ClosingCTA (NVIDIA Inception, MongoDB, GitHub for Startups, TechCrunch), which are program affiliations, not customers.
-- FINOS Waltz recordings and captions. Waltz is a public open-source project used as a demo subject, not a customer reference. Flagging it here for a yes or no from you; the default in this build is to keep it.
+- FINOS Waltz recordings and captions. Waltz is a public open-source project used as a demo subject, not a customer reference. Confirmed: keep.
 
 Nothing else on either page changes.
