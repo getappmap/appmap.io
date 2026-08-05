@@ -14,11 +14,11 @@ export const Route = createFileRoute("/benchmarks")({
       { property: "og:description", content: description },
       { property: "og:url", content: "/benchmarks" },
       { property: "og:type", content: "article" },
-      { property: "og:image", content: "/og/og-card.png" },
+      { property: "og:image", content: "/marketing-assets/og/og-card.png" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "/og/og-card.png" },
+      { name: "twitter:image", content: "/marketing-assets/og/og-card.png" },
     ],
     links: [{ rel: "canonical", href: "/benchmarks" }],
     scripts: [

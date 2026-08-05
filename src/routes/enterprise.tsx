@@ -2,9 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
 const reviewerImages = [
-  { src: "/img/appmap/call-tree.webp", caption: "The call tree the agent queried" },
-  { src: "/img/appmap/queries.jpg", caption: "Every SQL query from the real run" },
-  { src: "/img/appmap/sequence.jpg", caption: "The full request path, HTTP to database" },
+  { src: "/marketing-assets/img/appmap/call-tree.webp", caption: "The call tree the agent queried" },
+  { src: "/marketing-assets/img/appmap/queries.jpg", caption: "Every SQL query from the real run" },
+  { src: "/marketing-assets/img/appmap/sequence.jpg", caption: "The full request path, HTTP to database" },
 ];
 
 const pilotSteps = [
@@ -34,11 +34,11 @@ export const Route = createFileRoute("/enterprise")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:url", content: "/enterprise" },
-      { property: "og:image", content: "/og/og-card.png" },
+      { property: "og:image", content: "/marketing-assets/og/og-card.png" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "/og/og-card.png" },
+      { name: "twitter:image", content: "/marketing-assets/og/og-card.png" },
     ],
     links: [{ rel: "canonical", href: "/enterprise" }],
   }),
@@ -247,7 +247,7 @@ function EnterprisePageInner() {
             </div>
             <figure className="rounded-2xl border border-[#2c2353] bg-[#0d0a1a] p-2">
               <img
-                src="/img/appmap/sequence.jpg"
+                src="/marketing-assets/img/appmap/sequence.jpg"
                 alt="AppMap sequence diagram showing the full request path from HTTP to database, generated inside the developer environment."
                 className="w-full h-auto rounded-lg"
                 loading="lazy"
@@ -323,7 +323,7 @@ function EnterprisePageInner() {
                   {i === 1 && (
                     <figure className="mt-5 rounded-lg border border-[#2c2353] bg-[#0d0a1a] p-2">
                       <img
-                        src="/img/appmap/waltzbehaviorheld_branded.svg"
+                        src="/marketing-assets/img/appmap/waltzbehaviorheld_branded.svg"
                         alt="AppMap recordings of FINOS Waltz: same endpoint before and after an unrelated change, status, auth path and query count match."
                         className="w-full h-auto rounded"
                         loading="lazy"

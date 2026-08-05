@@ -13,6 +13,7 @@ const navLinks = [
   { label: "Benchmarks", href: "/benchmarks" },
   { label: "Compatibility", href: "/compatibility" },
   { label: "Enterprise", href: "/enterprise" },
+  { label: "Pricing", href: "/pricing" },
   { label: "Docs", href: "https://appmap.io/docs/appmap-docs.html" },
 ];
 

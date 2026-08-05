@@ -4,19 +4,19 @@ const items = [
   {
     title: "The call tree",
     body: "The request path the agent queried.",
-    image: "/img/appmap/call-tree.webp",
+    image: "/marketing-assets/img/appmap/call-tree.webp",
     alt: "AppMap call tree showing the request path through the application.",
   },
   {
     title: "The queries",
     body: "The SQL it ran, with the data.",
-    image: "/img/appmap/queries.jpg",
+    image: "/marketing-assets/img/appmap/queries.jpg",
     alt: "AppMap view of the SQL queries executed during a request, with bindings.",
   },
   {
     title: "The metadata",
     body: "Functions, APIs, and objects in the run.",
-    image: "/img/appmap/code-map.jpg",
+    image: "/marketing-assets/img/appmap/code-map.jpg",
     alt: "AppMap code map of functions, APIs, and objects exercised during a run.",
   },
 ];

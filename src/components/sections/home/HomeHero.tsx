@@ -49,8 +49,8 @@ export function HomeHero() {
 
         <div className="mt-11">
           <MotionOrPoster
-            src="/video/dependency-map.mp4"
-            poster="/img/appmap/dependency-map.webp"
+            src="/marketing-assets/video/dependency-map.mp4"
+            poster="/marketing-assets/img/appmap/dependency-map.webp"
             alt="AppMap dependency map of a running application, showing packages, classes, and the calls between them."
             width={1600}
             height={900}

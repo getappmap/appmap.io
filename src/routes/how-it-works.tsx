@@ -48,11 +48,11 @@ export const Route = createFileRoute("/how-it-works")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:url", content: "/how-it-works" },
-      { property: "og:image", content: "/og/og-card.png" },
+      { property: "og:image", content: "/marketing-assets/og/og-card.png" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "/og/og-card.png" },
+      { name: "twitter:image", content: "/marketing-assets/og/og-card.png" },
     ],
     links: [{ rel: "canonical", href: "/how-it-works" }],
     scripts: [
@@ -77,42 +77,42 @@ const capture = [
   {
     title: "Function calls",
     descriptor: "Params and returns",
-    image: "/img/appmap/call-tree.webp",
+    image: "/marketing-assets/img/appmap/call-tree.webp",
     objectPosition: "left top",
     side: "top" as const,
   },
   {
     title: "SQL queries",
     descriptor: "Bindings and plan",
-    image: "/img/appmap/queries.jpg",
+    image: "/marketing-assets/img/appmap/queries.jpg",
     objectPosition: "left top",
     side: "bottom" as const,
   },
   {
     title: "HTTP traffic",
     descriptor: "Requests and responses",
-    image: "/img/appmap/sequence.jpg",
+    image: "/marketing-assets/img/appmap/sequence.jpg",
     objectPosition: "left top",
     side: "top" as const,
   },
   {
     title: "Exceptions",
     descriptor: "Class, message, source",
-    image: "/img/appmap/sequence.jpg",
+    image: "/marketing-assets/img/appmap/sequence.jpg",
     objectPosition: "right center",
     side: "bottom" as const,
   },
   {
     title: "Class map",
     descriptor: "Packages and classes",
-    image: "/img/appmap/code-map.jpg",
+    image: "/marketing-assets/img/appmap/code-map.jpg",
     objectPosition: "center",
     side: "top" as const,
   },
   {
     title: "Full path",
     descriptor: "Request to database",
-    image: "/img/appmap/dependency-map.webp",
+    image: "/marketing-assets/img/appmap/dependency-map.webp",
     objectPosition: "center",
     side: "bottom" as const,
   },
@@ -122,19 +122,19 @@ const views = [
   {
     title: "Dependency map",
     body: "The whole running app at a glance: services, code, SQL, and how they connect.",
-    image: "/img/appmap/dependency-map.webp",
+    image: "/marketing-assets/img/appmap/dependency-map.webp",
     alt: "AppMap dependency map of a running application.",
   },
   {
     title: "SQL inspection",
     body: "Every query the run made, with its bindings and where it came from.",
-    image: "/img/appmap/queries.jpg",
+    image: "/marketing-assets/img/appmap/queries.jpg",
     alt: "AppMap SQL inspection view of executed queries.",
   },
   {
     title: "Code map",
     body: "Packages, classes, and functions, navigable from the same recording.",
-    image: "/img/appmap/code-map.jpg",
+    image: "/marketing-assets/img/appmap/code-map.jpg",
     alt: "AppMap code map of packages, classes, and functions.",
   },
 ];
@@ -295,7 +295,7 @@ function HowItWorksPage() {
                   For a security patch, dependency upgrade, or refactor, behavior should not change. If the after-trace diverges from the baseline, AppMap flags a regression, even when the tests stay green.
                 </p>
                 <img
-                  src="/img/appmap/waltzbehaviorheld_branded.svg"
+                  src="/marketing-assets/img/appmap/waltzbehaviorheld_branded.svg"
                   alt="AppMap recordings of FINOS Waltz: GET /api/involvement-kind, baseline vs after an unrelated change, status, auth path, and query count match."
                   loading="lazy"
                   decoding="async"
@@ -310,7 +310,7 @@ function HowItWorksPage() {
                   For an N+1 fix, a new timeout, a circuit breaker, or added audit logging, behavior should change in a specific way. If the trace does not change, the fix did not land.
                 </p>
                 <img
-                  src="/img/appmap/waltzbeforeafter_branded.svg"
+                  src="/marketing-assets/img/appmap/waltzbeforeafter_branded.svg"
                   alt="AppMap recordings of FINOS Waltz involvement-kind permission lookup: baseline 7 per-id SELECTs replaced by a single batched findAll, 6 fewer round-trips."
                   loading="lazy"
                   decoding="async"

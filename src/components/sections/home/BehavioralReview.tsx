@@ -40,8 +40,8 @@ export function BehavioralReview() {
 
         <div className="mt-8">
           <MotionOrPoster
-            src="/video/sequence.mp4"
-            poster="/img/appmap/sequence.jpg"
+            src="/marketing-assets/video/sequence.mp4"
+            poster="/marketing-assets/img/appmap/sequence.jpg"
             alt="AppMap sequence diagram of one request, showing the full call path from HTTP to database."
             width={1600}
             height={800}

@@ -23,11 +23,11 @@ export const Route = createFileRoute("/blog/2024/06/20/appmap-swe-bench-leader")
           "14.6% solve rate on the full SWE-bench, ahead of Amazon Q and eight other tools, at 5 to 30 percent of the cost.",
       },
       { property: "og:url", content: "/blog/2024/06/20/appmap-swe-bench-leader/" },
-      { property: "og:image", content: "/og/og-card.png" },
+      { property: "og:image", content: "/marketing-assets/og/og-card.png" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "/og/og-card.png" },
+      { name: "twitter:image", content: "/marketing-assets/og/og-card.png" },
     ],
     links: [
       { rel: "canonical", href: "/blog/2024/06/20/appmap-swe-bench-leader/" },
