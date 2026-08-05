@@ -1,7 +1,12 @@
 import logo from "@/assets/images/appmap-logo.svg";
 import { Link } from "@tanstack/react-router";
 
-const cols: { heading: string; links: { label: string; href: string }[] }[] = [
+// `external` marks same-domain paths served by the legacy Jekyll site via the
+// Worker proxy fallback — they must render as plain <a>, not router <Link>.
+const cols: {
+  heading: string;
+  links: { label: string; href: string; external?: boolean }[];
+}[] = [
   {
     heading: "Platform",
     links: [
@@ -16,14 +21,15 @@ const cols: { heading: string; links: { label: string; href: string }[] }[] = [
   {
     heading: "Docs",
     links: [
-      { label: "Get Started", href: "https://appmap.io/docs/appmap-docs.html" },
-      { label: "Reference", href: "https://appmap.io/docs/appmap-docs.html" },
-      { label: "Troubleshooting", href: "https://appmap.io/docs/appmap-docs.html" },
+      { label: "Get Started", href: "/docs/get-started-with-appmap", external: true },
+      { label: "Reference", href: "/docs/reference", external: true },
+      { label: "Troubleshooting", href: "/docs/troubleshooting", external: true },
     ],
   },
   {
     heading: "Company",
     links: [
+      { label: "Blog", href: "/blog", external: true },
       { label: "Contact", href: "mailto:elizabeth@appmap.io" },
       { label: "GitHub", href: "https://github.com/getappmap" },
     ],
@@ -45,8 +51,8 @@ export function Footer() {
             <h4 className="mb-3 text-[13px] font-semibold uppercase tracking-[0.6px] text-[#f2effb]">
               {col.heading}
             </h4>
-            {col.links.map((l) => (
-              l.href.startsWith("http") || l.href.startsWith("mailto:") ? (
+            {col.links.map((l) =>
+              l.external || l.href.startsWith("http") || l.href.startsWith("mailto:") ? (
                 <a
                   key={l.label}
                   href={l.href}
@@ -64,8 +70,8 @@ export function Footer() {
                 >
                   {l.label}
                 </Link>
-              )
-            ))}
+              ),
+            )}
           </div>
         ))}
       </div>

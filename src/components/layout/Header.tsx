@@ -8,13 +8,16 @@ export const JETBRAINS_INSTALL_URL =
   "https://plugins.jetbrains.com/plugin/16701-appmap-free-ai-architect";
 export const GITHUB_URL = "https://github.com/getappmap";
 
-const navLinks = [
+// `external` marks same-domain paths served by the legacy Jekyll site via the
+// Worker proxy fallback — they must render as plain <a>, not router <Link>.
+const navLinks: { label: string; href: string; external?: boolean }[] = [
   { label: "How it works", href: "/how-it-works" },
   { label: "Benchmarks", href: "/benchmarks" },
   { label: "Compatibility", href: "/compatibility" },
   { label: "Enterprise", href: "/enterprise" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Docs", href: "https://appmap.io/docs/appmap-docs.html" },
+  { label: "Docs", href: "/docs/appmap-docs", external: true },
+  { label: "Blog", href: "/blog", external: true },
 ];
 
 export interface HeaderProps {
@@ -35,12 +38,12 @@ export function Header({ className = "" }: HeaderProps) {
 
         <nav className="ml-1 hidden gap-6 md:flex">
           {navLinks.map((l) =>
-            l.href.startsWith("http") ? (
+            l.external || l.href.startsWith("http") ? (
               <a
                 key={l.label}
                 href={l.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                target={l.href.startsWith("http") ? "_blank" : undefined}
+                rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="text-[14.5px] text-[#a99fc7] transition-colors hover:text-[#f2effb]"
               >
                 {l.label}
@@ -53,7 +56,7 @@ export function Header({ className = "" }: HeaderProps) {
               >
                 {l.label}
               </Link>
-            )
+            ),
           )}
         </nav>
 
@@ -73,9 +76,19 @@ export function Header({ className = "" }: HeaderProps) {
         >
           <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             {open ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             )}
           </svg>
         </button>
@@ -85,12 +98,12 @@ export function Header({ className = "" }: HeaderProps) {
         <div className="border-t border-[#2c2353] bg-[#0d0a1a] px-6 py-4 md:hidden">
           <div className="flex flex-col gap-3">
             {navLinks.map((l) =>
-              l.href.startsWith("http") ? (
+              l.external || l.href.startsWith("http") ? (
                 <a
                   key={l.label}
                   href={l.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target={l.href.startsWith("http") ? "_blank" : undefined}
+                  rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   onClick={() => setOpen(false)}
                   className="text-[#a99fc7] hover:text-[#f2effb]"
                 >
@@ -105,7 +118,7 @@ export function Header({ className = "" }: HeaderProps) {
                 >
                   {l.label}
                 </Link>
-              )
+              ),
             )}
             <div className="mt-3 flex flex-col gap-3 border-t border-[#2c2353] pt-3">
               <Link

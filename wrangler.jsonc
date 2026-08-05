@@ -1,6 +1,9 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "appmap-io",
+  // AppMap (kevin@app.land) account — holds the appmap.io zone. Pinned so
+  // deploys can never land in another Cloudflare account by accident.
+  "account_id": "4ab8004254243d3c61f6262ba76936c1",
   "compatibility_date": "2025-09-24",
   "compatibility_flags": ["nodejs_compat"],
   "main": "src/server.ts",
