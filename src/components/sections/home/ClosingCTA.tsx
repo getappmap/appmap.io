@@ -36,10 +36,10 @@ export function ClosingCTA() {
           }}
         >
           <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-            Understand AI-generated code before you trust it.
+            Understand what your software actually does.
           </h2>
           <p className="mx-auto mt-3 max-w-[640px] text-[16px] text-[#a99fc7]">
-            Install the extension and start understanding what your software actually does, right in your editor. Free and open source.
+            Record one real application run. Explore it through diagrams in your editor and give your AI tools the same runtime evidence. Start free in VS Code or JetBrains.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3.5">
             <a

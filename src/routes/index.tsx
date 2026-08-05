@@ -81,10 +81,10 @@ function Index() {
       <Header />
       <main>
         <HomeHero />
-        <ReviewLoop />
         <PainStats />
-        <OneVsFifteen />
         <ReviewWhatAIDid />
+        <OneVsFifteen />
+        <ReviewLoop />
         <BehavioralReview />
         <TrustBar />
         <Reviews />

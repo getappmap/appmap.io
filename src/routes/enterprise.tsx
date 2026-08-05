@@ -24,7 +24,7 @@ const pilotSteps = [
 
 const title = "AppMap Enterprise: Airgapped, On-Prem, No Data Egress";
 const description =
-  "Local by design. Airgapped and on-prem ready. Cleared at a top-4 U.S. bank. Auditable, open-source clients.";
+  "Local by design. Airgapped and on-prem ready. Auditable, open-source clients.";
 
 export const Route = createFileRoute("/enterprise")({
   head: () => ({
@@ -53,10 +53,6 @@ const blocks = [
   {
     title: "No egress, by design",
     body: "AppMap generates traces locally, in the editor. No application data leaves the developer machine. You can see the context the agent receives.",
-  },
-  {
-    title: "Cleared where it is hardest",
-    body: "AppMap runs in the agent engineering program at a top-4 U.S. bank. Bought in 2025. Renewed in 2026. In use at scale after the bank security review.",
   },
   {
     title: "Trust, but verify",
@@ -234,7 +230,7 @@ function EnterprisePageInner() {
               <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
                 For the VP standardizing how agents work, and the engineer who
                 has to vouch for it. Airgapped and on-prem by design. No data
-                egress. Cleared at a top-4 U.S. bank and in use at scale.
+                egress.
               </p>
               <div className="mt-8 flex flex-wrap gap-3.5">
                 <Link to="/book-a-demo" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
@@ -263,7 +259,7 @@ function EnterprisePageInner() {
         <section id="security-faq" className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Architecture and trust</h2>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
               {blocks.map((b) => (
                 <div key={b.title} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
                   <h3 className="text-[17px] font-bold text-[#f2effb]">{b.title}</h3>
@@ -324,13 +320,13 @@ function EnterprisePageInner() {
                     <figure className="mt-5 rounded-lg border border-[#2c2353] bg-[#0d0a1a] p-2">
                       <img
                         src="/marketing-assets/img/appmap/waltzbehaviorheld_branded.svg"
-                        alt="AppMap recordings of FINOS Waltz: same endpoint before and after an unrelated change, status, auth path and query count match."
+                        alt="AppMap demo recordings of the public open-source FINOS Waltz project, comparing the same endpoint before and after an unrelated change."
                         className="w-full h-auto rounded"
                         loading="lazy"
                         decoding="async"
                       />
                       <figcaption className="px-1 pt-2 text-[12px] text-[#a99fc7]">
-                        Real AppMap recording · FINOS Waltz
+                        Public open-source demo: FINOS Waltz
                       </figcaption>
                     </figure>
                   )}

@@ -32,7 +32,7 @@ export function BehavioralReview() {
     <section className="px-6 py-20">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[color:var(--color-am-ink)] sm:text-[34px]">
-          Behavioral review.
+          What runtime evidence can reveal.
         </h2>
         <p className="mt-3 max-w-[700px] text-[16px] text-[color:var(--color-am-muted)]">
           Every AppMap view is evidence of what the change did. Review the behavior across correctness, security, performance, and architecture, all from how the code actually ran.

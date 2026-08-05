@@ -18,7 +18,7 @@ export function HowItWorksReveal() {
             The reason this works is simple.
           </h2>
           <p className="mt-4 max-w-[560px] text-[17px] leading-[1.6] text-[color:var(--color-am-muted)]">
-            AppMap continuously builds the behavioral model of your software as it runs. Every map, every review, every answer, every golden trace is a view of that one model.
+            AppMap captures a real application run as a structured recording. Developers explore it through diagrams and traces. AI tools query the same runtime evidence.
           </p>
           <div className="mt-6">
             <Link
@@ -34,7 +34,7 @@ export function HowItWorksReveal() {
           <svg
             viewBox="0 0 480 360"
             role="img"
-            aria-label="Hub-and-spoke diagram. A central Behavioral model node connects to six views: Dependency map, Call tree, Sequence diagram, Your AI agent, Runtime review, and CI."
+            aria-label="Hub-and-spoke diagram. A central AppMap recording connects to six uses: Dependency map, Call tree, Sequence diagram, Your AI agent, Runtime review, and CI."
             className="w-full"
           >
             {spokes.map((_, i) => {
@@ -83,11 +83,11 @@ export function HowItWorksReveal() {
             })}
             <circle cx={240} cy={180} r={62} fill="#ff07aa" />
             <circle cx={240} cy={180} r={62} fill="none" stroke="#ff07aa" strokeOpacity={0.25} strokeWidth={14} />
-            <text x={240} y={176} textAnchor="middle" fontSize={14} fontWeight={700} fill="#ffffff">Behavioral</text>
-            <text x={240} y={194} textAnchor="middle" fontSize={14} fontWeight={700} fill="#ffffff">model</text>
+            <text x={240} y={176} textAnchor="middle" fontSize={14} fontWeight={700} fill="#ffffff">AppMap</text>
+            <text x={240} y={194} textAnchor="middle" fontSize={14} fontWeight={700} fill="#ffffff">recording</text>
           </svg>
           <p className="mt-3 text-center text-[13px] text-[color:var(--color-am-muted)]">
-            One model. Every view above is drawn from it.
+            One recording. Developer views and AI queries draw from the same runtime evidence.
           </p>
         </div>
       </div>
