@@ -11,7 +11,7 @@ export function TrustBar() {
         <h2 className="mb-8 text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
           Developers trust AppMap
         </h2>
-        <div className="grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-[#2c2353] bg-[#2c2353] sm:grid-cols-3">
+        <div className="grid grid-cols-1 overflow-hidden rounded-2xl border border-[#2c2353] bg-[#2c2353] sm:grid-cols-3">
           {cells.map((c) => (
             <div key={c.l} className="bg-[#16112b] p-6 text-center">
               <div className="text-[28px] font-extrabold text-[#f2effb]">{c.n}</div>
