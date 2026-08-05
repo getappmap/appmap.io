@@ -38,3 +38,28 @@ Reorder the sections below HomeHero to: PainStats, ReviewWhatAIDid, OneVsFifteen
 ## Rules observed
 
 No em-dashes. No banned terms. Homepage only.
+
+---
+
+# Customer-reference cleanup (homepage and /enterprise)
+
+Remove all customer-specific or customer-inferable references. Do not name, rank, describe, or imply any individual customer, even anonymously. No replacement customer references. Only aggregate adoption, marketplace, open-source, community, or product proof points remain. This supersedes the earlier customer-reference verification workstream.
+
+## Confirmed references to remove
+
+### TrustBar (`src/components/sections/home/TrustBar.tsx`)
+- Remove the cell "Top-4 / U.S. bank in production".
+- The grid becomes three aggregate cells: "~140K active editor installs", "100K+ developer community", "2020 open source since". Grid classes adjust from four columns to three.
+
+### /enterprise (`src/routes/enterprise.tsx`)
+- Meta description: drop "Cleared at a top-4 U.S. bank." It becomes "Local by design. Airgapped and on-prem ready. Auditable, open-source clients."
+- Hero paragraph: drop the final sentence "Cleared at a top-4 U.S. bank and in use at scale." The paragraph ends at "No data egress."
+- Architecture and trust cards: delete the entire "Cleared where it is hardest" card (it names ranking, industry, geography, purchase year, renewal, and production status). The section keeps three cards: "Airgapped and on-prem ready", "No egress, by design", "Trust, but verify". No replacement card is added.
+
+## Explicitly kept
+
+- Marketplace review quotations and install and community counts (aggregate, non-customer).
+- Partner and program badges in ClosingCTA (NVIDIA Inception, MongoDB, GitHub for Startups, TechCrunch), which are program affiliations, not customers.
+- FINOS Waltz recordings and captions. Waltz is a public open-source project used as a demo subject, not a customer reference. Flagging it here for a yes or no from you; the default in this build is to keep it.
+
+Nothing else on either page changes.
