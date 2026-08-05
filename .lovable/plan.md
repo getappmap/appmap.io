@@ -1,11 +1,38 @@
-## Change
+## Scope
 
-In `src/routes/how-it-works.tsx` at line 324, within the "Golden AppMap traces make behavior reviewable" section, replace the single sentence:
+Only `src/components/sections/home/HomeHero.tsx` changes. Four text replacements, no styling, layout, or markup changes.
 
-> Deterministic traces compare byte-for-byte. Real-world traces compare normalized behavior: request path, status, SQL shape, downstream calls, control execution, and data movement.
+## Replacements
 
-with:
+1. Eyebrow
 
-> AppMap compares a structural digest of the run: request path, status codes, call-tree structure, SQL shape, and downstream calls. Timing, ids, and captured values are not in it.
+From: "Runtime evidence for AI code review"
+To: "Runtime evidence for AI-assisted development"
 
-No other content, styling, or markup on the page changes.
+2. Headline (line break kept after the first sentence)
+
+```text
+Every AI coding tool can read your source code.
+AppMap shows it what actually happened.
+```
+
+The words "actually happened" are wrapped in the existing `Em` component (magenta accent).
+
+3. Subheadline paragraph
+
+> Source code tells you what software could do. Runtime behavior tells you what it actually did. AppMap records every execution once, producing diagrams developers can understand and evidence AI can trust.
+
+Note: the current subhead wraps "actually does" in `Em`. Since the emphasis now lives in the headline, the new paragraph renders as plain muted text with no `Em`. Say the word if you want "actually did" emphasized too.
+
+4. Visual captions (chips under the hero video)
+
+- "People see the map" becomes "The diagrams are for people"
+- "Agents query the trace" becomes "The data is for the AI"
+
+## Unchanged
+
+Install buttons, the free/scale line, the video and poster, the "One run. Many views. Same ground truth." caption, and every other homepage section.
+
+## Verification
+
+Typecheck, then confirm the hero renders the new copy with no em-dashes or banned terms.
