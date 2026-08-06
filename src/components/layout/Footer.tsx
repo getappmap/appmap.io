@@ -77,7 +77,10 @@ export function Footer() {
         ))}
       </div>
       <div className="mx-auto mt-12 flex max-w-[1120px] flex-col gap-3 border-t border-[#2c2353] pt-6 text-[12.5px] text-[#7c8aa6] sm:flex-row sm:items-center sm:justify-between">
-        <p>© {new Date().getFullYear()} AppLand, Inc. All rights reserved.</p>
+        <div>
+          <p>© {new Date().getFullYear()} AppLand, Inc. All rights reserved.</p>
+          <p className="mt-1">AppLand and AppMap are registered trademarks of AppLand, Inc.</p>
+        </div>
         <nav className="flex flex-wrap items-center gap-x-5 gap-y-1">
           <a
             href="https://appmap.io/community/privacy-policy"
