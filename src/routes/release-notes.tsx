@@ -65,7 +65,7 @@ const releaseGroups: { month: string; entries: { label: string; href: string }[]
       },
       {
         label:
-          "Scanner rule maintenance: 25+ heuristic rules for security, performance, architecture, and data integrity",
+          "Scanner rule maintenance: 30 heuristic rules for security, performance, architecture, and data integrity",
         href: "https://github.com/getappmap/appmap-js/tree/main/packages/scanner",
       },
     ],
