@@ -43,9 +43,7 @@ export function HomeHero() {
             Install for JetBrains
           </a>
         </div>
-        <div className="mt-3.5 text-[13.5px] text-[#a99fc7]">
-          Free for every developer. Organizational scale comes with a support contract.
-        </div>
+        
 
         <div className="mt-11">
           <MotionOrPoster
