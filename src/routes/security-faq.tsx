@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 const securityFaqs = [
   {
     q: "Does AppMap send code or runtime data to the cloud?",
-    a: "No. AppMap records and analyzes behavior locally. The model stays with your editor and your repository by default, with no egress.",
+    a: "No. AppMap records and analyzes behavior locally. Recordings stay with your editor and your repository by default, with no egress.",
   },
   {
     q: "Where does AppMap store runtime behavior?",
