@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Header } from "@/components/layout/Header";
+import { Header, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
 
 const title = "Get AppMap | AppMap";
 const description =
@@ -72,7 +72,7 @@ function GetAppMapPage() {
               </p>
               <div className="mt-5">
                 <a
-                  href="https://plugins.jetbrains.com/plugin/16701-appmap"
+                  href={JETBRAINS_INSTALL_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={primaryBtn}
