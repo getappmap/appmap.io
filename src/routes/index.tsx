@@ -12,9 +12,9 @@ import { Reviews } from "@/components/sections/home/Reviews";
 import { HowItWorksReveal } from "@/components/sections/home/HowItWorksReveal";
 import { ClosingCTA } from "@/components/sections/home/ClosingCTA";
 
-const title = "AppMap: Understand AI-generated code, in your editor";
+const title = "AppMap: Runtime evidence for AI-assisted development";
 const description =
-  "AppMap helps developers and AI agents understand what your software actually does. Review every AI-generated change as runtime behavior, not just a diff. Free and open source.";
+  "Your AI reads the code. AppMap shows what actually happened. One recorded application run produces diagrams developers can understand and evidence AI can trust. Get started in VS Code or JetBrains.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
       { property: "og:image", content: "/marketing-assets/og/og-card.png" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "AppMap — Understand AI-generated code before you trust it." },
+      { property: "og:image:alt", content: "Every AI coding tool can read your source code. AppMap shows it what actually happened." },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
       { name: "twitter:card", content: "summary_large_image" },
@@ -52,8 +52,7 @@ export const Route = createFileRoute("/")({
           name: "AppMap",
           applicationCategory: "DeveloperApplication",
           operatingSystem: "Windows, macOS, Linux",
-          description:
-            "AppMap helps developers and AI agents understand what AI-written code actually does at runtime.",
+          description,
           offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
         }),
       },

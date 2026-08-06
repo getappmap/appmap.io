@@ -13,7 +13,7 @@ const steps = [
   },
   {
     title: "Part of the pull request",
-    body: "The behavioral model becomes part of the PR, so every reviewer understands the change before they approve.",
+    body: "The recording becomes part of the PR, so every reviewer understands the change before they approve.",
   },
 ];
 
