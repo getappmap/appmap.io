@@ -24,7 +24,6 @@ import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as NavieSplatRouteImport } from './routes/navie.$'
 import { Route as DocsNavieSplatRouteImport } from './routes/docs.navie.$'
-import { Route as Blog20240620AppmapSweBenchLeaderRouteImport } from './routes/blog.2024.06.20.appmap-swe-bench-leader'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -101,12 +100,6 @@ const DocsNavieSplatRoute = DocsNavieSplatRouteImport.update({
   path: '/docs/navie/$',
   getParentRoute: () => rootRouteImport,
 } as any)
-const Blog20240620AppmapSweBenchLeaderRoute =
-  Blog20240620AppmapSweBenchLeaderRouteImport.update({
-    id: '/blog/2024/06/20/appmap-swe-bench-leader',
-    path: '/blog/2024/06/20/appmap-swe-bench-leader',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -124,7 +117,6 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
-  '/blog/2024/06/20/appmap-swe-bench-leader': typeof Blog20240620AppmapSweBenchLeaderRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -142,7 +134,6 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
-  '/blog/2024/06/20/appmap-swe-bench-leader': typeof Blog20240620AppmapSweBenchLeaderRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -161,7 +152,6 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
-  '/blog/2024/06/20/appmap-swe-bench-leader': typeof Blog20240620AppmapSweBenchLeaderRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -181,7 +171,6 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/navie/$'
     | '/docs/navie/$'
-    | '/blog/2024/06/20/appmap-swe-bench-leader'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -199,7 +188,6 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/navie/$'
     | '/docs/navie/$'
-    | '/blog/2024/06/20/appmap-swe-bench-leader'
   id:
     | '__root__'
     | '/'
@@ -217,7 +205,6 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/navie/$'
     | '/docs/navie/$'
-    | '/blog/2024/06/20/appmap-swe-bench-leader'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -236,7 +223,6 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   NavieSplatRoute: typeof NavieSplatRoute
   DocsNavieSplatRoute: typeof DocsNavieSplatRoute
-  Blog20240620AppmapSweBenchLeaderRoute: typeof Blog20240620AppmapSweBenchLeaderRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -346,13 +332,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DocsNavieSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/2024/06/20/appmap-swe-bench-leader': {
-      id: '/blog/2024/06/20/appmap-swe-bench-leader'
-      path: '/blog/2024/06/20/appmap-swe-bench-leader'
-      fullPath: '/blog/2024/06/20/appmap-swe-bench-leader'
-      preLoaderRoute: typeof Blog20240620AppmapSweBenchLeaderRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -372,7 +351,6 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   NavieSplatRoute: NavieSplatRoute,
   DocsNavieSplatRoute: DocsNavieSplatRoute,
-  Blog20240620AppmapSweBenchLeaderRoute: Blog20240620AppmapSweBenchLeaderRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
