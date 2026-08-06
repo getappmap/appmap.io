@@ -7,13 +7,13 @@ const items = [
   },
   {
     title: "The queries",
-    body: "The SQL it ran, with the data.",
+    body: "The exact SQL it ran, query by query.",
     image: "/marketing-assets/img/appmap/queries.jpg",
-    alt: "AppMap view of the SQL queries executed during a request, with bindings.",
+    alt: "AppMap view of the SQL queries executed during a request, shown as parameterized statements.",
   },
   {
-    title: "The metadata",
-    body: "Functions, APIs, and objects in the run.",
+    title: "The code objects",
+    body: "Functions, classes, and queries exercised in the run.",
     image: "/marketing-assets/img/appmap/code-map.jpg",
     alt: "AppMap code map of functions, APIs, and objects exercised during a run.",
   },

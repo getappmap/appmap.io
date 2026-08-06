@@ -1,7 +1,7 @@
 const steps = [
   {
     title: "AI writes the change",
-    body: "You vibe-code it with your AI coding agent.",
+    body: "You build it with your AI coding agent.",
   },
   {
     title: "AppMap records what it did",

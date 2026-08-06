@@ -48,7 +48,7 @@ export function Reviews() {
           Developers already rely on it.
         </h2>
         <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
-          Five-star reviews across the Visual Studio Code and JetBrains
+          Rated five stars by developers across the Visual Studio Code and JetBrains
           marketplaces, from a community of more than 100,000 developers.
         </p>
 
