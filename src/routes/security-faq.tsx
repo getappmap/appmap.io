@@ -8,7 +8,7 @@ const securityFaqs = [
   },
   {
     q: "Where does AppMap store runtime behavior?",
-    a: "Recordings are written locally at capture time, typically to a tmp/appmap directory in the project. Recordings your team keeps, such as Golden AppMap traces, are promoted into a .appmap directory in the repository and versioned like any other file.",
+    a: "Recordings are written locally at capture time, typically to a tmp/appmap directory in the project. Recordings your team keeps, such as Golden AppMap traces, are promoted into a .appmap directory in the repository and versioned like any other file. Baselines committed to the repository are sanitized first: captured values are replaced with deterministic tokens, so the versioned trace preserves structural behavior without the original parameter, return, or message values.",
   },
   {
     q: "Where are AppMap files stored?",
