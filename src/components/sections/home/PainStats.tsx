@@ -33,13 +33,13 @@ export function PainStats() {
           AI writes more of your codebase every month. Almost no one knows what it actually does.
         </p>
 
-        <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-10 grid gap-5 grid-cols-1 sm:grid-cols-3">
           {stats.map((s) => (
             <li
               key={s.number + s.body}
               className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6"
             >
-              <div className="text-[44px] font-extrabold leading-none tracking-[-1.5px] text-[#ff07aa] sm:text-[52px]">
+              <div className="text-[44px] font-extrabold leading-none tracking-[-1.5px] text-[#f2effb] sm:text-[52px]">
                 {s.number}
               </div>
               <p className="mt-4 text-[15.5px] leading-snug text-[#f2effb]">
