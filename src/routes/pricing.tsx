@@ -1,11 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 
 const title = "Pricing | AppMap";
 const description =
   "Free at the desk for every developer and for organizations under 250 employees. Enterprise support contract for standardization at scale.";
-const url = "https://hello-bright-start-736.lovable.app/pricing";
+const url = "/pricing";
 
 export const Route = createFileRoute("/pricing")({
   head: () => ({
@@ -149,7 +148,6 @@ function PricingPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }
