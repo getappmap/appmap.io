@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Where does AppMap store runtime behavior?",
-    a: "In the editor it lives alongside your working session. When persisted, it lives in a .appmap directory in your repository, versioned with the rest of your source. Persisted as .appmap.json files, archived per git revision and compared with appmap compare.",
+    a: "Recordings are captured locally, typically to a tmp/appmap directory in the project. Recordings your team keeps, such as Golden AppMap traces, are promoted into a .appmap directory in the repository and versioned like any other file.",
     doc: { href: "https://appmap.io/docs/reference/appmap-client-cli.html", label: "AppMap client CLI reference" },
   },
 ];
