@@ -3,25 +3,25 @@ import { Header } from "@/components/layout/Header";
 
 const title = "How AppMap works";
 const description =
-  "AppMap builds and updates the behavioral model of your application every time it runs. Here is what it captures, the views it produces, and how it reaches your AI agent.";
+  "AppMap records your application as it runs. Here is what one recording captures, the views it produces, and how that evidence reaches your AI agent.";
 
 const faqs = [
   {
     q: "What does AppMap do?",
-    a: "AppMap helps developers and AI coding agents understand what software actually does at runtime. It captures application behavior in the editor and turns it into a behavioral model that humans can review and AI agents can query over MCP.",
+    a: "AppMap helps developers and AI coding agents understand what software actually does at runtime. It records the application in the editor and turns that run into diagrams humans can review and evidence AI agents can query over MCP.",
   },
   {
     q: "How does AppMap help review AI-generated code?",
     a: "AppMap records the change as it runs and shows the call tree, queries, and data behind it. You review the behavior, not just the diff, and the same evidence travels with the pull request.",
   },
   {
-    q: "What is the behavioral model of your software?",
-    a: "It is the continuously updated record of how your application runs: function calls, SQL queries, HTTP traffic, exceptions, and the relationships between them. Every map, view, and review is drawn from that one model. Captured via a language agent (Java -javaagent, Python, Ruby, Node) from tests, requests, or a running process.",
+    q: "What does an AppMap recording contain?",
+    a: "It is a record of how your application actually ran: function calls, SQL queries, HTTP traffic, exceptions, and the relationships between them. Every map, view, and review is drawn from that one recording. Captured via a language agent (Java -javaagent, Python, Ruby, Node) from tests, requests, or a running process.",
     doc: { href: "https://appmap.io/docs/get-started-with-appmap/making-appmap-data.html", label: "How AppMap data is made" },
   },
   {
     q: "How does AppMap work with MCP?",
-    a: "AppMap exposes the behavioral model over the Model Context Protocol. Agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
+    a: "AppMap exposes the recording over the Model Context Protocol. Agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
     doc: { href: "https://appmap.io/docs/reference/appmap-mcp.html", label: "AppMap MCP reference" },
   },
   {
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "Does AppMap send code or runtime data to the cloud?",
-    a: "No. AppMap records and analyzes behavior locally. The model stays with your editor and your repository by default, with no egress.",
+    a: "No. AppMap records and analyzes behavior locally. Recordings stay with your editor and your repository by default, with no egress.",
     doc: { href: "https://appmap.io/security", label: "AppMap security" },
   },
   {
@@ -157,8 +157,11 @@ function HowItWorksPage() {
             <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
               How AppMap works.
             </h1>
+            <p className="mt-6 max-w-[820px] text-[22px] font-semibold leading-[1.35] tracking-[-0.4px] text-[#f2effb] sm:text-[26px]">
+              Source code tells you what software could do. Runtime behavior tells you what it actually did.
+            </p>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              Every time your software runs, AppMap builds and updates the behavioral model of your application. Here is what it captures, the views it produces, and how it reaches your AI agent.
+              Every time your software runs, AppMap records what actually happened. Here is what one recording captures, the views it produces, and how that evidence reaches your AI agent.
             </p>
           </div>
         </section>
@@ -167,7 +170,7 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One run, fully captured</h2>
             <p className="mt-3 max-w-[720px] text-[15px] text-[#a99fc7]">
-              One execution. Six signals tap off the same run, all written into one behavioral model.
+              One execution. Six signals tap off the same run, all written into one recording.
             </p>
 
             {/* Desktop flow: spine + 3-above / 3-below nodes */}
@@ -242,7 +245,7 @@ function HowItWorksPage() {
 
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the behavioral model reaches your agent</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the recording reaches your agent</h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {mcp.map((m) => (
                 <div key={m.name} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
@@ -265,7 +268,7 @@ function HowItWorksPage() {
                 See the Benchmark
               </Link>
               <Link to="/architecture" className="rounded-lg border border-[#2c2353] px-5 py-2.5 text-[14px] font-semibold text-[#f2effb] hover:border-[#a99fc7]">
-                Where the model lives →
+                Where recordings live →
               </Link>
             </div>
           </div>
@@ -275,7 +278,7 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What is AppMap?</h2>
             <p className="mt-4 max-w-[820px] text-[18px] leading-[1.6] text-[#a99fc7]">
-              AppMap helps developers and AI coding agents understand what software actually does at runtime. It captures application behavior in the editor and turns it into a behavioral model that humans can review and AI agents can query over MCP.
+              AppMap helps developers and AI coding agents understand what software actually does at runtime. It records the application in the editor and turns that run into diagrams humans can review and evidence AI agents can query over MCP.
             </p>
           </div>
         </section>
@@ -329,7 +332,7 @@ function HowItWorksPage() {
 
             <div className="mt-8">
               <Link to="/architecture" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
-                Where the model lives →
+                Where recordings live →
               </Link>
             </div>
           </div>
