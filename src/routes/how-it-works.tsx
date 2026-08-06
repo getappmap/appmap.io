@@ -103,7 +103,7 @@ const capture = [
     side: "bottom" as const,
   },
   {
-    title: "Class map",
+    title: "Code Objects",
     descriptor: "Packages and classes",
     image: "/marketing-assets/img/appmap/code-map.jpg",
     objectPosition: "center",
@@ -132,7 +132,7 @@ const views = [
     alt: "AppMap SQL inspection view of executed queries.",
   },
   {
-    title: "Code map",
+    title: "Code Objects",
     body: "Packages, classes, and functions, navigable from the same recording.",
     image: "/marketing-assets/img/appmap/code-map.jpg",
     alt: "AppMap code map of packages, classes, and functions.",
@@ -287,7 +287,7 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Golden AppMap traces make behavior reviewable</h2>
             <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              A Golden AppMap trace is an AppMap runtime recording promoted into a behavioral baseline. The diff shows what changed; a golden trace shows whether the behavior changed correctly.
+              A Golden AppMap trace is an AppMap runtime recording promoted into a Golden AppMap trace baseline. The diff shows what changed; a Golden AppMap trace shows whether the behavior changed correctly.
             </p>
 
             <div className="mt-8 grid gap-4 lg:grid-cols-2">
@@ -327,7 +327,7 @@ function HowItWorksPage() {
               AppMap compares a structural digest of the run: request path, status codes, call-tree structure, SQL shape, and downstream calls. Timing, ids, and captured values are not in it.
             </p>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              Golden traces do not require every developer to run the full enterprise stack. A baseline can come from a local run, a focused test, a smoke script, an API call, a QA environment, or an existing running process.
+              Golden AppMap traces do not require every developer to run the full enterprise stack. A baseline can come from a local run, a focused test, a smoke script, an API call, a QA environment, or an existing running process.
             </p>
 
             <div className="mt-8">

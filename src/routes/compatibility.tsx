@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
-const title = "AppMap Compatibility: Humans See the Map. Agents Query the Trace.";
+const title = "AppMap Compatibility: The Diagrams Are for People. The Data Is for the AI.";
 const description =
   "AppMap speaks MCP to every agent, and plain pictures to every person. No lock-in either way.";
 
@@ -57,7 +57,7 @@ function CompatibilityPage() {
           <div className="mx-auto max-w-[1120px]">
             <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Compatibility</div>
             <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-              Humans see the map. Agents query the trace.
+              The diagrams are for people. The data is for the AI.
             </h1>
             <p className="mt-5 max-w-[720px] text-[19px] leading-[1.6] text-[#a99fc7]">
               AppMap speaks MCP to every agent, and plain pictures to every person. No lock-in either way.
