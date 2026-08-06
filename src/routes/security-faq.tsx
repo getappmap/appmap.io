@@ -8,15 +8,15 @@ const securityFaqs = [
   },
   {
     q: "Where does AppMap store runtime behavior?",
-    a: "In the editor it lives alongside your working session. When persisted, it lives in a .appmap directory in your repository, versioned with the rest of your source. Persisted as .appmap.json files, archived per git revision and compared with appmap compare.",
+    a: "Recordings are written locally at capture time, typically to a tmp/appmap directory in the project. Recordings your team keeps, such as Golden AppMap traces, are promoted into a .appmap directory in the repository and versioned like any other file.",
   },
   {
     q: "Where are AppMap files stored?",
-    a: "In your local development project, typically in a tmp/appmap directory created at install time. AppMap does not upload or move them out of your environment.",
+    a: "On the developer machine and in your repository. Transient captures live in tmp/appmap; promoted recordings live in .appmap. They are plain files: retention is under your control, and deleting a recording is an ordinary file delete.",
   },
   {
     q: "Is sign in required to use AppMap?",
-    a: "Activation requires authorization via GitHub, GitLab, or email. That is identity verification only; it happens once, in the editor.",
+    a: "Community activation is a one-time identity check via GitHub, GitLab, or email, in the editor. No recordings are involved. Enterprise deployments support offline activation and internal distribution for air-gapped environments.",
   },
   {
     q: "Does signing in with GitHub or GitLab give AppMap access to my code?",

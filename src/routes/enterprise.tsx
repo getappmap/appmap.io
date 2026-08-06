@@ -48,11 +48,11 @@ export const Route = createFileRoute("/enterprise")({
 const blocks = [
   {
     title: "Airgapped and on-prem ready",
-    body: "AppMap runs inside your environment with no outbound dependency. It fits airgapped and on-prem deployments where data cannot leave the network.",
+    body: "AppMap runs inside your environment with no outbound dependency. Enterprise deployments support offline activation and internal distribution of the clients. It fits airgapped and on-prem deployments where data cannot leave the network.",
   },
   {
     title: "No egress, by design",
-    body: "AppMap generates traces locally, in the editor. No application data leaves the developer machine. You can see the context the agent receives.",
+    body: "AppMap does not send recordings to any AppMap-operated cloud. Recordings stay on the developer machine and in your repositories unless your organization centralizes them on infrastructure you control. Your AI tools are a separate channel: a hosted agent may send selected context to its own provider under that provider's terms, and enterprise deployments can restrict AppMap evidence to approved or self-hosted AI endpoints.",
   },
   {
     title: "Trust, but verify",
@@ -65,7 +65,7 @@ function EnterprisePage() {
 }
 
 const diagramCaption =
-  "Local by design. No application data leaves your environment. Diagnostics and telemetry route to your internal observability stack, such as Splunk, so operational data stays inside too.";
+  "Local by design. AppMap operates no cloud data plane for recordings, so they stay in your environment. Diagnostics and telemetry route to your internal observability stack, such as Splunk, so operational data stays inside too.";
 
 function Pill({ x, y, w, h, label, sub }: { x: number; y: number; w: number; h: number; label: string; sub?: string }) {
   return (
