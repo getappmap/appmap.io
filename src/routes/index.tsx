@@ -53,7 +53,13 @@ export const Route = createFileRoute("/")({
           applicationCategory: "DeveloperApplication",
           operatingSystem: "Windows, macOS, Linux",
           description,
-          offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          offers: {
+            "@type": "Offer",
+            name: "Community",
+            price: "0",
+            priceCurrency: "USD",
+            description: "Free for individual developers at their desk.",
+          },
         }),
       },
       {

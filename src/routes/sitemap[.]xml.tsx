@@ -1,8 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-// TODO: replace with the project URL once a custom domain is wired through.
-const BASE_URL = "";
+const BASE_URL = "https://appmap.io";
 
 const entries = [
   { path: "/", priority: "1.0", changefreq: "weekly" as const },
@@ -11,6 +10,13 @@ const entries = [
   { path: "/benchmarks", priority: "0.9", changefreq: "monthly" as const },
   { path: "/compatibility", priority: "0.8", changefreq: "monthly" as const },
   { path: "/enterprise", priority: "0.8", changefreq: "monthly" as const },
+  { path: "/pricing", priority: "0.8", changefreq: "monthly" as const },
+  { path: "/get-appmap", priority: "0.8", changefreq: "monthly" as const },
+  { path: "/security-faq", priority: "0.6", changefreq: "monthly" as const },
+  { path: "/book-a-demo", priority: "0.6", changefreq: "monthly" as const },
+  { path: "/cli-quickstart", priority: "0.6", changefreq: "monthly" as const },
+  { path: "/platform", priority: "0.7", changefreq: "monthly" as const },
+  { path: "/release-notes", priority: "0.6", changefreq: "weekly" as const },
 ];
 
 export const Route = createFileRoute("/sitemap.xml")({
