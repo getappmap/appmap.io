@@ -1,9 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
-const title = "Pricing: Start Free at Your Desk. Pay When You Centralize. | AppMap";
+const title =
+  "Pricing: Start Free Locally. Scale Runtime Context Across Your Team. | AppMap";
 const description =
-  "Recording, diagrams, and AI evidence are free for every developer, locally. AppMap Central adds shared traces, CI history, and review in your own infrastructure. Enterprise adds private deployment.";
+  "Local recording, diagrams, and AI context are free for developers. AppMap Central adds a shared, customer-controlled behavioral context library in your own infrastructure. Enterprise adds controlled deployment and support.";
 const url = "https://appmap.io/pricing";
 
 export const Route = createFileRoute("/pricing")({
@@ -63,21 +64,21 @@ const community = [
 ];
 
 const central = [
-  "Shared Golden AppMap traces: sanitized behavioral baselines for the whole team",
-  "Behavioral review on pull requests, in CI or from each developer's environment",
-  "Review results delivered where developers already work",
-  "Standard rollout across participating repositories",
-  "Organization-level configuration, usage visibility, and governance",
-  "Team support",
+  "Sanitized Golden AppMap traces stored with the code they describe",
+  "Shared trace coverage across important application paths",
+  "Normalized runtime findings that developers and AI agents can reuse",
+  "A common behavioral context library across editors, command line, GitHub, and automation",
+  "Team curation and governance of trusted runtime baselines",
+  "Runs entirely in infrastructure you control",
 ];
 
 const enterprise = [
   "Everything in AppMap Central",
   "Air-gapped and on-premises packaging, with offline activation",
   "Internal distribution of agents, extensions, and CLI",
-  "Centralized logging and telemetry routing into your observability systems",
+  "Configurable telemetry routing into your internal observability stack",
   "Approved AI agent and model configurations",
-  "Custom engineering, training, and SLAs",
+  "Custom engineering, training, priority support, and SLAs",
 ];
 
 function PricingPage() {
@@ -91,10 +92,10 @@ function PricingPage() {
               Pricing
             </div>
             <h1 className="mt-4 text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-              Start free at your desk. Pay when you centralize.
+              Start free locally. Scale runtime context across your team.
             </h1>
             <p className="mt-5 max-w-[760px] text-[17px] leading-[1.65] text-[#a99fc7]">
-              Recording, diagrams, and AI evidence are free for every developer, locally. Paid plans begin when your organization centralizes recordings, governance, and review.
+              Local recording, diagrams, and AI context are free for developers. AppMap Central helps teams build and govern a shared behavioral context library across repositories and workflows.
             </p>
           </div>
         </section>
@@ -128,12 +129,12 @@ function PricingPage() {
                 Contact us
               </div>
               <p className="mt-3 text-[14px] text-[#a99fc7]">
-                Behavioral review for teams, powered by shared Golden AppMap traces.
+                Shared runtime context for developers, AI agents, and automation.
               </p>
               <div className="mt-6 border-t border-[#2c2353]" />
               <Bullets items={central} />
               <p className="mt-5 text-[13px] leading-[1.55] text-[#a99fc7]">
-                Centralized policy and governance for a distributed, repository-native workflow. There is no hosted platform.
+                One customer-controlled context library for a distributed, repository-native workflow. GitHub Actions and CI are optional workflows that can consume or maintain it. There is no hosted platform.
               </p>
               <div className="mt-8 flex-1" />
               <Link to="/book-a-demo" className={primaryBtn}>
