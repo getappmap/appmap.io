@@ -27,7 +27,7 @@ export function ReviewWhatAIDid() {
           One recording. See the system as it ran.
         </h2>
         <p className="mt-3 max-w-[700px] text-[16px] text-[color:var(--color-am-muted)]">
-          Follow the execution path, inspect the queries, and navigate the code objects involved, all from the same recorded run.
+          One recording gives developers multiple ways to inspect a run: Dependency Map, Sequence Diagram, Trace View, Flame Graph, Code Objects, and SQL inspection. Recorded runtime behavior also supports generated OpenAPI definitions and diffs.
         </p>
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           {items.map((it) => (
@@ -53,6 +53,9 @@ export function ReviewWhatAIDid() {
             </div>
           ))}
         </div>
+        <p className="mt-6 text-center text-[13.5px] text-[color:var(--color-am-muted)]">
+          Three representative views. Explore the broader visual set in your editor.
+        </p>
       </div>
     </section>
   );
