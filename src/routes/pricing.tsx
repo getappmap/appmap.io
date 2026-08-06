@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
-const title = "Pricing | AppMap";
+const title = "Pricing: Start Free at Your Desk. Pay When You Centralize. | AppMap";
 const description =
-  "Free at the desk for every developer and for organizations under 250 employees. Enterprise support contract for standardization at scale.";
+  "Recording, diagrams, and AI evidence are free for every developer, locally. Paid plans begin when your organization centralizes recordings, governance, and review.";
 const url = "/pricing";
 
 export const Route = createFileRoute("/pricing")({
@@ -63,12 +63,11 @@ const community = [
 ];
 
 const enterprise = [
-  "Everything in Community",
-  "Paid pilots with hands-on coaching for every team",
-  "AppMap in CI: behavioral review on every pull request",
-  "Telemetry routing to your internal observability stack",
-  "On-prem and airgapped deployment, internal distribution",
-  "Priority support and SLAs",
+  "Centralized recording storage and sharing",
+  "Golden AppMap trace governance across repositories",
+  "CI review on pull requests across the organization",
+  "Private deployment, including air-gapped, with offline activation",
+  "Priority support with SLAs",
 ];
 
 function PricingPage() {
@@ -82,8 +81,11 @@ function PricingPage() {
               Pricing
             </div>
             <h1 className="mt-4 text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-              Free at the desk. Supported at scale.
+              Start free at your desk. Pay when you centralize.
             </h1>
+            <p className="mt-5 max-w-[760px] text-[17px] leading-[1.65] text-[#a99fc7]">
+              Recording, diagrams, and AI evidence are free for every developer, locally. Paid plans begin when your organization centralizes recordings, governance, and review.
+            </p>
           </div>
         </section>
 
@@ -93,10 +95,10 @@ function PricingPage() {
             <div className="flex flex-col rounded-2xl border border-[#2c2353] bg-[#1c1538] p-8">
               <h2 className="text-[22px] font-bold text-[#f2effb]">Community</h2>
               <div className="mt-4 text-[40px] font-extrabold leading-none text-[#f2effb]">
-                $0
+                Free
               </div>
               <p className="mt-3 text-[14px] text-[#a99fc7]">
-                For every developer, and for organizations under 250 employees.
+                For every developer.
               </p>
               <div className="mt-6 border-t border-[#2c2353]" />
               <Bullets items={community} />
@@ -110,10 +112,10 @@ function PricingPage() {
             <div className="flex flex-col rounded-2xl border border-[#ff07aa]/40 bg-[#1c1538] p-8">
               <h2 className="text-[22px] font-bold text-[#f2effb]">Enterprise</h2>
               <div className="mt-4 flex h-[40px] items-center text-[28px] font-extrabold leading-none text-[#f2effb]">
-                Support contract
+                Contact us
               </div>
               <p className="mt-3 text-[14px] text-[#a99fc7]">
-                For organizations of 250 or more employees standardizing on AppMap.
+                For organizations that centralize AppMap.
               </p>
               <div className="mt-6 border-t border-[#2c2353]" />
               <Bullets items={enterprise} />
