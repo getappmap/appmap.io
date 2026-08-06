@@ -235,15 +235,11 @@ function BenchmarksPage() {
         <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Not our first benchmark.</h2>
-            <a
-              href="/blog/2024/06/20/appmap-swe-bench-leader/"
-              className="mt-6 block rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 transition hover:border-[#ff07aa]"
-            >
+            <div className="mt-6 block rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
               <p className="text-[16px] text-[#f2effb]">
                 14.6% on the full SWE-bench, ahead of Amazon Q and eight other tools, finished in under four hours at 5 to 30 percent of the cost of other solvers.
               </p>
-              <span className="mt-3 inline-block text-[13.5px] font-semibold text-[#ff07aa]">Read the post →</span>
-            </a>
+            </div>
           </div>
         </section>
       </main>

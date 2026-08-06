@@ -11,7 +11,6 @@ const entries = [
   { path: "/benchmarks", priority: "0.9", changefreq: "monthly" as const },
   { path: "/compatibility", priority: "0.8", changefreq: "monthly" as const },
   { path: "/enterprise", priority: "0.8", changefreq: "monthly" as const },
-  { path: "/blog/2024/06/20/appmap-swe-bench-leader/", priority: "0.6", changefreq: "yearly" as const },
 ];
 
 export const Route = createFileRoute("/sitemap.xml")({
