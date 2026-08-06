@@ -3,7 +3,7 @@ import { Header } from "@/components/layout/Header";
 
 const title = "AppMap Architecture: In your editor today, in your repo tomorrow";
 const description =
-  "The behavioral model lives in your editor today, and can travel with your repo as a companion artifact in .appmap.";
+  "The recording lives in your editor today, and can travel with your repo as a companion artifact in .appmap.";
 
 export const Route = createFileRoute("/architecture")({
   head: () => ({
@@ -29,7 +29,7 @@ const tree = `repo/
   tests/
   README.md
   openapi.yaml
-  .appmap/          # the behavioral model
+  .appmap/          # the recordings
     architecture/
     behavior/
     flows/
@@ -75,7 +75,7 @@ function ArchitecturePage() {
               In your editor today. In your repo tomorrow.
             </h1>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              You feel the value in the editor, where the behavioral model is built and explored as you work. The model can be persisted alongside your repository as a companion artifact: versioned with your code, generated in CI, scrubbed by default. The repository stays the canonical home of source; <code className="font-mono text-[#f2effb]">.appmap</code> is a companion.
+              You feel the value in the editor, where recordings are built and explored as you work. They can be persisted alongside your repository as a companion artifact: versioned with your code, generated in CI, scrubbed by default. The repository stays the canonical home of source; <code className="font-mono text-[#f2effb]">.appmap</code> is a companion.
             </p>
           </div>
         </section>
@@ -91,7 +91,7 @@ function ArchitecturePage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One model. Many consumers.</h2>
             <p className="mt-3 max-w-[760px] text-[16px] text-[#a99fc7]">
-              The same behavioral model is read by your developers and by every agent. Portals like Confluence and Backstage become mirrors, not the source of truth.
+              The same recordings are read by your developers and by every agent. Portals like Confluence and Backstage become mirrors, not the source of truth.
             </p>
             <div className="mt-8 flex flex-wrap gap-2.5">
               {chips.map((c) => (
