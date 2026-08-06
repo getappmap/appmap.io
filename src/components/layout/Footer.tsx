@@ -44,7 +44,7 @@ export function Footer() {
         <div>
           <img src={logo} alt="AppMap" className="h-7 w-auto" />
           <p className="mt-4 max-w-xs text-[13.5px] leading-relaxed">
-            Understand AI-generated code before you trust it.
+            Runtime evidence for AI-assisted development.
           </p>
         </div>
         {cols.map((col) => (
@@ -76,8 +76,35 @@ export function Footer() {
           </div>
         ))}
       </div>
-      <div className="mx-auto mt-12 max-w-[1120px] border-t border-[#2c2353] pt-6 text-[12.5px] text-[#7c8aa6]">
-        © {new Date().getFullYear()} AppMap, Inc. All rights reserved.
+      <div className="mx-auto mt-12 flex max-w-[1120px] flex-col gap-3 border-t border-[#2c2353] pt-6 text-[12.5px] text-[#7c8aa6] sm:flex-row sm:items-center sm:justify-between">
+        <p>© {new Date().getFullYear()} AppMap, Inc. All rights reserved.</p>
+        <nav className="flex flex-wrap items-center gap-x-5 gap-y-1">
+          <a
+            href="https://appmap.io/community/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-[#a99fc7]"
+          >
+            Privacy
+          </a>
+          <a
+            href="https://appmap.io/community/terms-and-conditions.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-[#a99fc7]"
+          >
+            Terms
+          </a>
+          <Link to="/security-faq" className="transition-colors hover:text-[#a99fc7]">
+            Security FAQ
+          </Link>
+          <a
+            href="mailto:elizabeth@appmap.io?subject=Security%20disclosure"
+            className="transition-colors hover:text-[#a99fc7]"
+          >
+            Report a security issue
+          </a>
+        </nav>
       </div>
     </footer>
   );
