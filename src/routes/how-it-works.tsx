@@ -103,7 +103,7 @@ const capture = [
     side: "bottom" as const,
   },
   {
-    title: "Code Objects",
+    title: "Code structure",
     descriptor: "Packages and classes",
     image: "/marketing-assets/img/appmap/code-map.jpg",
     objectPosition: "center",
@@ -287,7 +287,7 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Golden AppMap traces make behavior reviewable</h2>
             <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              A Golden AppMap trace is an AppMap runtime recording promoted into a Golden AppMap trace baseline. The diff shows what changed; a Golden AppMap trace shows whether the behavior changed correctly.
+              A Golden AppMap trace is a recorded run that your team has promoted into a reviewed baseline. The diff shows what changed; a Golden AppMap trace shows whether the behavior changed correctly.
             </p>
 
             <div className="mt-8 grid gap-4 lg:grid-cols-2">

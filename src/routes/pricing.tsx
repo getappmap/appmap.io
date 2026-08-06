@@ -3,7 +3,7 @@ import { Header } from "@/components/layout/Header";
 
 const title = "Pricing: Start Free at Your Desk. Pay When You Centralize. | AppMap";
 const description =
-  "Recording, diagrams, and AI evidence are free for every developer, locally. Paid plans begin when your organization centralizes recordings, governance, and review.";
+  "Recording, diagrams, and AI evidence are free for every developer, locally. AppMap Central adds shared traces, CI history, and review in your own infrastructure. Enterprise adds private deployment.";
 const url = "https://appmap.io/pricing";
 
 export const Route = createFileRoute("/pricing")({
@@ -62,11 +62,19 @@ const community = [
   "Community support",
 ];
 
+const central = [
+  "Shared Golden AppMap traces in your repositories",
+  "The AppMap review workflow for GitHub Actions: baseline, compare, and review on every pull request",
+  "Centralized CI history and comparisons",
+  "Shared baselines and team workflows",
+  "Central configuration and governance",
+];
+
 const enterprise = [
-  "Centralized recording storage and sharing",
-  "Golden AppMap trace governance across repositories",
-  "CI review on pull requests across the organization",
+  "Everything in AppMap Central",
   "Private deployment, including air-gapped, with offline activation",
+  "Internal packaging and distribution",
+  "Telemetry routing to your observability stack",
   "Priority support with SLAs",
 ];
 
@@ -90,7 +98,7 @@ function PricingPage() {
         </section>
 
         <section className="px-6 pb-14">
-          <div className="mx-auto grid max-w-[1040px] gap-6 md:grid-cols-2">
+          <div className="mx-auto grid max-w-[1180px] gap-6 md:grid-cols-2 lg:grid-cols-3">
             {/* Community */}
             <div className="flex flex-col rounded-2xl border border-[#2c2353] bg-[#1c1538] p-8">
               <h2 className="text-[22px] font-bold text-[#f2effb]">Community</h2>
@@ -102,20 +110,43 @@ function PricingPage() {
               </p>
               <div className="mt-6 border-t border-[#2c2353]" />
               <Bullets items={community} />
+              <p className="mt-5 text-[13px] leading-[1.55] text-[#a99fc7]">
+                Optional: an individual support subscription, $15 per month, for priority help. The product stays free at your desk.
+              </p>
               <div className="mt-8 flex-1" />
               <Link to="/get-appmap" className={primaryBtn}>
                 Get AppMap
               </Link>
             </div>
 
-            {/* Enterprise */}
+            {/* AppMap Central */}
             <div className="flex flex-col rounded-2xl border border-[#ff07aa]/40 bg-[#1c1538] p-8">
+              <h2 className="text-[22px] font-bold text-[#f2effb]">AppMap Central</h2>
+              <div className="mt-4 flex h-[40px] items-center text-[28px] font-extrabold leading-none text-[#f2effb]">
+                Contact us
+              </div>
+              <p className="mt-3 text-[14px] text-[#a99fc7]">
+                For teams that operate AppMap together, in your infrastructure.
+              </p>
+              <div className="mt-6 border-t border-[#2c2353]" />
+              <Bullets items={central} />
+              <p className="mt-5 text-[13px] leading-[1.55] text-[#a99fc7]">
+                Runs in your infrastructure. There is no hosted platform.
+              </p>
+              <div className="mt-8 flex-1" />
+              <Link to="/book-a-demo" className={primaryBtn}>
+                Book a Demo
+              </Link>
+            </div>
+
+            {/* Enterprise */}
+            <div className="flex flex-col rounded-2xl border border-[#2c2353] bg-[#1c1538] p-8">
               <h2 className="text-[22px] font-bold text-[#f2effb]">Enterprise</h2>
               <div className="mt-4 flex h-[40px] items-center text-[28px] font-extrabold leading-none text-[#f2effb]">
                 Contact us
               </div>
               <p className="mt-3 text-[14px] text-[#a99fc7]">
-                For organizations that centralize AppMap.
+                For regulated and large-scale deployments.
               </p>
               <div className="mt-6 border-t border-[#2c2353]" />
               <Bullets items={enterprise} />
