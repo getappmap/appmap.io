@@ -338,7 +338,7 @@ function EnterprisePageInner() {
                 Where the commercial line is
               </div>
               <p className="mt-4 text-[17px] leading-[1.65] text-[#f2effb]">
-                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, and every map they make. It stays free for organizations under 250 employees. At larger organizations, individual evaluation is free; organized pilots, production use, the CI review pipeline, internal telemetry routing, and team-wide adoption come with a support contract. If AppMap has already spread inside your organization,{" "}
+                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, and every recording they make. Paid plans begin where organizations centralize: shared recording storage, Golden AppMap trace governance, CI review across repositories, and supported private deployment. If AppMap has already spread inside your organization,{" "}
                 <Link to="/book-a-demo" className="font-semibold text-[#ff07aa] hover:underline">
                   talk to us
                 </Link>
