@@ -1,7 +1,20 @@
-const cells = [
-  { n: "~140K", l: "editor installs" },
+type Src = { label: string; href: string };
+
+const cells: { n: string; l: string; sources?: Src[] }[] = [
+  {
+    n: "~140K",
+    l: "editor installs",
+    sources: [
+      { label: "VS Code", href: "https://marketplace.visualstudio.com/items?itemName=appland.appmap" },
+      { label: "JetBrains", href: "https://plugins.jetbrains.com/plugin/16701-appmap-free-ai-architect" },
+    ],
+  },
   { n: "100K+", l: "developer community" },
-  { n: "2020", l: "open source since" },
+  {
+    n: "2020",
+    l: "open source since",
+    sources: [{ label: "GitHub", href: "https://github.com/getappmap" }],
+  },
 ];
 
 export function TrustBar() {
@@ -16,6 +29,21 @@ export function TrustBar() {
             <div key={c.l} className="bg-[#16112b] p-6 text-center">
               <div className="text-[28px] font-extrabold text-[#f2effb]">{c.n}</div>
               <div className="mt-1 text-[13px] text-[#a99fc7]">{c.l}</div>
+              {c.sources && (
+                <div className="mt-2 flex items-center justify-center gap-3 text-[12px] text-[#a99fc7]">
+                  {c.sources.map((s) => (
+                    <a
+                      key={s.href}
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline underline-offset-2 transition-colors hover:text-[#ff07aa]"
+                    >
+                      {s.label}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>
