@@ -1,97 +1,92 @@
-# Reposition AppMap Central and Enterprise
+# Golden AppMap Traces blog post
 
-## Goal
+## One naming conflict to resolve
 
-Correct the commercial positioning of AppMap Central and Enterprise on `/pricing` and `/enterprise`. AppMap is a context creator and behavioral data library, not a CI review and reporting product.
+The requested filename `blog.2026.08.06.golden-appmap-traces-runtime-context.tsx` maps to the URL
+`/blog/2026/08/06/golden-appmap-traces-runtime-context`, which contradicts the required canonical
+`/blog/golden-appmap-traces-runtime-context`. The canonical URL wins, so the file will be:
 
-Locked product model:
+`src/routes/blog.golden-appmap-traces-runtime-context.tsx` with `createFileRoute("/blog/golden-appmap-traces-runtime-context")`.
 
-- Community creates and uses runtime context locally.
-- AppMap Central gives teams a shared, customer-controlled behavioral context library across developer environments, repositories, GitHub, and automation.
-- Enterprise adds controlled deployment, packaging, configuration, integrations, training, support, and SLAs.
-- AppMap operates no hosted data platform for recordings. There is no organization-level AppMap dashboard or hosted roll-up today.
-- CI and pull-request review are ways to consume AppMap context, not the definition of AppMap Central.
-- AppMap is not a reporting or observability system.
+The date lives in the JSON-LD and the blog index entry, not in the path.
 
-Rules: no em-dashes, no banned terms ("Navie", "Runtime Intelligence", "Behavioral Intelligence").
+## Files
 
-## Changes
+1. `src/routes/blog.golden-appmap-traces-runtime-context.tsx` (new) - the post.
+2. `src/routes/blog.index.tsx` (new) - blog index at `/blog`, listing this one post. No empty-state copy.
+3. `src/routes/sitemap[.]xml.tsx` (edit) - add `/blog` and `/blog/golden-appmap-traces-runtime-context`.
+4. `public/img/blog/golden-traces/` - the four images, exact filenames, added when you attach them.
 
-### src/routes/pricing.tsx
+Existing `/blog` currently falls through to the legacy site. A real `/blog` route takes precedence
+once it exists; the header/footer Blog links keep the same href and stop being external.
 
-**1. Meta description (lines 5-6)**
+## Images
 
-From:
-"Recording, diagrams, and AI evidence are free for every developer, locally. AppMap Central adds shared traces, CI history, and review in your own infrastructure. Enterprise adds private deployment."
+Directory `public/img/blog/golden-traces/` with:
+- `golden-traces-hero.png`
+- `golden-trace-comparison.png`
+- `sequence-diagram-view.jpg`
+- `sql-queries-view.jpg`
 
-To:
-"Recording, diagrams, and AI evidence are free for every developer, locally. AppMap Central adds a shared, customer-controlled behavioral context library in your own infrastructure. Enterprise adds controlled deployment and support."
+Markup is written now against those relative paths. Until the files are attached the page renders
+with broken image boxes; dropping the four files in resolves it with no code change. Alt text and
+captions are exactly as supplied. Figures use `<figure>` + `<figcaption>` in the site's muted caption style.
 
-**2. AppMap Central audience line (line 131)**
+## Metadata
 
-From: "Behavioral review for teams, powered by shared Golden AppMap traces."
+- `title` = "Golden AppMap Traces: Durable Runtime Context for AI Code Review"
+- `description` = "Golden AppMap traces turn real application runs into sanitized, versioned runtime context. Compare behavior across revisions and give developers and AI the same evidence."
+- Both reused for `og:title`, `og:description`, `twitter:title`, `twitter:description` from single constants.
+- `og:type` = article, `twitter:card` = summary_large_image
+- `og:url` and `<link rel="canonical">` = `https://appmap.io/blog/golden-appmap-traces-runtime-context`
+- `og:image` / `twitter:image` / Article `image` = `https://appmap.io/img/blog/golden-traces/golden-traces-hero.png`
 
-To: "Shared runtime context for developers, AI agents, and automation."
+## Schema
 
-**3. AppMap Central feature list (`central` array, lines 65-72)**
+Two `application/ld+json` scripts in `head().scripts`:
 
-Replace all six current entries with:
+1. Article: headline, description, image, `datePublished` and `dateModified` "2026-08-06",
+   `mainEntityOfPage` the canonical URL, author Organization "AppMap", publisher Organization "AppLand, Inc.".
+2. FAQPage: `mainEntity` mapped from the single `faqs` array.
 
-1. "Sanitized Golden AppMap traces stored with the code they describe"
-2. "Shared trace coverage across important application paths"
-3. "Normalized runtime findings that developers and AI agents can reuse"
-4. "A common behavioral context library across editors, command line, GitHub, and automation"
-5. "Team curation and governance of trusted runtime baselines"
-6. "Runs entirely in infrastructure you control"
+## FAQ, single source
 
-**4. AppMap Central card footer (lines 135-137)**
+One module-scope array:
 
-From: "Centralized policy and governance for a distributed, repository-native workflow. There is no hosted platform."
+```ts
+const faqs = [{ q: string, a: string, aNode?: ReactNode }, ...]
+```
 
-To: "One customer-controlled context library for a distributed, repository-native workflow. GitHub Actions and CI are optional workflows that can consume or maintain it. There is no hosted platform."
+`a` is the plain string used by the JSON-LD. The Security FAQ answer is the only item that needs a
+link, so it carries an optional `aNode` for the visible rendering that wraps "Security FAQ" in a
+`<Link to="/security-faq">`. The visible FAQ renders `aNode ?? a`. No FAQ string is duplicated.
 
-**5. Enterprise bullet 4 (`enterprise` array, line 78)**
+## Page content
 
-From: "Centralized logging and telemetry routing into your observability systems"
+All copy exactly as supplied, in order: H1, hero image, three opening paragraphs, H2 "The trust gap
+Golden AppMap traces close", H2 "What a Golden AppMap trace contains" plus H3 "The diagrams are for
+people" (sequence diagram figure) and H3 "The data is for the AI", H2 "Golden AppMap traces in the
+pull request" plus the Kevin Gilpin pull-quote, H2 "What Golden AppMap trace review reveals"
+(comparison figure, SQL figure), H2 "Getting started", H2 "FAQ".
 
-To: "Configurable telemetry routing into your internal observability stack"
+Links: Sonar and SmartBear and the two GitHub repos as external `<a target="_blank" rel="noopener noreferrer">`;
+`/architecture`, `/how-it-works`, `/get-appmap`, `/security-faq` as router `<Link>`.
 
-**6. Enterprise bullet 6 (`enterprise` array, line 80)**
+Quote rendered as a semantic `<blockquote>` with a left magenta rule, and a separate
+`<cite>`-style attribution line "Kevin Gilpin, CTO and co-founder, AppMap".
 
-From: "Custom engineering, training, and SLAs"
+Layout matches existing routes: `bg-[#0d0a1a]`, `<Header />`, `max-w-[1120px]` shell with the prose
+column constrained to about 720px for readability, existing ink and muted tokens.
 
-To: "Custom engineering, training, priority support, and SLAs"
+## Blog index
 
-### src/routes/enterprise.tsx
-
-**7. Deployment diagram caption (line 68)**
-
-From: "Local by design. AppMap operates no cloud data plane for recordings, so they stay in your environment. Diagnostics and telemetry route to your internal observability stack, such as Splunk, so operational data stays inside too."
-
-To: "Local by design. AppMap operates no cloud data plane for recordings, so they stay in your environment. Diagnostics and telemetry are configurable to route to your internal observability stack, such as Splunk, so operational data stays inside too."
-
-**8. "From pilot to policy" step 3 body (line 21)**
-
-From: "The same review runs in your pipeline, and AppMap coaches each team to set it up for their own use. CI enforcement and telemetry routing are part of the enterprise service."
-
-To: "The same review runs in your pipeline when you are ready, and AppMap coaches each team to set it up for their own use. CI enforcement and telemetry routing are configurable parts of the enterprise service."
-
-**9. "Where the commercial line is" paragraph (lines 340-346)**
-
-From: "AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, and every recording they make. Paid plans begin with AppMap Central: shared Golden AppMap traces in your repositories, shared behavioral baselines, and review on pull requests across participating repositories, in CI or from each developer's environment. Enterprise adds supported private deployment, including air-gapped operation. If AppMap has already spread inside your organization, talk to us."
-
-To: "AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, and every recording they make. Paid plans begin with AppMap Central: a shared, customer-controlled behavioral context library built from sanitized Golden AppMap traces in your repositories, spanning developer environments, repositories, GitHub, and automation. Review on pull requests, in CI or from each developer's environment, is one way to consume that library. Enterprise adds controlled deployment, packaging, configuration, integrations, training, priority support, and SLAs, including air-gapped operation. If AppMap has already spread inside your organization, talk to us."
-
-## What stays unchanged
-
-- Enterprise page blocks on air-gapped readiness, no egress, and open-source clients.
-- The deployment diagram structure, including the CI zone shown as one way to consume the context library.
-- Pricing H1 and intro paragraph; they do not define Central through CI, review, or reporting.
-- All Community card copy.
+`src/routes/blog.index.tsx`: H1 "Blog", one entry card linking to the post, dated August 6, 2026,
+with the meta description as the excerpt. Own head metadata and canonical `https://appmap.io/blog`.
+No empty-state line.
 
 ## Verification
 
-- `rg` for the removed phrases ("CI history", "Behavioral review for teams", "Centralized logging") returns nothing in `src/`.
-- Typecheck passes.
-- Playwright screenshots of `/pricing` and `/enterprise` confirm the new copy renders.
-- Confirm no em-dashes and no banned terms in the edited strings.
+- Typecheck clean.
+- `rg` confirms no em-dashes and none of the banned terms in the new files.
+- Playwright screenshots of `/blog` and the post at desktop and mobile.
+- Confirm no copy implies a hosted AppMap data platform, a dashboard, or review on every pull request.
