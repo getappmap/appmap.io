@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 const title = "CLI quickstart | AppMap";
 const description =
   "Install the AppMap CLI, record your app, index, and connect any MCP client.";
-const url = "https://hello-bright-start-736.lovable.app/cli-quickstart";
+const url = "https://appmap.io/cli-quickstart";
 
 export const Route = createFileRoute("/cli-quickstart")({
   head: () => ({

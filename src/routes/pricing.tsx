@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 const title = "Pricing: Start Free at Your Desk. Pay When You Centralize. | AppMap";
 const description =
   "Recording, diagrams, and AI evidence are free for every developer, locally. Paid plans begin when your organization centralizes recordings, governance, and review.";
-const url = "/pricing";
+const url = "https://appmap.io/pricing";
 
 export const Route = createFileRoute("/pricing")({
   head: () => ({

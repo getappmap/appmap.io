@@ -47,14 +47,14 @@ export const Route = createFileRoute("/how-it-works")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: "/how-it-works" },
-      { property: "og:image", content: "/marketing-assets/og/og-card.png" },
+      { property: "og:url", content: "https://appmap.io/how-it-works" },
+      { property: "og:image", content: "https://appmap.io/marketing-assets/og/og-card.png" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "/marketing-assets/og/og-card.png" },
+      { name: "twitter:image", content: "https://appmap.io/marketing-assets/og/og-card.png" },
     ],
-    links: [{ rel: "canonical", href: "/how-it-works" }],
+    links: [{ rel: "canonical", href: "https://appmap.io/how-it-works" }],
     scripts: [
       {
         type: "application/ld+json",
