@@ -45,7 +45,18 @@ export const Route = createFileRoute("/enterprise")({
   component: EnterprisePage,
 });
 
-const blocks = [
+const ExternalLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-semibold text-[#ff07aa] hover:underline"
+  >
+    {children}
+  </a>
+);
+
+const blocks: { title: string; body: React.ReactNode }[] = [
   {
     title: "Airgapped and on-prem ready",
     body: "AppMap runs inside your environment with no outbound dependency. Enterprise deployments support offline activation and internal distribution of the clients. It fits airgapped and on-prem deployments where data cannot leave the network.",
@@ -56,7 +67,13 @@ const blocks = [
   },
   {
     title: "Trust, but verify",
-    body: "Open-source clients and a published data spec. You can audit what AppMap records and what it sends to the agent.",
+    body: (
+      <>
+        <ExternalLink href="https://github.com/getappmap">Open-source clients</ExternalLink> and a{" "}
+        <ExternalLink href="https://github.com/getappmap/appmap">published data spec</ExternalLink>. You can audit what
+        AppMap records and what it sends to the agent.
+      </>
+    ),
   },
 ];
 
