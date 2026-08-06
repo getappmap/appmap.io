@@ -338,7 +338,7 @@ function EnterprisePageInner() {
                 Where the commercial line is
               </div>
               <p className="mt-4 text-[17px] leading-[1.65] text-[#f2effb]">
-                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, and every recording they make. Paid plans begin with AppMap Central: shared Golden AppMap traces in your repositories, centralized CI history, and review on every pull request, all in your own infrastructure. Enterprise adds supported private deployment, including air-gapped operation. If AppMap has already spread inside your organization,{" "}
+                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, and every recording they make. Paid plans begin with AppMap Central: shared Golden AppMap traces in your repositories, shared behavioral baselines, and review on pull requests across participating repositories, in CI or from each developer's environment. Enterprise adds supported private deployment, including air-gapped operation. If AppMap has already spread inside your organization,{" "}
                 <Link to="/book-a-demo" className="font-semibold text-[#ff07aa] hover:underline">
                   talk to us
                 </Link>

@@ -63,19 +63,21 @@ const community = [
 ];
 
 const central = [
-  "Shared Golden AppMap traces in your repositories",
-  "The AppMap review workflow for GitHub Actions: baseline, compare, and review on every pull request",
-  "Centralized CI history and comparisons",
-  "Shared baselines and team workflows",
-  "Central configuration and governance",
+  "Shared Golden AppMap traces: sanitized behavioral baselines for the whole team",
+  "Behavioral review on pull requests, in CI or from each developer's environment",
+  "Review results delivered where developers already work",
+  "Standard rollout across participating repositories",
+  "Organization-level configuration, usage visibility, and governance",
+  "Team support",
 ];
 
 const enterprise = [
   "Everything in AppMap Central",
-  "Private deployment, including air-gapped, with offline activation",
-  "Internal packaging and distribution",
-  "Telemetry routing to your observability stack",
-  "Priority support with SLAs",
+  "Air-gapped and on-premises packaging, with offline activation",
+  "Internal distribution of agents, extensions, and CLI",
+  "Centralized logging and telemetry routing into your observability systems",
+  "Approved AI agent and model configurations",
+  "Custom engineering, training, and SLAs",
 ];
 
 function PricingPage() {
@@ -126,12 +128,12 @@ function PricingPage() {
                 Contact us
               </div>
               <p className="mt-3 text-[14px] text-[#a99fc7]">
-                For teams that operate AppMap together, in your infrastructure.
+                Behavioral review for teams, powered by shared Golden AppMap traces.
               </p>
               <div className="mt-6 border-t border-[#2c2353]" />
               <Bullets items={central} />
               <p className="mt-5 text-[13px] leading-[1.55] text-[#a99fc7]">
-                Runs in your infrastructure. There is no hosted platform.
+                Centralized policy and governance for a distributed, repository-native workflow. There is no hosted platform.
               </p>
               <div className="mt-8 flex-1" />
               <Link to="/book-a-demo" className={primaryBtn}>
