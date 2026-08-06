@@ -51,7 +51,7 @@ function GetAppMapPage() {
             <div className="flex flex-col rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
               <h2 className="text-[19px] font-bold text-[#f2effb]">VS Code</h2>
               <p className="mt-3 flex-1 text-[14.5px] leading-[1.6] text-[#a99fc7]">
-                The easiest way to install: the extension bundles the CLI and the MCP server, and keeps the index running automatically.
+                One extension. Everything included. Free.
               </p>
               <div className="mt-5">
                 <a
@@ -68,7 +68,7 @@ function GetAppMapPage() {
             <div className="flex flex-col rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
               <h2 className="text-[19px] font-bold text-[#f2effb]">JetBrains</h2>
               <p className="mt-3 flex-1 text-[14.5px] leading-[1.6] text-[#a99fc7]">
-                The easiest way to install: the extension bundles the CLI and the MCP server, and keeps the index running automatically.
+                One plugin. Everything included. Free.
               </p>
               <div className="mt-5">
                 <a
