@@ -1,59 +1,97 @@
-# Add Release Notes page and footer link
+# Reposition AppMap Central and Enterprise
 
-## What we're building
+## Goal
 
-A new page at `/release-notes` listing AppMap's shipped work, most recent
-first, each entry linking to public code in a new tab. Plus a footer link so
-the page is discoverable.
+Correct the commercial positioning of AppMap Central and Enterprise on `/pricing` and `/enterprise`. AppMap is a context creator and behavioral data library, not a CI review and reporting product.
+
+Locked product model:
+
+- Community creates and uses runtime context locally.
+- AppMap Central gives teams a shared, customer-controlled behavioral context library across developer environments, repositories, GitHub, and automation.
+- Enterprise adds controlled deployment, packaging, configuration, integrations, training, support, and SLAs.
+- AppMap operates no hosted data platform for recordings. There is no organization-level AppMap dashboard or hosted roll-up today.
+- CI and pull-request review are ways to consume AppMap context, not the definition of AppMap Central.
+- AppMap is not a reporting or observability system.
+
+Rules: no em-dashes, no banned terms ("Navie", "Runtime Intelligence", "Behavioral Intelligence").
 
 ## Changes
 
-### 1. New file `src/routes/release-notes.tsx`
+### src/routes/pricing.tsx
 
-Follows the existing route pattern (matching `security-faq.tsx`): full-page
-wrapper, `<Header />`, `<main>`, dark palette tokens (`#0d0a1a`, `#f2effb`,
-`#ff07aa`, `#2c2353`, `#a99fc7`, `#16112b`), no em-dashes, no banned terms.
+**1. Meta description (lines 5-6)**
 
-- **Head metadata** (in `head()`):
-  - `title`: "Release Notes"
-  - `description`: "What AppMap has shipped, most recent first. Everything links to public code."
-  - `og:title`, `og:description`, `og:url: /release-notes`, `og:image: /marketing-assets/og/og-card.png` (1200x630), `twitter:card: summary_large_image`, `twitter:image`
-  - `canonical: /release-notes`
-- **H1**: "Release Notes"
-- **Intro line**: "What we've shipped, most recent first. Everything links to public code."
-- **Month-grouped entries** in this order (top = most recent):
-  - **August 2026** (2 entries)
-    1. "appmap.io relaunched: new positioning, homepage, how-it-works, enterprise, and pricing pages" → https://github.com/siteforward-ai/appmap.io
-    2. "Review skill output refined: interpreted findings in the sticky PR comment" → https://github.com/getappmap/review-action
-  - **July 2026** (4 entries)
-    3. "AppMap MCP server: agents query recordings with get_call_tree, find_calls, find_queries, and find_requests" → https://appmap.io/docs/reference/appmap-mcp.html
-    4. "Four AppMap skills published: appmap-record, appmap-label, appmap-gold-traces, appmap-review" → https://github.com/getappmap/skills
-    5. "review-action released: runs the skills in CI on pull requests, posts results as a sticky PR comment and job summary, supports Claude Code and GitHub Copilot CLI" → https://github.com/getappmap/review-action
-    6. "Baseline workflow: blessed golden trace baselines and agent-added labels commit to the PR branch" → https://github.com/getappmap/review-action
-  - **June 2026** (2 entries)
-    7. "Golden trace review workflow: promote a recording to a baseline, compare before and after on every change" → https://github.com/getappmap/skills
-    8. "Label configuration guidance in the appmap-label skill: security.authentication, security.authorization, log, secret, crypto, dao" → https://github.com/getappmap/skills
-  - **Spring 2026** (2 entries)
-    9. "Active development resumed across the language agents and appmap-js" → https://github.com/getappmap
-    10. "Scanner rule maintenance: 25+ heuristic rules for security, performance, architecture, and data integrity" → https://github.com/getappmap/appmap-js/tree/main/packages/scanner
+From:
+"Recording, diagrams, and AI evidence are free for every developer, locally. AppMap Central adds shared traces, CI history, and review in your own infrastructure. Enterprise adds private deployment."
 
-Each entry renders as one line: the month heading (uppercase eyebrow, magenta
-accent) above its bulleted entries. Each entry is an external `<a>` with
-`target="_blank"` and `rel="noopener noreferrer"`, styled in the site's muted
-link color with the magenta hover.
+To:
+"Recording, diagrams, and AI evidence are free for every developer, locally. AppMap Central adds a shared, customer-controlled behavioral context library in your own infrastructure. Enterprise adds controlled deployment and support."
 
-Data lives in a `releaseGroups` array (month + entries with `{ label, href }`),
-kept at module scope alongside the route file. The data is inert (no runtime
-server imports), so it is safe at module scope.
+**2. AppMap Central audience line (line 131)**
 
-### 2. `src/components/layout/Footer.tsx`
+From: "Behavioral review for teams, powered by shared Golden AppMap traces."
 
-Add a "Release Notes" link to the Company column (`href: "/release-notes"`),
-rendered as a router `<Link>` (internal path), matching the existing link
-styling.
+To: "Shared runtime context for developers, AI agents, and automation."
 
-## Verify
+**3. AppMap Central feature list (`central` array, lines 65-72)**
 
-Open the dev server and confirm `/release-notes` renders the H1, intro, four
-month groups with all 10 entries, and that footer shows the new link. Confirm
-an entry opens its external link in a new tab.
+Replace all six current entries with:
+
+1. "Sanitized Golden AppMap traces stored with the code they describe"
+2. "Shared trace coverage across important application paths"
+3. "Normalized runtime findings that developers and AI agents can reuse"
+4. "A common behavioral context library across editors, command line, GitHub, and automation"
+5. "Team curation and governance of trusted runtime baselines"
+6. "Runs entirely in infrastructure you control"
+
+**4. AppMap Central card footer (lines 135-137)**
+
+From: "Centralized policy and governance for a distributed, repository-native workflow. There is no hosted platform."
+
+To: "One customer-controlled context library for a distributed, repository-native workflow. GitHub Actions and CI are optional workflows that can consume or maintain it. There is no hosted platform."
+
+**5. Enterprise bullet 4 (`enterprise` array, line 78)**
+
+From: "Centralized logging and telemetry routing into your observability systems"
+
+To: "Configurable telemetry routing into your internal observability stack"
+
+**6. Enterprise bullet 6 (`enterprise` array, line 80)**
+
+From: "Custom engineering, training, and SLAs"
+
+To: "Custom engineering, training, priority support, and SLAs"
+
+### src/routes/enterprise.tsx
+
+**7. Deployment diagram caption (line 68)**
+
+From: "Local by design. AppMap operates no cloud data plane for recordings, so they stay in your environment. Diagnostics and telemetry route to your internal observability stack, such as Splunk, so operational data stays inside too."
+
+To: "Local by design. AppMap operates no cloud data plane for recordings, so they stay in your environment. Diagnostics and telemetry are configurable to route to your internal observability stack, such as Splunk, so operational data stays inside too."
+
+**8. "From pilot to policy" step 3 body (line 21)**
+
+From: "The same review runs in your pipeline, and AppMap coaches each team to set it up for their own use. CI enforcement and telemetry routing are part of the enterprise service."
+
+To: "The same review runs in your pipeline when you are ready, and AppMap coaches each team to set it up for their own use. CI enforcement and telemetry routing are configurable parts of the enterprise service."
+
+**9. "Where the commercial line is" paragraph (lines 340-346)**
+
+From: "AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, and every recording they make. Paid plans begin with AppMap Central: shared Golden AppMap traces in your repositories, shared behavioral baselines, and review on pull requests across participating repositories, in CI or from each developer's environment. Enterprise adds supported private deployment, including air-gapped operation. If AppMap has already spread inside your organization, talk to us."
+
+To: "AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, and every recording they make. Paid plans begin with AppMap Central: a shared, customer-controlled behavioral context library built from sanitized Golden AppMap traces in your repositories, spanning developer environments, repositories, GitHub, and automation. Review on pull requests, in CI or from each developer's environment, is one way to consume that library. Enterprise adds controlled deployment, packaging, configuration, integrations, training, priority support, and SLAs, including air-gapped operation. If AppMap has already spread inside your organization, talk to us."
+
+## What stays unchanged
+
+- Enterprise page blocks on air-gapped readiness, no egress, and open-source clients.
+- The deployment diagram structure, including the CI zone shown as one way to consume the context library.
+- Pricing H1 and intro paragraph; they do not define Central through CI, review, or reporting.
+- All Community card copy.
+
+## Verification
+
+- `rg` for the removed phrases ("CI history", "Behavioral review for teams", "Centralized logging") returns nothing in `src/`.
+- Typecheck passes.
+- Playwright screenshots of `/pricing` and `/enterprise` confirm the new copy renders.
+- Confirm no em-dashes and no banned terms in the edited strings.
