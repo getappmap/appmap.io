@@ -51,7 +51,7 @@ function GetAppMapPage() {
             <div className="flex flex-col rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
               <h2 className="text-[19px] font-bold text-[#f2effb]">VS Code</h2>
               <p className="mt-3 flex-1 text-[14.5px] leading-[1.6] text-[#a99fc7]">
-                One extension. Everything included.
+                One extension. Everything you need to start.
               </p>
               <div className="mt-5">
                 <a
@@ -68,7 +68,7 @@ function GetAppMapPage() {
             <div className="flex flex-col rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
               <h2 className="text-[19px] font-bold text-[#f2effb]">JetBrains</h2>
               <p className="mt-3 flex-1 text-[14.5px] leading-[1.6] text-[#a99fc7]">
-                One plugin. Everything included.
+                One plugin. Everything you need to start.
               </p>
               <div className="mt-5">
                 <a
