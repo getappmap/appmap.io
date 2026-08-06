@@ -8,18 +8,22 @@ Line 30 currently reads:
 "Follow the execution path, inspect the queries, and navigate the code objects involved, all from the same recorded run."
 
 Replace it with:
-"One recording opens every window a developer needs: the dependency map, the sequence diagram, the trace view, the flame graph, the code objects, and a generated OpenAPI definition. Follow the execution path, inspect the queries, and navigate the code involved."
+"One recording gives developers multiple ways to inspect a run: Dependency Map, Sequence Diagram, Trace View, Flame Graph, Code Objects, and SQL inspection. Recorded runtime behavior also supports generated OpenAPI definitions and diffs."
 
 Keep the paragraph's existing classes (`mt-3 max-w-[700px] text-[16px] text-[color:var(--color-am-muted)]`).
+
+Note: the wording deliberately avoids absolute and rigid claims. It does not call "six" a complete taxonomy, does not count the three cards as "three of six", and describes OpenAPI as a generated output rather than an editor view.
 
 ## 2. Add a centered caption line below the cards
 
 After the card grid's closing `</div>` (line 55, inside the `max-w-[1120px]` container), add a single centered line of small muted text:
 
-"Three of the six views, shown from the same recording. All of them are in your editor."
+"Three representative views. Explore the broader visual set in your editor."
 
-Style it like the existing card captions (`text-[13.5px] text-[color:var(--color-am-muted)]`), centered with a top margin:
+Style it like the existing card captions, centered with a top margin:
 `mt-6 text-center text-[13.5px] text-[color:var(--color-am-muted)]`
+
+The line treats the three cards as examples, without claiming they come from one identical recording or that six is a fixed taxonomy.
 
 ## Unchanged
 
