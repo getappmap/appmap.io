@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
-const title = "AppMap Benchmark: Runtime Context vs Static Analysis";
+const title = "AppMap Benchmark: Runtime Evidence vs Static Analysis";
 const description =
   "In a controlled study, runtime evidence held diagnosis at 100 percent under a tight tool budget where static analysis fell to 28 percent, at a fraction of the cost.";
 
@@ -123,7 +123,7 @@ function BenchmarksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Diagnosis holds where static search collapses</h2>
             <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
-              Root-cause accuracy against the tool-call budget. Runtime context
+              Root-cause accuracy against the tool-call budget. Runtime evidence
               stays flat. Static analysis falls off.
             </p>
 
