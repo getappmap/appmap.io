@@ -287,7 +287,7 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Golden AppMap traces make behavior reviewable</h2>
             <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              A Golden AppMap trace is a recording committed as the trusted baseline. AI agents curate it and review every change against it, while humans make the final call. When the review runs in CI, refreshed baselines land in the same pull request, so merging the change also updates the baseline. The diff shows what changed; a Golden AppMap trace shows whether the behavior changed correctly.
+              A Golden AppMap trace is a versioned baseline of how your software actually ran. AppMap re-records the same path as the code changes, shows the behavioral diff, and updates the baseline when the approved change is merged. AI agents do the curation and review work; humans make the final call. Git gives you a history of what the code said. Golden AppMap traces give you a history of what the code did.
             </p>
 
             <div className="mt-8 grid gap-4 lg:grid-cols-2">
