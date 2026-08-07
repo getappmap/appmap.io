@@ -62,6 +62,9 @@ function CompatibilityPage() {
             <p className="mt-5 max-w-[720px] text-[19px] leading-[1.6] text-[#a99fc7]">
               AppMap speaks MCP to every agent, and plain pictures to every person. No lock-in either way.
             </p>
+            <p className="mt-6 max-w-[760px] text-[22px] font-semibold leading-[1.25] tracking-[-0.3px] text-[#f2effb] sm:text-[26px]">
+              The agent can change. The evidence does not have to.
+            </p>
           </div>
         </section>
 

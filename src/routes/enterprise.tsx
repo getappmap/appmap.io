@@ -249,6 +249,9 @@ function EnterprisePageInner() {
                 has to vouch for it. Airgapped and on-prem by design. AppMap
                 operates no cloud data plane for recordings.
               </p>
+              <p className="mt-6 max-w-[760px] text-[22px] font-semibold leading-[1.25] tracking-[-0.3px] text-[#f2effb] sm:text-[26px]">
+                Bring your model. Keep your evidence.
+              </p>
               <div className="mt-8 flex flex-wrap gap-3.5">
                 <Link to="/book-a-demo" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                   Book a Demo
