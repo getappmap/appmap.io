@@ -82,7 +82,7 @@ function EnterprisePage() {
 }
 
 const diagramCaption =
-  "Local by design. AppMap operates no cloud data plane for recordings, so they stay in your environment. Diagnostics and telemetry are configurable to route to your internal observability stack, such as Splunk, so operational data stays inside too.";
+  "Local by design. AppMap operates no cloud data plane for recordings, so they stay in your environment. Deployment telemetry is configurable to route to your internal observability stack, such as Splunk, so operational data stays inside too.";
 
 function Pill({ x, y, w, h, label, sub }: { x: number; y: number; w: number; h: number; label: string; sub?: string }) {
   return (
@@ -212,7 +212,7 @@ function DeploymentDiagram() {
               w={310}
               h={92}
               lines={[
-                "Telemetry",
+                "Deployment telemetry",
                 "configurable to route to your internal observability stack (Splunk or similar)",
               ]}
             />

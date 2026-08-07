@@ -101,7 +101,7 @@ function GetAppMapPage() {
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px] text-center">
             <p className="text-[18px] leading-[1.7] text-[#f2effb]">
-              <span className="font-semibold">Free at your desk.</span> When your organization centralizes recordings and review, paid plans begin.{" "}
+              <span className="font-semibold">Free at your desk.</span> Paid plans help teams share and govern AppMap recordings across repositories and workflows.{" "}
               <Link to="/pricing" className="font-semibold text-[#ff07aa] hover:underline">
                 See pricing
               </Link>
