@@ -242,7 +242,7 @@ function EnterprisePageInner() {
             <div>
               <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Enterprise</div>
               <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-                Runtime evidence that stays on the machine.
+                Runtime context that stays on the machine.
               </h1>
               <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
                 For the VP standardizing how agents work, and the engineer who

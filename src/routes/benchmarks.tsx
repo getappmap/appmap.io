@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
-const title = "AppMap Benchmark: Runtime Evidence vs Static Analysis";
+const title = "AppMap Benchmark: Runtime Context vs Static Analysis";
 const description =
-  "In a controlled study, runtime evidence held diagnosis at 100 percent under a tight tool budget where static analysis fell to 28 percent, at a fraction of the cost.";
+  "In a controlled study, runtime context held diagnosis at 100 percent under a tight tool budget where static analysis fell to 28 percent, at a fraction of the cost.";
 
 export const Route = createFileRoute("/benchmarks")({
   head: () => ({
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/benchmarks")({
 });
 
 const headlineNumbers = [
-  { n: "100%", l: "root-cause accuracy with runtime evidence at a 3-call budget" },
+  { n: "100%", l: "root-cause accuracy with runtime context at a 3-call budget" },
   { n: "28%", l: "static baseline at the same budget" },
   { n: "~3.4x", l: "less inference spend to reach the same verified-fix rate" },
   { n: "7 pts", l: "how close a compact pipeline lands to a frontier baseline, at half the cost" },
@@ -123,7 +123,7 @@ function BenchmarksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Diagnosis holds where static search collapses</h2>
             <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
-              Root-cause accuracy against the tool-call budget. Runtime evidence
+              Root-cause accuracy against the tool-call budget. Runtime context
               stays flat. Static analysis falls off.
             </p>
 
@@ -145,7 +145,7 @@ function BenchmarksPage() {
                 ))}
               </div>
               <div className="mt-5 flex flex-wrap gap-5 text-[13px] text-[#a99fc7]">
-                <span className="inline-flex items-center gap-2"><i className="inline-block h-3 w-3 rounded-sm bg-[#ff07aa]" /> AppMap runtime evidence</span>
+                <span className="inline-flex items-center gap-2"><i className="inline-block h-3 w-3 rounded-sm bg-[#ff07aa]" /> AppMap runtime context</span>
                 <span className="inline-flex items-center gap-2"><i className="inline-block h-3 w-3 rounded-sm bg-[#fb7185]" /> Static baseline</span>
               </div>
             </div>
@@ -203,7 +203,7 @@ function BenchmarksPage() {
             </div>
 
             <p className="mt-7 max-w-[720px] text-[15px] text-[#f2effb]">
-              A compact model with runtime evidence, paired with a frontier
+              A compact model with runtime context, paired with a frontier
               model for the final fix, lands within 7 points of the frontier
               static baseline. It does this at half the cost.
             </p>

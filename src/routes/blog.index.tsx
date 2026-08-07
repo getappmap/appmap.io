@@ -10,11 +10,11 @@ const description =
 const posts = [
   {
     to: "/blog/golden-appmap-traces-runtime-context" as const,
-    title: "Golden AppMap Traces: Durable Runtime Evidence for AI Code Review",
+    title: "Golden AppMap Traces: Durable Runtime Context for AI Code Review",
     date: "2026-08-06",
     dateLabel: "August 6, 2026",
     excerpt:
-      "Golden AppMap traces turn real application runs into versioned runtime evidence with sensitive values removed. Compare behavior across revisions and give developers and AI the same evidence.",
+      "Golden AppMap traces turn real application runs into versioned runtime context with sensitive values removed. Compare behavior across revisions and give developers and AI the same evidence.",
   },
 ];
 
