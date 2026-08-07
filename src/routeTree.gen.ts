@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SecurityFaqRouteImport } from './routes/security-faq'
+import { Route as SecurityRouteImport } from './routes/security'
 import { Route as ReleaseNotesRouteImport } from './routes/release-notes'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PlatformRouteImport } from './routes/platform'
@@ -37,6 +38,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const SecurityFaqRoute = SecurityFaqRouteImport.update({
   id: '/security-faq',
   path: '/security-faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SecurityRoute = SecurityRouteImport.update({
+  id: '/security',
+  path: '/security',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ReleaseNotesRoute = ReleaseNotesRouteImport.update({
@@ -140,6 +146,7 @@ export interface FileRoutesByFullPath {
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
   '/release-notes': typeof ReleaseNotesRoute
+  '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/golden-appmap-traces-runtime-context': typeof BlogGoldenAppmapTracesRuntimeContextRoute
@@ -161,6 +168,7 @@ export interface FileRoutesByTo {
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
   '/release-notes': typeof ReleaseNotesRoute
+  '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/golden-appmap-traces-runtime-context': typeof BlogGoldenAppmapTracesRuntimeContextRoute
@@ -183,6 +191,7 @@ export interface FileRoutesById {
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
   '/release-notes': typeof ReleaseNotesRoute
+  '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/golden-appmap-traces-runtime-context': typeof BlogGoldenAppmapTracesRuntimeContextRoute
@@ -206,6 +215,7 @@ export interface FileRouteTypes {
     | '/platform'
     | '/pricing'
     | '/release-notes'
+    | '/security'
     | '/security-faq'
     | '/sitemap.xml'
     | '/blog/golden-appmap-traces-runtime-context'
@@ -227,6 +237,7 @@ export interface FileRouteTypes {
     | '/platform'
     | '/pricing'
     | '/release-notes'
+    | '/security'
     | '/security-faq'
     | '/sitemap.xml'
     | '/blog/golden-appmap-traces-runtime-context'
@@ -248,6 +259,7 @@ export interface FileRouteTypes {
     | '/platform'
     | '/pricing'
     | '/release-notes'
+    | '/security'
     | '/security-faq'
     | '/sitemap.xml'
     | '/blog/golden-appmap-traces-runtime-context'
@@ -270,6 +282,7 @@ export interface RootRouteChildren {
   PlatformRoute: typeof PlatformRoute
   PricingRoute: typeof PricingRoute
   ReleaseNotesRoute: typeof ReleaseNotesRoute
+  SecurityRoute: typeof SecurityRoute
   SecurityFaqRoute: typeof SecurityFaqRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   BlogGoldenAppmapTracesRuntimeContextRoute: typeof BlogGoldenAppmapTracesRuntimeContextRoute
@@ -292,6 +305,13 @@ declare module '@tanstack/react-router' {
       path: '/security-faq'
       fullPath: '/security-faq'
       preLoaderRoute: typeof SecurityFaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/security': {
+      id: '/security'
+      path: '/security'
+      fullPath: '/security'
+      preLoaderRoute: typeof SecurityRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/release-notes': {
@@ -430,6 +450,7 @@ const rootRouteChildren: RootRouteChildren = {
   PlatformRoute: PlatformRoute,
   PricingRoute: PricingRoute,
   ReleaseNotesRoute: ReleaseNotesRoute,
+  SecurityRoute: SecurityRoute,
   SecurityFaqRoute: SecurityFaqRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   BlogGoldenAppmapTracesRuntimeContextRoute:
