@@ -17,7 +17,7 @@ type Faq = { q: string; a: string; aNode?: ReactNode };
 const faqs: Faq[] = [
   {
     q: "What is a Golden AppMap trace?",
-    a: "A sanitized AppMap recording that a team has selected, reviewed, and committed as the trusted baseline for a specific application path.",
+    a: "A sanitized AppMap recording that a team has selected, reviewed, and committed as the versioned baseline for a specific application path.",
   },
   {
     q: "How is a Golden AppMap trace different from a snapshot test?",
@@ -139,7 +139,7 @@ function BlogPost() {
 
             <img
               src={heroImage}
-              alt="Branded title card reading Golden AppMap Traces: a trusted baseline for AI-era code review, on a dark gradient with the AppMap wordmark."
+              alt="Branded title card reading Golden AppMap Traces: a versioned baseline for AI-era code review, on a dark gradient with the AppMap wordmark."
               className="mt-10 w-full rounded-2xl border border-[#2c2353] bg-[#16112b]"
             />
 
@@ -150,7 +150,7 @@ function BlogPost() {
             </p>
             <p className={P}>
               A Golden AppMap trace answers that question. It is a recorded application run that a
-              team has selected as the trusted baseline. Later revisions of that path can be
+              team has selected as the versioned baseline. Later revisions of that path can be
               compared against it. The comparison is concrete: call structure, SQL shape, HTTP
               boundaries, downstream calls, and the runtime path of a known-good run beside the same
               evidence from the new code.
@@ -158,8 +158,8 @@ function BlogPost() {
             <p className={P}>
               Source code tells you what software could do. Runtime behavior tells you what it
               actually did. A Golden AppMap trace makes the second half of that sentence durable. It
-              is a trusted baseline the team agrees on, kept under version control
-              alongside the code it describes.
+              is a versioned baseline the team agrees on, kept under version control
+              alongside the code it describes. It becomes trusted through the team's normal review and merge process.
             </p>
 
             <h2 className={H2}>The trust gap Golden AppMap traces close</h2>
