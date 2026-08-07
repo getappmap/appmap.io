@@ -32,7 +32,7 @@ const people = [
     name: "Elizabeth Lawler, Sc.D.",
     role: "CEO and co-founder",
     body: [
-      "Elizabeth has spent more than two decades building systems for sensitive data in regulated environments. She was Chief Data Officer at Generation Health, acquired by CVS Caremark, and later co-founded Conjur with Kevin, building the secrets-management company through its acquisition by CyberArk. She then served as VP of DevOps Security at CyberArk.",
+      "Elizabeth has spent more than two decades building systems for sensitive data in regulated environments. She was Chief Data Officer at Generation Health, acquired by CVS Caremark, and later co-founded Conjur, the secrets-management company acquired by CyberArk. She then served as VP of DevOps Security at CyberArk.",
       "Across those companies, the problem has been consistent: make high-value data useful without putting it somewhere it does not belong.",
       "Elizabeth holds a Doctor of Science in Epidemiology and a Master of Public Health from Boston University. Her patented work spans enterprise access control, security, runtime software analysis, and application modernization.",
     ],
@@ -41,7 +41,7 @@ const people = [
     name: "Kevin Gilpin",
     role: "CTO and co-founder",
     body: [
-      "Kevin has spent more than 25 years building developer tools and software infrastructure across Java, Ruby, Python, and Node.js. He co-founded Conjur with Elizabeth and helped build the company through its acquisition by CyberArk.",
+      "Kevin has spent more than 25 years building developer tools and software infrastructure across Java, Ruby, Python, and Node.js. He co-founded Conjur, acquired by CyberArk.",
       "At AppMap, Kevin authored the trace specification used across its language agents and remains an active contributor. His work spans runtime instrumentation, application behavior capture, software analysis, and AI agent workflows. His patented work spans enterprise software, access control and security, application modernization, and runtime software analysis.",
     ],
   },
@@ -73,7 +73,8 @@ function TeamPage() {
             </h1>
             <p className="mt-6 max-w-[760px] text-[22px] font-semibold leading-[1.25] tracking-[-0.3px] text-[#f2effb] sm:text-[26px]">
               AppMap is built by a small team with deep experience in developer tools, enterprise
-              security, runtime systems, and regulated data.
+              security, runtime systems, and regulated data. Its founders previously built Conjur,
+              acquired by CyberArk.
             </p>
           </div>
         </section>
