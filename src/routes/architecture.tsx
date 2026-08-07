@@ -107,6 +107,9 @@ function ArchitecturePage() {
             <p className="mt-3 max-w-[820px] text-[16px] text-[#a99fc7]">
               Approved baselines live next to the code, in <code className="font-mono text-[#f2effb]">.appmap/golden/</code>. Each baseline is a set of files saved alongside your code for one flow: the approved before-trace, a stable fingerprint, and the rules for which timing noise and changing values to ignore before comparison. Promote a trace into the baseline the same way you merge code, with review.
             </p>
+            <p className="mt-6 max-w-[820px] border-l-4 border-[#ff07aa] pl-4 text-[20px] font-semibold leading-[1.5] text-[#f2effb]">
+              Git gives you a history of what the code said. Golden AppMap traces give you a history of what the code did.
+            </p>
             <pre className="mt-8 overflow-x-auto rounded-xl border border-[#2c2353] bg-[#1c1538] p-6 font-mono text-[13px] leading-[1.7] text-[#cdd8ee]">{goldenTree}</pre>
             <p className="mt-6 max-w-[820px] text-[15px] text-[#f2effb]">
               A Golden AppMap trace is reviewed and versioned like any other contract in the repo. Changing the baseline is a pull request, not a silent overwrite.
