@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 const securityFaqs = [
   {
     q: "Does AppMap send code or runtime data to the cloud?",
-    a: "No. AppMap records and analyzes behavior locally. Recordings stay with your editor and your repository by default, with no egress.",
+    a: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and recordings stay with your editor and your repository. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
   },
   {
     q: "Where does AppMap store runtime behavior?",
