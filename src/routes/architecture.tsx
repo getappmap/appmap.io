@@ -105,7 +105,7 @@ function ArchitecturePage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Where Golden AppMap traces live</h2>
             <p className="mt-3 max-w-[820px] text-[16px] text-[#a99fc7]">
-              Approved baselines live next to the code, in <code className="font-mono text-[#f2effb]">.appmap/golden/</code>. Each baseline is a behavioral contract for one flow: the approved before-trace, a stable fingerprint, and the rules for what runtime noise to ignore. Promote a trace into the baseline the same way you merge code, with review.
+              Approved baselines live next to the code, in <code className="font-mono text-[#f2effb]">.appmap/golden/</code>. Each baseline is a set of files saved alongside your code for one flow: the approved before-trace, a stable fingerprint, and the rules for which timing noise and changing values to ignore before comparison. Promote a trace into the baseline the same way you merge code, with review.
             </p>
             <pre className="mt-8 overflow-x-auto rounded-xl border border-[#2c2353] bg-[#1c1538] p-6 font-mono text-[13px] leading-[1.7] text-[#cdd8ee]">{goldenTree}</pre>
             <p className="mt-6 max-w-[820px] text-[15px] text-[#f2effb]">
