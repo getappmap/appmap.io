@@ -53,7 +53,7 @@ const setup = [
 ];
 
 const accuracy = [
-  { label: "Unlimited", appmap: 91, baseline: 91 },
+  { label: "Unlimited", appmap: 100, baseline: 91 },
   { label: "10 calls", appmap: 100, baseline: 81 },
   { label: "5 calls", appmap: 100, baseline: 50 },
   { label: "3 calls", appmap: 100, baseline: 28 },
@@ -161,7 +161,7 @@ function BenchmarksPage() {
 
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">The same result for less spend</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">The cost-capability frontier</h2>
             <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
               Cost per task at each setup, with the verified-fix rate on each
               bar. The trace setups cost a fraction of the frontier static
@@ -225,8 +225,8 @@ function BenchmarksPage() {
               <Link to="/get-appmap" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                 Get AppMap
               </Link>
-              <a href="/blog" className="rounded-lg border border-[#2c2353] px-5 py-2.5 text-[14px] font-semibold text-[#f2effb] hover:border-[#a99fc7]">
-                Read the Methodology
+              <a href="/blog/golden-appmap-traces-runtime-context" className="rounded-lg border border-[#2c2353] px-5 py-2.5 text-[14px] font-semibold text-[#f2effb] hover:border-[#a99fc7]">
+                Read the technical write-up
               </a>
             </div>
           </div>
