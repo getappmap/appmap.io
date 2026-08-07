@@ -19,7 +19,7 @@ const features = [
   },
   {
     title: "Golden AppMap trace review",
-    body: "Promote an AppMap recording into a trusted baseline. AppMap compares before and after, so every reviewer sees whether behavior held or changed as intended.",
+    body: "Promote an AppMap recording into a versioned baseline. AppMap compares before and after, so every reviewer sees whether behavior held or changed as intended.",
   },
   {
     title: "One trace, every view",

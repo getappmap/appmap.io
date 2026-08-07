@@ -5,7 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 
 const title = "Blog | AppMap";
 const description =
-  "Writing from the AppMap team on runtime evidence, trusted baselines, and reviewing AI-generated code.";
+  "Writing from the AppMap team on runtime evidence, versioned baselines, and reviewing AI-generated code.";
 
 const posts = [
   {
