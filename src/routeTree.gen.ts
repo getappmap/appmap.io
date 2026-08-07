@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TeamRouteImport } from './routes/team'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SecurityFaqRouteImport } from './routes/security-faq'
 import { Route as SecurityRouteImport } from './routes/security'
@@ -30,6 +31,11 @@ import { Route as NavieSplatRouteImport } from './routes/navie.$'
 import { Route as BlogGoldenAppmapTracesRuntimeContextRouteImport } from './routes/blog.golden-appmap-traces-runtime-context'
 import { Route as DocsNavieSplatRouteImport } from './routes/docs.navie.$'
 
+const TeamRoute = TeamRouteImport.update({
+  id: '/team',
+  path: '/team',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -149,6 +155,7 @@ export interface FileRoutesByFullPath {
   '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/team': typeof TeamRoute
   '/blog/golden-appmap-traces-runtime-context': typeof BlogGoldenAppmapTracesRuntimeContextRoute
   '/navie/$': typeof NavieSplatRoute
   '/blog/': typeof BlogIndexRoute
@@ -171,6 +178,7 @@ export interface FileRoutesByTo {
   '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/team': typeof TeamRoute
   '/blog/golden-appmap-traces-runtime-context': typeof BlogGoldenAppmapTracesRuntimeContextRoute
   '/navie/$': typeof NavieSplatRoute
   '/blog': typeof BlogIndexRoute
@@ -194,6 +202,7 @@ export interface FileRoutesById {
   '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/team': typeof TeamRoute
   '/blog/golden-appmap-traces-runtime-context': typeof BlogGoldenAppmapTracesRuntimeContextRoute
   '/navie/$': typeof NavieSplatRoute
   '/blog/': typeof BlogIndexRoute
@@ -218,6 +227,7 @@ export interface FileRouteTypes {
     | '/security'
     | '/security-faq'
     | '/sitemap.xml'
+    | '/team'
     | '/blog/golden-appmap-traces-runtime-context'
     | '/navie/$'
     | '/blog/'
@@ -240,6 +250,7 @@ export interface FileRouteTypes {
     | '/security'
     | '/security-faq'
     | '/sitemap.xml'
+    | '/team'
     | '/blog/golden-appmap-traces-runtime-context'
     | '/navie/$'
     | '/blog'
@@ -262,6 +273,7 @@ export interface FileRouteTypes {
     | '/security'
     | '/security-faq'
     | '/sitemap.xml'
+    | '/team'
     | '/blog/golden-appmap-traces-runtime-context'
     | '/navie/$'
     | '/blog/'
@@ -285,6 +297,7 @@ export interface RootRouteChildren {
   SecurityRoute: typeof SecurityRoute
   SecurityFaqRoute: typeof SecurityFaqRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  TeamRoute: typeof TeamRoute
   BlogGoldenAppmapTracesRuntimeContextRoute: typeof BlogGoldenAppmapTracesRuntimeContextRoute
   NavieSplatRoute: typeof NavieSplatRoute
   BlogIndexRoute: typeof BlogIndexRoute
@@ -293,6 +306,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/team': {
+      id: '/team'
+      path: '/team'
+      fullPath: '/team'
+      preLoaderRoute: typeof TeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -453,6 +473,7 @@ const rootRouteChildren: RootRouteChildren = {
   SecurityRoute: SecurityRoute,
   SecurityFaqRoute: SecurityFaqRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  TeamRoute: TeamRoute,
   BlogGoldenAppmapTracesRuntimeContextRoute:
     BlogGoldenAppmapTracesRuntimeContextRoute,
   NavieSplatRoute: NavieSplatRoute,
