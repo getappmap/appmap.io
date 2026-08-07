@@ -30,7 +30,7 @@ const securityFaqs = [
 
 const title = "Security FAQ | AppMap";
 const description =
-  "How AppMap handles code, runtime data, sign in, and file storage. Runtime evidence, locked to your environment.";
+  "How AppMap handles code, runtime data, sign in, and file storage. AppMap recordings stay in your environment.";
 
 export const Route = createFileRoute("/security-faq")({
   head: () => ({
@@ -62,7 +62,7 @@ function SecurityFaqPage() {
               Security FAQ
             </div>
             <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-              Runtime evidence, locked to your environment.
+              AppMap recordings stay in your environment.
             </h1>
           </div>
         </section>

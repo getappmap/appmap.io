@@ -88,8 +88,9 @@ function CompatibilityPage() {
             <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
               The model behind the agent does not matter. The trace is the
               same evidence for a frontier model or a compact one, hosted or
-              self-hosted. In our test it let a compact model match a frontier
-              model.
+              self-hosted. In our study, runtime context moved the
+              cost-capability frontier, letting cheaper models preserve
+              diagnostic accuracy under tight tool budgets.
             </p>
 
             <h3 className="mt-12 text-[22px] font-extrabold tracking-[-0.5px] text-[#f2effb] sm:text-[26px]">Lower inference cost wherever inference runs</h3>
