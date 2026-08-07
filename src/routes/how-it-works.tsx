@@ -287,7 +287,7 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Golden AppMap traces make behavior reviewable</h2>
             <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              A Golden AppMap trace is a versioned baseline of how an important path in your software actually ran. As the code changes, AppMap re-records that path and shows what changed in the behavior. AI agents curate the set and review the differences, while humans make the final call. When the approved change is merged, the new recording becomes the baseline for what comes next. Git gives you a history of what the code said. Golden AppMap traces give you a history of what the code did.
+              A Golden AppMap trace is a versioned baseline of how an important path in your software actually ran. As the code changes, AppMap re-records that path and shows what changed in the behavior. AI agents curate the set and review the differences, while humans make the final call. When the approved change is merged, the new recording becomes the baseline for what comes next.
             </p>
 
             <div className="mt-8 grid gap-4 lg:grid-cols-2">
