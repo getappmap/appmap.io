@@ -1,8 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
-const BOOKING_URL =
-  "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3vJ9fnl7qYTBT2rvePqOQ-9_FABHI0_VkxE_iDLfmfQojUBXGVCOByrkeEz9CbPTpoLjgY1oQ-";
+const BOOKING_URL = "https://calendar.app.google/bHKonWhR1Y14kjzV7";
 
 const title = "Book a demo | AppMap";
 const description =
