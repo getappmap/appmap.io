@@ -18,6 +18,7 @@ import { Route as HowItWorksRouteImport } from './routes/how-it-works'
 import { Route as GetAppmapRouteImport } from './routes/get-appmap'
 import { Route as EnterpriseRouteImport } from './routes/enterprise'
 import { Route as CompatibilityRouteImport } from './routes/compatibility'
+import { Route as CompanyRouteImport } from './routes/company'
 import { Route as CliQuickstartRouteImport } from './routes/cli-quickstart'
 import { Route as BookADemoRouteImport } from './routes/book-a-demo'
 import { Route as BenchmarksRouteImport } from './routes/benchmarks'
@@ -73,6 +74,11 @@ const CompatibilityRoute = CompatibilityRouteImport.update({
   path: '/compatibility',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CompanyRoute = CompanyRouteImport.update({
+  id: '/company',
+  path: '/company',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CliQuickstartRoute = CliQuickstartRouteImport.update({
   id: '/cli-quickstart',
   path: '/cli-quickstart',
@@ -126,6 +132,7 @@ export interface FileRoutesByFullPath {
   '/benchmarks': typeof BenchmarksRoute
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
+  '/company': typeof CompanyRoute
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/get-appmap': typeof GetAppmapRoute
@@ -146,6 +153,7 @@ export interface FileRoutesByTo {
   '/benchmarks': typeof BenchmarksRoute
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
+  '/company': typeof CompanyRoute
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/get-appmap': typeof GetAppmapRoute
@@ -167,6 +175,7 @@ export interface FileRoutesById {
   '/benchmarks': typeof BenchmarksRoute
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
+  '/company': typeof CompanyRoute
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/get-appmap': typeof GetAppmapRoute
@@ -189,6 +198,7 @@ export interface FileRouteTypes {
     | '/benchmarks'
     | '/book-a-demo'
     | '/cli-quickstart'
+    | '/company'
     | '/compatibility'
     | '/enterprise'
     | '/get-appmap'
@@ -209,6 +219,7 @@ export interface FileRouteTypes {
     | '/benchmarks'
     | '/book-a-demo'
     | '/cli-quickstart'
+    | '/company'
     | '/compatibility'
     | '/enterprise'
     | '/get-appmap'
@@ -229,6 +240,7 @@ export interface FileRouteTypes {
     | '/benchmarks'
     | '/book-a-demo'
     | '/cli-quickstart'
+    | '/company'
     | '/compatibility'
     | '/enterprise'
     | '/get-appmap'
@@ -250,6 +262,7 @@ export interface RootRouteChildren {
   BenchmarksRoute: typeof BenchmarksRoute
   BookADemoRoute: typeof BookADemoRoute
   CliQuickstartRoute: typeof CliQuickstartRoute
+  CompanyRoute: typeof CompanyRoute
   CompatibilityRoute: typeof CompatibilityRoute
   EnterpriseRoute: typeof EnterpriseRoute
   GetAppmapRoute: typeof GetAppmapRoute
@@ -330,6 +343,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CompatibilityRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/company': {
+      id: '/company'
+      path: '/company'
+      fullPath: '/company'
+      preLoaderRoute: typeof CompanyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cli-quickstart': {
       id: '/cli-quickstart'
       path: '/cli-quickstart'
@@ -402,6 +422,7 @@ const rootRouteChildren: RootRouteChildren = {
   BenchmarksRoute: BenchmarksRoute,
   BookADemoRoute: BookADemoRoute,
   CliQuickstartRoute: CliQuickstartRoute,
+  CompanyRoute: CompanyRoute,
   CompatibilityRoute: CompatibilityRoute,
   EnterpriseRoute: EnterpriseRoute,
   GetAppmapRoute: GetAppmapRoute,
