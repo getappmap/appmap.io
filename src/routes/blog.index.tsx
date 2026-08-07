@@ -5,7 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 
 const title = "Blog | AppMap";
 const description =
-  "Writing from the AppMap team on runtime evidence, behavioral baselines, and reviewing AI-generated code.";
+  "Writing from the AppMap team on runtime evidence, trusted baselines, and reviewing AI-generated code.";
 
 const posts = [
   {
@@ -14,7 +14,7 @@ const posts = [
     date: "2026-08-06",
     dateLabel: "August 6, 2026",
     excerpt:
-      "Golden AppMap traces turn real application runs into sanitized, versioned runtime context. Compare behavior across revisions and give developers and AI the same evidence.",
+      "Golden AppMap traces turn real application runs into versioned runtime evidence with sensitive values removed. Compare behavior across revisions and give developers and AI the same evidence.",
   },
 ];
 
