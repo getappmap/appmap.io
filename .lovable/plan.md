@@ -1,95 +1,142 @@
-# Golden AppMap trace terminology alignment
+# Egress language consistency pass
 
-## Goal
+The site states the no-egress claim four different ways. The accurate scoped model, already used correctly in the Golden AppMap traces blog post, becomes the single source:
 
-Make "versioned baseline" the primary definitional term for a Golden AppMap trace, and treat trust as the outcome of the team's normal review and merge process rather than a competing label. Text-only edits; no technical names, skill names, commands, file paths, route filename, URL slug, or the phrase "Golden AppMap trace" change. No em-dashes, no banned terms (Navie, Runtime Intelligence, Behavioral Intelligence).
+> AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI. If you use a hosted AI agent, selected context may be sent to that provider under its configuration and terms.
 
-## Changes
+Every claim below is rewritten from that core sentence, shortened where the slot requires it. Nothing else changes.
 
-### 1. src/routes/blog.golden-appmap-traces-runtime-context.tsx
-
-**1a. FAQ answer (line 20)** — definition of a Golden AppMap trace.
+## 1. src/routes/how-it-works.tsx, FAQ answer (line 33)
 
 Current:
 ```
-a: "A sanitized AppMap recording that a team has selected, reviewed, and committed as the trusted baseline for a specific application path.",
+a: "No. AppMap records and analyzes behavior locally. Recordings stay with your editor and your repository by default, with no egress.",
 ```
 Proposed:
 ```
-a: "A sanitized AppMap recording that a team has selected, reviewed, and committed as the versioned baseline for a specific application path.",
+a: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and recordings stay with your editor and your repository. If you use a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
 ```
 
-**1b. Hero image alt text (line 142)**
+## 2. src/routes/security-faq.tsx, FAQ answer (line 7)
 
 Current:
 ```
-alt="Branded title card reading Golden AppMap Traces: a trusted baseline for AI-era code review, on a dark gradient with the AppMap wordmark."
+a: "No. AppMap records and analyzes behavior locally. Recordings stay with your editor and your repository by default, with no egress.",
 ```
-Proposed:
+Proposed (identical to change 1, so the two FAQs match exactly):
 ```
-alt="Branded title card reading Golden AppMap Traces: a versioned baseline for AI-era code review, on a dark gradient with the AppMap wordmark."
-```
-
-**1c. Body, team selected as the baseline (lines 152-153)**
-
-Current:
-```
-team has selected as the trusted baseline.
-```
-Proposed:
-```
-team has selected as the versioned baseline.
+a: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and recordings stay with your editor and your repository. If you use a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
 ```
 
-**1d. Body, team agrees on the baseline (line 161) plus new sentence (after line 162)**
-
-This is where repository storage is explained, so the new sentence lands here.
+## 3. src/routes/enterprise.tsx, meta title and description (lines 25 and 27)
 
 Current:
 ```
-is a trusted baseline the team agrees on, kept under version control
-alongside the code it describes.
+const title = "AppMap Enterprise: Airgapped, On-Prem, No Data Egress";
+const description =
+  "Local by design. Airgapped and on-prem ready. Auditable, open-source clients.";
 ```
 Proposed:
 ```
-is a versioned baseline the team agrees on, kept under version control
-alongside the code it describes. The baseline is versioned with the code and
-becomes trusted through the team's normal review and merge process.
+const title = "AppMap Enterprise: Airgapped, On-Prem, No AppMap Cloud";
+const description =
+  "AppMap operates no cloud data plane for recordings. Airgapped and on-prem ready. Auditable, open-source clients.";
 ```
 
-### 2. src/routes/blog.index.tsx — meta description tagline (line 8)
+## 4. src/routes/enterprise.tsx, hero headline and subhead (lines 245 to 250)
 
-This instance is NOT the definitional noun; it is a topic keyword in the blog listing description. Proposed to align with the rule that trust is an outcome, not a label. Flagged for your approval since it is slightly outside the strict definitional scope.
+Current headline:
+```
+Runtime context that stays on the machine.
+```
+Proposed headline:
+```
+Runtime context that stays in your environment.
+```
+
+Current subhead:
+```
+For the VP standardizing how agents work, and the engineer who
+has to vouch for it. Airgapped and on-prem by design. No data
+egress.
+```
+Proposed subhead:
+```
+For the VP standardizing how agents work, and the engineer who
+has to vouch for it. Airgapped and on-prem by design. AppMap
+operates no cloud data plane for recordings, and your AI provider
+remains a separate, configurable channel.
+```
+
+## 5. src/routes/enterprise.tsx, card titled "No egress, by design" (lines 65 and 66)
+
+Current title:
+```
+title: "No egress, by design",
+```
+Proposed title:
+```
+title: "No AppMap cloud, by design",
+```
+
+Current body:
+```
+body: "AppMap does not send recordings to any AppMap-operated cloud. Recordings stay on the developer machine and in your repositories unless your organization centralizes them on infrastructure you control. Your AI tools are a separate channel: a hosted agent may send selected context to its own provider under that provider's terms, and enterprise deployments can restrict AppMap evidence to approved or self-hosted AI endpoints.",
+```
+Proposed body:
+```
+body: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and recordings stay on the developer machine and in your repositories unless your organization centralizes them on infrastructure you control. Your AI tools are a separate channel: if you use a hosted AI agent, selected context may be sent to that provider under its configuration and terms, and enterprise deployments can restrict AppMap evidence to approved or self-hosted AI endpoints.",
+```
+
+## 6. src/routes/enterprise.tsx, deployment diagram caption (lines 85 and 140)
+
+Current caption constant:
+```
+const diagramCaption =
+  "Local by design. AppMap operates no cloud data plane for recordings, so they stay in your environment. Deployment telemetry is configurable to route to your internal observability stack, such as Splunk, so operational data stays inside too.";
+```
+Proposed:
+```
+const diagramCaption =
+  "AppMap operates no cloud data plane for recordings, so recording, sanitization, and comparison run in your environment. Deployment telemetry is configurable to route to your internal observability stack, such as Splunk, so operational data stays inside too. If you use a hosted AI agent, selected context may be sent to that provider under its configuration and terms.";
+```
+
+Current in-diagram boundary label (line 140):
+```
+Your environment. No application data egress.
+```
+Proposed:
+```
+Your environment. No AppMap cloud data plane.
+```
+
+## 7. Additional unqualified claim found in the audit
+
+src/routes/enterprise.tsx, card "Airgapped and on-prem ready" (line 62). "no outbound dependency" reads as an absolute claim that also covers the AI channel.
 
 Current:
 ```
-"Writing from the AppMap team on runtime evidence, trusted baselines, and reviewing AI-generated code."
+body: "AppMap runs inside your environment with no outbound dependency. Enterprise deployments support offline activation and internal distribution of the clients. It fits airgapped and on-prem deployments where data cannot leave the network.",
 ```
 Proposed:
 ```
-"Writing from the AppMap team on runtime evidence, versioned baselines, and reviewing AI-generated code."
+body: "AppMap runs inside your environment with no outbound dependency on AppMap services. Enterprise deployments support offline activation and internal distribution of the clients. It fits airgapped and on-prem deployments where data cannot leave the network, paired with a self-hosted AI endpoint.",
 ```
 
-### 3. src/components/sections/home/BehavioralReview.tsx — homepage card body (line 22)
+## Checked and deliberately left unchanged
 
-Only the first clause changes; the rest of the card is untouched.
+- src/routes/blog.golden-appmap-traces-runtime-context.tsx lines 28, 40, and 43 to 45: already the scoped model, and the verbatim source for this pass.
+- src/routes/how-it-works.tsx line 38 and src/routes/security-faq.tsx line 11: storage and sanitization detail, no egress claim.
+- src/routes/pricing.tsx lines 5 and 95 ("start free locally"): a licensing scope statement, not a data-egress claim.
+- src/routes/enterprise.tsx line 305 ("generated locally"): describes where evidence is produced, not where data travels.
 
-Current:
-```
-body: "Promote an AppMap recording into a trusted baseline. AppMap compares before and after, so every reviewer sees whether behavior held or changed as intended.",
-```
-Proposed:
-```
-body: "Promote an AppMap recording into a versioned baseline. AppMap compares before and after, so every reviewer sees whether behavior held or changed as intended.",
-```
+## Verification after the build
 
-## Verification
+- `rg -n -i "no egress|no data egress|with no egress|no outbound dependency\." src/` returns nothing.
+- Every rewritten slot contains the phrase "AppMap-operated cloud" or "no cloud data plane for recordings".
+- `rg -n "—|Navie|Runtime Intelligence|Behavioral Intelligence" src/` returns nothing.
+- Typecheck passes clean.
 
-- `rg -n "trusted baseline" src/routes/blog.golden-appmap-traces-runtime-context.tsx src/routes/blog.index.tsx src/components/sections/home/BehavioralReview.tsx` returns no definitional uses (all expected conversions applied).
-- `rg -n "—|Navie|Runtime Intelligence|Behavioral Intelligence"` on the three edited files returns nothing.
-- Typecheck passes clean (`tsgo`).
-- "Golden AppMap trace" and all technical names, commands, file paths, and the URL slug remain unchanged.
+## Rules applied
 
-## Open decision
-
-Please confirm whether to include **change 2** (blog.index.tsx meta description). If you prefer to keep "trusted baselines" there, I will leave it and apply only changes 1a-1d and 3.
+No em-dashes. No banned terms. Golden AppMap trace file paths untouched. No layout or styling changes.
