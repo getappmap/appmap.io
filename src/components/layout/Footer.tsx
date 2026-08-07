@@ -29,7 +29,7 @@ const cols: {
   {
     heading: "Company",
     links: [
-      { label: "Blog", href: "/blog", external: true },
+      { label: "Blog", href: "/blog" },
       { label: "Release Notes", href: "/release-notes" },
       { label: "Contact", href: "mailto:elizabeth@appmap.io" },
       { label: "GitHub", href: "https://github.com/getappmap" },
