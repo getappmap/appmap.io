@@ -159,6 +159,18 @@ function BenchmarksPage() {
           </div>
         </section>
 
+        <section className="px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Why it works</h2>
+            <p className="mt-5 max-w-[760px] text-[16px] leading-[1.7] text-[#a99fc7]">
+              In the study, <code className="font-mono text-[#f2effb]">get_call_tree</code> was used in all 216 trace-augmented cells, about once per trajectory. One runtime query returned the execution path the agent needed to diagnose the problem, replacing the long sequence of file searches and code reads used by the static agent.
+            </p>
+            <p className="mt-9 text-[24px] font-bold tracking-[-0.4px] text-[#f2effb]">
+              Better evidence means less searching.
+            </p>
+          </div>
+        </section>
+
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">The cost-capability frontier</h2>
