@@ -29,7 +29,7 @@ export const Route = createFileRoute("/team")({
 
 const people = [
   {
-    name: "Elizabeth Lawler, DSc",
+    name: "Elizabeth Lawler, Sc.D.",
     role: "CEO and co-founder",
     body: [
       "Elizabeth has spent more than two decades building systems for sensitive data in regulated environments. She was Chief Data Officer at Generation Health, acquired by CVS Caremark, and later co-founded Conjur with Kevin, building the secrets-management company through its acquisition by CyberArk. She then served as VP of DevOps Security at CyberArk.",
@@ -68,10 +68,7 @@ function TeamPage() {
           }}
         >
           <div className="mx-auto max-w-[1120px]">
-            <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">
-              Team
-            </div>
-            <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
+            <h1 className="max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
               Team
             </h1>
             <p className="mt-6 max-w-[760px] text-[22px] font-semibold leading-[1.25] tracking-[-0.3px] text-[#f2effb] sm:text-[26px]">
