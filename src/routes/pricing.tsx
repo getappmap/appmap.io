@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
 const title =
-  "Pricing: Start Free Locally. Scale Runtime Context Across Your Team. | AppMap";
+  "Pricing: Start Free Locally. Scale Shared Recordings Across Your Team. | AppMap";
 const description =
   "Local recording, diagrams, and AI context are free for developers. AppMap Central adds a shared, customer-controlled behavioral context library in your own infrastructure. Enterprise adds controlled deployment and support.";
 const url = "https://appmap.io/pricing";
@@ -92,7 +92,7 @@ function PricingPage() {
               Pricing
             </div>
             <h1 className="mt-4 text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-              Start free locally. Scale runtime context across your team.
+              Start free locally. Scale shared recordings across your team.
             </h1>
             <p className="mt-5 max-w-[760px] text-[17px] leading-[1.65] text-[#a99fc7]">
               Local recording, diagrams, and AI context are free for developers. AppMap Central helps teams build and govern a shared behavioral context library across repositories and workflows.
@@ -129,7 +129,7 @@ function PricingPage() {
                 Contact us
               </div>
               <p className="mt-3 text-[14px] text-[#a99fc7]">
-                Shared runtime context for developers, AI agents, and automation.
+                Shared recordings for developers, AI agents, and automation.
               </p>
               <div className="mt-6 border-t border-[#2c2353]" />
               <Bullets items={central} />

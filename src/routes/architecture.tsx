@@ -3,7 +3,7 @@ import { Header } from "@/components/layout/Header";
 
 const title = "AppMap Architecture: In your editor today, in your repo tomorrow";
 const description =
-  "The recording lives in your editor today, and can travel with your repo as a companion artifact in .appmap.";
+  "The recording lives in your editor today, and can travel with your repo in the .appmap folder.";
 
 export const Route = createFileRoute("/architecture")({
   head: () => ({
@@ -59,7 +59,7 @@ const goldenTree = `repo/
       checkout-flow/
         manifest.json        # the flow, its routes, how to reproduce it
         baseline.appmap.json  # the approved before-trace
-        fingerprint.txt       # normalized behavioral hash of the baseline
+        fingerprint.txt       # stable fingerprint of the baseline
         normalization.yml     # volatile fields to ignore (timestamps, ids, durations)
       README.md               # what Golden AppMap traces are and how to update them`;
 
@@ -75,7 +75,7 @@ function ArchitecturePage() {
               In your editor today. In your repo tomorrow.
             </h1>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              You feel the value in the editor, where recordings are built and explored as you work. They can be persisted alongside your repository as a companion artifact: versioned with your code, generated in CI, scrubbed by default. The repository stays the canonical home of source; <code className="font-mono text-[#f2effb]">.appmap</code> is a companion.
+              You feel the value in the editor, where recordings are built and explored as you work. They can be saved in your repository too: versioned with your code, generated in CI, with sensitive values removed by default. Your source code stays the main content of the repo; <code className="font-mono text-[#f2effb]">.appmap</code> travels alongside it.
             </p>
           </div>
         </section>
@@ -105,7 +105,7 @@ function ArchitecturePage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Where Golden AppMap traces live</h2>
             <p className="mt-3 max-w-[820px] text-[16px] text-[#a99fc7]">
-              Approved baselines live next to the code, in <code className="font-mono text-[#f2effb]">.appmap/golden/</code>. Each baseline is a behavioral contract for one flow: the approved before-trace, a normalized fingerprint, and the rules for what runtime noise to ignore. Promote a trace into the baseline the same way you merge code, with review.
+              Approved baselines live next to the code, in <code className="font-mono text-[#f2effb]">.appmap/golden/</code>. Each baseline is a behavioral contract for one flow: the approved before-trace, a stable fingerprint, and the rules for what runtime noise to ignore. Promote a trace into the baseline the same way you merge code, with review.
             </p>
             <pre className="mt-8 overflow-x-auto rounded-xl border border-[#2c2353] bg-[#1c1538] p-6 font-mono text-[13px] leading-[1.7] text-[#cdd8ee]">{goldenTree}</pre>
             <p className="mt-6 max-w-[820px] text-[15px] text-[#f2effb]">

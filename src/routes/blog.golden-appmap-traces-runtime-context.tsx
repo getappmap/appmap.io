@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 
 const title = "Golden AppMap Traces: Durable Runtime Context for AI Code Review";
 const description =
-  "Golden AppMap traces turn real application runs into sanitized, versioned runtime context. Compare behavior across revisions and give developers and AI the same evidence.";
+  "Golden AppMap traces turn real application runs into versioned runtime evidence with sensitive values removed. Compare behavior across revisions and give developers and AI the same evidence.";
 const canonical = "https://appmap.io/blog/golden-appmap-traces-runtime-context";
 const heroImage = "/img/blog/golden-traces/golden-traces-hero.png";
 const heroImageAbsolute = `https://appmap.io${heroImage}`;
@@ -17,7 +17,7 @@ type Faq = { q: string; a: string; aNode?: ReactNode };
 const faqs: Faq[] = [
   {
     q: "What is a Golden AppMap trace?",
-    a: "A sanitized AppMap recording that a team has selected, reviewed, and committed as a behavioral baseline for a specific application path.",
+    a: "A sanitized AppMap recording that a team has selected, reviewed, and committed as the trusted baseline for a specific application path.",
   },
   {
     q: "How is a Golden AppMap trace different from a snapshot test?",
@@ -25,7 +25,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Where are Golden AppMap traces stored?",
-    a: "In the project's repository, as a sanitized companion artifact versioned with the code. No AppMap-operated cloud is required.",
+    a: "In the project's repository, as files versioned with the code, with sensitive values removed. No AppMap-operated cloud is required.",
   },
   {
     q: "Do Golden AppMap traces work with AI coding agents?",
@@ -139,7 +139,7 @@ function BlogPost() {
 
             <img
               src={heroImage}
-              alt="Branded title card reading Golden AppMap Traces: a behavioral baseline for AI-era code review, on a dark gradient with the AppMap wordmark."
+              alt="Branded title card reading Golden AppMap Traces: a trusted baseline for AI-era code review, on a dark gradient with the AppMap wordmark."
               className="mt-10 w-full rounded-2xl border border-[#2c2353] bg-[#16112b]"
             />
 
@@ -150,7 +150,7 @@ function BlogPost() {
             </p>
             <p className={P}>
               A Golden AppMap trace answers that question. It is a recorded application run that a
-              team has selected as a behavioral baseline. Later revisions of that path can be
+              team has selected as the trusted baseline. Later revisions of that path can be
               compared against it. The comparison is concrete: call structure, SQL shape, HTTP
               boundaries, downstream calls, and the runtime path of a known-good run beside the same
               evidence from the new code.
@@ -158,7 +158,7 @@ function BlogPost() {
             <p className={P}>
               Source code tells you what software could do. Runtime behavior tells you what it
               actually did. A Golden AppMap trace makes the second half of that sentence durable. It
-              is a trusted behavioral baseline the team agrees on, kept under version control
+              is a trusted baseline the team agrees on, kept under version control
               alongside the code it describes.
             </p>
 
@@ -206,16 +206,16 @@ function BlogPost() {
               traffic, exceptions, code structure, and their relationships. When a team promotes a
               recording into a Golden AppMap trace, AppMap sanitizes the committed baseline first.
               Captured parameter, return, and message values are replaced with deterministic tokens,
-              and SQL literals are normalized, preserving behavioral structure without preserving the
-              original runtime values.
+              and SQL values are replaced with placeholders, preserving the shape of the behavior without
+              preserving the original runtime values.
             </p>
             <p className={P}>
               Promotion is therefore a governance decision as well as a lifecycle step. A team
               selects a deterministic recording that represents correct behavior for a service or
               critical path, sanitizes and blesses it, and commits the resulting baseline alongside
-              the code. It lives in the repository as a{" "}
+              the code. It lives in the repository in the{" "}
               <Link to="/architecture" className={A}>
-                companion artifact
+                .appmap folder
               </Link>
               , versioned with the source, so the baseline and the code stay in sync through branches
               and releases.
@@ -320,7 +320,7 @@ function BlogPost() {
             <p className={P}>
               Golden AppMap trace review separates those structural changes from runtime noise.
               Volatile values and elapsed-time jitter do not determine whether a trace changed. The
-              reviewer sees the behavioral differences that survived normalization and can reconcile
+              reviewer sees the behavioral differences that remain after cleanup and can reconcile
               them against the intent of the code change.
             </p>
             <p className={P}>

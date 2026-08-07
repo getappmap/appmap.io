@@ -3,7 +3,7 @@ import { MotionOrPoster } from "@/components/common/MotionOrPoster";
 const features = [
   {
     title: "Runtime code review",
-    body: "A full-spectrum review of your branch against how the code actually ran. Correctness, security, performance, and more.",
+    body: "A review of your branch against how the code actually ran. Correctness, security, performance, and more.",
   },
   {
     title: "Visualizations",
@@ -19,7 +19,7 @@ const features = [
   },
   {
     title: "Golden AppMap trace review",
-    body: "Promote an AppMap recording into a behavioral baseline. AppMap compares before and after, so every reviewer sees whether behavior held or changed as intended.",
+    body: "Promote an AppMap recording into a trusted baseline. AppMap compares before and after, so every reviewer sees whether behavior held or changed as intended.",
   },
   {
     title: "One trace, every view",
