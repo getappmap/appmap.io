@@ -355,7 +355,7 @@ function EnterprisePageInner() {
                 Where the commercial line is
               </div>
               <p className="mt-4 text-[17px] leading-[1.65] text-[#f2effb]">
-                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, and every recording they make. Paid plans begin with AppMap Central: a shared, customer-controlled behavioral context library built from sanitized Golden AppMap traces in your repositories, spanning developer environments, repositories, GitHub, and automation. Review on pull requests, in CI or from each developer's environment, is one way to consume that library. Enterprise adds controlled deployment, packaging, configuration, integrations, training, priority support, and SLAs, including air-gapped operation. If AppMap has already spread inside your organization,{" "}
+                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, and every recording they make. Paid plans begin with AppMap Central: a shared library of trusted AppMap recordings built from sanitized Golden AppMap traces in your repositories, spanning developer environments, repositories, GitHub, and automation. Review on pull requests, in CI or from each developer's environment, is one way to consume that library. Enterprise adds controlled deployment, packaging, configuration, integrations, training, priority support, and SLAs, including air-gapped operation. If AppMap has already spread inside your organization,{" "}
                 <Link to="/book-a-demo" className="font-semibold text-[#ff07aa] hover:underline">
                   talk to us
                 </Link>
