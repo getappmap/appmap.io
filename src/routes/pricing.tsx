@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 const title =
   "Pricing: Start Free Locally. Scale Shared Recordings Across Your Team. | AppMap";
 const description =
-  "Local recording, diagrams, and AI context are free for developers. AppMap Central adds a shared, customer-controlled behavioral context library in your own infrastructure. Enterprise adds controlled deployment and support.";
+  "Local recording, diagrams, and AI context are free for developers. AppMap Central lets teams share and govern trusted AppMap recordings in infrastructure they control. Enterprise adds controlled deployment and support.";
 const url = "https://appmap.io/pricing";
 
 export const Route = createFileRoute("/pricing")({
@@ -66,9 +66,9 @@ const community = [
 const central = [
   "Sanitized Golden AppMap traces stored with the code they describe",
   "Shared trace coverage across important application paths",
-  "Normalized runtime findings that developers and AI agents can reuse",
-  "A common behavioral context library across editors, command line, GitHub, and automation",
-  "Team curation and governance of trusted runtime baselines",
+  "Recordings cleaned up so developers and AI agents can compare meaningful changes",
+  "A shared library of trusted AppMap recordings across editors, command line, GitHub, and automation",
+  "Team curation and governance of the recordings your team trusts as baselines",
   "Runs entirely in infrastructure you control",
 ];
 
@@ -95,7 +95,7 @@ function PricingPage() {
               Start free locally. Scale shared recordings across your team.
             </h1>
             <p className="mt-5 max-w-[760px] text-[17px] leading-[1.65] text-[#a99fc7]">
-              Local recording, diagrams, and AI context are free for developers. AppMap Central helps teams build and govern a shared behavioral context library across repositories and workflows.
+              Local recording, diagrams, and AI context are free for developers. AppMap Central lets teams share and govern recordings of how their applications actually ran, across repositories and workflows.
             </p>
           </div>
         </section>
@@ -134,7 +134,7 @@ function PricingPage() {
               <div className="mt-6 border-t border-[#2c2353]" />
               <Bullets items={central} />
               <p className="mt-5 text-[13px] leading-[1.55] text-[#a99fc7]">
-                One customer-controlled context library for a distributed, repository-native workflow. GitHub Actions and CI are optional workflows that can consume or maintain it. There is no hosted platform.
+                One shared library of trusted AppMap recordings, kept in your own repositories and developer environments. GitHub Actions and CI are optional workflows that can consume or maintain it. There is no hosted platform.
               </p>
               <div className="mt-8 flex-1" />
               <Link to="/book-a-demo" className={primaryBtn}>
