@@ -4,9 +4,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
-const title = "Golden AppMap Traces: Durable Runtime Evidence for AI Code Review";
+const title = "Golden AppMap Traces: Durable Runtime Context for AI Code Review";
 const description =
-  "Golden AppMap traces turn real application runs into versioned runtime evidence with sensitive values removed. Compare behavior across revisions and give developers and AI the same evidence.";
+  "Golden AppMap traces turn real application runs into versioned runtime context with sensitive values removed. Compare behavior across revisions and give developers and AI the same evidence.";
 const canonical = "https://appmap.io/blog/golden-appmap-traces-runtime-context";
 const heroImage = "/img/blog/golden-traces/golden-traces-hero.png";
 const heroImageAbsolute = `https://appmap.io${heroImage}`;
@@ -131,7 +131,7 @@ function BlogPost() {
               Blog
             </div>
             <h1 className="mt-4 text-[36px] font-extrabold leading-[1.08] tracking-[-1.3px] text-[#f2effb] sm:text-[46px]">
-              Golden AppMap Traces: Durable Runtime Evidence for AI Code Review
+              Golden AppMap Traces: Durable Runtime Context for AI Code Review
             </h1>
             <div className="mt-4 text-[14px] text-[#a99fc7]">
               <time dateTime={published}>August 6, 2026</time>
