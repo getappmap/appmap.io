@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import appmapLogo from "@/assets/images/appmap-logo.svg";
 import { Footer } from "@/components/layout/Footer";
 
 function NotFoundComponent() {
@@ -88,10 +89,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "AppMap",
+          legalName: "AppLand, Inc.",
           url: "https://appmap.io",
+          logo: `https://appmap.io${appmapLogo}`,
           sameAs: [
             "https://github.com/getappmap",
             "https://twitter.com/getappmap",
+          ],
+          founder: [
+            { "@type": "Person", name: "Elizabeth Lawler" },
+            { "@type": "Person", name: "Kevin Gilpin" },
           ],
         }),
       },

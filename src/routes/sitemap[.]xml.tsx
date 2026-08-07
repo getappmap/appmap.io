@@ -12,10 +12,10 @@ const entries = [
   { path: "/enterprise", priority: "0.8", changefreq: "monthly" as const },
   { path: "/pricing", priority: "0.8", changefreq: "monthly" as const },
   { path: "/get-appmap", priority: "0.8", changefreq: "monthly" as const },
+  { path: "/team", priority: "0.6", changefreq: "monthly" as const },
   { path: "/security-faq", priority: "0.6", changefreq: "monthly" as const },
   { path: "/book-a-demo", priority: "0.6", changefreq: "monthly" as const },
   { path: "/cli-quickstart", priority: "0.6", changefreq: "monthly" as const },
-  { path: "/platform", priority: "0.7", changefreq: "monthly" as const },
   { path: "/release-notes", priority: "0.6", changefreq: "weekly" as const },
   { path: "/blog", priority: "0.7", changefreq: "weekly" as const },
   {
