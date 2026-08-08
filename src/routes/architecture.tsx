@@ -62,6 +62,19 @@ const goldenTree = `repo/
       README.md               # what Golden AppMap traces are and how to update them`;
 
 function ArchitecturePage() {
+  return <Page />;
+}
+
+function Arrow() {
+  return (
+    <svg viewBox="0 0 24 40" className="my-3 h-9 w-6 text-[#ff07aa]" aria-hidden="true">
+      <path d="M12 2 V30" stroke="currentColor" strokeWidth="2" fill="none" />
+      <path d="M12 38 L5 27 H19 Z" fill="currentColor" />
+    </svg>
+  );
+}
+
+function Page() {
   return (
     <div className="min-h-screen bg-[#0d0a1a]">
       <Header />
