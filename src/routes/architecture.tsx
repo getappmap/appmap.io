@@ -3,7 +3,7 @@ import { Header } from "@/components/layout/Header";
 
 const title = "AppMap Architecture: In your editor today, in your repo tomorrow";
 const description =
-  "The recording lives in your editor today, and can travel with your repo in the .appmap folder.";
+  "AppMap creates runtime context in the developer environment. Selected recordings travel with the code as versioned Golden AppMap traces, available to developers and AI agents.";
 
 export const Route = createFileRoute("/architecture")({
   head: () => ({
@@ -41,15 +41,13 @@ Infrastructure  -> terraform
 Documentation   -> README.md
 Behavior        -> .appmap/`;
 
-const chips = [
-  "Developers",
-  "Claude",
-  "Cursor",
-  "Copilot",
-  "Gemini",
-  "CI",
-  "Backstage",
-  "Confluence, as a mirror",
+const branches = [
+  { label: "Developers in the editor", note: "explore recordings and diagrams" },
+  {
+    label: "Claude Code, Copilot, Cursor, Gemini, and other MCP clients",
+    note: "query runtime context over MCP",
+  },
+  { label: "Repository", note: "selected traces persist here" },
 ];
 
 const goldenTree = `repo/
@@ -72,11 +70,39 @@ function ArchitecturePage() {
           <div className="mx-auto max-w-[1120px]">
             <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Architecture</div>
             <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-              In your editor today. In your repo tomorrow.
+              Runtime context that travels with the code.
             </h1>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              You feel the value in the editor, where recordings are built and explored as you work. They can be saved in your repository too: versioned with your code, generated in CI, with sensitive values removed by default. Your source code stays the main content of the repo; <code className="font-mono text-[#f2effb]">.appmap</code> travels alongside it.
+              AppMap creates runtime context in the developer environment. Recording, exploration, diagrams, and MCP access all start locally, and most agent interaction happens there. When important behavior needs to persist, selected recordings can travel with the code as versioned Golden AppMap traces.
             </p>
+          </div>
+        </section>
+
+        <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Runtime context for every agent that works on the repository</h2>
+            <p className="mt-3 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
+              An AppMap recording is structured data, not just a diagram. An AI agent queries the same execution evidence a developer sees in the editor, directly from the developer environment over MCP. When recordings travel with the repository, that same evidence goes wherever the code goes.
+            </p>
+
+            <div className="mt-10 flex flex-col items-center">
+              <div className="rounded-xl border border-[#2c2353] bg-[#1c1538] px-6 py-3 text-center text-[15px] font-semibold text-[#f2effb]">
+                Developer environment
+              </div>
+              <Arrow />
+              <div className="rounded-xl border border-[#ff07aa] bg-[#1c1538] px-6 py-3 text-center text-[15px] font-semibold text-[#f2effb]">
+                AppMap runtime context
+              </div>
+              <Arrow />
+              <div className="grid w-full gap-4 md:grid-cols-3">
+                {branches.map((b) => (
+                  <div key={b.label} className="rounded-xl border border-[#2c2353] bg-[#1c1538] px-5 py-4 text-center">
+                    <div className="text-[14.5px] font-semibold leading-[1.5] text-[#f2effb]">{b.label}</div>
+                    <div className="mt-1.5 text-[13px] text-[#a99fc7]">{b.note}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
@@ -89,15 +115,13 @@ function ArchitecturePage() {
 
         <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One recording. Many consumers.</h2>
-            <p className="mt-3 max-w-[760px] text-[16px] text-[#a99fc7]">
-              The same recordings are read by your developers and by every agent. Portals like Confluence and Backstage become mirrors, not the source of truth.
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Behavior that survives the session</h2>
+            <p className="mt-3 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
+              An AI agent normally begins each investigation by reading the current code and reconstructing what matters. Golden AppMap traces let important runtime behavior travel forward with the repository as a versioned baseline.
             </p>
-            <div className="mt-8 flex flex-wrap gap-2.5">
-              {chips.map((c) => (
-                <span key={c} className="rounded-full border border-[#2c2353] bg-[#1c1538] px-4 py-2 text-[13.5px] text-[#f2effb]">{c}</span>
-              ))}
-            </div>
+            <p className="mt-5 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
+              A new agent, a different model, or a developer opening the repository later starts from the same recorded evidence of how important paths actually ran. This is not conversational memory. It is repository-native engineering memory, versioned and reviewed like the code itself. Most agent work starts with local runtime context. Git gives selected evidence a longer life, so future developers and agents can reuse important behavior instead of reconstructing it from source code.
+            </p>
           </div>
         </section>
 
@@ -113,6 +137,9 @@ function ArchitecturePage() {
             <pre className="mt-8 overflow-x-auto rounded-xl border border-[#2c2353] bg-[#1c1538] p-6 font-mono text-[13px] leading-[1.7] text-[#cdd8ee]">{goldenTree}</pre>
             <p className="mt-6 max-w-[820px] text-[15px] text-[#f2effb]">
               A Golden AppMap trace is reviewed and versioned like any other contract in the repo. Changing the baseline is a pull request, not a silent overwrite.
+            </p>
+            <p className="mt-6 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
+              Putting AppMap in the repository gives AI agents runtime context that travels with the code. Instead of reconstructing execution from source search every time they enter a codebase, agents query recorded call paths, SQL, HTTP activity, and application structure directly. Golden AppMap traces carry important behavior forward as versioned context, so a new agent or a different model starts from the same evidence. Both the code and the runtime context are available to the developer and the AI without requiring an AppMap-operated data service.
             </p>
           </div>
         </section>
