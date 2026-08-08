@@ -59,7 +59,7 @@ const community = [
   "Runtime recordings and interactive diagrams",
   "MCP context for AI coding agents",
   "VS Code, JetBrains, and CLI",
-  "Golden AppMap traces versioned in your repository",
+  "Golden AppMap traces in your local environment, versioned in your own repository",
   "AppMap skills and GitHub review workflows",
   "Community support",
 ];
@@ -89,7 +89,7 @@ function PricingPage() {
               Start free locally. Scale shared recordings across your team.
             </h1>
             <p className="mt-5 max-w-[760px] text-[17px] leading-[1.65] text-[#a99fc7]">
-              AppMap is free for developers and teams. Recordings, diagrams, MCP context, and Golden AppMap traces versioned in your repository cost nothing. Enterprise adds controlled deployment and support. Start locally. Share through the repository when your team is ready.
+              AppMap is free for developers and teams. Recordings, diagrams, MCP context, and Golden AppMap traces versioned in your repository cost nothing. Enterprise adds controlled deployment and support. AppMap starts in the developer environment, where recordings are created, explored, and used by AI agents.
             </p>
           </div>
         </section>
