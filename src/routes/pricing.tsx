@@ -108,7 +108,7 @@ function PricingPage() {
               <div className="mt-6 border-t border-[#2c2353]" />
               <Bullets items={community} />
               <p className="mt-5 text-[13px] leading-[1.55] text-[#a99fc7]">
-                Optional: an individual support subscription, $15 per month, for priority help, including Golden AppMap trace and review workflows. The product stays free at your desk.
+                Optional individual support, $15 per month, for priority help with AppMap installation, configuration, Golden AppMap traces, and review workflows. The product stays free at your desk.
               </p>
               <div className="mt-8 flex-1" />
               <Link to="/get-appmap" className={primaryBtn}>
