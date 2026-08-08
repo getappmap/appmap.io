@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
-const title = "AppMap Architecture: In your editor today, in your repo tomorrow";
+const title = "AppMap Architecture: Runtime Context That Travels With the Code";
 const description =
   "AppMap creates runtime context in the developer environment. Selected recordings travel with the code as versioned Golden AppMap traces, available to developers and AI agents.";
 
