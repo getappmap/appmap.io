@@ -50,7 +50,7 @@ const branches = [
   { label: "Repository", note: "selected traces persist here" },
 ];
 
-const goldenTree = `repo/
+const goldTraceTree = `repo/
   src/
   .appmap/
     gold_traces/
@@ -147,7 +147,7 @@ function Page() {
             <p className="mt-6 max-w-[820px] border-l-4 border-[#ff07aa] pl-4 text-[20px] font-semibold leading-[1.5] text-[#f2effb]">
               Git gives you a history of what the code said. AppMap Gold Traces give you a history of what the code did.
             </p>
-            <pre className="mt-8 overflow-x-auto rounded-xl border border-[#2c2353] bg-[#1c1538] p-6 font-mono text-[13px] leading-[1.7] text-[#cdd8ee]">{goldenTree}</pre>
+            <pre className="mt-8 overflow-x-auto rounded-xl border border-[#2c2353] bg-[#1c1538] p-6 font-mono text-[13px] leading-[1.7] text-[#cdd8ee]">{goldTraceTree}</pre>
             <p className="mt-6 max-w-[820px] text-[15px] text-[#f2effb]">
               A AppMap Gold Trace is reviewed and versioned like any other contract in the repo. Changing the baseline is a pull request, not a silent overwrite.
             </p>
