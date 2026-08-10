@@ -278,7 +278,7 @@ function BlogPost() {
               for it.
             </p>
             <p className={P}>
-              The action re-records the selected Golden AppMap paths against the PR head, compares
+              The action re-records the selected Gold Trace paths against the PR head, compares
               the runs against the committed baselines, and posts an interpreted review as a sticky
               comment on the pull request. Blessed baselines and any labels the agent adds are
               committed to the branch. The evidence travels with the change. It works with Claude

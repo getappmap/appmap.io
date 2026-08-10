@@ -53,7 +53,7 @@ const branches = [
 const goldenTree = `repo/
   src/
   .appmap/
-    golden/
+    gold_traces/
       checkout-flow/
         manifest.json        # the flow, its routes, how to reproduce it
         baseline.appmap.json  # the approved before-trace
@@ -142,7 +142,7 @@ function Page() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Where AppMap Gold Traces live</h2>
             <p className="mt-3 max-w-[820px] text-[16px] text-[#a99fc7]">
-              Approved baselines live next to the code, in <code className="font-mono text-[#f2effb]">.appmap/golden/</code>. Each baseline is a set of files saved alongside your code for one flow: the approved before-trace, a stable fingerprint, and the rules for which timing noise and changing values to ignore before comparison. Promote a trace into the baseline the same way you merge code, with review.
+              Approved baselines live next to the code, in <code className="font-mono text-[#f2effb]">.appmap/gold_traces/</code>. Each baseline is a set of files saved alongside your code for one flow: the approved before-trace, a stable fingerprint, and the rules for which timing noise and changing values to ignore before comparison. Promote a trace into the baseline the same way you merge code, with review.
             </p>
             <p className="mt-6 max-w-[820px] border-l-4 border-[#ff07aa] pl-4 text-[20px] font-semibold leading-[1.5] text-[#f2effb]">
               Git gives you a history of what the code said. AppMap Gold Traces give you a history of what the code did.
