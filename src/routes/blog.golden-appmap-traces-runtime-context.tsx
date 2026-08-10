@@ -4,9 +4,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
-const title = "Golden AppMap Traces: Durable Runtime Context for AI Code Review";
+const title = "AppMap Gold Traces: Durable Runtime Context for AI Code Review";
 const description =
-  "Golden AppMap traces turn real application runs into versioned runtime context with sensitive values removed. Compare behavior across revisions and give developers and AI the same evidence.";
+  "AppMap Gold Traces turn real application runs into versioned runtime context with sensitive values removed. Compare behavior across revisions and give developers and AI the same evidence.";
 const canonical = "https://appmap.io/blog/golden-appmap-traces-runtime-context";
 const heroImage = "/img/blog/golden-traces/golden-traces-hero.png";
 const heroImageAbsolute = `https://appmap.io${heroImage}`;
@@ -16,19 +16,19 @@ type Faq = { q: string; a: string; aNode?: ReactNode };
 
 const faqs: Faq[] = [
   {
-    q: "What is a Golden AppMap trace?",
+    q: "What is a AppMap Gold Trace?",
     a: "A sanitized AppMap recording that a team has selected, reviewed, and committed as the versioned baseline for a specific application path.",
   },
   {
-    q: "How is a Golden AppMap trace different from a snapshot test?",
-    a: "A snapshot test asserts on output. A Golden AppMap trace captures the recorded execution path behind the output: calls, queries, HTTP boundaries, and structure. The comparison covers how the result was produced, not just what it was.",
+    q: "How is a AppMap Gold Trace different from a snapshot test?",
+    a: "A snapshot test asserts on output. A AppMap Gold Trace captures the recorded execution path behind the output: calls, queries, HTTP boundaries, and structure. The comparison covers how the result was produced, not just what it was.",
   },
   {
-    q: "Where are Golden AppMap traces stored?",
+    q: "Where are AppMap Gold Traces stored?",
     a: "In the project's repository, as files versioned with the code, with sensitive values removed. No AppMap-operated cloud is required.",
   },
   {
-    q: "Do Golden AppMap traces work with AI coding agents?",
+    q: "Do AppMap Gold Traces work with AI coding agents?",
     a: "Yes. Agents query the same recordings over MCP, and the published AppMap skills let agents record, label, and review against baselines. The review-action posts results to the pull request.",
   },
   {
@@ -131,7 +131,7 @@ function BlogPost() {
               Blog
             </div>
             <h1 className="mt-4 text-[36px] font-extrabold leading-[1.08] tracking-[-1.3px] text-[#f2effb] sm:text-[46px]">
-              Golden AppMap Traces: Durable Runtime Context for AI Code Review
+              AppMap Gold Traces: Durable Runtime Context for AI Code Review
             </h1>
             <div className="mt-4 text-[14px] text-[#a99fc7]">
               <time dateTime={published}>August 6, 2026</time>
@@ -139,7 +139,7 @@ function BlogPost() {
 
             <img
               src={heroImage}
-              alt="Branded title card reading Golden AppMap Traces: a versioned baseline for AI-era code review, on a dark gradient with the AppMap wordmark."
+              alt="Branded title card reading AppMap Gold Traces: a versioned baseline for AI-era code review, on a dark gradient with the AppMap wordmark."
               className="mt-10 w-full rounded-2xl border border-[#2c2353] bg-[#16112b]"
             />
 
@@ -149,7 +149,7 @@ function BlogPost() {
               the behavior.
             </p>
             <p className={P}>
-              A Golden AppMap trace answers that question. It is a recorded application run that a
+              A AppMap Gold Trace answers that question. It is a recorded application run that a
               team has selected as the versioned baseline. Later revisions of that path can be
               compared against it. The comparison is concrete: call structure, SQL shape, HTTP
               boundaries, downstream calls, and the runtime path of a known-good run beside the same
@@ -157,12 +157,12 @@ function BlogPost() {
             </p>
             <p className={P}>
               Source code tells you what software could do. Runtime behavior tells you what it
-              actually did. A Golden AppMap trace makes the second half of that sentence durable. It
+              actually did. A AppMap Gold Trace makes the second half of that sentence durable. It
               is a versioned baseline the team agrees on, kept under version control
               alongside the code it describes. It becomes trusted through the team's normal review and merge process.
             </p>
 
-            <h2 className={H2}>The trust gap Golden AppMap traces close</h2>
+            <h2 className={H2}>The trust gap AppMap Gold Traces close</h2>
             <p className={P}>
               Developers do not fully trust AI-generated code. In{" "}
               <a
@@ -193,18 +193,18 @@ function BlogPost() {
               more code faster is not a strategy. Reviewing behavior instead of text is.
             </p>
             <p className={P}>
-              A Golden AppMap trace gives the review a fixed point. Instead of asking a reviewer to
+              A AppMap Gold Trace gives the review a fixed point. Instead of asking a reviewer to
               imagine what the change does, the review compares two recordings. The baseline shows
               the path as it ran before. The new recording shows it as it runs now. What appeared,
               disappeared, or moved is visible as a difference between two pieces of evidence, not as
               a guess.
             </p>
 
-            <h2 className={H2}>What a Golden AppMap trace contains</h2>
+            <h2 className={H2}>What a AppMap Gold Trace contains</h2>
             <p className={P}>
               An AppMap recording captures a real application run: function calls, SQL queries, HTTP
               traffic, exceptions, code structure, and their relationships. When a team promotes a
-              recording into a Golden AppMap trace, AppMap sanitizes the committed baseline first.
+              recording into a AppMap Gold Trace, AppMap sanitizes the committed baseline first.
               Captured parameter, return, and message values are replaced with deterministic tokens,
               and SQL values are replaced with placeholders, preserving the shape of the behavior without
               preserving the original runtime values.
@@ -252,7 +252,7 @@ function BlogPost() {
               formats.
             </p>
 
-            <h2 className={H2}>Golden AppMap traces in the pull request</h2>
+            <h2 className={H2}>AppMap Gold Traces in the pull request</h2>
             <p className={P}>
               This workflow is shipped and public. The AppMap skills, published at{" "}
               <a
@@ -263,7 +263,7 @@ function BlogPost() {
               >
                 github.com/getappmap/skills
               </a>
-              , cover recording, labeling, maintaining Golden AppMap trace baselines, and reviewing
+              , cover recording, labeling, maintaining AppMap Gold Trace baselines, and reviewing
               changes against them. The public review-action at{" "}
               <a
                 href="https://github.com/getappmap/review-action"
@@ -278,7 +278,7 @@ function BlogPost() {
               for it.
             </p>
             <p className={P}>
-              The action re-records the selected Golden AppMap paths against the PR head, compares
+              The action re-records the selected Gold Trace paths against the PR head, compares
               the runs against the committed baselines, and posts an interpreted review as a sticky
               comment on the pull request. Blessed baselines and any labels the agent adds are
               committed to the branch. The evidence travels with the change. It works with Claude
@@ -302,7 +302,7 @@ function BlogPost() {
               </figcaption>
             </figure>
 
-            <h2 className={H2}>What Golden AppMap trace review reveals</h2>
+            <h2 className={H2}>What AppMap Gold Trace review reveals</h2>
             <p className={P}>
               Runtime comparison surfaces changes that source review can easily miss. A new query
               inside a loop changes the SQL shape and call structure. A removed authorization check
@@ -313,12 +313,12 @@ function BlogPost() {
 
             <Figure
               src="/img/blog/golden-traces/golden-trace-comparison.png"
-              alt="Side-by-side sequence diagrams comparing a Golden AppMap trace baseline against a new run showing an N plus one query pattern and a missing authentication call."
-              caption="Left, the Golden AppMap trace baseline. Right, the same path on a feature branch: two new queries inside the lookup and a bcrypt call missing from the execution path. Structural changes like these determine the comparison; timings are shown for context and do not decide whether a trace changed. Illustrative example."
+              alt="Side-by-side sequence diagrams comparing a AppMap Gold Trace baseline against a new run showing an N plus one query pattern and a missing authentication call."
+              caption="Left, the AppMap Gold Trace baseline. Right, the same path on a feature branch: two new queries inside the lookup and a bcrypt call missing from the execution path. Structural changes like these determine the comparison; timings are shown for context and do not decide whether a trace changed. Illustrative example."
             />
 
             <p className={P}>
-              Golden AppMap trace review separates those structural changes from runtime noise.
+              AppMap Gold Trace review separates those structural changes from runtime noise.
               Volatile values and elapsed-time jitter do not determine whether a trace changed. The
               reviewer sees the behavioral differences that remain after cleanup and can reconcile
               them against the intent of the code change.
@@ -348,7 +348,7 @@ function BlogPost() {
               against it.
             </p>
             <p className={P}>
-              One run. Many views. Same ground truth. The Golden AppMap trace is how that ground
+              One run. Many views. Same ground truth. The AppMap Gold Trace is how that ground
               truth persists.
             </p>
 

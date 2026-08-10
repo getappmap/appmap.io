@@ -14,7 +14,7 @@ const pilotSteps = [
   },
   {
     h: "Governed behavior baselines",
-    b: "Promote only the high-value flows into governed Golden AppMap traces, then enforce them in CI when you are ready. Each baseline is reviewed and versioned in your repository, so behavioral contracts are auditable and owned, not ad hoc. Begin lightweight in the editor; graduate the flows that matter into the pipeline.",
+    b: "Promote only the high-value flows into governed AppMap Gold Traces, then enforce them in CI when you are ready. Each baseline is reviewed and versioned in your repository, so behavioral contracts are auditable and owned, not ad hoc. Begin lightweight in the editor; graduate the flows that matter into the pipeline.",
   },
   {
     h: "Enforce when ready.",
@@ -173,7 +173,7 @@ function DeploymentDiagram() {
               ZONE 2 · CI
             </text>
 
-            <Pill x={52} y={402} w={206} h={44} label="Golden AppMap traces" />
+            <Pill x={52} y={402} w={206} h={44} label="AppMap Gold Traces" />
             <Pill x={290} y={402} w={430} h={44} label="AppMap review workflow (GitHub Action or CI job)" />
             <Pill x={770} y={402} w={160} h={44} label="PR comment" />
 
@@ -358,7 +358,7 @@ function EnterprisePageInner() {
                 Where the commercial line is
               </div>
               <p className="mt-4 text-[17px] leading-[1.65] text-[#f2effb]">
-                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, every recording they make, and Golden AppMap traces versioned in the repository. Enterprise adds controlled deployment, packaging, configuration, integrations, training, priority support, and SLAs, including airgapped operation. If AppMap has already spread inside your organization,{" "}
+                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, every recording they make, and AppMap Gold Traces versioned in the repository. Enterprise adds controlled deployment, packaging, configuration, integrations, training, priority support, and SLAs, including airgapped operation. If AppMap has already spread inside your organization,{" "}
                 <Link to="/book-a-demo" className="font-semibold text-[#ff07aa] hover:underline">
                   talk to us
                 </Link>
