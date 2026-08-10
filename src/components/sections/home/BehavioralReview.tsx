@@ -18,7 +18,7 @@ const features = [
     body: "Behavior changes show up as a concrete delta between auto-generated API definitions.",
   },
   {
-    title: "Golden AppMap trace review",
+    title: "AppMap Gold Trace review",
     body: "Promote an AppMap recording into a versioned baseline. AppMap compares before and after, so every reviewer sees whether behavior held or changed as intended.",
   },
   {
