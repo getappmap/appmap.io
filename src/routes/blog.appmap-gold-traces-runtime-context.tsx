@@ -7,8 +7,8 @@ import { Footer } from "@/components/layout/Footer";
 const title = "AppMap Gold Traces: Durable Runtime Context for AI Code Review";
 const description =
   "AppMap Gold Traces turn real application runs into versioned runtime context with sensitive values removed. Compare behavior across revisions and give developers and AI the same evidence.";
-const canonical = "https://appmap.io/blog/golden-appmap-traces-runtime-context";
-const heroImage = "/img/blog/golden-traces/golden-traces-hero.png";
+const canonical = "https://appmap.io/blog/appmap-gold-traces-runtime-context";
+const heroImage = "/img/blog/gold-traces/golden-traces-hero.png";
 const heroImageAbsolute = `https://appmap.io${heroImage}`;
 const published = "2026-08-06";
 
@@ -52,7 +52,7 @@ const faqs: Faq[] = [
   },
 ];
 
-export const Route = createFileRoute("/blog/golden-appmap-traces-runtime-context")({
+export const Route = createFileRoute("/blog/appmap-gold-traces-runtime-context")({
   head: () => ({
     meta: [
       { title },
@@ -233,7 +233,7 @@ function BlogPost() {
             </p>
 
             <Figure
-              src="/img/blog/golden-traces/sequence-diagram-view.jpg"
+              src="/img/blog/gold-traces/sequence-diagram-view.jpg"
               alt="AppMap sequence diagram showing package lifelines, a loop block, and per-call timings."
               caption="An AppMap sequence diagram in the editor. Lifelines, loops, and timings from a real recorded run."
             />
@@ -312,7 +312,7 @@ function BlogPost() {
             </p>
 
             <Figure
-              src="/img/blog/golden-traces/golden-trace-comparison.png"
+              src="/img/blog/gold-traces/golden-trace-comparison.png"
               alt="Side-by-side sequence diagrams comparing a AppMap Gold Trace baseline against a new run showing an N plus one query pattern and a missing authentication call."
               caption="Left, the AppMap Gold Trace baseline. Right, the same path on a feature branch: two new queries inside the lookup and a bcrypt call missing from the execution path. Structural changes like these determine the comparison; timings are shown for context and do not decide whether a trace changed. Illustrative example."
             />
@@ -330,7 +330,7 @@ function BlogPost() {
             </p>
 
             <Figure
-              src="/img/blog/golden-traces/sql-queries-view.jpg"
+              src="/img/blog/gold-traces/sql-queries-view.jpg"
               alt="AppMap queries panel listing executed SQL statements with parameter placeholders."
               caption="Queries from a recorded run, shown as parameterized statements."
             />
