@@ -28,6 +28,7 @@ import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as NavieSplatRouteImport } from './routes/navie.$'
+import { Route as BlogGoldenAppmapTracesRuntimeContextRouteImport } from './routes/blog.golden-appmap-traces-runtime-context'
 import { Route as BlogAppmapGoldTracesRuntimeContextRouteImport } from './routes/blog.appmap-gold-traces-runtime-context'
 import { Route as DocsNavieSplatRouteImport } from './routes/docs.navie.$'
 
@@ -126,6 +127,12 @@ const NavieSplatRoute = NavieSplatRouteImport.update({
   path: '/navie/$',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogGoldenAppmapTracesRuntimeContextRoute =
+  BlogGoldenAppmapTracesRuntimeContextRouteImport.update({
+    id: '/blog/golden-appmap-traces-runtime-context',
+    path: '/blog/golden-appmap-traces-runtime-context',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogAppmapGoldTracesRuntimeContextRoute =
   BlogAppmapGoldTracesRuntimeContextRouteImport.update({
     id: '/blog/appmap-gold-traces-runtime-context',
@@ -157,6 +164,7 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
   '/blog/appmap-gold-traces-runtime-context': typeof BlogAppmapGoldTracesRuntimeContextRoute
+  '/blog/golden-appmap-traces-runtime-context': typeof BlogGoldenAppmapTracesRuntimeContextRoute
   '/navie/$': typeof NavieSplatRoute
   '/blog/': typeof BlogIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
@@ -180,6 +188,7 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
   '/blog/appmap-gold-traces-runtime-context': typeof BlogAppmapGoldTracesRuntimeContextRoute
+  '/blog/golden-appmap-traces-runtime-context': typeof BlogGoldenAppmapTracesRuntimeContextRoute
   '/navie/$': typeof NavieSplatRoute
   '/blog': typeof BlogIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
@@ -204,6 +213,7 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
   '/blog/appmap-gold-traces-runtime-context': typeof BlogAppmapGoldTracesRuntimeContextRoute
+  '/blog/golden-appmap-traces-runtime-context': typeof BlogGoldenAppmapTracesRuntimeContextRoute
   '/navie/$': typeof NavieSplatRoute
   '/blog/': typeof BlogIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
@@ -229,6 +239,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/team'
     | '/blog/appmap-gold-traces-runtime-context'
+    | '/blog/golden-appmap-traces-runtime-context'
     | '/navie/$'
     | '/blog/'
     | '/docs/navie/$'
@@ -252,6 +263,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/team'
     | '/blog/appmap-gold-traces-runtime-context'
+    | '/blog/golden-appmap-traces-runtime-context'
     | '/navie/$'
     | '/blog'
     | '/docs/navie/$'
@@ -275,6 +287,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/team'
     | '/blog/appmap-gold-traces-runtime-context'
+    | '/blog/golden-appmap-traces-runtime-context'
     | '/navie/$'
     | '/blog/'
     | '/docs/navie/$'
@@ -299,6 +312,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TeamRoute: typeof TeamRoute
   BlogAppmapGoldTracesRuntimeContextRoute: typeof BlogAppmapGoldTracesRuntimeContextRoute
+  BlogGoldenAppmapTracesRuntimeContextRoute: typeof BlogGoldenAppmapTracesRuntimeContextRoute
   NavieSplatRoute: typeof NavieSplatRoute
   BlogIndexRoute: typeof BlogIndexRoute
   DocsNavieSplatRoute: typeof DocsNavieSplatRoute
@@ -439,6 +453,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NavieSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/golden-appmap-traces-runtime-context': {
+      id: '/blog/golden-appmap-traces-runtime-context'
+      path: '/blog/golden-appmap-traces-runtime-context'
+      fullPath: '/blog/golden-appmap-traces-runtime-context'
+      preLoaderRoute: typeof BlogGoldenAppmapTracesRuntimeContextRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/appmap-gold-traces-runtime-context': {
       id: '/blog/appmap-gold-traces-runtime-context'
       path: '/blog/appmap-gold-traces-runtime-context'
@@ -476,6 +497,8 @@ const rootRouteChildren: RootRouteChildren = {
   TeamRoute: TeamRoute,
   BlogAppmapGoldTracesRuntimeContextRoute:
     BlogAppmapGoldTracesRuntimeContextRoute,
+  BlogGoldenAppmapTracesRuntimeContextRoute:
+    BlogGoldenAppmapTracesRuntimeContextRoute,
   NavieSplatRoute: NavieSplatRoute,
   BlogIndexRoute: BlogIndexRoute,
   DocsNavieSplatRoute: DocsNavieSplatRoute,
