@@ -9,7 +9,7 @@ const description =
 
 const posts = [
   {
-    to: "/blog/golden-appmap-traces-runtime-context" as const,
+    to: "/blog/appmap-gold-traces-runtime-context" as const,
     title: "AppMap Gold Traces: Durable Runtime Context for AI Code Review",
     date: "2026-08-06",
     dateLabel: "August 6, 2026",

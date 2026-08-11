@@ -19,7 +19,7 @@ const entries = [
   { path: "/release-notes", priority: "0.6", changefreq: "weekly" as const },
   { path: "/blog", priority: "0.7", changefreq: "weekly" as const },
   {
-    path: "/blog/golden-appmap-traces-runtime-context",
+    path: "/blog/appmap-gold-traces-runtime-context",
     priority: "0.7",
     changefreq: "monthly" as const,
   },
