@@ -8,7 +8,7 @@ const title = "AppMap Gold Traces: Durable Runtime Context for AI Code Review";
 const description =
   "AppMap Gold Traces turn real application runs into versioned runtime context with sensitive values removed. Compare behavior across revisions and give developers and AI the same evidence.";
 const canonical = "https://appmap.io/blog/appmap-gold-traces-runtime-context";
-const heroImage = "/img/blog/gold-traces/golden-traces-hero.png";
+const heroImage = "/img/blog/gold-traces/gold-traces-hero.png";
 const heroImageAbsolute = `https://appmap.io${heroImage}`;
 const published = "2026-08-06";
 
@@ -312,7 +312,7 @@ function BlogPost() {
             </p>
 
             <Figure
-              src="/img/blog/gold-traces/golden-trace-comparison.png"
+              src="/img/blog/gold-traces/gold-trace-comparison.png"
               alt="Side-by-side sequence diagrams comparing a AppMap Gold Trace baseline against a new run showing an N plus one query pattern and a missing authentication call."
               caption="Left, the AppMap Gold Trace baseline. Right, the same path on a feature branch: two new queries inside the lookup and a bcrypt call missing from the execution path. Structural changes like these determine the comparison; timings are shown for context and do not decide whether a trace changed. Illustrative example."
             />
