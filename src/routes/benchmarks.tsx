@@ -244,7 +244,7 @@ function BenchmarksPage() {
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">The same runtime evidence answers two questions.</h2>
             <div className="mt-9 rounded-2xl border border-[#2c2353] bg-[#16112b] px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
               <div className="grid gap-8 md:grid-cols-2 md:gap-0">
-                <div className="md:pr-10 lg:md:pr-14">
+                <div className="md:pr-10 lg:pr-14">
                   <div className="text-[12px] font-bold uppercase tracking-[1.4px] text-[#7c8aa6]">Measured in this study</div>
                   <h3 className="mt-3 text-[22px] font-extrabold tracking-[-0.5px] text-[#f2effb] sm:text-[24px]">Reactive diagnosis</h3>
                   <p className="mt-2 text-[16px] font-semibold text-[#a99fc7]">What caused this symptom?</p>
@@ -267,7 +267,7 @@ function BenchmarksPage() {
                     </li>
                   </ul>
                 </div>
-                <div className="relative md:pl-10 lg:md:pl-14">
+                <div className="relative md:pl-10 lg:pl-14">
                   <div className="absolute top-0 left-0 hidden h-full w-px bg-[#2c2353] md:block" />
                   <div className="h-px w-full bg-[#2c2353] md:hidden" />
                   <div className="pt-8 md:pt-0">
