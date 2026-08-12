@@ -21,9 +21,10 @@ const steps = [
 
 const fullWidth = {
   chip: "2-3",
-  image: "/marketing-assets/review/trace-highlight.png",
-  alt: "AppMap behavioral diff showing the actor search call highlighted in amber against the dimmed baseline trace, with the SQL order-by change calculated above",
-  caption: "The recording, compared against the AppMap Gold Trace baseline. The one changed call is highlighted.",
+  image: "/marketing-assets/review/trace-diff-diagram.png",
+  fullTrace: "/marketing-assets/review/trace-highlight.png",
+  alt: "Sequence diagram of a client request flowing through JWTAuthFilter, ActorService, ActorDao, and Postgres, with the changed order-by query highlighted in amber",
+  caption: "The recorded run as a sequence diagram. The amber call is the one that changed against the AppMap Gold Trace baseline.",
 };
 
 const rowPanels = [
@@ -82,9 +83,9 @@ export function ReviewLoop() {
           ))}
         </ol>
 
-        <div className="relative mx-auto mt-6 w-full max-w-[640px]">
+        <div className="relative mx-auto mt-6 max-w-[920px]">
           <Chip>{fullWidth.chip}</Chip>
-          <figure className="w-full overflow-hidden rounded-2xl border border-[color:var(--color-am-line)]">
+          <figure className="w-full overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
             <div className="w-full overflow-x-auto">
               <a
                 href={fullWidth.image}
@@ -96,19 +97,19 @@ export function ReviewLoop() {
                   src={fullWidth.image}
                   alt={fullWidth.alt}
                   loading="lazy"
-                  className="block h-auto w-full min-w-[720px] lg:min-w-0"
+                  className="block h-auto w-full min-w-[600px] lg:min-w-0"
                 />
               </a>
             </div>
             <figcaption className="flex items-center justify-between gap-4 border-t border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] px-5 py-3 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
               <span>{fullWidth.caption}</span>
               <a
-                href={fullWidth.image}
+                href={fullWidth.fullTrace}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="shrink-0 text-[12px] font-medium text-[color:var(--color-am-brand)] hover:underline"
               >
-                View full size
+                View the full trace
               </a>
             </figcaption>
           </figure>
