@@ -1,12 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
+import { PaperRequest } from "@/components/sections/benchmarks/PaperRequest";
 
 const title = "AppMap Benchmark: Runtime Evidence on Ambiguous Enterprise Bugs";
 const description =
   "Real-world issues arrive as symptoms, not pre-solved bugs. In a private multi-module Java testbed with no solution leakage, runtime evidence preserved root-cause accuracy under tight tool-call budgets.";
-
-const PAPER_REQUEST_URL =
-  "mailto:elizabeth@appmap.io?subject=Runtime%20RCA%20paper%20request";
 
 export const Route = createFileRoute("/benchmarks")({
   head: () => ({
