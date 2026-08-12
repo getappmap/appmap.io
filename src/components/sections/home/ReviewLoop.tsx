@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 const steps = [
   {
     title: "AI writes the change",
