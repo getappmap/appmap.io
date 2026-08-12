@@ -8,12 +8,12 @@ const steps = [
     body: "Sequence diagrams, Trace View, queries, dependencies, and other AppMap views show what the changed software actually did.",
   },
   {
-    title: "Golden AppMap traces check the behavior",
+    title: "AppMap Gold Traces check the behavior",
     body: "Compare the new run with a trusted baseline to see what held, what changed, and whether the change behaved as intended.",
   },
   {
     title: "The review is written into the pull request",
-    body: "The Golden AppMap trace review skill writes the runtime-backed result into the PR so reviewers see what changed in behavior, not just in code.",
+    body: "The AppMap Gold Trace review skill writes the runtime-backed result into the PR so reviewers see what changed in behavior, not just in code.",
   },
 ];
 
@@ -25,7 +25,7 @@ export function ReviewLoop() {
           Stop reviewing code. Start reviewing behavior.
         </h2>
         <p className="mt-3 max-w-[680px] text-[17px] text-[color:var(--color-am-muted)]">
-          AppMap turns a recorded run into diagrams developers can inspect and structured runtime evidence AI tools can query. Golden AppMap traces compare the change against trusted behavior, and the review result can be written directly into the pull request.
+          AppMap turns a recorded run into diagrams developers can inspect and structured runtime evidence AI tools can query. AppMap Gold Traces compare the change against trusted behavior, and the review result can be written directly into the pull request.
         </p>
 
         <ol className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -47,7 +47,7 @@ export function ReviewLoop() {
           Every pull request explains itself.
         </p>
         <p className="mt-3 max-w-3xl text-[14px] text-[color:var(--color-am-muted)]">
-          A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the result still matches the Golden AppMap trace.
+          A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the result still matches the AppMap Gold Trace.
         </p>
         <div className="mt-6 rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] p-5">
           <p className="text-[14px] leading-[1.55] text-[color:var(--color-am-muted)]">
