@@ -16,12 +16,12 @@ type Faq = { q: string; a: string; aNode?: ReactNode };
 
 const faqs: Faq[] = [
   {
-    q: "What is a AppMap Gold Trace?",
+    q: "What is an AppMap Gold Trace?",
     a: "A sanitized AppMap recording that a team has selected, reviewed, and committed as the versioned baseline for a specific application path.",
   },
   {
-    q: "How is a AppMap Gold Trace different from a snapshot test?",
-    a: "A snapshot test asserts on output. A AppMap Gold Trace captures the recorded execution path behind the output: calls, queries, HTTP boundaries, and structure. The comparison covers how the result was produced, not just what it was.",
+    q: "How is an AppMap Gold Trace different from a snapshot test?",
+    a: "A snapshot test asserts on output. An AppMap Gold Trace captures the recorded execution path behind the output: calls, queries, HTTP boundaries, and structure. The comparison covers how the result was produced, not just what it was.",
   },
   {
     q: "Where are AppMap Gold Traces stored?",
@@ -149,7 +149,7 @@ function BlogPost() {
               the behavior.
             </p>
             <p className={P}>
-              A AppMap Gold Trace answers that question. It is a recorded application run that a
+              An AppMap Gold Trace answers that question. It is a recorded application run that a
               team has selected as the versioned baseline. Later revisions of that path can be
               compared against it. The comparison is concrete: call structure, SQL shape, HTTP
               boundaries, downstream calls, and the runtime path of a known-good run beside the same
@@ -157,7 +157,7 @@ function BlogPost() {
             </p>
             <p className={P}>
               Source code tells you what software could do. Runtime behavior tells you what it
-              actually did. A AppMap Gold Trace makes the second half of that sentence durable. It
+              actually did. An AppMap Gold Trace makes the second half of that sentence durable. It
               is a versioned baseline the team agrees on, kept under version control
               alongside the code it describes. It becomes trusted through the team's normal review and merge process.
             </p>
@@ -193,18 +193,18 @@ function BlogPost() {
               more code faster is not a strategy. Reviewing behavior instead of text is.
             </p>
             <p className={P}>
-              A AppMap Gold Trace gives the review a fixed point. Instead of asking a reviewer to
+              An AppMap Gold Trace gives the review a fixed point. Instead of asking a reviewer to
               imagine what the change does, the review compares two recordings. The baseline shows
               the path from the previous run. The new recording shows it as it runs now. What appeared,
               disappeared, or moved is visible as a difference between two pieces of evidence, not as
               a guess.
             </p>
 
-            <h2 className={H2}>What a AppMap Gold Trace contains</h2>
+            <h2 className={H2}>What an AppMap Gold Trace contains</h2>
             <p className={P}>
               An AppMap recording captures a real application run: function calls, SQL queries, HTTP
               traffic, exceptions, code structure, and their relationships. When a team promotes a
-              recording into a AppMap Gold Trace, AppMap sanitizes the committed baseline first.
+              recording into an AppMap Gold Trace, AppMap sanitizes the committed baseline first.
               Captured parameter, return, and message values are replaced with deterministic tokens,
               and SQL values are replaced with placeholders, preserving the shape of the behavior without
               preserving the original runtime values.
@@ -313,7 +313,7 @@ function BlogPost() {
 
             <Figure
               src="/img/blog/gold-traces/gold-trace-comparison.png"
-              alt="Side-by-side sequence diagrams comparing a AppMap Gold Trace baseline against a new run showing an N plus one query pattern and a missing authentication call."
+              alt="Side-by-side sequence diagrams comparing an AppMap Gold Trace baseline against a new run showing an N plus one query pattern and a missing authentication call."
               caption="Left, the AppMap Gold Trace baseline. Right, the same path on a feature branch: two new queries inside the lookup and a bcrypt call missing from the execution path. Structural changes like these determine the comparison; timings are shown for context and do not decide whether a trace changed. Illustrative example."
             />
 
