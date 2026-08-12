@@ -81,12 +81,12 @@ export function ReviewLoop() {
               <span className="absolute left-3 top-3 z-10 flex h-7 min-w-7 items-center justify-center rounded-lg bg-[color:var(--color-am-brand)] px-2 text-[13px] font-extrabold text-white">
                 {p.chip}
               </span>
-              <div className="h-[260px] overflow-x-auto">
+              <div className="h-[260px] overflow-hidden overflow-x-auto">
                 <img
                   src={p.image}
                   alt={p.alt}
                   loading="lazy"
-                  className={`block h-[260px] w-full object-cover object-top ${p.minW ? "min-w-[720px] lg:min-w-0" : ""}`}
+                  className={`block h-auto w-full object-top ${p.minW ? "min-w-[720px] lg:min-w-0" : ""}`}
                 />
               </div>
               <figcaption className="line-clamp-3 flex-1 border-t border-black/10 bg-[color:var(--color-am-card)] px-5 py-4 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
