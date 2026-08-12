@@ -49,12 +49,12 @@ const swebench = [
     body: "SWE-bench draws from highly visible open-source repositories that may already be represented in model pretraining. A result can reflect learned repository priors as well as investigation performed during the benchmark.",
   },
   {
-    title: "Triaged issues can reveal the answer",
-    body: "Real GitHub issue threads may name the file, stack trace, function, or bug mechanism. Once the issue points toward the cause, the hardest part of root-cause analysis has already been reduced.",
+    title: "Post-triage issues can narrow the search",
+    body: "Real GitHub issue threads may identify a file, stack trace, function, or likely mechanism. Once those clues are present, the agent begins closer to implementation and the exploratory RCA phase becomes harder to measure independently.",
   },
   {
-    title: "Patch success can hide weak diagnosis",
-    body: "An implementation agent can re-explore the code and recover from an incomplete diagnosis. We separated diagnosis from fixing so the study could measure the evidence channel itself.",
+    title: "Patch success can mask weak diagnosis",
+    body: "An implementation agent can re-explore the code and recover from an incomplete RCA report. We separated diagnosis from fixing so the study could measure the quality and cost of the evidence-gathering stage itself.",
   },
 ];
 
@@ -163,10 +163,10 @@ function BenchmarksPage() {
               Real-world issues are not well-defined bugs.
             </h1>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              They arrive as symptoms. The agent still has to discover the mechanism, code location, execution path, and affected behavior before it can produce a reliable fix. We built this study to measure that diagnostic work directly.
+              Bug reports arrive as symptoms. Pull requests arrive as diffs. Neither tells you what the running system actually did. Developers and AI agents still have to discover the execution path, affected code, queries, dependencies, and behavioral consequences.
             </p>
             <p className="mt-4 text-[17px] font-semibold text-[#f2effb]">
-              That required moving beyond SWE-bench.
+              This study measures the reactive case, root-cause analysis, so the value of runtime evidence can be isolated from patch generation.
             </p>
             <a
               href="#results"
@@ -178,10 +178,10 @@ function BenchmarksPage() {
           </div>
         </section>
 
-        {/* 2. Why SWE-bench could not answer this question */}
+        {/* 2. Why SWE-bench could not isolate diagnosis */}
         <section className="border-t border-[#2c2353] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Why SWE-bench could not answer this question</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Why SWE-bench could not isolate diagnosis</h2>
             <p className="mt-4 max-w-[760px] text-[16px] leading-[1.7] text-[#a99fc7]">
               SWE-bench remains valuable for comparing overall agent capability. It was not designed to isolate the value of root-cause evidence.
             </p>
@@ -235,6 +235,75 @@ function BenchmarksPage() {
             <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
               The enterprise problem begins before the bug has been translated into engineering instructions.
             </p>
+          </div>
+        </section>
+
+        {/* 3b. Bridge: reactive diagnosis and proactive change review */}
+        <section className="border-t border-[#2c2353] px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">The same runtime evidence answers two questions.</h2>
+            <div className="mt-9 rounded-2xl border border-[#2c2353] bg-[#16112b] px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
+              <div className="grid gap-8 md:grid-cols-2 md:gap-0">
+                <div className="md:pr-10 lg:pr-14">
+                  <div className="text-[12px] font-bold uppercase tracking-[1.4px] text-[#7c8aa6]">Measured in this study</div>
+                  <h3 className="mt-3 text-[22px] font-extrabold tracking-[-0.5px] text-[#f2effb] sm:text-[24px]">Reactive diagnosis</h3>
+                  <p className="mt-2 text-[16px] font-semibold text-[#a99fc7]">What caused this symptom?</p>
+                  <ul className="mt-5 space-y-2.5">
+                    <li className="flex gap-3 text-[15px] text-[#a99fc7]">
+                      <span className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#a99fc7]" />
+                      Which execution path produced it?
+                    </li>
+                    <li className="flex gap-3 text-[15px] text-[#a99fc7]">
+                      <span className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#a99fc7]" />
+                      Where is the responsible code?
+                    </li>
+                    <li className="flex gap-3 text-[15px] text-[#a99fc7]">
+                      <span className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#a99fc7]" />
+                      Which calls, queries, or dependencies were involved?
+                    </li>
+                    <li className="flex gap-3 text-[15px] text-[#a99fc7]">
+                      <span className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#a99fc7]" />
+                      What mechanism must be corrected?
+                    </li>
+                  </ul>
+                </div>
+                <div className="relative md:pl-10 lg:pl-14">
+                  <div className="absolute top-0 left-0 hidden h-full w-px bg-[#2c2353] md:block" />
+                  <div className="h-px w-full bg-[#2c2353] md:hidden" />
+                  <div className="pt-8 md:pt-0">
+                    <div className="text-[12px] font-bold uppercase tracking-[1.4px] text-[#ff07aa]">Product implication</div>
+                    <h3 className="mt-3 text-[22px] font-extrabold tracking-[-0.5px] text-[#f2effb] sm:text-[24px]">Proactive change review</h3>
+                    <p className="mt-2 text-[16px] font-semibold text-[#a99fc7]">What did this change cause?</p>
+                    <ul className="mt-5 space-y-2.5">
+                      <li className="flex gap-3 text-[15px] text-[#a99fc7]">
+                        <span className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#ff07aa]" />
+                        Which execution paths changed?
+                      </li>
+                      <li className="flex gap-3 text-[15px] text-[#a99fc7]">
+                        <span className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#ff07aa]" />
+                        What new calls, queries, or side effects appeared?
+                      </li>
+                      <li className="flex gap-3 text-[15px] text-[#a99fc7]">
+                        <span className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#ff07aa]" />
+                        Which trusted behavior held?
+                      </li>
+                      <li className="flex gap-3 text-[15px] text-[#a99fc7]">
+                        <span className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#ff07aa]" />
+                        Did the result match the intended change?
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-10 border-t border-[#2c2353] pt-6 md:mt-12 md:pt-8">
+                <p className="text-[15px] leading-[1.6] text-[#a99fc7]">
+                  Both workflows need the same missing evidence: a precise record of what the application actually did.
+                </p>
+                <p className="mt-4 text-[17px] font-bold leading-[1.5] text-[#f2effb] sm:text-[18px]">
+                  A bug report gives you a symptom. A pull request gives you a diff. AppMap shows you the runtime behavior both leave out.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
