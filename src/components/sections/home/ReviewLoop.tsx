@@ -17,6 +17,32 @@ const steps = [
   },
 ];
 
+const panels = [
+  {
+    chip: "2",
+    image: "/marketing-assets/img/appmap/sequence.jpg",
+    alt: "AppMap sequence diagram of a recorded run showing calls between components over time",
+    caption: "The recorded run, visualized.",
+    minW: false,
+  },
+  {
+    chip: "3-4",
+    image: "/marketing-assets/review/pr-review-summary.png",
+    alt: "AppMap Behavioral Review comment on a GitHub pull request showing a severity summary table with zero high findings, one medium finding, and zero low findings",
+    caption:
+      "A real AppMap Behavioral Review on a pull request: the one-line diff touched a single DAO, but the runtime traces showed the new ordering leaking into search endpoints the diff never touched.",
+    minW: true,
+  },
+  {
+    chip: "4",
+    image: "/marketing-assets/review/pr-checks-table.png",
+    alt: "Checks performed table from an AppMap Behavioral Review listing behavioral compare, changes outside the pull request scope, missing guards, test and recording coverage, SQL, HTTP, and intended changes verified",
+    caption:
+      "Every review reports the checks performed: behavioral compare, scope, guards, coverage, SQL, and HTTP, backed by AppMap Gold Traces.",
+    minW: true,
+  },
+];
+
 export function ReviewLoop() {
   return (
     <section className="border-t border-b border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] px-6 py-20">
@@ -28,52 +54,46 @@ export function ReviewLoop() {
           AppMap turns a recorded run into diagrams developers can inspect and structured runtime evidence AI tools can query. AppMap Gold Traces compare the change against trusted behavior, and the review result can be written directly into the pull request.
         </p>
 
-        <ol className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="relative mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+          <span
+            aria-hidden
+            className="pointer-events-none absolute left-[15px] top-4 bottom-4 w-px bg-[color:var(--color-am-line)] lg:left-0 lg:right-0 lg:top-4 lg:bottom-auto lg:h-px lg:w-auto"
+          />
           {steps.map((s, i) => (
-            <li
-              key={s.title}
-              className="relative rounded-2xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] p-6 pt-9"
-            >
-              <span className="absolute -top-3.5 left-5 flex h-8 w-8 items-center justify-center rounded-lg bg-[color:var(--color-am-brand)] text-[15px] font-extrabold text-white">
+            <li key={s.title} className="relative flex gap-4 lg:block">
+              <span className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[color:var(--color-am-brand)] text-[15px] font-extrabold text-white">
                 {i + 1}
               </span>
-              <h3 className="text-[16px] font-bold text-[color:var(--color-am-ink)]">{s.title}</h3>
-              <p className="mt-2 text-[14.5px] text-[color:var(--color-am-muted)]">{s.body}</p>
+              <div className="min-w-0 lg:mt-4">
+                <h3 className="text-[16px] font-bold text-[color:var(--color-am-ink)]">{s.title}</h3>
+                <p className="mt-2 text-[14.5px] text-[color:var(--color-am-muted)]">{s.body}</p>
+              </div>
             </li>
           ))}
         </ol>
 
-        <div className="mt-12 grid items-start gap-6 lg:grid-cols-2">
-          <figure className="overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
-            <div className="overflow-x-auto">
-            <img
-              src="/marketing-assets/review/pr-review-summary.png"
-              alt="AppMap Behavioral Review comment on a GitHub pull request showing a severity summary table with zero high findings, one medium finding, and zero low findings"
-              loading="lazy"
-              width={1170}
-              height={610}
-              className="block w-full min-w-[720px] sm:min-w-0"
-            />
-            </div>
-            <figcaption className="border-t border-black/10 bg-[color:var(--color-am-card)] px-5 py-4 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
-              A real AppMap Behavioral Review on a pull request: the one-line diff touched a single DAO, but the runtime traces showed the new ordering leaking into search endpoints the diff never touched.
-            </figcaption>
-          </figure>
-          <figure className="overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
-            <div className="overflow-x-auto">
-            <img
-              src="/marketing-assets/review/pr-checks-table.png"
-              alt="Checks performed table from an AppMap Behavioral Review listing behavioral compare, changes outside the pull request scope, missing guards, test and recording coverage, SQL, HTTP, and intended changes verified"
-              loading="lazy"
-              width={1088}
-              height={718}
-              className="block w-full min-w-[720px] sm:min-w-0"
-            />
-            </div>
-            <figcaption className="border-t border-black/10 bg-[color:var(--color-am-card)] px-5 py-4 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
-              Every review reports the checks performed: behavioral compare, scope, guards, coverage, SQL, and HTTP, backed by AppMap Gold Traces.
-            </figcaption>
-          </figure>
+        <div className="mt-12 grid gap-6 lg:grid-cols-3">
+          {panels.map((p) => (
+            <figure
+              key={p.chip + p.image}
+              className="relative flex flex-col overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg"
+            >
+              <span className="absolute left-3 top-3 z-10 flex h-7 min-w-7 items-center justify-center rounded-lg bg-[color:var(--color-am-brand)] px-2 text-[13px] font-extrabold text-white">
+                {p.chip}
+              </span>
+              <div className="h-[260px] overflow-hidden overflow-x-auto">
+                <img
+                  src={p.image}
+                  alt={p.alt}
+                  loading="lazy"
+                  className={`block h-[260px] w-full object-cover object-top ${p.minW ? "min-w-[720px] lg:min-w-0" : ""}`}
+                />
+              </div>
+              <figcaption className="line-clamp-3 flex-1 border-t border-black/10 bg-[color:var(--color-am-card)] px-5 py-4 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
+                {p.caption}
+              </figcaption>
+            </figure>
+          ))}
         </div>
 
         <p className="mt-10 max-w-3xl text-[20px] font-semibold text-[color:var(--color-am-ink)]">
