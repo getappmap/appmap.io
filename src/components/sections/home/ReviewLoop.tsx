@@ -83,9 +83,9 @@ export function ReviewLoop() {
           ))}
         </ol>
 
-        <div className="relative mx-auto mt-6 w-full max-w-[640px]">
+        <div className="relative mx-auto mt-6 max-w-[920px]">
           <Chip>{fullWidth.chip}</Chip>
-          <figure className="w-full overflow-hidden rounded-2xl border border-[color:var(--color-am-line)]">
+          <figure className="w-full overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
             <div className="w-full overflow-x-auto">
               <a
                 href={fullWidth.image}
@@ -97,19 +97,19 @@ export function ReviewLoop() {
                   src={fullWidth.image}
                   alt={fullWidth.alt}
                   loading="lazy"
-                  className="block h-auto w-full min-w-[720px] lg:min-w-0"
+                  className="block h-auto w-full min-w-[600px] lg:min-w-0"
                 />
               </a>
             </div>
             <figcaption className="flex items-center justify-between gap-4 border-t border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] px-5 py-3 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
               <span>{fullWidth.caption}</span>
               <a
-                href={fullWidth.image}
+                href={fullWidth.fullTrace}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="shrink-0 text-[12px] font-medium text-[color:var(--color-am-brand)] hover:underline"
               >
-                View full size
+                View the full trace
               </a>
             </figcaption>
           </figure>
