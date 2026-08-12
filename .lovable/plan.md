@@ -1,92 +1,63 @@
-# Restructure /architecture: put AI consumption first
+# Benchmarks page rebuild
 
-Reframe the page so the point is that stored recordings and Golden AppMap traces exist to give AI agents runtime context that travels with the code. Five copy/layout changes, one meta description update. No em-dashes, no banned terms. The canonical Golden AppMap trace definition on /how-it-works is untouched. The "The agent can change. The evidence does not have to." line is not added here (it belongs to /compatibility).
+Rewrite `src/routes/benchmarks.tsx` around one argument: real issues arrive as symptoms, so the benchmark must measure discovery of the root cause, not patch implementation after the clues are given. Single-file change. Dark palette, header, max width, typography, chart styling, and the `/get-appmap` link all stay.
 
-## 1. H1
+## New page order
 
-Current (lines 74-76):
-```text
-In your editor today. In your repo tomorrow.
-```
+1. Hero (no numbers)
+2. Why SWE-bench could not answer this question
+3. What a real issue looks like (two-column comparison)
+4. A benchmark designed to require diagnosis (five cards)
+5. Runtime evidence preserved diagnosis under pressure (headline numbers + RCA chart)
+6. One call can carry the evidence of an entire investigation (mechanism)
+7. The cost-capability frontier (two labeled subsections: primary sweep, then 11-fixture suite)
+8. What the results do and do not establish
 
-Proposed:
-```text
-Runtime context that travels with the code.
-```
+Each block gets a distinct visual treatment so the page does not read as one long card grid: hero gradient band, card trio, two-column split panel, five-card methodology grid, stat cards plus bar chart, compact inline metric strip, cost bars plus table, prose limits section. Alternating `#0d0a1a` and `#16112b` backgrounds mark the six boundaries.
 
-## 2. Opening paragraph under the H1
+## Section-by-section changes
 
-Current (lines 77-79):
-```text
-You feel the value in the editor, where recordings are built and explored as you work. They can be saved in your repository too: versioned with your code, generated in CI, with sensitive values removed by default. Your source code stays the main content of the repo; .appmap travels alongside it.
-```
+**Metadata.** Title becomes "AppMap Benchmark: Runtime Evidence on Ambiguous Enterprise Bugs". Description becomes "Real-world issues arrive as symptoms, not pre-solved bugs. In a private multi-module Java testbed with no solution leakage, runtime evidence preserved root-cause accuracy under tight tool-call budgets." Canonical URL unchanged. JSON-LD `datePublished` unchanged.
 
-Proposed:
-```text
-AppMap records how your software actually runs. Developers explore that evidence in the editor, and selected recordings can be versioned in the repository alongside the code they describe. That makes runtime context available wherever the repository goes, including to AI agents. An agent can query the execution path, database activity, HTTP requests, and application structure directly instead of reconstructing them from source search.
-```
+**Hero.** Eyebrow "Benchmarks" stays. H1 becomes exactly "Real-world issues are not well-defined bugs." Paragraph: "They arrive as symptoms. The agent still has to discover the mechanism, code location, execution path, and affected behavior before it can produce a reliable fix. We built this study to measure that diagnostic work directly." Supporting line: "That required moving beyond SWE-bench." All statistics removed from the hero.
 
-## 3. Replace "One recording. Many consumers." section
+**Why SWE-bench could not answer this question (new).** Intro plus three cards, with the exact supplied copy for "Public code can be familiar", "Triaged issues can reveal the answer", and "Patch success can hide weak diagnosis". Callout strip below: "SWE-bench asks whether an agent can resolve a known issue. This study asks whether runtime evidence helps an agent discover an unknown cause." No leakage percentages, no disparagement, "may" used throughout.
 
-Current (lines 90-102): heading "One recording. Many consumers.", the body line "The same recordings are read by your developers and by every agent. Portals like Confluence and Backstage become mirrors, not the source of truth.", and the horizontal chip row rendered from the `chips` constant (Developers, Claude, Cursor, Copilot, Gemini, CI, Backstage, Confluence as a mirror).
+**What a real issue looks like (new).** Two-column split panel. Left "Post-triage benchmark issue" with the four listed traits. Right "Enterprise-style issue" leading with the symptom quote "Customers are being charged twice on retried payments." then its four traits. Caption: "The enterprise problem begins before the bug has been translated into engineering instructions." Stacks to one column on mobile.
 
-Proposed: same section background (`border-t border-[#2c2353] bg-[#16112b]`), new heading "Runtime context for every agent that works on the repository", body "An AppMap recording is structured data, not just a diagram. When it travels with the repository, an AI agent can query the same execution evidence a developer sees in the editor." Replace the chip row with a vertical flow diagram in the site's existing style (dark `#1c1538` nodes on `#16112b`, magenta arrows):
+**A benchmark designed to require diagnosis.** Replaces "A clean test, on purpose". Five cards with the supplied copy: private enterprise-style codebase, symptom-only issue reports, hidden reproducing test, two controlled lanes, performance corridor. Closing line: "The runtime recording is the sole experimental difference between the two RCA lanes."
 
-```text
-                 Repository
-                     |
-                     v
-           AppMap runtime context
-              /            \
-             v              v
-    Developers in the      Claude Code, Copilot,
-       editor              Cursor, Gemini, and
-                           other MCP clients
-```
+**Runtime evidence preserved diagnosis under pressure.** Moves below methodology. Label above heading: "Primary two-fixture sweep, two Claude models, four budgets, N=8 per cell". Four stat cards: 100%, 28%, 94% vs. 62%, and 15+ -> 1, each with the supplied caption. The existing bar chart is kept with legend and prose relabeled: "AppMap runtime evidence" and "Code-only exploration". Every "static analysis" / "static baseline" string becomes "code-only exploration" or "code-only baseline"; the data values are unchanged.
 
-Implementation: replace the `chips` constant (lines 44-53) with the flow data (top node "Repository", middle node "AppMap runtime context", two bottom nodes "Developers in the editor" and "Claude Code, Copilot, Cursor, Gemini, and other MCP clients"). Render as stacked centered nodes connected by downward arrows, with the two bottom nodes side by side as parallel branches off the runtime context node. Vertical arrows use a simple inline SVG or `↓` styled with the site's `#ff07aa` accent. No new imagery.
+**One call can carry the evidence of an entire investigation.** Replaces "Why it works". Body paragraph as supplied. Compact inline metric strip (not cards): "216 / 216 cells used get_call_tree", "1.09 average calls in cells that used it", "15+ search-and-read operations to reconstruct a comparable path statically". Closing line becomes "Higher information density means fewer tool calls, fewer tokens, less latency, and lower inference cost." No token-savings percentage.
 
-## 4. New section before "Where Golden AppMap traces live"
+**The cost-capability frontier.** Heading kept, split into two labeled subsections.
+- "Matched performance in the primary sweep": "Where both lanes reached 100% verified-fix performance, the trace-augmented configuration reached it for approximately 3.4 times less spend." Explicitly labeled as the two-fixture primary sweep.
+- "Generalization across 11 fixtures, three configurations": the existing cost bars and table, relabeled and re-valued to $1.161 / $0.309 / $0.567 per cell with 95% / 74% / 88% verified fixes, "3.8 times cheaper, 21 percentage points lower" and "2.0 times cheaper, 7 percentage points lower". Lead sentence: "The practical configuration is hybrid: use a compact model for high-density trace-based diagnosis and a frontier model for the structurally difficult implementation step." No claim that the all-compact configuration matched the frontier baseline suite-wide.
 
-Insert a new `section` between the flow section (ends line 102) and the storage section (starts line 104), matching the standard section padding (`px-6 py-20`).
+**What the results do and do not establish.** Replaces "What this study is, and is not". Covers: one internal study; Claude model family and one Claude Code agent loop; the 100% vs 28% primary result comes from two admitted fixtures across a 256-trajectory budget sweep; the economic generalization uses 11 fixtures and 264 trajectories; not yet independently replicated; RCA correctness is graded while verify-pass comes from a hidden executable test; SWE-bench leaderboard comparability is deliberately given up; the private symptom-only design reduces contamination and solution leakage at smaller scale than SWE-bench Verified; a compact model alone does not handle every difficult implementation and the hybrid fix stage is needed on the broader suite. The `/get-appmap` CTA stays in this section.
 
-Heading: "Behavior that survives the session"
+**Caveat component.** Becomes: "Internal study. Claude model family. One private enterprise-style testbed. Not yet independently replicated. Primary and suite-wide results are labeled separately below." The phrase "We publish the paper" is removed everywhere.
 
-Body, two paragraphs:
-```text
-An AI agent normally begins each investigation by reading the current code and reconstructing what matters. Golden AppMap traces let important runtime behavior travel forward with the repository as a versioned baseline.
-```
-```text
-A new agent, a different model, or a developer opening the repository later starts from the same recorded evidence of how important paths actually ran. This is not conversational memory. It is repository-native engineering memory, versioned and reviewed like the code itself.
-```
+**Deletion.** The entire "Not our first benchmark." section, the 14.6% SWE-bench figure, and its supporting sentence are removed with no replacement claim.
 
-## 5. Closing paragraph in "Where Golden AppMap traces live"
+## Decisions needed before build
 
-Keep the section and its content as is, including the prominent line "Git gives you a history of what the code said. Golden AppMap traces give you a history of what the code did." (lines 110-112). Add one closing paragraph at the end of the section, after the current final paragraph (line 114-116):
+**1. Paper button (publication blocker).** The file at `/research/runtime-rca.pdf` still contains unresolved `[cite]` placeholders, so linking to it publishes an uncited draft. The file is not deleted either way. Two options:
+- A: change the button to "Paper available on request" pointing at a mailto link.
+- B: hide the button entirely until a cited public version replaces the file.
 
-```text
-Putting AppMap in the repository gives AI agents runtime context that travels with the code. Instead of reconstructing execution from source search every time they enter a codebase, agents query recorded call paths, SQL, HTTP activity, and application structure directly. Golden AppMap traces carry important behavior forward as versioned context, so a new agent or a different model starts from the same evidence. Both the code and the runtime context are available to the developer and the AI without requiring an AppMap-operated data service.
-```
+**2. Structured-data author (proposal, not applied automatically).** Switch the Article `author` from Organization AppMap to Person Kevin Gilpin, with AppMap as `publisher`. Note: the current public PDF is bylined Kevin Gilpin and Elizabeth Lawler, so a two-author Person array may be more accurate. Confirm which form to use, or leave the author field as is.
 
-## Meta description
+## Verification before handoff
 
-Current (lines 5-6):
-```text
-The recording lives in your editor today, and can travel with your repo in the .appmap folder.
-```
-
-Proposed:
-```text
-AppMap gives AI agents runtime context that travels with the code: recorded call paths, database activity, HTTP requests, and application structure, versioned in the repo alongside the code.
-```
-
-Title tag stays unchanged. Canonical, OG, and Twitter tags are unchanged.
-
-## Files
-
-- `src/routes/architecture.tsx` only.
-
-## Notes
-
-- `chips` constant is removed (no longer rendered); replaced by the flow node data.
-- The canonical Golden AppMap trace definition on /how-it-works is not restated or altered.
+- H1 renders exactly "Real-world issues are not well-defined bugs."
+- "Not our first benchmark" and 14.6% are gone.
+- Primary two-fixture results and 11-fixture suite results are visibly separated and labeled.
+- No generic "static analysis" phrasing remains.
+- No 33% or 76% leakage statistics anywhere.
+- The `[cite]`-placeholder PDF is handled per the chosen option.
+- `/get-appmap` link intact.
+- No em-dashes; no banned terms ("Navie", "Runtime Intelligence", "Behavioral Intelligence").
+- Brand term is "AppMap Gold Trace(s)" wherever the concept appears.
+- Screenshots at 1440 and 390 with no horizontal overflow; build passes.
