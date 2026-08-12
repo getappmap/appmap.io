@@ -4,7 +4,6 @@ import { Header } from "@/components/layout/Header";
 import { HomeHero } from "@/components/sections/home/HomeHero";
 import { ReviewLoop } from "@/components/sections/home/ReviewLoop";
 import { PainStats } from "@/components/sections/home/PainStats";
-import { CatchPrevention } from "@/components/sections/home/CatchPrevention";
 import { OneVsFifteen } from "@/components/sections/home/OneVsFifteen";
 import { TrustBar } from "@/components/sections/home/TrustBar";
 import { ReviewWhatAIDid } from "@/components/sections/home/ReviewWhatAIDid";
@@ -88,7 +87,6 @@ function Index() {
       <main>
         <HomeHero />
         <PainStats />
-        <CatchPrevention />
         <ReviewWhatAIDid />
         <OneVsFifteen />
         <ReviewLoop />

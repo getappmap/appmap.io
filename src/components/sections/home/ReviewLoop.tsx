@@ -4,16 +4,16 @@ const steps = [
     body: "You build it with your AI coding agent.",
   },
   {
-    title: "AppMap records what it did",
-    body: "It captures how the application behaves as the change runs.",
+    title: "AppMap records and visualizes the run",
+    body: "Sequence diagrams, Trace View, queries, dependencies, and other AppMap views show what the changed software actually did.",
   },
   {
-    title: "You review the behavior",
-    body: "Not the diff. The runtime evidence of what the change actually does.",
+    title: "Golden AppMap traces check the behavior",
+    body: "Compare the new run with a trusted baseline to see what held, what changed, and whether the change behaved as intended.",
   },
   {
-    title: "Part of the pull request",
-    body: "The recording becomes part of the PR, so every reviewer understands the change before they approve.",
+    title: "The review is written into the pull request",
+    body: "The Golden AppMap trace review skill writes the runtime-backed result into the PR so reviewers see what changed in behavior, not just in code.",
   },
 ];
 
@@ -25,7 +25,7 @@ export function ReviewLoop() {
           Stop reviewing code. Start reviewing behavior.
         </h2>
         <p className="mt-3 max-w-[680px] text-[17px] text-[color:var(--color-am-muted)]">
-          In code review, developers inspect the diagrams and AI tools query the evidence from the same recorded run. The team reviews behavior, not just the diff.
+          AppMap turns a recorded run into diagrams developers can inspect and structured runtime evidence AI tools can query. Golden AppMap traces compare the change against trusted behavior, and the review result can be written directly into the pull request.
         </p>
 
         <ol className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -47,11 +47,11 @@ export function ReviewLoop() {
           Every pull request explains itself.
         </p>
         <p className="mt-3 max-w-3xl text-[14px] text-[color:var(--color-am-muted)]">
-          A pull request already carries code, comments, and CI checks. AppMap adds one more: behavioral evidence of what the change does.
+          A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the result still matches the Golden AppMap trace.
         </p>
         <div className="mt-6 rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] p-5">
           <p className="text-[14px] leading-[1.55] text-[color:var(--color-am-muted)]">
-            For AI-generated software, governance needs evidence outside the AI's own reasoning. AppMap provides it: independent runtime evidence observed from the running system. The agent can explain the evidence; it does not create it.
+            Developers can inspect the diagrams. AI tools can query the underlying recording. The pull request carries the resulting behavioral review. The evidence comes from the running application, not from the AI evaluating its own work.
           </p>
         </div>
       </div>

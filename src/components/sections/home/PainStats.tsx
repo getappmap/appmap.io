@@ -56,6 +56,15 @@ export function PainStats() {
             </li>
           ))}
         </ul>
+
+        <div className="mt-8 rounded-xl border border-[#2c2353] border-l-2 border-l-[#ff07aa] bg-[#16112b] p-6">
+          <h3 className="text-[21px] font-bold leading-tight text-[#f2effb] sm:text-[22px]">
+            Catch unexpected behavior while the change is still in the editor.
+          </h3>
+          <p className="mt-2 max-w-[860px] text-[15px] leading-relaxed text-[#a99fc7] sm:text-[16px]">
+            AppMap gives developers and AI agents runtime evidence as they work, so they can investigate calls, queries, exceptions, and side effects before the change moves downstream.
+          </p>
+        </div>
       </div>
     </section>
   );
