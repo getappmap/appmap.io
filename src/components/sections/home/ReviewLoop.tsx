@@ -43,7 +43,7 @@ export function ReviewLoop() {
           ))}
         </ol>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-2">
+        <div className="mt-12 grid items-start gap-6 lg:grid-cols-2">
           <figure className="overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
             <img
               src="/marketing-assets/review/pr-review-summary.png"
