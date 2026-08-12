@@ -43,6 +43,35 @@ export function ReviewLoop() {
           ))}
         </ol>
 
+        <div className="mt-12 grid gap-6 lg:grid-cols-2">
+          <figure className="overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
+            <img
+              src="/marketing-assets/review/pr-review-summary.png"
+              alt="AppMap Behavioral Review comment on a GitHub pull request showing a severity summary table with zero high findings, one medium finding, and zero low findings"
+              loading="lazy"
+              width={1170}
+              height={610}
+              className="block w-full"
+            />
+            <figcaption className="border-t border-black/10 bg-[color:var(--color-am-card)] px-5 py-4 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
+              A real AppMap Behavioral Review on a pull request: the one-line diff touched a single DAO, but the runtime traces showed the new ordering leaking into search endpoints the diff never touched.
+            </figcaption>
+          </figure>
+          <figure className="overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
+            <img
+              src="/marketing-assets/review/pr-checks-table.png"
+              alt="Checks performed table from an AppMap Behavioral Review listing behavioral compare, changes outside the pull request scope, missing guards, test and recording coverage, SQL, HTTP, and intended changes verified"
+              loading="lazy"
+              width={1088}
+              height={718}
+              className="block w-full"
+            />
+            <figcaption className="border-t border-black/10 bg-[color:var(--color-am-card)] px-5 py-4 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
+              Every review reports the checks performed: behavioral compare, scope, guards, coverage, SQL, and HTTP, backed by AppMap Gold Traces.
+            </figcaption>
+          </figure>
+        </div>
+
         <p className="mt-10 max-w-3xl text-[20px] font-semibold text-[color:var(--color-am-ink)]">
           Every pull request explains itself.
         </p>
