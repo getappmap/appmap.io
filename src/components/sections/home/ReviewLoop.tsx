@@ -55,16 +55,16 @@ function Chip({ children }: { children: React.ReactNode }) {
 
 export function ReviewLoop() {
   return (
-    <section className="border-t border-b border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] px-6 py-14">
+    <section className="border-t border-b border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] px-6 py-12">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[color:var(--color-am-ink)] sm:text-[34px]">
           Stop reviewing code. Start reviewing behavior.
         </h2>
-        <p className="mt-3 max-w-[680px] text-[17px] text-[color:var(--color-am-muted)]">
+        <p className="mt-2 max-w-[680px] text-[17px] text-[color:var(--color-am-muted)]">
           AppMap turns a recorded run into diagrams developers can inspect and structured runtime evidence AI tools can query. AppMap Gold Traces compare the change against trusted behavior, and the review result can be written directly into the pull request.
         </p>
 
-        <ol className="relative mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+        <ol className="relative mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
           <span
             aria-hidden
             className="pointer-events-none absolute left-[15px] top-4 bottom-4 w-px bg-[color:var(--color-am-line)] lg:left-0 lg:right-0 lg:top-4 lg:bottom-auto lg:h-px lg:w-auto"
@@ -82,10 +82,10 @@ export function ReviewLoop() {
           ))}
         </ol>
 
-        <div className="relative mx-auto mt-8 max-w-[720px]">
+        <div className="relative mx-auto mt-6 w-full max-w-[640px]">
           <Chip>{fullWidth.chip}</Chip>
-          <figure className="overflow-hidden rounded-2xl border border-[color:var(--color-am-line)]">
-            <div className="overflow-x-auto">
+          <figure className="w-full overflow-hidden rounded-2xl border border-[color:var(--color-am-line)]">
+            <div className="w-full overflow-x-auto">
               <a
                 href={fullWidth.image}
                 target="_blank"
@@ -114,17 +114,17 @@ export function ReviewLoop() {
           </figure>
         </div>
 
-        <div className="mt-5 grid items-start gap-6 lg:grid-cols-2">
+        <div className="mt-4 grid w-full items-start gap-5 lg:grid-cols-2">
           {rowPanels.map((p) => (
-            <div key={p.chip + p.image} className="relative">
+            <div key={p.chip + p.image} className="relative w-full min-w-0">
               <Chip>{p.chip}</Chip>
-              <figure className="flex flex-col overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
-                <div className="h-[170px] overflow-hidden overflow-x-auto">
+              <figure className="flex w-full flex-col overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
+                <div className="h-[150px] w-full overflow-hidden overflow-x-auto">
                   <img
                     src={p.image}
                     alt={p.alt}
                     loading="lazy"
-                    className={`block h-[170px] w-full object-cover object-top ${p.minW ? "min-w-[720px] lg:min-w-0" : ""}`}
+                    className={`block h-[150px] w-full object-cover object-top ${p.minW ? "min-w-[720px] lg:min-w-0" : ""}`}
                   />
                 </div>
                 <figcaption className="line-clamp-2 flex-1 border-t border-black/10 bg-[color:var(--color-am-card)] px-4 py-3 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
@@ -135,7 +135,7 @@ export function ReviewLoop() {
           ))}
         </div>
 
-        <p className="mt-6 max-w-3xl text-[20px] font-semibold text-[color:var(--color-am-ink)]">
+        <p className="mt-5 max-w-3xl text-[20px] font-semibold text-[color:var(--color-am-ink)]">
           Every pull request explains itself.
         </p>
         <p className="mt-3 max-w-3xl text-[14px] text-[color:var(--color-am-muted)]">
