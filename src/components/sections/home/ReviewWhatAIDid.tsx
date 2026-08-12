@@ -24,10 +24,10 @@ export function ReviewWhatAIDid() {
     <section className="border-t border-b border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] px-6 py-20">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[color:var(--color-am-ink)] sm:text-[34px]">
-          One recording. See the system as it ran.
+          One recording. See the system as it runs, before the change ships.
         </h2>
         <p className="mt-3 max-w-[700px] text-[16px] text-[color:var(--color-am-muted)]">
-          One recording gives developers multiple ways to inspect a run: Dependency Map, Sequence Diagram, Trace View, Flame Graph, Code Objects, and SQL inspection. Recorded runtime behavior also supports generated OpenAPI definitions and diffs.
+          One recording gives developers and AI agents multiple ways to inspect a run while the work is still in progress: Dependency Map, Sequence Diagram, Trace View, Flame Graph, Code Objects, and SQL inspection. Recorded runtime behavior also supports generated OpenAPI definitions and diffs.
         </p>
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           {items.map((it) => (
@@ -54,7 +54,7 @@ export function ReviewWhatAIDid() {
           ))}
         </div>
         <p className="mt-6 text-center text-[13.5px] text-[color:var(--color-am-muted)]">
-          Three representative views. Explore the broader visual set in your editor.
+          Three representative views. Explore the broader visual set in your editor before the change moves downstream.
         </p>
       </div>
     </section>
