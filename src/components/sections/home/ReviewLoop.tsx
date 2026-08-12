@@ -43,9 +43,17 @@ const rowPanels = [
   },
 ];
 
+function Chip({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="absolute -top-3 -left-3 z-10 flex h-7 min-w-7 items-center justify-center rounded-lg bg-[color:var(--color-am-brand)] px-2 text-[13px] font-extrabold text-white shadow-md">
+      {children}
+    </span>
+  );
+}
+
 export function ReviewLoop() {
   return (
-    <section className="border-t border-b border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] px-6 py-20">
+    <section className="border-t border-b border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] px-6 py-16">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[color:var(--color-am-ink)] sm:text-[34px]">
           Stop reviewing code. Start reviewing behavior.
@@ -54,7 +62,7 @@ export function ReviewLoop() {
           AppMap turns a recorded run into diagrams developers can inspect and structured runtime evidence AI tools can query. AppMap Gold Traces compare the change against trusted behavior, and the review result can be written directly into the pull request.
         </p>
 
-        <ol className="relative mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+        <ol className="relative mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
           <span
             aria-hidden
             className="pointer-events-none absolute left-[15px] top-4 bottom-4 w-px bg-[color:var(--color-am-line)] lg:left-0 lg:right-0 lg:top-4 lg:bottom-auto lg:h-px lg:w-auto"
@@ -72,48 +80,60 @@ export function ReviewLoop() {
           ))}
         </ol>
 
-        <figure className="relative mt-12 overflow-hidden rounded-2xl border border-[color:var(--color-am-line)]">
-          <span className="absolute left-3 top-3 z-10 flex h-7 min-w-7 items-center justify-center rounded-lg bg-[color:var(--color-am-brand)] px-2 text-[13px] font-extrabold text-white">
-            {fullWidth.chip}
-          </span>
-          <div className="overflow-x-auto">
-            <img
-              src={fullWidth.image}
-              alt={fullWidth.alt}
-              loading="lazy"
-              className="block h-auto w-full min-w-[720px] lg:min-w-0"
-            />
-          </div>
-          <figcaption className="border-t border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] px-5 py-4 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
-            {fullWidth.caption}
-          </figcaption>
-        </figure>
-
-        <div className="mt-6 grid gap-6 lg:grid-cols-2 items-start">
-          {rowPanels.map((p) => (
-            <figure
-              key={p.chip + p.image}
-              className="relative flex flex-col overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg"
-            >
-              <span className="absolute left-3 top-3 z-10 flex h-7 min-w-7 items-center justify-center rounded-lg bg-[color:var(--color-am-brand)] px-2 text-[13px] font-extrabold text-white">
-                {p.chip}
-              </span>
-              <div className="h-[260px] overflow-hidden overflow-x-auto">
+        <div className="relative mx-auto mt-8 max-w-[820px]">
+          <Chip>{fullWidth.chip}</Chip>
+          <figure className="overflow-hidden rounded-2xl border border-[color:var(--color-am-line)]">
+            <div className="overflow-x-auto">
+              <a
+                href={fullWidth.image}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
                 <img
-                  src={p.image}
-                  alt={p.alt}
+                  src={fullWidth.image}
+                  alt={fullWidth.alt}
                   loading="lazy"
-                  className={`block h-[260px] w-full object-cover object-top ${p.minW ? "min-w-[720px] lg:min-w-0" : ""}`}
+                  className="block h-auto w-full min-w-[720px] lg:min-w-0"
                 />
-              </div>
-              <figcaption className="line-clamp-3 flex-1 border-t border-black/10 bg-[color:var(--color-am-card)] px-5 py-4 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
-                {p.caption}
-              </figcaption>
-            </figure>
+              </a>
+            </div>
+            <figcaption className="flex items-center justify-between gap-4 border-t border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] px-5 py-4 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
+              <span>{fullWidth.caption}</span>
+              <a
+                href={fullWidth.image}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 text-[12px] font-medium text-[color:var(--color-am-brand)] hover:underline"
+              >
+                View full size
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div className="mt-6 grid items-start gap-6 lg:grid-cols-2">
+          {rowPanels.map((p) => (
+            <div key={p.chip + p.image} className="relative">
+              <Chip>{p.chip}</Chip>
+              <figure className="flex flex-col overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
+                <div className="h-[190px] overflow-hidden overflow-x-auto">
+                  <img
+                    src={p.image}
+                    alt={p.alt}
+                    loading="lazy"
+                    className={`block h-[190px] w-full object-cover object-top ${p.minW ? "min-w-[720px] lg:min-w-0" : ""}`}
+                  />
+                </div>
+                <figcaption className="line-clamp-2 flex-1 border-t border-black/10 bg-[color:var(--color-am-card)] px-4 py-3 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
+                  {p.caption}
+                </figcaption>
+              </figure>
+            </div>
           ))}
         </div>
 
-        <p className="mt-10 max-w-3xl text-[20px] font-semibold text-[color:var(--color-am-ink)]">
+        <p className="mt-8 max-w-3xl text-[20px] font-semibold text-[color:var(--color-am-ink)]">
           Every pull request explains itself.
         </p>
         <p className="mt-3 max-w-3xl text-[14px] text-[color:var(--color-am-muted)]">
