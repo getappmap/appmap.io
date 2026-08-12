@@ -195,7 +195,7 @@ function BlogPost() {
             <p className={P}>
               A AppMap Gold Trace gives the review a fixed point. Instead of asking a reviewer to
               imagine what the change does, the review compares two recordings. The baseline shows
-              the path as it ran before. The new recording shows it as it runs now. What appeared,
+              the path from the previous run. The new recording shows it as it runs now. What appeared,
               disappeared, or moved is visible as a difference between two pieces of evidence, not as
               a guess.
             </p>
