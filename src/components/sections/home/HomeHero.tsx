@@ -52,7 +52,7 @@ export function HomeHero() {
             alt="AppMap dependency map of a running application, showing packages, classes, and the calls between them."
             width={1600}
             height={900}
-            className="aspect-[16/9] w-full rounded-xl border border-[#2c2353] bg-[#16112b] object-cover shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
+            className="aspect-[16/9] w-full rounded-xl border border-[#2c2353] bg-[#16112b] object-cover object-left shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
           />
           <div className="mt-4 flex flex-wrap justify-center gap-3">
           <div className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-sm text-[#a99fc7]">
