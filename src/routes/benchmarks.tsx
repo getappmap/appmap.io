@@ -1,9 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
-const title = "AppMap Benchmark: Runtime Context vs Static Analysis";
+const title = "AppMap Benchmark: Runtime Evidence on Ambiguous Enterprise Bugs";
 const description =
-  "In a controlled study, runtime context held diagnosis at 100 percent under a tight tool budget where static analysis fell to 28 percent, at a fraction of the cost.";
+  "Real-world issues arrive as symptoms, not pre-solved bugs. In a private multi-module Java testbed with no solution leakage, runtime evidence preserved root-cause accuracy under tight tool-call budgets.";
+
+const PAPER_REQUEST_URL =
+  "mailto:elizabeth@appmap.io?subject=Runtime%20RCA%20paper%20request";
 
 export const Route = createFileRoute("/benchmarks")({
   head: () => ({
@@ -29,7 +32,11 @@ export const Route = createFileRoute("/benchmarks")({
           "@type": "Article",
           headline: title,
           description,
-          author: { "@type": "Organization", name: "AppMap" },
+          author: [
+            { "@type": "Person", name: "Kevin Gilpin" },
+            { "@type": "Person", name: "Elizabeth Lawler" },
+          ],
+          publisher: { "@type": "Organization", name: "AppMap" },
           datePublished: "2026-06-01",
         }),
       },
@@ -38,106 +45,251 @@ export const Route = createFileRoute("/benchmarks")({
   component: BenchmarksPage,
 });
 
-const headlineNumbers = [
-  { n: "100%", l: "root-cause accuracy with runtime context at a 3-call budget" },
-  { n: "28%", l: "static baseline at the same budget" },
-  { n: "~3.4x", l: "less inference spend to reach the same verified-fix rate" },
-  { n: "7 pts", l: "how close a compact pipeline lands to a frontier baseline, at half the cost" },
+const swebench = [
+  {
+    title: "Public code can be familiar",
+    body: "SWE-bench draws from highly visible open-source repositories that may already be represented in model pretraining. A result can reflect learned repository priors as well as investigation performed during the benchmark.",
+  },
+  {
+    title: "Triaged issues can reveal the answer",
+    body: "Real GitHub issue threads may name the file, stack trace, function, or bug mechanism. Once the issue points toward the cause, the hardest part of root-cause analysis has already been reduced.",
+  },
+  {
+    title: "Patch success can hide weak diagnosis",
+    body: "An implementation agent can re-explore the code and recover from an incomplete diagnosis. We separated diagnosis from fixing so the study could measure the evidence channel itself.",
+  },
+];
+
+const postTriage = [
+  "Public repository",
+  "File or function may already be named",
+  "Stack trace or mechanism may be included",
+  "Implementation dominates the task",
+];
+
+const enterpriseIssue = [
+  "Private, unfamiliar codebase",
+  "Root cause and code location unknown",
+  "Behavior crosses service and persistence boundaries",
+  "Diagnosis must happen before implementation",
 ];
 
 const setup = [
-  { title: "Private codebase", body: "A 50-module Spring Boot app with no public training-data overlap. Results reflect investigation, not memory." },
-  { title: "Symptom-only reports", body: "Written like support tickets. No shared identifiers with the fix. No leaked file paths." },
-  { title: "Two lanes, one difference", body: "Same inputs. Same budgets. One lane had the AppMap trace. The other used static tools." },
-  { title: "Budget sweep", body: "We tightened the diagnostic budget from unlimited to 10, then 5, then 3 calls." },
+  {
+    title: "Private enterprise-style codebase",
+    body: "A roughly 50-module Spring Boot application created for the study and hosted privately, outside frontier-model pretraining corpora.",
+  },
+  {
+    title: "Symptom-only issue reports",
+    body: "Tickets are written like customer or operations reports. They do not name the buggy file, function, or mechanism, and their identifiers do not overlap with the gold fix.",
+  },
+  {
+    title: "Hidden reproducing test",
+    body: "The integration test drives the system through its external interface, but its source code is removed before the RCA session so the agent cannot read the answer.",
+  },
+  {
+    title: "Two controlled lanes",
+    body: "Both lanes receive the same issue, prompts, models, and tool-call budgets. One explores the source with Read, Grep, Glob, and Bash. The other also receives AppMap runtime evidence.",
+  },
+  {
+    title: "Performance corridor",
+    body: "Primary fixtures must fail without investigation and succeed with an unlimited diagnostic budget. Trivial and impossible problems are excluded from the main budget sweep.",
+  },
+];
+
+const headlineNumbers = [
+  { n: "100%", l: "Trace-augmented RCA correctness at the 3-call diagnostic budget." },
+  { n: "28%", l: "Code-only RCA correctness at the same budget." },
+  { n: "94% vs. 62%", l: "Verified-fix rate at the 3-call budget: runtime evidence versus code-only exploration." },
+  { n: "15+ -> 1", l: "Sequential grep-and-read steps replaced by one high-density get_call_tree query." },
 ];
 
 const accuracy = [
-  { label: "Unlimited", appmap: 100, baseline: 91 },
-  { label: "10 calls", appmap: 100, baseline: 81 },
-  { label: "5 calls", appmap: 100, baseline: 50 },
-  { label: "3 calls", appmap: 100, baseline: 28 },
+  { label: "Unlimited", appmap: 100, codeOnly: 91 },
+  { label: "10 calls", appmap: 100, codeOnly: 81 },
+  { label: "5 calls", appmap: 100, codeOnly: 50 },
+  { label: "3 calls", appmap: 100, codeOnly: 28 },
+];
+
+const density = [
+  { n: "216 / 216", l: "cells used get_call_tree" },
+  { n: "1.09", l: "average calls in cells that used it" },
+  { n: "15+", l: "search-and-read operations to reconstruct a comparable path statically" },
 ];
 
 const cost = [
-  { label: "Frontier static, unbounded", dollars: 1.16, fix: "95%", color: "#a99fc7" },
-  { label: "Hybrid (compact diagnosis + frontier fix)", dollars: 0.57, fix: "88%", color: "#8b5cf6" },
-  { label: "Compact + trace, budget 3", dollars: 0.31, fix: "74%", color: "#ff07aa" },
+  { label: "Frontier model, code-only exploration, unlimited budget", dollars: 1.161, fix: "95%", color: "#a99fc7" },
+  { label: "Hybrid pipeline, compact trace-based diagnosis plus frontier-model fix", dollars: 0.567, fix: "88%", color: "#8b5cf6" },
+  { label: "Compact model, AppMap trace, 3-call budget", dollars: 0.309, fix: "74%", color: "#ff07aa" },
+];
+
+const limits = [
+  "One internal study, run by our team.",
+  "One model family, Claude, inside a single Claude Code agent loop.",
+  "The primary 100% versus 28% RCA result comes from two admitted fixtures in a 256-trajectory budget sweep.",
+  "The economic generalization uses 11 fixtures and 264 trajectories.",
+  "Not yet independently replicated outside our team.",
+  "Primary RCA correctness is graded, while verify-pass is determined by a hidden executable test.",
+  "The design deliberately sacrifices direct SWE-bench leaderboard comparability.",
+  "The private symptom-only design reduces contamination and solution leakage, but operates at smaller scale than SWE-bench Verified.",
+  "A compact model alone does not handle every difficult implementation. The hybrid fix stage is needed on the broader suite.",
 ];
 
 const Caveat = () => (
   <p className="mt-7 max-w-[680px] border-l-2 border-[#2c2353] pl-4 text-[13.5px] text-[#7c8aa6]">
-    One internal study. Claude model family. Not yet replicated outside our team. We publish the paper: the full methodology, fixture criteria, budget-sweep design, and per-fixture results tables. Raw run-sets are available on request.
+    Internal study. Claude model family. One private enterprise-style testbed. Not yet independently replicated. Primary and suite-wide results are labeled separately below.
   </p>
+);
+
+const SectionLabel = ({ children }: { children: React.ReactNode }) => (
+  <div className="text-[12.5px] font-bold uppercase tracking-[1.4px] text-[#ff07aa]">{children}</div>
 );
 
 function BenchmarksPage() {
   const maxCost = Math.max(...cost.map((c) => c.dollars));
+
+  const scrollToResults = (e: React.MouseEvent) => {
+    e.preventDefault();
+    document.getElementById("results")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <div className="min-h-screen bg-[#0d0a1a]">
       <Header />
       <main>
-        <section className="px-6 pt-20 pb-12" style={{ background: "radial-gradient(900px 460px at 78% -8%, rgba(139,92,246,0.22), transparent), radial-gradient(820px 520px at 12% 115%, rgba(255,7,170,0.20), transparent)" }}>
+        {/* 1. Hero */}
+        <section className="px-6 pt-20 pb-14" style={{ background: "radial-gradient(900px 460px at 78% -8%, rgba(139,92,246,0.22), transparent), radial-gradient(820px 520px at 12% 115%, rgba(255,7,170,0.20), transparent)" }}>
           <div className="mx-auto max-w-[1120px]">
-            <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Benchmarks</div>
+            <SectionLabel>Benchmarks</SectionLabel>
             <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-              We measured it. Here is the data.
+              Real-world issues are not well-defined bugs.
             </h1>
-            <p className="mt-5 max-w-[720px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              A controlled study with the runtime trace as the only variable
-              between two identical agent pipelines.
+            <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
+              They arrive as symptoms. The agent still has to discover the mechanism, code location, execution path, and affected behavior before it can produce a reliable fix. We built this study to measure that diagnostic work directly.
+            </p>
+            <p className="mt-4 text-[17px] font-semibold text-[#f2effb]">
+              That required moving beyond SWE-bench.
+            </p>
+            <a
+              href="#results"
+              onClick={scrollToResults}
+              className="mt-5 inline-block text-[13.5px] text-[#a99fc7] underline underline-offset-4 transition-colors hover:text-[#f2effb]"
+            >
+              See the results
+            </a>
+          </div>
+        </section>
+
+        {/* 2. Why SWE-bench could not answer this question */}
+        <section className="border-t border-[#2c2353] px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Why SWE-bench could not answer this question</h2>
+            <p className="mt-4 max-w-[760px] text-[16px] leading-[1.7] text-[#a99fc7]">
+              SWE-bench remains valuable for comparing overall agent capability. It was not designed to isolate the value of root-cause evidence.
+            </p>
+            <div className="mt-9 grid gap-4 md:grid-cols-3">
+              {swebench.map((c) => (
+                <div key={c.title} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                  <h3 className="text-[17px] font-bold text-[#f2effb]">{c.title}</h3>
+                  <p className="mt-2 text-[14.5px] leading-[1.65] text-[#a99fc7]">{c.body}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8 rounded-xl border-l-2 border-[#ff07aa] bg-[#16112b] px-6 py-5">
+              <p className="max-w-[820px] text-[16px] leading-[1.65] text-[#f2effb]">
+                SWE-bench asks whether an agent can resolve a known issue. This study asks whether runtime evidence helps an agent discover an unknown cause.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 3. What a real issue looks like */}
+        <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What a real issue looks like</h2>
+            <div className="mt-9 grid gap-5 md:grid-cols-2">
+              <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-7">
+                <div className="text-[12.5px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">Post-triage benchmark issue</div>
+                <ul className="mt-5 space-y-3">
+                  {postTriage.map((t) => (
+                    <li key={t} className="flex gap-3 text-[15px] text-[#a99fc7]">
+                      <span className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#a99fc7]" />
+                      {t}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-[#ff07aa]/40 bg-[#1c1538] p-6 sm:p-7">
+                <div className="text-[12.5px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Enterprise-style issue</div>
+                <p className="mt-4 border-l-2 border-[#ff07aa] pl-4 text-[17px] font-semibold leading-[1.5] text-[#f2effb]">
+                  &ldquo;Customers are being charged twice on retried payments.&rdquo;
+                </p>
+                <ul className="mt-5 space-y-3">
+                  {enterpriseIssue.map((t) => (
+                    <li key={t} className="flex gap-3 text-[15px] text-[#a99fc7]">
+                      <span className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#ff07aa]" />
+                      {t}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
+              The enterprise problem begins before the bug has been translated into engineering instructions.
             </p>
           </div>
         </section>
 
-        <section className="px-6 py-16">
+        {/* 4. A benchmark designed to require diagnosis */}
+        <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">The headline numbers</h2>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {headlineNumbers.map((h) => (
-                <div key={h.l} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                  <div className="text-[40px] font-extrabold leading-none tracking-[-1px] text-[#ff07aa]">{h.n}</div>
-                  <p className="mt-3 text-[14px] text-[#a99fc7]">{h.l}</p>
-                </div>
-              ))}
-            </div>
-            <Caveat />
-          </div>
-        </section>
-
-        <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">A clean test, on purpose</h2>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">A benchmark designed to require diagnosis</h2>
+            <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {setup.map((s) => (
                 <div key={s.title} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
                   <h3 className="text-[17px] font-bold text-[#f2effb]">{s.title}</h3>
-                  <p className="mt-2 text-[14.5px] text-[#a99fc7]">{s.body}</p>
+                  <p className="mt-2 text-[14.5px] leading-[1.65] text-[#a99fc7]">{s.body}</p>
                 </div>
               ))}
             </div>
+            <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
+              The runtime recording is the sole experimental difference between the two RCA lanes.
+            </p>
           </div>
         </section>
 
-        <section className="px-6 py-20">
+        {/* 5. Primary results */}
+        <section id="results" className="scroll-mt-20 border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Diagnosis holds where static search collapses</h2>
-            <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
-              Root-cause accuracy against the tool-call budget. Runtime context
-              stays flat. Static analysis falls off.
+            <div className="text-[12.5px] uppercase tracking-[1.2px] text-[#a99fc7]">
+              Primary two-fixture sweep, two Claude models, four budgets, N=8 per cell
+            </div>
+            <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Runtime evidence preserved diagnosis under pressure</h2>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {headlineNumbers.map((h) => (
+                <div key={h.l} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                  <div className="text-[32px] font-extrabold leading-none tracking-[-1px] text-[#ff07aa] sm:text-[38px]">{h.n}</div>
+                  <p className="mt-3 text-[14px] leading-[1.6] text-[#a99fc7]">{h.l}</p>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-10 max-w-[760px] text-[16px] text-[#a99fc7]">
+              Root-cause accuracy against the tool-call budget. Runtime evidence stays flat. Code-only exploration falls off.
             </p>
 
-            <div className="mt-10 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
+            <div className="mt-6 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
               <div className="text-[14px] text-[#a99fc7]">Root-cause accuracy (%) by tool-call budget</div>
-              <div className="mt-6 flex h-[260px] items-end gap-6 sm:gap-10 px-2">
+              <div className="mt-6 flex h-[260px] items-end gap-6 px-2 sm:gap-10">
                 {accuracy.map((row) => (
                   <div key={row.label} className="flex h-full flex-1 flex-col items-center justify-end gap-3">
                     <div className="flex h-full items-end gap-2">
-                      <div className="relative flex w-7 sm:w-9 justify-center rounded-t-md bg-gradient-to-b from-[#ff07aa] to-[#d6008f]" style={{ height: `${row.appmap}%` }}>
+                      <div className="relative flex w-7 justify-center rounded-t-md bg-gradient-to-b from-[#ff07aa] to-[#d6008f] sm:w-9" style={{ height: `${row.appmap}%` }}>
                         <span className="absolute -top-6 whitespace-nowrap text-[12.5px] font-bold text-[#ff07aa]">{row.appmap}</span>
                       </div>
-                      <div className="relative flex w-7 sm:w-9 justify-center rounded-t-md bg-gradient-to-b from-[#fb7185] to-[#e11d48]" style={{ height: `${row.baseline}%` }}>
-                        <span className="absolute -top-6 whitespace-nowrap text-[12.5px] font-bold text-[#fb7185]">{row.baseline}</span>
+                      <div className="relative flex w-7 justify-center rounded-t-md bg-gradient-to-b from-[#fb7185] to-[#e11d48] sm:w-9" style={{ height: `${row.codeOnly}%` }}>
+                        <span className="absolute -top-6 whitespace-nowrap text-[12.5px] font-bold text-[#fb7185]">{row.codeOnly}</span>
                       </div>
                     </div>
                     <div className="text-[12.5px] text-[#a99fc7]">{row.label}</div>
@@ -145,111 +297,116 @@ function BenchmarksPage() {
                 ))}
               </div>
               <div className="mt-5 flex flex-wrap gap-5 text-[13px] text-[#a99fc7]">
-                <span className="inline-flex items-center gap-2"><i className="inline-block h-3 w-3 rounded-sm bg-[#ff07aa]" /> AppMap runtime context</span>
-                <span className="inline-flex items-center gap-2"><i className="inline-block h-3 w-3 rounded-sm bg-[#fb7185]" /> Static baseline</span>
+                <span className="inline-flex items-center gap-2"><i className="inline-block h-3 w-3 rounded-sm bg-[#ff07aa]" /> AppMap runtime evidence</span>
+                <span className="inline-flex items-center gap-2"><i className="inline-block h-3 w-3 rounded-sm bg-[#fb7185]" /> Code-only exploration</span>
               </div>
             </div>
 
-            <p className="mt-7 max-w-[720px] text-[15px] text-[#f2effb]">
-              End-to-end verified-fix rate tells the same story. The runtime
-              lane held at 94 to 100 percent. The static lane dropped from 84
-              percent to 62 percent.
+            <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
+              End-to-end verified-fix rate tells the same story. The runtime lane held at 94 to 100 percent. The code-only lane dropped from 84 percent to 62 percent.
             </p>
             <Caveat />
           </div>
         </section>
 
+        {/* 6. Information density */}
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Why it works</h2>
-            <p className="mt-5 max-w-[760px] text-[16px] leading-[1.7] text-[#a99fc7]">
-              In the study, <code className="font-mono text-[#f2effb]">get_call_tree</code> was used in all 216 trace-augmented cells, about once per trajectory. One runtime query returned the execution path the agent needed to diagnose the problem, replacing the long sequence of file searches and code reads used by the static agent.
-            </p>
-            <p className="mt-9 text-[24px] font-bold tracking-[-0.4px] text-[#f2effb]">
-              Better evidence means less searching.
-            </p>
-          </div>
-        </section>
-
-        <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">The cost-capability frontier</h2>
-            <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
-              Cost per task at each setup, with the verified-fix rate on each
-              bar. The trace setups cost a fraction of the frontier static
-              baseline.
+            <h2 className="max-w-[900px] text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One call can carry the evidence of an entire investigation</h2>
+            <p className="mt-5 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
+              Across all 216 trace-augmented cells analyzed for tool usage, <code className="font-mono text-[#f2effb]">get_call_tree</code> appeared in every cell and averaged just over one call per trajectory. It returned the diagnosis-bearing frame sequence directly. The code-only lane had to enumerate files, inspect imports, search identifiers, and read implementations sequentially.
             </p>
 
-            <div className="mt-10 space-y-5 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
-              {cost.map((c) => (
-                <div key={c.label}>
-                  <div className="flex items-center justify-between text-[13.5px]">
-                    <span className="text-[#f2effb]">{c.label}</span>
-                    <span className="text-[#a99fc7]">
-                      <b className="font-bold text-[#f2effb]">${c.dollars.toFixed(2)}</b> · {c.fix} fixed
-                    </span>
-                  </div>
-                  <div className="mt-2 h-3 w-full overflow-hidden rounded-full bg-[#0d0a1a]">
-                    <div className="h-full rounded-full" style={{ width: `${(c.dollars / maxCost) * 100}%`, background: c.color }} />
-                  </div>
+            <div className="mt-9 flex flex-col gap-5 border-t border-b border-[#2c2353] py-7 sm:flex-row sm:items-start sm:gap-12">
+              {density.map((d) => (
+                <div key={d.l} className="flex-1">
+                  <div className="text-[26px] font-extrabold leading-none tracking-[-0.6px] text-[#f2effb]">{d.n}</div>
+                  <p className="mt-2 text-[13.5px] leading-[1.55] text-[#a99fc7]">{d.l}</p>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 overflow-hidden rounded-2xl border border-[#2c2353]">
-              <table className="w-full text-[14.5px]">
-                <thead className="bg-[#1c1538] text-[12.5px] uppercase tracking-[0.5px] text-[#a99fc7]">
-                  <tr>
-                    <th className="px-4 py-3 text-left">Setup</th>
-                    <th className="px-4 py-3 text-left">Verified-fix rate</th>
-                    <th className="px-4 py-3 text-left">Cost / task</th>
-                    <th className="px-4 py-3 text-left">vs. baseline</th>
-                  </tr>
-                </thead>
-                <tbody className="bg-[#16112b] text-[#f2effb]">
-                  <tr className="border-t border-[#2c2353]"><td className="px-4 py-3">Frontier model, static, unbounded (baseline)</td><td className="px-4 py-3">95%</td><td className="px-4 py-3">$1.16</td><td className="px-4 py-3 text-[#a99fc7]">reference</td></tr>
-                  <tr className="border-t border-[#2c2353]"><td className="px-4 py-3">Compact model, AppMap trace, budget 3</td><td className="px-4 py-3">74%</td><td className="px-4 py-3">$0.31</td><td className="px-4 py-3 text-[#ff07aa]">3.8× cheaper, 21 pts lower</td></tr>
-                  <tr className="border-t border-[#2c2353]"><td className="px-4 py-3">Hybrid: compact diagnosis, frontier fix</td><td className="px-4 py-3">88%</td><td className="px-4 py-3">$0.57</td><td className="px-4 py-3 text-[#ff07aa]">2.0× cheaper, 7 pts lower</td></tr>
-                </tbody>
-              </table>
+            <p className="mt-9 max-w-[880px] text-[22px] font-bold leading-[1.35] tracking-[-0.4px] text-[#f2effb] sm:text-[24px]">
+              Higher information density means fewer tool calls, fewer tokens, less latency, and lower inference cost.
+            </p>
+          </div>
+        </section>
+
+        {/* 7. Cost-capability frontier */}
+        <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">The cost-capability frontier</h2>
+
+            <div className="mt-9 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
+              <h3 className="text-[19px] font-bold text-[#f2effb]">Matched performance in the primary sweep</h3>
+              <p className="mt-3 max-w-[760px] text-[15.5px] leading-[1.7] text-[#a99fc7]">
+                In the primary two-fixture sweep, where both lanes reached 100% verified-fix performance, the trace-augmented configuration reached it for approximately 3.4 times less spend.
+              </p>
             </div>
 
-            <p className="mt-7 max-w-[720px] text-[15px] text-[#f2effb]">
-              A compact model with runtime context, paired with a frontier
-              model for the final fix, lands within 7 points of the frontier
-              static baseline. It does this at half the cost.
-            </p>
+            <div className="mt-10">
+              <h3 className="text-[19px] font-bold text-[#f2effb]">Generalization across 11 fixtures, three configurations</h3>
+              <p className="mt-3 max-w-[820px] text-[15.5px] leading-[1.7] text-[#a99fc7]">
+                The practical configuration is hybrid: use a compact model for high-density trace-based diagnosis and a frontier model for the structurally difficult implementation step. Cost per cell is shown with the verified-fix rate beside each bar.
+              </p>
+
+              <div className="mt-7 space-y-5 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
+                {cost.map((c) => (
+                  <div key={c.label}>
+                    <div className="flex flex-wrap items-center justify-between gap-2 text-[13.5px]">
+                      <span className="text-[#f2effb]">{c.label}</span>
+                      <span className="text-[#a99fc7]">
+                        <b className="font-bold text-[#f2effb]">${c.dollars.toFixed(3)}</b> per cell · {c.fix} fixed
+                      </span>
+                    </div>
+                    <div className="mt-2 h-3 w-full overflow-hidden rounded-full bg-[#0d0a1a]">
+                      <div className="h-full rounded-full" style={{ width: `${(c.dollars / maxCost) * 100}%`, background: c.color }} />
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8 overflow-x-auto rounded-2xl border border-[#2c2353]">
+                <table className="w-full min-w-[640px] text-[14.5px]">
+                  <thead className="bg-[#1c1538] text-[12.5px] uppercase tracking-[0.5px] text-[#a99fc7]">
+                    <tr>
+                      <th className="px-4 py-3 text-left">Configuration</th>
+                      <th className="px-4 py-3 text-left">Verified-fix rate</th>
+                      <th className="px-4 py-3 text-left">Cost / cell</th>
+                      <th className="px-4 py-3 text-left">vs. baseline</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-[#16112b] text-[#f2effb]">
+                    <tr className="border-t border-[#2c2353]"><td className="px-4 py-3">Frontier model, code-only exploration, unlimited budget</td><td className="px-4 py-3">95%</td><td className="px-4 py-3">$1.161</td><td className="px-4 py-3 text-[#a99fc7]">reference</td></tr>
+                    <tr className="border-t border-[#2c2353]"><td className="px-4 py-3">Compact model, AppMap trace, 3-call budget</td><td className="px-4 py-3">74%</td><td className="px-4 py-3">$0.309</td><td className="px-4 py-3 text-[#ff07aa]">3.8 times cheaper, 21 percentage points lower</td></tr>
+                    <tr className="border-t border-[#2c2353]"><td className="px-4 py-3">Hybrid pipeline, compact trace-based diagnosis plus frontier-model fix</td><td className="px-4 py-3">88%</td><td className="px-4 py-3">$0.567</td><td className="px-4 py-3 text-[#ff07aa]">2.0 times cheaper, 7 percentage points lower</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
             <Caveat />
           </div>
         </section>
 
+        {/* 8. Limits */}
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What this study is, and is not</h2>
-            <p className="mt-3 max-w-[760px] text-[16px] text-[#a99fc7]">
-              One internal study. One model family, Claude Sonnet 4.6 and Haiku
-              4.5. One agent loop with hard budget limits. Not yet replicated
-              outside our team. A compact model alone still struggles on the
-              hardest fixes without a frontier fix step. We publish the paper: the full methodology, fixture criteria, budget-sweep design, and per-fixture results tables. Raw run-sets are available on request.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3.5">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What the results do and do not establish</h2>
+            <ul className="mt-7 max-w-[820px] space-y-3">
+              {limits.map((l) => (
+                <li key={l} className="flex gap-3 text-[15.5px] leading-[1.6] text-[#a99fc7]">
+                  <span className="mt-[10px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#ff07aa]" />
+                  {l}
+                </li>
+              ))}
+            </ul>
+            <div className="mt-9 flex flex-wrap gap-3.5">
               <Link to="/get-appmap" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                 Get AppMap
               </Link>
-              <a href="/research/runtime-rca.pdf" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-[#2c2353] px-5 py-2.5 text-[14px] font-semibold text-[#f2effb] hover:border-[#a99fc7]">
-                Read the paper (PDF)
+              <a href={PAPER_REQUEST_URL} className="rounded-lg border border-[#2c2353] px-5 py-2.5 text-[14px] font-semibold text-[#f2effb] hover:border-[#a99fc7]">
+                Paper available on request
               </a>
-            </div>
-          </div>
-        </section>
-
-        <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Not our first benchmark.</h2>
-            <div className="mt-6 block rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-              <p className="text-[16px] text-[#f2effb]">
-                14.6% on the full SWE-bench, ahead of Amazon Q and eight other tools, finished in under four hours at 5 to 30 percent of the cost of other solvers.
-              </p>
             </div>
           </div>
         </section>
