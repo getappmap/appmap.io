@@ -90,10 +90,10 @@ function Index() {
         <ReviewWhatAIDid />
         <OneVsFifteen />
         <ReviewLoop />
+        <HowItWorksReveal />
         <BehavioralReview />
         <TrustBar />
         <Reviews />
-        <HowItWorksReveal />
         <ClosingCTA />
       </main>
     </div>
