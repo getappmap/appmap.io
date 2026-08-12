@@ -149,7 +149,7 @@ function Page() {
             </p>
             <pre className="mt-8 overflow-x-auto rounded-xl border border-[#2c2353] bg-[#1c1538] p-6 font-mono text-[13px] leading-[1.7] text-[#cdd8ee]">{goldTraceTree}</pre>
             <p className="mt-6 max-w-[820px] text-[15px] text-[#f2effb]">
-              A AppMap Gold Trace is reviewed and versioned like any other contract in the repo. Changing the baseline is a pull request, not a silent overwrite.
+              An AppMap Gold Trace is reviewed and versioned like any other contract in the repo. Changing the baseline is a pull request, not a silent overwrite.
             </p>
             <p className="mt-6 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
               Putting AppMap in the repository gives AI agents runtime context that travels with the code. Instead of reconstructing execution from source search every time they enter a codebase, agents query recorded call paths, SQL, HTTP activity, and application structure directly. AppMap Gold Traces carry important behavior forward as versioned context, so a new agent or a different model starts from the same evidence. Both the code and the runtime context are available to the developer and the AI without requiring an AppMap-operated data service.
