@@ -86,7 +86,7 @@ export function ReviewLoop() {
                   src={p.image}
                   alt={p.alt}
                   loading="lazy"
-                  className={`block h-auto w-full object-top ${p.minW ? "min-w-[720px] lg:min-w-0" : ""}`}
+                  className={`block h-[260px] w-full object-cover object-top ${p.minW ? "min-w-[720px] lg:min-w-0" : ""}`}
                 />
               </div>
               <figcaption className="line-clamp-3 flex-1 border-t border-black/10 bg-[color:var(--color-am-card)] px-5 py-4 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
