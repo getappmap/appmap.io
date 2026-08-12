@@ -30,7 +30,7 @@ const panels = [
     image: "/marketing-assets/review/pr-review-summary.png",
     alt: "AppMap Behavioral Review comment on a GitHub pull request showing a severity summary table with zero high findings, one medium finding, and zero low findings",
     caption:
-      "A real AppMap Behavioral Review on a pull request: the one-line diff touched a single DAO, but the runtime traces showed the new ordering leaking into search endpoints the diff never touched.",
+      "A real AppMap Behavioral Review on a pull request. The traces caught a behavior change the diff never showed.",
     minW: true,
   },
   {
