@@ -55,7 +55,7 @@ function Chip({ children }: { children: React.ReactNode }) {
 
 export function ReviewLoop() {
   return (
-    <section className="border-t border-b border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] px-6 py-16">
+    <section className="border-t border-b border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] px-6 py-14">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[color:var(--color-am-ink)] sm:text-[34px]">
           Stop reviewing code. Start reviewing behavior.
@@ -64,7 +64,7 @@ export function ReviewLoop() {
           AppMap turns a recorded run into diagrams developers can inspect and structured runtime evidence AI tools can query. AppMap Gold Traces compare the change against trusted behavior, and the review result can be written directly into the pull request.
         </p>
 
-        <ol className="relative mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+        <ol className="relative mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
           <span
             aria-hidden
             className="pointer-events-none absolute left-[15px] top-4 bottom-4 w-px bg-[color:var(--color-am-line)] lg:left-0 lg:right-0 lg:top-4 lg:bottom-auto lg:h-px lg:w-auto"
@@ -82,7 +82,7 @@ export function ReviewLoop() {
           ))}
         </ol>
 
-        <div className="relative mx-auto mt-8 max-w-[820px]">
+        <div className="relative mx-auto mt-8 max-w-[720px]">
           <Chip>{fullWidth.chip}</Chip>
           <figure className="overflow-hidden rounded-2xl border border-[color:var(--color-am-line)]">
             <div className="overflow-x-auto">
@@ -100,7 +100,7 @@ export function ReviewLoop() {
                 />
               </a>
             </div>
-            <figcaption className="flex items-center justify-between gap-4 border-t border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] px-5 py-4 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
+            <figcaption className="flex items-center justify-between gap-4 border-t border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] px-5 py-3 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
               <span>{fullWidth.caption}</span>
               <a
                 href={fullWidth.image}
@@ -114,17 +114,17 @@ export function ReviewLoop() {
           </figure>
         </div>
 
-        <div className="mt-6 grid items-start gap-6 lg:grid-cols-2">
+        <div className="mt-5 grid items-start gap-6 lg:grid-cols-2">
           {rowPanels.map((p) => (
             <div key={p.chip + p.image} className="relative">
               <Chip>{p.chip}</Chip>
               <figure className="flex flex-col overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
-                <div className="h-[190px] overflow-hidden overflow-x-auto">
+                <div className="h-[170px] overflow-hidden overflow-x-auto">
                   <img
                     src={p.image}
                     alt={p.alt}
                     loading="lazy"
-                    className={`block h-[190px] w-full object-cover object-top ${p.minW ? "min-w-[720px] lg:min-w-0" : ""}`}
+                    className={`block h-[170px] w-full object-cover object-top ${p.minW ? "min-w-[720px] lg:min-w-0" : ""}`}
                   />
                 </div>
                 <figcaption className="line-clamp-2 flex-1 border-t border-black/10 bg-[color:var(--color-am-card)] px-4 py-3 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
@@ -135,13 +135,13 @@ export function ReviewLoop() {
           ))}
         </div>
 
-        <p className="mt-8 max-w-3xl text-[20px] font-semibold text-[color:var(--color-am-ink)]">
+        <p className="mt-6 max-w-3xl text-[20px] font-semibold text-[color:var(--color-am-ink)]">
           Every pull request explains itself.
         </p>
         <p className="mt-3 max-w-3xl text-[14px] text-[color:var(--color-am-muted)]">
           A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the result still matches the AppMap Gold Trace.
         </p>
-        <div className="mt-6 rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] p-5">
+        <div className="mt-6 rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] p-4">
           <p className="text-[14px] leading-[1.55] text-[color:var(--color-am-muted)]">
             Developers can inspect the diagrams. AI tools can query the underlying recording. The pull request carries the resulting behavioral review. The evidence comes from the running application, not from the AI evaluating its own work.
           </p>
