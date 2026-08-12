@@ -1,29 +1,22 @@
 import { MotionOrPoster } from "@/components/common/MotionOrPoster";
 
-const features = [
+const panels = [
   {
-    title: "Runtime code review",
-    body: "A review of your branch against how the code actually ran. Correctness, security, performance, and more.",
+    label: "PERFORMANCE",
+    items: ["Slow requests", "N+1 queries", "Repeated SQL", "Expensive execution paths"],
   },
   {
-    title: "Visualizations",
-    body: "Sequence diagrams, dependency maps, flame graphs, and a navigable code map from one recording.",
+    label: "SECURITY + CORRECTNESS",
+    items: ["Auth gaps", "Exceptions", "Unsafe calls", "Unexpected side effects"],
   },
   {
-    title: "Security and performance",
-    body: "Slow queries, auth gaps, leaked secrets, and unsafe calls, surfaced from the real run.",
-  },
-  {
-    title: "OpenAPI diffs",
-    body: "Behavior changes show up as a concrete delta between auto-generated API definitions.",
-  },
-  {
-    title: "AppMap Gold Trace review",
-    body: "Promote an AppMap recording into a versioned baseline. AppMap compares before and after, so every reviewer sees whether behavior held or changed as intended.",
-  },
-  {
-    title: "One trace, every view",
-    body: "Record once. Review, diagram, query, and feed an agent from the same data.",
+    label: "BEHAVIORAL CHANGE",
+    items: [
+      "API changes",
+      "Query changes",
+      "New dependencies",
+      "AppMap Gold Trace baseline divergence",
+    ],
   },
 ];
 
@@ -32,10 +25,10 @@ export function BehavioralReview() {
     <section className="px-6 py-20">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[color:var(--color-am-ink)] sm:text-[34px]">
-          What runtime evidence can reveal.
+          Find problems that only show up when the code runs.
         </h2>
         <p className="mt-3 max-w-[700px] text-[16px] text-[color:var(--color-am-muted)]">
-          Every AppMap view is evidence of what the change did. Review the behavior across correctness, security, performance, and architecture, all from how the code actually ran.
+          Deep runtime evidence exposes failures in behavior, not just structure. See performance problems, security and correctness issues, and unexpected changes while the code is still in development.
         </p>
 
         <div className="mt-8">
@@ -52,17 +45,25 @@ export function BehavioralReview() {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((f) => (
+        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {panels.map((p) => (
             <div
-              key={f.title}
-              className="rounded-2xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] p-6"
+              key={p.label}
+              className="rounded-lg border border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] px-4 py-3.5"
             >
-              <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-[color:var(--color-am-brand)]/15 text-[color:var(--color-am-brand)]">
-                <span className="h-2.5 w-2.5 rounded-sm bg-current" />
+              <div className="text-[11px] font-bold uppercase tracking-[0.08em] text-[#ff07aa]">
+                {p.label}
               </div>
-              <h3 className="text-[17px] font-bold text-[color:var(--color-am-ink)]">{f.title}</h3>
-              <p className="mt-2 text-[14.5px] text-[color:var(--color-am-muted)]">{f.body}</p>
+              <ul className="mt-2.5 space-y-1">
+                {p.items.map((item) => (
+                  <li
+                    key={item}
+                    className="border-t border-[color:var(--color-am-line)]/60 pt-1 text-[14px] leading-[1.45] text-[color:var(--color-am-ink)] first:border-t-0 first:pt-0"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
