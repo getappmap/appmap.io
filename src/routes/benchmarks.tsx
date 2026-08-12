@@ -49,12 +49,12 @@ const swebench = [
     body: "SWE-bench draws from highly visible open-source repositories that may already be represented in model pretraining. A result can reflect learned repository priors as well as investigation performed during the benchmark.",
   },
   {
-    title: "Triaged issues can reveal the answer",
-    body: "Real GitHub issue threads may name the file, stack trace, function, or bug mechanism. Once the issue points toward the cause, the hardest part of root-cause analysis has already been reduced.",
+    title: "Post-triage issues can narrow the search",
+    body: "Real GitHub issue threads may identify a file, stack trace, function, or likely mechanism. Once those clues are present, the agent begins closer to implementation and the exploratory RCA phase becomes harder to measure independently.",
   },
   {
-    title: "Patch success can hide weak diagnosis",
-    body: "An implementation agent can re-explore the code and recover from an incomplete diagnosis. We separated diagnosis from fixing so the study could measure the evidence channel itself.",
+    title: "Patch success can mask weak diagnosis",
+    body: "An implementation agent can re-explore the code and recover from an incomplete RCA report. We separated diagnosis from fixing so the study could measure the quality and cost of the evidence-gathering stage itself.",
   },
 ];
 
