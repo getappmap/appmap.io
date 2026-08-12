@@ -17,16 +17,16 @@ const steps = [
   },
 ];
 
-const panels = [
+const fullWidth = {
+  chip: "2-3",
+  image: "/marketing-assets/review/trace-highlight.png",
+  alt: "AppMap behavioral diff showing the actor search call highlighted in amber against the dimmed baseline trace, with the SQL order-by change calculated above",
+  caption: "The recording, compared against the AppMap Gold Trace baseline. The one changed call is highlighted.",
+};
+
+const rowPanels = [
   {
-    chip: "2",
-    image: "/marketing-assets/img/appmap/sequence.jpg",
-    alt: "AppMap sequence diagram of a recorded run showing calls between components over time",
-    caption: "The recorded run, visualized.",
-    minW: false,
-  },
-  {
-    chip: "3-4",
+    chip: "4",
     image: "/marketing-assets/review/pr-review-summary.png",
     alt: "AppMap Behavioral Review comment on a GitHub pull request showing a severity summary table with zero high findings, one medium finding, and zero low findings",
     caption:
@@ -72,8 +72,25 @@ export function ReviewLoop() {
           ))}
         </ol>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
-          {panels.map((p) => (
+        <figure className="relative mt-12 overflow-hidden rounded-2xl border border-[color:var(--color-am-line)]">
+          <span className="absolute left-3 top-3 z-10 flex h-7 min-w-7 items-center justify-center rounded-lg bg-[color:var(--color-am-brand)] px-2 text-[13px] font-extrabold text-white">
+            {fullWidth.chip}
+          </span>
+          <div className="overflow-x-auto">
+            <img
+              src={fullWidth.image}
+              alt={fullWidth.alt}
+              loading="lazy"
+              className="block h-auto w-full min-w-[720px] lg:min-w-0"
+            />
+          </div>
+          <figcaption className="border-t border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] px-5 py-4 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
+            {fullWidth.caption}
+          </figcaption>
+        </figure>
+
+        <div className="mt-6 grid gap-6 lg:grid-cols-2 items-start">
+          {rowPanels.map((p) => (
             <figure
               key={p.chip + p.image}
               className="relative flex flex-col overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg"
