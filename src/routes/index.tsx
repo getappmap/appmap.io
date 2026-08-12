@@ -88,6 +88,7 @@ function Index() {
       <main>
         <HomeHero />
         <PainStats />
+        <CatchPrevention />
         <ReviewWhatAIDid />
         <OneVsFifteen />
         <ReviewLoop />
