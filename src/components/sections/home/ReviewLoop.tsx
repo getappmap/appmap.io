@@ -21,9 +21,10 @@ const steps = [
 
 const fullWidth = {
   chip: "2-3",
-  image: "/marketing-assets/review/trace-highlight.png",
-  alt: "AppMap behavioral diff showing the actor search call highlighted in amber against the dimmed baseline trace, with the SQL order-by change calculated above",
-  caption: "The recording, compared against the AppMap Gold Trace baseline. The one changed call is highlighted.",
+  image: "/marketing-assets/review/trace-diff-diagram.png",
+  fullTrace: "/marketing-assets/review/trace-highlight.png",
+  alt: "Sequence diagram of a client request flowing through JWTAuthFilter, ActorService, ActorDao, and Postgres, with the changed order-by query highlighted in amber",
+  caption: "The recorded run as a sequence diagram. The amber call is the one that changed against the AppMap Gold Trace baseline.",
 };
 
 const rowPanels = [
