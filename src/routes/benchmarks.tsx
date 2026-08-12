@@ -163,10 +163,10 @@ function BenchmarksPage() {
               Real-world issues are not well-defined bugs.
             </h1>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              They arrive as symptoms. The agent still has to discover the mechanism, code location, execution path, and affected behavior before it can produce a reliable fix. We built this study to measure that diagnostic work directly.
+              Bug reports arrive as symptoms. Pull requests arrive as diffs. Neither tells you what the running system actually did. Developers and AI agents still have to discover the execution path, affected code, queries, dependencies, and behavioral consequences.
             </p>
             <p className="mt-4 text-[17px] font-semibold text-[#f2effb]">
-              That required moving beyond SWE-bench.
+              This study measures the reactive case, root-cause analysis, so the value of runtime evidence can be isolated from patch generation.
             </p>
             <a
               href="#results"
