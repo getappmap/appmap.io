@@ -19,30 +19,26 @@ const steps = [
   },
 ];
 
-const fullWidth = {
-  chip: "2-3",
-  image: "/marketing-assets/review/trace-diff-diagram.png",
-  fullTrace: "/marketing-assets/review/trace-highlight.png",
-  alt: "Sequence diagram of a client request flowing through JWTAuthFilter, ActorService, ActorDao, and Postgres, with the changed order-by query highlighted in amber",
-  caption: "The recorded run as a sequence diagram. The amber call is the one that changed against the AppMap Gold Trace baseline.",
-};
-
-const rowPanels = [
+const panels = [
+  {
+    chip: "2-3",
+    image: "/marketing-assets/review/trace-diff-diagram.png",
+    alt: "Sequence diagram of a client request flowing through JWTAuthFilter, ActorService, ActorDao, and Postgres, with the changed order-by query highlighted in amber",
+    caption: "The recorded run as a sequence diagram. The amber call is the one that changed against the AppMap Gold Trace baseline.",
+    link: {
+      href: "/marketing-assets/review/trace-highlight.png",
+      label: "View the full trace",
+    },
+  },
   {
     chip: "4",
     image: "/marketing-assets/review/pr-review-summary.png",
     alt: "AppMap Behavioral Review comment on a GitHub pull request showing a severity summary table with zero high findings, one medium finding, and zero low findings",
-    caption:
-      "A real AppMap Behavioral Review on a pull request. The traces caught a behavior change the diff never showed.",
-    minW: true,
-  },
-  {
-    chip: "4",
-    image: "/marketing-assets/review/pr-checks-table.png",
-    alt: "Checks performed table from an AppMap Behavioral Review listing behavioral compare, changes outside the pull request scope, missing guards, test and recording coverage, SQL, HTTP, and intended changes verified",
-    caption:
-      "Every review reports the checks performed: behavioral compare, scope, guards, coverage, SQL, and HTTP, backed by AppMap Gold Traces.",
-    minW: true,
+    caption: "A real AppMap Behavioral Review on a pull request. The traces caught a behavior change the diff never showed.",
+    link: {
+      href: "/marketing-assets/review/pr-checks-table.png",
+      label: "See the checks performed",
+    },
   },
 ];
 
@@ -83,53 +79,34 @@ export function ReviewLoop() {
           ))}
         </ol>
 
-        <div className="relative mx-auto mt-6 max-w-[920px]">
-          <Chip>{fullWidth.chip}</Chip>
-          <figure className="w-full overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
-            <div className="w-full overflow-x-auto">
-              <a
-                href={fullWidth.image}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <img
-                  src={fullWidth.image}
-                  alt={fullWidth.alt}
-                  loading="lazy"
-                  className="block h-auto w-full min-w-[600px] lg:min-w-0"
-                />
-              </a>
-            </div>
-            <figcaption className="flex items-center justify-between gap-4 border-t border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] px-5 py-3 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
-              <span>{fullWidth.caption}</span>
-              <a
-                href={fullWidth.fullTrace}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="shrink-0 text-[12px] font-medium text-[color:var(--color-am-brand)] hover:underline"
-              >
-                View the full trace
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-
-        <div className="mt-4 grid w-full items-start gap-5 lg:grid-cols-2">
-          {rowPanels.map((p) => (
+        <div className="mt-6 grid w-full items-start gap-5 lg:grid-cols-2">
+          {panels.map((p) => (
             <div key={p.chip + p.image} className="relative w-full min-w-0">
               <Chip>{p.chip}</Chip>
               <figure className="flex w-full flex-col overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
-                <div className="h-[150px] w-full overflow-hidden overflow-x-auto">
+                <a
+                  href={p.image}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full"
+                >
                   <img
                     src={p.image}
                     alt={p.alt}
                     loading="lazy"
-                    className={`block h-[150px] w-full object-cover object-top ${p.minW ? "min-w-[720px] lg:min-w-0" : ""}`}
+                    className="block h-auto w-full"
                   />
-                </div>
-                <figcaption className="line-clamp-2 flex-1 border-t border-black/10 bg-[color:var(--color-am-card)] px-4 py-3 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
-                  {p.caption}
+                </a>
+                <figcaption className="flex min-h-[4.5rem] items-center justify-between gap-4 border-t border-black/10 bg-[color:var(--color-am-card)] px-4 py-3 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
+                  <span className="line-clamp-2">{p.caption}</span>
+                  <a
+                    href={p.link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shrink-0 text-[12px] font-medium text-[color:var(--color-am-brand)] hover:underline"
+                  >
+                    {p.link.label}
+                  </a>
                 </figcaption>
               </figure>
             </div>
