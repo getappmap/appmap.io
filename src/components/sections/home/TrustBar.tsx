@@ -9,7 +9,14 @@ const cells: { n: string; l: string; sources?: Src[] }[] = [
       { label: "JetBrains", href: "https://plugins.jetbrains.com/plugin/16701-appmap-free-ai-architect" },
     ],
   },
-  { n: "100K+", l: "developer community" },
+  {
+    n: "100K+",
+    l: "developer community",
+    sources: [
+      { label: "VS Code", href: "https://marketplace.visualstudio.com/items?itemName=appland.appmap" },
+      { label: "JetBrains", href: "https://plugins.jetbrains.com/plugin/16701-appmap-free-ai-architect" },
+    ],
+  },
   {
     n: "2020",
     l: "open source since",

@@ -67,7 +67,7 @@ const cost = [
 
 const Caveat = () => (
   <p className="mt-7 max-w-[680px] border-l-2 border-[#2c2353] pl-4 text-[13.5px] text-[#7c8aa6]">
-    One internal study. Claude model family. Not yet replicated outside our team. We publish the method and the per-fixture data so you can check it.
+    One internal study. Claude model family. Not yet replicated outside our team. We publish the paper: the full methodology, fixture criteria, budget-sweep design, and per-fixture results tables. Raw run-sets are available on request.
   </p>
 );
 
@@ -230,15 +230,14 @@ function BenchmarksPage() {
               One internal study. One model family, Claude Sonnet 4.6 and Haiku
               4.5. One agent loop with hard budget limits. Not yet replicated
               outside our team. A compact model alone still struggles on the
-              hardest fixes without a frontier fix step. We publish the method
-              and the per-fixture data so anyone can check it.
+              hardest fixes without a frontier fix step. We publish the paper: the full methodology, fixture criteria, budget-sweep design, and per-fixture results tables. Raw run-sets are available on request.
             </p>
             <div className="mt-8 flex flex-wrap gap-3.5">
               <Link to="/get-appmap" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                 Get AppMap
               </Link>
-              <a href="/blog/appmap-gold-traces-runtime-context" className="rounded-lg border border-[#2c2353] px-5 py-2.5 text-[14px] font-semibold text-[#f2effb] hover:border-[#a99fc7]">
-                Read the technical write-up
+              <a href="/research/runtime-rca.pdf" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-[#2c2353] px-5 py-2.5 text-[14px] font-semibold text-[#f2effb] hover:border-[#a99fc7]">
+                Read the paper (PDF)
               </a>
             </div>
           </div>
