@@ -178,10 +178,10 @@ function BenchmarksPage() {
           </div>
         </section>
 
-        {/* 2. Why SWE-bench could not answer this question */}
+        {/* 2. Why SWE-bench could not isolate diagnosis */}
         <section className="border-t border-[#2c2353] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Why SWE-bench could not answer this question</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Why SWE-bench could not isolate diagnosis</h2>
             <p className="mt-4 max-w-[760px] text-[16px] leading-[1.7] text-[#a99fc7]">
               SWE-bench remains valuable for comparing overall agent capability. It was not designed to isolate the value of root-cause evidence.
             </p>
