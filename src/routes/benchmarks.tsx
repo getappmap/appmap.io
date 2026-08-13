@@ -73,34 +73,18 @@ const enterpriseIssue = [
 ];
 
 const setup = [
-  {
-    title: "Private enterprise-style codebase",
-    body: "A roughly 50-module Spring Boot application created for the study and hosted privately, outside frontier-model pretraining corpora.",
-  },
-  {
-    title: "Symptom-only issue reports",
-    body: "Tickets are written like customer or operations reports. They do not name the buggy file, function, or mechanism, and their identifiers do not overlap with the gold fix.",
-  },
-  {
-    title: "Hidden reproducing test",
-    body: "The integration test drives the system through its external interface, but its source code is removed before the RCA session so the agent cannot read the answer.",
-  },
-  {
-    title: "Two controlled lanes",
-    body: "Both lanes receive the same issue, prompts, models, and tool-call budgets. One explores the source with Read, Grep, Glob, and Bash. The other also receives AppMap runtime evidence.",
-  },
-  {
-    title: "Performance corridor",
-    body: "Primary fixtures must fail without investigation and succeed with an unlimited diagnostic budget. Trivial and impossible problems are excluded from the main budget sweep.",
-  },
+  { label: "Private codebase", body: "~50-module Spring Boot app, outside pretraining corpora" },
+  { label: "Symptom-only tickets", body: "zero identifier overlap with the gold fix" },
+  { label: "Hidden repro test", body: "test source removed before the session" },
+  { label: "Two controlled lanes", body: "identical except runtime evidence" },
+  { label: "Performance corridor", body: "trivial and impossible problems excluded" },
 ];
 
-const headlineNumbers = [
-  { n: "100%", l: "Trace-augmented RCA correctness at the 3-call diagnostic budget." },
-  { n: "28%", l: "Code-only RCA correctness at the same budget." },
-  { n: "94% vs. 62%", l: "Verified-fix rate at the 3-call budget: runtime evidence versus code-only exploration." },
-  { n: "15+ -> 1", l: "Sequential grep-and-read steps replaced by one high-density get_call_tree query." },
-];
+const sympyCode = `def _print_Indexed(self, expr):
+    base, *index = expr.args
+    return "{}[{}]".format(str(base), ", ".join([self._print(ind) for ind in index]))`;
+
+const verifiedFix = "Verified-fix rate at the 3-call budget: runtime evidence versus code-only exploration.";
 
 const accuracy = [
   { label: "Unlimited", appmap: 100, codeOnly: 91 },
