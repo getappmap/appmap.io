@@ -73,34 +73,18 @@ const enterpriseIssue = [
 ];
 
 const setup = [
-  {
-    title: "Private enterprise-style codebase",
-    body: "A roughly 50-module Spring Boot application created for the study and hosted privately, outside frontier-model pretraining corpora.",
-  },
-  {
-    title: "Symptom-only issue reports",
-    body: "Tickets are written like customer or operations reports. They do not name the buggy file, function, or mechanism, and their identifiers do not overlap with the gold fix.",
-  },
-  {
-    title: "Hidden reproducing test",
-    body: "The integration test drives the system through its external interface, but its source code is removed before the RCA session so the agent cannot read the answer.",
-  },
-  {
-    title: "Two controlled lanes",
-    body: "Both lanes receive the same issue, prompts, models, and tool-call budgets. One explores the source with Read, Grep, Glob, and Bash. The other also receives AppMap runtime evidence.",
-  },
-  {
-    title: "Performance corridor",
-    body: "Primary fixtures must fail without investigation and succeed with an unlimited diagnostic budget. Trivial and impossible problems are excluded from the main budget sweep.",
-  },
+  { label: "Private codebase", body: "~50-module Spring Boot app, outside pretraining corpora" },
+  { label: "Symptom-only tickets", body: "zero identifier overlap with the gold fix" },
+  { label: "Hidden repro test", body: "test source removed before the session" },
+  { label: "Two controlled lanes", body: "identical except runtime evidence" },
+  { label: "Performance corridor", body: "trivial and impossible problems excluded" },
 ];
 
-const headlineNumbers = [
-  { n: "100%", l: "Trace-augmented RCA correctness at the 3-call diagnostic budget." },
-  { n: "28%", l: "Code-only RCA correctness at the same budget." },
-  { n: "94% vs. 62%", l: "Verified-fix rate at the 3-call budget: runtime evidence versus code-only exploration." },
-  { n: "15+ -> 1", l: "Sequential grep-and-read steps replaced by one high-density get_call_tree query." },
-];
+const sympyCode = `def _print_Indexed(self, expr):
+    base, *index = expr.args
+    return "{}[{}]".format(str(base), ", ".join([self._print(ind) for ind in index]))`;
+
+const verifiedFix = "Verified-fix rate at the 3-call budget: runtime evidence versus code-only exploration.";
 
 const accuracy = [
   { label: "Unlimited", appmap: 100, codeOnly: 91 },
@@ -311,14 +295,60 @@ function BenchmarksPage() {
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">A benchmark designed to require diagnosis</h2>
-            <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-10 grid items-stretch gap-6 lg:grid-cols-2">
+              <div className="relative min-w-0">
+                <span className="absolute -top-3 -left-3 z-10 rounded-lg bg-[#1c1538] px-2.5 py-1 text-[11.5px] font-extrabold uppercase tracking-[0.6px] text-white shadow-md">
+                  SWE-bench issue
+                </span>
+                <div className="flex h-full min-w-0 flex-col rounded-xl bg-white p-6 shadow-lg sm:p-7">
+                  <h3 className="text-[17px] font-bold text-slate-900">PythonCodePrinter doesn&apos;t support Indexed</h3>
+                  <p className="mt-1 text-[12.5px] text-slate-500">sympy/sympy #16669 · opened by ruoyu0088 · April 2019</p>
+                  <p className="mt-4 text-[13.5px] leading-[1.7] text-slate-700">
+                    I use lambdify() to generate some functions and save the code for further use. But the generated code for Indexed operation has some warnings [...] We should add following method to PythonCodePrinter:
+                  </p>
+                  <pre className="mt-4 max-w-full overflow-x-auto rounded-md border-l-4 border-amber-400 bg-amber-50 p-3 text-[12px] leading-[1.6] text-slate-800">
+                    <code>{sympyCode}</code>
+                  </pre>
+                  <p className="mt-auto pt-4 text-[12.5px] font-medium text-rose-600">
+                    <span aria-hidden className="mr-1.5">&#9662;</span>
+                    The fix, ready to paste, inside the issue text.
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative min-w-0">
+                <span className="absolute -top-3 -left-3 z-10 rounded-lg bg-[#ff07aa] px-2.5 py-1 text-[11.5px] font-extrabold uppercase tracking-[0.6px] text-white shadow-md">
+                  This benchmark
+                </span>
+                <div className="flex h-full min-w-0 flex-col rounded-xl bg-white p-6 shadow-lg sm:p-7">
+                  <p className="text-[12.5px] text-slate-500">Operations ticket</p>
+                  <h3 className="mt-1 text-[17px] font-bold text-slate-900">Customers being charged twice on retried payments</h3>
+                  <div className="mt-5 divide-y divide-slate-200 border-t border-slate-200">
+                    {["Stack trace: none", "File or function named: none", "Fix included: none"].map((row) => (
+                      <p key={row} className="py-2.5 text-[13.5px] text-slate-500">{row}</p>
+                    ))}
+                  </div>
+                  <p className="mt-auto pt-4 text-[12.5px] font-medium text-rose-600">
+                    <span aria-hidden className="mr-1.5">&#9662;</span>
+                    Diagnosis is the work.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p className="mt-7 max-w-[880px] text-[15px] leading-[1.65] text-[#a99fc7]">
+              One issue contains its own answer. The other requires finding it. The SWE-Bench+ audit documents fix leakage like this in roughly one third of SWE-bench issues; this benchmark&apos;s tickets are constructed to make it impossible.
+            </p>
+
+            <div className="mt-7 flex flex-wrap gap-x-8 gap-y-5 rounded-2xl border border-[#2c2353] bg-[#1c1538] px-6 py-5">
               {setup.map((s) => (
-                <div key={s.title} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                  <h3 className="text-[17px] font-bold text-[#f2effb]">{s.title}</h3>
-                  <p className="mt-2 text-[14.5px] leading-[1.65] text-[#a99fc7]">{s.body}</p>
+                <div key={s.label} className="min-w-[180px] flex-1">
+                  <div className="text-[11.5px] font-bold uppercase tracking-[0.8px] text-[#a99fc7]">{s.label}</div>
+                  <p className="mt-1 text-[13.5px] leading-[1.5] text-[#f2effb]">{s.body}</p>
                 </div>
               ))}
             </div>
+
             <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
               The runtime recording is the sole experimental difference between the two RCA lanes.
             </p>
@@ -333,13 +363,33 @@ function BenchmarksPage() {
             </div>
             <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Runtime evidence preserved diagnosis under pressure</h2>
 
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {headlineNumbers.map((h) => (
-                <div key={h.l} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                  <div className="text-[32px] font-extrabold leading-none tracking-[-1px] text-[#ff07aa] sm:text-[38px]">{h.n}</div>
-                  <p className="mt-3 text-[14px] leading-[1.6] text-[#a99fc7]">{h.l}</p>
+            <div className="mt-8 grid gap-4 lg:grid-cols-3">
+              <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                <div className="flex items-end gap-4">
+                  <div>
+                    <div className="text-[32px] font-extrabold leading-none tracking-[-1px] text-[#ff07aa] sm:text-[38px]">100%</div>
+                    <p className="mt-2 text-[12.5px] leading-[1.4] text-[#a99fc7]">with AppMap runtime evidence</p>
+                  </div>
+                  <span className="pb-6 text-[14px] text-[#a99fc7]">vs</span>
+                  <div>
+                    <div className="text-[32px] font-extrabold leading-none tracking-[-1px] text-[#7c8aa6] sm:text-[38px]">28%</div>
+                    <p className="mt-2 text-[12.5px] leading-[1.4] text-[#a99fc7]">code-only exploration</p>
+                  </div>
                 </div>
-              ))}
+                <p className="mt-4 text-[14px] leading-[1.6] text-[#a99fc7]">RCA correctness at the 3-call diagnostic budget.</p>
+              </div>
+              <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                <div className="text-[32px] font-extrabold leading-none tracking-[-1px] sm:text-[38px]">
+                  <span className="text-[#ff07aa]">94%</span>
+                  <span className="text-[#a99fc7]"> vs. </span>
+                  <span className="text-[#7c8aa6]">62%</span>
+                </div>
+                <p className="mt-3 text-[14px] leading-[1.6] text-[#a99fc7]">{verifiedFix}</p>
+              </div>
+              <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                <div className="text-[32px] font-extrabold leading-none tracking-[-1px] text-[#ff07aa] sm:text-[38px]">15+ -&gt; 1</div>
+                <p className="mt-3 text-[14px] leading-[1.6] text-[#a99fc7]">Sequential grep-and-read steps replaced by one high-density get_call_tree query.</p>
+              </div>
             </div>
 
             <p className="mt-10 max-w-[760px] text-[16px] text-[#a99fc7]">
