@@ -471,22 +471,7 @@ function BenchmarksPage() {
               <Link to="/get-appmap" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                 Get AppMap
               </Link>
-              <div className="flex flex-col items-start gap-3">
-                <PaperRequest />
-                <p className="text-[13px] text-[#a99fc7]">
-                  Or{" "}
-                  <a
-                    href="/research/runtime-rca.pdf"
-                    download
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline underline-offset-2 hover:text-[#f2effb]"
-                  >
-                    download the paper directly (PDF, 23 pages)
-                  </a>
-                  .
-                </p>
-              </div>
+              <PaperRequest />
             </div>
           </div>
         </section>
