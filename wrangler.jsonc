@@ -7,4 +7,9 @@
   "compatibility_date": "2025-09-24",
   "compatibility_flags": ["nodejs_compat"],
   "main": "src/server.ts",
+  "vars": {
+    "SUPABASE_URL": "https://ulrbnkrvxzbtqancxmtn.supabase.co",
+  },
+  // SUPABASE_SERVICE_ROLE_KEY is a secret; set it once with:
+  //   bunx wrangler secret put SUPABASE_SERVICE_ROLE_KEY
 }
