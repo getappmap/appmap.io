@@ -51,7 +51,16 @@ export function ReviewLoop() {
           AppMap records how the application behaves and compares that behavior across revisions. As the code changes, AppMap records fresh traces and shows what held and what changed. Developers inspect the diagrams. Coding agents query the same traces. The review can go straight to the pull request.
         </p>
 
-        <ol className="relative mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
+        <img
+          src="/marketing-assets/img/workflow/appmap-runtime-review.png"
+          alt="AppMap workflow: the coding agent runs the tests, AppMap records fresh traces, and AppMap compares the behavior of the head revision with the base revision before merge"
+          width={2000}
+          height={960}
+          loading="lazy"
+          className="mt-8 block w-full rounded-2xl border border-[color:var(--color-am-line)]"
+        />
+
+        <ol className="relative mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
           <span
             aria-hidden
             className="pointer-events-none absolute left-[15px] top-4 bottom-4 w-px bg-[color:var(--color-am-line)] lg:left-0 lg:right-0 lg:top-4 lg:bottom-auto lg:h-px lg:w-auto"
@@ -111,7 +120,7 @@ export function ReviewLoop() {
         </p>
         <div className="mt-6 rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] p-4">
           <p className="text-[14px] leading-[1.55] text-[color:var(--color-am-muted)]">
-            Developers can inspect the diagrams. Coding agents can query the same traces. The pull request carries the resulting behavioral review. The evidence comes from the running application, not from the AI evaluating its own work.
+            Developers can inspect the diagrams. Coding agents can query the same traces. The pull request carries the resulting behavioral review. The evidence comes from the running application, not from the AI evaluating its own work. AppMap works with Claude Code, Cursor, GitHub Copilot, Windsurf, and any MCP-capable coding agent.
           </p>
         </div>
       </div>
