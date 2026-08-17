@@ -257,14 +257,58 @@ function EnterprisePageInner() {
         <section id="security-faq" className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Architecture and trust</h2>
-            <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
-              {blocks.map((b) => (
-                <div key={b.title} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                  <h3 className="text-[17px] font-bold text-[#f2effb]">{b.title}</h3>
-                  <p className="mt-2 text-[14.5px] text-[#a99fc7]">{b.body}</p>
+
+            <div className="mt-8 rounded-2xl border border-[#2c2353] bg-[#0d0a1a] p-6 sm:p-8">
+              <div className="relative overflow-visible rounded-2xl border-2 border-dashed border-[#3f3566] bg-[#0d0a1a]/50 p-6 pt-8 sm:p-8 sm:pt-9">
+                <div className="absolute -top-[11px] left-4 bg-[#0d0a1a] px-2 text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]/70 sm:left-6">Your environment</div>
+
+                <div className="grid gap-4 md:grid-cols-2">
+                  <div className="rounded-xl border border-[#2c2353] bg-[#1c1538] p-5">
+                    <h3 className="text-[15px] font-bold text-[#f2effb]">Developer environment</h3>
+                    <p className="mt-2 text-[13.5px] leading-[1.5] text-[#a99fc7]">AppMap records and compares traces</p>
+                    <p className="mt-1.5 text-[13.5px] leading-[1.5] text-[#a99fc7]">
+                      <code className="font-mono text-[#ff07aa]">tmp/appmap</code> · working traces
+                    </p>
+                  </div>
+                  <div className="rounded-xl border border-[#2c2353] bg-[#1c1538] p-5">
+                    <h3 className="text-[15px] font-bold text-[#f2effb]">CI</h3>
+                    <p className="mt-2 text-[13.5px] leading-[1.5] text-[#a99fc7]">The same review runs in the pipeline</p>
+                    <p className="mt-1.5 text-[13.5px] leading-[1.5] text-[#a99fc7]">No outbound dependency on AppMap services</p>
+                  </div>
                 </div>
-              ))}
+
+                <div className="mt-4 rounded-xl border border-[#2c2353] bg-[#1c1538] p-5 text-center">
+                  <h3 className="text-[15px] font-bold text-[#f2effb]">Repository</h3>
+                  <p className="mt-2 text-[13.5px] leading-[1.5] text-[#a99fc7]">
+                    <code className="font-mono text-[#ff07aa]">gold_traces/</code> · sanitized before commit
+                  </p>
+                </div>
+
+                <div className="mt-5 inline-flex items-center rounded-full border border-[#8b5cf6]/50 bg-[#1c1538] px-3.5 py-1.5 text-[12.5px] text-[#a99fc7]">
+                  Self-hosted AI endpoint (optional)
+                </div>
+
+                <div className="absolute -bottom-10 right-4 sm:right-8">
+                  <div className="rounded-full border border-[#2c2353] bg-[#16112b] px-3.5 py-1.5 text-[12.5px] text-[#a99fc7]/70">
+                    Hosted coding agent (optional) · provider&apos;s terms apply
+                  </div>
+                </div>
+
+                <svg className="pointer-events-none absolute inset-0 h-full w-full overflow-visible" aria-hidden="true">
+                  <line x1="84%" y1="76%" x2="96%" y2="108%" stroke="#3f3566" strokeWidth="2" strokeDasharray="5 4" />
+                </svg>
+              </div>
             </div>
+
+            <p className="mt-8 max-w-[820px] text-[14px] leading-[1.6] text-[#a99fc7]">
+              AppMap runs inside your environment with no outbound dependency on AppMap services. Offline activation and internal distribution are supported. There is no AppMap cloud for traces.
+            </p>
+            <p className="mt-4 max-w-[820px] text-[14px] leading-[1.6] text-[#a99fc7]">
+              Trust, but verify:{" "}
+              <ExternalLink href="https://github.com/getappmap">open-source clients</ExternalLink> and a{" "}
+              <ExternalLink href="https://github.com/getappmap/appmap">published data spec</ExternalLink>. Developers and
+              security reviewers can audit what AppMap records and what it sends to the agent.
+            </p>
           </div>
         </section>
 
