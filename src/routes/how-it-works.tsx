@@ -149,12 +149,9 @@ function HowItWorksPage() {
         <section className="px-6 pt-20 pb-12" style={{ background: "radial-gradient(900px 460px at 78% -8%, rgba(139,92,246,0.22), transparent), radial-gradient(820px 520px at 12% 115%, rgba(255,7,170,0.20), transparent)" }}>
           <div className="mx-auto max-w-[1120px]">
             <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">How it works</div>
-            <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-              How AppMap works.
-            </h1>
-            <p className="mt-6 max-w-[820px] text-[22px] font-semibold leading-[1.35] tracking-[-0.4px] text-[#f2effb] sm:text-[26px]">
+            <h1 className="mt-4 max-w-[820px] text-[22px] font-semibold leading-[1.35] tracking-[-0.4px] text-[#f2effb] sm:text-[26px]">
               Source code tells you what software could do. Runtime behavior tells you what it actually does.
-            </p>
+            </h1>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
               AppMap runs in development and CI. It records traces from tests, requests, and running processes. Developers inspect them as maps, and coding agents query them directly.
             </p>
