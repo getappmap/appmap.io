@@ -270,6 +270,9 @@ function HowItWorksPage() {
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the traces reach your agent</h2>
+            <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
+              Coding agents query the traces instead of reconstructing the execution path from source. AppMap exposes the recorded calls, queries, and requests through MCP.
+            </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {mcp.map((m) => (
                 <div key={m.name} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
@@ -279,11 +282,7 @@ function HowItWorksPage() {
               ))}
             </div>
 
-            <p className="mt-10 max-w-[720px] text-[16px] font-semibold text-[#f2effb]">
-              Developers use the maps. Coding agents query the same traces.
-            </p>
-
-            <div className="mt-6 grid gap-4 lg:grid-cols-2">
+            <div className="mt-10 grid gap-4 lg:grid-cols-2">
               <div className="overflow-hidden rounded-xl border border-[#ff07aa]/40 bg-[#1c1538] shadow-[0_0_60px_rgba(255,7,170,0.12)_inset]">
                 <div className="flex items-center gap-2 border-b border-[#2c2353] px-4 py-3 text-[12.5px] text-[#a99fc7]">
                   <span className="inline-block h-2.5 w-2.5 rounded-full bg-[#fb7185]" />
@@ -334,60 +333,33 @@ grep -rn "ledger.write" src/
             </div>
 
             <p className="mt-4 text-center text-[13px] text-[#a99fc7]">
-              One get_call_tree query returns the whole path. Representative source-only search path: 15+ calls.
+              One get_call_tree query returns the execution path. A representative source-only search requires 15+ calls to reconstruct the same context.
             </p>
-          </div>
-        </section>
-
-        <section className="px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">See what your agent read</h2>
-            <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
-              AppMap shows the evidence behind each inference as the same visuals you inspect in the editor. You see exactly what the coding agent reasoned over instead of trusting the output.
-            </p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <Link to="/benchmarks" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
-                See the Benchmark
-              </Link>
-              <Link to="/architecture" className="rounded-lg border border-[#2c2353] px-5 py-2.5 text-[14px] font-semibold text-[#f2effb] hover:border-[#a99fc7]">
-                Where traces live →
+            <div className="mt-4 text-center">
+              <Link to="/benchmarks" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
+                See the benchmark →
               </Link>
             </div>
           </div>
         </section>
 
-        <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What is AppMap?</h2>
-            <p className="mt-4 max-w-[820px] text-[18px] leading-[1.6] text-[#a99fc7]">
-              AppMap helps developers and coding agents understand what software actually does at runtime. It records the application in the editor and turns that run into diagrams you can review and a trace your coding agent can query over MCP.
-            </p>
-          </div>
-        </section>
-
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">AppMap Gold Traces make behavior reviewable</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Gold Traces make behavior comparable</h2>
             <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              A Gold Trace is a recorded run of an important path in your software, kept as the reference for what that path does. AppMap's skills and your coding agent build and maintain the set as the code changes. You review what changed and decide whether it is right.
+              AppMap Gold Traces are a representative set of traces maintained as the code changes. AppMap compares the Gold Traces for the head revision with the Gold Traces for the base revision and reports what changed.
             </p>
+            <p className="mt-3 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
+              The Gold Traces skill uses existing tests to cover important application paths and suggests new test cases when coverage is missing.
+            </p>
+            <div className="mt-5">
+              {/* TODO: point to /gold-traces when that page ships */}
+              <Link to="/architecture" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
+                Learn about AppMap Gold Traces →
+              </Link>
+            </div>
 
-            <div className="mt-8 grid gap-4 lg:grid-cols-2">
-              <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGED · BEHAVIOR HELD</div>
-                <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Invariant behavior</h3>
-                <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">
-                  For a security patch, dependency upgrade, or refactor, behavior should not change. If the new trace diverges from the Gold Trace, AppMap flags a regression, even when the tests stay green.
-                </p>
-                <img
-                  src="/marketing-assets/img/appmap/waltzbehaviorheld_branded.svg"
-                  alt="AppMap traces of FINOS Waltz: GET /api/involvement-kind, Gold Trace vs after an unrelated change, status, auth path, and query count match."
-                  loading="lazy"
-                  decoding="async"
-                  className="mt-5 w-full h-auto rounded-lg border border-[#2c2353] bg-[#0d0a1a]"
-                />
-                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap trace · FINOS Waltz</p>
-              </div>
+            <div className="mt-8 max-w-[720px]">
               <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
                 <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGED · BEHAVIOR CHANGED</div>
                 <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Changed as intended</h3>
@@ -404,13 +376,6 @@ grep -rn "ledger.write" src/
                 <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap trace · FINOS Waltz</p>
               </div>
             </div>
-
-            <p className="mt-8 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              You do not need to run the full stack to get a Gold Trace. A local run, a focused test, a smoke script, an API call, or a QA environment is enough.
-            </p>
-            <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              Gold Traces are useful to you locally as soon as they exist. Committing them is what lets your team and CI compare the head revision against the base revision.
-            </p>
           </div>
         </section>
 
