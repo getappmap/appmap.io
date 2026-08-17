@@ -253,7 +253,7 @@ grep -rn "ledger.write" src/
           <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What a real issue looks like</h2>
           <div className="mt-9 grid gap-5 md:grid-cols-2">
             <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-7">
-              <div className="text-[12.5px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">Post-triage benchmark issue</div>
+              <div className="text-[12.5px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">A well-specified issue</div>
               <ul className="mt-5 space-y-3">
                 {postTriage.map((t) => (
                   <li key={t} className="flex gap-3 text-[15px] text-[#a99fc7]">
@@ -264,7 +264,7 @@ grep -rn "ledger.write" src/
               </ul>
             </div>
             <div className="rounded-2xl border border-[#ff07aa]/40 bg-[#1c1538] p-6 sm:p-7">
-              <div className="text-[12.5px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Enterprise-style issue</div>
+              <div className="text-[12.5px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">An issue in the wild</div>
               <p className="mt-4 border-l-2 border-[#ff07aa] pl-4 text-[17px] font-semibold leading-[1.5] text-[#f2effb]">
                 &ldquo;Customers are being charged twice on retried payments.&rdquo;
               </p>
@@ -279,7 +279,7 @@ grep -rn "ledger.write" src/
             </div>
           </div>
           <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
-            The enterprise problem starts before anyone has turned the bug into instructions.
+            The wild issue starts before anyone has turned the bug into instructions.
           </p>
         </div>
       </section>
