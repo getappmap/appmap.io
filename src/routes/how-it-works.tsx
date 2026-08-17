@@ -175,7 +175,7 @@ function HowItWorksPage() {
               src="/marketing-assets/img/workflow/appmap-runtime-review.png"
               alt="AppMap workflow: the coding agent runs the tests, AppMap records fresh traces, and AppMap compares Gold Traces for the head and base revisions before merge"
               width={2000}
-              height={974}
+              height={960}
               loading="lazy"
               decoding="async"
               className="mt-8 w-full rounded-2xl border border-[#2c2353] bg-[#0d0a1a]"
