@@ -86,7 +86,7 @@ function CompatibilityPage() {
 
             <h3 className="mt-14 text-[22px] font-extrabold tracking-[-0.5px] text-[#f2effb] sm:text-[26px]">Bring your own model</h3>
             <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
-              The model behind the agent does not matter. The trace is the
+              The model behind the agent does not matter. The traces are the
               same evidence for a frontier model or a compact one, hosted or
               self-hosted. In our study, runtime context moved the
               cost-capability frontier, letting cheaper models preserve
