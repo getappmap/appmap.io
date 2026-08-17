@@ -22,7 +22,7 @@ export function HomeHero() {
           AppMap shows what <Em>actually happened</Em>.
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          AppMap records what the application actually does. The agent runs the tests, AppMap records fresh traces, and each change is compared against the last set. All of it happens before anything ships. Developers read the traces as diagrams. AI tools read them as evidence.
+          AI writes code fast. Accepting it is the slow part. AppMap replaces the guess with a record. The agent runs the tests, AppMap records fresh traces, and each change is compared against the last set before anything ships. Developers see the drift as diagrams. AI fixes it with evidence.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
