@@ -16,7 +16,7 @@ export function HomeHero() {
         <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">
           Runtime evidence for AI-assisted development
         </div>
-        <h1 className="mt-4 text-[40px] font-extrabold leading-[1.05] tracking-[-1.2px] sm:text-[54px] sm:tracking-[-1.5px]">
+        <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.2px] sm:text-[54px] sm:tracking-[-1.5px]">
           <span className="text-[#f2effb]">AI writes code fast.</span>
           <br />
           <span className="text-[#f2effb]">Knowing what code does is </span>
