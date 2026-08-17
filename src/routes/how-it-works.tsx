@@ -83,7 +83,7 @@ const capture = [
   },
   {
     title: "SQL queries",
-    descriptor: "Bindings and plan",
+    descriptor: "Bindings and source",
     image: "/marketing-assets/img/appmap/queries.jpg",
     objectPosition: "left top",
     side: "bottom" as const,
@@ -133,14 +133,14 @@ const views = [
   },
   {
     title: "Code Objects",
-    body: "Packages, classes, and functions, navigable from the same recording.",
+    body: "Packages, classes, and functions, navigable from the same trace.",
     image: "/marketing-assets/img/appmap/code-map.jpg",
     alt: "AppMap code map of packages, classes, and functions.",
   },
 ];
 
 const mcp = [
-  { name: "get_call_tree", body: "The execution path for a recording. The agent used it in almost every study run. One call returns the answer." },
+  { name: "get_call_tree", body: "The execution path for a trace. The coding agent used it in almost every study run. One call returns the answer." },
   { name: "find_calls", body: "Every invocation of a function across the active traces." },
   { name: "find_queries", body: "Executed SQL with its bindings." },
   { name: "find_requests", body: "The HTTP boundaries in the run." },
