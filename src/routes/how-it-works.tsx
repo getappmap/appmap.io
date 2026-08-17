@@ -127,7 +127,7 @@ const views = [
   },
   {
     title: "SQL inspection",
-    body: "Every query the run made, with its bindings and where it came from.",
+    body: "Every query in the trace, with its bindings and where it came from.",
     image: "/marketing-assets/img/appmap/queries.jpg",
     alt: "AppMap SQL inspection view of executed queries.",
   },

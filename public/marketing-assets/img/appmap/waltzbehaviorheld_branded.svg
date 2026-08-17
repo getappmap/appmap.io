@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="360" font-family="ui-sans-serif,Inter,Arial">
 <rect width="1080" height="360" fill="#0d0a1a"/>
-<text x="40" y="36" fill="#8b5cf6" font-size="14" font-weight="800" letter-spacing="1.5">CODE CHANGED · BEHAVIOR HELD — verified against the baseline</text>
-<text x="40" y="56" fill="#a99fc7" font-size="12">FINOS Waltz · same endpoint, re-recorded after an unrelated change · real AppMap recordings</text>
-<text x="40" y="92" fill="#a99fc7" font-size="12" font-weight="700">Baseline</text>
+  <text x="40" y="36" fill="#8b5cf6" font-size="14" font-weight="800" letter-spacing="1.5">CODE CHANGES · BEHAVIOR HOLDS — verified against the Gold Traces</text>
+  <text x="40" y="56" fill="#a99fc7" font-size="12">FINOS Waltz · same endpoint, re-recorded after an unrelated change · real AppMap traces</text>
+  <text x="40" y="92" fill="#a99fc7" font-size="12" font-weight="700">Base revision</text>
 <rect x="40" y="100" width="360" height="38" rx="6" fill="#1c1538" stroke="#2c2353"/>
 <text x="54" y="124" fill="#f2effb" font-size="13">GET /api/involvement-kind 200</text>
 <rect x="40" y="150" width="360" height="34" rx="6" fill="#16112b" stroke="#2c2353"/>
@@ -11,7 +11,7 @@
 <text x="54" y="216" fill="#f2effb" font-size="12.5" font-family="ui-monospace,monospace">SELECT involvement_kind × 1</text>
 <text x="470" y="172" fill="#a99fc7" font-size="22" text-anchor="middle">≡</text>
 <text x="470" y="194" fill="#a99fc7" font-size="11" text-anchor="middle">identical</text>
-<text x="560" y="92" fill="#a99fc7" font-size="12" font-weight="700">After the change</text>
+<text x="560" y="92" fill="#a99fc7" font-size="12" font-weight="700">Head revision</text>
 <rect x="560" y="100" width="360" height="38" rx="6" fill="#1c1538" stroke="#2c2353"/>
 <text x="574" y="124" fill="#f2effb" font-size="13">GET /api/involvement-kind 200</text>
 <rect x="560" y="150" width="360" height="34" rx="6" fill="#16112b" stroke="#2c2353"/>
@@ -19,7 +19,7 @@
 <rect x="560" y="194" width="360" height="34" rx="6" fill="#16112b" stroke="#2c2353"/>
 <text x="574" y="216" fill="#f2effb" font-size="12.5" font-family="ui-monospace,monospace">SELECT involvement_kind × 1</text>
 <rect x="940" y="120" width="110" height="56" rx="8" fill="#10241b" stroke="#2fbf8f"/>
-<text x="958" y="145" fill="#2fbf8f" font-size="13" font-weight="700">✓ Behavior</text>
-<text x="958" y="163" fill="#2fbf8f" font-size="13" font-weight="700">held</text>
-<text x="40" y="300" fill="#a99fc7" font-size="11">✓ both states are real AppMap recordings of FINOS Waltz — status, auth path and query count match exactly</text>
+  <text x="958" y="145" fill="#2fbf8f" font-size="13" font-weight="700">✓ Behavior</text>
+  <text x="958" y="163" fill="#2fbf8f" font-size="13" font-weight="700">holds</text>
+<text x="40" y="300" fill="#a99fc7" font-size="11">✓ both states are real AppMap traces of FINOS Waltz — status, auth path and query count match exactly</text>
 </svg>
