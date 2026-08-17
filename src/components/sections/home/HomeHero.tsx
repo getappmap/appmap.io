@@ -21,7 +21,7 @@ export function HomeHero() {
           <br />
           <span className="text-[#f2effb]">See how every change </span>
           <span className="italic text-[#FF07AA]">behaves</span>
-          <span className="text-[#f2effb]"> before merge.</span>
+          <span className="whitespace-nowrap text-[#f2effb]"> before merge.</span>
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
           AppMap gives developers and coding agents the same runtime evidence to understand, compare, and act on each change before it merges.
