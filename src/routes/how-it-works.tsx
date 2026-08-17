@@ -168,9 +168,9 @@ function HowItWorksPage() {
 
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One run, fully captured</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Every run, fully captured</h2>
             <p className="mt-3 max-w-[720px] text-[15px] text-[#a99fc7]">
-              One execution. Six signals tap off the same run, all written into a trace. Each run adds a trace to the set.
+              Six signals tap off each run, all written into one trace. Each run adds a trace to the set.
             </p>
 
             {/* Desktop flow: spine + 3-above / 3-below nodes */}
