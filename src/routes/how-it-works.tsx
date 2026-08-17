@@ -318,7 +318,7 @@ function HowItWorksPage() {
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One shared set of traces</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Ground truth, versioned with the code</h2>
             <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
               Gold Traces are the team's shared record of how the application behaves. The set lives in the repository, so developers, coding agents, and CI all read from the same place.
             </p>
