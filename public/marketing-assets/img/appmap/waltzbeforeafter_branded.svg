@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="360" font-family="ui-sans-serif,Inter,Arial">
 <rect width="1080" height="360" fill="#0d0a1a"/>
-<text x="40" y="36" fill="#ff07aa" font-size="14" font-weight="800" letter-spacing="1.5">CODE CHANGED · BEHAVIOR CHANGED — verified against the baseline</text>
-<text x="40" y="56" fill="#a99fc7" font-size="12">FINOS Waltz · involvement-kind lookup in permission checks · real AppMap recordings</text>
-<text x="40" y="92" fill="#a99fc7" font-size="12" font-weight="700">Baseline  (getById per id)</text>
+<text x="40" y="36" fill="#ff07aa" font-size="14" font-weight="800" letter-spacing="1.5">CODE CHANGES · BEHAVIOR CHANGES — verified against the Gold Traces</text>
+<text x="40" y="56" fill="#a99fc7" font-size="12">FINOS Waltz · involvement-kind lookup in permission checks · real AppMap traces</text>
+<text x="40" y="92" fill="#a99fc7" font-size="12" font-weight="700">Base revision  (getById per id)</text>
 <rect x="40" y="100" width="360" height="38" rx="6" fill="#1c1538" stroke="#2c2353"/>
 <text x="54" y="124" fill="#f2effb" font-size="13">permission check · 200</text>
 <rect x="40" y="150" width="360" height="34" rx="6" fill="#16112b" stroke="#2c2353"/>
