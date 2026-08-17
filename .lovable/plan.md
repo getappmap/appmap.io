@@ -1,51 +1,153 @@
-# Site-wide language remediation
+# Language audit: violations by rule
 
-Fix the copy violations found in the language audit. Copy-only work: no layout, component structure, data, or backend changes. Standing rules stay in force (no em-dashes; never "Navie", "Runtime Intelligence", "Behavioral Intelligence").
+Audit only. No files changed. Each item lists file, exact sentence as it renders today, where it renders, and the minimal compliant replacement.
 
-## Phase 1: terminology drift (Rules 1, 2, 5)
+## Rule 1: record is a verb, trace is the artifact (no "recording/recordings" as nouns)
 
-The highest-volume and most visible issues.
+1. src/routes/cli-quickstart.tsx:52 (step body, install step)
+   Now: "It configures the recording agent for Java, Python, Ruby, or Node and writes appmap.yml."
+   Replace: "It configures the AppMap trace agent for Java, Python, Ruby, or Node and writes appmap.yml."
 
-Rule 1, singular-recording framing. Rewrite so the artifact is always a trace or a set of traces:
-- ReviewLoop step title and trace-diff caption
-- ReviewWhatAIDid card body and its image alt text
-- how-it-works MCP cards ("the run" becomes "the traces")
-- how-it-works "Each recorded run adds another trace to the local set"
-- RuntimeReviewGraphic step 2 line
-- benchmarks "The runtime recording is the sole experimental difference"
+2. src/routes/security-faq.tsx:7 (FAQ answer, cloud question)
+   Now: "Recording, sanitization, and comparison run in your developer environment or CI."
+   Replace: "AppMap records, sanitizes, and compares traces in your developer environment or CI."
 
-Rule 2, "recording" as artifact noun. Replace with "trace"/"traces" in prose on architecture, security-faq, pricing, cli-quickstart, release-notes, and benchmarks, including the architecture, security-faq, and pricing meta descriptions and the security-faq hero subhead. Leave act-sense uses ("Recording, sanitization, and comparison run in your environment") and the product label "recording agent" unchanged.
+3. src/routes/how-it-works.tsx:33 (FAQ answer, cloud question)
+   Now: "Recording, sanitization, and comparison run in your developer environment or CI, and AppMap traces are recorded locally."
+   Replace: "AppMap records, sanitizes, and compares traces in your developer environment or CI, and records traces locally."
 
-Rule 5, comparison language. Standardize on Gold Traces for the head revision against Gold Traces for the base revision:
-- ReviewLoop "compares them with the base revision"
-- how-it-works graphic alt text
-- get-appmap "Gold Trace sets"
-- ReviewLoop "trusted baseline" becomes the locked Gold Trace phrasing
+4. src/routes/architecture.tsx:72 (body paragraph under hero)
+   Now: "Recording, exploration, diagrams, and MCP access all start locally, and most agent interaction happens there."
+   Replace: "AppMap records traces locally, and exploration, diagrams, and MCP access start there, where most coding agent interaction happens."
 
-## Phase 2: truth and scope (Rules 6, 7, 8)
+5. src/routes/enterprise.tsx:85 (diagram caption constant)
+   Now: "Recording and comparison happen in your environment."
+   Replace: "AppMap records and compares traces in your environment."
 
-Rule 6, Gold Trace subset truth. Rewrite enterprise "Promote only the high-value flows", architecture "Approved baselines", and the architecture passages that read as a distinct artifact class, so Gold Traces are representative traces selected by the skill, sanitized, and committed. Release-notes entries keep their wording since they describe past releases.
+## Rule 2: coding agent is the product actor ("AI" only for market/category)
 
-Rule 7, environment scope. Remove production-readable phrasing: how-it-works "or a running process", HowItWorksReveal "every recorded run", and the "production-safe detail" chip label in the comparison visual.
+6. src/components/sections/home/PainStats.tsx:65 (closing paragraph)
+   Now: "AppMap gives developers and AI agents runtime evidence as they work..."
+   Replace: "AppMap gives developers and coding agents runtime evidence as they work, so they can investigate calls, queries, exceptions, and side effects before the change merges."
 
-Rule 8, agency. Make the actor explicit in the ReviewLoop step titles, and turn the enterprise imperative chore-framing into descriptive copy.
+7. src/components/sections/home/ReviewLoop.tsx:114 (paragraph under the PR block)
+   Now: "Developers can inspect the diagrams. AI tools can query the underlying traces."
+   Replace: "Developers can inspect the diagrams. Coding agents can query the same traces."
+   (This also restores the required pairing wording, Rule 3.)
 
-## Phase 3: internals, calibration, pronouns, merge language (Rules 9, 10, 11, 12)
+8. src/routes/enterprise.tsx:66 (FAQ/card body, cloud block)
+   Now: "Your AI tools are a separate channel: if the team chooses a hosted AI agent, selected context may be sent to that provider..."
+   Replace: "Your coding agent is a separate channel: if the team chooses a hosted coding agent, context sent to that provider is governed by its configuration and terms..."
 
-Rule 9, implementation internals. Remove or generalize javaagent flags, tmp/appmap paths, gold_traces paths in prose, and the architecture directory tree block. Keep appmap.yml and MCP query names. Keep the CLI quickstart usable by describing where traces are written without the literal internal path, or drop that sentence.
+9. src/routes/security-faq.tsx:7 and src/routes/how-it-works.tsx:33 (FAQ answers, same clause)
+   Now: "If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms."
+   Replace: "If the developer uses a hosted coding agent, context sent to that provider is governed by its configuration and terms."
 
-Rule 10, calibration. Soften the absolutes: "See what each change did", "every recorded run", "Changing the baseline is a pull request, not a silent overwrite", and the enterprise "The AI explains the evidence" line.
+10. src/routes/cli-quickstart.tsx:76 (step title)
+    Now: "Connect your AI agent"
+    Replace: "Connect your coding agent"
 
-Rule 11, pronouns. Pick one addressee per page and hold it: developer "you" on how-it-works, security-faq, cli-quickstart, and get-appmap; team framing on pricing where plans are described; organization framing on enterprise.
+11. src/routes/enterprise.tsx:162,164 (deployment diagram pill label and comment)
+    Now: pill label "AI agent"
+    Replace: "Coding agent"
 
-Rule 12, merge language. Replace ship/downstream/deployment framing with merge framing in PainStats, the ReviewWhatAIDid closing caption, and HowItWorksReveal. Release-notes "What AppMap has shipped" stays, since it describes releases rather than the review boundary.
+12. src/routes/team.tsx:45 (Kevin bio)
+    Now: "...software analysis, and AI agent workflows."
+    Replace: "...software analysis, and coding agent workflows."
 
-Rule 3, evidence policy, rides along with each phase: keep "runtime evidence" as positioning, and rewrite the constructions where evidence is the thing stored, queried, or carried (architecture, security-faq, enterprise, compatibility, ReviewLoop).
+## Rule 4/5: Gold Traces are a representative set; the skill identifies and maintains, developers never select or promote
 
-## Delivery
+13. src/routes/architecture.tsx:6 (meta description) and :72
+    Now: "Selected traces travel with the code as versioned AppMap Gold Traces..."
+    Replace: "The Gold Traces skill identifies important paths, and those traces travel with the code as versioned AppMap Gold Traces, available to developers and coding agents."
 
-Each phase is a separate pass with a build run and the changed passages quoted back. Rule 4 needs no work. Approve the whole sequence, or say "phase 1 only" and the rest stays queued.
+14. src/routes/architecture.tsx:38 (diagram label note)
+    Now: "selected traces persist here"
+    Replace: "Gold Traces persist here"
 
-## Open question, tracked separately
+15. src/routes/architecture.tsx:44 (directory tree comment)
+    Now: "manifest.yml            # the selected test cases"
+    Replace: "manifest.yml            # the Gold Trace set"
 
-The earlier question about moving developer validation higher on the homepage is a layout and narrative-order change, not copy. It is not in this plan and can be handled on its own.
+16. src/routes/architecture.tsx:118 (body paragraph)
+    Now: "Git gives selected traces a longer life, so future developers and agents can reuse important behavior..."
+    Replace: "Git gives the Gold Trace set a longer life, so future developers and coding agents can reuse important behavior instead of reconstructing it from source code."
+
+17. src/routes/enterprise.tsx:66 (cloud block)
+    Now: "AppMap Gold Traces are the subset that teams commit to git as shared context..."
+    Replace: "AppMap Gold Traces are the representative set the Gold Traces skill maintains, which the team versions in git as shared context, sanitized before they are committed."
+
+## Rule 6: head revision and base revision, never "baseline"
+
+18. src/components/sections/home/ReviewLoop.tsx:110 (intro to the PR block)
+    Now: "...whether the result still matches the AppMap Gold Trace baseline."
+    Replace: "...how the Gold Traces for the head revision compare with the Gold Traces for the base revision."
+
+19. src/routes/architecture.tsx:115 (body paragraph)
+    Now: "AppMap Gold Traces let important runtime behavior travel forward with the repository as a versioned baseline."
+    Replace: "AppMap Gold Traces let important runtime behavior travel forward with the repository as a versioned set."
+
+20. src/routes/enterprise.tsx:16 (card heading)
+    Now: "Governed behavior baselines"
+    Replace: "Governed Gold Trace sets"
+
+21. src/routes/enterprise.tsx:17 (card body)
+    Now: "Each baseline is reviewed and versioned in your repository..."
+    Replace: "Each Gold Trace set is reviewed and versioned in the team's repository, so behavioral contracts are auditable and owned, not ad hoc."
+
+22. src/routes/enterprise.tsx:13 (FAQ answer)
+    Now: "No full enterprise-stack build required to capture a baseline."
+    Replace: "No full enterprise-stack build required to record the first traces."
+
+## Rule 8: umbrella nouns removed (ground truth, engineering memory)
+
+23. src/routes/get-appmap.tsx:6 (meta description) and :44 (hero paragraph)
+    Now: "...every path ends at the same ground truth."
+    Replace: "...every path ends at the same traces."
+
+24. src/routes/architecture.tsx:118 (body paragraph)
+    Now: "It is repository-native engineering memory, versioned and reviewed like the code itself."
+    Replace: "It is a repository-native Gold Trace set, versioned and reviewed like the code itself."
+
+25. src/routes/enterprise.tsx:66 and :62 (cloud and airgap blocks)
+    Now: "...restrict AppMap runtime context to approved or self-hosted AI endpoints." / "...paired with a self-hosted AI endpoint."
+    Replace: keep "AI endpoint" only if it means the model provider category. Compliant as a category statement; flagged for confirmation, no change proposed.
+
+## Rule 10: trace travel and sanitization must not overgeneralize
+
+26. src/routes/pricing.tsx:7 (meta description) and :95 (hero paragraph)
+    Now: "...traces, diagrams, MCP context, and AppMap Gold Traces versioned in your repository."
+    Replace: "...traces and diagrams locally, MCP context for coding agents, and AppMap Gold Traces the team can version in the repository."
+    Reason: current phrasing reads as if versioning is automatic rather than a team choice.
+
+27. src/routes/pricing.tsx:61 (Community bullet)
+    Now: "AppMap Gold Traces, versioned with the code"
+    Replace: "AppMap Gold Traces, which the team can version with the code"
+
+## Rule 11: pricing stated consistently (Community free including team Gold Traces, Professional $15 per developer per month support, Enterprise organizational control)
+
+28. src/routes/pricing.tsx:5 (page title) and :7 (meta description)
+    Now: "Pricing: Free for Developers and Teams. Enterprise for Controlled Deployment. | AppMap" and a description that names only Community and Enterprise.
+    Replace title: "Pricing: Community free, Professional support, Enterprise control | AppMap"
+    Replace description: "Community is free for developers and teams, including AppMap Gold Traces. Professional is $15 per developer per month for priority support. Enterprise adds organizational control and deployment."
+
+29. src/routes/pricing.tsx:95 (hero paragraph)
+    Now: "AppMap is free for developers and teams... Enterprise adds controlled deployment and support."
+    Replace: "Community is free for developers and teams, including AppMap Gold Traces. Professional is $15 per developer per month and adds priority support. Enterprise adds organizational control, deployment, and support."
+
+30. src/routes/index.tsx:70 and :77 (JSON-LD offer descriptions)
+    Now: Professional "For an individual developer who wants AppMap with priority support. Priced per developer per month."
+    Replace: "For a developer who wants priority support. $15 per developer per month."
+    Enterprise line is compliant.
+
+## Rule 7 and 9: before merge, evidence phrasing
+
+Zero violations found. "before merge" is used consistently in HomeHero, PainStats, HowItWorksReveal, and ReviewWhatAIDid. PainStats.tsx:30 "The code is shipping. Confidence is not." is the allowed industry-problem use of shipping. HowItWorksReveal.tsx:52 "Canary / post-deploy" is a labeled contrast with other tools, not an AppMap scope claim. No instance of stored, committed, selected, or queried evidence; the two locked lines are intact.
+
+## Rule 12: explicit agency
+
+Covered by the replacements above (items 2 to 5, 13, 16, 17, 21). No additional standalone violations.
+
+## Not audited
+
+release-notes, blog, benchmarks study terminology and measured claims, per the stated exclusions.
