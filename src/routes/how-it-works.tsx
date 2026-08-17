@@ -150,7 +150,7 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">How it works</div>
             <h1 className="mt-4 max-w-[820px] text-[22px] font-semibold leading-[1.35] tracking-[-0.4px] text-[#f2effb] sm:text-[26px]">
-              Source code tells you what software could do. Runtime behavior tells you what it actually does.
+              Source code tells you what software <span className="italic text-[#ff07aa]">could do</span>. Runtime behavior tells you what it <span className="italic text-[#ff07aa]">actually does</span>.
             </h1>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
               AppMap runs in development and CI. It records traces from tests, requests, and running processes. Developers inspect them as maps, and coding agents query them directly.
