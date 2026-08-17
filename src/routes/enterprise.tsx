@@ -63,7 +63,7 @@ const blocks: { title: string; body: React.ReactNode }[] = [
   },
   {
     title: "No AppMap cloud, by design",
-    body: "AppMap does not send traces to an AppMap-operated cloud. Traces are recorded, sanitized, and compared on the developer machine or in CI. Gold traces are the subset that teams commit to git as shared context. Your AI tools are a separate channel: if you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms, and enterprise deployments can restrict AppMap evidence to approved or self-hosted AI endpoints.",
+    body: "AppMap does not send traces to an AppMap-operated cloud. Traces are recorded, sanitized, and compared on the developer machine or in CI. AppMap Gold Traces are the subset that teams commit to git as shared context. Your AI tools are a separate channel: if you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms, and enterprise deployments can restrict AppMap evidence to approved or self-hosted AI endpoints.",
   },
   {
     title: "Trust, but verify",
@@ -82,7 +82,7 @@ function EnterprisePage() {
 }
 
 const diagramCaption =
-  "Recording, sanitizing, and comparing all happen in your environment. Deployment telemetry is configurable to route to your internal observability stack, such as Splunk, so operational data stays inside too. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.";
+  "Recording, sanitizing, and comparing all happen in your environment. AppMap telemetry is configurable to route to your internal observability stack, such as Splunk, so that data stays inside too. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.";
 
 function Pill({ x, y, w, h, label, sub }: { x: number; y: number; w: number; h: number; label: string; sub?: string }) {
   return (

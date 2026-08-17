@@ -29,7 +29,7 @@ const tree = `repo/
   tests/
   README.md
   openapi.yaml
-  .appmap/          # the recordings
+  gold_traces/      # AppMap Gold Traces, selected and sanitized
     architecture/
     behavior/
     flows/
@@ -39,7 +39,7 @@ const analogy = `Source code     -> Git
 API spec        -> openapi.yaml
 Infrastructure  -> terraform
 Documentation   -> README.md
-Behavior        -> .appmap/`;
+Behavior        -> gold_traces/`;
 
 const branches = [
   { label: "Developers in the editor", note: "explore recordings and diagrams" },
@@ -52,14 +52,11 @@ const branches = [
 
 const goldTraceTree = `repo/
   src/
-  .appmap/
-    gold_traces/
-      checkout-flow/
-        manifest.json        # the flow, its routes, how to reproduce it
-        baseline.appmap.json  # the approved before-trace
-        fingerprint.txt       # stable fingerprint of the baseline
-        normalization.yml     # volatile fields to ignore (timestamps, ids, durations)
-      README.md               # what AppMap Gold Traces are and how to update them`;
+  gold_traces/
+    manifest.yml            # the selected test cases
+    appmaps/                # the sanitized trace files
+    normalization.yml       # volatile fields to ignore (timestamps, ids, durations)
+    README.md               # what AppMap Gold Traces are and how to update them`;
 
 function ArchitecturePage() {
   return <Page />;
@@ -95,7 +92,7 @@ function Page() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Runtime context for every agent that works on the repository</h2>
             <p className="mt-3 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
-              An AppMap recording is structured data, not just a diagram. An AI agent queries the same execution evidence a developer sees in the editor, directly from the developer environment over MCP. When recordings travel with the repository, that same evidence goes wherever the code goes.
+              An AppMap recording is structured data, not just a diagram. An AI agent queries the same execution evidence a developer sees in the editor, directly from the developer environment over MCP. When selected traces travel with the repository as AppMap Gold Traces, that same evidence goes wherever the code goes.
             </p>
 
             <div className="mt-10 flex flex-col items-center">
@@ -142,7 +139,7 @@ function Page() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Where AppMap Gold Traces live</h2>
             <p className="mt-3 max-w-[820px] text-[16px] text-[#a99fc7]">
-              Approved baselines live next to the code, in <code className="font-mono text-[#f2effb]">.appmap/gold_traces/</code>. Each baseline is a set of files saved alongside your code for one flow: the approved before-trace, a stable fingerprint, and the rules for which timing noise and changing values to ignore before comparison. Promote a trace into the baseline the same way you merge code, with review.
+              Approved baselines live next to the code, in <code className="font-mono text-[#f2effb]">gold_traces/</code>. Each baseline is a set of files saved alongside your code for one flow: the approved before-trace, a stable fingerprint, and the rules for which timing noise and changing values to ignore before comparison. Promote a trace into the baseline the same way you merge code, with review.
             </p>
             <p className="mt-6 max-w-[820px] border-l-4 border-[#ff07aa] pl-4 text-[20px] font-semibold leading-[1.5] text-[#f2effb]">
               Git gives you a history of what the code said. AppMap Gold Traces give you a history of what the code did.

@@ -4,15 +4,15 @@ import { Header } from "@/components/layout/Header";
 const securityFaqs = [
   {
     q: "Does AppMap send code or runtime data to the cloud?",
-    a: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and recordings stay with your editor and your repository. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
+    a: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and Working AppMap traces stay in the developer environment. When Gold Traces are committed with the code, AppMap sanitizes them first. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
   },
   {
     q: "Where does AppMap store runtime behavior?",
-    a: "Recordings are written locally at capture time, typically to a tmp/appmap directory in the project. Recordings your team keeps, such as AppMap Gold Traces, are promoted into a .appmap directory in the repository and versioned like any other file. Baselines committed to the repository are sanitized first: captured values are replaced with deterministic tokens, so the versioned trace preserves structural behavior without the original parameter, return, or message values.",
+    a: "Recordings are written locally at capture time, typically to a tmp/appmap directory in the project. Traces your team keeps as AppMap Gold Traces are committed to the gold_traces directory in the repository and versioned like any other file. Baselines committed to the repository are sanitized first: captured values are replaced with deterministic tokens, so the versioned trace preserves structural behavior without the original parameter, return, or message values.",
   },
   {
     q: "Where are AppMap files stored?",
-    a: "On the developer machine and in your repository. Transient captures live in tmp/appmap; promoted recordings live in .appmap. They are plain files: retention is under your control, and deleting a recording is an ordinary file delete.",
+    a: "On the developer machine and in your repository. Working traces live in tmp/appmap. AppMap Gold Traces live in the gold_traces directory in the repository. They are plain files: retention is under your control, and deleting a trace is an ordinary file delete.",
   },
   {
     q: "Is sign in required to use AppMap?",

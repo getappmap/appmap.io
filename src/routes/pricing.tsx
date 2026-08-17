@@ -86,10 +86,10 @@ function PricingPage() {
               Pricing
             </div>
             <h1 className="mt-4 text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-              Start free locally. Scale shared recordings across your team.
+              Start free locally. Scale AppMap Gold Traces across your team.
             </h1>
             <p className="mt-5 max-w-[760px] text-[17px] leading-[1.65] text-[#a99fc7]">
-              AppMap is free for developers and teams. Recordings, diagrams, MCP context, and AppMap Gold Traces versioned in your repository cost nothing. Enterprise adds controlled deployment and support. AppMap starts in the developer environment, where recordings are created, explored, and used by AI agents.
+              AppMap is free for developers and teams. Traces, diagrams, and MCP context cost nothing, and so do AppMap Gold Traces versioned in your repository. Enterprise adds controlled deployment and support. AppMap starts in the developer environment, where recordings are created, explored, and used by AI agents.
             </p>
           </div>
         </section>
