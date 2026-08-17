@@ -48,7 +48,7 @@ export function ReviewLoop() {
           Stop reviewing code. Start reviewing behavior.
         </h2>
         <p className="mt-2 max-w-[680px] text-[17px] text-[color:var(--color-am-muted)]">
-          AppMap maintains a representative Gold Trace set for important application paths. As the code changes, AppMap records fresh traces and compares them with the base revision. The Gold Traces skill uses existing tests where possible and suggests new tests when an important path is not covered. AppMap turns the traces into diagrams developers can inspect and structured runtime evidence AI tools can query, and the review result can be written directly into the pull request.
+          AppMap maintains a representative Gold Trace set for important application paths. As the code changes, AppMap records fresh traces and compares the Gold Traces for the head revision with the Gold Traces for the base revision. The Gold Traces skill uses existing tests where possible and suggests new tests when an important path is not covered. AppMap turns the traces into diagrams developers can inspect, the same traces are available to coding agents as runtime context, and the review result can be written directly into the pull request.
         </p>
 
         <ol className="relative mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
