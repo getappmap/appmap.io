@@ -22,7 +22,7 @@ const panels = [
 
 export function BehavioralReview() {
   return (
-    <section className="px-6 py-20">
+    <section className="border-b border-[#2c2353] px-6 py-20">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[color:var(--color-am-ink)] sm:text-[34px]">
           Find problems that only show up when the code runs.
