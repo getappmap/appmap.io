@@ -14,7 +14,7 @@ import { ClosingCTA } from "@/components/sections/home/ClosingCTA";
 
 const title = "AppMap: Runtime evidence for AI-assisted development";
 const description =
-  "A diff cannot show what a change did when it ran. AppMap shows developers how behavior changed and gives AI agents the runtime context to fix unintended drift before merge.";
+  "AI made writing code cheap. Trusting it is the expensive part. AppMap shows how behavior changed before merge: developers stop guessing from the diff, AI agents fix drift with grounded context.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
