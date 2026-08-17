@@ -55,7 +55,7 @@ export function HomeHero() {
             className="aspect-[16/9] w-full rounded-xl border border-[#2c2353] bg-[#16112b] object-cover object-left shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
           />
           <p className="mt-5 text-center text-[13px] text-[#a99fc7]">
-            Change the code. Record the traces. Compare. Repeat.
+            Map. Analyze. Share. Repeat.
           </p>
         </div>
       </div>
