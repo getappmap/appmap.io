@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "What does an AppMap trace contain?",
-    a: "It is a record of how your application actually ran: function calls, SQL queries, HTTP traffic, exceptions, and the relationships between them. Every map, view, and review is drawn from those traces. Captured via a language agent (Java -javaagent, Python, Ruby, Node) from tests, requests, or a running process.",
+    a: "It is a record of how your application actually ran: function calls, SQL queries, HTTP traffic, exceptions, and the relationships between them. Every map, view, and review is drawn from those traces. AppMap records traces from tests, application requests, or running processes in development and QA.",
     doc: { href: "https://appmap.io/docs/get-started-with-appmap/making-appmap-data.html", label: "How AppMap data is made" },
   },
   {
@@ -30,12 +30,12 @@ const faqs = [
   },
   {
     q: "Does AppMap send code or runtime data to the cloud?",
-    a: "AppMap does not send traces to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and AppMap traces are recorded locally. AppMap's skills and your coding agent build and maintain the Gold Trace set, sanitized before commit, and you version it with the code. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
+    a: "AppMap does not send traces to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and AppMap traces are recorded locally. AppMap's skills and your coding agent build and maintain the Gold Trace set. Gold Traces can be used locally during development. When a team versions the Gold Trace set with the code, it is stored in the repository and follows the team's existing Git workflow. Gold Traces are sanitized before they are committed. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
     doc: { href: "https://appmap.io/security", label: "AppMap security" },
   },
   {
     q: "Where does AppMap store runtime behavior?",
-    a: "Traces are recorded locally, typically to a tmp/appmap directory in the project. The Gold Traces AppMap keeps live in the gold_traces directory in the repository and are versioned like any other file. Gold Traces are sanitized before they are committed.",
+    a: "Traces are captured locally, typically to a tmp/appmap directory in the project. Gold Traces can be used locally during development. When a team versions the Gold Trace set with the code, it is stored in the repository and follows the team's existing Git workflow. Gold Traces are sanitized before they are committed.",
     doc: { href: "https://appmap.io/docs/reference/appmap-client-cli.html", label: "AppMap client CLI reference" },
   },
 ];
@@ -140,10 +140,10 @@ const views = [
 ];
 
 const mcp = [
-  { name: "get_call_tree", body: "The execution path for a trace. The coding agent used it in almost every study run. One call returns the answer." },
-  { name: "find_calls", body: "Every invocation of a function across the active traces." },
-  { name: "find_queries", body: "Executed SQL with its bindings." },
-  { name: "find_requests", body: "The HTTP boundaries in the run." },
+  { name: "get_call_tree", body: "The execution path for a trace." },
+  { name: "find_calls", body: "Function calls across the active traces." },
+  { name: "find_queries", body: "SQL queries across the active traces." },
+  { name: "find_requests", body: "HTTP requests across the active traces." },
 ];
 
 function HowItWorksPage() {
