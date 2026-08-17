@@ -10,15 +10,15 @@ const reviewerImages = [
 const pilotSteps = [
   {
     h: "Start without CI",
-    b: "You do not need to instrument CI to begin. AppMap records from a running process, so teams start in the editor or in environments that already run: a local run, a focused test, a smoke script, an API call, or a QA environment. No full enterprise-stack build required to capture a baseline.",
+    b: "Teams do not need to instrument CI to begin. AppMap records from a running process, so teams start in the editor or in environments that already run: a local run, a focused test, a smoke script, an API call, or a QA environment. No full enterprise-stack build required to capture a baseline.",
   },
   {
     h: "Governed behavior baselines",
-    b: "Promote only the high-value flows into governed AppMap Gold Traces, then enforce them in CI when you are ready. Each baseline is reviewed and versioned in your repository, so behavioral contracts are auditable and owned, not ad hoc. Begin lightweight in the editor; graduate the flows that matter into the pipeline.",
+    b: "The AppMap Gold Traces skill identifies important application paths and uses existing tests to build the set. When coverage is missing, AppMap suggests a new test case. The organization can run the same review in CI when ready. Each baseline is reviewed and versioned in your repository, so behavioral contracts are auditable and owned, not ad hoc. Teams begin lightweight in the editor and graduate the flows that matter into the pipeline.",
   },
   {
     h: "Enforce when ready.",
-    b: "The same review runs in your pipeline when you are ready, and AppMap coaches each team to set it up for their own use. CI enforcement and telemetry routing are configurable parts of the enterprise service.",
+    b: "The organization runs the same review in the pipeline when ready, and AppMap coaches each team to set it up for their own use. CI enforcement and telemetry routing are configurable parts of the enterprise service.",
   },
 ];
 
@@ -63,15 +63,15 @@ const blocks: { title: string; body: React.ReactNode }[] = [
   },
   {
     title: "No AppMap cloud, by design",
-    body: "AppMap does not send traces to an AppMap-operated cloud. Traces are recorded, sanitized, and compared on the developer machine or in CI. AppMap Gold Traces are the subset that teams commit to git as shared context. Your AI tools are a separate channel: if you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms, and enterprise deployments can restrict AppMap evidence to approved or self-hosted AI endpoints.",
+    body: "AppMap does not send traces to an AppMap-operated cloud. Traces are recorded and compared on the developer machine or in CI. AppMap Gold Traces are the subset that teams commit to git as shared context, sanitized before they are committed. Your AI tools are a separate channel: if the team chooses a hosted AI agent, selected context may be sent to that provider under its configuration and terms, and enterprise deployments can restrict AppMap runtime context to approved or self-hosted AI endpoints.",
   },
   {
     title: "Trust, but verify",
     body: (
       <>
         <ExternalLink href="https://github.com/getappmap">Open-source clients</ExternalLink> and a{" "}
-        <ExternalLink href="https://github.com/getappmap/appmap">published data spec</ExternalLink>. You can audit what
-        AppMap records and what it sends to the agent.
+        <ExternalLink href="https://github.com/getappmap/appmap">published data spec</ExternalLink>. Developers and
+        security reviewers can audit what AppMap records and what it sends to the agent.
       </>
     ),
   },
@@ -82,7 +82,7 @@ function EnterprisePage() {
 }
 
 const diagramCaption =
-  "Recording, sanitizing, and comparing all happen in your environment. AppMap telemetry is configurable to route to your internal observability stack, such as Splunk, so that data stays inside too. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.";
+  "Recording and comparison happen in your environment. AppMap telemetry is configurable to route to your internal observability stack, such as Splunk, so that data stays inside too. If the team chooses a hosted AI agent, selected context may be sent to that provider under its configuration and terms.";
 
 function Pill({ x, y, w, h, label, sub }: { x: number; y: number; w: number; h: number; label: string; sub?: string }) {
   return (
