@@ -3,39 +3,39 @@ import { Header } from "@/components/layout/Header";
 
 const title = "How AppMap works";
 const description =
-  "AppMap records application runs as traces in development and CI. Here is what the traces capture, the views they produce, and how that evidence reaches your AI agent.";
+  "AppMap records application runs as traces in development and CI, then compares them before merge. Here is what a trace captures and how a coding agent reads it.";
 
 const faqs = [
   {
     q: "What does AppMap do?",
-    a: "AppMap helps developers and AI coding agents understand what software actually does at runtime. It records the application in the editor and turns that run into diagrams humans can review and evidence AI agents can query over MCP.",
+    a: "AppMap helps developers and coding agents understand what software actually does at runtime. It records the application in the editor and turns that run into diagrams you can review and a trace your coding agent can query over MCP.",
   },
   {
     q: "How does AppMap help review AI-generated code?",
     a: "AppMap records the change as it runs and shows the call tree, queries, and data behind it. You review the behavior, not just the diff, and the same evidence travels with the pull request.",
   },
   {
-    q: "What does an AppMap recording contain?",
+    q: "What does an AppMap trace contain?",
     a: "It is a record of how your application actually ran: function calls, SQL queries, HTTP traffic, exceptions, and the relationships between them. Every map, view, and review is drawn from those traces. Captured via a language agent (Java -javaagent, Python, Ruby, Node) from tests, requests, or a running process.",
     doc: { href: "https://appmap.io/docs/get-started-with-appmap/making-appmap-data.html", label: "How AppMap data is made" },
   },
   {
     q: "How does AppMap work with MCP?",
-    a: "AppMap exposes the traces over the Model Context Protocol. Agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
+    a: "AppMap exposes the traces over the Model Context Protocol. Coding agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
     doc: { href: "https://appmap.io/docs/reference/appmap-mcp.html", label: "AppMap MCP reference" },
   },
   {
     q: "Does AppMap replace Cursor, Copilot, Claude Code, or Windsurf?",
-    a: "No. AppMap works alongside the agent you already use. Any MCP-capable client can read AppMap traces, regardless of the underlying model.",
+    a: "No. AppMap works alongside the coding agent you already use. Any MCP-capable client can read AppMap traces, regardless of the underlying model.",
   },
   {
     q: "Does AppMap send code or runtime data to the cloud?",
-    a: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and AppMap traces are recorded locally. Teams can select representative traces as AppMap Gold Traces, sanitize them, and commit those Gold Traces with the code. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
+    a: "AppMap does not send traces to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and AppMap traces are recorded locally. AppMap's skills and your coding agent build and maintain the Gold Trace set, sanitized before commit, and you version it with the code. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
     doc: { href: "https://appmap.io/security", label: "AppMap security" },
   },
   {
     q: "Where does AppMap store runtime behavior?",
-    a: "Recordings are captured locally, typically to a tmp/appmap directory in the project. Traces your team keeps as AppMap Gold Traces are committed to the gold_traces directory in the repository and versioned like any other file. Gold Traces are sanitized before they are committed.",
+    a: "Traces are recorded locally, typically to a tmp/appmap directory in the project. The Gold Traces AppMap keeps live in the gold_traces directory in the repository and are versioned like any other file. Gold Traces are sanitized before they are committed.",
     doc: { href: "https://appmap.io/docs/reference/appmap-client-cli.html", label: "AppMap client CLI reference" },
   },
 ];
@@ -83,7 +83,7 @@ const capture = [
   },
   {
     title: "SQL queries",
-    descriptor: "Bindings and plan",
+    descriptor: "Bindings and source",
     image: "/marketing-assets/img/appmap/queries.jpg",
     objectPosition: "left top",
     side: "bottom" as const,
@@ -133,14 +133,14 @@ const views = [
   },
   {
     title: "Code Objects",
-    body: "Packages, classes, and functions, navigable from the same recording.",
+    body: "Packages, classes, and functions, navigable from the same trace.",
     image: "/marketing-assets/img/appmap/code-map.jpg",
     alt: "AppMap code map of packages, classes, and functions.",
   },
 ];
 
 const mcp = [
-  { name: "get_call_tree", body: "The execution path for a recording. The agent used it in almost every study run. One call returns the answer." },
+  { name: "get_call_tree", body: "The execution path for a trace. The coding agent used it in almost every study run. One call returns the answer." },
   { name: "find_calls", body: "Every invocation of a function across the active traces." },
   { name: "find_queries", body: "Executed SQL with its bindings." },
   { name: "find_requests", body: "The HTTP boundaries in the run." },
@@ -161,7 +161,7 @@ function HowItWorksPage() {
               Source code tells you what software could do. Runtime behavior tells you what it actually did.
             </p>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              AppMap runs in development and CI. It records application runs as traces. Here is what the traces capture, the views they produce, and how that evidence reaches your AI agent.
+              Here is what a trace captures, the views you get from it, and how a coding agent reads the same trace.
             </p>
           </div>
         </section>
@@ -170,7 +170,7 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Every run, fully captured</h2>
             <p className="mt-3 max-w-[720px] text-[15px] text-[#a99fc7]">
-              Six signals tap off each run, all written into one trace. Each run adds a trace to the set.
+              Six signals tap off each run, all written into one trace.
             </p>
 
             {/* Desktop flow: spine + 3-above / 3-below nodes */}
@@ -218,6 +218,44 @@ function HowItWorksPage() {
               ))}
             </div>
 
+          </div>
+        </section>
+
+        <section className="px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One trace, many views.</h2>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {views.map((v) => (
+                <div key={v.title} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                  <img
+                    src={v.image}
+                    alt={v.alt}
+                    width={800}
+                    height={450}
+                    loading="lazy"
+                    decoding="async"
+                    className="mb-4 aspect-[16/9] w-full rounded-lg border border-[#2c2353] bg-[#16112b] object-cover"
+                  />
+                  <h3 className="text-[17px] font-bold text-[#f2effb]">{v.title}</h3>
+                  <p className="mt-2 text-[14.5px] text-[#a99fc7]">{v.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the traces reach your agent</h2>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {mcp.map((m) => (
+                <div key={m.name} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                  <code className="font-mono text-[15px] font-bold text-[#ff07aa]">{m.name}</code>
+                  <p className="mt-2 text-[14.5px] text-[#a99fc7]">{m.body}</p>
+                </div>
+              ))}
+            </div>
+
             <p className="mt-10 max-w-[720px] text-[16px] font-semibold text-[#f2effb]">
               Developers use the maps. Coding agents query the same traces.
             </p>
@@ -252,7 +290,7 @@ function HowItWorksPage() {
                   <span className="ml-auto font-semibold text-[#fb7185]">~15 searches · static trajectory</span>
                 </div>
                 <pre className="overflow-x-auto px-5 py-4 font-mono text-[12.5px] leading-[1.7] text-[#cdd8ee]">
-{`# the agent gropes for the same picture
+{`# the coding agent gropes for the same picture
 grep -r "payment" src/        # 214 hits
 read PaymentController.java
 grep -r "retry" src/          # 38 hits
@@ -280,53 +318,16 @@ grep -rn "ledger.write" src/
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Record once. Use it everywhere.</h2>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {views.map((v) => (
-                <div key={v.title} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                  <img
-                    src={v.image}
-                    alt={v.alt}
-                    width={800}
-                    height={450}
-                    loading="lazy"
-                    decoding="async"
-                    className="mb-4 aspect-[16/9] w-full rounded-lg border border-[#2c2353] bg-[#16112b] object-cover"
-                  />
-                  <h3 className="text-[17px] font-bold text-[#f2effb]">{v.title}</h3>
-                  <p className="mt-2 text-[14.5px] text-[#a99fc7]">{v.body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the traces reach your agent</h2>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              {mcp.map((m) => (
-                <div key={m.name} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                  <code className="font-mono text-[15px] font-bold text-[#ff07aa]">{m.name}</code>
-                  <p className="mt-2 text-[14.5px] text-[#a99fc7]">{m.body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">See what your agent read</h2>
             <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
-              AppMap shows the evidence behind each AI inference as the same visuals developers inspect in the editor. A reviewer sees exactly what the agent reasoned over instead of trusting the output.
+              AppMap shows the evidence behind each inference as the same visuals you inspect in the editor. You see exactly what the coding agent reasoned over instead of trusting the output.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <Link to="/benchmarks" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                 See the Benchmark
               </Link>
               <Link to="/architecture" className="rounded-lg border border-[#2c2353] px-5 py-2.5 text-[14px] font-semibold text-[#f2effb] hover:border-[#a99fc7]">
-                Where recordings live →
+                Where traces live →
               </Link>
             </div>
           </div>
@@ -336,7 +337,7 @@ grep -rn "ledger.write" src/
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What is AppMap?</h2>
             <p className="mt-4 max-w-[820px] text-[18px] leading-[1.6] text-[#a99fc7]">
-              AppMap helps developers and AI coding agents understand what software actually does at runtime. It records the application in the editor and turns that run into diagrams humans can review and evidence AI agents can query over MCP.
+              AppMap helps developers and coding agents understand what software actually does at runtime. It records the application in the editor and turns that run into diagrams you can review and a trace your coding agent can query over MCP.
             </p>
           </div>
         </section>
@@ -345,7 +346,7 @@ grep -rn "ledger.write" src/
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">AppMap Gold Traces make behavior reviewable</h2>
             <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              An AppMap Gold Trace is a versioned baseline of how an important path in your software actually ran. As the code changes, AppMap re-records that path and shows what changed in the behavior. AI agents curate the set and review the differences, while humans make the final call. When the approved change is merged, the new recording becomes the baseline for what comes next.
+              A Gold Trace is a recorded run of an important path in your software, kept as the reference for what that path does. AppMap's skills and your coding agent build and maintain the set as the code changes. You review what changed and decide whether it is right.
             </p>
 
             <div className="mt-8 grid gap-4 lg:grid-cols-2">
@@ -353,46 +354,40 @@ grep -rn "ledger.write" src/
                 <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGED · BEHAVIOR HELD</div>
                 <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Invariant behavior</h3>
                 <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">
-                  For a security patch, dependency upgrade, or refactor, behavior should not change. If the after-trace diverges from the baseline, AppMap flags a regression, even when the tests stay green.
+                  For a security patch, dependency upgrade, or refactor, behavior should not change. If the new trace diverges from the Gold Trace, AppMap flags a regression, even when the tests stay green.
                 </p>
                 <img
                   src="/marketing-assets/img/appmap/waltzbehaviorheld_branded.svg"
-                  alt="AppMap recordings of FINOS Waltz: GET /api/involvement-kind, baseline vs after an unrelated change, status, auth path, and query count match."
+                  alt="AppMap traces of FINOS Waltz: GET /api/involvement-kind, Gold Trace vs after an unrelated change, status, auth path, and query count match."
                   loading="lazy"
                   decoding="async"
                   className="mt-5 w-full h-auto rounded-lg border border-[#2c2353] bg-[#0d0a1a]"
                 />
-                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap recording · FINOS Waltz</p>
+                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap trace · FINOS Waltz</p>
               </div>
               <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
                 <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGED · BEHAVIOR CHANGED</div>
-                <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Expected change</h3>
+                <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Changed as intended</h3>
                 <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">
                   For an N+1 fix, a new timeout, a circuit breaker, or added audit logging, behavior should change in a specific way. If the trace does not change, the fix did not land.
                 </p>
                 <img
                   src="/marketing-assets/img/appmap/waltzbeforeafter_branded.svg"
-                  alt="AppMap recordings of FINOS Waltz involvement-kind permission lookup: baseline 7 per-id SELECTs replaced by a single batched findAll, 6 fewer round-trips."
+                  alt="AppMap traces of FINOS Waltz involvement-kind permission lookup: 7 per-id SELECTs replaced by a single batched findAll, 6 fewer round-trips."
                   loading="lazy"
                   decoding="async"
                   className="mt-5 w-full h-auto rounded-lg border border-[#2c2353] bg-[#0d0a1a]"
                 />
-                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap recording · FINOS Waltz</p>
+                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap trace · FINOS Waltz</p>
               </div>
             </div>
 
             <p className="mt-8 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              AppMap compares a structural digest of the run: request path, status codes, call-tree structure, SQL shape, and downstream calls. Timing, ids, and captured values are not in it.
+              You do not need to run the full stack to get a Gold Trace. A local run, a focused test, a smoke script, an API call, or a QA environment is enough.
             </p>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              AppMap Gold Traces do not require every developer to run the full enterprise stack. A baseline can come from a local run, a focused test, a smoke script, an API call, a QA environment, or an existing process in a development or QA environment.
+              Gold Traces are useful to you locally as soon as they exist. Committing them is what lets your team and CI compare the head revision against the base revision.
             </p>
-
-            <div className="mt-8">
-              <Link to="/architecture" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
-                Where recordings live →
-              </Link>
-            </div>
           </div>
         </section>
 
