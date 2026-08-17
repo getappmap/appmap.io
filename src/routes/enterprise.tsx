@@ -346,11 +346,11 @@ function EnterprisePageInner() {
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">From pilot to policy</h2>
-            <ol className="mt-8 grid gap-4 lg:grid-cols-3 lg:items-start">
+            <ol className="mt-8 grid gap-4 lg:grid-cols-2 lg:items-start">
               {pilotSteps.map((s, i) => (
                 <li
                   key={s.h}
-                  className={`rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 ${i === 1 ? "lg:row-span-2" : ""}`}
+                  className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6"
                 >
                   <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Step {i + 1}</div>
                   <h3 className="mt-2 text-[17px] font-bold text-[#f2effb]">{s.h}</h3>
@@ -372,18 +372,6 @@ function EnterprisePageInner() {
                 </li>
               ))}
             </ol>
-            <div className="mx-auto mt-12 max-w-[840px] border-t border-b border-[#2c2353] py-10 text-center">
-              <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">
-                Where the commercial line is
-              </div>
-              <p className="mt-4 text-[17px] leading-[1.65] text-[#f2effb]">
-                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, every trace they make, and AppMap Gold Traces versioned in the repository. Enterprise adds controlled deployment, packaging, configuration, integrations, training, priority support, and SLAs, including airgapped operation. If AppMap has already spread inside your organization,{" "}
-                <Link to="/book-a-demo" className="font-semibold text-[#ff07aa] hover:underline">
-                  talk to us
-                </Link>
-                .
-              </p>
-            </div>
             <div className="mt-10">
               <Link to="/book-a-demo" className="inline-block rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                 Book a Demo
