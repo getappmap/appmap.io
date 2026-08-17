@@ -10,7 +10,7 @@
 <rect x="40" y="194" width="360" height="34" rx="6" fill="#16112b" stroke="#ff07aa"/>
 <text x="54" y="216" fill="#ff07aa" font-size="12.5" font-family="ui-monospace,monospace">SELECT involvement_kind WHERE id=?  × 7</text>
 <text x="470" y="175" fill="#ff07aa" font-size="26" text-anchor="middle">&#916;</text>
-<text x="470" y="198" fill="#a99fc7" font-size="11" text-anchor="middle">changed</text>
+<text x="470" y="198" fill="#a99fc7" font-size="11" text-anchor="middle">changes</text>
 <text x="560" y="92" fill="#a99fc7" font-size="12" font-weight="700">Head revision  (findAll, batched)</text>
 <rect x="560" y="100" width="360" height="38" rx="6" fill="#1c1538" stroke="#2c2353"/>
 <text x="574" y="124" fill="#f2effb" font-size="13">permission check · 200</text>
@@ -19,7 +19,7 @@
 <rect x="560" y="194" width="360" height="34" rx="6" fill="#16112b" stroke="#2fbf8f"/>
 <text x="574" y="216" fill="#2fbf8f" font-size="12.5" font-family="ui-monospace,monospace">SELECT involvement_kind  × 1</text>
 <rect x="940" y="120" width="110" height="56" rx="8" fill="#10241b" stroke="#2fbf8f"/>
-<text x="955" y="145" fill="#2fbf8f" font-size="13" font-weight="700">&#10003; Changed</text>
+<text x="955" y="145" fill="#2fbf8f" font-size="13" font-weight="700">&#10003; Changes</text>
 <text x="955" y="163" fill="#2fbf8f" font-size="13" font-weight="700">as intended</text>
 <text x="40" y="300" fill="#a78bfa" font-size="12.5" font-family="ui-monospace,monospace">measured: 7 per-id queries &#8594; 1 batched query  ·  6 fewer round-trips on this lookup</text>
 <rect x="40" y="320" width="12" height="12" fill="none" stroke="#ff07aa"/>
