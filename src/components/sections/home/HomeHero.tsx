@@ -17,12 +17,12 @@ export function HomeHero() {
           Runtime evidence for AI-assisted development
         </div>
         <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.2px] text-[#f2effb] sm:text-[54px] sm:tracking-[-1.5px]">
-          AI made writing code cheap.
+          AI made code cheap.
           <br />
-          Trusting it is now the expensive part.
+          Knowing what it does is not.
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          AppMap shows how the current version runs, how the proposed version runs, and what changed between them. Developers decide what is ready to merge. AI agents use the same runtime context to correct drift.
+          AppMap turns application runs into knowledge: maps, runtime context, and behavioral diffs. Developers see what changed. AI agents use the same knowledge to correct drift before merge.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
