@@ -19,11 +19,12 @@ export function HomeHero() {
         <h1 className="mt-4 max-w-4xl text-[36px] font-extrabold leading-[1.02] tracking-[-1.2px] sm:text-[49px] sm:tracking-[-1.35px]">
           <span className="text-[#f2effb]">AI writes code fast.</span>
           <br />
-          <span className="text-[#f2effb]">Knowing what code does is </span>
-          <span className="italic text-[#FF07AA]">still too much work.</span>
+          <span className="text-[#f2effb]">Know how every change </span>
+          <span className="italic text-[#FF07AA]">behaves</span>
+          <span className="text-[#f2effb]"> before merge.</span>
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          AppMap records application runs as traces. Developers see them as maps, and coding agents query the same traces as runtime context. AppMap compares Gold Traces across revisions to show behavioral diffs before merge.
+          AppMap gives developers and coding agents the same runtime evidence to understand, compare, and act on each change before it merges.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
