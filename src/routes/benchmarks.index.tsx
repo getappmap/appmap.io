@@ -90,15 +90,11 @@ const cost = [
 ];
 
 const limits = [
-  "One internal study, run by our team.",
-  "One model family, Claude, inside a single Claude Code agent loop.",
-  "The primary 100% versus 28% RCA result comes from two admitted fixtures in a 256-trajectory budget sweep.",
-  "The economic generalization uses 11 fixtures and 264 trajectories.",
-  "Not yet independently replicated outside our team.",
-  "Primary RCA correctness is graded, while verify-pass is determined by a hidden executable test.",
-  "The design deliberately sacrifices direct SWE-bench leaderboard comparability.",
-  "The private symptom-only design reduces contamination and solution leakage, but operates at smaller scale than SWE-bench Verified.",
-  "A compact model alone does not handle every difficult implementation. The hybrid fix stage is needed on the broader suite.",
+  "This is one internal study, run by our team. It has not been independently replicated.",
+  "It used one model family, Claude, inside a single Claude Code agent loop.",
+  "The headline 100% versus 28% result comes from two problems across 256 runs. The cost results come from 11 problems across 264 runs.",
+  "The private, symptom-only design reduces solution leakage, but it is smaller than SWE-bench Verified.",
+  "A compact model alone does not handle every hard fix. The hybrid setup is needed on the broader suite.",
 ];
 
 const Caveat = () => (
