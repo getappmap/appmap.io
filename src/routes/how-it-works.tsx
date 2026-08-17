@@ -328,7 +328,7 @@ function HowItWorksPage() {
               </div>
 
               <p className="mt-8 max-w-[820px] text-[14px] leading-[1.6] text-[#a99fc7]">
-                Everything here runs in the developer environment. The coding agent queries over MCP locally, and AppMap answers from the working traces and the Gold Traces in the repository checkout. Nothing leaves the machine.
+                Everything here runs in the developer environment. The coding agent queries over MCP locally, and AppMap answers from the working traces and the Gold Traces in the repository checkout. AppMap sends nothing off the machine.
               </p>
               <p className="mt-2 text-[12.5px] text-[#a99fc7]/70">
                 MCP tools: get_call_tree, find_calls, find_queries, find_requests. Details in Docs.
