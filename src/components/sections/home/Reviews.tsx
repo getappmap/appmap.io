@@ -45,7 +45,7 @@ export function Reviews() {
     <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-          Developers already rely on it.
+          What developers say about AppMap
         </h2>
         <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
           Rated five stars by developers across the Visual Studio Code and JetBrains

@@ -87,12 +87,12 @@ function Index() {
       <main>
         <HomeHero />
         <PainStats />
+        <TrustBar />
         <ReviewWhatAIDid />
+        <Reviews />
         <ReviewLoop />
         <HowItWorksReveal />
         <BehavioralReview />
-        <TrustBar />
-        <Reviews />
         <ClosingCTA />
       </main>
     </div>
