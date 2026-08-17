@@ -139,12 +139,7 @@ const views = [
   },
 ];
 
-const mcp = [
-  { name: "get_call_tree", body: "The execution path for a trace." },
-  { name: "find_calls", body: "Function calls across the active traces." },
-  { name: "find_queries", body: "SQL queries across the active traces." },
-  { name: "find_requests", body: "HTTP requests across the active traces." },
-];
+const agentChips = ["Claude Code", "Cursor", "GitHub Copilot", "Windsurf", "Any MCP client"];
 
 function HowItWorksPage() {
   return (
@@ -185,9 +180,9 @@ function HowItWorksPage() {
 
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Every run, fully captured</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Every detail of the paths that matter</h2>
             <p className="mt-3 max-w-[720px] text-[15px] text-[#a99fc7]">
-              An AppMap trace records the calls, SQL queries, HTTP traffic, exceptions, and code paths from a run. Each recorded run adds another trace to the local set.
+              An AppMap trace records the calls, SQL queries, HTTP traffic, exceptions, and code paths from a run. Each recorded run adds another trace to the local set. The goal is not to record everything. It is to capture the behavior the application depends on, in full detail.
             </p>
 
             {/* Desktop flow: spine + 3-above / 3-below nodes */}
@@ -247,6 +242,14 @@ function HowItWorksPage() {
             <p className="mt-6 text-center text-[14px] text-[#a99fc7]">
               Important path → Existing test or suggested test → AppMap trace
             </p>
+            <div className="mx-auto mt-8 max-w-[820px] rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+              <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Example</div>
+              <h3 className="mt-2 text-[18px] font-bold text-[#f2effb]">The password reset that has no test</h3>
+              <p className="mt-3 text-[14.5px] leading-[1.6] text-[#a99fc7]">
+                A password reset touches the user table, token generation, and email delivery. The happy path has a test. The expired-token path does not. The Gold Traces skill identifies the expired-token path as important and uncovered and suggests the test case. The coding agent writes the test. AppMap records the run, and the expired-token behavior joins the set.
+              </p>
+              <p className="mt-4 text-[13px] text-[#a99fc7]/70">The SQL view below is a real AppMap trace of this flow.</p>
+            </div>
           </div>
         </section>
 
@@ -282,13 +285,56 @@ function HowItWorksPage() {
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
               Coding agents query the traces instead of reconstructing the execution path from source. AppMap exposes the recorded calls, queries, and requests through MCP.
             </p>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              {mcp.map((m) => (
-                <div key={m.name} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                  <code className="font-mono text-[15px] font-bold text-[#ff07aa]">{m.name}</code>
-                  <p className="mt-2 text-[14.5px] text-[#a99fc7]">{m.body}</p>
+            <div className="mt-10 rounded-2xl border border-[#2c2353] bg-[#0d0a1a] p-6 sm:p-8">
+              <div className="grid items-center gap-6 lg:grid-cols-[1fr_auto_1fr]">
+                <div className="grid gap-2.5">
+                  {agentChips.map((a) => (
+                    <div key={a} className="rounded-xl border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-center text-[14px] font-semibold text-[#f2effb] lg:text-right">
+                      {a}
+                    </div>
+                  ))}
                 </div>
-              ))}
+
+                <div className="flex flex-col items-center gap-2">
+                  <div className="hidden items-center gap-2 lg:flex" aria-hidden>
+                    <span className="text-[11px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">query</span>
+                    <span className="h-[2px] w-16 bg-gradient-to-r from-[#2c2353] to-[#ff07aa]" />
+                    <span className="text-[#ff07aa]">▶</span>
+                  </div>
+                  <div className="flex items-center gap-2 lg:hidden" aria-hidden>
+                    <span className="text-[11px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">query</span>
+                    <span className="text-[#ff07aa]">▼</span>
+                  </div>
+                  <div className="rounded-2xl border border-[#ff07aa]/50 bg-[#1c1538] px-6 py-5 text-center shadow-[0_0_28px_rgba(255,7,170,0.18)]">
+                    <div className="text-[15px] font-extrabold text-[#f2effb]">AppMap MCP server</div>
+                  </div>
+                  <div className="hidden items-center gap-2 lg:flex" aria-hidden>
+                    <span className="text-[#ff07aa]">◀</span>
+                    <span className="h-[2px] w-16 bg-gradient-to-l from-[#2c2353] to-[#ff07aa]" />
+                  </div>
+                  <div className="flex items-center gap-2 lg:hidden" aria-hidden>
+                    <span className="text-[#ff07aa]">▼</span>
+                  </div>
+                </div>
+
+                <div className="grid gap-3">
+                  <div className="rounded-xl border border-[#2c2353] bg-[#1c1538] px-4 py-3">
+                    <code className="font-mono text-[14px] font-bold text-[#ff07aa]">tmp/appmap</code>
+                    <div className="mt-1 text-[13px] text-[#a99fc7]">Working traces, local</div>
+                  </div>
+                  <div className="rounded-xl border border-[#2c2353] bg-[#1c1538] px-4 py-3">
+                    <code className="font-mono text-[14px] font-bold text-[#ff07aa]">gold_traces/</code>
+                    <div className="mt-1 text-[13px] text-[#a99fc7]">Gold Traces, in git</div>
+                  </div>
+                </div>
+              </div>
+
+              <p className="mt-8 max-w-[820px] text-[14px] leading-[1.6] text-[#a99fc7]">
+                Any MCP-capable coding agent queries the same traces. AppMap answers from the working traces in the developer environment and the Gold Traces in the repository.
+              </p>
+              <p className="mt-2 text-[12.5px] text-[#a99fc7]/70">
+                MCP tools: get_call_tree, find_calls, find_queries, find_requests. Details in Docs.
+              </p>
             </div>
           </div>
         </section>
