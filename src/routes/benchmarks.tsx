@@ -43,20 +43,6 @@ export const Route = createFileRoute("/benchmarks")({
   component: BenchmarksPage,
 });
 
-const swebench = [
-  {
-    title: "Public code can be familiar",
-    body: "SWE-bench draws from highly visible open-source repositories that may already be represented in model pretraining. A result can reflect learned repository priors as well as investigation performed during the benchmark.",
-  },
-  {
-    title: "Post-triage issues can narrow the search",
-    body: "Real GitHub issue threads may identify a file, stack trace, function, or likely mechanism. Once those clues are present, the agent begins closer to implementation and the exploratory RCA phase becomes harder to measure independently.",
-  },
-  {
-    title: "Patch success can mask weak diagnosis",
-    body: "An implementation agent can re-explore the code and recover from an incomplete RCA report. We separated diagnosis from fixing so the study could measure the quality and cost of the evidence-gathering stage itself.",
-  },
-];
 
 const postTriage = [
   "Public repository",
