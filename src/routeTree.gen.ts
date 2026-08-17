@@ -27,6 +27,7 @@ import { Route as BenchmarksRouteImport } from './routes/benchmarks'
 import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as NavieSplatRouteImport } from './routes/navie.$'
+import { Route as BenchmarksSweBenchRouteImport } from './routes/benchmarks.swe-bench'
 import { Route as DocsNavieSplatRouteImport } from './routes/docs.navie.$'
 
 const TeamRoute = TeamRouteImport.update({
@@ -119,6 +120,11 @@ const NavieSplatRoute = NavieSplatRouteImport.update({
   path: '/navie/$',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BenchmarksSweBenchRoute = BenchmarksSweBenchRouteImport.update({
+  id: '/swe-bench',
+  path: '/swe-bench',
+  getParentRoute: () => BenchmarksRoute,
+} as any)
 const DocsNavieSplatRoute = DocsNavieSplatRouteImport.update({
   id: '/docs/navie/$',
   path: '/docs/navie/$',
@@ -128,7 +134,7 @@ const DocsNavieSplatRoute = DocsNavieSplatRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/architecture': typeof ArchitectureRoute
-  '/benchmarks': typeof BenchmarksRoute
+  '/benchmarks': typeof BenchmarksRouteWithChildren
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
   '/company': typeof CompanyRoute
@@ -143,13 +149,14 @@ export interface FileRoutesByFullPath {
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
+  '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/architecture': typeof ArchitectureRoute
-  '/benchmarks': typeof BenchmarksRoute
+  '/benchmarks': typeof BenchmarksRouteWithChildren
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
   '/company': typeof CompanyRoute
@@ -164,6 +171,7 @@ export interface FileRoutesByTo {
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
+  '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -171,7 +179,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/architecture': typeof ArchitectureRoute
-  '/benchmarks': typeof BenchmarksRoute
+  '/benchmarks': typeof BenchmarksRouteWithChildren
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
   '/company': typeof CompanyRoute
@@ -186,6 +194,7 @@ export interface FileRoutesById {
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
+  '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -209,6 +218,7 @@ export interface FileRouteTypes {
     | '/security-faq'
     | '/sitemap.xml'
     | '/team'
+    | '/benchmarks/swe-bench'
     | '/navie/$'
     | '/docs/navie/$'
   fileRoutesByTo: FileRoutesByTo
@@ -230,6 +240,7 @@ export interface FileRouteTypes {
     | '/security-faq'
     | '/sitemap.xml'
     | '/team'
+    | '/benchmarks/swe-bench'
     | '/navie/$'
     | '/docs/navie/$'
   id:
@@ -251,6 +262,7 @@ export interface FileRouteTypes {
     | '/security-faq'
     | '/sitemap.xml'
     | '/team'
+    | '/benchmarks/swe-bench'
     | '/navie/$'
     | '/docs/navie/$'
   fileRoutesById: FileRoutesById
@@ -258,7 +270,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ArchitectureRoute: typeof ArchitectureRoute
-  BenchmarksRoute: typeof BenchmarksRoute
+  BenchmarksRoute: typeof BenchmarksRouteWithChildren
   BookADemoRoute: typeof BookADemoRoute
   CliQuickstartRoute: typeof CliQuickstartRoute
   CompanyRoute: typeof CompanyRoute
@@ -405,6 +417,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NavieSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/benchmarks/swe-bench': {
+      id: '/benchmarks/swe-bench'
+      path: '/swe-bench'
+      fullPath: '/benchmarks/swe-bench'
+      preLoaderRoute: typeof BenchmarksSweBenchRouteImport
+      parentRoute: typeof BenchmarksRoute
+    }
     '/docs/navie/$': {
       id: '/docs/navie/$'
       path: '/docs/navie/$'
@@ -415,10 +434,22 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface BenchmarksRouteChildren {
+  BenchmarksSweBenchRoute: typeof BenchmarksSweBenchRoute
+}
+
+const BenchmarksRouteChildren: BenchmarksRouteChildren = {
+  BenchmarksSweBenchRoute: BenchmarksSweBenchRoute,
+}
+
+const BenchmarksRouteWithChildren = BenchmarksRoute._addFileChildren(
+  BenchmarksRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ArchitectureRoute: ArchitectureRoute,
-  BenchmarksRoute: BenchmarksRoute,
+  BenchmarksRoute: BenchmarksRouteWithChildren,
   BookADemoRoute: BookADemoRoute,
   CliQuickstartRoute: CliQuickstartRoute,
   CompanyRoute: CompanyRoute,
