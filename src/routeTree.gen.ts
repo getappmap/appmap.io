@@ -26,6 +26,7 @@ import { Route as BookADemoRouteImport } from './routes/book-a-demo'
 import { Route as BenchmarksRouteImport } from './routes/benchmarks'
 import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BenchmarksIndexRouteImport } from './routes/benchmarks.index'
 import { Route as NavieSplatRouteImport } from './routes/navie.$'
 import { Route as BenchmarksSweBenchRouteImport } from './routes/benchmarks.swe-bench'
 import { Route as DocsNavieSplatRouteImport } from './routes/docs.navie.$'
@@ -115,6 +116,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BenchmarksIndexRoute = BenchmarksIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => BenchmarksRoute,
+} as any)
 const NavieSplatRoute = NavieSplatRouteImport.update({
   id: '/navie/$',
   path: '/navie/$',
@@ -151,12 +157,12 @@ export interface FileRoutesByFullPath {
   '/team': typeof TeamRoute
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/navie/$': typeof NavieSplatRoute
+  '/benchmarks/': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/architecture': typeof ArchitectureRoute
-  '/benchmarks': typeof BenchmarksRouteWithChildren
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
   '/company': typeof CompanyRoute
@@ -173,6 +179,7 @@ export interface FileRoutesByTo {
   '/team': typeof TeamRoute
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/navie/$': typeof NavieSplatRoute
+  '/benchmarks': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
 export interface FileRoutesById {
@@ -196,6 +203,7 @@ export interface FileRoutesById {
   '/team': typeof TeamRoute
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/navie/$': typeof NavieSplatRoute
+  '/benchmarks/': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
 export interface FileRouteTypes {
@@ -220,12 +228,12 @@ export interface FileRouteTypes {
     | '/team'
     | '/benchmarks/swe-bench'
     | '/navie/$'
+    | '/benchmarks/'
     | '/docs/navie/$'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/architecture'
-    | '/benchmarks'
     | '/book-a-demo'
     | '/cli-quickstart'
     | '/company'
@@ -242,6 +250,7 @@ export interface FileRouteTypes {
     | '/team'
     | '/benchmarks/swe-bench'
     | '/navie/$'
+    | '/benchmarks'
     | '/docs/navie/$'
   id:
     | '__root__'
@@ -264,6 +273,7 @@ export interface FileRouteTypes {
     | '/team'
     | '/benchmarks/swe-bench'
     | '/navie/$'
+    | '/benchmarks/'
     | '/docs/navie/$'
   fileRoutesById: FileRoutesById
 }
@@ -410,6 +420,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/benchmarks/': {
+      id: '/benchmarks/'
+      path: '/'
+      fullPath: '/benchmarks/'
+      preLoaderRoute: typeof BenchmarksIndexRouteImport
+      parentRoute: typeof BenchmarksRoute
+    }
     '/navie/$': {
       id: '/navie/$'
       path: '/navie/$'
@@ -436,10 +453,12 @@ declare module '@tanstack/react-router' {
 
 interface BenchmarksRouteChildren {
   BenchmarksSweBenchRoute: typeof BenchmarksSweBenchRoute
+  BenchmarksIndexRoute: typeof BenchmarksIndexRoute
 }
 
 const BenchmarksRouteChildren: BenchmarksRouteChildren = {
   BenchmarksSweBenchRoute: BenchmarksSweBenchRoute,
+  BenchmarksIndexRoute: BenchmarksIndexRoute,
 }
 
 const BenchmarksRouteWithChildren = BenchmarksRoute._addFileChildren(
