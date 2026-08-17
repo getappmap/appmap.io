@@ -112,7 +112,7 @@ function TeamPage() {
               Where AppMap comes from
             </h2>
             <p className="mt-6 max-w-[760px] text-[17px] leading-[1.7] text-[#a99fc7]">
-              We have been building toward this moment for years. AppMap began with a simple loop: Map. Analyze. Share. Repeat. AI coding agents made that loop continuous and made runtime knowledge essential to every code change.
+              We have been building toward this moment for years. AppMap began with a simple loop: Map. Analyze. Share. Repeat. AI coding agents made that loop continuous and made runtime knowledge essential for complex code changes.
             </p>
           </div>
         </section>
