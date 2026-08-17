@@ -3,7 +3,7 @@ import { Header } from "@/components/layout/Header";
 
 const title = "AppMap Architecture: Runtime Context That Travels With the Code";
 const description =
-  "AppMap creates runtime context in the developer environment. The Gold Traces skill identifies important paths, and those traces travel with the code as versioned AppMap Gold Traces, available to developers and coding agents.";
+  "AppMap records traces in the developer environment. The Gold Traces skill identifies important paths, and those traces travel with the code as versioned AppMap Gold Traces, available to developers and coding agents.";
 
 export const Route = createFileRoute("/architecture")({
   head: () => ({
@@ -69,7 +69,7 @@ function Page() {
               Runtime context that travels with the code.
             </h1>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              AppMap creates runtime context in the developer environment. Recording, exploration, diagrams, and MCP access all start locally, and most agent interaction happens there. When important behavior needs to persist, the Gold Trace set can travel with the code as versioned AppMap Gold Traces.
+              AppMap records traces in the developer environment. Recording, exploration, diagrams, and MCP access all start locally, and most agent interaction happens there. When important behavior needs to persist, the Gold Trace set can travel with the code as versioned AppMap Gold Traces.
             </p>
           </div>
         </section>
@@ -112,10 +112,10 @@ function Page() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Behavior that survives the session</h2>
             <p className="mt-3 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
-              A coding agent normally begins each investigation by reading the current code and reconstructing what matters. AppMap Gold Traces let important runtime behavior travel forward with the repository as a versioned set.
+              A coding agent normally begins each investigation by reading the current code and reconstructing what matters. Gold Traces travel with the repository, so the team can compare behavior across revisions.
             </p>
             <p className="mt-5 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
-              A new agent, a different model, or a developer opening the repository later starts from the same traces of how important paths actually ran. This is not conversational memory. It is a repository-native Gold Trace set, versioned and reviewed like the code itself. Most agent work starts with local runtime context. Git gives the Gold Trace set a longer life, so future developers and agents can reuse important behavior instead of reconstructing it from source code.
+              A developer or coding agent opening the repository later starts with the same Gold Traces. This is not conversational memory. The set lives in the repository, versioned and reviewed like the code. Most agent work starts with local runtime context. Git gives the Gold Trace set a longer life, so future developers and agents can reuse important behavior instead of reconstructing it from source code.
             </p>
           </div>
         </section>
@@ -124,7 +124,7 @@ function Page() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Where AppMap Gold Traces live</h2>
             <p className="mt-3 max-w-[820px] text-[16px] text-[#a99fc7]">
-              When a team versions Gold Traces with the code, the set lives in the repository alongside the application, in <code className="font-mono text-[#f2effb]">gold_traces/</code>. The set contains representative traces for important application paths and the configuration AppMap uses to maintain the set. The AppMap Gold Traces skill updates the set as the code changes. The set can be used locally or committed with the code for team review.
+              When a team versions Gold Traces with the code, the set lives in the repository alongside the application, in <code className="font-mono text-[#f2effb]">gold_traces/</code>. The set contains representative traces for important paths and the configuration AppMap uses to maintain the set. The AppMap Gold Traces skill updates the set as the code changes. The set can be used locally or committed with the code for team review.
             </p>
             <p className="mt-6 max-w-[820px] border-l-4 border-[#ff07aa] pl-4 text-[20px] font-semibold leading-[1.5] text-[#f2effb]">
               Git gives you a history of what the code said. AppMap Gold Traces give you a history of what the code did.

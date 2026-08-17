@@ -14,7 +14,7 @@ const pilotSteps = [
   },
   {
     h: "Governed Gold Trace sets",
-    b: "The AppMap Gold Traces skill identifies important application paths and uses existing tests to build the set. When coverage is missing, AppMap suggests a new test case. The organization can run the same review in CI when ready. Each Gold Trace set is reviewed and versioned in the team's repository, so behavioral contracts are auditable and owned, not ad hoc. Teams begin lightweight in the editor and graduate the flows that matter into the pipeline.",
+    b: "The AppMap Gold Traces skill identifies important application paths and uses existing tests to build the set. When coverage is missing, AppMap suggests a new test case. The organization can run the same review in CI when ready. The set lives in the team's repository, where changes follow the same pull-request workflow as the code. Teams begin lightweight in the editor and graduate the flows that matter into the pipeline.",
   },
   {
     h: "Enforce when ready.",
@@ -63,7 +63,7 @@ const blocks: { title: string; body: React.ReactNode }[] = [
   },
   {
     title: "No AppMap cloud, by design",
-    body: "AppMap does not send traces to an AppMap-operated cloud. Traces are recorded and compared on the developer machine or in CI. AppMap Gold Traces are the representative set the Gold Traces skill maintains, which the team versions in git as shared context, sanitized before they are committed. Your coding agent is a separate channel: if the team chooses a hosted coding agent, some context goes to that provider under its configuration and terms. Enterprise deployments can restrict AppMap runtime context to approved or self-hosted AI endpoints.",
+    body: "AppMap does not send traces to an AppMap-operated cloud. Traces are recorded and compared on the developer machine or in CI. The Gold Traces skill builds and maintains the set. The team versions it with the code. Gold Traces are sanitized before they are committed. Your coding agent is a separate channel: if the team chooses a hosted coding agent, some context goes to that provider under its configuration and terms. Enterprise deployments can restrict AppMap runtime context to approved or self-hosted AI endpoints.",
   },
   {
     title: "Trust, but verify",
