@@ -68,7 +68,7 @@ const sympyCode = `def _print_Indexed(self, expr):
     base, *index = expr.args
     return "{}[{}]".format(str(base), ", ".join([self._print(ind) for ind in index]))`;
 
-const verifiedFix = "Verified-fix rate at the 3-call budget: runtime evidence versus code-only exploration.";
+const verifiedFix = "Share of bugs fixed and verified when limited to 3 tool calls: runtime evidence versus code-only.";
 
 const accuracy = [
   { label: "Unlimited", appmap: 100, codeOnly: 91 },
@@ -78,9 +78,9 @@ const accuracy = [
 ];
 
 const density = [
-  { n: "216 / 216", l: "cells used get_call_tree" },
-  { n: "1.09", l: "average calls in cells that used it" },
-  { n: "15+", l: "search-and-read operations to reconstruct a comparable path statically" },
+  { n: "216 / 216", l: "runs used get_call_tree" },
+  { n: "1.09", l: "average get_call_tree calls per run" },
+  { n: "15+", l: "search-and-read steps to build the same picture from source code" },
 ];
 
 const cost = [
@@ -140,9 +140,9 @@ function BenchmarksIndexPage() {
       {/* 2. 1-vs-15 comparison */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-[1120px]">
-          <h2 className="max-w-[900px] text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One call can carry the evidence of an entire investigation</h2>
+          <h2 className="max-w-[900px] text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One query can return what fifteen searches are looking for</h2>
           <p className="mt-5 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
-            Across all 216 trace-augmented cells analyzed for tool usage, <code className="font-mono text-[#f2effb]">get_call_tree</code> appeared in every cell and averaged just over one call per trajectory. It returned the diagnosis-bearing frame sequence directly. The code-only lane had to enumerate files, inspect imports, search identifiers, and read implementations sequentially.
+            In all 216 runs we analyzed, the agent used <code className="font-mono text-[#f2effb]">get_call_tree</code>, and on average it needed just over one call. That one call returned the execution path that held the answer. The code-only lane had to list files, read imports, search for identifiers, and read code, one step at a time.
           </p>
 
           <div className="mt-9 flex flex-col gap-5 border-t border-b border-[#2c2353] py-7 sm:flex-row sm:items-start sm:gap-12">
@@ -155,7 +155,7 @@ function BenchmarksIndexPage() {
           </div>
 
           <p className="mt-9 max-w-[880px] text-[22px] font-bold leading-[1.35] tracking-[-0.4px] text-[#f2effb] sm:text-[24px]">
-            Higher information density means fewer tool calls, fewer tokens, less latency, and lower inference cost.
+            More information per call means fewer calls, fewer tokens, less waiting, and lower cost.
           </p>
 
           <div className="mt-10 grid gap-4 lg:grid-cols-2">
@@ -283,7 +283,7 @@ grep -rn "ledger.write" src/
             </div>
           </div>
           <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
-            The enterprise problem begins before the bug has been translated into engineering instructions.
+            The enterprise problem starts before anyone has turned the bug into instructions.
           </p>
         </div>
       </section>
@@ -416,7 +416,7 @@ grep -rn "ledger.write" src/
           </div>
 
           <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
-            The runtime trace is the sole experimental difference between the two RCA lanes.
+            The runtime trace is the only difference between the two lanes.
           </p>
         </div>
       </section>
@@ -425,7 +425,7 @@ grep -rn "ledger.write" src/
       <section id="results" className="scroll-mt-20 border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
         <div className="mx-auto max-w-[1120px]">
           <div className="text-[12.5px] uppercase tracking-[1.2px] text-[#a99fc7]">
-            Primary two-fixture sweep, two Claude models, four budgets, N=8 per cell
+            Primary study: two problems, two Claude models, four budgets, eight runs per cell
           </div>
           <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">With runtime evidence, accuracy held. Without it, accuracy fell.</h2>
 
@@ -442,7 +442,7 @@ grep -rn "ledger.write" src/
                   <p className="mt-2 text-[12.5px] leading-[1.4] text-[#a99fc7]">code-only exploration</p>
                 </div>
               </div>
-              <p className="mt-4 text-[14px] leading-[1.6] text-[#a99fc7]">RCA correctness at the 3-call diagnostic budget.</p>
+              <p className="mt-4 text-[14px] leading-[1.6] text-[#a99fc7]">Root-cause accuracy when limited to 3 tool calls.</p>
             </div>
             <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
               <div className="text-[32px] font-extrabold leading-none tracking-[-1px] sm:text-[38px]">
@@ -454,12 +454,12 @@ grep -rn "ledger.write" src/
             </div>
             <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
               <div className="text-[32px] font-extrabold leading-none tracking-[-1px] text-[#ff07aa] sm:text-[38px]">15+ -&gt; 1</div>
-              <p className="mt-3 text-[14px] leading-[1.6] text-[#a99fc7]">Sequential grep-and-read steps replaced by one high-density get_call_tree query.</p>
+              <p className="mt-3 text-[14px] leading-[1.6] text-[#a99fc7]">Fifteen or more search-and-read steps replaced by one get_call_tree query.</p>
             </div>
           </div>
 
           <p className="mt-10 max-w-[760px] text-[16px] text-[#a99fc7]">
-            Root-cause accuracy against the tool-call budget. Runtime evidence stays flat. Code-only exploration falls off.
+            How accurately each lane found the root cause as we cut the number of tool calls allowed. With runtime evidence, accuracy stayed at 100%. Without it, accuracy fell as the budget shrank.
           </p>
 
           <div className="mt-6 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
@@ -486,7 +486,7 @@ grep -rn "ledger.write" src/
           </div>
 
           <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
-            End-to-end verified-fix rate tells the same story. The runtime lane held at 94 to 100 percent. The code-only lane dropped from 84 percent to 62 percent.
+            The share of bugs actually fixed and verified tells the same story. With runtime evidence, 94 to 100 percent. Without it, the rate dropped from 84 percent to 62 percent.
           </p>
           <Caveat />
         </div>
@@ -500,14 +500,14 @@ grep -rn "ledger.write" src/
           <div className="mt-9 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
             <h3 className="text-[19px] font-bold text-[#f2effb]">Matched performance in the primary sweep</h3>
             <p className="mt-3 max-w-[760px] text-[15.5px] leading-[1.7] text-[#a99fc7]">
-              In the primary two-fixture sweep, where both lanes reached 100% verified-fix performance, the trace-augmented configuration reached it for approximately 3.4 times less spend.
+              In the primary study, both lanes eventually fixed every bug. The lane with runtime evidence got there for about 3.4 times less spend.
             </p>
           </div>
 
           <div className="mt-10">
             <h3 className="text-[19px] font-bold text-[#f2effb]">Generalization across 11 fixtures, three configurations</h3>
             <p className="mt-3 max-w-[820px] text-[15.5px] leading-[1.7] text-[#a99fc7]">
-              The practical configuration is hybrid: use a compact model for high-density trace-based diagnosis and a frontier model for the structurally difficult implementation step. Cost per cell is shown with the verified-fix rate beside each bar.
+              The practical setup is a hybrid: a compact model diagnoses from the trace, and a frontier model writes the harder fixes. Each bar shows the cost per run with the fix rate beside it.
             </p>
 
             <div className="mt-7 space-y-5 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
