@@ -27,6 +27,7 @@ import { Route as BenchmarksRouteImport } from './routes/benchmarks'
 import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as NavieSplatRouteImport } from './routes/navie.$'
+import { Route as InternalWorkflowPreviewRouteImport } from './routes/internal.workflow-preview'
 import { Route as DocsNavieSplatRouteImport } from './routes/docs.navie.$'
 
 const TeamRoute = TeamRouteImport.update({
@@ -119,6 +120,11 @@ const NavieSplatRoute = NavieSplatRouteImport.update({
   path: '/navie/$',
   getParentRoute: () => rootRouteImport,
 } as any)
+const InternalWorkflowPreviewRoute = InternalWorkflowPreviewRouteImport.update({
+  id: '/internal/workflow-preview',
+  path: '/internal/workflow-preview',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DocsNavieSplatRoute = DocsNavieSplatRouteImport.update({
   id: '/docs/navie/$',
   path: '/docs/navie/$',
@@ -143,6 +149,7 @@ export interface FileRoutesByFullPath {
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
+  '/internal/workflow-preview': typeof InternalWorkflowPreviewRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -164,6 +171,7 @@ export interface FileRoutesByTo {
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
+  '/internal/workflow-preview': typeof InternalWorkflowPreviewRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -186,6 +194,7 @@ export interface FileRoutesById {
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
+  '/internal/workflow-preview': typeof InternalWorkflowPreviewRoute
   '/navie/$': typeof NavieSplatRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -209,6 +218,7 @@ export interface FileRouteTypes {
     | '/security-faq'
     | '/sitemap.xml'
     | '/team'
+    | '/internal/workflow-preview'
     | '/navie/$'
     | '/docs/navie/$'
   fileRoutesByTo: FileRoutesByTo
@@ -230,6 +240,7 @@ export interface FileRouteTypes {
     | '/security-faq'
     | '/sitemap.xml'
     | '/team'
+    | '/internal/workflow-preview'
     | '/navie/$'
     | '/docs/navie/$'
   id:
@@ -251,6 +262,7 @@ export interface FileRouteTypes {
     | '/security-faq'
     | '/sitemap.xml'
     | '/team'
+    | '/internal/workflow-preview'
     | '/navie/$'
     | '/docs/navie/$'
   fileRoutesById: FileRoutesById
@@ -273,6 +285,7 @@ export interface RootRouteChildren {
   SecurityFaqRoute: typeof SecurityFaqRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TeamRoute: typeof TeamRoute
+  InternalWorkflowPreviewRoute: typeof InternalWorkflowPreviewRoute
   NavieSplatRoute: typeof NavieSplatRoute
   DocsNavieSplatRoute: typeof DocsNavieSplatRoute
 }
@@ -405,6 +418,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NavieSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/internal/workflow-preview': {
+      id: '/internal/workflow-preview'
+      path: '/internal/workflow-preview'
+      fullPath: '/internal/workflow-preview'
+      preLoaderRoute: typeof InternalWorkflowPreviewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/docs/navie/$': {
       id: '/docs/navie/$'
       path: '/docs/navie/$'
@@ -433,6 +453,7 @@ const rootRouteChildren: RootRouteChildren = {
   SecurityFaqRoute: SecurityFaqRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TeamRoute: TeamRoute,
+  InternalWorkflowPreviewRoute: InternalWorkflowPreviewRoute,
   NavieSplatRoute: NavieSplatRoute,
   DocsNavieSplatRoute: DocsNavieSplatRoute,
 }
