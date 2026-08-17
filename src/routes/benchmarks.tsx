@@ -521,6 +521,8 @@ function BenchmarksPage() {
               <Link to="/get-appmap" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                 Get AppMap
               </Link>
+            </div>
+            <div className="mt-5">
               <PaperRequest />
             </div>
           </div>
