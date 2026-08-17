@@ -240,6 +240,18 @@ function HowItWorksPage() {
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">AppMap finds the paths your tests are missing.</h2>
+            <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
+              The Gold Traces skill analyzes the codebase and existing tests to identify important application paths. When an important path is already covered, AppMap records it. When coverage is missing, AppMap suggests a new test case and the coding agent can create it. AppMap then records the path and adds the trace to the Gold Trace set.
+            </p>
+            <p className="mt-6 text-center text-[14px] text-[#a99fc7]">
+              Important path → Existing test or suggested test → AppMap trace
+            </p>
+          </div>
+        </section>
+
+        <section className="px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">See the trace as a map.</h2>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
               The same trace can be viewed as a dependency map, sequence diagram, SQL activity, or code objects. Each view shows the same recorded behavior from a different angle.
