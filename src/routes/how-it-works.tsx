@@ -334,10 +334,10 @@ function HowItWorksPage() {
 
             <div className="mt-8 max-w-[720px]">
               <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGED · BEHAVIOR CHANGED</div>
-                <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Changed as intended</h3>
+                <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGES · BEHAVIOR CHANGES</div>
+                <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Changes as intended</h3>
                 <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">
-                  For an N+1 fix, a new timeout, a circuit breaker, or added audit logging, behavior should change in a specific way. If the trace does not change, the fix did not land.
+                  For an N+1 fix, a new timeout, a circuit breaker, or added audit logging, behavior should change in a specific way. If the trace does not change, the fix is not there.
                 </p>
                 <img
                   src="/marketing-assets/img/appmap/waltzbeforeafter_branded.svg"
