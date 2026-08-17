@@ -166,11 +166,8 @@ function HowItWorksPage() {
           </div>
         </section>
 
-        <section className="px-6 py-16">
+        <section className="px-6 pt-8 pb-20">
           <div className="mx-auto max-w-[1120px]">
-            <p className="max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              AppMap fits into the development loop your coding agent already runs. Tests execute, AppMap records fresh traces, and AppMap compares the behavior before merge.
-            </p>
             <img
               src="/marketing-assets/img/workflow/appmap-runtime-review.png"
               alt="AppMap workflow: the coding agent runs the tests, AppMap records fresh traces, and AppMap compares Gold Traces for the head and base revisions before merge"
@@ -178,10 +175,10 @@ function HowItWorksPage() {
               height={960}
               loading="lazy"
               decoding="async"
-              className="mt-8 w-full rounded-2xl border border-[#2c2353] bg-[#0d0a1a]"
+              className="w-full rounded-2xl border border-[#2c2353] bg-[#0d0a1a]"
             />
             <p className="mt-4 max-w-[820px] text-[13px] leading-[1.6] text-[#a99fc7]">
-              Developers see the maps. Coding agents query the same traces. AppMap compares Gold Traces for the head revision with Gold Traces for the base revision.
+              AppMap fits into the development loop your coding agent already runs. Tests execute, AppMap records fresh traces, and AppMap compares the behavior before merge.
             </p>
           </div>
         </section>
