@@ -54,15 +54,7 @@ export function HomeHero() {
             height={900}
             className="aspect-[16/9] w-full rounded-xl border border-[#2c2353] bg-[#16112b] object-cover object-left shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
           />
-          <div className="mt-4 flex flex-wrap justify-center gap-3">
-          <div className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-sm text-[#a99fc7]">
-              The diagrams are for people
-            </div>
-            <div className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-sm text-[#a99fc7]">
-              The data is for the AI
-            </div>
-          </div>
-          <p className="mt-3 text-center text-[13px] text-[#a99fc7]">
+          <p className="mt-5 text-center text-[13px] text-[#a99fc7]">
             A set of traces. Many views. Same ground truth.
           </p>
         </div>
