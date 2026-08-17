@@ -10,7 +10,7 @@ const steps = [
     body: "Sequence diagrams, Trace View, queries, dependencies, and other AppMap views show what the changed software actually did.",
   },
   {
-    title: "AppMap Gold Traces check the behavior",
+    title: "The change is compared against AppMap Gold Traces",
     body: "Compare the new run with a trusted baseline to see what held, what changed, and whether the change behaved as intended.",
   },
   {
@@ -58,7 +58,7 @@ export function ReviewLoop() {
           Stop reviewing code. Start reviewing behavior.
         </h2>
         <p className="mt-2 max-w-[680px] text-[17px] text-[color:var(--color-am-muted)]">
-          AppMap turns a recorded run into diagrams developers can inspect and structured runtime evidence AI tools can query. AppMap Gold Traces compare the change against trusted behavior, and the review result can be written directly into the pull request.
+          AppMap maintains a representative Gold Trace set for important application paths. As the code changes, AppMap records fresh traces and compares them with the base revision. The Gold Traces skill uses existing tests where possible and suggests new tests when an important path is not covered. AppMap turns the traces into diagrams developers can inspect and structured runtime evidence AI tools can query, and the review result can be written directly into the pull request.
         </p>
 
         <ol className="relative mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
@@ -117,11 +117,11 @@ export function ReviewLoop() {
           Every pull request explains itself.
         </p>
         <p className="mt-3 max-w-3xl text-[14px] text-[color:var(--color-am-muted)]">
-          A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the result still matches the AppMap Gold Trace.
+          A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the result still matches the AppMap Gold Trace baseline.
         </p>
         <div className="mt-6 rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] p-4">
           <p className="text-[14px] leading-[1.55] text-[color:var(--color-am-muted)]">
-            Developers can inspect the diagrams. AI tools can query the underlying recording. The pull request carries the resulting behavioral review. The evidence comes from the running application, not from the AI evaluating its own work.
+            Developers can inspect the diagrams. AI tools can query the underlying traces. The pull request carries the resulting behavioral review. The evidence comes from the running application, not from the AI evaluating its own work.
           </p>
         </div>
         <p className="mt-6 text-center text-[13px] text-[color:var(--color-am-muted)]">
