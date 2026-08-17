@@ -1,5 +1,5 @@
 # Update ReviewLoop trace link label
-
+# Review: placing the workflow graphic on /how-it-works
 ## Goal
 Change the left panel caption link in the homepage ReviewLoop section from "View the full trace" to "View the full trace from the code editor".
 
