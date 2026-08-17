@@ -283,46 +283,48 @@ function HowItWorksPage() {
               Coding agents query the traces instead of reconstructing the execution path from source. AppMap exposes the recorded calls, queries, and requests through MCP.
             </p>
             <div className="mt-10 rounded-2xl border border-[#2c2353] bg-[#0d0a1a] p-6 sm:p-8">
-              <div className="mb-6 text-center text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]/70">Developer environment · All local</div>
-              <div className="grid items-center gap-6 lg:grid-cols-[1fr_auto_1fr]">
-                <div className="grid gap-2.5">
-                  {agentChips.map((a) => (
-                    <div key={a} className="rounded-xl border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-center text-[14px] font-semibold text-[#f2effb] lg:text-right">
-                      {a}
+              <div className="relative rounded-2xl border-2 border-dashed border-[#3f3566] bg-[#0d0a1a]/50 p-6 pt-8 sm:p-8 sm:pt-9">
+                <div className="absolute -top-[11px] left-4 bg-[#0d0a1a] px-2 text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]/70 sm:left-6">Your environment</div>
+                <div className="grid items-center gap-6 lg:grid-cols-[1fr_auto_1fr]">
+                  <div className="grid gap-2.5">
+                    {agentChips.map((a) => (
+                      <div key={a} className="rounded-xl border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-center text-[14px] font-semibold text-[#f2effb] lg:text-right">
+                        {a}
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="hidden items-center gap-2 lg:flex" aria-hidden>
+                      <span className="text-[11px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">query</span>
+                      <span className="h-[2px] w-16 bg-gradient-to-r from-[#2c2353] to-[#ff07aa]" />
+                      <span className="text-[#ff07aa]">▶</span>
                     </div>
-                  ))}
-                </div>
+                    <div className="flex items-center gap-2 lg:hidden" aria-hidden>
+                      <span className="text-[11px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">query</span>
+                      <span className="text-[#ff07aa]">▼</span>
+                    </div>
+                    <div className="rounded-2xl border border-[#ff07aa]/50 bg-[#1c1538] px-6 py-5 text-center shadow-[0_0_28px_rgba(255,7,170,0.18)]">
+                      <div className="text-[15px] font-extrabold text-[#f2effb]">MCP</div>
+                    </div>
+                    <div className="hidden items-center gap-2 lg:flex" aria-hidden>
+                      <span className="text-[#ff07aa]">◀</span>
+                      <span className="h-[2px] w-16 bg-gradient-to-l from-[#2c2353] to-[#ff07aa]" />
+                    </div>
+                    <div className="flex items-center gap-2 lg:hidden" aria-hidden>
+                      <span className="text-[#ff07aa]">▼</span>
+                    </div>
+                  </div>
 
-                <div className="flex flex-col items-center gap-2">
-                  <div className="hidden items-center gap-2 lg:flex" aria-hidden>
-                    <span className="text-[11px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">query</span>
-                    <span className="h-[2px] w-16 bg-gradient-to-r from-[#2c2353] to-[#ff07aa]" />
-                    <span className="text-[#ff07aa]">▶</span>
-                  </div>
-                  <div className="flex items-center gap-2 lg:hidden" aria-hidden>
-                    <span className="text-[11px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">query</span>
-                    <span className="text-[#ff07aa]">▼</span>
-                  </div>
-                  <div className="rounded-2xl border border-[#ff07aa]/50 bg-[#1c1538] px-6 py-5 text-center shadow-[0_0_28px_rgba(255,7,170,0.18)]">
-                    <div className="text-[15px] font-extrabold text-[#f2effb]">MCP</div>
-                  </div>
-                  <div className="hidden items-center gap-2 lg:flex" aria-hidden>
-                    <span className="text-[#ff07aa]">◀</span>
-                    <span className="h-[2px] w-16 bg-gradient-to-l from-[#2c2353] to-[#ff07aa]" />
-                  </div>
-                  <div className="flex items-center gap-2 lg:hidden" aria-hidden>
-                    <span className="text-[#ff07aa]">▼</span>
-                  </div>
-                </div>
-
-                <div className="grid gap-3">
-                  <div className="rounded-xl border border-[#2c2353] bg-[#1c1538] px-4 py-3">
-                    <code className="font-mono text-[14px] font-bold text-[#ff07aa]">tmp/appmap</code>
-                    <div className="mt-1 text-[13px] text-[#a99fc7]">Working traces, local</div>
-                  </div>
-                  <div className="rounded-xl border border-[#2c2353] bg-[#1c1538] px-4 py-3">
-                    <code className="font-mono text-[14px] font-bold text-[#ff07aa]">gold_traces/</code>
-                    <div className="mt-1 text-[13px] text-[#a99fc7]">Gold Traces, in the repository checkout</div>
+                  <div className="grid gap-3">
+                    <div className="rounded-xl border border-[#2c2353] bg-[#1c1538] px-4 py-3">
+                      <code className="font-mono text-[14px] font-bold text-[#ff07aa]">tmp/appmap</code>
+                      <div className="mt-1 text-[13px] text-[#a99fc7]">Working traces, local</div>
+                    </div>
+                    <div className="rounded-xl border border-[#2c2353] bg-[#1c1538] px-4 py-3">
+                      <code className="font-mono text-[14px] font-bold text-[#ff07aa]">gold_traces/</code>
+                      <div className="mt-1 text-[13px] text-[#a99fc7]">Gold Traces, in the repository checkout</div>
+                    </div>
                   </div>
                 </div>
               </div>
