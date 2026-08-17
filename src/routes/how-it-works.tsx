@@ -3,7 +3,7 @@ import { Header } from "@/components/layout/Header";
 
 const title = "How AppMap works";
 const description =
-  "AppMap records your application as it runs. Here is what the traces capture, the views they produce, and how that evidence reaches your AI agent.";
+  "AppMap records application runs as traces in development and CI. Here is what the traces capture, the views they produce, and how that evidence reaches your AI agent.";
 
 const faqs = [
   {
@@ -30,12 +30,12 @@ const faqs = [
   },
   {
     q: "Does AppMap send code or runtime data to the cloud?",
-    a: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and recordings stay with your editor and your repository. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
+    a: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and AppMap traces are recorded locally. Teams can select representative traces as AppMap Gold Traces, sanitize them, and commit those Gold Traces with the code. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
     doc: { href: "https://appmap.io/security", label: "AppMap security" },
   },
   {
     q: "Where does AppMap store runtime behavior?",
-    a: "Recordings are captured locally, typically to a tmp/appmap directory in the project. Recordings your team keeps, such as AppMap Gold Traces, are promoted into a .appmap directory in the repository and versioned like any other file. Baselines committed to the repository are sanitized first: captured values are replaced with deterministic tokens, so the versioned trace preserves structural behavior without the original parameter, return, or message values.",
+    a: "Recordings are captured locally, typically to a tmp/appmap directory in the project. Traces your team keeps as AppMap Gold Traces are committed to the gold_traces directory in the repository and versioned like any other file. Gold Traces are sanitized before they are committed. Baselines committed to the repository are sanitized first: captured values are replaced with deterministic tokens, so the versioned trace preserves structural behavior without the original parameter, return, or message values.",
     doc: { href: "https://appmap.io/docs/reference/appmap-client-cli.html", label: "AppMap client CLI reference" },
   },
 ];
@@ -161,7 +161,7 @@ function HowItWorksPage() {
               Source code tells you what software could do. Runtime behavior tells you what it actually did.
             </p>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              Every time your software runs, AppMap records what actually happened. Here is what the traces capture, the views they produce, and how that evidence reaches your AI agent.
+              AppMap runs in development and CI. It records application runs as traces. Here is what the traces capture, the views they produce, and how that evidence reaches your AI agent.
             </p>
           </div>
         </section>
@@ -327,7 +327,7 @@ function HowItWorksPage() {
               AppMap compares a structural digest of the run: request path, status codes, call-tree structure, SQL shape, and downstream calls. Timing, ids, and captured values are not in it.
             </p>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              AppMap Gold Traces do not require every developer to run the full enterprise stack. A baseline can come from a local run, a focused test, a smoke script, an API call, a QA environment, or an existing running process.
+              AppMap Gold Traces do not require every developer to run the full enterprise stack. A baseline can come from a local run, a focused test, a smoke script, an API call, a QA environment, or an existing process in a development or QA environment.
             </p>
 
             <div className="mt-8">

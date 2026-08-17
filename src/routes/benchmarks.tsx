@@ -490,7 +490,7 @@ function BenchmarksPage() {
                       <th className="px-4 py-3 text-left">Configuration</th>
                       <th className="px-4 py-3 text-left">Verified-fix rate</th>
                       <th className="px-4 py-3 text-left">Cost / cell</th>
-                      <th className="px-4 py-3 text-left">vs. baseline</th>
+                      <th className="px-4 py-3 text-left">vs. control</th>
                     </tr>
                   </thead>
                   <tbody className="bg-[#16112b] text-[#f2effb]">
