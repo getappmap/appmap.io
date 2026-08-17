@@ -114,9 +114,6 @@ export function ReviewLoop() {
             Developers can inspect the diagrams. AI tools can query the underlying traces. The pull request carries the resulting behavioral review. The evidence comes from the running application, not from the AI evaluating its own work.
           </p>
         </div>
-        <p className="mt-6 text-center text-[13px] text-[color:var(--color-am-muted)]">
-          Change the code. Record the traces. Compare. Repeat.
-        </p>
       </div>
     </section>
   );
