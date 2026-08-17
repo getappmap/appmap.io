@@ -36,10 +36,10 @@ export function ClosingCTA() {
           }}
         >
           <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-            Understand what your software actually does.
+            Know what your software does before you merge it.
           </h2>
           <p className="mx-auto mt-3 max-w-[640px] text-[16px] text-[#a99fc7]">
-            See how behavior changed in your editor and give your AI the same runtime context. Start free in VS Code or JetBrains.
+            Maps for developers. Runtime context for AI agents. Behavioral diffs before merge. Start free in VS Code or JetBrains.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3.5">
             <a
