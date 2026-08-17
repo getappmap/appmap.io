@@ -14,7 +14,7 @@ import { ClosingCTA } from "@/components/sections/home/ClosingCTA";
 
 const title = "AppMap: Runtime evidence for AI-assisted development";
 const description =
-  "AI made code cheap. Knowing what it does is not. AppMap turns application runs into traces that become maps for developers, runtime context for AI agents, and behavioral diffs before merge.";
+  "AI made code cheap. Knowing what it does is not. AppMap records application runs as traces. Developers see them as maps, coding agents query the same traces, and AppMap compares Gold Traces across revisions to show behavioral diffs before merge.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

@@ -22,7 +22,7 @@ export function HomeHero() {
           Knowing what it does is not.
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          AppMap turns application runs into traces that become maps for developers, runtime context for AI agents, and behavioral diffs before merge. Developers see what changed. AI agents use the same runtime context to correct drift.
+          AppMap records application runs as traces. Developers see them as maps, and coding agents query the same traces as runtime context. AppMap compares Gold Traces across revisions to show behavioral diffs before merge.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
