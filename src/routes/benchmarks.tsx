@@ -253,18 +253,18 @@ grep -rn "ledger.write" src/
             <p className="mt-4 max-w-[760px] text-[16px] leading-[1.7] text-[#a99fc7]">
               SWE-bench remains valuable for comparing overall agent capability. It was not designed to isolate the value of root-cause evidence.
             </p>
-            <div className="mt-9 grid gap-4 md:grid-cols-3">
-              {swebench.map((c) => (
-                <div key={c.title} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                  <h3 className="text-[17px] font-bold text-[#f2effb]">{c.title}</h3>
-                  <p className="mt-2 text-[14.5px] leading-[1.65] text-[#a99fc7]">{c.body}</p>
-                </div>
-              ))}
-            </div>
             <div className="mt-8 rounded-xl border-l-2 border-[#ff07aa] bg-[#16112b] px-6 py-5">
               <p className="max-w-[820px] text-[16px] leading-[1.65] text-[#f2effb]">
                 SWE-bench asks whether an agent can resolve a known issue. This study asks whether runtime evidence helps an agent discover an unknown cause.
               </p>
+            </div>
+            <div className="mt-7">
+              <Link
+                to="/benchmarks/swe-bench"
+                className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#f2effb] underline underline-offset-4 transition-colors hover:text-[#ff07aa]"
+              >
+                Want to learn more? Why SWE-bench could not isolate diagnosis, with citations →
+              </Link>
             </div>
           </div>
         </section>
