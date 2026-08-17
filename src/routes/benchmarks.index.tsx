@@ -427,7 +427,7 @@ grep -rn "ledger.write" src/
           <div className="text-[12.5px] uppercase tracking-[1.2px] text-[#a99fc7]">
             Primary two-fixture sweep, two Claude models, four budgets, N=8 per cell
           </div>
-          <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Runtime evidence preserved diagnosis under pressure</h2>
+          <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">With runtime evidence, accuracy held. Without it, accuracy fell.</h2>
 
           <div className="mt-8 grid gap-4 lg:grid-cols-3">
             <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
