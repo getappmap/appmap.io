@@ -3,7 +3,7 @@ import { Header, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
 
 const title = "Get AppMap | AppMap";
 const description =
-  "One engine. Install it your way. VS Code, JetBrains, or straight from the terminal: every path ends at the same ground truth.";
+  "One AppMap. Install it your way. VS Code, JetBrains, or straight from the terminal: every path ends at the same ground truth.";
 
 export const Route = createFileRoute("/get-appmap")({
   head: () => ({
@@ -38,7 +38,7 @@ function GetAppMapPage() {
               Get AppMap
             </div>
             <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-              One engine. Install it your way.
+              One AppMap. Install it your way.
             </h1>
             <p className="mt-5 max-w-3xl text-[18px] leading-relaxed text-[#a99fc7]">
               VS Code, JetBrains, or straight from the terminal: every path ends at the same ground truth.
@@ -101,7 +101,7 @@ function GetAppMapPage() {
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px] text-center">
             <p className="text-[18px] leading-[1.7] text-[#f2effb]">
-              <span className="font-semibold">Free at your desk.</span> Paid plans help teams share and govern AppMap recordings across repositories and workflows.{" "}
+              <span className="font-semibold">Free at your desk.</span> Paid plans help teams share and govern AppMap traces across repositories and workflows.{" "}
               <Link to="/pricing" className="font-semibold text-[#ff07aa] hover:underline">
                 See pricing
               </Link>
