@@ -120,7 +120,7 @@ function CompatibilityPage() {
         <section className="px-6 py-24">
           <div className="mx-auto max-w-[1120px] text-center">
             <p className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-              One run. Many views. Same ground truth.
+              A set of traces. Many views. Same ground truth.
             </p>
           </div>
         </section>

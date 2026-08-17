@@ -6,7 +6,7 @@ AppMap Gold Traces are recordings promoted into approved before/after behavioral
 
 ## Why it matters for AI agents
 
-- Independent evidence: the trace is observed from the running application, outside the agent's own reasoning. The agent can explain the evidence; it does not create it. This is what makes AI-generated change reviewable and governable: the AI is checked against evidence it did not invent.
+- Independent evidence: the traces are observed from the running application, outside the agent's own reasoning. The agent can explain the evidence; it does not create it. This is what makes AI-generated change reviewable and governable: the AI is checked against evidence it did not invent.
 
 ## Where to look
 - Home: https://appmap.io/

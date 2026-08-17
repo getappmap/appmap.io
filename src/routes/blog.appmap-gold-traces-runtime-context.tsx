@@ -248,7 +248,7 @@ function BlogPost() {
               alongside the source diff.
             </p>
             <p className={P}>
-              One run produces both. People and AI tools review the same ground truth in their native
+              The traces produce both. People and AI tools review the same ground truth in their native
               formats.
             </p>
 
@@ -348,7 +348,7 @@ function BlogPost() {
               against it.
             </p>
             <p className={P}>
-              One run. Many views. Same ground truth. The AppMap Gold Trace is how that ground
+              A set of traces. Many views. Same ground truth. The AppMap Gold Trace is how that ground
               truth persists.
             </p>
 

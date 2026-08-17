@@ -41,7 +41,7 @@ export function BehavioralReview() {
             className="aspect-[16/8] w-full rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] object-cover shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
           />
           <div className="mt-3 text-center text-[13px] text-[color:var(--color-am-muted)]">
-            Sequence diagram view. Fully interactive in your editor. One recording, the full request path from HTTP to database.
+            Sequence diagram view. Fully interactive in your editor. Each trace captures the full request path from HTTP to database.
           </div>
         </div>
 

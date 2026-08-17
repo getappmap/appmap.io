@@ -24,7 +24,7 @@ const securityFaqs = [
   },
   {
     q: "How does AppMap work with MCP?",
-    a: "AppMap exposes the recording over the Model Context Protocol. Agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
+    a: "AppMap exposes the traces over the Model Context Protocol. Agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
   },
 ];
 
