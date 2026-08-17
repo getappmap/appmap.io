@@ -161,7 +161,27 @@ function HowItWorksPage() {
               Source code tells you what software could do. Runtime behavior tells you what it actually did.
             </p>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              Here is what a trace captures, the views you get from it, and how a coding agent reads the same trace.
+              AppMap runs in development and CI. It records application runs as traces that developers inspect as maps and coding agents query directly.
+            </p>
+          </div>
+        </section>
+
+        <section className="px-6 py-16">
+          <div className="mx-auto max-w-[1120px]">
+            <p className="max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
+              AppMap fits into the development loop your coding agent already runs. Tests execute, AppMap records fresh traces, and AppMap compares the behavior before merge.
+            </p>
+            <img
+              src="/marketing-assets/img/workflow/appmap-runtime-review.png"
+              alt="AppMap workflow: the coding agent runs the tests, AppMap records fresh traces, and AppMap compares Gold Traces for the head and base revisions before merge"
+              width={2000}
+              height={974}
+              loading="lazy"
+              decoding="async"
+              className="mt-8 w-full rounded-2xl border border-[#2c2353] bg-[#0d0a1a]"
+            />
+            <p className="mt-4 max-w-[820px] text-[13px] leading-[1.6] text-[#a99fc7]">
+              Developers see the maps. Coding agents query the same traces. AppMap compares Gold Traces for the head revision with Gold Traces for the base revision.
             </p>
           </div>
         </section>
@@ -170,7 +190,7 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Every run, fully captured</h2>
             <p className="mt-3 max-w-[720px] text-[15px] text-[#a99fc7]">
-              Six signals tap off each run, all written into one trace.
+              An AppMap trace records the calls, SQL queries, HTTP traffic, exceptions, and code paths from a run. Each recorded run adds another trace to the local set.
             </p>
 
             {/* Desktop flow: spine + 3-above / 3-below nodes */}
@@ -223,7 +243,10 @@ function HowItWorksPage() {
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One trace, many views.</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">See the trace as a map.</h2>
+            <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
+              The same trace can be viewed as a dependency map, sequence diagram, SQL activity, or code objects. Each view shows the same recorded behavior from a different angle.
+            </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {views.map((v) => (
                 <div key={v.title} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
