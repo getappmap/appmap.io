@@ -17,12 +17,12 @@ export function HomeHero() {
           Runtime evidence for AI-assisted development
         </div>
         <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.2px] text-[#f2effb] sm:text-[54px] sm:tracking-[-1.5px]">
-          Your AI reads the code.
+          AI made writing code cheap.
           <br />
-          See what happens <Em>before merging</Em>.
+          Trusting it is now the expensive part.
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          AI made writing code cheap. Trusting it is now the expensive part. AppMap shows how behavior changed, so developers merge with certainty and AI agents fix drift with grounded context.
+          AppMap shows how the current version runs, how the proposed version runs, and what changed between them. Developers decide what is ready to merge. AI agents use the same runtime context to correct drift.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
@@ -54,10 +54,7 @@ export function HomeHero() {
             height={900}
             className="aspect-[16/9] w-full rounded-xl border border-[#2c2353] bg-[#16112b] object-cover object-left shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
           />
-          <p className="mt-5 text-center text-[17px] font-semibold text-[#f2effb]">
-            Stop guessing from the diff. Merge what you trust.
-          </p>
-          <p className="mt-3 text-center text-[13px] text-[#a99fc7]">
+          <p className="mt-5 text-center text-[13px] text-[#a99fc7]">
             Change the code. Record the traces. Compare. Repeat.
           </p>
         </div>
