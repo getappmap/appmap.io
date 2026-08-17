@@ -15,7 +15,7 @@ const panels = [
       "API changes",
       "Query changes",
       "New dependencies",
-      "AppMap Gold Trace baseline divergence",
+      "Unexpected drift from the AppMap Gold Traces",
     ],
   },
 ];

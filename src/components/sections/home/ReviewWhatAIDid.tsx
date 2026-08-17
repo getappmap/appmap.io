@@ -13,9 +13,9 @@ const items = [
   },
   {
     title: "The code objects",
-    body: "Functions, classes, and queries exercised in the run.",
+    body: "Functions, classes, and queries captured in the trace.",
     image: "/marketing-assets/img/appmap/code-map.jpg",
-    alt: "AppMap code map of functions, APIs, and objects exercised during a run.",
+    alt: "AppMap code map of functions, APIs, and objects captured in the trace.",
   },
 ];
 
@@ -54,7 +54,7 @@ export function ReviewWhatAIDid() {
           ))}
         </div>
         <p className="mt-6 text-center text-[13.5px] text-[color:var(--color-am-muted)]">
-          Three representative views. Explore the broader visual set in your editor before the change moves downstream.
+          Three representative views. Explore the broader visual set in your editor before the change merges.
         </p>
       </div>
     </section>

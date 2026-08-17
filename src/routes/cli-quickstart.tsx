@@ -58,7 +58,7 @@ const steps: { n: number; title: string; body: React.ReactNode }[] = [
     title: "Record",
     body: (
       <>
-        Run your tests, or exercise your app, with the agent enabled. Recordings land in <code className={code}>tmp/appmap</code>.
+        Run your tests, or exercise your app, with the agent enabled. Traces land in <code className={code}>tmp/appmap</code>.
       </>
     ),
   },
