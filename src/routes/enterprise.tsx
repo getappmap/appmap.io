@@ -245,9 +245,7 @@ function EnterprisePageInner() {
                 Runtime context that stays in your environment.
               </h1>
               <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-                For the VP standardizing how agents work, and the engineer who
-                has to vouch for it. Airgapped and on-prem by design. AppMap
-                operates no cloud data plane for traces.
+                Airgapped and on-prem by design. There is no AppMap cloud for traces.
               </p>
               <p className="mt-6 max-w-[760px] text-[22px] font-semibold leading-[1.25] tracking-[-0.3px] text-[#f2effb] sm:text-[26px]">
                 Bring your model. Keep your evidence.
