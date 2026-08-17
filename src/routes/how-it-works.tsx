@@ -283,6 +283,7 @@ function HowItWorksPage() {
               Coding agents query the traces instead of reconstructing the execution path from source. AppMap exposes the recorded calls, queries, and requests through MCP.
             </p>
             <div className="mt-10 rounded-2xl border border-[#2c2353] bg-[#0d0a1a] p-6 sm:p-8">
+              <div className="mb-6 text-center text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]/70">Developer environment · All local</div>
               <div className="grid items-center gap-6 lg:grid-cols-[1fr_auto_1fr]">
                 <div className="grid gap-2.5">
                   {agentChips.map((a) => (
@@ -321,13 +322,13 @@ function HowItWorksPage() {
                   </div>
                   <div className="rounded-xl border border-[#2c2353] bg-[#1c1538] px-4 py-3">
                     <code className="font-mono text-[14px] font-bold text-[#ff07aa]">gold_traces/</code>
-                    <div className="mt-1 text-[13px] text-[#a99fc7]">Gold Traces, in git</div>
+                    <div className="mt-1 text-[13px] text-[#a99fc7]">Gold Traces, in the repository checkout</div>
                   </div>
                 </div>
               </div>
 
               <p className="mt-8 max-w-[820px] text-[14px] leading-[1.6] text-[#a99fc7]">
-                Any MCP-capable coding agent queries the same traces. AppMap answers from the working traces in the developer environment and the Gold Traces in the repository.
+                Everything here runs in the developer environment. The coding agent queries over MCP locally, and AppMap answers from the working traces and the Gold Traces in the repository checkout. Nothing leaves the machine.
               </p>
               <p className="mt-2 text-[12.5px] text-[#a99fc7]/70">
                 MCP tools: get_call_tree, find_calls, find_queries, find_requests. Details in Docs.
