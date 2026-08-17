@@ -346,7 +346,7 @@ grep -rn "ledger.write" src/
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">AppMap Gold Traces make behavior reviewable</h2>
             <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              An AppMap Gold Trace is a versioned baseline of how an important path in your software actually ran. As the code changes, AppMap re-records that path and shows what changed in the behavior. AI agents curate the set and review the differences, while humans make the final call. When the approved change is merged, the new recording becomes the baseline for what comes next.
+              A Gold Trace is a recorded run of an important path in your software, kept as the reference for what that path does. AppMap's skills and your coding agent build and maintain the set as the code changes. You review what changed and decide whether it is right.
             </p>
 
             <div className="mt-8 grid gap-4 lg:grid-cols-2">
@@ -354,46 +354,40 @@ grep -rn "ledger.write" src/
                 <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGED · BEHAVIOR HELD</div>
                 <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Invariant behavior</h3>
                 <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">
-                  For a security patch, dependency upgrade, or refactor, behavior should not change. If the after-trace diverges from the baseline, AppMap flags a regression, even when the tests stay green.
+                  For a security patch, dependency upgrade, or refactor, behavior should not change. If the new trace diverges from the Gold Trace, AppMap flags a regression, even when the tests stay green.
                 </p>
                 <img
                   src="/marketing-assets/img/appmap/waltzbehaviorheld_branded.svg"
-                  alt="AppMap recordings of FINOS Waltz: GET /api/involvement-kind, baseline vs after an unrelated change, status, auth path, and query count match."
+                  alt="AppMap traces of FINOS Waltz: GET /api/involvement-kind, Gold Trace vs after an unrelated change, status, auth path, and query count match."
                   loading="lazy"
                   decoding="async"
                   className="mt-5 w-full h-auto rounded-lg border border-[#2c2353] bg-[#0d0a1a]"
                 />
-                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap recording · FINOS Waltz</p>
+                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap trace · FINOS Waltz</p>
               </div>
               <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
                 <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGED · BEHAVIOR CHANGED</div>
-                <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Expected change</h3>
+                <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Changed as intended</h3>
                 <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">
                   For an N+1 fix, a new timeout, a circuit breaker, or added audit logging, behavior should change in a specific way. If the trace does not change, the fix did not land.
                 </p>
                 <img
                   src="/marketing-assets/img/appmap/waltzbeforeafter_branded.svg"
-                  alt="AppMap recordings of FINOS Waltz involvement-kind permission lookup: baseline 7 per-id SELECTs replaced by a single batched findAll, 6 fewer round-trips."
+                  alt="AppMap traces of FINOS Waltz involvement-kind permission lookup: 7 per-id SELECTs replaced by a single batched findAll, 6 fewer round-trips."
                   loading="lazy"
                   decoding="async"
                   className="mt-5 w-full h-auto rounded-lg border border-[#2c2353] bg-[#0d0a1a]"
                 />
-                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap recording · FINOS Waltz</p>
+                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap trace · FINOS Waltz</p>
               </div>
             </div>
 
             <p className="mt-8 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              AppMap compares a structural digest of the run: request path, status codes, call-tree structure, SQL shape, and downstream calls. Timing, ids, and captured values are not in it.
+              You do not need to run the full stack to get a Gold Trace. A local run, a focused test, a smoke script, an API call, or a QA environment is enough.
             </p>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              AppMap Gold Traces do not require every developer to run the full enterprise stack. A baseline can come from a local run, a focused test, a smoke script, an API call, a QA environment, or an existing process in a development or QA environment.
+              Gold Traces are useful to you locally as soon as they exist. Committing them is what lets your team and CI compare the head revision against the base revision.
             </p>
-
-            <div className="mt-8">
-              <Link to="/architecture" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
-                Where recordings live →
-              </Link>
-            </div>
           </div>
         </section>
 
