@@ -13,7 +13,6 @@ export const GITHUB_URL = "https://github.com/getappmap";
 const navLinks: { label: string; href: string; external?: boolean }[] = [
   { label: "How it works", href: "/how-it-works" },
   { label: "Benchmarks", href: "/benchmarks" },
-  { label: "Compatibility", href: "/compatibility" },
   { label: "Enterprise", href: "/enterprise" },
   { label: "Pricing", href: "/pricing" },
   { label: "Docs", href: "/docs/appmap-docs", external: true },

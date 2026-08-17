@@ -13,7 +13,6 @@ const cols: {
       { label: "How it works", href: "/how-it-works" },
       { label: "Architecture", href: "/architecture" },
       { label: "Benchmarks", href: "/benchmarks" },
-      { label: "Compatibility", href: "/compatibility" },
       { label: "Pricing", href: "/pricing" },
       { label: "Security FAQ", href: "/security-faq" },
     ],

@@ -240,6 +240,18 @@ function HowItWorksPage() {
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">AppMap finds the paths your tests are missing.</h2>
+            <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
+              The Gold Traces skill analyzes the codebase and existing tests to identify important application paths. When an important path is already covered, AppMap records it. When coverage is missing, AppMap suggests a new test case and the coding agent can create it. AppMap then records the path and adds the trace to the Gold Trace set.
+            </p>
+            <p className="mt-6 text-center text-[14px] text-[#a99fc7]">
+              Important path → Existing test or suggested test → AppMap trace
+            </p>
+          </div>
+        </section>
+
+        <section className="px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">See the trace as a map.</h2>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
               The same trace can be viewed as a dependency map, sequence diagram, SQL activity, or code objects. Each view shows the same recorded behavior from a different angle.
@@ -278,6 +290,29 @@ function HowItWorksPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section id="compatibility" className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Works with the coding agent you already use</h2>
+            <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
+              AppMap exposes traces over MCP, so the coding agent can change without changing the runtime context. Claude Code, Cursor, GitHub Copilot, Windsurf, Cline, and other MCP clients can query the same AppMap traces.
+            </p>
+            <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
+              {["Claude Code", "Cursor", "GitHub Copilot", "Windsurf", "Cline", "Other MCP clients"].map((name) => (
+                <div key={name} className="flex items-center justify-center gap-2 rounded-xl border border-[#2c2353] bg-[#1c1538] px-4 py-3">
+                  <span className="inline-block h-1.5 w-1.5 rounded-full bg-[#ff07aa]" style={{ boxShadow: "0 0 10px #ff07aa" }} />
+                  <span className="text-[13.5px] font-semibold text-[#f2effb]">{name}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 max-w-[820px] text-[14px] leading-[1.6] text-[#a99fc7]">
+              The model can change too. AppMap traces provide the same runtime context to hosted, self-hosted, frontier, and compact models.
+            </p>
+            <p className="mt-4 text-[15px] font-semibold text-[#ff07aa]">
+              The agent can change. The evidence does not have to.
+            </p>
           </div>
         </section>
 

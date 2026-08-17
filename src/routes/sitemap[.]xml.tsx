@@ -8,7 +8,7 @@ const entries = [
   { path: "/how-it-works", priority: "0.9", changefreq: "weekly" as const },
   { path: "/architecture", priority: "0.8", changefreq: "monthly" as const },
   { path: "/benchmarks", priority: "0.9", changefreq: "monthly" as const },
-  { path: "/compatibility", priority: "0.8", changefreq: "monthly" as const },
+  
   { path: "/enterprise", priority: "0.8", changefreq: "monthly" as const },
   { path: "/pricing", priority: "0.8", changefreq: "monthly" as const },
   { path: "/get-appmap", priority: "0.8", changefreq: "monthly" as const },
