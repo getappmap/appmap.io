@@ -13,12 +13,8 @@ const pilotSteps = [
     b: "Teams do not need to instrument CI to begin. AppMap records from a running process, so teams start in the editor or in environments that already run: a local run, a focused test, a smoke script, an API call, or a QA environment. No full enterprise-stack build required to record the first traces.",
   },
   {
-    h: "Governed Gold Trace sets",
+    h: "Centralized ground truth of application behavior, in git",
     b: "The AppMap Gold Traces skill identifies important application paths and uses existing tests to build the set. When coverage is missing, AppMap suggests a new test case. The organization can run the same review in CI when ready. The set lives in the team's repository, where changes follow the same pull-request workflow as the code. Teams begin lightweight in the editor and graduate the flows that matter into the pipeline.",
-  },
-  {
-    h: "Enforce when ready.",
-    b: "The organization runs the same review in the pipeline when ready, and AppMap coaches each team to set it up for their own use. CI enforcement and telemetry routing are configurable parts of the enterprise service.",
   },
 ];
 
