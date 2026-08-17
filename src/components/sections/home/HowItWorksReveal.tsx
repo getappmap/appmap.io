@@ -30,10 +30,10 @@ export function HowItWorksReveal() {
       <div className="mx-auto grid max-w-[1120px] gap-10 lg:grid-cols-2 lg:items-center">
         <div>
           <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[color:var(--color-am-ink)] sm:text-[34px]">
-            Go deep before you deploy.
+            Go deep before you merge.
           </h2>
           <p className="mt-4 max-w-[560px] text-[17px] leading-[1.6] text-[color:var(--color-am-muted)]">
-            Production and canary tracing are built to observe systems continuously with limited overhead. AppMap records deeply in development, capturing the code-level execution path, queries, HTTP calls, exceptions, and relationships behind every recorded run. The result is information-dense context developers can inspect and AI agents can query before the change merges.
+            Production and canary tracing are built to observe systems continuously with limited overhead. AppMap records deeply in development, capturing the code-level execution path, queries, HTTP calls, exceptions, and relationships behind the recorded runs. The result is information-dense context developers can inspect and coding agents can query before the change merges.
           </p>
           <div className="mt-6">
             <Link
@@ -102,7 +102,7 @@ export function HowItWorksReveal() {
             </div>
           </div>
           <p className="mt-4 text-center text-[13px] text-[color:var(--color-am-muted)]">
-            Observe broadly in production. Understand deeply in development. More information per run gives developers and AI agents better context before deployment.
+            Observe broadly in production. Understand deeply in development. More information per run gives developers and coding agents better context before merge.
           </p>
         </div>
       </div>
