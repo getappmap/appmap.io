@@ -22,7 +22,7 @@ export function HomeHero() {
           AppMap shows what <Em>actually happened</Em>.
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          AI writes code fast. Accepting it is slow because a diff cannot show what the change did at runtime. AppMap records fresh traces from tests and compares them with the last set. The traces travel with the code, giving developers and AI agents the evidence to catch drift before anything merges.
+          Neither developers nor AI can see what the code did when it ran. AppMap records that, as traces that live with the code. Developers get understanding. AI gets grounded context. Both from the same behavior, before anything merges.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
