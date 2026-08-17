@@ -56,26 +56,6 @@ const ExternalLink = ({ href, children }: { href: string; children: React.ReactN
   </a>
 );
 
-const blocks: { title: string; body: React.ReactNode }[] = [
-  {
-    title: "Airgapped and on-prem ready",
-    body: "AppMap runs inside your environment with no outbound dependency on AppMap services. Enterprise deployments support offline activation and internal distribution of the clients. It fits airgapped and on-prem deployments where data cannot leave the network, paired with a self-hosted AI endpoint.",
-  },
-  {
-    title: "No AppMap cloud, by design",
-    body: "AppMap does not send traces to an AppMap-operated cloud. Traces are recorded and compared on the developer machine or in CI. The Gold Traces skill builds and maintains the set. The team versions it with the code. Gold Traces are sanitized before they are committed. Your coding agent is a separate channel: if the team chooses a hosted coding agent, some context goes to that provider under its configuration and terms. Enterprise deployments can restrict AppMap runtime context to approved or self-hosted AI endpoints.",
-  },
-  {
-    title: "Trust, but verify",
-    body: (
-      <>
-        <ExternalLink href="https://github.com/getappmap">Open-source clients</ExternalLink> and a{" "}
-        <ExternalLink href="https://github.com/getappmap/appmap">published data spec</ExternalLink>. Developers and
-        security reviewers can audit what AppMap records and what it sends to the agent.
-      </>
-    ),
-  },
-];
 
 function EnterprisePage() {
   return EnterprisePageInner();
