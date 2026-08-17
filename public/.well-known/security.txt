@@ -1,0 +1,4 @@
+# Update Contact to security@appmap.io once that mailbox exists.
+Contact: mailto:elizabeth@appmap.io
+Policy: https://appmap.io/security
+Preferred-Languages: en

@@ -62,6 +62,9 @@ function CompatibilityPage() {
             <p className="mt-5 max-w-[720px] text-[19px] leading-[1.6] text-[#a99fc7]">
               AppMap speaks MCP to every agent, and plain pictures to every person. No lock-in either way.
             </p>
+            <p className="mt-6 max-w-[760px] text-[22px] font-semibold leading-[1.25] tracking-[-0.3px] text-[#f2effb] sm:text-[26px]">
+              The agent can change. The evidence does not have to.
+            </p>
           </div>
         </section>
 
@@ -83,10 +86,11 @@ function CompatibilityPage() {
 
             <h3 className="mt-14 text-[22px] font-extrabold tracking-[-0.5px] text-[#f2effb] sm:text-[26px]">Bring your own model</h3>
             <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
-              The model behind the agent does not matter. The trace is the
+              The model behind the agent does not matter. The traces are the
               same evidence for a frontier model or a compact one, hosted or
-              self-hosted. In our test it let a compact model match a frontier
-              model.
+              self-hosted. In our study, runtime context moved the
+              cost-capability frontier, letting cheaper models preserve
+              diagnostic accuracy under tight tool budgets.
             </p>
 
             <h3 className="mt-12 text-[22px] font-extrabold tracking-[-0.5px] text-[#f2effb] sm:text-[26px]">Lower inference cost wherever inference runs</h3>
@@ -116,7 +120,7 @@ function CompatibilityPage() {
         <section className="px-6 py-24">
           <div className="mx-auto max-w-[1120px] text-center">
             <p className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-              One run. Many views. Same ground truth.
+              A set of traces. Many views. Same ground truth.
             </p>
           </div>
         </section>

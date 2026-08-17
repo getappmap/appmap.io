@@ -14,7 +14,7 @@ import { ClosingCTA } from "@/components/sections/home/ClosingCTA";
 
 const title = "AppMap: Runtime evidence for AI-assisted development";
 const description =
-  "Your AI reads the code. AppMap shows what actually happened. One recorded application run produces diagrams developers can understand and evidence AI can trust. Get started in VS Code or JetBrains.";
+  "AppMap records what your application actually does. Fresh traces with every change, compared against the last set, before anything ships.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -90,10 +90,10 @@ function Index() {
         <ReviewWhatAIDid />
         <OneVsFifteen />
         <ReviewLoop />
+        <HowItWorksReveal />
         <BehavioralReview />
         <TrustBar />
         <Reviews />
-        <HowItWorksReveal />
         <ClosingCTA />
       </main>
     </div>

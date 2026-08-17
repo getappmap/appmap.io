@@ -2,9 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
 const title =
-  "Pricing: Start Free Locally. Scale Shared Recordings Across Your Team. | AppMap";
+  "Pricing: Free for Developers and Teams. Enterprise for Controlled Deployment. | AppMap";
 const description =
-  "Local recording, diagrams, and AI context are free for developers. AppMap Central lets teams share and govern trusted AppMap recordings in infrastructure they control. Enterprise adds controlled deployment and support.";
+  "AppMap is free for developers and teams: recordings, diagrams, MCP context, and AppMap Gold Traces versioned in your repository. Enterprise adds controlled deployment and support.";
 const url = "https://appmap.io/pricing";
 
 export const Route = createFileRoute("/pricing")({
@@ -56,29 +56,23 @@ function Bullets({ items }: { items: string[] }) {
 }
 
 const community = [
-  "Sequence diagrams, dependency maps, flame graphs, and trace views",
-  "Runtime code analysis in the editor",
-  "The AppMap CLI and MCP server, for any AI agent",
-  "VS Code and JetBrains extensions",
+  "Runtime recordings and interactive diagrams",
+  "MCP context for AI coding agents",
+  "VS Code, JetBrains, and CLI",
+  "AppMap Gold Traces in your local environment, versioned in your own repository",
+  "AppMap skills and GitHub review workflows",
   "Community support",
 ];
 
-const central = [
-  "Sanitized Golden AppMap traces stored with the code they describe",
-  "Shared trace coverage across important application paths",
-  "Recordings cleaned up so developers and AI agents can compare meaningful changes",
-  "A shared library of trusted AppMap recordings across editors, command line, GitHub, and automation",
-  "Team curation and governance of the recordings your team trusts as baselines",
-  "Runs entirely in infrastructure you control",
-];
-
 const enterprise = [
-  "Everything in AppMap Central",
-  "Air-gapped and on-premises packaging, with offline activation",
-  "Internal distribution of agents, extensions, and CLI",
-  "Configurable telemetry routing into your internal observability stack",
+  "Everything in Community",
+  "Organization-wide configuration and managed rollout",
+  "Airgapped and on-prem deployment with offline activation",
+  "Internal packaging and distribution",
+  "Deployment telemetry and enterprise integrations",
   "Approved AI agent and model configurations",
-  "Custom engineering, training, priority support, and SLAs",
+  "Supported AppMap Gold Trace and review workflows, custom engineering, and training",
+  "Priority support and SLAs",
 ];
 
 function PricingPage() {
@@ -95,13 +89,13 @@ function PricingPage() {
               Start free locally. Scale shared recordings across your team.
             </h1>
             <p className="mt-5 max-w-[760px] text-[17px] leading-[1.65] text-[#a99fc7]">
-              Local recording, diagrams, and AI context are free for developers. AppMap Central lets teams share and govern recordings of how their applications actually ran, across repositories and workflows.
+              AppMap is free for developers and teams. Recordings, diagrams, MCP context, and AppMap Gold Traces versioned in your repository cost nothing. Enterprise adds controlled deployment and support. AppMap starts in the developer environment, where recordings are created, explored, and used by AI agents.
             </p>
           </div>
         </section>
 
         <section className="px-6 pb-14">
-          <div className="mx-auto grid max-w-[1180px] gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-[900px] gap-6 md:grid-cols-2">
             {/* Community */}
             <div className="flex flex-col rounded-2xl border border-[#2c2353] bg-[#1c1538] p-8">
               <h2 className="text-[22px] font-bold text-[#f2effb]">Community</h2>
@@ -109,36 +103,16 @@ function PricingPage() {
                 Free
               </div>
               <p className="mt-3 text-[14px] text-[#a99fc7]">
-                For every developer.
+                For developers and teams.
               </p>
               <div className="mt-6 border-t border-[#2c2353]" />
               <Bullets items={community} />
               <p className="mt-5 text-[13px] leading-[1.55] text-[#a99fc7]">
-                Optional: an individual support subscription, $15 per month, for priority help. The product stays free at your desk.
+                Optional individual support, $15 per month, for priority help with AppMap installation, configuration, AppMap Gold Traces, and review workflows. The product stays free at your desk.
               </p>
               <div className="mt-8 flex-1" />
               <Link to="/get-appmap" className={primaryBtn}>
                 Get AppMap
-              </Link>
-            </div>
-
-            {/* AppMap Central */}
-            <div className="flex flex-col rounded-2xl border border-[#ff07aa]/40 bg-[#1c1538] p-8">
-              <h2 className="text-[22px] font-bold text-[#f2effb]">AppMap Central</h2>
-              <div className="mt-4 flex h-[40px] items-center text-[28px] font-extrabold leading-none text-[#f2effb]">
-                Contact us
-              </div>
-              <p className="mt-3 text-[14px] text-[#a99fc7]">
-                Shared recordings for developers, AI agents, and automation.
-              </p>
-              <div className="mt-6 border-t border-[#2c2353]" />
-              <Bullets items={central} />
-              <p className="mt-5 text-[13px] leading-[1.55] text-[#a99fc7]">
-                One shared library of trusted AppMap recordings, kept in your own repositories and developer environments. GitHub Actions and CI are optional workflows that can consume or maintain it. There is no hosted platform.
-              </p>
-              <div className="mt-8 flex-1" />
-              <Link to="/book-a-demo" className={primaryBtn}>
-                Book a Demo
               </Link>
             </div>
 
@@ -149,7 +123,7 @@ function PricingPage() {
                 Contact us
               </div>
               <p className="mt-3 text-[14px] text-[#a99fc7]">
-                For regulated and large-scale deployments.
+                For organizations standardizing AppMap across development teams.
               </p>
               <div className="mt-6 border-t border-[#2c2353]" />
               <Bullets items={enterprise} />
@@ -159,8 +133,8 @@ function PricingPage() {
               </Link>
               <p className="mt-3 text-center text-[13.5px] text-[#a99fc7]">
                 or email{" "}
-                <a href="mailto:elizabeth@appmap.io" className={accent}>
-                  elizabeth@appmap.io
+                <a href="mailto:info@appmap.io" className={accent}>
+                  info@appmap.io
                 </a>
               </p>
             </div>

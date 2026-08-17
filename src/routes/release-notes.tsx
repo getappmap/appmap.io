@@ -36,7 +36,7 @@ const releaseGroups: { month: string; entries: { label: string; href: string }[]
       },
       {
         label:
-          "Baseline workflow: blessed Golden AppMap trace baselines and agent-added labels commit to the PR branch",
+          "Baseline workflow: blessed AppMap Gold Trace baselines and agent-added labels commit to the PR branch",
         href: "https://github.com/getappmap/review-action",
       },
     ],
@@ -46,7 +46,7 @@ const releaseGroups: { month: string; entries: { label: string; href: string }[]
     entries: [
       {
         label:
-          "Golden AppMap trace review workflow: promote a recording to a baseline, compare before and after on every change",
+          "AppMap Gold Trace review workflow: promote a recording to a baseline, compare before and after on every change",
         href: "https://github.com/getappmap/skills",
       },
       {

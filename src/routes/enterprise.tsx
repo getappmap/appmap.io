@@ -14,7 +14,7 @@ const pilotSteps = [
   },
   {
     h: "Governed behavior baselines",
-    b: "Promote only the high-value flows into governed Golden AppMap traces, then enforce them in CI when you are ready. Each baseline is reviewed and versioned in your repository, so behavioral contracts are auditable and owned, not ad hoc. Begin lightweight in the editor; graduate the flows that matter into the pipeline.",
+    b: "Promote only the high-value flows into governed AppMap Gold Traces, then enforce them in CI when you are ready. Each baseline is reviewed and versioned in your repository, so behavioral contracts are auditable and owned, not ad hoc. Begin lightweight in the editor; graduate the flows that matter into the pipeline.",
   },
   {
     h: "Enforce when ready.",
@@ -22,9 +22,9 @@ const pilotSteps = [
   },
 ];
 
-const title = "AppMap Enterprise: Airgapped, On-Prem, No Data Egress";
+const title = "AppMap Enterprise: Airgapped, On-Prem, No AppMap Cloud";
 const description =
-  "Local by design. Airgapped and on-prem ready. Auditable, open-source clients.";
+  "AppMap operates no cloud data plane for recordings. Airgapped and on-prem ready. Auditable, open-source clients.";
 
 export const Route = createFileRoute("/enterprise")({
   head: () => ({
@@ -59,11 +59,11 @@ const ExternalLink = ({ href, children }: { href: string; children: React.ReactN
 const blocks: { title: string; body: React.ReactNode }[] = [
   {
     title: "Airgapped and on-prem ready",
-    body: "AppMap runs inside your environment with no outbound dependency. Enterprise deployments support offline activation and internal distribution of the clients. It fits airgapped and on-prem deployments where data cannot leave the network.",
+    body: "AppMap runs inside your environment with no outbound dependency on AppMap services. Enterprise deployments support offline activation and internal distribution of the clients. It fits airgapped and on-prem deployments where data cannot leave the network, paired with a self-hosted AI endpoint.",
   },
   {
-    title: "No egress, by design",
-    body: "AppMap does not send recordings to any AppMap-operated cloud. Recordings stay on the developer machine and in your repositories unless your organization centralizes them on infrastructure you control. Your AI tools are a separate channel: a hosted agent may send selected context to its own provider under that provider's terms, and enterprise deployments can restrict AppMap evidence to approved or self-hosted AI endpoints.",
+    title: "No AppMap cloud, by design",
+    body: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and recordings stay on the developer machine and in your repositories unless your organization centralizes them on infrastructure you control. Your AI tools are a separate channel: if you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms, and enterprise deployments can restrict AppMap evidence to approved or self-hosted AI endpoints.",
   },
   {
     title: "Trust, but verify",
@@ -82,7 +82,7 @@ function EnterprisePage() {
 }
 
 const diagramCaption =
-  "Local by design. AppMap operates no cloud data plane for recordings, so they stay in your environment. Diagnostics and telemetry are configurable to route to your internal observability stack, such as Splunk, so operational data stays inside too.";
+  "AppMap operates no cloud data plane for recordings, so recording, sanitization, and comparison run in your environment. Deployment telemetry is configurable to route to your internal observability stack, such as Splunk, so operational data stays inside too. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.";
 
 function Pill({ x, y, w, h, label, sub }: { x: number; y: number; w: number; h: number; label: string; sub?: string }) {
   return (
@@ -137,7 +137,7 @@ function DeploymentDiagram() {
             {/* Boundary */}
             <rect x={20} y={20} width={1040} height={640} rx={16} fill="#16112b" stroke="#2c2353" strokeWidth={2} />
             <text x={40} y={50} fill="#f2effb" fontSize={16} fontWeight={700}>
-              Your environment. No application data egress.
+              Your environment. No AppMap cloud data plane.
             </text>
 
             {/* Zone 1 */}
@@ -173,7 +173,7 @@ function DeploymentDiagram() {
               ZONE 2 · CI
             </text>
 
-            <Pill x={52} y={402} w={206} h={44} label="Golden AppMap traces" />
+            <Pill x={52} y={402} w={206} h={44} label="AppMap Gold Traces" />
             <Pill x={290} y={402} w={430} h={44} label="AppMap review workflow (GitHub Action or CI job)" />
             <Pill x={770} y={402} w={160} h={44} label="PR comment" />
 
@@ -212,7 +212,7 @@ function DeploymentDiagram() {
               w={310}
               h={92}
               lines={[
-                "Telemetry",
+                "Deployment telemetry",
                 "configurable to route to your internal observability stack (Splunk or similar)",
               ]}
             />
@@ -242,12 +242,15 @@ function EnterprisePageInner() {
             <div>
               <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Enterprise</div>
               <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-                Runtime context that stays on the machine.
+                Runtime context that stays in your environment.
               </h1>
               <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
                 For the VP standardizing how agents work, and the engineer who
-                has to vouch for it. Airgapped and on-prem by design. No data
-                egress.
+                has to vouch for it. Airgapped and on-prem by design. AppMap
+                operates no cloud data plane for recordings.
+              </p>
+              <p className="mt-6 max-w-[760px] text-[22px] font-semibold leading-[1.25] tracking-[-0.3px] text-[#f2effb] sm:text-[26px]">
+                Bring your model. Keep your evidence.
               </p>
               <div className="mt-8 flex flex-wrap gap-3.5">
                 <Link to="/book-a-demo" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
@@ -355,7 +358,7 @@ function EnterprisePageInner() {
                 Where the commercial line is
               </div>
               <p className="mt-4 text-[17px] leading-[1.65] text-[#f2effb]">
-                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, and every recording they make. Paid plans begin with AppMap Central: a shared library of trusted AppMap recordings built from sanitized Golden AppMap traces in your repositories, spanning developer environments, repositories, GitHub, and automation. Review on pull requests, in CI or from each developer's environment, is one way to consume that library. Enterprise adds controlled deployment, packaging, configuration, integrations, training, priority support, and SLAs, including air-gapped operation. If AppMap has already spread inside your organization,{" "}
+                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, every recording they make, and AppMap Gold Traces versioned in the repository. Enterprise adds controlled deployment, packaging, configuration, integrations, training, priority support, and SLAs, including airgapped operation. If AppMap has already spread inside your organization,{" "}
                 <Link to="/book-a-demo" className="font-semibold text-[#ff07aa] hover:underline">
                   talk to us
                 </Link>

@@ -39,29 +39,35 @@ function BookADemoPage() {
             <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
               See your code run. Live.
             </h1>
+            <p className="mt-5 max-w-[680px] text-[17px] leading-[1.7] text-[#a99fc7]">
+              Pick a time that suits you. In a short session we walk through runtime evidence in
+              your environment and answer your questions about adopting AppMap.
+            </p>
           </div>
         </section>
 
-        <section className="px-6 pb-20">
+        <section className="px-6 pb-24">
           <div className="mx-auto max-w-[1120px]">
-            <div className="overflow-hidden rounded-2xl border border-[#2c2353] bg-[#1c1538]">
-              <iframe
-                src={BOOKING_URL}
-                title="Book a demo"
-                className="w-full"
-                style={{ minHeight: 700, border: 0 }}
-              />
-            </div>
-            <p className="mt-6 text-[14.5px] text-[#a99fc7]">
-              Calendar not loading?{" "}
+            <div className="flex flex-col items-start gap-5">
               <a
-                href="mailto:elizabeth@appmap.io"
-                className="font-semibold text-[#ff07aa] hover:underline"
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-7 py-3.5 text-[16px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)] transition hover:brightness-110"
               >
-                Email elizabeth@appmap.io
-              </a>{" "}
-              to schedule directly.
-            </p>
+                Book a demo
+              </a>
+              <p className="text-[14.5px] text-[#a99fc7]">
+                Prefer email? Write to us directly at{" "}
+                <a
+                  href="mailto:info@appmap.io"
+                  className="font-semibold text-[#ff07aa] hover:underline"
+                >
+                  info@appmap.io
+                </a>
+                .
+              </p>
+            </div>
           </div>
         </section>
       </main>

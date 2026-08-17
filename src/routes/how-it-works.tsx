@@ -3,7 +3,7 @@ import { Header } from "@/components/layout/Header";
 
 const title = "How AppMap works";
 const description =
-  "AppMap records your application as it runs. Here is what one recording captures, the views it produces, and how that evidence reaches your AI agent.";
+  "AppMap records your application as it runs. Here is what the traces capture, the views they produce, and how that evidence reaches your AI agent.";
 
 const faqs = [
   {
@@ -16,12 +16,12 @@ const faqs = [
   },
   {
     q: "What does an AppMap recording contain?",
-    a: "It is a record of how your application actually ran: function calls, SQL queries, HTTP traffic, exceptions, and the relationships between them. Every map, view, and review is drawn from that one recording. Captured via a language agent (Java -javaagent, Python, Ruby, Node) from tests, requests, or a running process.",
+    a: "It is a record of how your application actually ran: function calls, SQL queries, HTTP traffic, exceptions, and the relationships between them. Every map, view, and review is drawn from those traces. Captured via a language agent (Java -javaagent, Python, Ruby, Node) from tests, requests, or a running process.",
     doc: { href: "https://appmap.io/docs/get-started-with-appmap/making-appmap-data.html", label: "How AppMap data is made" },
   },
   {
     q: "How does AppMap work with MCP?",
-    a: "AppMap exposes the recording over the Model Context Protocol. Agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
+    a: "AppMap exposes the traces over the Model Context Protocol. Agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
     doc: { href: "https://appmap.io/docs/reference/appmap-mcp.html", label: "AppMap MCP reference" },
   },
   {
@@ -30,12 +30,12 @@ const faqs = [
   },
   {
     q: "Does AppMap send code or runtime data to the cloud?",
-    a: "No. AppMap records and analyzes behavior locally. Recordings stay with your editor and your repository by default, with no egress.",
+    a: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and recordings stay with your editor and your repository. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
     doc: { href: "https://appmap.io/security", label: "AppMap security" },
   },
   {
     q: "Where does AppMap store runtime behavior?",
-    a: "Recordings are captured locally, typically to a tmp/appmap directory in the project. Recordings your team keeps, such as Golden AppMap traces, are promoted into a .appmap directory in the repository and versioned like any other file. Baselines committed to the repository are sanitized first: captured values are replaced with deterministic tokens, so the versioned trace preserves structural behavior without the original parameter, return, or message values.",
+    a: "Recordings are captured locally, typically to a tmp/appmap directory in the project. Recordings your team keeps, such as AppMap Gold Traces, are promoted into a .appmap directory in the repository and versioned like any other file. Baselines committed to the repository are sanitized first: captured values are replaced with deterministic tokens, so the versioned trace preserves structural behavior without the original parameter, return, or message values.",
     doc: { href: "https://appmap.io/docs/reference/appmap-client-cli.html", label: "AppMap client CLI reference" },
   },
 ];
@@ -161,16 +161,16 @@ function HowItWorksPage() {
               Source code tells you what software could do. Runtime behavior tells you what it actually did.
             </p>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              Every time your software runs, AppMap records what actually happened. Here is what one recording captures, the views it produces, and how that evidence reaches your AI agent.
+              Every time your software runs, AppMap records what actually happened. Here is what the traces capture, the views they produce, and how that evidence reaches your AI agent.
             </p>
           </div>
         </section>
 
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One run, fully captured</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Every run, fully captured</h2>
             <p className="mt-3 max-w-[720px] text-[15px] text-[#a99fc7]">
-              One execution. Six signals tap off the same run, all written into one recording.
+              Six signals tap off each run, all written into one trace. Each run adds a trace to the set.
             </p>
 
             {/* Desktop flow: spine + 3-above / 3-below nodes */}
@@ -245,7 +245,7 @@ function HowItWorksPage() {
 
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the recording reaches your agent</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the traces reach your agent</h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {mcp.map((m) => (
                 <div key={m.name} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
@@ -261,7 +261,7 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">See what your agent read</h2>
             <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
-              The context dashboard shows the evidence behind each AI inference as AppMap visuals. A reviewer sees exactly what the agent reasoned over instead of trusting the output.
+              AppMap shows the evidence behind each AI inference as the same visuals developers inspect in the editor. A reviewer sees exactly what the agent reasoned over instead of trusting the output.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <Link to="/benchmarks" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
@@ -285,9 +285,9 @@ function HowItWorksPage() {
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Golden AppMap traces make behavior reviewable</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">AppMap Gold Traces make behavior reviewable</h2>
             <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              A Golden AppMap trace is a versioned baseline of how an important path in your software actually ran. As the code changes, AppMap re-records that path and shows what changed in the behavior. AI agents curate the set and review the differences, while humans make the final call. When the approved change is merged, the new recording becomes the baseline for what comes next.
+              An AppMap Gold Trace is a versioned baseline of how an important path in your software actually ran. As the code changes, AppMap re-records that path and shows what changed in the behavior. AI agents curate the set and review the differences, while humans make the final call. When the approved change is merged, the new recording becomes the baseline for what comes next.
             </p>
 
             <div className="mt-8 grid gap-4 lg:grid-cols-2">
@@ -327,7 +327,7 @@ function HowItWorksPage() {
               AppMap compares a structural digest of the run: request path, status codes, call-tree structure, SQL shape, and downstream calls. Timing, ids, and captured values are not in it.
             </p>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              Golden AppMap traces do not require every developer to run the full enterprise stack. A baseline can come from a local run, a focused test, a smoke script, an API call, a QA environment, or an existing running process.
+              AppMap Gold Traces do not require every developer to run the full enterprise stack. A baseline can come from a local run, a focused test, a smoke script, an API call, a QA environment, or an existing running process.
             </p>
 
             <div className="mt-8">

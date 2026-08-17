@@ -22,7 +22,7 @@ export function HomeHero() {
           AppMap shows what <Em>actually happened</Em>.
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          One recorded application run produces diagrams developers can understand and evidence AI can trust.
+          Neither developers nor AI can see what the code did when it ran. AppMap records that, as traces that live with the code. Developers get understanding. AI gets grounded context. Both from the same behavior, before anything merges.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
@@ -52,18 +52,10 @@ export function HomeHero() {
             alt="AppMap dependency map of a running application, showing packages, classes, and the calls between them."
             width={1600}
             height={900}
-            className="aspect-[16/9] w-full rounded-xl border border-[#2c2353] bg-[#16112b] object-cover shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
+            className="aspect-[16/9] w-full rounded-xl border border-[#2c2353] bg-[#16112b] object-cover object-left shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
           />
-          <div className="mt-4 flex flex-wrap justify-center gap-3">
-          <div className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-sm text-[#a99fc7]">
-              The diagrams are for people
-            </div>
-            <div className="rounded-lg border border-[#2c2353] bg-[#1c1538] px-4 py-2.5 text-sm text-[#a99fc7]">
-              The data is for the AI
-            </div>
-          </div>
-          <p className="mt-3 text-center text-[13px] text-[#a99fc7]">
-            One run. Many views. Same ground truth.
+          <p className="mt-5 text-center text-[13px] text-[#a99fc7]">
+            Change the code. Record the traces. Compare. Repeat.
           </p>
         </div>
       </div>

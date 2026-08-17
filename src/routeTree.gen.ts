@@ -9,8 +9,10 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TeamRouteImport } from './routes/team'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SecurityFaqRouteImport } from './routes/security-faq'
+import { Route as SecurityRouteImport } from './routes/security'
 import { Route as ReleaseNotesRouteImport } from './routes/release-notes'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PlatformRouteImport } from './routes/platform'
@@ -18,16 +20,20 @@ import { Route as HowItWorksRouteImport } from './routes/how-it-works'
 import { Route as GetAppmapRouteImport } from './routes/get-appmap'
 import { Route as EnterpriseRouteImport } from './routes/enterprise'
 import { Route as CompatibilityRouteImport } from './routes/compatibility'
+import { Route as CompanyRouteImport } from './routes/company'
 import { Route as CliQuickstartRouteImport } from './routes/cli-quickstart'
 import { Route as BookADemoRouteImport } from './routes/book-a-demo'
 import { Route as BenchmarksRouteImport } from './routes/benchmarks'
 import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as NavieSplatRouteImport } from './routes/navie.$'
-import { Route as BlogGoldenAppmapTracesRuntimeContextRouteImport } from './routes/blog.golden-appmap-traces-runtime-context'
 import { Route as DocsNavieSplatRouteImport } from './routes/docs.navie.$'
 
+const TeamRoute = TeamRouteImport.update({
+  id: '/team',
+  path: '/team',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -36,6 +42,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const SecurityFaqRoute = SecurityFaqRouteImport.update({
   id: '/security-faq',
   path: '/security-faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SecurityRoute = SecurityRouteImport.update({
+  id: '/security',
+  path: '/security',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ReleaseNotesRoute = ReleaseNotesRouteImport.update({
@@ -73,6 +84,11 @@ const CompatibilityRoute = CompatibilityRouteImport.update({
   path: '/compatibility',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CompanyRoute = CompanyRouteImport.update({
+  id: '/company',
+  path: '/company',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CliQuickstartRoute = CliQuickstartRouteImport.update({
   id: '/cli-quickstart',
   path: '/cli-quickstart',
@@ -98,22 +114,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogIndexRoute = BlogIndexRouteImport.update({
-  id: '/blog/',
-  path: '/blog/',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const NavieSplatRoute = NavieSplatRouteImport.update({
   id: '/navie/$',
   path: '/navie/$',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogGoldenAppmapTracesRuntimeContextRoute =
-  BlogGoldenAppmapTracesRuntimeContextRouteImport.update({
-    id: '/blog/golden-appmap-traces-runtime-context',
-    path: '/blog/golden-appmap-traces-runtime-context',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 const DocsNavieSplatRoute = DocsNavieSplatRouteImport.update({
   id: '/docs/navie/$',
   path: '/docs/navie/$',
@@ -126,6 +131,7 @@ export interface FileRoutesByFullPath {
   '/benchmarks': typeof BenchmarksRoute
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
+  '/company': typeof CompanyRoute
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/get-appmap': typeof GetAppmapRoute
@@ -133,11 +139,11 @@ export interface FileRoutesByFullPath {
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
   '/release-notes': typeof ReleaseNotesRoute
+  '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/blog/golden-appmap-traces-runtime-context': typeof BlogGoldenAppmapTracesRuntimeContextRoute
+  '/team': typeof TeamRoute
   '/navie/$': typeof NavieSplatRoute
-  '/blog/': typeof BlogIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
 export interface FileRoutesByTo {
@@ -146,6 +152,7 @@ export interface FileRoutesByTo {
   '/benchmarks': typeof BenchmarksRoute
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
+  '/company': typeof CompanyRoute
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/get-appmap': typeof GetAppmapRoute
@@ -153,11 +160,11 @@ export interface FileRoutesByTo {
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
   '/release-notes': typeof ReleaseNotesRoute
+  '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/blog/golden-appmap-traces-runtime-context': typeof BlogGoldenAppmapTracesRuntimeContextRoute
+  '/team': typeof TeamRoute
   '/navie/$': typeof NavieSplatRoute
-  '/blog': typeof BlogIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
 export interface FileRoutesById {
@@ -167,6 +174,7 @@ export interface FileRoutesById {
   '/benchmarks': typeof BenchmarksRoute
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
+  '/company': typeof CompanyRoute
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/get-appmap': typeof GetAppmapRoute
@@ -174,11 +182,11 @@ export interface FileRoutesById {
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
   '/release-notes': typeof ReleaseNotesRoute
+  '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/blog/golden-appmap-traces-runtime-context': typeof BlogGoldenAppmapTracesRuntimeContextRoute
+  '/team': typeof TeamRoute
   '/navie/$': typeof NavieSplatRoute
-  '/blog/': typeof BlogIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
 export interface FileRouteTypes {
@@ -189,6 +197,7 @@ export interface FileRouteTypes {
     | '/benchmarks'
     | '/book-a-demo'
     | '/cli-quickstart'
+    | '/company'
     | '/compatibility'
     | '/enterprise'
     | '/get-appmap'
@@ -196,11 +205,11 @@ export interface FileRouteTypes {
     | '/platform'
     | '/pricing'
     | '/release-notes'
+    | '/security'
     | '/security-faq'
     | '/sitemap.xml'
-    | '/blog/golden-appmap-traces-runtime-context'
+    | '/team'
     | '/navie/$'
-    | '/blog/'
     | '/docs/navie/$'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -209,6 +218,7 @@ export interface FileRouteTypes {
     | '/benchmarks'
     | '/book-a-demo'
     | '/cli-quickstart'
+    | '/company'
     | '/compatibility'
     | '/enterprise'
     | '/get-appmap'
@@ -216,11 +226,11 @@ export interface FileRouteTypes {
     | '/platform'
     | '/pricing'
     | '/release-notes'
+    | '/security'
     | '/security-faq'
     | '/sitemap.xml'
-    | '/blog/golden-appmap-traces-runtime-context'
+    | '/team'
     | '/navie/$'
-    | '/blog'
     | '/docs/navie/$'
   id:
     | '__root__'
@@ -229,6 +239,7 @@ export interface FileRouteTypes {
     | '/benchmarks'
     | '/book-a-demo'
     | '/cli-quickstart'
+    | '/company'
     | '/compatibility'
     | '/enterprise'
     | '/get-appmap'
@@ -236,11 +247,11 @@ export interface FileRouteTypes {
     | '/platform'
     | '/pricing'
     | '/release-notes'
+    | '/security'
     | '/security-faq'
     | '/sitemap.xml'
-    | '/blog/golden-appmap-traces-runtime-context'
+    | '/team'
     | '/navie/$'
-    | '/blog/'
     | '/docs/navie/$'
   fileRoutesById: FileRoutesById
 }
@@ -250,6 +261,7 @@ export interface RootRouteChildren {
   BenchmarksRoute: typeof BenchmarksRoute
   BookADemoRoute: typeof BookADemoRoute
   CliQuickstartRoute: typeof CliQuickstartRoute
+  CompanyRoute: typeof CompanyRoute
   CompatibilityRoute: typeof CompatibilityRoute
   EnterpriseRoute: typeof EnterpriseRoute
   GetAppmapRoute: typeof GetAppmapRoute
@@ -257,16 +269,23 @@ export interface RootRouteChildren {
   PlatformRoute: typeof PlatformRoute
   PricingRoute: typeof PricingRoute
   ReleaseNotesRoute: typeof ReleaseNotesRoute
+  SecurityRoute: typeof SecurityRoute
   SecurityFaqRoute: typeof SecurityFaqRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
-  BlogGoldenAppmapTracesRuntimeContextRoute: typeof BlogGoldenAppmapTracesRuntimeContextRoute
+  TeamRoute: typeof TeamRoute
   NavieSplatRoute: typeof NavieSplatRoute
-  BlogIndexRoute: typeof BlogIndexRoute
   DocsNavieSplatRoute: typeof DocsNavieSplatRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/team': {
+      id: '/team'
+      path: '/team'
+      fullPath: '/team'
+      preLoaderRoute: typeof TeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -279,6 +298,13 @@ declare module '@tanstack/react-router' {
       path: '/security-faq'
       fullPath: '/security-faq'
       preLoaderRoute: typeof SecurityFaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/security': {
+      id: '/security'
+      path: '/security'
+      fullPath: '/security'
+      preLoaderRoute: typeof SecurityRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/release-notes': {
@@ -330,6 +356,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CompatibilityRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/company': {
+      id: '/company'
+      path: '/company'
+      fullPath: '/company'
+      preLoaderRoute: typeof CompanyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cli-quickstart': {
       id: '/cli-quickstart'
       path: '/cli-quickstart'
@@ -365,25 +398,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/': {
-      id: '/blog/'
-      path: '/blog'
-      fullPath: '/blog/'
-      preLoaderRoute: typeof BlogIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/navie/$': {
       id: '/navie/$'
       path: '/navie/$'
       fullPath: '/navie/$'
       preLoaderRoute: typeof NavieSplatRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/blog/golden-appmap-traces-runtime-context': {
-      id: '/blog/golden-appmap-traces-runtime-context'
-      path: '/blog/golden-appmap-traces-runtime-context'
-      fullPath: '/blog/golden-appmap-traces-runtime-context'
-      preLoaderRoute: typeof BlogGoldenAppmapTracesRuntimeContextRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/docs/navie/$': {
@@ -402,6 +421,7 @@ const rootRouteChildren: RootRouteChildren = {
   BenchmarksRoute: BenchmarksRoute,
   BookADemoRoute: BookADemoRoute,
   CliQuickstartRoute: CliQuickstartRoute,
+  CompanyRoute: CompanyRoute,
   CompatibilityRoute: CompatibilityRoute,
   EnterpriseRoute: EnterpriseRoute,
   GetAppmapRoute: GetAppmapRoute,
@@ -409,12 +429,11 @@ const rootRouteChildren: RootRouteChildren = {
   PlatformRoute: PlatformRoute,
   PricingRoute: PricingRoute,
   ReleaseNotesRoute: ReleaseNotesRoute,
+  SecurityRoute: SecurityRoute,
   SecurityFaqRoute: SecurityFaqRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
-  BlogGoldenAppmapTracesRuntimeContextRoute:
-    BlogGoldenAppmapTracesRuntimeContextRoute,
+  TeamRoute: TeamRoute,
   NavieSplatRoute: NavieSplatRoute,
-  BlogIndexRoute: BlogIndexRoute,
   DocsNavieSplatRoute: DocsNavieSplatRoute,
 }
 export const routeTree = rootRouteImport
