@@ -24,7 +24,7 @@ const pilotSteps = [
 
 const title = "AppMap Enterprise: Airgapped, On-Prem, No AppMap Cloud";
 const description =
-  "AppMap operates no cloud data plane for recordings. Airgapped and on-prem ready. Auditable, open-source clients.";
+  "AppMap operates no cloud data plane for traces. Airgapped and on-prem ready. Auditable, open-source clients.";
 
 export const Route = createFileRoute("/enterprise")({
   head: () => ({
@@ -63,7 +63,7 @@ const blocks: { title: string; body: React.ReactNode }[] = [
   },
   {
     title: "No AppMap cloud, by design",
-    body: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and recordings stay on the developer machine and in your repositories unless your organization centralizes them on infrastructure you control. Your AI tools are a separate channel: if you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms, and enterprise deployments can restrict AppMap evidence to approved or self-hosted AI endpoints.",
+    body: "AppMap does not send traces to an AppMap-operated cloud. Trace, sanitization, and comparison run in your developer environment or CI, and traces stay on the developer machine and in your repositories unless your organization centralizes them on infrastructure you control. Your AI tools are a separate channel: if you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms, and enterprise deployments can restrict AppMap evidence to approved or self-hosted AI endpoints.",
   },
   {
     title: "Trust, but verify",
@@ -82,7 +82,7 @@ function EnterprisePage() {
 }
 
 const diagramCaption =
-  "AppMap operates no cloud data plane for recordings, so recording, sanitization, and comparison run in your environment. Deployment telemetry is configurable to route to your internal observability stack, such as Splunk, so operational data stays inside too. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.";
+  "AppMap operates no cloud data plane for traces, so trace, sanitization, and comparison run in your environment. Deployment telemetry is configurable to route to your internal observability stack, such as Splunk, so operational data stays inside too. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.";
 
 function Pill({ x, y, w, h, label, sub }: { x: number; y: number; w: number; h: number; label: string; sub?: string }) {
   return (
@@ -247,7 +247,7 @@ function EnterprisePageInner() {
               <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
                 For the VP standardizing how agents work, and the engineer who
                 has to vouch for it. Airgapped and on-prem by design. AppMap
-                operates no cloud data plane for recordings.
+                operates no cloud data plane for traces.
               </p>
               <p className="mt-6 max-w-[760px] text-[22px] font-semibold leading-[1.25] tracking-[-0.3px] text-[#f2effb] sm:text-[26px]">
                 Bring your model. Keep your evidence.
@@ -340,7 +340,7 @@ function EnterprisePageInner() {
                     <figure className="mt-5 rounded-lg border border-[#2c2353] bg-[#0d0a1a] p-2">
                       <img
                         src="/marketing-assets/img/appmap/waltzbehaviorheld_branded.svg"
-                        alt="AppMap demo recordings of the public open-source FINOS Waltz project, comparing the same endpoint before and after an unrelated change."
+                        alt="AppMap demo traces of the public open-source FINOS Waltz project, comparing the same endpoint before and after an unrelated change."
                         className="w-full h-auto rounded"
                         loading="lazy"
                         decoding="async"
@@ -358,7 +358,7 @@ function EnterprisePageInner() {
                 Where the commercial line is
               </div>
               <p className="mt-4 text-[17px] leading-[1.65] text-[#f2effb]">
-                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, every recording they make, and AppMap Gold Traces versioned in the repository. Enterprise adds controlled deployment, packaging, configuration, integrations, training, priority support, and SLAs, including airgapped operation. If AppMap has already spread inside your organization,{" "}
+                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, every trace they make, and AppMap Gold Traces versioned in the repository. Enterprise adds controlled deployment, packaging, configuration, integrations, training, priority support, and SLAs, including airgapped operation. If AppMap has already spread inside your organization,{" "}
                 <Link to="/book-a-demo" className="font-semibold text-[#ff07aa] hover:underline">
                   talk to us
                 </Link>
