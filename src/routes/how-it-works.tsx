@@ -158,7 +158,7 @@ function HowItWorksPage() {
               How AppMap works.
             </h1>
             <p className="mt-6 max-w-[820px] text-[22px] font-semibold leading-[1.35] tracking-[-0.4px] text-[#f2effb] sm:text-[26px]">
-              Source code tells you what software could do. Runtime behavior tells you what it actually did.
+              Source code tells you what software could do. Runtime behavior tells you what it actually does.
             </p>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
               AppMap runs in development and CI. It records application runs as traces that developers inspect as maps and coding agents query directly.
