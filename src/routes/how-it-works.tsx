@@ -245,7 +245,16 @@ function HowItWorksPage() {
               <p className="mt-3 text-[14.5px] leading-[1.6] text-[#a99fc7]">
                 A password reset touches the user table, token generation, and email delivery. The happy path has a test. The expired-token path does not. The Gold Traces skill identifies the expired-token path as important and uncovered and suggests the test case. The coding agent writes the test. AppMap records the run, and the expired-token behavior joins the set.
               </p>
-              <p className="mt-4 text-[13px] text-[#a99fc7]/70">The SQL view below is a real AppMap trace of this flow.</p>
+              <img
+                src="/marketing-assets/img/appmap/queries.jpg"
+                alt="A real AppMap trace of the password reset flow, showing the queries it ran with their bindings and sources"
+                width={800}
+                height={450}
+                loading="lazy"
+                decoding="async"
+                className="mt-5 w-full rounded-xl border border-[#2c2353] bg-[#16112b]"
+              />
+              <p className="mt-3 text-[13px] text-[#a99fc7]/70">A real AppMap trace of this flow.</p>
             </div>
           </div>
         </section>
