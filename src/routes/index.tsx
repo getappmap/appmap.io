@@ -105,8 +105,8 @@ function Index() {
         <HomeHero />
         <PainStats />
         <TrustBar />
-        <ReviewWhatAIDid />
         <Reviews />
+        <ReviewWhatAIDid />
         <ReviewLoop />
         <HowItWorksReveal />
         <BehavioralReview />
