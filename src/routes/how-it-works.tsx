@@ -3,39 +3,39 @@ import { Header } from "@/components/layout/Header";
 
 const title = "How AppMap works";
 const description =
-  "AppMap records application runs as traces in development and CI. Here is what the traces capture, the views they produce, and how that evidence reaches your AI agent.";
+  "AppMap records application runs as traces in development and CI, then compares them before merge. Here is what a trace captures and how a coding agent reads it.";
 
 const faqs = [
   {
     q: "What does AppMap do?",
-    a: "AppMap helps developers and AI coding agents understand what software actually does at runtime. It records the application in the editor and turns that run into diagrams humans can review and evidence AI agents can query over MCP.",
+    a: "AppMap helps developers and coding agents understand what software actually does at runtime. It records the application in the editor and turns that run into diagrams you can review and a trace your coding agent can query over MCP.",
   },
   {
     q: "How does AppMap help review AI-generated code?",
     a: "AppMap records the change as it runs and shows the call tree, queries, and data behind it. You review the behavior, not just the diff, and the same evidence travels with the pull request.",
   },
   {
-    q: "What does an AppMap recording contain?",
+    q: "What does an AppMap trace contain?",
     a: "It is a record of how your application actually ran: function calls, SQL queries, HTTP traffic, exceptions, and the relationships between them. Every map, view, and review is drawn from those traces. Captured via a language agent (Java -javaagent, Python, Ruby, Node) from tests, requests, or a running process.",
     doc: { href: "https://appmap.io/docs/get-started-with-appmap/making-appmap-data.html", label: "How AppMap data is made" },
   },
   {
     q: "How does AppMap work with MCP?",
-    a: "AppMap exposes the traces over the Model Context Protocol. Agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
+    a: "AppMap exposes the traces over the Model Context Protocol. Coding agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
     doc: { href: "https://appmap.io/docs/reference/appmap-mcp.html", label: "AppMap MCP reference" },
   },
   {
     q: "Does AppMap replace Cursor, Copilot, Claude Code, or Windsurf?",
-    a: "No. AppMap works alongside the agent you already use. Any MCP-capable client can read AppMap traces, regardless of the underlying model.",
+    a: "No. AppMap works alongside the coding agent you already use. Any MCP-capable client can read AppMap traces, regardless of the underlying model.",
   },
   {
     q: "Does AppMap send code or runtime data to the cloud?",
-    a: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and AppMap traces are recorded locally. Teams can select representative traces as AppMap Gold Traces, sanitize them, and commit those Gold Traces with the code. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
+    a: "AppMap does not send traces to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and AppMap traces are recorded locally. AppMap's skills and your coding agent build and maintain the Gold Trace set, sanitized before commit, and you version it with the code. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
     doc: { href: "https://appmap.io/security", label: "AppMap security" },
   },
   {
     q: "Where does AppMap store runtime behavior?",
-    a: "Recordings are captured locally, typically to a tmp/appmap directory in the project. Traces your team keeps as AppMap Gold Traces are committed to the gold_traces directory in the repository and versioned like any other file. Gold Traces are sanitized before they are committed.",
+    a: "Traces are recorded locally, typically to a tmp/appmap directory in the project. The Gold Traces AppMap keeps live in the gold_traces directory in the repository and are versioned like any other file. Gold Traces are sanitized before they are committed.",
     doc: { href: "https://appmap.io/docs/reference/appmap-client-cli.html", label: "AppMap client CLI reference" },
   },
 ];
