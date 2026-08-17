@@ -101,7 +101,7 @@ function GetAppMapPage() {
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px] text-center">
             <p className="text-[18px] leading-[1.7] text-[#f2effb]">
-              <span className="font-semibold">Free at your desk.</span> Paid plans help teams version and govern Gold Trace sets across repositories and workflows.{" "}
+              <span className="font-semibold">Free at your desk.</span> Gold Traces and team Git workflows are free in Community. Professional adds priority support for individual developers. Enterprise adds organizational deployment, controls, and support.{" "}
               <Link to="/pricing" className="font-semibold text-[#ff07aa] hover:underline">
                 See pricing
               </Link>

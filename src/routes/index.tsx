@@ -53,13 +53,30 @@ export const Route = createFileRoute("/")({
           applicationCategory: "DeveloperApplication",
           operatingSystem: "Windows, macOS, Linux",
           description,
-          offers: {
-            "@type": "Offer",
-            name: "Community",
-            price: "0",
-            priceCurrency: "USD",
-            description: "Free for individual developers at their desk.",
-          },
+          offers: [
+            {
+              "@type": "Offer",
+              name: "Community",
+              price: "0",
+              priceCurrency: "USD",
+              description: "For developers who can self-serve.",
+            },
+            {
+              "@type": "Offer",
+              name: "Professional",
+              price: "15",
+              priceCurrency: "USD",
+              description:
+                "For an individual developer who wants AppMap with priority support. Priced per developer per month.",
+            },
+            {
+              "@type": "Offer",
+              name: "Enterprise",
+              priceCurrency: "USD",
+              description:
+                "For the organization. Controlled deployment, organizational configuration, and enterprise support.",
+            },
+          ],
         }),
       },
       {
