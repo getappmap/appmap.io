@@ -27,7 +27,7 @@ export function ReviewWhatAIDid() {
           See what each change did before it merges.
         </h2>
         <p className="mt-3 max-w-[700px] text-[16px] text-[color:var(--color-am-muted)]">
-          The traces give developers and AI agents multiple ways to inspect a run while the work is still in progress: Dependency Map, Sequence Diagram, Trace View, Flame Graph, Code Objects, and SQL inspection. Recorded runtime behavior also supports generated OpenAPI definitions and diffs.
+          Each change produces fresh traces. AppMap turns them into maps developers can inspect to see what ran, what the change touched, and where behavior moved.
         </p>
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           {items.map((it) => (

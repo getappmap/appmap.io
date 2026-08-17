@@ -131,9 +131,7 @@ function TeamPage() {
                 Today, AI coding agents make code changes continuously, and the guessing problem is
                 bigger. The original loop still holds:{" "}
                 <span className="font-semibold text-[#f2effb]">Map. Analyze. Share. Repeat.</span>{" "}
-                Map is runtime maps and sequence diagrams. Analyze is behavioral diffs and runtime
-                review. Share is AppMap Gold Traces committed with the code and reviews written to the
-                pull request. Repeat is the loop: change the code, record again, compare again.
+                Map turns runtime traces into diagrams of application behavior. Analyze compares traces to find behavioral changes, drift, performance issues, and security impact. Share commits selected, sanitized traces with the code and puts the behavioral review in the pull request. Repeat: as the code changes, record fresh traces and compare again.
               </p>
               <p className="text-[18px] font-semibold leading-[1.7] text-[#f2effb]">
                 AI did not create AppMap’s thesis. It made the thesis urgent.

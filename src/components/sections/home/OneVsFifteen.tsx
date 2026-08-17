@@ -73,6 +73,9 @@ grep -rn "ledger.write" src/
           answer hunted across fifteen static steps, often out of budget before
           it lands.
         </p>
+        <p className="mt-5 max-w-[700px] text-[16px] font-semibold text-[#f2effb]">
+          Developers use the maps. AI agents query the same traces.
+        </p>
         <p className="mt-5 max-w-[700px] text-[16px] text-[#a99fc7]">
           Agents query the traces instead of reconstructing behavior from source. In our internal RCA benchmark, one high-density runtime query replaced a 15-plus-step search path and reached matched performance with less inference spend.{" "}
           <a href="/benchmarks" className="font-medium text-[#ff07aa] hover:underline">
