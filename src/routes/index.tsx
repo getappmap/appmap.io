@@ -40,7 +40,7 @@ export const Route = createFileRoute("/")({
         rel: "preload",
         as: "image",
         href: "https://appmap.io/marketing-assets/img/appmap/dependency-map.webp",
-        fetchpriority: "high",
+        fetchPriority: "high",
       },
     ],
     scripts: [
