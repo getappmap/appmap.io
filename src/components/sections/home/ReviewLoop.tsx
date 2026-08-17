@@ -10,12 +10,12 @@ const steps = [
     body: "The coding agent runs the tests. AppMap records the behavior and shows the traces as maps.",
   },
   {
-    title: "AppMap compares the Gold Trace sets",
-    body: "AppMap compares the Gold Traces for the head revision with the Gold Traces for the base revision and reports what changed.",
+    title: "AppMap compares the behavior",
+    body: "AppMap compares behavior in the changed revision with behavior in the base revision and reports what changed.",
   },
   {
     title: "The review is written into the pull request",
-    body: "The AppMap Gold Trace review skill writes the runtime-backed result into the PR so reviewers see what changed in behavior, not just in code.",
+    body: "AppMap writes the review into the PR so reviewers see what changed in behavior, not just in code.",
   },
 ];
 
@@ -48,7 +48,7 @@ export function ReviewLoop() {
           Stop reviewing code. Start reviewing behavior.
         </h2>
         <p className="mt-2 max-w-[680px] text-[17px] text-[color:var(--color-am-muted)]">
-          AppMap maintains a representative Gold Trace set for important application paths. As the code changes, AppMap records fresh traces and compares the Gold Traces for the head revision with the Gold Traces for the base revision. The Gold Traces skill uses existing tests where possible and suggests new tests when an important path is not covered. AppMap turns the traces into diagrams developers can inspect, the same traces are available to coding agents as runtime context, and the review result can be written directly into the pull request.
+          AppMap records how the application behaves and compares that behavior across revisions. As the code changes, AppMap records fresh traces and shows what held and what changed. Developers inspect the diagrams. Coding agents query the same traces. The review can go straight to the pull request.
         </p>
 
         <ol className="relative mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
@@ -107,7 +107,7 @@ export function ReviewLoop() {
           Every pull request explains itself.
         </p>
         <p className="mt-3 max-w-3xl text-[14px] text-[color:var(--color-am-muted)]">
-          A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and how the Gold Traces for the head revision compare with the Gold Traces for the base revision.
+          A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the change behaved as intended.
         </p>
         <div className="mt-6 rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] p-4">
           <p className="text-[14px] leading-[1.55] text-[color:var(--color-am-muted)]">

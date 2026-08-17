@@ -242,7 +242,7 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">AppMap finds the paths your tests are missing.</h2>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              The Gold Traces skill analyzes the codebase and existing tests to identify important application paths. When an important path is already covered, AppMap records it. When coverage is missing, AppMap suggests a new test case and the coding agent can create it. AppMap then records the path and adds the trace to the Gold Trace set.
+              The Gold Traces skill analyzes the codebase and existing tests to identify the paths that matter. When an important path is already covered, AppMap records it. When coverage is missing, AppMap suggests a new test case and the coding agent can create it. AppMap then records the path and adds the trace to the Gold Trace set.
             </p>
             <p className="mt-6 text-center text-[14px] text-[#a99fc7]">
               Important path → Existing test or suggested test → AppMap trace
@@ -320,10 +320,10 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Gold Traces make behavior comparable</h2>
             <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              AppMap Gold Traces are a representative set of traces maintained as the code changes. AppMap compares the Gold Traces for the head revision with the Gold Traces for the base revision and reports what changed.
+              AppMap keeps a representative set of traces for the paths that matter. Those are Gold Traces. AppMap maintains the set as the code changes. AppMap compares the Gold Traces for the head revision with the Gold Traces for the base revision and reports what changed.
             </p>
             <p className="mt-3 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              The Gold Traces skill uses existing tests to cover important application paths and suggests new test cases when coverage is missing.
+              The Gold Traces skill uses existing tests to cover the paths that matter and suggests new test cases when coverage is missing.
             </p>
             <div className="mt-5">
               {/* TODO: point to /gold-traces when that page ships */}

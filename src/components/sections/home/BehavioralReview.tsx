@@ -15,7 +15,7 @@ const panels = [
       "API changes",
       "Query changes",
       "New dependencies",
-      "Unexpected drift from the AppMap Gold Traces",
+      "Unexpected drift in application behavior.",
     ],
   },
 ];
