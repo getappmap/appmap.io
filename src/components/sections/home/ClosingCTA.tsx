@@ -39,7 +39,7 @@ export function ClosingCTA() {
             Know what your software does before you merge it.
           </h2>
           <p className="mx-auto mt-3 max-w-[640px] text-[16px] text-[#a99fc7]">
-            Maps for developers. Runtime context for AI agents. Behavioral diffs before merge. Start free in VS Code or JetBrains.
+            Maps for developers. Runtime context for coding agents. Behavioral diffs before merge. Start free in VS Code or JetBrains.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3.5">
             <a
