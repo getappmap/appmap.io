@@ -109,6 +109,17 @@ function TeamPage() {
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
+              Where AppMap comes from
+            </h2>
+            <p className="mt-6 max-w-[760px] text-[17px] leading-[1.7] text-[#a99fc7]">
+              We have been building toward this moment for years. AppMap began with a simple loop: Map. Analyze. Share. Repeat. AI coding agents made that loop continuous and made runtime knowledge essential to every code change.
+            </p>
+          </div>
+        </section>
+
+        <section className="px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
               Work with us
             </h2>
             <p className="mt-6 max-w-[760px] text-[17px] leading-[1.7] text-[#a99fc7]">

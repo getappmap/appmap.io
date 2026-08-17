@@ -22,7 +22,7 @@ export function HomeHero() {
           Knowing what it does is not.
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          AppMap turns application runs into knowledge: maps, runtime context, and behavioral diffs. Developers see what changed. AI agents use the same knowledge to correct drift before merge.
+          AppMap turns application runs into knowledge: maps, runtime context, and behavioral diffs. Developers see what changed. AI agents use the same runtime context to correct drift before merge.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
