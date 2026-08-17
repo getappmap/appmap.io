@@ -161,7 +161,7 @@ function HowItWorksPage() {
               Source code tells you what software could do. Runtime behavior tells you what it actually did.
             </p>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              AppMap runs in development and CI. It records application runs as traces. Here is what the traces capture, the views they produce, and how that evidence reaches your AI agent.
+              Here is what a trace captures, the views you get from it, and how a coding agent reads the same trace.
             </p>
           </div>
         </section>
@@ -170,7 +170,7 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Every run, fully captured</h2>
             <p className="mt-3 max-w-[720px] text-[15px] text-[#a99fc7]">
-              Six signals tap off each run, all written into one trace. Each run adds a trace to the set.
+              Six signals tap off each run, all written into one trace.
             </p>
 
             {/* Desktop flow: spine + 3-above / 3-below nodes */}
