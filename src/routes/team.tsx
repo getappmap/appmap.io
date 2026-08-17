@@ -111,9 +111,34 @@ function TeamPage() {
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
               Where AppMap comes from
             </h2>
-            <p className="mt-6 max-w-[760px] text-[17px] leading-[1.7] text-[#a99fc7]">
-              We have been building toward this moment for years. AppMap began with a simple loop: Map. Analyze. Share. Repeat. AI coding agents made that loop continuous and made runtime knowledge essential for complex code changes.
-            </p>
+            <div className="mt-6 max-w-[760px] space-y-4">
+              <p className="text-[17px] leading-[1.7] text-[#a99fc7]">
+                The AppMap product launched in 2021. During Startup Battlefield in October 2022,
+                TechCrunch described it as{" "}
+                <a
+                  href="https://techcrunch.com/2022/10/18/code-analysis-tool-appmap-wants-to-become-google-maps-for-developers/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#f2effb] underline transition hover:text-[#ff07aa]"
+                >
+                  “Google Maps for developers.”
+                </a>{" "}
+                The idea was simple: developers should be able to see software behavior as they write
+                code. “When we don’t know how our software works, we’re making best guesses when we
+                write code,” Elizabeth told TechCrunch.
+              </p>
+              <p className="text-[17px] leading-[1.7] text-[#a99fc7]">
+                Today, AI coding agents make code changes continuously, and the guessing problem is
+                bigger. The original loop still holds:{" "}
+                <span className="font-semibold text-[#f2effb]">Map. Analyze. Share. Repeat.</span>{" "}
+                Map is runtime maps and sequence diagrams. Analyze is behavioral diffs and runtime
+                review. Share is AppMap Gold Traces committed with the code and reviews written to the
+                pull request. Repeat is the loop: change the code, record again, compare again.
+              </p>
+              <p className="text-[18px] font-semibold leading-[1.7] text-[#f2effb]">
+                AI did not create AppMap’s thesis. It made the thesis urgent.
+              </p>
+            </div>
           </div>
         </section>
 
