@@ -60,10 +60,10 @@ function BookADemoPage() {
               <p className="text-[14.5px] text-[#a99fc7]">
                 Prefer email? Write to us directly at{" "}
                 <a
-                  href="mailto:elizabeth@appmap.io"
+                  href="mailto:info@appmap.io"
                   className="font-semibold text-[#ff07aa] hover:underline"
                 >
-                  elizabeth@appmap.io
+                  info@appmap.io
                 </a>
                 .
               </p>

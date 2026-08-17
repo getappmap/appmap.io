@@ -32,7 +32,7 @@ const cols: {
       { label: "Team", href: "/team" },
       { label: "Blog", href: "/blog" },
       { label: "Release Notes", href: "/release-notes" },
-      { label: "Contact", href: "mailto:elizabeth@appmap.io" },
+      { label: "Contact", href: "mailto:info@appmap.io" },
       { label: "GitHub", href: "https://github.com/getappmap" },
     ],
   },
@@ -103,7 +103,7 @@ export function Footer() {
             Security FAQ
           </Link>
           <a
-            href="mailto:elizabeth@appmap.io?subject=Security%20disclosure"
+            href="mailto:info@appmap.io?subject=Security%20disclosure"
             className="transition-colors hover:text-[#a99fc7]"
           >
             Report a security issue

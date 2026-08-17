@@ -133,8 +133,8 @@ function PricingPage() {
               </Link>
               <p className="mt-3 text-center text-[13.5px] text-[#a99fc7]">
                 or email{" "}
-                <a href="mailto:elizabeth@appmap.io" className={accent}>
-                  elizabeth@appmap.io
+                <a href="mailto:info@appmap.io" className={accent}>
+                  info@appmap.io
                 </a>
               </p>
             </div>
