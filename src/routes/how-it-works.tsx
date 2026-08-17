@@ -303,7 +303,7 @@ function HowItWorksPage() {
                     <span className="text-[#ff07aa]">▼</span>
                   </div>
                   <div className="rounded-2xl border border-[#ff07aa]/50 bg-[#1c1538] px-6 py-5 text-center shadow-[0_0_28px_rgba(255,7,170,0.18)]">
-                    <div className="text-[15px] font-extrabold text-[#f2effb]">AppMap MCP server</div>
+                    <div className="text-[15px] font-extrabold text-[#f2effb]">MCP</div>
                   </div>
                   <div className="hidden items-center gap-2 lg:flex" aria-hidden>
                     <span className="text-[#ff07aa]">◀</span>
