@@ -104,7 +104,7 @@ export function ReviewLoop() {
         </div>
 
         <p className="mt-5 max-w-3xl text-[20px] font-semibold text-[color:var(--color-am-ink)]">
-          Every pull request explains itself.
+          Every pull request explains its behavior and impact.
         </p>
         <p className="mt-3 max-w-3xl text-[14px] text-[color:var(--color-am-muted)]">
           A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the change behaved as intended.
