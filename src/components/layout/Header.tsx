@@ -17,7 +17,7 @@ const navLinks: { label: string; href: string; external?: boolean }[] = [
   { label: "Enterprise", href: "/enterprise" },
   { label: "Pricing", href: "/pricing" },
   { label: "Docs", href: "/docs/appmap-docs", external: true },
-  { label: "Blog", href: "/blog" },
+  { label: "Blog", href: "/blog", external: true },
 ];
 
 export interface HeaderProps {
