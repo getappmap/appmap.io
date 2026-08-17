@@ -54,9 +54,7 @@ const goldTraceTree = `repo/
   src/
   gold_traces/
     manifest.yml            # the selected test cases
-    appmaps/                # the sanitized trace files
-    normalization.yml       # volatile fields to ignore (timestamps, ids, durations)
-    README.md               # what AppMap Gold Traces are and how to update them`;
+    appmaps/                # the sanitized trace files`;
 
 function ArchitecturePage() {
   return <Page />;
@@ -139,7 +137,7 @@ function Page() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Where AppMap Gold Traces live</h2>
             <p className="mt-3 max-w-[820px] text-[16px] text-[#a99fc7]">
-              Approved baselines live next to the code, in <code className="font-mono text-[#f2effb]">gold_traces/</code>. Each baseline is a set of files saved alongside your code for one flow: the approved before-trace, a stable fingerprint, and the rules for which timing noise and changing values to ignore before comparison. Promote a trace into the baseline the same way you merge code, with review.
+              Approved baselines live next to the code, in <code className="font-mono text-[#f2effb]">gold_traces/</code>. The Gold Trace set lives alongside the code. It contains representative traces for important application paths and the configuration AppMap uses to maintain the set. The AppMap Gold Traces skill updates the set as the code changes. The set can be used locally or committed with the code for team review.
             </p>
             <p className="mt-6 max-w-[820px] border-l-4 border-[#ff07aa] pl-4 text-[20px] font-semibold leading-[1.5] text-[#f2effb]">
               Git gives you a history of what the code said. AppMap Gold Traces give you a history of what the code did.
