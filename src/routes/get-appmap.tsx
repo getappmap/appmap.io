@@ -3,7 +3,7 @@ import { Header, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
 
 const title = "Get AppMap | AppMap";
 const description =
-  "One AppMap. Install it your way. VS Code, JetBrains, or straight from the terminal: every path ends at the same ground truth.";
+  "One AppMap. Install it your way. VS Code, JetBrains, or straight from the terminal: every path ends at the same traces.";
 
 export const Route = createFileRoute("/get-appmap")({
   head: () => ({
@@ -41,7 +41,7 @@ function GetAppMapPage() {
               One AppMap. Install it your way.
             </h1>
             <p className="mt-5 max-w-3xl text-[18px] leading-relaxed text-[#a99fc7]">
-              VS Code, JetBrains, or straight from the terminal: every path ends at the same ground truth.
+              VS Code, JetBrains, or straight from the terminal: every path ends at the same traces.
             </p>
           </div>
         </section>

@@ -10,11 +10,11 @@ const reviewerImages = [
 const pilotSteps = [
   {
     h: "Start without CI",
-    b: "Teams do not need to instrument CI to begin. AppMap records from a running process, so teams start in the editor or in environments that already run: a local run, a focused test, a smoke script, an API call, or a QA environment. No full enterprise-stack build required to capture a baseline.",
+    b: "Teams do not need to instrument CI to begin. AppMap records from a running process, so teams start in the editor or in environments that already run: a local run, a focused test, a smoke script, an API call, or a QA environment. No full enterprise-stack build required to record the first traces.",
   },
   {
-    h: "Governed behavior baselines",
-    b: "The AppMap Gold Traces skill identifies important application paths and uses existing tests to build the set. When coverage is missing, AppMap suggests a new test case. The organization can run the same review in CI when ready. Each baseline is reviewed and versioned in your repository, so behavioral contracts are auditable and owned, not ad hoc. Teams begin lightweight in the editor and graduate the flows that matter into the pipeline.",
+    h: "Governed Gold Trace sets",
+    b: "The AppMap Gold Traces skill identifies important application paths and uses existing tests to build the set. When coverage is missing, AppMap suggests a new test case. The organization can run the same review in CI when ready. Each Gold Trace set is reviewed and versioned in the team's repository, so behavioral contracts are auditable and owned, not ad hoc. Teams begin lightweight in the editor and graduate the flows that matter into the pipeline.",
   },
   {
     h: "Enforce when ready.",
@@ -63,7 +63,7 @@ const blocks: { title: string; body: React.ReactNode }[] = [
   },
   {
     title: "No AppMap cloud, by design",
-    body: "AppMap does not send traces to an AppMap-operated cloud. Traces are recorded and compared on the developer machine or in CI. AppMap Gold Traces are the subset that teams commit to git as shared context, sanitized before they are committed. Your AI tools are a separate channel: if the team chooses a hosted AI agent, selected context may be sent to that provider under its configuration and terms, and enterprise deployments can restrict AppMap runtime context to approved or self-hosted AI endpoints.",
+    body: "AppMap does not send traces to an AppMap-operated cloud. Traces are recorded and compared on the developer machine or in CI. AppMap Gold Traces are the representative set the Gold Traces skill maintains, which the team versions in git as shared context, sanitized before they are committed. Your coding agent is a separate channel: if the team chooses a hosted coding agent, selected context may be sent to that provider under its configuration and terms, and enterprise deployments can restrict AppMap runtime context to approved or self-hosted AI endpoints.",
   },
   {
     title: "Trust, but verify",
@@ -82,7 +82,7 @@ function EnterprisePage() {
 }
 
 const diagramCaption =
-  "Recording and comparison happen in your environment. AppMap telemetry is configurable to route to your internal observability stack, such as Splunk, so that data stays inside too. If the team chooses a hosted AI agent, selected context may be sent to that provider under its configuration and terms.";
+  "AppMap records and compares traces in your environment. AppMap telemetry is configurable to route to your internal observability stack, such as Splunk, so that data stays inside too. If the team chooses a hosted AI agent, selected context may be sent to that provider under its configuration and terms.";
 
 function Pill({ x, y, w, h, label, sub }: { x: number; y: number; w: number; h: number; label: string; sub?: string }) {
   return (
@@ -159,7 +159,7 @@ function DeploymentDiagram() {
             <line x1={570} y1={164} x2={570} y2={210} stroke="#a78bfa" strokeWidth={2} markerEnd="url(#arrow-violet)" />
 
             <Pill x={260} y={266} w={180} h={44} label="MCP server" />
-            <Pill x={490} y={266} w={160} h={44} label="AI agent" />
+            <Pill x={490} y={266} w={160} h={44} label="Coding agent" />
 
             {/* MCP <-> AI agent */}
             <line x1={440} y1={288} x2={490} y2={288} stroke="#a78bfa" strokeWidth={2} markerStart="url(#arrow-violet)" markerEnd="url(#arrow-violet)" />

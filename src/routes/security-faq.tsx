@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 const securityFaqs = [
   {
     q: "Does AppMap send code or runtime data to the cloud?",
-    a: "AppMap does not send traces to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI. Working AppMap traces stay in the developer environment. When Gold Traces are committed with the code, AppMap sanitizes them first. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
+    a: "AppMap does not send traces to an AppMap-operated cloud. AppMap records, sanitizes, and compares traces in your developer environment or CI. Working AppMap traces stay in the developer environment. When Gold Traces are committed with the code, AppMap sanitizes them first. If the developer uses a hosted coding agent, selected context may be sent to that provider under its configuration and terms.",
   },
   {
     q: "Where does AppMap store runtime behavior?",

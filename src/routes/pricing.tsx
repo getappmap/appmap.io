@@ -2,9 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
 const title =
-  "Pricing: Free for Developers and Teams. Enterprise for Controlled Deployment. | AppMap";
+  "Pricing: Community free, Professional support, Enterprise control | AppMap";
 const description =
-  "AppMap is free for developers and teams: traces, diagrams, MCP context, and AppMap Gold Traces versioned in your repository. Enterprise adds controlled deployment and support.";
+  "Community is free for developers and teams, including AppMap Gold Traces. Professional is $15 per developer per month for priority support. Enterprise adds organizational control and deployment.";
 const url = "https://appmap.io/pricing";
 
 export const Route = createFileRoute("/pricing")({
@@ -59,7 +59,7 @@ const community = [
   "Runtime traces and interactive diagrams",
   "Maps for developers in VS Code and JetBrains",
   "Runtime context for coding agents over MCP",
-  "AppMap Gold Traces, versioned with the code",
+  "AppMap Gold Traces, which the team can version with the code",
   "Community support",
 ];
 
@@ -92,7 +92,7 @@ function PricingPage() {
               Start free locally. Scale AppMap Gold Traces across your team.
             </h1>
             <p className="mt-5 max-w-[760px] text-[17px] leading-[1.65] text-[#a99fc7]">
-              AppMap is free for developers and teams. Traces, diagrams, and MCP context cost nothing, and so do AppMap Gold Traces versioned in your repository. Enterprise adds controlled deployment and support. AppMap starts in the developer environment, where traces are created, explored, and used by coding agents.
+              Community is free for developers and teams, including AppMap Gold Traces. Professional is $15 per developer per month and adds priority support. Enterprise adds organizational control, deployment, and support. AppMap starts in the developer environment, where traces are created, explored, and used by coding agents.
             </p>
           </div>
         </section>

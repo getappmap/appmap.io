@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "Does AppMap send code or runtime data to the cloud?",
-    a: "AppMap does not send traces to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and AppMap traces are recorded locally. AppMap's skills and your coding agent build and maintain the Gold Trace set. Gold Traces can be used locally during development. When a team versions the Gold Trace set with the code, it is stored in the repository and follows the team's existing Git workflow. Gold Traces are sanitized before they are committed. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
+    a: "AppMap does not send traces to an AppMap-operated cloud. AppMap records, sanitizes, and compares traces in your developer environment or CI, and working traces stay in the developer environment. AppMap's skills and your coding agent build and maintain the Gold Trace set. Gold Traces can be used locally during development. When a team versions the Gold Trace set with the code, it is stored in the repository and follows the team's existing Git workflow. Gold Traces are sanitized before they are committed. If the developer uses a hosted coding agent, selected context may be sent to that provider under its configuration and terms.",
     doc: { href: "https://appmap.io/security", label: "AppMap security" },
   },
   {
