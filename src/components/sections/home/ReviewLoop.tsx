@@ -30,16 +30,6 @@ const panels = [
       label: "View the full trace",
     },
   },
-  {
-    chip: "4",
-    image: "/marketing-assets/review/pr-review-summary.png",
-    alt: "AppMap Behavioral Review comment on a GitHub pull request showing a severity summary table with zero high findings, one medium finding, and zero low findings",
-    caption: "A real AppMap Behavioral Review on a pull request. The traces caught a behavior change the diff never showed.",
-    link: {
-      href: "/marketing-assets/review/pr-checks-table.png",
-      label: "See the checks performed",
-    },
-  },
 ];
 
 function Chip({ children }: { children: React.ReactNode }) {
@@ -79,9 +69,9 @@ export function ReviewLoop() {
           ))}
         </ol>
 
-        <div className="mt-6 grid w-full items-start gap-5 lg:grid-cols-2">
+        <div className="mt-6 flex w-full justify-center">
           {panels.map((p) => (
-            <div key={p.chip + p.image} className="relative w-full min-w-0">
+            <div key={p.chip + p.image} className="relative w-full min-w-0 max-w-[720px]">
               <Chip>{p.chip}</Chip>
               <figure className="flex w-full flex-col overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
                 <a
