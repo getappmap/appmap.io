@@ -320,14 +320,14 @@ grep -rn "ledger.write" src/
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">See what your agent read</h2>
             <p className="mt-3 max-w-[720px] text-[16px] text-[#a99fc7]">
-              AppMap shows the evidence behind each AI inference as the same visuals developers inspect in the editor. A reviewer sees exactly what the agent reasoned over instead of trusting the output.
+              AppMap shows the evidence behind each inference as the same visuals you inspect in the editor. You see exactly what the coding agent reasoned over instead of trusting the output.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <Link to="/benchmarks" className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                 See the Benchmark
               </Link>
               <Link to="/architecture" className="rounded-lg border border-[#2c2353] px-5 py-2.5 text-[14px] font-semibold text-[#f2effb] hover:border-[#a99fc7]">
-                Where recordings live →
+                Where traces live →
               </Link>
             </div>
           </div>
@@ -337,7 +337,7 @@ grep -rn "ledger.write" src/
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What is AppMap?</h2>
             <p className="mt-4 max-w-[820px] text-[18px] leading-[1.6] text-[#a99fc7]">
-              AppMap helps developers and AI coding agents understand what software actually does at runtime. It records the application in the editor and turns that run into diagrams humans can review and evidence AI agents can query over MCP.
+              AppMap helps developers and coding agents understand what software actually does at runtime. It records the application in the editor and turns that run into diagrams you can review and a trace your coding agent can query over MCP.
             </p>
           </div>
         </section>
