@@ -31,7 +31,7 @@ const cards = [
   },
   {
     title: "Post-triage issues can narrow the search",
-    body: "Real GitHub issue threads may identify a file, stack trace, function, or likely mechanism. Once those clues are present, the agent begins closer to implementation and the explanatory RCA phase becomes harder to measure independently.",
+    body: "Real GitHub issue threads may identify a file, stack trace, function, or likely mechanism. Once those clues are present, the agent begins closer to implementation and the exploratory RCA phase becomes harder to measure independently.",
   },
   {
     title: "Patch success can mask weak diagnosis",
