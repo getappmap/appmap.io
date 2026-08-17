@@ -63,7 +63,7 @@ const blocks: { title: string; body: React.ReactNode }[] = [
   },
   {
     title: "No AppMap cloud, by design",
-    body: "AppMap does not send traces to an AppMap-operated cloud. Traces are recorded and compared on the developer machine or in CI. AppMap Gold Traces are the representative set the Gold Traces skill maintains, which the team versions in git as shared context, sanitized before they are committed. Your coding agent is a separate channel: if the team chooses a hosted coding agent, selected context may be sent to that provider under its configuration and terms, and enterprise deployments can restrict AppMap runtime context to approved or self-hosted AI endpoints.",
+    body: "AppMap does not send traces to an AppMap-operated cloud. Traces are recorded and compared on the developer machine or in CI. AppMap Gold Traces are the representative set the Gold Traces skill maintains, which the team versions in git as shared context, sanitized before they are committed. Your coding agent is a separate channel: if the team chooses a hosted coding agent, some context goes to that provider under its configuration and terms. Enterprise deployments can restrict AppMap runtime context to approved or self-hosted AI endpoints.",
   },
   {
     title: "Trust, but verify",
@@ -82,7 +82,7 @@ function EnterprisePage() {
 }
 
 const diagramCaption =
-  "AppMap records and compares traces in your environment. AppMap telemetry is configurable to route to your internal observability stack, such as Splunk, so that data stays inside too. If the team chooses a hosted coding agent, selected context may be sent to that provider under its configuration and terms.";
+  "AppMap records and compares traces in your environment. AppMap telemetry is configurable to route to your internal observability stack, such as Splunk, so that data stays inside too. If the team chooses a hosted coding agent, some context goes to that provider. The provider's configuration and terms apply.";
 
 function Pill({ x, y, w, h, label, sub }: { x: number; y: number; w: number; h: number; label: string; sub?: string }) {
   return (
