@@ -24,7 +24,7 @@ export function ReviewWhatAIDid() {
     <section className="border-t border-b border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] px-6 py-20">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[color:var(--color-am-ink)] sm:text-[34px]">
-          See what each change did before it merges.
+          See what every change does.
         </h2>
         <p className="mt-3 max-w-[700px] text-[16px] text-[color:var(--color-am-muted)]">
           AppMap runs in development and CI, before code merges. Each change produces fresh traces. AppMap turns them into maps developers can inspect to see what ran, what the change touched, and where behavior moved.
