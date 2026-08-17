@@ -22,7 +22,7 @@ export function HomeHero() {
           AppMap shows what <Em>actually happened</Em>.
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          Recorded application runs produce a set of traces. Developers get diagrams they can understand. AI gets evidence it can trust.
+          AppMap records what the application actually does. The agent runs the tests, AppMap records fresh traces, and each change is compared against the last set. All of it happens before anything ships. Developers read the traces as diagrams. AI tools read them as evidence.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
@@ -55,7 +55,7 @@ export function HomeHero() {
             className="aspect-[16/9] w-full rounded-xl border border-[#2c2353] bg-[#16112b] object-cover object-left shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
           />
           <p className="mt-5 text-center text-[13px] text-[#a99fc7]">
-            A set of traces. Many views. Same ground truth.
+            Change the code. Record the traces. Compare. Repeat.
           </p>
         </div>
       </div>
