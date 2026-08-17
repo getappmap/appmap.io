@@ -9,7 +9,7 @@ const reviewerImages = [
 
 const pilotSteps = [
   {
-    h: "Start without CI",
+    h: "Start on the workstation",
     b: "Teams do not need to instrument CI to begin. AppMap records from a running process, so teams start in the editor or in environments that already run: a local run, a focused test, a smoke script, an API call, or a QA environment. No full enterprise-stack build required to record the first traces.",
   },
   {
