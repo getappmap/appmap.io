@@ -67,7 +67,7 @@ export const Route = createFileRoute("/")({
               price: "15",
               priceCurrency: "USD",
               description:
-                "For an individual developer who wants AppMap with priority support. Priced per developer per month.",
+                "For a developer who wants priority support. $15 per developer per month.",
             },
             {
               "@type": "Offer",

@@ -3,7 +3,7 @@ import { Header } from "@/components/layout/Header";
 
 const title = "AppMap Architecture: Runtime Context That Travels With the Code";
 const description =
-  "AppMap creates runtime context in the developer environment. Selected traces travel with the code as versioned AppMap Gold Traces, available to developers and coding agents.";
+  "AppMap creates runtime context in the developer environment. The Gold Traces skill identifies important paths, and those traces travel with the code as versioned AppMap Gold Traces, available to developers and coding agents.";
 
 export const Route = createFileRoute("/architecture")({
   head: () => ({
@@ -35,13 +35,13 @@ const branches = [
     label: "Claude Code, Copilot, Cursor, Gemini, and other MCP clients",
     note: "query runtime context over MCP",
   },
-  { label: "Repository", note: "selected traces persist here" },
+  { label: "Repository", note: "Gold Traces persist here" },
 ];
 
 const goldTraceTree = `repo/
   src/
   gold_traces/
-    manifest.yml            # the selected test cases
+    manifest.yml            # the test cases in the set
     appmaps/                # the sanitized trace files`;
 
 function ArchitecturePage() {
@@ -69,7 +69,7 @@ function Page() {
               Runtime context that travels with the code.
             </h1>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              AppMap creates runtime context in the developer environment. Recording, exploration, diagrams, and MCP access all start locally, and most agent interaction happens there. When important behavior needs to persist, selected traces can travel with the code as versioned AppMap Gold Traces.
+              AppMap creates runtime context in the developer environment. Recording, exploration, diagrams, and MCP access all start locally, and most agent interaction happens there. When important behavior needs to persist, the Gold Trace set can travel with the code as versioned AppMap Gold Traces.
             </p>
           </div>
         </section>
@@ -112,10 +112,10 @@ function Page() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Behavior that survives the session</h2>
             <p className="mt-3 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
-              A coding agent normally begins each investigation by reading the current code and reconstructing what matters. AppMap Gold Traces let important runtime behavior travel forward with the repository as a versioned baseline.
+              A coding agent normally begins each investigation by reading the current code and reconstructing what matters. AppMap Gold Traces let important runtime behavior travel forward with the repository as a versioned set.
             </p>
             <p className="mt-5 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
-              A new agent, a different model, or a developer opening the repository later starts from the same traces of how important paths actually ran. This is not conversational memory. It is repository-native engineering memory, versioned and reviewed like the code itself. Most agent work starts with local runtime context. Git gives selected traces a longer life, so future developers and agents can reuse important behavior instead of reconstructing it from source code.
+              A new agent, a different model, or a developer opening the repository later starts from the same traces of how important paths actually ran. This is not conversational memory. It is a repository-native Gold Trace set, versioned and reviewed like the code itself. Most agent work starts with local runtime context. Git gives the Gold Trace set a longer life, so future developers and agents can reuse important behavior instead of reconstructing it from source code.
             </p>
           </div>
         </section>

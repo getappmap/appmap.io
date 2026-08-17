@@ -62,7 +62,7 @@ export function PainStats() {
             Catch unexpected behavior while the change is still in the editor.
           </h3>
           <p className="mt-2 max-w-[860px] text-[15px] leading-relaxed text-[#a99fc7] sm:text-[16px]">
-            AppMap gives developers and AI agents runtime evidence as they work, so they can investigate calls, queries, exceptions, and side effects before the change merges.
+            AppMap gives developers and coding agents runtime evidence as they work, so they can investigate calls, queries, exceptions, and side effects before the change merges.
           </p>
         </div>
       </div>

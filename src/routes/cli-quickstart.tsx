@@ -49,7 +49,7 @@ const steps: { n: number; title: string; body: React.ReactNode }[] = [
     title: "Set up your project",
     body: (
       <>
-        Run <code className={code}>appmap install</code> in your project root. It configures the recording agent for Java, Python, Ruby, or Node and writes <code className={code}>appmap.yml</code>.
+        Run <code className={code}>appmap install</code> in your project root. It configures the AppMap trace agent for Java, Python, Ruby, or Node and writes <code className={code}>appmap.yml</code>.
       </>
     ),
   },
@@ -73,7 +73,7 @@ const steps: { n: number; title: string; body: React.ReactNode }[] = [
   },
   {
     n: 5,
-    title: "Connect your AI agent",
+    title: "Connect your coding agent",
     body: (
       <>
         Point any MCP client at the AppMap MCP server.
