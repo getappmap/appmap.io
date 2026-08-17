@@ -2,16 +2,16 @@ import type { ReactNode } from "react";
 
 const steps = [
   {
-    title: "AI writes the change",
-    body: "You build it with your AI coding agent.",
+    title: "Coding agent changes the code",
+    body: "The coding agent makes the change.",
   },
   {
-    title: "AppMap records and visualizes the run",
-    body: "Sequence diagrams, Trace View, queries, dependencies, and other AppMap views show what the changed software actually did.",
+    title: "AppMap records fresh traces",
+    body: "The coding agent runs the tests. AppMap records the behavior and shows the traces as maps.",
   },
   {
-    title: "The change is compared against AppMap Gold Traces",
-    body: "Compare the new run with a trusted baseline to see what held, what changed, and whether the change behaved as intended.",
+    title: "AppMap compares the Gold Trace sets",
+    body: "AppMap compares the Gold Traces for the head revision with the Gold Traces for the base revision and reports what changed.",
   },
   {
     title: "The review is written into the pull request",
@@ -24,7 +24,7 @@ const panels = [
     chip: "2-3",
     image: "/marketing-assets/review/trace-diff-diagram.png",
     alt: "Sequence diagram of a client request flowing through JWTAuthFilter, ActorService, ActorDao, and Postgres, with the changed order-by query highlighted in amber",
-    caption: "The recorded run as a sequence diagram. The amber call is the one that changed against the AppMap Gold Trace baseline.",
+    caption: "The trace as a sequence diagram. The amber call changed between the base revision and the head revision.",
     link: {
       href: "/marketing-assets/review/trace-highlight.png",
       label: "View the full trace",
@@ -48,7 +48,7 @@ export function ReviewLoop() {
           Stop reviewing code. Start reviewing behavior.
         </h2>
         <p className="mt-2 max-w-[680px] text-[17px] text-[color:var(--color-am-muted)]">
-          AppMap maintains a representative Gold Trace set for important application paths. As the code changes, AppMap records fresh traces and compares them with the base revision. The Gold Traces skill uses existing tests where possible and suggests new tests when an important path is not covered. AppMap turns the traces into diagrams developers can inspect and structured runtime evidence AI tools can query, and the review result can be written directly into the pull request.
+          AppMap maintains a representative Gold Trace set for important application paths. As the code changes, AppMap records fresh traces and compares the Gold Traces for the head revision with the Gold Traces for the base revision. The Gold Traces skill uses existing tests where possible and suggests new tests when an important path is not covered. AppMap turns the traces into diagrams developers can inspect, the same traces are available to coding agents as runtime context, and the review result can be written directly into the pull request.
         </p>
 
         <ol className="relative mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
@@ -114,9 +114,6 @@ export function ReviewLoop() {
             Developers can inspect the diagrams. AI tools can query the underlying traces. The pull request carries the resulting behavioral review. The evidence comes from the running application, not from the AI evaluating its own work.
           </p>
         </div>
-        <p className="mt-6 text-center text-[13px] text-[color:var(--color-am-muted)]">
-          Change the code. Record the traces. Compare. Repeat.
-        </p>
       </div>
     </section>
   );
