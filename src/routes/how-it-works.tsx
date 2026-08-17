@@ -161,7 +161,7 @@ function HowItWorksPage() {
               Source code tells you what software could do. Runtime behavior tells you what it actually does.
             </p>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              AppMap runs in development and CI. It records application runs as traces that developers inspect as maps and coding agents query directly.
+              AppMap runs in development and CI. It records traces from tests, requests, and running processes. Developers inspect them as maps, and coding agents query them directly.
             </p>
           </div>
         </section>
