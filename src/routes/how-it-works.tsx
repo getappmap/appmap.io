@@ -339,22 +339,11 @@ function HowItWorksPage() {
           </div>
         </section>
 
-        <section id="compatibility" className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
+        <section id="compatibility" className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-12">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Works with the coding agent you already use</h2>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              AppMap exposes traces over MCP, so the coding agent can change without changing the runtime context. Claude Code, Cursor, GitHub Copilot, Windsurf, Cline, and other MCP clients can query the same AppMap traces.
-            </p>
-            <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
-              {["Claude Code", "Cursor", "GitHub Copilot", "Windsurf", "Cline", "Other MCP clients"].map((name) => (
-                <div key={name} className="flex items-center justify-center gap-2 rounded-xl border border-[#2c2353] bg-[#1c1538] px-4 py-3">
-                  <span className="inline-block h-1.5 w-1.5 rounded-full bg-[#ff07aa]" style={{ boxShadow: "0 0 10px #ff07aa" }} />
-                  <span className="text-[13.5px] font-semibold text-[#f2effb]">{name}</span>
-                </div>
-              ))}
-            </div>
-            <p className="mt-6 max-w-[820px] text-[14px] leading-[1.6] text-[#a99fc7]">
-              The model can change too. AppMap traces provide the same runtime context to hosted, self-hosted, frontier, and compact models.
+              AppMap exposes traces over MCP, so the coding agent can change without changing the runtime context. The model can change too: hosted, self-hosted, frontier, and compact models all read the same traces.
             </p>
             <p className="mt-4 text-[15px] font-semibold text-[#ff07aa]">
               The agent can change. The evidence does not have to.
