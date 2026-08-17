@@ -19,7 +19,7 @@ export function HomeHero() {
         <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.2px] sm:text-[54px] sm:tracking-[-1.5px]">
           <span className="text-[#f2effb]">AI writes code fast.</span>
           <br />
-          <span className="text-[#FF07AA]">Knowing what the change does is the hard part.</span>
+          <span className="text-[#FF07AA]">Knowing what the change does is still the hard part.</span>
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
           AppMap records application runs as traces. Developers see them as maps, and coding agents query the same traces as runtime context. AppMap compares Gold Traces across revisions to show behavioral diffs before merge.
