@@ -87,10 +87,10 @@ function SecurityPage() {
               <p className="mt-6 max-w-[760px] text-[17px] leading-[1.7] text-[#a99fc7]">
                 Send reports to{" "}
                 <a
-                  href="mailto:elizabeth@appmap.io?subject=Security%20disclosure"
+                  href="mailto:info@appmap.io?subject=Security%20disclosure"
                   className="font-semibold text-[#ff07aa] hover:underline"
                 >
-                  elizabeth@appmap.io
+                  info@appmap.io
                 </a>
                 . Include reproduction steps and the affected version. We acknowledge reports
                 within three business days.
@@ -157,10 +157,10 @@ function SecurityPage() {
               <p className="mt-6 max-w-[760px] text-[17px] leading-[1.7] text-[#a99fc7]">
                 For privacy questions, contact{" "}
                 <a
-                  href="mailto:privacy@appmap.io"
+                  href="mailto:info@appmap.io"
                   className="font-semibold text-[#ff07aa] hover:underline"
                 >
-                  privacy@appmap.io
+                  info@appmap.io
                 </a>
                 . For how AppMap handles code, runtime data, sign in, and file storage, see the{" "}
                 <Link to="/security-faq" className="font-semibold text-[#ff07aa] hover:underline">
