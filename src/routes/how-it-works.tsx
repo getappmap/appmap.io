@@ -240,7 +240,7 @@ function HowItWorksPage() {
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">AppMap finds the paths your tests are missing.</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">AppMap suggests paths your tests are missing.</h2>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
               The Gold Traces skill analyzes the codebase and existing tests to identify the paths that matter. When an important path is already covered, AppMap records it. When coverage is missing, AppMap suggests a new test case and the coding agent can create it. AppMap then records the path and adds the trace to the Gold Trace set.
             </p>
