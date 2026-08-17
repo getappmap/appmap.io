@@ -318,12 +318,12 @@ function HowItWorksPage() {
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Gold Traces make behavior comparable</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One shared set of traces</h2>
             <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              AppMap keeps a representative set of traces for the paths that matter. Those are Gold Traces. AppMap maintains the set as the code changes. AppMap compares the Gold Traces for the head revision with the Gold Traces for the base revision and reports what changed.
+              Gold Traces are the team's shared record of how the application behaves. The set lives in the repository, so developers, coding agents, and CI all read from the same place.
             </p>
             <p className="mt-3 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              The Gold Traces skill uses existing tests to cover the paths that matter and suggests new test cases when coverage is missing.
+              When AppMap compares a change against the set, everyone judges the change against the same behavior. The Gold Traces skill uses existing tests to cover the paths that matter and suggests new test cases when coverage is missing.
             </p>
             <div className="mt-5">
               {/* TODO: point to /gold-traces when that page ships */}
