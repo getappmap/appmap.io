@@ -254,7 +254,16 @@ function EnterprisePageInner() {
           </div>
         </section>
 
-        <section id="security-faq" className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
+        <section className="px-6 py-16">
+          <div className="mx-auto max-w-[840px] border-t border-b border-[#2c2353] py-10 text-center">
+            <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Independent runtime evidence</div>
+            <p className="mt-4 text-[17px] leading-[1.65] text-[#f2effb]">
+              Architecture governance cannot rely on the AI grading its own homework. AppMap adds an independent evidence layer inside your environment: runtime behavior captured from the application itself, outside the AI's reasoning loop. The agent can consume it, the reviewer can see the same evidence, and the organization can govern against it. The AI explains the evidence. It does not create the evidence.
+            </p>
+          </div>
+        </section>
+
+        <section id="security-faq" className="border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Architecture and trust</h2>
 
