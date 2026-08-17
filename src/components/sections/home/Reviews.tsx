@@ -1,21 +1,6 @@
 const reviews = [
   {
     quote:
-      "AppMap is really great for developing quick understanding of a new codebase. Its tracing functionality is absolutely super.",
-    who: "Daniyal, JetBrains Marketplace",
-  },
-  {
-    quote:
-      "Just by using the extension once, I identified two unnecessary dependencies in my app.",
-    who: "Hesbon, Python developer, VS Code Marketplace",
-  },
-  {
-    quote:
-      "Great tool to gain intel if you start working on a project already under development. I strongly recommend this to observe the request travel in your web app.",
-    who: "Triyank Kumar, JetBrains Marketplace",
-  },
-  {
-    quote:
       "Helped me better understand and analyze the hierarchy and structure of my applications. Looks awesome, performs great, and provides truly invaluable feedback.",
     who: "Max, Java developer, VS Code Marketplace",
   },
