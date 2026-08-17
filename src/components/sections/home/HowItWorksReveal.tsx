@@ -33,7 +33,7 @@ export function HowItWorksReveal() {
             Go deep before you deploy.
           </h2>
           <p className="mt-4 max-w-[560px] text-[17px] leading-[1.6] text-[color:var(--color-am-muted)]">
-            Production and canary tracing are built to observe systems continuously with limited overhead. AppMap records deeply in development, capturing the code-level execution path, queries, HTTP calls, exceptions, and relationships behind one run. The result is information-dense context developers can inspect and AI agents can query before the change ships.
+            Production and canary tracing are built to observe systems continuously with limited overhead. AppMap records deeply in development, capturing the code-level execution path, queries, HTTP calls, exceptions, and relationships behind every recorded run. The result is information-dense context developers can inspect and AI agents can query before the change ships.
           </p>
           <div className="mt-6">
             <Link

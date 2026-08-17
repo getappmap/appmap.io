@@ -22,7 +22,7 @@ export function HomeHero() {
           AppMap shows what <Em>actually happened</Em>.
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          One recorded application run produces diagrams developers can understand and evidence AI can trust.
+          Recorded application runs produce a set of traces. Developers get diagrams they can understand. AI gets evidence it can trust.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
@@ -63,7 +63,7 @@ export function HomeHero() {
             </div>
           </div>
           <p className="mt-3 text-center text-[13px] text-[#a99fc7]">
-            One run. Many views. Same ground truth.
+            A set of traces. Many views. Same ground truth.
           </p>
         </div>
       </div>

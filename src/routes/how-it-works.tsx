@@ -3,7 +3,7 @@ import { Header } from "@/components/layout/Header";
 
 const title = "How AppMap works";
 const description =
-  "AppMap records your application as it runs. Here is what one recording captures, the views it produces, and how that evidence reaches your AI agent.";
+  "AppMap records your application as it runs. Here is what the traces capture, the views they produce, and how that evidence reaches your AI agent.";
 
 const faqs = [
   {
@@ -16,12 +16,12 @@ const faqs = [
   },
   {
     q: "What does an AppMap recording contain?",
-    a: "It is a record of how your application actually ran: function calls, SQL queries, HTTP traffic, exceptions, and the relationships between them. Every map, view, and review is drawn from that one recording. Captured via a language agent (Java -javaagent, Python, Ruby, Node) from tests, requests, or a running process.",
+    a: "It is a record of how your application actually ran: function calls, SQL queries, HTTP traffic, exceptions, and the relationships between them. Every map, view, and review is drawn from those traces. Captured via a language agent (Java -javaagent, Python, Ruby, Node) from tests, requests, or a running process.",
     doc: { href: "https://appmap.io/docs/get-started-with-appmap/making-appmap-data.html", label: "How AppMap data is made" },
   },
   {
     q: "How does AppMap work with MCP?",
-    a: "AppMap exposes the recording over the Model Context Protocol. Agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
+    a: "AppMap exposes the traces over the Model Context Protocol. Agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
     doc: { href: "https://appmap.io/docs/reference/appmap-mcp.html", label: "AppMap MCP reference" },
   },
   {
@@ -161,7 +161,7 @@ function HowItWorksPage() {
               Source code tells you what software could do. Runtime behavior tells you what it actually did.
             </p>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              Every time your software runs, AppMap records what actually happened. Here is what one recording captures, the views it produces, and how that evidence reaches your AI agent.
+              Every time your software runs, AppMap records what actually happened. Here is what the traces capture, the views they produce, and how that evidence reaches your AI agent.
             </p>
           </div>
         </section>
@@ -170,7 +170,7 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One run, fully captured</h2>
             <p className="mt-3 max-w-[720px] text-[15px] text-[#a99fc7]">
-              One execution. Six signals tap off the same run, all written into one recording.
+              One execution. Six signals tap off the same run, all written into a trace. Each run adds a trace to the set.
             </p>
 
             {/* Desktop flow: spine + 3-above / 3-below nodes */}
@@ -245,7 +245,7 @@ function HowItWorksPage() {
 
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the recording reaches your agent</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the traces reach your agent</h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {mcp.map((m) => (
                 <div key={m.name} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
