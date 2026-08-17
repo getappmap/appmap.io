@@ -3,7 +3,7 @@ import { Header } from "@/components/layout/Header";
 
 const title = "How AppMap works";
 const description =
-  "AppMap records application runs as traces in development and CI, then compares them before merge. Here is what a trace captures and how a coding agent reads it.";
+  "AppMap records traces from tests, requests, and running processes in development and CI, then compares them before merge. Here is what a trace captures and how a coding agent reads it.";
 
 const faqs = [
   {
