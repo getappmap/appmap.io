@@ -18,7 +18,7 @@ export function HomeHero() {
         </div>
         <h1 className="mt-4 text-[36px] font-extrabold leading-[1.02] tracking-[-1.2px] sm:text-[49px] sm:tracking-[-1.35px]">
           <span className="text-[#f2effb]">
-            AI writes code faster than anyone can{" "}
+            Code changes faster than anyone can{" "}
             <span className="whitespace-nowrap">understand it.</span>
           </span>
           <br />
