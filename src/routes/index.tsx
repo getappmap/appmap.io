@@ -14,7 +14,7 @@ import { ClosingCTA } from "@/components/sections/home/ClosingCTA";
 
 const title = "AppMap: Runtime evidence for AI-assisted development";
 const description =
-  "Code changes too fast to understand. See how every change behaves before it merges. AppMap gives developers and coding agents the same runtime evidence to understand, compare, and act on each change before it merges.";
+  "Code changes too fast to catch what breaks. See how every change behaves before it merges. AppMap gives developers and coding agents the same runtime evidence to understand, compare, and act on each change before it merges.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
