@@ -18,8 +18,8 @@ export function HomeHero() {
         </div>
         <h1 className="mt-4 text-[36px] font-extrabold leading-[1.02] tracking-[-1.2px] sm:text-[47px] sm:tracking-[-1.6px]">
           <span className="text-[#f2effb]">
-            Code changes too fast to catch{" "}
-            <span className="whitespace-nowrap">what breaks.</span>
+            Code changes too fast to understand{" "}
+            <span className="whitespace-nowrap">and review.</span>
           </span>
           <br />
           <span className="text-[#f2effb]">See how every change </span>
@@ -27,7 +27,7 @@ export function HomeHero() {
           <span className="whitespace-nowrap text-[#f2effb]">before it merges.</span>
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          AppMap gives developers and coding agents the same runtime evidence to understand, compare, and act on each change before it merges.
+          AppMap records and compares application behavior, giving developers and coding agents the same runtime evidence to act on every change.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
