@@ -127,14 +127,222 @@ function BenchmarksIndexPage() {
           <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
             Bug reports arrive as symptoms. Pull requests arrive as diffs. Neither tells you what the running system actually did.
           </p>
-          <p className="mt-8 mb-8 text-[21px] font-semibold leading-[1.4] text-[#f2effb]">
-            So we tested it.
+          <p className="mt-10 max-w-[760px] text-[17px] leading-[1.6] text-[#a99fc7]">
+            Developers and coding agents still have to discover the execution path, affected code, queries, dependencies, and behavioral consequences. So we measured the impact runtime context makes on this process.
+          </p>
+          <p className="mt-4 text-[17px] font-semibold text-[#f2effb]">
+            This study measures the reactive case, root-cause analysis, so the value of runtime evidence can be isolated from patch generation.
+          </p>
+          <a
+            href="#results"
+            onClick={scrollToResults}
+            className="mt-5 inline-block text-[13.5px] text-[#a99fc7] underline underline-offset-4 transition-colors hover:text-[#f2effb]"
+          >
+            See the results
+          </a>
+        </div>
+      </section>
+
+      {/* 2. What a real issue looks like */}
+      <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
+        <div className="mx-auto max-w-[1120px]">
+          <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What a real issue looks like</h2>
+          <div className="mt-9 grid gap-5 md:grid-cols-2">
+            <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-7">
+              <div className="text-[12.5px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">A well-specified issue</div>
+              <ul className="mt-5 space-y-3">
+                {postTriage.map((t) => (
+                  <li key={t} className="flex gap-3 text-[15px] text-[#a99fc7]">
+                    <span className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#a99fc7]" />
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-2xl border border-[#ff07aa]/40 bg-[#1c1538] p-6 sm:p-7">
+              <div className="text-[12.5px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">An issue in the wild</div>
+              <p className="mt-4 border-l-2 border-[#ff07aa] pl-4 text-[17px] font-semibold leading-[1.5] text-[#f2effb]">
+                &ldquo;Customers are being charged twice on retried payments.&rdquo;
+              </p>
+              <ul className="mt-5 space-y-3">
+                {enterpriseIssue.map((t) => (
+                  <li key={t} className="flex gap-3 text-[15px] text-[#a99fc7]">
+                    <span className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#ff07aa]" />
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
+            The wild issue starts before anyone has turned the bug into instructions.
           </p>
         </div>
       </section>
 
-      {/* 2. 1-vs-15 comparison */}
+      {/* 3. Why SWE-bench could not isolate diagnosis */}
       <section className="px-6 py-20">
+        <div className="mx-auto max-w-[1120px]">
+          <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Why SWE-bench could not isolate diagnosis</h2>
+          <p className="mt-4 max-w-[760px] text-[16px] leading-[1.7] text-[#a99fc7]">
+            SWE-bench remains valuable for comparing overall agent capability. It was not designed to isolate the value of root-cause evidence.
+          </p>
+          <div className="mt-8 rounded-xl border-l-2 border-[#ff07aa] bg-[#16112b] px-6 py-5">
+            <p className="max-w-[820px] text-[16px] leading-[1.65] text-[#f2effb]">
+              SWE-bench asks whether an agent can resolve a known issue. This study asks whether runtime evidence helps an agent discover an unknown cause.
+            </p>
+          </div>
+          <div className="mt-7">
+            <Link
+              to="/benchmarks/swe-bench"
+              className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#f2effb] underline underline-offset-4 transition-colors hover:text-[#ff07aa]"
+            >
+              Want to learn more? Why SWE-bench could not isolate diagnosis, with citations →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. A benchmark designed to require diagnosis */}
+      <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
+        <div className="mx-auto max-w-[1120px]">
+          <p className="mb-8 text-[21px] font-semibold leading-[1.4] text-[#f2effb]">
+            So we tested it.
+          </p>
+          <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">A benchmark designed to require diagnosis</h2>
+          <div className="mt-10 grid items-stretch gap-6 lg:grid-cols-2">
+            <div className="relative min-w-0">
+              <span className="absolute -top-3 -left-3 z-10 rounded-lg bg-[#1c1538] px-2.5 py-1 text-[11.5px] font-extrabold uppercase tracking-[0.6px] text-white shadow-md">
+                SWE-bench issue
+              </span>
+              <div className="flex h-full min-w-0 flex-col rounded-xl bg-white p-6 shadow-lg sm:p-7">
+                <h3 className="text-[17px] font-bold text-slate-900">PythonCodePrinter doesn&apos;t support Indexed</h3>
+                <p className="mt-1 text-[12.5px] text-slate-500">sympy/sympy #16669 · opened by ruoyu0088 · April 2019</p>
+                <p className="mt-4 text-[13.5px] leading-[1.7] text-slate-700">
+                  I use lambdify() to generate some functions and save the code for further use. But the generated code for Indexed operation has some warnings [...] We should add following method to PythonCodePrinter:
+                </p>
+                <pre className="mt-4 max-w-full overflow-x-auto rounded-md border-l-4 border-amber-400 bg-amber-50 p-3 text-[12px] leading-[1.6] text-slate-800">
+                  <code>{sympyCode}</code>
+                </pre>
+                <p className="mt-auto pt-4 text-[12.5px] font-medium text-rose-600">
+                  <span aria-hidden className="mr-1.5">&#9662;</span>
+                  The fix, ready to paste, inside the issue text.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative min-w-0">
+              <span className="absolute -top-3 -left-3 z-10 rounded-lg bg-[#ff07aa] px-2.5 py-1 text-[11.5px] font-extrabold uppercase tracking-[0.6px] text-white shadow-md">
+                This benchmark
+              </span>
+              <div className="flex h-full min-w-0 flex-col rounded-xl bg-white p-6 shadow-lg sm:p-7">
+                <p className="text-[12.5px] text-slate-500">Operations ticket</p>
+                <h3 className="mt-1 text-[17px] font-bold text-slate-900">Customers being charged twice on retried payments</h3>
+                <div className="mt-5 divide-y divide-slate-200 border-t border-slate-200">
+                  {["Stack trace: none", "File or function named: none", "Fix included: none"].map((row) => (
+                    <p key={row} className="py-2.5 text-[13.5px] text-slate-500">{row}</p>
+                  ))}
+                </div>
+                <p className="mt-auto pt-4 text-[12.5px] font-medium text-rose-600">
+                  <span aria-hidden className="mr-1.5">&#9662;</span>
+                  Diagnosis is the work.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p className="mt-7 max-w-[880px] text-[15px] leading-[1.65] text-[#a99fc7]">
+            One issue contains its own answer. The other requires finding it. The SWE-Bench+ audit documents fix leakage like this in roughly one third of SWE-bench issues; this benchmark&apos;s tickets are constructed to make it impossible.
+          </p>
+
+          <div className="mt-7 flex flex-wrap gap-x-8 gap-y-5 rounded-2xl border border-[#2c2353] bg-[#1c1538] px-6 py-5">
+            {setup.map((s) => (
+              <div key={s.label} className="min-w-[180px] flex-1">
+                <div className="text-[11.5px] font-bold uppercase tracking-[0.8px] text-[#a99fc7]">{s.label}</div>
+                <p className="mt-1 text-[13.5px] leading-[1.5] text-[#f2effb]">{s.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
+            The runtime trace is the only difference between the two lanes.
+          </p>
+        </div>
+      </section>
+
+      {/* 5. Primary results */}
+      <section id="results" className="scroll-mt-20 px-6 py-20">
+        <div className="mx-auto max-w-[1120px]">
+          <div className="text-[12.5px] uppercase tracking-[1.2px] text-[#a99fc7]">
+            Primary study: two problems, two Claude models, four budgets, eight runs per cell
+          </div>
+          <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">With runtime evidence, accuracy held. Without it, accuracy fell.</h2>
+
+          <div className="mt-8 grid gap-4 lg:grid-cols-3">
+            <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+              <div className="flex items-end gap-4">
+                <div>
+                  <div className="text-[32px] font-extrabold leading-none tracking-[-1px] text-[#ff07aa] sm:text-[38px]">100%</div>
+                  <p className="mt-2 text-[12.5px] leading-[1.4] text-[#a99fc7]">with AppMap runtime evidence</p>
+                </div>
+                <span className="pb-6 text-[14px] text-[#a99fc7]">vs</span>
+                <div>
+                  <div className="text-[32px] font-extrabold leading-none tracking-[-1px] text-[#7c8aa6] sm:text-[38px]">28%</div>
+                  <p className="mt-2 text-[12.5px] leading-[1.4] text-[#a99fc7]">code-only exploration</p>
+                </div>
+              </div>
+              <p className="mt-4 text-[14px] leading-[1.6] text-[#a99fc7]">Root-cause accuracy when limited to 3 tool calls.</p>
+            </div>
+            <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+              <div className="text-[32px] font-extrabold leading-none tracking-[-1px] sm:text-[38px]">
+                <span className="text-[#ff07aa]">94%</span>
+                <span className="text-[#a99fc7]"> vs. </span>
+                <span className="text-[#7c8aa6]">62%</span>
+              </div>
+              <p className="mt-3 text-[14px] leading-[1.6] text-[#a99fc7]">{verifiedFix}</p>
+            </div>
+            <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+              <div className="text-[32px] font-extrabold leading-none tracking-[-1px] text-[#ff07aa] sm:text-[38px]">15+ -&gt; 1</div>
+              <p className="mt-3 text-[14px] leading-[1.6] text-[#a99fc7]">Fifteen or more search-and-read steps replaced by one get_call_tree query.</p>
+            </div>
+          </div>
+
+          <p className="mt-10 max-w-[760px] text-[16px] text-[#a99fc7]">
+            How accurately each lane found the root cause as we cut the number of tool calls allowed. With runtime evidence, accuracy stayed at 100%. Without it, accuracy fell as the budget shrank.
+          </p>
+
+          <div className="mt-6 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
+            <div className="text-[14px] text-[#a99fc7]">Root-cause accuracy (%) by tool-call budget</div>
+            <div className="mt-6 flex h-[260px] items-end gap-6 px-2 sm:gap-10">
+              {accuracy.map((row) => (
+                <div key={row.label} className="flex h-full flex-1 flex-col items-center justify-end gap-3">
+                  <div className="flex h-full items-end gap-2">
+                    <div className="relative flex w-7 justify-center rounded-t-md bg-gradient-to-b from-[#ff07aa] to-[#d6008f] sm:w-9" style={{ height: `${row.appmap}%` }}>
+                      <span className="absolute -top-6 whitespace-nowrap text-[12.5px] font-bold text-[#ff07aa]">{row.appmap}</span>
+                    </div>
+                    <div className="relative flex w-7 justify-center rounded-t-md bg-gradient-to-b from-[#fb7185] to-[#e11d48] sm:w-9" style={{ height: `${row.codeOnly}%` }}>
+                      <span className="absolute -top-6 whitespace-nowrap text-[12.5px] font-bold text-[#fb7185]">{row.codeOnly}</span>
+                    </div>
+                  </div>
+                  <div className="text-[12.5px] text-[#a99fc7]">{row.label}</div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-5 flex flex-wrap gap-5 text-[13px] text-[#a99fc7]">
+              <span className="inline-flex items-center gap-2"><i className="inline-block h-3 w-3 rounded-sm bg-[#ff07aa]" /> AppMap runtime evidence</span>
+              <span className="inline-flex items-center gap-2"><i className="inline-block h-3 w-3 rounded-sm bg-[#fb7185]" /> Code-only exploration</span>
+            </div>
+          </div>
+
+          <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
+            The share of bugs actually fixed and verified tells the same story. With runtime evidence, 94 to 100 percent. Without it, the rate dropped from 84 percent to 62 percent.
+          </p>
+          <Caveat />
+        </div>
+      </section>
+
+      {/* 1-vs-15 comparison */}
+      <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
         <div className="mx-auto max-w-[1120px]">
           <h2 className="max-w-[900px] text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One query can return what fifteen searches are looking for</h2>
           <p className="mt-5 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
@@ -208,87 +416,70 @@ grep -rn "ledger.write" src/
             One get_call_tree query returns the execution path. A representative source-only search requires 15+ calls to reconstruct the same context.
           </p>
 
-          <p className="mt-10 max-w-[760px] text-[17px] leading-[1.6] text-[#a99fc7]">
-            Developers and coding agents still have to discover the execution path, affected code, queries, dependencies, and behavioral consequences. So we measured the impact runtime context makes on this process.
-          </p>
-          <p className="mt-4 text-[17px] font-semibold text-[#f2effb]">
-            This study measures the reactive case, root-cause analysis, so the value of runtime evidence can be isolated from patch generation.
-          </p>
-          <a
-            href="#results"
-            onClick={scrollToResults}
-            className="mt-5 inline-block text-[13.5px] text-[#a99fc7] underline underline-offset-4 transition-colors hover:text-[#f2effb]"
-          >
-            See the results
-          </a>
         </div>
       </section>
 
-      {/* 3. Why SWE-bench could not isolate diagnosis */}
-      <section className="border-t border-[#2c2353] px-6 py-20">
+      {/* 7. Cost-capability frontier */}
+      <section className="px-6 py-20">
         <div className="mx-auto max-w-[1120px]">
-          <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Why SWE-bench could not isolate diagnosis</h2>
-          <p className="mt-4 max-w-[760px] text-[16px] leading-[1.7] text-[#a99fc7]">
-            SWE-bench remains valuable for comparing overall agent capability. It was not designed to isolate the value of root-cause evidence.
-          </p>
-          <div className="mt-8 rounded-xl border-l-2 border-[#ff07aa] bg-[#16112b] px-6 py-5">
-            <p className="max-w-[820px] text-[16px] leading-[1.65] text-[#f2effb]">
-              SWE-bench asks whether an agent can resolve a known issue. This study asks whether runtime evidence helps an agent discover an unknown cause.
+          <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">The cost-capability frontier</h2>
+
+          <div className="mt-9 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
+            <h3 className="text-[19px] font-bold text-[#f2effb]">Matched performance in the primary sweep</h3>
+            <p className="mt-3 max-w-[760px] text-[15.5px] leading-[1.7] text-[#a99fc7]">
+              In the primary study, both lanes eventually fixed every bug. The lane with runtime evidence got there for about 3.4 times less spend.
             </p>
           </div>
-          <div className="mt-7">
-            <Link
-              to="/benchmarks/swe-bench"
-              className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#f2effb] underline underline-offset-4 transition-colors hover:text-[#ff07aa]"
-            >
-              Want to learn more? Why SWE-bench could not isolate diagnosis, with citations →
-            </Link>
+
+          <div className="mt-10">
+            <h3 className="text-[19px] font-bold text-[#f2effb]">Generalization across 11 fixtures, three configurations</h3>
+            <p className="mt-3 max-w-[820px] text-[15.5px] leading-[1.7] text-[#a99fc7]">
+              The practical setup is a hybrid: a compact model diagnoses from the trace, and a frontier model writes the harder fixes. Each bar shows the cost per run with the fix rate beside it.
+            </p>
+
+            <div className="mt-7 space-y-5 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
+              {cost.map((c) => (
+                <div key={c.label}>
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-[13.5px]">
+                    <span className="text-[#f2effb]">{c.label}</span>
+                    <span className="text-[#a99fc7]">
+                      <b className="font-bold text-[#f2effb]">${c.dollars.toFixed(3)}</b> per cell · {c.fix} fixed
+                    </span>
+                  </div>
+                  <div className="mt-2 h-3 w-full overflow-hidden rounded-full bg-[#0d0a1a]">
+                    <div className="h-full rounded-full" style={{ width: `${(c.dollars / maxCost) * 100}%`, background: c.color }} />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 overflow-x-auto rounded-2xl border border-[#2c2353]">
+              <table className="w-full min-w-[640px] text-[14.5px]">
+                <thead className="bg-[#1c1538] text-[12.5px] uppercase tracking-[0.5px] text-[#a99fc7]">
+                  <tr>
+                    <th className="px-4 py-3 text-left">Configuration</th>
+                    <th className="px-4 py-3 text-left">Verified-fix rate</th>
+                    <th className="px-4 py-3 text-left">Cost / cell</th>
+                    <th className="px-4 py-3 text-left">vs. control</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-[#16112b] text-[#f2effb]">
+                  <tr className="border-t border-[#2c2353]"><td className="px-4 py-3">Frontier model, code-only exploration, unlimited budget</td><td className="px-4 py-3">95%</td><td className="px-4 py-3">$1.161</td><td className="px-4 py-3 text-[#a99fc7]">reference</td></tr>
+                  <tr className="border-t border-[#2c2353]"><td className="px-4 py-3">Compact model, AppMap trace, 3-call budget</td><td className="px-4 py-3">74%</td><td className="px-4 py-3">$0.309</td><td className="px-4 py-3 text-[#ff07aa]">3.8 times cheaper, 21 percentage points lower</td></tr>
+                  <tr className="border-t border-[#2c2353]"><td className="px-4 py-3">Hybrid pipeline, compact trace-based diagnosis plus frontier-model fix</td><td className="px-4 py-3">88%</td><td className="px-4 py-3">$0.567</td><td className="px-4 py-3 text-[#ff07aa]">2.0 times cheaper, 7 percentage points lower</td></tr>
+                </tbody>
+              </table>
+            </div>
           </div>
+          <Caveat />
         </div>
       </section>
 
-      {/* 4. What a real issue looks like */}
+      {/* 8. Bridge: reactive diagnosis and proactive change review */}
       <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
         <div className="mx-auto max-w-[1120px]">
-          <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What a real issue looks like</h2>
-          <div className="mt-9 grid gap-5 md:grid-cols-2">
-            <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-7">
-              <div className="text-[12.5px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">A well-specified issue</div>
-              <ul className="mt-5 space-y-3">
-                {postTriage.map((t) => (
-                  <li key={t} className="flex gap-3 text-[15px] text-[#a99fc7]">
-                    <span className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#a99fc7]" />
-                    {t}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="rounded-2xl border border-[#ff07aa]/40 bg-[#1c1538] p-6 sm:p-7">
-              <div className="text-[12.5px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">An issue in the wild</div>
-              <p className="mt-4 border-l-2 border-[#ff07aa] pl-4 text-[17px] font-semibold leading-[1.5] text-[#f2effb]">
-                &ldquo;Customers are being charged twice on retried payments.&rdquo;
-              </p>
-              <ul className="mt-5 space-y-3">
-                {enterpriseIssue.map((t) => (
-                  <li key={t} className="flex gap-3 text-[15px] text-[#a99fc7]">
-                    <span className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#ff07aa]" />
-                    {t}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
-            The wild issue starts before anyone has turned the bug into instructions.
-          </p>
-        </div>
-      </section>
-
-      {/* 4b. Bridge: reactive diagnosis and proactive change review */}
-      <section className="border-t border-[#2c2353] px-6 py-20">
-        <div className="mx-auto max-w-[1120px]">
           <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">The same runtime evidence answers two questions.</h2>
-          <div className="mt-9 rounded-2xl border border-[#2c2353] bg-[#16112b] px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
+          <div className="mt-9 rounded-2xl border border-[#2c2353] bg-[#1c1538] px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
             <div className="grid gap-8 md:grid-cols-2 md:gap-0">
               <div className="md:pr-10 lg:pr-14">
                 <div className="text-[12px] font-bold uppercase tracking-[1.4px] text-[#7c8aa6]">Measured in this study</div>
@@ -353,198 +544,7 @@ grep -rn "ledger.write" src/
         </div>
       </section>
 
-      {/* 5. A benchmark designed to require diagnosis */}
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-[1120px]">
-          <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">A benchmark designed to require diagnosis</h2>
-          <div className="mt-10 grid items-stretch gap-6 lg:grid-cols-2">
-            <div className="relative min-w-0">
-              <span className="absolute -top-3 -left-3 z-10 rounded-lg bg-[#1c1538] px-2.5 py-1 text-[11.5px] font-extrabold uppercase tracking-[0.6px] text-white shadow-md">
-                SWE-bench issue
-              </span>
-              <div className="flex h-full min-w-0 flex-col rounded-xl bg-white p-6 shadow-lg sm:p-7">
-                <h3 className="text-[17px] font-bold text-slate-900">PythonCodePrinter doesn&apos;t support Indexed</h3>
-                <p className="mt-1 text-[12.5px] text-slate-500">sympy/sympy #16669 · opened by ruoyu0088 · April 2019</p>
-                <p className="mt-4 text-[13.5px] leading-[1.7] text-slate-700">
-                  I use lambdify() to generate some functions and save the code for further use. But the generated code for Indexed operation has some warnings [...] We should add following method to PythonCodePrinter:
-                </p>
-                <pre className="mt-4 max-w-full overflow-x-auto rounded-md border-l-4 border-amber-400 bg-amber-50 p-3 text-[12px] leading-[1.6] text-slate-800">
-                  <code>{sympyCode}</code>
-                </pre>
-                <p className="mt-auto pt-4 text-[12.5px] font-medium text-rose-600">
-                  <span aria-hidden className="mr-1.5">&#9662;</span>
-                  The fix, ready to paste, inside the issue text.
-                </p>
-              </div>
-            </div>
-
-            <div className="relative min-w-0">
-              <span className="absolute -top-3 -left-3 z-10 rounded-lg bg-[#ff07aa] px-2.5 py-1 text-[11.5px] font-extrabold uppercase tracking-[0.6px] text-white shadow-md">
-                This benchmark
-              </span>
-              <div className="flex h-full min-w-0 flex-col rounded-xl bg-white p-6 shadow-lg sm:p-7">
-                <p className="text-[12.5px] text-slate-500">Operations ticket</p>
-                <h3 className="mt-1 text-[17px] font-bold text-slate-900">Customers being charged twice on retried payments</h3>
-                <div className="mt-5 divide-y divide-slate-200 border-t border-slate-200">
-                  {["Stack trace: none", "File or function named: none", "Fix included: none"].map((row) => (
-                    <p key={row} className="py-2.5 text-[13.5px] text-slate-500">{row}</p>
-                  ))}
-                </div>
-                <p className="mt-auto pt-4 text-[12.5px] font-medium text-rose-600">
-                  <span aria-hidden className="mr-1.5">&#9662;</span>
-                  Diagnosis is the work.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <p className="mt-7 max-w-[880px] text-[15px] leading-[1.65] text-[#a99fc7]">
-            One issue contains its own answer. The other requires finding it. The SWE-Bench+ audit documents fix leakage like this in roughly one third of SWE-bench issues; this benchmark&apos;s tickets are constructed to make it impossible.
-          </p>
-
-          <div className="mt-7 flex flex-wrap gap-x-8 gap-y-5 rounded-2xl border border-[#2c2353] bg-[#1c1538] px-6 py-5">
-            {setup.map((s) => (
-              <div key={s.label} className="min-w-[180px] flex-1">
-                <div className="text-[11.5px] font-bold uppercase tracking-[0.8px] text-[#a99fc7]">{s.label}</div>
-                <p className="mt-1 text-[13.5px] leading-[1.5] text-[#f2effb]">{s.body}</p>
-              </div>
-            ))}
-          </div>
-
-          <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
-            The runtime trace is the only difference between the two lanes.
-          </p>
-        </div>
-      </section>
-
-      {/* 6. Primary results */}
-      <section id="results" className="scroll-mt-20 border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
-        <div className="mx-auto max-w-[1120px]">
-          <div className="text-[12.5px] uppercase tracking-[1.2px] text-[#a99fc7]">
-            Primary study: two problems, two Claude models, four budgets, eight runs per cell
-          </div>
-          <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">With runtime evidence, accuracy held. Without it, accuracy fell.</h2>
-
-          <div className="mt-8 grid gap-4 lg:grid-cols-3">
-            <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-              <div className="flex items-end gap-4">
-                <div>
-                  <div className="text-[32px] font-extrabold leading-none tracking-[-1px] text-[#ff07aa] sm:text-[38px]">100%</div>
-                  <p className="mt-2 text-[12.5px] leading-[1.4] text-[#a99fc7]">with AppMap runtime evidence</p>
-                </div>
-                <span className="pb-6 text-[14px] text-[#a99fc7]">vs</span>
-                <div>
-                  <div className="text-[32px] font-extrabold leading-none tracking-[-1px] text-[#7c8aa6] sm:text-[38px]">28%</div>
-                  <p className="mt-2 text-[12.5px] leading-[1.4] text-[#a99fc7]">code-only exploration</p>
-                </div>
-              </div>
-              <p className="mt-4 text-[14px] leading-[1.6] text-[#a99fc7]">Root-cause accuracy when limited to 3 tool calls.</p>
-            </div>
-            <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-              <div className="text-[32px] font-extrabold leading-none tracking-[-1px] sm:text-[38px]">
-                <span className="text-[#ff07aa]">94%</span>
-                <span className="text-[#a99fc7]"> vs. </span>
-                <span className="text-[#7c8aa6]">62%</span>
-              </div>
-              <p className="mt-3 text-[14px] leading-[1.6] text-[#a99fc7]">{verifiedFix}</p>
-            </div>
-            <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-              <div className="text-[32px] font-extrabold leading-none tracking-[-1px] text-[#ff07aa] sm:text-[38px]">15+ -&gt; 1</div>
-              <p className="mt-3 text-[14px] leading-[1.6] text-[#a99fc7]">Fifteen or more search-and-read steps replaced by one get_call_tree query.</p>
-            </div>
-          </div>
-
-          <p className="mt-10 max-w-[760px] text-[16px] text-[#a99fc7]">
-            How accurately each lane found the root cause as we cut the number of tool calls allowed. With runtime evidence, accuracy stayed at 100%. Without it, accuracy fell as the budget shrank.
-          </p>
-
-          <div className="mt-6 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
-            <div className="text-[14px] text-[#a99fc7]">Root-cause accuracy (%) by tool-call budget</div>
-            <div className="mt-6 flex h-[260px] items-end gap-6 px-2 sm:gap-10">
-              {accuracy.map((row) => (
-                <div key={row.label} className="flex h-full flex-1 flex-col items-center justify-end gap-3">
-                  <div className="flex h-full items-end gap-2">
-                    <div className="relative flex w-7 justify-center rounded-t-md bg-gradient-to-b from-[#ff07aa] to-[#d6008f] sm:w-9" style={{ height: `${row.appmap}%` }}>
-                      <span className="absolute -top-6 whitespace-nowrap text-[12.5px] font-bold text-[#ff07aa]">{row.appmap}</span>
-                    </div>
-                    <div className="relative flex w-7 justify-center rounded-t-md bg-gradient-to-b from-[#fb7185] to-[#e11d48] sm:w-9" style={{ height: `${row.codeOnly}%` }}>
-                      <span className="absolute -top-6 whitespace-nowrap text-[12.5px] font-bold text-[#fb7185]">{row.codeOnly}</span>
-                    </div>
-                  </div>
-                  <div className="text-[12.5px] text-[#a99fc7]">{row.label}</div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-5 flex flex-wrap gap-5 text-[13px] text-[#a99fc7]">
-              <span className="inline-flex items-center gap-2"><i className="inline-block h-3 w-3 rounded-sm bg-[#ff07aa]" /> AppMap runtime evidence</span>
-              <span className="inline-flex items-center gap-2"><i className="inline-block h-3 w-3 rounded-sm bg-[#fb7185]" /> Code-only exploration</span>
-            </div>
-          </div>
-
-          <p className="mt-7 max-w-[760px] text-[15px] text-[#f2effb]">
-            The share of bugs actually fixed and verified tells the same story. With runtime evidence, 94 to 100 percent. Without it, the rate dropped from 84 percent to 62 percent.
-          </p>
-          <Caveat />
-        </div>
-      </section>
-
-      {/* 7. Cost-capability frontier */}
-      <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
-        <div className="mx-auto max-w-[1120px]">
-          <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">The cost-capability frontier</h2>
-
-          <div className="mt-9 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
-            <h3 className="text-[19px] font-bold text-[#f2effb]">Matched performance in the primary sweep</h3>
-            <p className="mt-3 max-w-[760px] text-[15.5px] leading-[1.7] text-[#a99fc7]">
-              In the primary study, both lanes eventually fixed every bug. The lane with runtime evidence got there for about 3.4 times less spend.
-            </p>
-          </div>
-
-          <div className="mt-10">
-            <h3 className="text-[19px] font-bold text-[#f2effb]">Generalization across 11 fixtures, three configurations</h3>
-            <p className="mt-3 max-w-[820px] text-[15.5px] leading-[1.7] text-[#a99fc7]">
-              The practical setup is a hybrid: a compact model diagnoses from the trace, and a frontier model writes the harder fixes. Each bar shows the cost per run with the fix rate beside it.
-            </p>
-
-            <div className="mt-7 space-y-5 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
-              {cost.map((c) => (
-                <div key={c.label}>
-                  <div className="flex flex-wrap items-center justify-between gap-2 text-[13.5px]">
-                    <span className="text-[#f2effb]">{c.label}</span>
-                    <span className="text-[#a99fc7]">
-                      <b className="font-bold text-[#f2effb]">${c.dollars.toFixed(3)}</b> per cell · {c.fix} fixed
-                    </span>
-                  </div>
-                  <div className="mt-2 h-3 w-full overflow-hidden rounded-full bg-[#0d0a1a]">
-                    <div className="h-full rounded-full" style={{ width: `${(c.dollars / maxCost) * 100}%`, background: c.color }} />
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-8 overflow-x-auto rounded-2xl border border-[#2c2353]">
-              <table className="w-full min-w-[640px] text-[14.5px]">
-                <thead className="bg-[#1c1538] text-[12.5px] uppercase tracking-[0.5px] text-[#a99fc7]">
-                  <tr>
-                    <th className="px-4 py-3 text-left">Configuration</th>
-                    <th className="px-4 py-3 text-left">Verified-fix rate</th>
-                    <th className="px-4 py-3 text-left">Cost / cell</th>
-                    <th className="px-4 py-3 text-left">vs. control</th>
-                  </tr>
-                </thead>
-                <tbody className="bg-[#16112b] text-[#f2effb]">
-                  <tr className="border-t border-[#2c2353]"><td className="px-4 py-3">Frontier model, code-only exploration, unlimited budget</td><td className="px-4 py-3">95%</td><td className="px-4 py-3">$1.161</td><td className="px-4 py-3 text-[#a99fc7]">reference</td></tr>
-                  <tr className="border-t border-[#2c2353]"><td className="px-4 py-3">Compact model, AppMap trace, 3-call budget</td><td className="px-4 py-3">74%</td><td className="px-4 py-3">$0.309</td><td className="px-4 py-3 text-[#ff07aa]">3.8 times cheaper, 21 percentage points lower</td></tr>
-                  <tr className="border-t border-[#2c2353]"><td className="px-4 py-3">Hybrid pipeline, compact trace-based diagnosis plus frontier-model fix</td><td className="px-4 py-3">88%</td><td className="px-4 py-3">$0.567</td><td className="px-4 py-3 text-[#ff07aa]">2.0 times cheaper, 7 percentage points lower</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <Caveat />
-        </div>
-      </section>
-
-      {/* 8. Limits */}
+      {/* 9. Limits */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-[1120px]">
           <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What the results do and do not establish</h2>
