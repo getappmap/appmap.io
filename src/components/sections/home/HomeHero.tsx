@@ -16,9 +16,9 @@ export function HomeHero() {
         <div className="text-[13px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">
           Runtime evidence for AI-assisted development
         </div>
-        <h1 className="mt-4 text-[36px] font-extrabold leading-[1.02] tracking-[-1.2px] sm:text-[47px] sm:tracking-[-1.6px]">
+        <h1 className="mt-4 text-[36px] font-extrabold leading-[1.02] tracking-[-1.2px] sm:text-[48px] sm:tracking-[-1.6px]">
           <span className="text-[#f2effb]">Code changes </span>
-          <span className="text-[#F87171]">outrun</span>
+          <span className="inline-block origin-bottom-left skew-x-[-10deg] text-[#F87171]">outrun</span>
           <span className="text-[#f2effb]"> our understanding.</span>
           <br />
           <span className="text-[#f2effb]">See how every change </span>
