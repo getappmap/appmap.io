@@ -18,7 +18,7 @@ const reviews = [
 function ReviewCard({ quote, who }: { quote: string; who: string }) {
   return (
     <div className="w-[420px] shrink-0 snap-start rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-      <div className="text-[15px] tracking-[2px] text-[#ff07aa]">★★★★★</div>
+      <div className="text-[15px] tracking-[2px] text-[#fbbf24]">★★★★★</div>
       <p className="mt-3 text-[15px] leading-[1.55] text-[#f2effb]">"{quote}"</p>
       <div className="mt-4 text-[13px] font-semibold text-[#a99fc7]">{who}</div>
     </div>
