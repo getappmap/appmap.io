@@ -290,7 +290,7 @@ function EnterprisePageInner() {
                 </div>
 
                 <div className="mt-5 inline-flex items-center rounded-full border border-[#8b5cf6]/50 bg-[#1c1538] px-3.5 py-1.5 text-[12.5px] text-[#a99fc7]">
-                  Self-hosted AI endpoint (optional)
+                  Self-hosted AI endpoint
                 </div>
 
                 <div className="absolute -bottom-10 right-4 sm:right-8">
@@ -317,7 +317,9 @@ function EnterprisePageInner() {
           </div>
         </section>
 
-        <section className="bg-[#16112b] px-6 py-20">
+        <DeploymentDiagram />
+
+        <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What the reviewer sees</h2>
             <p className="mt-3 max-w-[760px] text-[15px] text-[#a99fc7]">
