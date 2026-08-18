@@ -17,10 +17,7 @@ export function HomeHero() {
           Runtime evidence for AI-assisted development
         </div>
         <h1 className="mt-4 text-[36px] font-extrabold leading-[1.02] tracking-[-1.2px] sm:text-[49px] sm:tracking-[-1.35px]">
-          <span className="text-[#f2effb]">
-            Code is changing faster than anyone can{" "}
-            <span className="whitespace-nowrap">understand it.</span>
-          </span>
+          <span className="text-[#f2effb]">Code changes too fast to understand.</span>
           <br />
           <span className="text-[#f2effb]">See how every change </span>
           <span className="italic text-[#FF07AA]">behaves</span>
