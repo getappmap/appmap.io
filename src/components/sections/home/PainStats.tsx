@@ -27,7 +27,7 @@ export function PainStats() {
     <section className="border-t border-b border-[#2c2353] bg-[#0d0a1a] px-6 py-20">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-          The code is shipping. <span className="text-[#F87171]">Confidence is not.</span>
+          The code is shipping. <span className="text-[#a99fc7]">Confidence is not.</span>
         </h2>
         <p className="mt-3 text-[17px] text-[#a99fc7]">
           AI writes more of your codebase every month. Almost no one knows what it actually does.
@@ -39,7 +39,7 @@ export function PainStats() {
               key={s.number + s.body}
               className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6"
             >
-              <div className="text-[44px] font-extrabold leading-none tracking-[-1.5px] text-[#F87171] sm:text-[52px]">
+              <div className="text-[44px] font-extrabold leading-none tracking-[-1.5px] text-[#a99fc7] sm:text-[52px]">
                 {s.number}
               </div>
               <p className="mt-4 text-[15.5px] leading-snug text-[#f2effb]">
