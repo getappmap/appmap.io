@@ -18,13 +18,13 @@ export function HomeHero() {
         </div>
         <h1 className="mt-4 text-[36px] font-extrabold leading-[1.02] tracking-[-1.2px] sm:text-[49px] sm:tracking-[-1.35px]">
           <span className="text-[#f2effb]">
-            Code changes faster than anyone can{" "}
+            Code is changing faster than anyone can{" "}
             <span className="whitespace-nowrap">understand it.</span>
           </span>
           <br />
           <span className="text-[#f2effb]">See how every change </span>
           <span className="italic text-[#FF07AA]">behaves</span>
-          <span className="whitespace-nowrap text-[#f2effb]"> before merge.</span>
+          <span className="whitespace-nowrap text-[#f2effb]"> before it merges.</span>
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
           AppMap gives developers and coding agents the same runtime evidence to understand, compare, and act on each change before it merges.
