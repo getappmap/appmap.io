@@ -344,7 +344,7 @@ function EnterprisePageInner() {
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">From one workstation to the whole pipeline</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">From one workstation to CI</h2>
             <ol className="mt-8 grid gap-4 lg:grid-cols-2 lg:items-start">
               {pilotSteps.map((s, i) => (
                 <li
