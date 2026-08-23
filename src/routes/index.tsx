@@ -45,10 +45,6 @@ export const Route = createFileRoute("/")({
     ],
     scripts: [
       {
-        src: "/appmap-live-trace.js",
-        defer: true,
-      },
-      {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
