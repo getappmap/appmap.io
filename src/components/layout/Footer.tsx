@@ -91,6 +91,14 @@ export function Footer() {
             Privacy
           </a>
           <a
+            href="https://appmap.io/community/code-of-conduct"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-[#a99fc7]"
+          >
+            Code of Conduct
+          </a>
+          <a
             href="https://appmap.io/community/terms-and-conditions.html"
             target="_blank"
             rel="noopener noreferrer"
