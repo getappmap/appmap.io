@@ -13,7 +13,6 @@ const cols: {
       { label: "How it works", href: "/how-it-works" },
       { label: "Architecture", href: "/architecture" },
       { label: "Benchmarks", href: "/benchmarks" },
-      { label: "Compatibility", href: "/compatibility" },
       { label: "Pricing", href: "/pricing" },
       { label: "Security FAQ", href: "/security-faq" },
     ],
@@ -90,6 +89,14 @@ export function Footer() {
             className="transition-colors hover:text-[#a99fc7]"
           >
             Privacy
+          </a>
+          <a
+            href="https://appmap.io/community/code-of-conduct"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-[#a99fc7]"
+          >
+            Code of Conduct
           </a>
           <a
             href="https://appmap.io/community/terms-and-conditions.html"

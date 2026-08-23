@@ -13,9 +13,9 @@ const items = [
   },
   {
     title: "The code objects",
-    body: "Functions, classes, and queries exercised in the run.",
+    body: "Functions, classes, and queries captured in the trace.",
     image: "/marketing-assets/img/appmap/code-map.jpg",
-    alt: "AppMap code map of functions, APIs, and objects exercised during a run.",
+    alt: "AppMap code map of functions, APIs, and objects captured in the trace.",
   },
 ];
 
@@ -24,10 +24,10 @@ export function ReviewWhatAIDid() {
     <section className="border-t border-b border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] px-6 py-20">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[color:var(--color-am-ink)] sm:text-[34px]">
-          A set of traces describe the system as it runs, before the change ships.
+          See what every change does.
         </h2>
         <p className="mt-3 max-w-[700px] text-[16px] text-[color:var(--color-am-muted)]">
-          The traces give developers and AI agents multiple ways to inspect a run while the work is still in progress: Dependency Map, Sequence Diagram, Trace View, Flame Graph, Code Objects, and SQL inspection. Recorded runtime behavior also supports generated OpenAPI definitions and diffs.
+          AppMap runs in development and CI, before code merges. Each change produces fresh traces. AppMap turns them into maps developers can inspect to see what ran, what the change touched, and where behavior moved.
         </p>
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           {items.map((it) => (
@@ -54,7 +54,7 @@ export function ReviewWhatAIDid() {
           ))}
         </div>
         <p className="mt-6 text-center text-[13.5px] text-[color:var(--color-am-muted)]">
-          Three representative views. Explore the broader visual set in your editor before the change moves downstream.
+          Three representative views. Explore the broader visual set in your editor before the change merges.
         </p>
       </div>
     </section>

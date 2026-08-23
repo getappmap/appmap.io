@@ -2,20 +2,20 @@ import type { ReactNode } from "react";
 
 const steps = [
   {
-    title: "AI writes the change",
-    body: "You build it with your AI coding agent.",
+    title: "Coding agent changes the code",
+    body: "The coding agent makes the change.",
   },
   {
-    title: "AppMap records and visualizes the run",
-    body: "Sequence diagrams, Trace View, queries, dependencies, and other AppMap views show what the changed software actually did.",
+    title: "AppMap records fresh traces",
+    body: "The coding agent runs the tests. AppMap records the behavior and shows the traces as maps.",
   },
   {
-    title: "AppMap Gold Traces check the behavior",
-    body: "Compare the new run with a trusted baseline to see what held, what changed, and whether the change behaved as intended.",
+    title: "AppMap compares the behavior",
+    body: "AppMap compares behavior in the changed revision with behavior in the base revision and reports what changed.",
   },
   {
     title: "The review is written into the pull request",
-    body: "The AppMap Gold Trace review skill writes the runtime-backed result into the PR so reviewers see what changed in behavior, not just in code.",
+    body: "AppMap writes the review into the PR so reviewers see what changed in behavior, not just in code.",
   },
 ];
 
@@ -24,20 +24,10 @@ const panels = [
     chip: "2-3",
     image: "/marketing-assets/review/trace-diff-diagram.png",
     alt: "Sequence diagram of a client request flowing through JWTAuthFilter, ActorService, ActorDao, and Postgres, with the changed order-by query highlighted in amber",
-    caption: "The recorded run as a sequence diagram. The amber call is the one that changed against the AppMap Gold Trace baseline.",
+    caption: "The trace as a sequence diagram. The amber call changed between the base revision and the head revision.",
     link: {
       href: "/marketing-assets/review/trace-highlight.png",
       label: "View the full trace",
-    },
-  },
-  {
-    chip: "4",
-    image: "/marketing-assets/review/pr-review-summary.png",
-    alt: "AppMap Behavioral Review comment on a GitHub pull request showing a severity summary table with zero high findings, one medium finding, and zero low findings",
-    caption: "A real AppMap Behavioral Review on a pull request. The traces caught a behavior change the diff never showed.",
-    link: {
-      href: "/marketing-assets/review/pr-checks-table.png",
-      label: "See the checks performed",
     },
   },
 ];
@@ -58,10 +48,19 @@ export function ReviewLoop() {
           Stop reviewing code. Start reviewing behavior.
         </h2>
         <p className="mt-2 max-w-[680px] text-[17px] text-[color:var(--color-am-muted)]">
-          AppMap turns a recorded run into diagrams developers can inspect and structured runtime evidence AI tools can query. AppMap Gold Traces compare the change against trusted behavior, and the review result can be written directly into the pull request.
+          AppMap records how the application behaves and compares that behavior across revisions. As the code changes, AppMap records fresh traces and shows what held and what changed. Developers inspect the diagrams. Coding agents query the same traces. The review can go straight to the pull request.
         </p>
 
-        <ol className="relative mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
+        <img
+          src="/marketing-assets/img/workflow/appmap-runtime-review.png"
+          alt="AppMap workflow: the coding agent runs the tests, AppMap records fresh traces, and AppMap compares the behavior of the head revision with the base revision before merge"
+          width={2000}
+          height={960}
+          loading="lazy"
+          className="mt-8 block w-full rounded-2xl border border-[color:var(--color-am-line)]"
+        />
+
+        <ol className="relative mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
           <span
             aria-hidden
             className="pointer-events-none absolute left-[15px] top-4 bottom-4 w-px bg-[color:var(--color-am-line)] lg:left-0 lg:right-0 lg:top-4 lg:bottom-auto lg:h-px lg:w-auto"
@@ -79,9 +78,9 @@ export function ReviewLoop() {
           ))}
         </ol>
 
-        <div className="mt-6 grid w-full items-start gap-5 lg:grid-cols-2">
+        <div className="mt-6 flex w-full justify-center">
           {panels.map((p) => (
-            <div key={p.chip + p.image} className="relative w-full min-w-0">
+            <div key={p.chip + p.image} className="relative w-full min-w-0 max-w-[720px]">
               <Chip>{p.chip}</Chip>
               <figure className="flex w-full flex-col overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
                 <a
@@ -114,14 +113,14 @@ export function ReviewLoop() {
         </div>
 
         <p className="mt-5 max-w-3xl text-[20px] font-semibold text-[color:var(--color-am-ink)]">
-          Every pull request explains itself.
+          Every pull request explains its behavior and impact.
         </p>
         <p className="mt-3 max-w-3xl text-[14px] text-[color:var(--color-am-muted)]">
-          A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the result still matches the AppMap Gold Trace.
+          A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the change behaved as intended.
         </p>
         <div className="mt-6 rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] p-4">
           <p className="text-[14px] leading-[1.55] text-[color:var(--color-am-muted)]">
-            Developers can inspect the diagrams. AI tools can query the underlying recording. The pull request carries the resulting behavioral review. The evidence comes from the running application, not from the AI evaluating its own work.
+            Developers can inspect the diagrams. Coding agents can query the same traces. The pull request carries the resulting behavioral review. The evidence comes from the running application, not from the AI evaluating its own work. AppMap works with Claude Code, Cursor, GitHub Copilot, Windsurf, and any MCP-capable coding agent.
           </p>
         </div>
       </div>

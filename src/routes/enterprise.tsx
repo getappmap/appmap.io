@@ -9,22 +9,18 @@ const reviewerImages = [
 
 const pilotSteps = [
   {
-    h: "Start without CI",
-    b: "You do not need to instrument CI to begin. AppMap records from a running process, so teams start in the editor or in environments that already run: a local run, a focused test, a smoke script, an API call, or a QA environment. No full enterprise-stack build required to capture a baseline.",
+    h: "Start on the workstation",
+    b: "Teams do not need to instrument CI to begin. AppMap records from a running process, so teams start in the editor or in environments that already run: a local run, a focused test, a smoke script, an API call, or a QA environment. No full enterprise-stack build required to record the first traces.",
   },
   {
-    h: "Governed behavior baselines",
-    b: "Promote only the high-value flows into governed AppMap Gold Traces, then enforce them in CI when you are ready. Each baseline is reviewed and versioned in your repository, so behavioral contracts are auditable and owned, not ad hoc. Begin lightweight in the editor; graduate the flows that matter into the pipeline.",
-  },
-  {
-    h: "Enforce when ready.",
-    b: "The same review runs in your pipeline when you are ready, and AppMap coaches each team to set it up for their own use. CI enforcement and telemetry routing are configurable parts of the enterprise service.",
+    h: "Centralized ground truth of application behavior, in git",
+    b: "The AppMap Gold Traces skill identifies important application paths and uses existing tests to build the set. When coverage is missing, AppMap suggests a new test case. The organization can run the same review in CI when ready. The set lives in the team's repository, where changes follow the same pull-request workflow as the code. Teams begin lightweight in the editor and graduate the flows that matter into the pipeline.",
   },
 ];
 
 const title = "AppMap Enterprise: Airgapped, On-Prem, No AppMap Cloud";
 const description =
-  "AppMap operates no cloud data plane for recordings. Airgapped and on-prem ready. Auditable, open-source clients.";
+  "AppMap operates no cloud data plane for traces. Airgapped and on-prem ready. Auditable, open-source clients.";
 
 export const Route = createFileRoute("/enterprise")({
   head: () => ({
@@ -56,33 +52,13 @@ const ExternalLink = ({ href, children }: { href: string; children: React.ReactN
   </a>
 );
 
-const blocks: { title: string; body: React.ReactNode }[] = [
-  {
-    title: "Airgapped and on-prem ready",
-    body: "AppMap runs inside your environment with no outbound dependency on AppMap services. Enterprise deployments support offline activation and internal distribution of the clients. It fits airgapped and on-prem deployments where data cannot leave the network, paired with a self-hosted AI endpoint.",
-  },
-  {
-    title: "No AppMap cloud, by design",
-    body: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and recordings stay on the developer machine and in your repositories unless your organization centralizes them on infrastructure you control. Your AI tools are a separate channel: if you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms, and enterprise deployments can restrict AppMap evidence to approved or self-hosted AI endpoints.",
-  },
-  {
-    title: "Trust, but verify",
-    body: (
-      <>
-        <ExternalLink href="https://github.com/getappmap">Open-source clients</ExternalLink> and a{" "}
-        <ExternalLink href="https://github.com/getappmap/appmap">published data spec</ExternalLink>. You can audit what
-        AppMap records and what it sends to the agent.
-      </>
-    ),
-  },
-];
 
 function EnterprisePage() {
   return EnterprisePageInner();
 }
 
 const diagramCaption =
-  "AppMap operates no cloud data plane for recordings, so recording, sanitization, and comparison run in your environment. Deployment telemetry is configurable to route to your internal observability stack, such as Splunk, so operational data stays inside too. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.";
+  "AppMap records and compares traces in your environment. AppMap telemetry is configurable to route to your internal observability stack, such as Splunk, so that data stays inside too. If the team chooses a hosted coding agent, some context goes to that provider. The provider's configuration and terms apply.";
 
 function Pill({ x, y, w, h, label, sub }: { x: number; y: number; w: number; h: number; label: string; sub?: string }) {
   return (
@@ -159,7 +135,7 @@ function DeploymentDiagram() {
             <line x1={570} y1={164} x2={570} y2={210} stroke="#a78bfa" strokeWidth={2} markerEnd="url(#arrow-violet)" />
 
             <Pill x={260} y={266} w={180} h={44} label="MCP server" />
-            <Pill x={490} y={266} w={160} h={44} label="AI agent" />
+            <Pill x={490} y={266} w={160} h={44} label="Coding agent" />
 
             {/* MCP <-> AI agent */}
             <line x1={440} y1={288} x2={490} y2={288} stroke="#a78bfa" strokeWidth={2} markerStart="url(#arrow-violet)" markerEnd="url(#arrow-violet)" />
@@ -245,9 +221,7 @@ function EnterprisePageInner() {
                 Runtime context that stays in your environment.
               </h1>
               <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-                For the VP standardizing how agents work, and the engineer who
-                has to vouch for it. Airgapped and on-prem by design. AppMap
-                operates no cloud data plane for recordings.
+                Airgapped and on-prem by design. There is no AppMap cloud for traces.
               </p>
               <p className="mt-6 max-w-[760px] text-[22px] font-semibold leading-[1.25] tracking-[-0.3px] text-[#f2effb] sm:text-[26px]">
                 Bring your model. Keep your evidence.
@@ -276,30 +250,74 @@ function EnterprisePageInner() {
           </div>
         </section>
 
-        <section id="security-faq" className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Architecture and trust</h2>
-            <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
-              {blocks.map((b) => (
-                <div key={b.title} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                  <h3 className="text-[17px] font-bold text-[#f2effb]">{b.title}</h3>
-                  <p className="mt-2 text-[14.5px] text-[#a99fc7]">{b.body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <DeploymentDiagram />
-
         <section className="px-6 py-16">
           <div className="mx-auto max-w-[840px] border-t border-b border-[#2c2353] py-10 text-center">
             <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Independent runtime evidence</div>
             <p className="mt-4 text-[17px] leading-[1.65] text-[#f2effb]">
-              Architecture governance cannot rely on the AI grading its own homework. AppMap adds an independent evidence layer inside your environment: runtime behavior captured from the application itself, outside the AI's reasoning loop. The agent can consume it, the reviewer can see the same evidence, and the organization can govern against it. The AI explains the evidence; it does not create the evidence.
+              Architecture governance cannot rely on the AI grading its own homework. AppMap adds an independent evidence layer inside your environment: runtime behavior captured from the application itself, outside the AI's reasoning loop. The agent can consume it, the reviewer can see the same evidence, and the organization can govern against it. The AI explains the evidence. It does not create the evidence.
             </p>
           </div>
         </section>
+
+        <section id="security-faq" className="border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Architecture and trust</h2>
+
+            <div className="mt-8 rounded-2xl border border-[#2c2353] bg-[#0d0a1a] p-6 sm:p-8">
+              <div className="relative overflow-visible rounded-2xl border-2 border-dashed border-[#3f3566] bg-[#0d0a1a]/50 p-6 pt-8 sm:p-8 sm:pt-9">
+                <div className="absolute -top-[11px] left-4 bg-[#0d0a1a] px-2 text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]/70 sm:left-6">Your environment</div>
+
+                <div className="grid gap-4 md:grid-cols-2">
+                  <div className="rounded-xl border border-[#2c2353] bg-[#1c1538] p-5">
+                    <h3 className="text-[15px] font-bold text-[#f2effb]">Developer environment</h3>
+                    <p className="mt-2 text-[13.5px] leading-[1.5] text-[#a99fc7]">AppMap records and compares traces</p>
+                    <p className="mt-1.5 text-[13.5px] leading-[1.5] text-[#a99fc7]">
+                      <code className="font-mono text-[#ff07aa]">tmp/appmap</code> · working traces
+                    </p>
+                  </div>
+                  <div className="rounded-xl border border-[#2c2353] bg-[#1c1538] p-5">
+                    <h3 className="text-[15px] font-bold text-[#f2effb]">CI</h3>
+                    <p className="mt-2 text-[13.5px] leading-[1.5] text-[#a99fc7]">The same review runs in the pipeline</p>
+                    <p className="mt-1.5 text-[13.5px] leading-[1.5] text-[#a99fc7]">No outbound dependency on AppMap services</p>
+                  </div>
+                </div>
+
+                <div className="mt-4 rounded-xl border border-[#2c2353] bg-[#1c1538] p-5 text-center">
+                  <h3 className="text-[15px] font-bold text-[#f2effb]">Repository</h3>
+                  <p className="mt-2 text-[13.5px] leading-[1.5] text-[#a99fc7]">
+                    <code className="font-mono text-[#ff07aa]">gold_traces/</code> · sanitized before commit
+                  </p>
+                </div>
+
+                <div className="mt-5 inline-flex items-center rounded-full border border-[#8b5cf6]/50 bg-[#1c1538] px-3.5 py-1.5 text-[12.5px] text-[#a99fc7]">
+                  Self-hosted AI endpoint
+                </div>
+
+                <div className="absolute -bottom-10 right-4 sm:right-8">
+                  <div className="rounded-full border border-[#2c2353] bg-[#16112b] px-3.5 py-1.5 text-[12.5px] text-[#a99fc7]/70">
+                    Hosted coding agent (optional) · provider&apos;s terms apply
+                  </div>
+                </div>
+
+                <svg className="pointer-events-none absolute inset-0 h-full w-full overflow-visible" aria-hidden="true">
+                  <line x1="84%" y1="76%" x2="96%" y2="108%" stroke="#3f3566" strokeWidth="2" strokeDasharray="5 4" />
+                </svg>
+              </div>
+            </div>
+
+            <p className="mt-8 max-w-[820px] text-[14px] leading-[1.6] text-[#a99fc7]">
+              AppMap runs inside your environment with no outbound dependency on AppMap services. Offline activation and internal distribution are supported. There is no AppMap cloud for traces.
+            </p>
+            <p className="mt-4 max-w-[820px] text-[14px] leading-[1.6] text-[#a99fc7]">
+              Trust, but verify:{" "}
+              <ExternalLink href="https://github.com/getappmap">open-source clients</ExternalLink> and a{" "}
+              <ExternalLink href="https://github.com/getappmap/appmap">published data spec</ExternalLink>. Developers and
+              security reviewers can audit what AppMap records and what it sends to the agent.
+            </p>
+          </div>
+        </section>
+
+        <DeploymentDiagram />
 
         <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
@@ -326,12 +344,12 @@ function EnterprisePageInner() {
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">From pilot to policy</h2>
-            <ol className="mt-8 grid gap-4 lg:grid-cols-3 lg:items-start">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">From one workstation to CI</h2>
+            <ol className="mt-8 grid gap-4 lg:grid-cols-2 lg:items-start">
               {pilotSteps.map((s, i) => (
                 <li
                   key={s.h}
-                  className={`rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 ${i === 1 ? "lg:row-span-2" : ""}`}
+                  className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6"
                 >
                   <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Step {i + 1}</div>
                   <h3 className="mt-2 text-[17px] font-bold text-[#f2effb]">{s.h}</h3>
@@ -340,7 +358,7 @@ function EnterprisePageInner() {
                     <figure className="mt-5 rounded-lg border border-[#2c2353] bg-[#0d0a1a] p-2">
                       <img
                         src="/marketing-assets/img/appmap/waltzbehaviorheld_branded.svg"
-                        alt="AppMap demo recordings of the public open-source FINOS Waltz project, comparing the same endpoint before and after an unrelated change."
+                        alt="AppMap demo traces of the public open-source FINOS Waltz project, comparing the same endpoint before and after an unrelated change."
                         className="w-full h-auto rounded"
                         loading="lazy"
                         decoding="async"
@@ -353,18 +371,6 @@ function EnterprisePageInner() {
                 </li>
               ))}
             </ol>
-            <div className="mx-auto mt-12 max-w-[840px] border-t border-b border-[#2c2353] py-10 text-center">
-              <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">
-                Where the commercial line is
-              </div>
-              <p className="mt-4 text-[17px] leading-[1.65] text-[#f2effb]">
-                AppMap is free at the developer's desk: the extensions, the CLI, the MCP server, every recording they make, and AppMap Gold Traces versioned in the repository. Enterprise adds controlled deployment, packaging, configuration, integrations, training, priority support, and SLAs, including airgapped operation. If AppMap has already spread inside your organization,{" "}
-                <Link to="/book-a-demo" className="font-semibold text-[#ff07aa] hover:underline">
-                  talk to us
-                </Link>
-                .
-              </p>
-            </div>
             <div className="mt-10">
               <Link to="/book-a-demo" className="inline-block rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
                 Book a Demo

@@ -4,19 +4,19 @@ import { Header } from "@/components/layout/Header";
 const securityFaqs = [
   {
     q: "Does AppMap send code or runtime data to the cloud?",
-    a: "AppMap does not send recordings to an AppMap-operated cloud. Recording, sanitization, and comparison run in your developer environment or CI, and recordings stay with your editor and your repository. If you choose a hosted AI agent, selected context may be sent to that provider under its configuration and terms.",
+    a: "AppMap does not send traces to an AppMap-operated cloud. AppMap records, sanitizes, and compares traces in your developer environment or CI. Working AppMap traces stay in the developer environment. When Gold Traces are committed with the code, AppMap sanitizes them first. If the developer uses a hosted coding agent, some context goes to that provider. The provider's configuration and terms apply.",
   },
   {
     q: "Where does AppMap store runtime behavior?",
-    a: "Recordings are written locally at capture time, typically to a tmp/appmap directory in the project. Recordings your team keeps, such as AppMap Gold Traces, are promoted into a .appmap directory in the repository and versioned like any other file. Baselines committed to the repository are sanitized first: captured values are replaced with deterministic tokens, so the versioned trace preserves structural behavior without the original parameter, return, or message values.",
+    a: "Traces are written locally at capture time, typically to a tmp/appmap directory in the project. Traces your team keeps as AppMap Gold Traces are committed to the gold_traces directory in the repository and versioned like any other file. Gold Traces are sanitized before they are committed to protect against including PII, secrets, or credentials. AppMap is open source, so the implementation can be inspected directly.",
   },
   {
     q: "Where are AppMap files stored?",
-    a: "On the developer machine and in your repository. Transient captures live in tmp/appmap; promoted recordings live in .appmap. They are plain files: retention is under your control, and deleting a recording is an ordinary file delete.",
+    a: "On the developer machine and in your repository. Working traces live in tmp/appmap. AppMap Gold Traces live in the gold_traces directory in the repository. They are plain files: retention is under your control, and deleting a trace is an ordinary file delete.",
   },
   {
     q: "Is sign in required to use AppMap?",
-    a: "Community activation is a one-time identity check via GitHub, GitLab, or email, in the editor. No recordings are involved. Enterprise deployments support offline activation and internal distribution for air-gapped environments.",
+    a: "Community activation is a one-time identity check via GitHub, GitLab, or email, in the editor. No traces are involved. Enterprise deployments support offline activation and internal distribution for air-gapped environments.",
   },
   {
     q: "Does signing in with GitHub or GitLab give AppMap access to my code?",
@@ -24,13 +24,13 @@ const securityFaqs = [
   },
   {
     q: "How does AppMap work with MCP?",
-    a: "AppMap exposes the traces over the Model Context Protocol. Agents call get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server to read the same evidence you see in your editor.",
+    a: "AppMap exposes the traces over the Model Context Protocol. Coding agents query the same traces behind the maps you see in the editor, calling get_call_tree, find_calls, find_queries, and find_requests over the AppMap MCP server.",
   },
 ];
 
 const title = "Security FAQ | AppMap";
 const description =
-  "How AppMap handles code, runtime data, sign in, and file storage. AppMap recordings stay in your environment.";
+  "How AppMap handles code, runtime data, sign in, and file storage. AppMap traces stay in your environment.";
 
 export const Route = createFileRoute("/security-faq")({
   head: () => ({
@@ -62,7 +62,7 @@ function SecurityFaqPage() {
               Security FAQ
             </div>
             <h1 className="mt-4 max-w-4xl text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-              AppMap recordings stay in your environment.
+              AppMap traces stay in your environment.
             </h1>
           </div>
         </section>

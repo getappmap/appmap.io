@@ -13,6 +13,6 @@ AppMap Gold Traces are recordings promoted into approved before/after behavioral
 - How it works: https://appmap.io/how-it-works
 - Architecture: https://appmap.io/architecture
 - Benchmarks: https://appmap.io/benchmarks
-- Compatibility: https://appmap.io/compatibility
+- Compatibility: https://appmap.io/how-it-works#compatibility
 - Enterprise: https://appmap.io/enterprise
 - GitHub: https://github.com/getappmap

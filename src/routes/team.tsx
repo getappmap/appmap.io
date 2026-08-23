@@ -109,6 +109,40 @@ function TeamPage() {
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
+              Where AppMap comes from
+            </h2>
+            <div className="mt-6 max-w-[760px] space-y-4">
+              <p className="text-[17px] leading-[1.7] text-[#a99fc7]">
+                The AppMap product launched in 2021. During Startup Battlefield in October 2022,
+                TechCrunch described it as{" "}
+                <a
+                  href="https://techcrunch.com/2022/10/18/code-analysis-tool-appmap-wants-to-become-google-maps-for-developers/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#f2effb] underline transition hover:text-[#ff07aa]"
+                >
+                  “Google Maps for developers.”
+                </a>{" "}
+                The idea was simple: developers should be able to see software behavior as they write
+                code. “When we don’t know how our software works, we’re making best guesses when we
+                write code,” Elizabeth told TechCrunch.
+              </p>
+              <p className="text-[17px] leading-[1.7] text-[#a99fc7]">
+                Today, AI coding agents make code changes continuously, and the guessing problem is
+                bigger. The original loop still holds:{" "}
+                <span className="font-semibold text-[#f2effb]">Map. Analyze. Share. Repeat.</span>{" "}
+                Map turns runtime traces into diagrams of application behavior. Analyze compares traces to find behavioral changes, drift, performance issues, and security impact. Share puts AppMap Gold Traces with the code and the behavioral review in the pull request. Repeat: as the code changes, record fresh traces and compare again.
+              </p>
+              <p className="text-[18px] font-semibold leading-[1.7] text-[#f2effb]">
+                AI did not create AppMap’s thesis. It made the thesis urgent.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
               Work with us
             </h2>
             <p className="mt-6 max-w-[760px] text-[17px] leading-[1.7] text-[#a99fc7]">

@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { HomeHero } from "@/components/sections/home/HomeHero";
 import { ReviewLoop } from "@/components/sections/home/ReviewLoop";
 import { PainStats } from "@/components/sections/home/PainStats";
-import { OneVsFifteen } from "@/components/sections/home/OneVsFifteen";
+
 import { TrustBar } from "@/components/sections/home/TrustBar";
 import { ReviewWhatAIDid } from "@/components/sections/home/ReviewWhatAIDid";
 import { BehavioralReview } from "@/components/sections/home/BehavioralReview";
@@ -14,7 +14,7 @@ import { ClosingCTA } from "@/components/sections/home/ClosingCTA";
 
 const title = "AppMap: Runtime evidence for AI-assisted development";
 const description =
-  "AppMap records what your application actually does. Fresh traces with every change, compared against the last set, before anything ships.";
+  "Code changes outrun our understanding. See how every change behaves before it merges. AppMap records and compares application behavior, giving developers and coding agents the same runtime evidence to act on every change.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -40,7 +40,7 @@ export const Route = createFileRoute("/")({
         rel: "preload",
         as: "image",
         href: "https://appmap.io/marketing-assets/img/appmap/dependency-map.webp",
-        fetchpriority: "high",
+        fetchPriority: "high",
       },
     ],
     scripts: [
@@ -53,13 +53,30 @@ export const Route = createFileRoute("/")({
           applicationCategory: "DeveloperApplication",
           operatingSystem: "Windows, macOS, Linux",
           description,
-          offers: {
-            "@type": "Offer",
-            name: "Community",
-            price: "0",
-            priceCurrency: "USD",
-            description: "Free for individual developers at their desk.",
-          },
+          offers: [
+            {
+              "@type": "Offer",
+              name: "Community",
+              price: "0",
+              priceCurrency: "USD",
+              description: "For developers who can self-serve.",
+            },
+            {
+              "@type": "Offer",
+              name: "Professional",
+              price: "15",
+              priceCurrency: "USD",
+              description:
+                "For a developer who wants priority support. $15 per developer per month.",
+            },
+            {
+              "@type": "Offer",
+              name: "Enterprise",
+              priceCurrency: "USD",
+              description:
+                "For the organization. Controlled deployment, organizational configuration, and enterprise support.",
+            },
+          ],
         }),
       },
       {
@@ -87,13 +104,12 @@ function Index() {
       <main>
         <HomeHero />
         <PainStats />
+        <TrustBar />
+        <Reviews />
         <ReviewWhatAIDid />
-        <OneVsFifteen />
         <ReviewLoop />
         <HowItWorksReveal />
         <BehavioralReview />
-        <TrustBar />
-        <Reviews />
         <ClosingCTA />
       </main>
     </div>
