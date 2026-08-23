@@ -53,14 +53,12 @@ export function HomeHero() {
         
 
         <div className="mt-11">
-          <MotionOrPoster
-            src="/marketing-assets/video/dependency-map.mp4"
-            poster="/marketing-assets/img/appmap/dependency-map.webp"
-            alt="AppMap dependency map of a running application, showing packages, classes, and the calls between them."
-            width={1600}
-            height={900}
-            className="aspect-[16/9] w-full rounded-xl border border-[#2c2353] bg-[#16112b] object-cover object-left shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
-          />
+          <div
+            className="mx-auto overflow-hidden rounded-xl border border-[#2c2353] bg-[#16112b] shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
+            style={{ width: "100%", maxWidth: "960px", height: "460px" }}
+          >
+            <appmap-live-trace scenario="web"></appmap-live-trace>
+          </div>
           <p className="mt-5 text-center text-[13px] font-semibold text-[#f2effb]">
             Map. Analyze. Share. Repeat.
           </p>
