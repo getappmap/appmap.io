@@ -1,7 +1,4 @@
 import { VSCODE_INSTALL_URL, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
-import { Em } from "@/components/common/Em";
-import { MotionOrPoster } from "@/components/common/MotionOrPoster";
-
 
 export function HomeHero() {
   return (
