@@ -73,8 +73,7 @@ function TeamPage() {
             </h1>
             <p className="mt-6 max-w-[760px] text-[22px] font-semibold leading-[1.25] tracking-[-0.3px] text-[#f2effb] sm:text-[26px]">
               AppMap is built by a small team with deep experience in developer tools, enterprise
-              security, runtime systems, and regulated data. Its founders previously built Conjur,
-              acquired by CyberArk.
+              security, runtime systems, and regulated data.
             </p>
           </div>
         </section>
