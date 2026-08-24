@@ -11,6 +11,8 @@ import { BehavioralReview } from "@/components/sections/home/BehavioralReview";
 import { Reviews } from "@/components/sections/home/Reviews";
 import { HowItWorksReveal } from "@/components/sections/home/HowItWorksReveal";
 import { ClosingCTA } from "@/components/sections/home/ClosingCTA";
+import { BenchmarkStrip } from "@/components/sections/home/BenchmarkStrip";
+import { EnterpriseStrip } from "@/components/sections/home/EnterpriseStrip";
 
 const title = "AppMap: Runtime evidence for AI-assisted development";
 const description =
@@ -104,12 +106,14 @@ function Index() {
       <main>
         <HomeHero />
         <PainStats />
-        <TrustBar />
         <Reviews />
         <ReviewWhatAIDid />
         <ReviewLoop />
+        <BenchmarkStrip />
+        <TrustBar />
         <HowItWorksReveal />
         <BehavioralReview />
+        <EnterpriseStrip />
         <ClosingCTA />
       </main>
     </div>
