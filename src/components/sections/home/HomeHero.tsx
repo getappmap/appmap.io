@@ -32,7 +32,7 @@ export function HomeHero() {
           </span>
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          AppMap records and compares application behavior, giving developers and coding agents the same runtime evidence to act on every change.
+          AppMap records and compares application behavior. Developers inspect the diagrams. Coding agents query the same traces.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
