@@ -41,6 +41,7 @@ const cols: {
     links: [
       { label: "Team", href: "/team" },
       { label: "Blog", href: "/blog", external: true },
+      { label: "Release Notes", href: "/release-notes" },
       {
         label: "Code of Conduct",
         href: "https://appmap.io/community/code-of-conduct",
