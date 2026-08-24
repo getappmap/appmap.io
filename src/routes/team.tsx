@@ -134,7 +134,8 @@ function TeamPage() {
                 Map turns runtime traces into diagrams of application behavior. Analyze compares traces to find behavioral changes, drift, performance issues, and security impact. Share puts AppMap Gold Traces with the code and the behavioral review in the pull request. Repeat: as the code changes, record fresh traces and compare again.
               </p>
               <p className="text-[18px] font-semibold leading-[1.7] text-[#f2effb]">
-                AI did not create AppMap’s thesis. It made the thesis urgent.
+                AppMap was built before coding agents. It has always been about making running
+                software easier to understand. Coding agents made that need urgent.
               </p>
             </div>
           </div>
