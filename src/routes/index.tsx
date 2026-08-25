@@ -11,10 +11,12 @@ import { BehavioralReview } from "@/components/sections/home/BehavioralReview";
 import { Reviews } from "@/components/sections/home/Reviews";
 import { HowItWorksReveal } from "@/components/sections/home/HowItWorksReveal";
 import { ClosingCTA } from "@/components/sections/home/ClosingCTA";
+import { BenchmarkStrip } from "@/components/sections/home/BenchmarkStrip";
+import { EnterpriseStrip } from "@/components/sections/home/EnterpriseStrip";
 
 const title = "AppMap: Runtime evidence for AI-assisted development";
 const description =
-  "Code changes outrun our understanding. See how every change behaves before it merges. AppMap records and compares application behavior, giving developers and coding agents the same runtime evidence to act on every change.";
+  "Code changes outrun our understanding. See how every change behaves before it merges. AppMap records and compares application behavior for developers and coding agents.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -28,7 +30,7 @@ export const Route = createFileRoute("/")({
       { property: "og:image", content: "https://appmap.io/marketing-assets/og/og-card.png" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "Every AI coding tool can read your source code. AppMap shows it what actually happened." },
+      { property: "og:image:alt", content: "Code changes outrun our understanding. See how every change behaves before it merges." },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
       { name: "twitter:card", content: "summary_large_image" },
@@ -104,12 +106,14 @@ function Index() {
       <main>
         <HomeHero />
         <PainStats />
-        <TrustBar />
         <Reviews />
         <ReviewWhatAIDid />
         <ReviewLoop />
+        <BenchmarkStrip />
+        <TrustBar />
         <HowItWorksReveal />
         <BehavioralReview />
+        <EnterpriseStrip />
         <ClosingCTA />
       </main>
     </div>

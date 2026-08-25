@@ -413,7 +413,7 @@ grep -rn "ledger.write" src/
           </div>
 
           <p className="mt-4 text-center text-[13px] text-[#a99fc7]">
-            One get_call_tree query returns the execution path. A representative source-only search requires 15+ calls to reconstruct the same context.
+            One get_call_tree query returns the execution path. A representative source-only search requires 15+ calls to approximate the same context, and some runtime facts, like what a query actually returned, cannot be recovered from source at all.
           </p>
 
         </div>
