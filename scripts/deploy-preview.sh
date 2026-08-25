@@ -16,14 +16,29 @@ cd "$(dirname "$0")/.."
 BRANCH="feat/migrate-to-new-marketing-pages"
 PROJECT="applandinc-github-io"
 PROBE="/docs/appmap-docs"
+# Optional: a commit hash (short or long) the deployment must be built from.
+# Without it, the newest listed deployment is used — which may lag a push
+# whose Pages build has not started yet.
+WANT_COMMIT="${1:-}"
 
-echo "Finding latest Pages deployment for $BRANCH..."
-ORIGIN=$(npx wrangler pages deployment list --project-name "$PROJECT" 2>/dev/null \
-  | grep -F "$BRANCH" \
-  | grep -oE "https://[a-z0-9]+\.$PROJECT\.pages\.dev" \
-  | head -1)
-[ -n "$ORIGIN" ] || { echo "No deployment found for $BRANCH" >&2; exit 1; }
-echo "Latest deployment: $ORIGIN"
+find_origin() {
+  npx wrangler pages deployment list --project-name "$PROJECT" 2>/dev/null \
+    | grep -F "$BRANCH" \
+    | { if [ -n "$WANT_COMMIT" ]; then grep -F "$(echo "$WANT_COMMIT" | cut -c1-7)"; else cat; fi; } \
+    | grep -oE "https://[a-z0-9]+\.$PROJECT\.pages\.dev" \
+    | head -1
+}
+
+echo "Finding Pages deployment for $BRANCH${WANT_COMMIT:+ @ $WANT_COMMIT}..."
+ORIGIN=$(find_origin)
+for i in $(seq 1 20); do
+  [ -n "$ORIGIN" ] && break
+  echo "  no matching deployment yet — waiting 30s"
+  sleep 30
+  ORIGIN=$(find_origin)
+done
+[ -n "$ORIGIN" ] || { echo "No deployment found for $BRANCH ${WANT_COMMIT}" >&2; exit 1; }
+echo "Deployment: $ORIGIN"
 
 echo "Waiting for $ORIGIN$PROBE to propagate..."
 for i in $(seq 1 20); do
