@@ -14,6 +14,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SecurityFaqRouteImport } from './routes/security-faq'
 import { Route as SecurityRouteImport } from './routes/security'
 import { Route as ReleaseNotesRouteImport } from './routes/release-notes'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PlatformRouteImport } from './routes/platform'
 import { Route as HowItWorksRouteImport } from './routes/how-it-works'
@@ -28,6 +29,12 @@ import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BenchmarksIndexRouteImport } from './routes/benchmarks.index'
 import { Route as NavieSplatRouteImport } from './routes/navie.$'
+import { Route as CommunityTermsAndConditionsDothtmlRouteImport } from './routes/community.terms-and-conditions[.]html'
+import { Route as CommunityTermsAndConditionsRouteImport } from './routes/community.terms-and-conditions'
+import { Route as CommunityPrivacyPolicyDothtmlRouteImport } from './routes/community.privacy-policy[.]html'
+import { Route as CommunityPrivacyPolicyRouteImport } from './routes/community.privacy-policy'
+import { Route as CommunityCodeOfConductDothtmlRouteImport } from './routes/community.code-of-conduct[.]html'
+import { Route as CommunityCodeOfConductRouteImport } from './routes/community.code-of-conduct'
 import { Route as BenchmarksSweBenchRouteImport } from './routes/benchmarks.swe-bench'
 import { Route as DocsNavieSplatRouteImport } from './routes/docs.navie.$'
 
@@ -54,6 +61,11 @@ const SecurityRoute = SecurityRouteImport.update({
 const ReleaseNotesRoute = ReleaseNotesRouteImport.update({
   id: '/release-notes',
   path: '/release-notes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PricingRoute = PricingRouteImport.update({
@@ -126,6 +138,40 @@ const NavieSplatRoute = NavieSplatRouteImport.update({
   path: '/navie/$',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CommunityTermsAndConditionsDothtmlRoute =
+  CommunityTermsAndConditionsDothtmlRouteImport.update({
+    id: '/community/terms-and-conditions.html',
+    path: '/community/terms-and-conditions.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CommunityTermsAndConditionsRoute =
+  CommunityTermsAndConditionsRouteImport.update({
+    id: '/community/terms-and-conditions',
+    path: '/community/terms-and-conditions',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CommunityPrivacyPolicyDothtmlRoute =
+  CommunityPrivacyPolicyDothtmlRouteImport.update({
+    id: '/community/privacy-policy.html',
+    path: '/community/privacy-policy.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CommunityPrivacyPolicyRoute = CommunityPrivacyPolicyRouteImport.update({
+  id: '/community/privacy-policy',
+  path: '/community/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunityCodeOfConductDothtmlRoute =
+  CommunityCodeOfConductDothtmlRouteImport.update({
+    id: '/community/code-of-conduct.html',
+    path: '/community/code-of-conduct.html',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CommunityCodeOfConductRoute = CommunityCodeOfConductRouteImport.update({
+  id: '/community/code-of-conduct',
+  path: '/community/code-of-conduct',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BenchmarksSweBenchRoute = BenchmarksSweBenchRouteImport.update({
   id: '/swe-bench',
   path: '/swe-bench',
@@ -150,12 +196,19 @@ export interface FileRoutesByFullPath {
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
+  '/privacy': typeof PrivacyRoute
   '/release-notes': typeof ReleaseNotesRoute
   '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
+  '/community/code-of-conduct': typeof CommunityCodeOfConductRoute
+  '/community/code-of-conduct.html': typeof CommunityCodeOfConductDothtmlRoute
+  '/community/privacy-policy': typeof CommunityPrivacyPolicyRoute
+  '/community/privacy-policy.html': typeof CommunityPrivacyPolicyDothtmlRoute
+  '/community/terms-and-conditions': typeof CommunityTermsAndConditionsRoute
+  '/community/terms-and-conditions.html': typeof CommunityTermsAndConditionsDothtmlRoute
   '/navie/$': typeof NavieSplatRoute
   '/benchmarks/': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
@@ -172,12 +225,19 @@ export interface FileRoutesByTo {
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
+  '/privacy': typeof PrivacyRoute
   '/release-notes': typeof ReleaseNotesRoute
   '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
+  '/community/code-of-conduct': typeof CommunityCodeOfConductRoute
+  '/community/code-of-conduct.html': typeof CommunityCodeOfConductDothtmlRoute
+  '/community/privacy-policy': typeof CommunityPrivacyPolicyRoute
+  '/community/privacy-policy.html': typeof CommunityPrivacyPolicyDothtmlRoute
+  '/community/terms-and-conditions': typeof CommunityTermsAndConditionsRoute
+  '/community/terms-and-conditions.html': typeof CommunityTermsAndConditionsDothtmlRoute
   '/navie/$': typeof NavieSplatRoute
   '/benchmarks': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
@@ -196,12 +256,19 @@ export interface FileRoutesById {
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
+  '/privacy': typeof PrivacyRoute
   '/release-notes': typeof ReleaseNotesRoute
   '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/team': typeof TeamRoute
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
+  '/community/code-of-conduct': typeof CommunityCodeOfConductRoute
+  '/community/code-of-conduct.html': typeof CommunityCodeOfConductDothtmlRoute
+  '/community/privacy-policy': typeof CommunityPrivacyPolicyRoute
+  '/community/privacy-policy.html': typeof CommunityPrivacyPolicyDothtmlRoute
+  '/community/terms-and-conditions': typeof CommunityTermsAndConditionsRoute
+  '/community/terms-and-conditions.html': typeof CommunityTermsAndConditionsDothtmlRoute
   '/navie/$': typeof NavieSplatRoute
   '/benchmarks/': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
@@ -221,12 +288,19 @@ export interface FileRouteTypes {
     | '/how-it-works'
     | '/platform'
     | '/pricing'
+    | '/privacy'
     | '/release-notes'
     | '/security'
     | '/security-faq'
     | '/sitemap.xml'
     | '/team'
     | '/benchmarks/swe-bench'
+    | '/community/code-of-conduct'
+    | '/community/code-of-conduct.html'
+    | '/community/privacy-policy'
+    | '/community/privacy-policy.html'
+    | '/community/terms-and-conditions'
+    | '/community/terms-and-conditions.html'
     | '/navie/$'
     | '/benchmarks/'
     | '/docs/navie/$'
@@ -243,12 +317,19 @@ export interface FileRouteTypes {
     | '/how-it-works'
     | '/platform'
     | '/pricing'
+    | '/privacy'
     | '/release-notes'
     | '/security'
     | '/security-faq'
     | '/sitemap.xml'
     | '/team'
     | '/benchmarks/swe-bench'
+    | '/community/code-of-conduct'
+    | '/community/code-of-conduct.html'
+    | '/community/privacy-policy'
+    | '/community/privacy-policy.html'
+    | '/community/terms-and-conditions'
+    | '/community/terms-and-conditions.html'
     | '/navie/$'
     | '/benchmarks'
     | '/docs/navie/$'
@@ -266,12 +347,19 @@ export interface FileRouteTypes {
     | '/how-it-works'
     | '/platform'
     | '/pricing'
+    | '/privacy'
     | '/release-notes'
     | '/security'
     | '/security-faq'
     | '/sitemap.xml'
     | '/team'
     | '/benchmarks/swe-bench'
+    | '/community/code-of-conduct'
+    | '/community/code-of-conduct.html'
+    | '/community/privacy-policy'
+    | '/community/privacy-policy.html'
+    | '/community/terms-and-conditions'
+    | '/community/terms-and-conditions.html'
     | '/navie/$'
     | '/benchmarks/'
     | '/docs/navie/$'
@@ -290,11 +378,18 @@ export interface RootRouteChildren {
   HowItWorksRoute: typeof HowItWorksRoute
   PlatformRoute: typeof PlatformRoute
   PricingRoute: typeof PricingRoute
+  PrivacyRoute: typeof PrivacyRoute
   ReleaseNotesRoute: typeof ReleaseNotesRoute
   SecurityRoute: typeof SecurityRoute
   SecurityFaqRoute: typeof SecurityFaqRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TeamRoute: typeof TeamRoute
+  CommunityCodeOfConductRoute: typeof CommunityCodeOfConductRoute
+  CommunityCodeOfConductDothtmlRoute: typeof CommunityCodeOfConductDothtmlRoute
+  CommunityPrivacyPolicyRoute: typeof CommunityPrivacyPolicyRoute
+  CommunityPrivacyPolicyDothtmlRoute: typeof CommunityPrivacyPolicyDothtmlRoute
+  CommunityTermsAndConditionsRoute: typeof CommunityTermsAndConditionsRoute
+  CommunityTermsAndConditionsDothtmlRoute: typeof CommunityTermsAndConditionsDothtmlRoute
   NavieSplatRoute: typeof NavieSplatRoute
   DocsNavieSplatRoute: typeof DocsNavieSplatRoute
 }
@@ -334,6 +429,13 @@ declare module '@tanstack/react-router' {
       path: '/release-notes'
       fullPath: '/release-notes'
       preLoaderRoute: typeof ReleaseNotesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pricing': {
@@ -434,6 +536,48 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NavieSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/community/terms-and-conditions.html': {
+      id: '/community/terms-and-conditions.html'
+      path: '/community/terms-and-conditions.html'
+      fullPath: '/community/terms-and-conditions.html'
+      preLoaderRoute: typeof CommunityTermsAndConditionsDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/community/terms-and-conditions': {
+      id: '/community/terms-and-conditions'
+      path: '/community/terms-and-conditions'
+      fullPath: '/community/terms-and-conditions'
+      preLoaderRoute: typeof CommunityTermsAndConditionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/community/privacy-policy.html': {
+      id: '/community/privacy-policy.html'
+      path: '/community/privacy-policy.html'
+      fullPath: '/community/privacy-policy.html'
+      preLoaderRoute: typeof CommunityPrivacyPolicyDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/community/privacy-policy': {
+      id: '/community/privacy-policy'
+      path: '/community/privacy-policy'
+      fullPath: '/community/privacy-policy'
+      preLoaderRoute: typeof CommunityPrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/community/code-of-conduct.html': {
+      id: '/community/code-of-conduct.html'
+      path: '/community/code-of-conduct.html'
+      fullPath: '/community/code-of-conduct.html'
+      preLoaderRoute: typeof CommunityCodeOfConductDothtmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/community/code-of-conduct': {
+      id: '/community/code-of-conduct'
+      path: '/community/code-of-conduct'
+      fullPath: '/community/code-of-conduct'
+      preLoaderRoute: typeof CommunityCodeOfConductRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/benchmarks/swe-bench': {
       id: '/benchmarks/swe-bench'
       path: '/swe-bench'
@@ -478,11 +622,19 @@ const rootRouteChildren: RootRouteChildren = {
   HowItWorksRoute: HowItWorksRoute,
   PlatformRoute: PlatformRoute,
   PricingRoute: PricingRoute,
+  PrivacyRoute: PrivacyRoute,
   ReleaseNotesRoute: ReleaseNotesRoute,
   SecurityRoute: SecurityRoute,
   SecurityFaqRoute: SecurityFaqRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TeamRoute: TeamRoute,
+  CommunityCodeOfConductRoute: CommunityCodeOfConductRoute,
+  CommunityCodeOfConductDothtmlRoute: CommunityCodeOfConductDothtmlRoute,
+  CommunityPrivacyPolicyRoute: CommunityPrivacyPolicyRoute,
+  CommunityPrivacyPolicyDothtmlRoute: CommunityPrivacyPolicyDothtmlRoute,
+  CommunityTermsAndConditionsRoute: CommunityTermsAndConditionsRoute,
+  CommunityTermsAndConditionsDothtmlRoute:
+    CommunityTermsAndConditionsDothtmlRoute,
   NavieSplatRoute: NavieSplatRoute,
   DocsNavieSplatRoute: DocsNavieSplatRoute,
 }

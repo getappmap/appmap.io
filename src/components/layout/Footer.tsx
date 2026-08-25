@@ -42,10 +42,7 @@ const cols: {
       { label: "Team", href: "/team" },
       { label: "Blog", href: "/blog", external: true },
       { label: "Release Notes", href: "/release-notes" },
-      {
-        label: "Code of Conduct",
-        href: "https://appmap.io/community/code-of-conduct",
-      },
+      { label: "Code of Conduct", href: "/community/code-of-conduct" },
     ],
   },
 ];
@@ -95,18 +92,11 @@ export function Footer() {
           <p className="mt-1">AppLand and AppMap are registered trademarks of AppLand, Inc.</p>
         </div>
         <nav className="flex flex-wrap items-center gap-x-5 gap-y-1">
-          <a
-            href="https://appmap.io/community/privacy-policy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-colors hover:text-[#a99fc7]"
-          >
+          <a href="/community/privacy-policy" className="transition-colors hover:text-[#a99fc7]">
             Privacy
           </a>
           <a
-            href="https://appmap.io/community/terms-and-conditions.html"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/community/terms-and-conditions"
             className="transition-colors hover:text-[#a99fc7]"
           >
             Terms

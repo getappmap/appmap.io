@@ -17,6 +17,9 @@ const entries = [
   { path: "/book-a-demo", priority: "0.6", changefreq: "monthly" as const },
   { path: "/cli-quickstart", priority: "0.6", changefreq: "monthly" as const },
   { path: "/release-notes", priority: "0.6", changefreq: "weekly" as const },
+  { path: "/community/privacy-policy", priority: "0.3", changefreq: "yearly" as const },
+  { path: "/community/terms-and-conditions", priority: "0.3", changefreq: "yearly" as const },
+  { path: "/community/code-of-conduct", priority: "0.3", changefreq: "yearly" as const },
 ];
 
 export const Route = createFileRoute("/sitemap.xml")({
