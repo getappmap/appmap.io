@@ -12,14 +12,15 @@
   },
   // Preview worker: separate name, own workers.dev URL, no production routes.
   // Deploy with:  npm run build && npx wrangler deploy --env preview --config .output/server/wrangler.json
-  // Point LEGACY_ORIGIN at the Render deploy of the branch you want to preview
-  // (e.g. a Render PR preview of applandinc.github.io's
-  // feat/migrate-to-new-marketing-pages branch).
+  // LEGACY_ORIGIN points at the Cloudflare Pages preview of applandinc.github.io
+  // PR #1583 (feat/migrate-to-new-marketing-pages). Pages preview URLs are
+  // per-deployment: a new push to that PR mints a new hash, so update this
+  // value from the PR's "Cloudflare Pages" check when the branch changes.
   "env": {
     "preview": {
       "vars": {
         "SUPABASE_URL": "https://ulrbnkrvxzbtqancxmtn.supabase.co",
-        "LEGACY_ORIGIN": "https://appland-com.onrender.com",
+        "LEGACY_ORIGIN": "https://73653cb0.applandinc-github-io.pages.dev",
       },
     },
   },
