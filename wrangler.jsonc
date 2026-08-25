@@ -10,20 +10,10 @@
   "vars": {
     "SUPABASE_URL": "https://ulrbnkrvxzbtqancxmtn.supabase.co",
   },
-  // Preview worker: separate name, own workers.dev URL, no production routes.
-  // Deploy with:  npm run build && npx wrangler deploy --env preview --config .output/server/wrangler.json
-  // LEGACY_ORIGIN points at the Cloudflare Pages *branch alias* for
-  // applandinc.github.io's feat/migrate-to-new-marketing-pages branch
-  // (PR #1583). The alias tracks the branch's latest push, so no update is
-  // needed when the branch changes.
-  "env": {
-    "preview": {
-      "vars": {
-        "SUPABASE_URL": "https://ulrbnkrvxzbtqancxmtn.supabase.co",
-        "LEGACY_ORIGIN": "https://feat-migrate-to-new-marketin.applandinc-github-io.pages.dev",
-      },
-    },
-  },
+  // Preview deploys use wrangler.preview.jsonc (a standalone config), NOT a
+  // wrangler environment: nitro copies this file into the build output as a
+  // "redirected" config, and wrangler rejects redirected configs that contain
+  // environments (this broke the deploy-main CI job).
   // SUPABASE_SERVICE_ROLE_KEY is a secret; set it once with:
   //   bunx wrangler secret put SUPABASE_SERVICE_ROLE_KEY
 }

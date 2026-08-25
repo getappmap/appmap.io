@@ -1,0 +1,30 @@
+{
+  // Standalone config for the PREVIEW worker (appmap-io-preview). Kept
+  // separate from wrangler.jsonc because nitro copies that file into the
+  // build output as a "redirected" config, and wrangler rejects redirected
+  // configs containing environments — which broke the deploy-main CI job
+  // when this lived in an "env" block.
+  //
+  // Deploy with:
+  //   npm run build && npx wrangler deploy --config wrangler.preview.jsonc
+  //
+  // LEGACY_ORIGIN points at the Cloudflare Pages *branch alias* for
+  // applandinc.github.io's feat/migrate-to-new-marketing-pages branch
+  // (PR #1583). The alias tracks the branch's latest push.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "appmap-io-preview",
+  "account_id": "4ab8004254243d3c61f6262ba76936c1",
+  "compatibility_date": "2025-09-24",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": ".output/server/index.mjs",
+  "no_bundle": true,
+  "rules": [{ "type": "ESModule", "globs": ["**/*.mjs", "**/*.js"] }],
+  "assets": {
+    "binding": "ASSETS",
+    "directory": ".output/public",
+  },
+  "vars": {
+    "SUPABASE_URL": "https://ulrbnkrvxzbtqancxmtn.supabase.co",
+    "LEGACY_ORIGIN": "https://feat-migrate-to-new-marketin.applandinc-github-io.pages.dev",
+  },
+}
