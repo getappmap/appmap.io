@@ -1,3 +1,29 @@
+# Navie how-to demos moved into the blog (must precede the /navie/* splat)
+/navie/how-to/fixing-performance-issues-with-mongodb-in-a-mern-app   /blog/2024/04/06/fixing-performance-issues-with-mongodb-in-a-mern-app/  301
+/navie/how-to/fixing-performance-issues-with-mongodb-in-a-mern-app/  /blog/2024/04/06/fixing-performance-issues-with-mongodb-in-a-mern-app/  301
+/navie/how-to/improve-db-performance-with-a-caching-key-design   /blog/2024/04/06/improve-db-performance-with-a-caching-key-design/  301
+/navie/how-to/improve-db-performance-with-a-caching-key-design/  /blog/2024/04/06/improve-db-performance-with-a-caching-key-design/  301
+/navie/how-to/adding-a-new-feature-to-a-complex-python-application   /blog/2024/04/07/adding-a-new-feature-to-a-complex-python-application/  301
+/navie/how-to/adding-a-new-feature-to-a-complex-python-application/  /blog/2024/04/07/adding-a-new-feature-to-a-complex-python-application/  301
+/navie/how-to/find-and-fix-a-database-performance-issue-in-ruby-on-rails   /blog/2024/04/08/find-and-fix-a-database-performance-issue-in-ruby-on-rails/  301
+/navie/how-to/find-and-fix-a-database-performance-issue-in-ruby-on-rails/  /blog/2024/04/08/find-and-fix-a-database-performance-issue-in-ruby-on-rails/  301
+/navie/how-to/fix-slow-api-endpoints-in-a-fastapi-app-with-navie   /blog/2024/04/09/fix-slow-api-endpoints-in-a-fastapi-app-with-navie/  301
+/navie/how-to/fix-slow-api-endpoints-in-a-fastapi-app-with-navie/  /blog/2024/04/09/fix-slow-api-endpoints-in-a-fastapi-app-with-navie/  301
+/navie/how-to/automate-openapi-publishing-to-swaggerhub   /blog/2024/05/01/automate-openapi-publishing-to-swaggerhub/  301
+/navie/how-to/automate-openapi-publishing-to-swaggerhub/  /blog/2024/05/01/automate-openapi-publishing-to-swaggerhub/  301
+/navie/how-to/using-appmap-and-smartbear-to-fail-a-ci-build-with-api-differences   /blog/2024/05/01/using-appmap-and-smartbear-to-fail-a-ci-build-with-api-differences/  301
+/navie/how-to/using-appmap-and-smartbear-to-fail-a-ci-build-with-api-differences/  /blog/2024/05/01/using-appmap-and-smartbear-to-fail-a-ci-build-with-api-differences/  301
+# appmap-in-ci-introduction is published: false — no live blog URL
+/navie/how-to/appmap-in-ci-introduction   /blog/  301
+/navie/how-to/appmap-in-ci-introduction/  /blog/  301
+/navie/how-to/using-appmap-diagrams-to-learn-how-unfamiliar-code-works   /blog/2024/05/02/using-appmap-diagrams-to-learn-how-unfamiliar-code-works/  301
+/navie/how-to/using-appmap-diagrams-to-learn-how-unfamiliar-code-works/  /blog/2024/05/02/using-appmap-diagrams-to-learn-how-unfamiliar-code-works/  301
+/navie/how-to/visualize-java-spring-application-behavior-in-vs-code   /blog/2024/05/02/visualize-java-spring-application-behavior-in-vs-code/  301
+/navie/how-to/visualize-java-spring-application-behavior-in-vs-code/  /blog/2024/05/02/visualize-java-spring-application-behavior-in-vs-code/  301
+/navie/how-to/understand-complex-data-flows-and-add-new-features-in-java-spring   /blog/2024/05/06/understand-complex-data-flows-and-add-new-features-in-java-spring/  301
+/navie/how-to/understand-complex-data-flows-and-add-new-features-in-java-spring/  /blog/2024/05/06/understand-complex-data-flows-and-add-new-features-in-java-spring/  301
+/navie/how-to/adding-stripe-integration-to-a-ruby-on-rails-app   /blog/2024/05/22/adding-stripe-integration-to-a-ruby-on-rails-app/  301
+/navie/how-to/adding-stripe-integration-to-a-ruby-on-rails-app/  /blog/2024/05/22/adding-stripe-integration-to-a-ruby-on-rails-app/  301
 /navie            /how-it-works  301
 /navie/*          /how-it-works  301
 /docs/navie       /how-it-works  301

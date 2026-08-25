@@ -9,6 +9,10 @@ export const getRouter = () => {
     routeTree,
     context: { queryClient },
     scrollRestoration: true,
+    // Links should act like links: land at the top of the new page instantly.
+    // Without this, the html { scroll-behavior: smooth } rule animates the
+    // router's scroll-to-top after every client-side navigation.
+    scrollRestorationBehavior: "instant",
     defaultPreloadStaleTime: 0,
   });
 

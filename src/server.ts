@@ -69,6 +69,23 @@ const LEGACY_REDIRECTS: Record<string, string> = {
     "https://join.slack.com/t/appmap-group/shared_invite/zt-2n67m4fdi-mclN_VDZCKTll8VX5oc7FQ",
 };
 
+// The Navie how-to demo pages moved into the blog at their original post
+// dates. Handled here (before SSR) so the app's blanket /navie/* ->
+// /how-it-works route doesn't swallow them.
+const NAVIE_HOWTO_DATES: Record<string, string> = {
+  "fixing-performance-issues-with-mongodb-in-a-mern-app": "2024/04/06",
+  "improve-db-performance-with-a-caching-key-design": "2024/04/06",
+  "adding-a-new-feature-to-a-complex-python-application": "2024/04/07",
+  "find-and-fix-a-database-performance-issue-in-ruby-on-rails": "2024/04/08",
+  "fix-slow-api-endpoints-in-a-fastapi-app-with-navie": "2024/04/09",
+  "automate-openapi-publishing-to-swaggerhub": "2024/05/01",
+  "using-appmap-and-smartbear-to-fail-a-ci-build-with-api-differences": "2024/05/01",
+  "using-appmap-diagrams-to-learn-how-unfamiliar-code-works": "2024/05/02",
+  "visualize-java-spring-application-behavior-in-vs-code": "2024/05/02",
+  "understand-complex-data-flows-and-add-new-features-in-java-spring": "2024/05/06",
+  "adding-stripe-integration-to-a-ruby-on-rails-app": "2024/05/22",
+};
+
 // Pages this app serves whose legacy .html address should normalize to the
 // extensionless route (e.g. /pricing.html -> /pricing).
 const HTML_TO_ROUTE = new Set(["/pricing", "/get-appmap", "/security"]);
@@ -89,6 +106,11 @@ function legacyRedirectLocation(pathname: string): string | undefined {
   const path = normalizeLegacyPath(pathname);
   const mapped = LEGACY_REDIRECTS[path];
   if (mapped) return mapped;
+  if (path.startsWith("/navie/how-to/")) {
+    const slug = path.slice("/navie/how-to/".length);
+    const date = NAVIE_HOWTO_DATES[slug];
+    return date ? `/blog/${date}/${slug}` : "/blog";
+  }
   if (path !== pathname && HTML_TO_ROUTE.has(path)) return path;
   // The whole /product section (incl. Navie product pages, examples, and
   // feedback forms) is retired in favor of the new marketing pages.
