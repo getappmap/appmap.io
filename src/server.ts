@@ -112,8 +112,14 @@ function legacyRedirectLocation(pathname: string): string | undefined {
     return date ? `/blog/${date}/${slug}` : "/blog";
   }
   if (path !== pathname && HTML_TO_ROUTE.has(path)) return path;
-  // The whole /product section (incl. Navie product pages, examples, and
-  // feedback forms) is retired in favor of the new marketing pages.
+  // The product feedback form is gone, but IntelliJ plugin builds bundling
+  // pre-2024 @appland/components still show a "Send your feedback" sidebar
+  // link to it. Send those users to the docs Community page (Slack +
+  // support email) rather than a marketing page.
+  if (path === "/product/feedback" || path.startsWith("/product/feedback/"))
+    return "/docs/community";
+  // The rest of the /product section (incl. Navie product pages and
+  // examples) is retired in favor of the new marketing pages.
   if (path === "/product" || path.startsWith("/product/")) return "/how-it-works";
   // Old home-page aliases and retired sections.
   if (path === "/products" || path.startsWith("/products/")) return "/";
