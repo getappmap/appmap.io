@@ -21,7 +21,14 @@ async function getServerEntry(): Promise<ServerEntry> {
 // The legacy Jekyll site (docs, blog, and not-yet-ported pages) stays deployed
 // on Render. Any GET/HEAD request this app 404s on is retried against that
 // origin, so all pre-existing appmap.io URLs keep working unchanged.
-const LEGACY_ORIGIN = "https://appland-com.onrender.com";
+// Preview deploys can override the origin (e.g. to a Render branch preview)
+// with a LEGACY_ORIGIN var; production uses the default.
+const DEFAULT_LEGACY_ORIGIN = "https://appland-com.onrender.com";
+
+function legacyOrigin(env: unknown): string {
+  const value = (env as { LEGACY_ORIGIN?: unknown } | undefined)?.LEGACY_ORIGIN;
+  return typeof value === "string" && value !== "" ? value.replace(/\/$/, "") : DEFAULT_LEGACY_ORIGIN;
+}
 
 function shouldTryLegacyFallback(request: Request, response: Response): boolean {
   if (response.status !== 404) return false;
@@ -31,20 +38,20 @@ function shouldTryLegacyFallback(request: Request, response: Response): boolean 
   return !pathname.startsWith("/marketing-assets/") && !pathname.startsWith("/_server");
 }
 
-async function fetchFromLegacySite(request: Request): Promise<Response | undefined> {
+async function fetchFromLegacySite(request: Request, origin: string): Promise<Response | undefined> {
   const url = new URL(request.url);
   try {
     // redirect: "manual" passes the legacy site's redirects (e.g. Render's
     // .html-stripping 301s) through to the browser on our own domain.
-    const response = await fetch(new Request(LEGACY_ORIGIN + url.pathname + url.search, request), {
+    const response = await fetch(new Request(origin + url.pathname + url.search, request), {
       redirect: "manual",
     });
     if (response.status === 404) return undefined;
 
     const location = response.headers.get("location");
-    if (location?.startsWith(LEGACY_ORIGIN)) {
+    if (location?.startsWith(origin)) {
       const headers = new Headers(response.headers);
-      headers.set("location", location.slice(LEGACY_ORIGIN.length) || "/");
+      headers.set("location", location.slice(origin.length) || "/");
       return new Response(response.body, { status: response.status, headers });
     }
     return response;
@@ -109,7 +116,7 @@ export default {
       const response = await handler.fetch(request, env, ctx);
       const normalized = await normalizeCatastrophicSsrResponse(response);
       if (shouldTryLegacyFallback(request, normalized)) {
-        const legacy = await fetchFromLegacySite(request);
+        const legacy = await fetchFromLegacySite(request, legacyOrigin(env));
         if (legacy) return legacy;
       }
       return normalized;

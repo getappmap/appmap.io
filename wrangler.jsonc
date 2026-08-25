@@ -10,6 +10,19 @@
   "vars": {
     "SUPABASE_URL": "https://ulrbnkrvxzbtqancxmtn.supabase.co",
   },
+  // Preview worker: separate name, own workers.dev URL, no production routes.
+  // Deploy with:  npm run build && npx wrangler deploy --env preview --config .output/server/wrangler.json
+  // Point LEGACY_ORIGIN at the Render deploy of the branch you want to preview
+  // (e.g. a Render PR preview of applandinc.github.io's
+  // feat/migrate-to-new-marketing-pages branch).
+  "env": {
+    "preview": {
+      "vars": {
+        "SUPABASE_URL": "https://ulrbnkrvxzbtqancxmtn.supabase.co",
+        "LEGACY_ORIGIN": "https://appland-com.onrender.com",
+      },
+    },
+  },
   // SUPABASE_SERVICE_ROLE_KEY is a secret; set it once with:
   //   bunx wrangler secret put SUPABASE_SERVICE_ROLE_KEY
 }
