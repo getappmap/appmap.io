@@ -93,6 +93,33 @@ function SecurityFaqPage() {
             </div>
           </div>
         </section>
+
+        <section
+          id="report-a-security-issue"
+          className="border-t border-[#2c2353] px-6 py-16 scroll-mt-20"
+        >
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[24px] font-extrabold tracking-[-0.6px] text-[#f2effb] sm:text-[28px]">
+              Report a security issue
+            </h2>
+            <p className="mt-4 max-w-[720px] text-[15.5px] leading-[1.7] text-[#a99fc7]">
+              If you believe you have found a vulnerability in AppMap, email{" "}
+              <a href="mailto:info@appmap.io" className="text-[#ff07aa] hover:underline">
+                info@appmap.io
+              </a>{" "}
+              with a description of the issue and steps to reproduce it. Please report
+              vulnerabilities privately by email rather than in a public issue tracker, and give us
+              a reasonable window to address the issue before disclosing it.
+            </p>
+            <p className="mt-3 max-w-[720px] text-[15.5px] leading-[1.7] text-[#a99fc7]">
+              This policy is also published at{" "}
+              <a href="/.well-known/security.txt" className="text-[#ff07aa] hover:underline">
+                /.well-known/security.txt
+              </a>
+              .
+            </p>
+          </div>
+        </section>
       </main>
     </div>
   );

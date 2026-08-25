@@ -112,7 +112,7 @@ export function Footer() {
             Terms
           </a>
           <a
-            href="mailto:info@appmap.io?subject=Security%20disclosure"
+            href="/security-faq#report-a-security-issue"
             className="transition-colors hover:text-[#a99fc7]"
           >
             Report a security issue
