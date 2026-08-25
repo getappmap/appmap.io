@@ -52,6 +52,12 @@ const LEGACY_REDIRECTS: Record<string, string> = {
   "/appmap-analysis": "/how-it-works",
   "/disrupt": "/",
   "/search": "/",
+  // aliases the old home page carried via redirect_from
+  "/appmap-framework": "/",
+  "/status": "/",
+  "/blog/2020/10/14/framework-for-monitoring-end-to-end-code-and-data-flows": "/",
+  // retired resources
+  "/blog/gallery": "/blog",
   // slack.html was a meta-refresh to the community Slack invite
   "/slack":
     "https://join.slack.com/t/appmap-group/shared_invite/zt-2n67m4fdi-mclN_VDZCKTll8VX5oc7FQ",
@@ -81,6 +87,10 @@ function legacyRedirectLocation(pathname: string): string | undefined {
   // The whole /product section (incl. Navie product pages, examples, and
   // feedback forms) is retired in favor of the new marketing pages.
   if (path === "/product" || path.startsWith("/product/")) return "/how-it-works";
+  // Old home-page aliases and retired sections.
+  if (path === "/products" || path.startsWith("/products/")) return "/";
+  if (path === "/use-cases" || path.startsWith("/use-cases/")) return "/how-it-works";
+  if (path === "/resources" || path.startsWith("/resources/")) return "/";
   return undefined;
 }
 
