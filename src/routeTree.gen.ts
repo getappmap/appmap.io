@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TeamRouteImport } from './routes/team'
+import { Route as SupportRouteImport } from './routes/support'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SecurityFaqRouteImport } from './routes/security-faq'
 import { Route as SecurityRouteImport } from './routes/security'
@@ -41,6 +42,11 @@ import { Route as DocsNavieSplatRouteImport } from './routes/docs.navie.$'
 const TeamRoute = TeamRouteImport.update({
   id: '/team',
   path: '/team',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupportRoute = SupportRouteImport.update({
+  id: '/support',
+  path: '/support',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -201,6 +207,7 @@ export interface FileRoutesByFullPath {
   '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/support': typeof SupportRoute
   '/team': typeof TeamRoute
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/community/code-of-conduct': typeof CommunityCodeOfConductRoute
@@ -230,6 +237,7 @@ export interface FileRoutesByTo {
   '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/support': typeof SupportRoute
   '/team': typeof TeamRoute
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/community/code-of-conduct': typeof CommunityCodeOfConductRoute
@@ -261,6 +269,7 @@ export interface FileRoutesById {
   '/security': typeof SecurityRoute
   '/security-faq': typeof SecurityFaqRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/support': typeof SupportRoute
   '/team': typeof TeamRoute
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/community/code-of-conduct': typeof CommunityCodeOfConductRoute
@@ -293,6 +302,7 @@ export interface FileRouteTypes {
     | '/security'
     | '/security-faq'
     | '/sitemap.xml'
+    | '/support'
     | '/team'
     | '/benchmarks/swe-bench'
     | '/community/code-of-conduct'
@@ -322,6 +332,7 @@ export interface FileRouteTypes {
     | '/security'
     | '/security-faq'
     | '/sitemap.xml'
+    | '/support'
     | '/team'
     | '/benchmarks/swe-bench'
     | '/community/code-of-conduct'
@@ -352,6 +363,7 @@ export interface FileRouteTypes {
     | '/security'
     | '/security-faq'
     | '/sitemap.xml'
+    | '/support'
     | '/team'
     | '/benchmarks/swe-bench'
     | '/community/code-of-conduct'
@@ -383,6 +395,7 @@ export interface RootRouteChildren {
   SecurityRoute: typeof SecurityRoute
   SecurityFaqRoute: typeof SecurityFaqRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  SupportRoute: typeof SupportRoute
   TeamRoute: typeof TeamRoute
   CommunityCodeOfConductRoute: typeof CommunityCodeOfConductRoute
   CommunityCodeOfConductDothtmlRoute: typeof CommunityCodeOfConductDothtmlRoute
@@ -401,6 +414,13 @@ declare module '@tanstack/react-router' {
       path: '/team'
       fullPath: '/team'
       preLoaderRoute: typeof TeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/support': {
+      id: '/support'
+      path: '/support'
+      fullPath: '/support'
+      preLoaderRoute: typeof SupportRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -627,6 +647,7 @@ const rootRouteChildren: RootRouteChildren = {
   SecurityRoute: SecurityRoute,
   SecurityFaqRoute: SecurityFaqRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SupportRoute: SupportRoute,
   TeamRoute: TeamRoute,
   CommunityCodeOfConductRoute: CommunityCodeOfConductRoute,
   CommunityCodeOfConductDothtmlRoute: CommunityCodeOfConductDothtmlRoute,

@@ -22,6 +22,7 @@ const cols: {
     heading: "Developers",
     links: [
       { label: "Docs", href: "/docs/appmap-docs", external: true },
+      { label: "Support", href: "/support" },
       { label: "GitHub", href: "https://github.com/getappmap" },
       { label: "VS Code", href: VSCODE_INSTALL_URL },
       { label: "JetBrains", href: JETBRAINS_INSTALL_URL },

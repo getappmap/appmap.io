@@ -54,6 +54,9 @@ const LEGACY_REDIRECTS: Record<string, string> = {
   "/company/about-appmap": "/team",
   "/company/careers": "/team",
   "/company/view-demos": "/how-it-works",
+  // the old support page; the new site's /support page replaces it (this
+  // wins over the legacy site's jekyll redirect stub because it runs first)
+  "/appmap/support": "/support",
   // one-off / retired pages
   "/appmap-analysis": "/how-it-works",
   "/disrupt": "/",
