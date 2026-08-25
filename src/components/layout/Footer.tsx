@@ -1,12 +1,15 @@
 import logo from "@/assets/images/appmap-logo.svg";
 import { Link } from "@tanstack/react-router";
 import { VSCODE_INSTALL_URL, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
+import { ContactLink } from "@/components/ContactDialog";
 
 // `external` marks same-domain paths served by the legacy Jekyll site via the
 // Worker proxy fallback — they must render as plain <a>, not router <Link>.
+// `contactDialog` renders via ContactLink: a lightbox contact form, with the
+// mailto href as the no-JS fallback.
 const cols: {
   heading: string;
-  links: { label: string; href: string; external?: boolean }[];
+  links: { label: string; href: string; external?: boolean; contactDialog?: boolean }[];
 }[] = [
   {
     heading: "Product",
@@ -34,7 +37,7 @@ const cols: {
       { label: "Enterprise", href: "/enterprise" },
       { label: "Architecture", href: "/architecture" },
       { label: "Security FAQ", href: "/security-faq" },
-      { label: "Contact", href: "mailto:sales@appmap.io" },
+      { label: "Contact", href: "mailto:sales@appmap.io", contactDialog: true },
     ],
   },
   {
@@ -64,7 +67,13 @@ export function Footer() {
               {col.heading}
             </h4>
             {col.links.map((l) =>
-              l.external || l.href.startsWith("http") || l.href.startsWith("mailto:") ? (
+              l.contactDialog ? (
+                <ContactLink
+                  key={l.label}
+                  label={l.label}
+                  className="block py-1.5 text-left text-[#a99fc7] transition-colors hover:text-[#ff07aa]"
+                />
+              ) : l.external || l.href.startsWith("http") || l.href.startsWith("mailto:") ? (
                 <a
                   key={l.label}
                   href={l.href}
