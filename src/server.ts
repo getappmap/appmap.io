@@ -30,6 +30,46 @@ function legacyOrigin(env: unknown): string {
   return typeof value === "string" && value !== "" ? value.replace(/\/$/, "") : DEFAULT_LEGACY_ORIGIN;
 }
 
+// Pages removed from the legacy site whose URLs must keep working. Keys are
+// normalized paths (no trailing slash, no .html suffix); values are the
+// replacement location. Prefix rules below handle whole removed sections.
+const LEGACY_REDIRECTS: Record<string, string> = {
+  // get-appmap.html aliases
+  "/download": "/get-appmap",
+  "/get-early-access": "/get-appmap",
+  "/sign-up-for-updates": "/get-appmap",
+  // contact surfaces
+  "/contact": "/book-a-demo",
+  "/contact/sales": "/book-a-demo",
+  "/contact-enterprise-sales": "/enterprise",
+  "/talk-to-an-expert": "/book-a-demo",
+  "/company/contact-us": "/book-a-demo",
+  // company pages folded into /company and /team
+  "/company/about-appmap": "/company",
+  "/company/careers": "/company",
+  "/company/view-demos": "/how-it-works",
+  // one-off / retired pages
+  "/appmap-analysis": "/how-it-works",
+  "/disrupt": "/",
+  "/search": "/",
+  // slack.html was a meta-refresh to the community Slack invite
+  "/slack":
+    "https://join.slack.com/t/appmap-group/shared_invite/zt-2n67m4fdi-mclN_VDZCKTll8VX5oc7FQ",
+};
+
+// NOTE: /company/brand-assets is intentionally NOT mapped — it stays on the
+// legacy site (open owner decision) and reaches it via the 404 fallback proxy.
+function legacyRedirectLocation(pathname: string): string | undefined {
+  let path = pathname.replace(/\.html$/, "");
+  if (path.length > 1) path = path.replace(/\/$/, "");
+  const mapped = LEGACY_REDIRECTS[path];
+  if (mapped) return mapped;
+  // The whole /product section (incl. Navie product pages, examples, and
+  // feedback forms) is retired in favor of the new marketing pages.
+  if (path === "/product" || path.startsWith("/product/")) return "/how-it-works";
+  return undefined;
+}
+
 function shouldTryLegacyFallback(request: Request, response: Response): boolean {
   if (response.status !== 404) return false;
   if (request.method !== "GET" && request.method !== "HEAD") return false;
@@ -112,6 +152,10 @@ async function normalizeCatastrophicSsrResponse(response: Response): Promise<Res
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      const location = legacyRedirectLocation(new URL(request.url).pathname);
+      if (location) {
+        return new Response(null, { status: 301, headers: { location } });
+      }
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
       const normalized = await normalizeCatastrophicSsrResponse(response);
