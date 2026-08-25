@@ -16,6 +16,12 @@ export default defineConfig({
   // the legacy Jekyll site (which owns /assets, /images, /js) once the Worker
   // proxy-fallback serves both sites on one domain.
   vite: {
-    build: { assetsDir: "marketing-assets" },
+    build: {
+      assetsDir: "marketing-assets",
+      // cloudflare:workers is a runtime-provided module in the Workers
+      // runtime; server.ts imports it for env access (nitro's entry does not
+      // pass `env` through to the fetch handler).
+      rollupOptions: { external: ["cloudflare:workers"] },
+    },
   },
 });

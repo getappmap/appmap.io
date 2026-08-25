@@ -1,5 +1,7 @@
 import "./lib/error-capture";
 
+import { env as workersEnv } from "cloudflare:workers";
+
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
 
@@ -26,7 +28,11 @@ async function getServerEntry(): Promise<ServerEntry> {
 const DEFAULT_LEGACY_ORIGIN = "https://appland-com.onrender.com";
 
 function legacyOrigin(env: unknown): string {
-  const value = (env as { LEGACY_ORIGIN?: unknown } | undefined)?.LEGACY_ORIGIN;
+  // The nitro cloudflare entry does not pass `env` through to this handler
+  // (it arrives undefined in the deployed worker), so fall back to the
+  // cloudflare:workers env import, which is populated in both dev and deploy.
+  let value = (env as { LEGACY_ORIGIN?: unknown } | undefined)?.LEGACY_ORIGIN;
+  if (typeof value !== "string" || value === "") value = workersEnv?.LEGACY_ORIGIN;
   return typeof value === "string" && value !== "" ? value.replace(/\/$/, "") : DEFAULT_LEGACY_ORIGIN;
 }
 
@@ -113,9 +119,24 @@ async function fetchFromLegacySite(request: Request, origin: string): Promise<Re
     if (response.status === 404) return undefined;
 
     const location = response.headers.get("location");
-    if (location?.startsWith(origin)) {
+    // The origin may send absolute or relative Location headers; resolve
+    // either form and rewrite same-origin redirects onto our own domain.
+    const resolved = location ? new URL(location, origin) : undefined;
+    if (resolved && resolved.origin === new URL(origin).origin) {
+      const target = (resolved.pathname || "/") + resolved.search;
+      // A redirect that only adds/removes a trailing slash or .html would
+      // ping-pong against the app's own slash-stripping redirect (e.g.
+      // /blog -> origin 308 /blog/ -> app 307 /blog -> ...). Serve the
+      // target's content directly instead of bouncing the browser.
+      if (normalizeLegacyPath(resolved.pathname) === normalizeLegacyPath(url.pathname)) {
+        const followed = await fetch(origin + target, {
+          method: request.method,
+          redirect: "manual",
+        });
+        if (followed.status < 300) return followed;
+      }
       const headers = new Headers(response.headers);
-      headers.set("location", location.slice(origin.length) || "/");
+      headers.set("location", target);
       return new Response(response.body, { status: response.status, headers });
     }
     return response;
