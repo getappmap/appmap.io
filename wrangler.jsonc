@@ -9,14 +9,16 @@
   "main": "src/server.ts",
   "vars": {
     "SUPABASE_URL": "https://ulrbnkrvxzbtqancxmtn.supabase.co",
-    // Legacy docs/blog proxy origin: the Cloudflare Pages build of
+    // Legacy docs/blog proxy origin: the Cloudflare Pages *branch alias* for
     // applandinc.github.io's feat/migrate-to-new-marketing-pages branch
-    // (PR #1583) — the post-cutover old site. Once the PR is merged and
-    // Render has rebuilt master, DELETE this var to fall back to the
-    // Render origin (the old site's main branch). Update the hash here
-    // when the branch gets new pushes (find it with:
-    // wrangler pages deployment list --project-name applandinc-github-io).
-    "LEGACY_ORIGIN": "https://93c6fd91.applandinc-github-io.pages.dev",
+    // (PR #1583) — the post-cutover old site. The alias tracks the branch's
+    // latest build (name truncated to 28 chars by Pages). Known trade-off:
+    // changed files can lag up to ~an hour at the edge after a push, and
+    // deleted pages can serve stale forever — harmless here because the
+    // worker itself redirects every deleted path before proxying. Once the
+    // PR is merged and Render has rebuilt master, DELETE this var to fall
+    // back to the Render origin (the old site's main branch).
+    "LEGACY_ORIGIN": "https://feat-migrate-to-new-marketin.applandinc-github-io.pages.dev",
   },
   // Preview deploys use wrangler.preview.jsonc (a standalone config), NOT a
   // wrangler environment: nitro copies this file into the build output as a
