@@ -233,6 +233,16 @@ export default {
       if (location) {
         return new Response(null, { status: 301, headers: { location } });
       }
+      // The legacy site's sitemap (docs/blog, 200+ URLs), republished under
+      // a path the app doesn't own — the app serves its own /sitemap.xml.
+      // robots.txt lists both.
+      if (pathname === "/sitemap-docs.xml") {
+        const legacy = await fetchFromLegacySite(
+          new Request(new URL("/sitemap.xml", request.url), request),
+          legacyOrigin(env),
+        );
+        if (legacy) return legacy;
+      }
       if (LEGACY_PASSTHROUGH.has(normalizeLegacyPath(pathname))) {
         const legacy = await fetchFromLegacySite(request, legacyOrigin(env));
         if (legacy) return legacy;

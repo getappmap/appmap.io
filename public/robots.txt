@@ -1,2 +1,5 @@
+Sitemap: https://appmap.io/sitemap.xml
+Sitemap: https://appmap.io/sitemap-docs.xml
+
 User-agent: *
 Allow: /
