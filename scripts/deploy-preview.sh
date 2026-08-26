@@ -9,9 +9,25 @@
 # hostnames 404 until they propagate, so this script waits for a probe
 # path before deploying.
 #
-# Usage: ./scripts/deploy-preview.sh   (requires wrangler login: kevin@app.land)
+# Usage: ./scripts/deploy-preview.sh [commit-hash]
+#
+# Auth: put an AppMap-account API token in .env.local (gitignored):
+#   CLOUDFLARE_API_TOKEN=...
+# Create it at dash.cloudflare.com/profile/api-tokens ("Edit Cloudflare
+# Workers" template, scoped to Kevin@app.land's Account, plus Cloudflare
+# Pages:Read for the deployment listing). The env token overrides whatever
+# account `wrangler login` is holding, so the machine-wide OAuth login can
+# stay on another account. Without .env.local, wrangler falls back to the
+# OAuth login, which must then be kevin@app.land.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+
+if [ -f .env.local ]; then
+  set -a
+  # shellcheck disable=SC1091
+  source .env.local
+  set +a
+fi
 
 BRANCH="feat/migrate-to-new-marketing-pages"
 PROJECT="applandinc-github-io"
