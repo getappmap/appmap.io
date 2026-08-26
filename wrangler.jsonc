@@ -9,6 +9,14 @@
   "main": "src/server.ts",
   "vars": {
     "SUPABASE_URL": "https://ulrbnkrvxzbtqancxmtn.supabase.co",
+    // Legacy docs/blog proxy origin: the Cloudflare Pages build of
+    // applandinc.github.io's feat/migrate-to-new-marketing-pages branch
+    // (PR #1583) — the post-cutover old site. Once the PR is merged and
+    // Render has rebuilt master, DELETE this var to fall back to the
+    // Render origin (the old site's main branch). Update the hash here
+    // when the branch gets new pushes (find it with:
+    // wrangler pages deployment list --project-name applandinc-github-io).
+    "LEGACY_ORIGIN": "https://93c6fd91.applandinc-github-io.pages.dev",
   },
   // Preview deploys use wrangler.preview.jsonc (a standalone config), NOT a
   // wrangler environment: nitro copies this file into the build output as a
