@@ -49,7 +49,7 @@ const steps: { n: number; title: string; body: React.ReactNode }[] = [
     title: "Set up your project",
     body: (
       <>
-        Run <code className={code}>appmap install</code> in your project root. It configures the AppMap trace agent for Java, Python, Ruby, or Node and writes <code className={code}>appmap.yml</code>.
+        Run <code className={code}>appmap install</code> in your project root. It configures the AppMap trace agent for Java, Kotlin, Python, Ruby, or Node.js (TypeScript and JavaScript), and in alpha .NET, React, Swift, and Go, then writes <code className={code}>appmap.yml</code>.
       </>
     ),
   },
