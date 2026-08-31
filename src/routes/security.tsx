@@ -10,7 +10,7 @@ const description =
 
 const inScope = [
   "The AppMap extensions for VS Code and JetBrains",
-  "The AppMap language agents for Java, Python, Ruby, and Node.js",
+  "The AppMap language agents for Java, Kotlin, Python, Ruby, and Node.js (TypeScript and JavaScript), and in alpha .NET, React, Swift, and Go",
   "The AppMap CLI",
   "The AppMap MCP server",
   "The runtime code analysis scanner",
