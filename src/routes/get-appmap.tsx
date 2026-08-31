@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
+import { LanguageCoverage } from "@/components/common/LanguageCoverage";
 
 const title = "Get AppMap | AppMap";
 const description =
@@ -96,6 +97,8 @@ function GetAppMapPage() {
               </div>
             </div>
           </div>
+
+          <LanguageCoverage className="mx-auto mt-8 max-w-[1120px]" />
         </section>
 
         <section className="px-6 py-20">
