@@ -252,7 +252,7 @@ function BenchmarksIndexPage() {
           </div>
 
           <p className="mt-7 max-w-[880px] text-[15px] leading-[1.65] text-[#a99fc7]">
-            One issue contains its own answer. The other requires finding it. The SWE-Bench+ audit documents fix leakage like this in roughly one third of SWE-bench issues; this benchmark&apos;s tickets are constructed to make it impossible.
+            One issue contains its own answer. The other requires finding it. The SWE-Bench+ audit documents fix leakage like this in roughly one third of SWE-bench issues. This benchmark&apos;s tickets are constructed to make it impossible.
           </p>
 
           <div className="mt-7 flex flex-wrap gap-x-8 gap-y-5 rounded-2xl border border-[#2c2353] bg-[#1c1538] px-6 py-5">
@@ -359,7 +359,7 @@ function BenchmarksIndexPage() {
           </div>
 
           <p className="mt-9 max-w-[880px] text-[22px] font-bold leading-[1.35] tracking-[-0.4px] text-[#f2effb] sm:text-[24px]">
-            More information per call means fewer calls, fewer tokens, less waiting, and lower cost.
+            More information per call means fewer calls, less waiting, and lower spend.
           </p>
 
           <div className="mt-10 grid gap-4 lg:grid-cols-2">
