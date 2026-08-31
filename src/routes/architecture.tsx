@@ -134,7 +134,7 @@ function Page() {
               When the Gold Trace set is versioned with the code, changes to it follow the team's existing pull-request workflow.
             </p>
             <p className="mt-6 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
-              Putting AppMap in the repository gives coding agents runtime context that travels with the code. Instead of inferring execution from source search every time they enter a codebase, agents query recorded call paths, SQL, HTTP activity, and application structure directly. AppMap Gold Traces carry important behavior forward as versioned context, so a new agent or a different model starts from the same traces. Both the code and the runtime context are available to the developer and the AI without requiring an AppMap-operated data service.
+              Putting AppMap in the repository gives coding agents runtime context that travels with the code. Agents query recorded call paths, SQL, HTTP activity, and application structure directly, and read them alongside the source, so entering a codebase does not start with inferring execution from search. AppMap Gold Traces carry important behavior forward as versioned context, so a new agent or a different model starts from the same traces. Both the code and the runtime context are available to the developer and the AI without requiring an AppMap-operated data service.
             </p>
           </div>
         </section>
