@@ -357,6 +357,8 @@ function HowItWorksPage() {
             <p className="mt-4 text-[15px] font-semibold text-[#ff07aa]">
               The agent can change. The evidence does not have to.
             </p>
+            <LanguageCoverage className="mt-6 max-w-[820px]" />
+
           </div>
         </section>
 
