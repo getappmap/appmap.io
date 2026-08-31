@@ -290,7 +290,7 @@ function HowItWorksPage() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the traces reach your agent</h2>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              Coding agents query the traces instead of inferring the execution path from source. AppMap exposes the recorded calls, queries, and requests through MCP.
+              Coding agents read the traces alongside the source, and answer from what the code did. AppMap exposes the recorded calls, queries, and requests through MCP.
             </p>
             <div className="mt-10 rounded-2xl border border-[#2c2353] bg-[#0d0a1a] p-6 sm:p-8">
               <div className="relative rounded-2xl border-2 border-dashed border-[#3f3566] bg-[#0d0a1a]/50 p-6 pt-8 sm:p-8 sm:pt-9">
