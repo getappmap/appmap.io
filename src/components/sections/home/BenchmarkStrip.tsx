@@ -7,8 +7,10 @@ export function BenchmarkStrip() {
         </h2>
         <p className="mt-4 max-w-[720px] text-[16px] leading-relaxed text-[#a99fc7]">
           Under a three-tool-call limit, agents using AppMap reached 100% root-cause accuracy.
-          Source-only agents reached 28%.
+          Source-only agents reached 28%. For organizations, that difference is review time and
+          acceptance confidence at scale.
         </p>
+
         <p className="mt-3 max-w-[720px] text-[16px] font-semibold text-[#f2effb]">
           The AppMap condition also used 3.4 times less model spend.
         </p>
