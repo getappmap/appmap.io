@@ -106,6 +106,7 @@ function Index() {
       <main>
         <HomeHero />
         <PainStats />
+        <EnterpriseStrip />
         <Reviews />
         <ReviewWhatAIDid />
         <ReviewLoop />
@@ -113,8 +114,8 @@ function Index() {
         <TrustBar />
         <HowItWorksReveal />
         <BehavioralReview />
-        <EnterpriseStrip />
         <ClosingCTA />
+
       </main>
     </div>
   );
