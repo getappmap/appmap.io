@@ -340,7 +340,7 @@ function HowItWorksPage() {
               </div>
 
               <p className="mt-8 max-w-[820px] text-[14px] leading-[1.6] text-[#a99fc7]">
-                Everything here runs in the developer environment. The coding agent queries over MCP locally, and AppMap answers from the working traces and the Gold Traces in the repository checkout. AppMap sends nothing off the machine.
+                Everything here runs in the developer environment. The coding agent queries over MCP locally, and AppMap answers from the working traces and the Gold Traces in the repository checkout. AppMap sends nothing off the machine. The traces carry runtime facts an agent cannot infer from source, current at the commit it checked out.
               </p>
               <p className="mt-2 text-[12.5px] text-[#a99fc7]/70">
                 MCP tools: get_call_tree, find_calls, find_queries, find_requests. Details in Docs.
@@ -374,7 +374,7 @@ function HowItWorksPage() {
             </p>
             <div className="mt-5">
               {/* TODO: point to /gold-traces when that page ships */}
-              <Link to="/architecture" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
+              <Link to="/gold-traces" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
                 Learn about AppMap Gold Traces →
               </Link>
             </div>

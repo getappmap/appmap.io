@@ -17,6 +17,7 @@ import { Route as ReleaseNotesRouteImport } from './routes/release-notes'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PlatformRouteImport } from './routes/platform'
 import { Route as HowItWorksRouteImport } from './routes/how-it-works'
+import { Route as GoldTracesRouteImport } from './routes/gold-traces'
 import { Route as GetAppmapRouteImport } from './routes/get-appmap'
 import { Route as EnterpriseRouteImport } from './routes/enterprise'
 import { Route as CompatibilityRouteImport } from './routes/compatibility'
@@ -69,6 +70,11 @@ const PlatformRoute = PlatformRouteImport.update({
 const HowItWorksRoute = HowItWorksRouteImport.update({
   id: '/how-it-works',
   path: '/how-it-works',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GoldTracesRoute = GoldTracesRouteImport.update({
+  id: '/gold-traces',
+  path: '/gold-traces',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GetAppmapRoute = GetAppmapRouteImport.update({
@@ -147,6 +153,7 @@ export interface FileRoutesByFullPath {
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/get-appmap': typeof GetAppmapRoute
+  '/gold-traces': typeof GoldTracesRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
@@ -169,6 +176,7 @@ export interface FileRoutesByTo {
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/get-appmap': typeof GetAppmapRoute
+  '/gold-traces': typeof GoldTracesRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
@@ -193,6 +201,7 @@ export interface FileRoutesById {
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/get-appmap': typeof GetAppmapRoute
+  '/gold-traces': typeof GoldTracesRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
@@ -218,6 +227,7 @@ export interface FileRouteTypes {
     | '/compatibility'
     | '/enterprise'
     | '/get-appmap'
+    | '/gold-traces'
     | '/how-it-works'
     | '/platform'
     | '/pricing'
@@ -240,6 +250,7 @@ export interface FileRouteTypes {
     | '/compatibility'
     | '/enterprise'
     | '/get-appmap'
+    | '/gold-traces'
     | '/how-it-works'
     | '/platform'
     | '/pricing'
@@ -263,6 +274,7 @@ export interface FileRouteTypes {
     | '/compatibility'
     | '/enterprise'
     | '/get-appmap'
+    | '/gold-traces'
     | '/how-it-works'
     | '/platform'
     | '/pricing'
@@ -287,6 +299,7 @@ export interface RootRouteChildren {
   CompatibilityRoute: typeof CompatibilityRoute
   EnterpriseRoute: typeof EnterpriseRoute
   GetAppmapRoute: typeof GetAppmapRoute
+  GoldTracesRoute: typeof GoldTracesRoute
   HowItWorksRoute: typeof HowItWorksRoute
   PlatformRoute: typeof PlatformRoute
   PricingRoute: typeof PricingRoute
@@ -355,6 +368,13 @@ declare module '@tanstack/react-router' {
       path: '/how-it-works'
       fullPath: '/how-it-works'
       preLoaderRoute: typeof HowItWorksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gold-traces': {
+      id: '/gold-traces'
+      path: '/gold-traces'
+      fullPath: '/gold-traces'
+      preLoaderRoute: typeof GoldTracesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/get-appmap': {
@@ -475,6 +495,7 @@ const rootRouteChildren: RootRouteChildren = {
   CompatibilityRoute: CompatibilityRoute,
   EnterpriseRoute: EnterpriseRoute,
   GetAppmapRoute: GetAppmapRoute,
+  GoldTracesRoute: GoldTracesRoute,
   HowItWorksRoute: HowItWorksRoute,
   PlatformRoute: PlatformRoute,
   PricingRoute: PricingRoute,
