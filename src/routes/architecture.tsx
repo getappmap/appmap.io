@@ -112,7 +112,7 @@ function Page() {
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Behavior that survives the session</h2>
             <p className="mt-3 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
-              A coding agent normally begins each investigation by reading the current code and inferring what matters. Gold Traces travel with the repository, so the team can compare behavior across revisions.
+              A coding agent normally begins each investigation by reading the current code and inferring what matters. Gold Traces travel with the repository, so the team can reuse recorded behavior instead of inferring it from source code. Some of what a trace records cannot be inferred from source at all.
             </p>
             <p className="mt-5 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
               A developer or coding agent opening the repository later starts with the same Gold Traces. This is not conversational memory. The set lives in the repository, versioned and reviewed like the code. Most agent work starts with local runtime context. Git gives the Gold Trace set a longer life, so future developers and agents can read important behavior alongside the source code.
