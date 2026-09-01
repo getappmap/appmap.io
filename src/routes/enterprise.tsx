@@ -319,6 +319,37 @@ function EnterprisePageInner() {
 
         <DeploymentDiagram />
 
+        <section className="border-t border-[#2c2353] px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
+              Centrally managed, organization-registered
+            </h2>
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
+              {[
+                {
+                  t: "Organization configuration",
+                  b: "Administrators push consistent AppMap settings to every install from one configuration endpoint. Distribution works through group policy, MDM, or a single URL.",
+                },
+                {
+                  t: "Organization-registered installs",
+                  b: "Installs sign in with a customer ID assigned to your organization. No individual accounts, no license keys on developer machines.",
+                },
+                {
+                  t: "Telemetry on your terms",
+                  b: "Usage telemetry routes to your internal observability systems instead of AppMap's.",
+                },
+              ].map((c) => (
+                <div key={c.t} className="rounded-2xl border border-[#2c2353] bg-[#16112b] p-6">
+                  <h3 className="text-[17px] font-bold text-[#f2effb]">{c.t}</h3>
+                  <p className="mt-2 text-[15px] leading-relaxed text-[#a99fc7]">{c.b}</p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 text-[14px] text-[#a99fc7]">Available with AppMap Enterprise.</p>
+          </div>
+        </section>
+
+
         <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What the reviewer sees</h2>

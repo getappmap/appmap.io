@@ -1,8 +1,9 @@
 const points = [
-  "Local, self-hosted, and airgapped deployment",
-  "Model-independent agent access through MCP",
-  "Organization-wide Git and CI controls",
-  "Sanitized, repository-owned Gold Traces",
+  "Runtime evidence at codebase scale, in every repository",
+  "Airgapped deployment, offline activation, and internal distribution",
+  "Centrally managed configuration and organization-registered installs",
+  "Logging and telemetry routed to your internal observability systems",
+  "Organization-wide Gold Trace programs, sanitized and repository-owned",
 ];
 
 export function EnterpriseStrip() {
@@ -10,13 +11,13 @@ export function EnterpriseStrip() {
     <section className="border-b border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] px-6 py-20">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="max-w-[820px] text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-          Use AppMap across the development pipeline
+          Accelerate review and acceptance of AI code changes
         </h2>
-        <p className="mt-4 max-w-[720px] text-[16px] leading-relaxed text-[#a99fc7]">
-          Run AppMap on developer machines and in CI. Keep traces in your environment. Connect your
-          approved coding agents and model endpoints.
+        <p className="mt-4 max-w-[760px] text-[16px] leading-relaxed text-[#a99fc7]">
+          AppMap runs across large codebases and many teams. Reviewers, coding agents, and compliance
+          see the same record of what each change did, so organizations can accept changes faster.
         </p>
-        <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {points.map((p) => (
             <li
               key={p}

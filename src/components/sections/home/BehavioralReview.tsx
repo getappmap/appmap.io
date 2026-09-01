@@ -30,6 +30,10 @@ export function BehavioralReview() {
         <p className="mt-3 max-w-[700px] text-[16px] text-[color:var(--color-am-muted)]">
           Deep runtime evidence adds to what the code review shows. See performance problems, security and correctness issues, and unexpected changes while the code is still in development.
         </p>
+        <p className="mt-3 max-w-[700px] text-[16px] text-[color:var(--color-am-muted)]">
+          Teams start free in their own repositories. AppMap Enterprise adds airgapped deployment, internal distribution, organization-registered installs, and telemetry into your internal observability systems for running Gold Trace programs at scale.
+        </p>
+
 
         <div className="mt-8">
           <MotionOrPoster

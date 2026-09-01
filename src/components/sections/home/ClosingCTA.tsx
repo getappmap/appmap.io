@@ -43,6 +43,13 @@ export function ClosingCTA() {
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3.5">
             <a
+              href="/book-a-demo"
+              className="rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)] transition hover:brightness-110"
+            >
+              Book a Demo
+            </a>
+            <a
+
               href={VSCODE_INSTALL_URL}
               target="_blank"
               rel="noopener noreferrer"
