@@ -18,4 +18,5 @@ AppMap Gold Traces are recordings promoted into approved before/after behavioral
 - Benchmarks: https://appmap.io/benchmarks
 - Compatibility: https://appmap.io/how-it-works#compatibility
 - Enterprise: https://appmap.io/enterprise
+- Research paper (read online): https://appmap.io/research/runtime-rca
 - GitHub: https://github.com/getappmap

@@ -17,6 +17,7 @@ const entries = [
   { path: "/security-faq", priority: "0.6", changefreq: "monthly" as const },
   { path: "/book-a-demo", priority: "0.6", changefreq: "monthly" as const },
   { path: "/cli-quickstart", priority: "0.6", changefreq: "monthly" as const },
+  { path: "/research/runtime-rca", priority: "0.6", changefreq: "yearly" as const },
   { path: "/release-notes", priority: "0.6", changefreq: "weekly" as const },
 ];
 
