@@ -11,9 +11,13 @@ export function EnterpriseStrip() {
           AppMap runs across large codebases and many teams. Reviewers, coding agents, and compliance
           see the same record of what each change did, so organizations can accept changes faster.
         </p>
-        <div className="mt-8">
+        <a
+          href="/enterprise#runtime-behavior-analysis"
+          aria-label="See the full runtime behavior analysis, including the standards mapping and timing comparison"
+          className="mt-8 block cursor-pointer"
+        >
           <InteractionWebPanel />
-        </div>
+        </a>
 
         <p className="mt-6 text-[15px] text-[#a99fc7]">
           <a href="/enterprise" className="text-[#ff07aa] hover:underline">

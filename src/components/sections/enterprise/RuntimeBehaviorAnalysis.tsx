@@ -495,7 +495,7 @@ export function InteractionWebPanel() {
 
 export function RuntimeBehaviorAnalysis() {
   return (
-    <section className="border-t border-[#2c2353] px-6 py-20">
+    <section id="runtime-behavior-analysis" className="border-t border-[#2c2353] px-6 py-20">
       <div className="mx-auto max-w-[1120px]">
         <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">
           Runtime behavior analysis
@@ -550,6 +550,11 @@ export function RuntimeBehaviorAnalysis() {
         </div>
         <p className="mt-3 text-[12.5px] text-[#a99fc7]/70">
           Illustrative mapping for discussion, not a compliance certification.
+        </p>
+        <p className="mt-3 text-[14px]">
+          <a href="/behavior-controls" className="font-semibold text-[#ff07aa] hover:underline">
+            The control list behind this mapping &rarr;
+          </a>
         </p>
 
         {/* approaches table */}
