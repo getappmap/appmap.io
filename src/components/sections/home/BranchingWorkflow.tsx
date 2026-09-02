@@ -5,6 +5,7 @@ const RAIL_X = [22, 90, 158, 214];
 const RAILS_W = 230;
 const ROW_H = 30;
 const FLOW_H = 34;
+const BLOCKED_H = 44;
 const CASING = "#131024";
 
 const BRANCHES = [
@@ -66,6 +67,58 @@ function MicroSeq() {
         <path d="M22.5 14.6 L25 16 L22.5 17.4" fill="none" />
       </g>
     </svg>
+  );
+}
+
+function RejectedSeq({ scale = 1 }: { scale?: number }) {
+  return (
+    <svg width={30 * scale} height={22 * scale} viewBox="0 0 30 22" aria-hidden="true">
+      {[5, 15, 25].map((x) => (
+        <g key={x}>
+          <rect x={x - 3.5} y={2} width={7} height={3.5} rx={1} fill="none" stroke="#c9c1ea" strokeWidth={0.7} />
+          <line x1={x} y1={6} x2={x} y2={20} stroke="#5f54a0" strokeWidth={0.7} strokeDasharray="2 2" />
+        </g>
+      ))}
+      <g stroke="#F87171" strokeWidth={0.9}>
+        <line x1={5} y1={10} x2={15} y2={10} />
+        <path d="M12.5 8.6 L15 10 L12.5 11.4" fill="none" />
+        <line x1={15} y1={16} x2={25} y2={16} />
+        <path d="M22.5 14.6 L25 16 L22.5 17.4" fill="none" />
+      </g>
+      <g fill="#fda4a4" fontSize={4.4} fontFamily="ui-monospace, monospace">
+        <text x={6} y={8.6}>t=30s</text>
+        <text x={16} y={14.6}>t=30s</text>
+      </g>
+    </svg>
+  );
+}
+
+function RejectedMapChip() {
+  return (
+    <span className="relative inline-block">
+      <span
+        className="inline-flex items-center"
+        style={{
+          border: "1.4px solid rgba(248,113,113,.75)",
+          background: "rgba(248,113,113,.07)",
+          borderRadius: 6,
+          padding: "3px 4px",
+        }}
+      >
+        <RejectedSeq scale={1.15} />
+      </span>
+      <span
+        className="absolute flex items-center justify-center rounded-full"
+        style={{ width: 13, height: 13, background: "#F87171", right: -5, top: -5 }}
+      >
+        <svg width={9} height={9} viewBox="0 0 9 9" aria-hidden="true">
+          <g stroke="#0f0b1d" strokeWidth={1.6} strokeLinecap="round">
+            <line x1={2.4} y1={2.4} x2={6.6} y2={6.6} />
+            <line x1={6.6} y1={2.4} x2={2.4} y2={6.6} />
+          </g>
+        </svg>
+      </span>
+    </span>
   );
 }
 
@@ -346,7 +399,7 @@ function railAlive(rail: number, index: number) {
 }
 
 function RowRails({ row, index }: { row: Row; index: number }) {
-  const h = row.kind === "flow" ? FLOW_H : ROW_H;
+  const h = rowHeight(row);
   const mid = h / 2;
   const mainX = RAIL_X[0];
   const lines: React.ReactNode[] = [];
@@ -424,6 +477,16 @@ function RowRails({ row, index }: { row: Row; index: number }) {
   );
 }
 
+function isRejectedRow(row: Row) {
+  return row.kind === "commit" && row.tone === "red" && !!row.msg?.startsWith("Behavioral review");
+}
+
+function rowHeight(row: Row) {
+  if (row.kind === "flow") return FLOW_H;
+  if (isRejectedRow(row)) return BLOCKED_H;
+  return ROW_H;
+}
+
 function hexToRgba(hex: string, a: number) {
   const n = parseInt(hex.slice(1), 16);
   return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
@@ -432,7 +495,7 @@ function hexToRgba(hex: string, a: number) {
 const CMP_W = 55;
 
 function GraphRow({ row, index }: { row: Row; index: number }) {
-  const h = row.kind === "flow" ? FLOW_H : ROW_H;
+  const h = rowHeight(row);
   const isBaselineRow = row.kind === "commit" && row.rail === 0 && row.msg?.startsWith("Release");
   const isChoreRow = row.kind === "commit" && row.rail === 0 && row.msg?.startsWith("chore(gold-traces)");
   const cmpLeft =
@@ -462,6 +525,11 @@ function GraphRow({ row, index }: { row: Row; index: number }) {
               <TraceChip scale={0.8} />
               <PlusBadge />
             </span>
+          </span>
+        )}
+        {isRejectedRow(row) && (
+          <span className="absolute" style={{ left: RAIL_X[row.rail] + 12, top: 3 }}>
+            <RejectedMapChip />
           </span>
         )}
         {row.kind === "merge" && (
