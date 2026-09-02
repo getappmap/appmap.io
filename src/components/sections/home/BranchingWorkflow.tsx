@@ -416,9 +416,9 @@ export function BranchingWorkflow() {
         <div className="min-w-[880px] p-4 sm:p-5">
           {/* worktree strip */}
           <div className="flex items-stretch gap-2.5">
-            <LaneCard title="main · gold_traces/" color={MAIN} main />
+            <LaneCard title="main · gold_traces/" color={MAIN} main sublabel="the baseline" />
             {BRANCHES.map((b) => (
-              <LaneCard key={b.name} title={b.name} color={b.color} />
+              <LaneCard key={b.name} title={b.name} color={b.color} sublabel="fresh traces" />
             ))}
           </div>
 
@@ -431,8 +431,8 @@ export function BranchingWorkflow() {
         </div>
       </div>
       <div className="border-t border-[#2c2353] px-4 py-3 text-[12.5px] text-[#6d6395] sm:px-5">
-        Every branch is cut from main and returns to main. The baseline advances on main, and new
-        branches inherit it from there.
+        Every branch is cut from main and returns to main. The Gold Traces live on main. Fresh traces
+        from the branch are compared against them at review, and the baseline advances after the merge.
       </div>
     </div>
   );
