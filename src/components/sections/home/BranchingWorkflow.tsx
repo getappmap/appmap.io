@@ -113,14 +113,16 @@ function TraceChip({
   scale = 1,
   borderColor = GOLD_BORDER,
   background = GOLD_BG,
+  compact = false,
 }: {
   scale?: number;
   borderColor?: string;
   background?: string;
+  compact?: boolean;
 }) {
   return (
     <span
-      className="inline-flex items-center rounded-[5px] border px-1 py-0.5"
+      className={`inline-flex items-center rounded-[5px] border ${compact ? "px-[2px] py-[1px]" : "px-1 py-0.5"}`}
       style={{ borderColor, background }}
       aria-hidden="true"
     >
@@ -175,9 +177,9 @@ function CompareGlyph() {
 function CompareGroup({ color }: { color: string }) {
   return (
     <span className="inline-flex items-center gap-[2px]" aria-hidden="true">
-      <TraceChip scale={0.58} borderColor={color} background="#0f0b1d" />
+      <TraceChip scale={0.45} borderColor={color} background="#0f0b1d" compact />
       <CompareGlyph />
-      <TraceChip scale={0.58} />
+      <TraceChip scale={0.45} compact />
     </span>
   );
 }
@@ -427,7 +429,7 @@ function hexToRgba(hex: string, a: number) {
   return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
 }
 
-const CMP_W = 59;
+const CMP_W = 55;
 
 function GraphRow({ row, index }: { row: Row; index: number }) {
   const h = row.kind === "flow" ? FLOW_H : ROW_H;
