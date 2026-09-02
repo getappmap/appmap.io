@@ -16,7 +16,8 @@ import { EnterpriseStrip } from "@/components/sections/home/EnterpriseStrip";
 
 const title = "AppMap: Runtime evidence for AI-assisted development";
 const description =
-  "Code changes outrun our understanding. See how every change behaves before it merges. AppMap records and compares application behavior for developers and coding agents.";
+  "Code changes outrun our understanding. See how every change behaves before it merges. AppMap records and compares application behavior, and the recordings live in your repository with the code.";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
