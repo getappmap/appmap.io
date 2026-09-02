@@ -475,7 +475,23 @@ function StageTrack({ active, appmap }: { active: string[]; appmap?: boolean }) 
   );
 }
 
+/* ---------------- reusable graphic panel ---------------- */
+
+export function InteractionWebPanel() {
+  return (
+    <div className="overflow-hidden rounded-2xl border border-[#2c2353] bg-[#0d0a1a]">
+      <div className="aspect-[16/9] w-full p-2 sm:p-4">
+        <InteractionWeb />
+      </div>
+      <div className="border-t border-[#2c2353] px-4 py-3 text-center text-[14px] font-bold text-[#ff07aa] sm:px-6">
+        Find the defects in the <em className="italic">interactions</em>.
+      </div>
+    </div>
+  );
+}
+
 /* ---------------- section ---------------- */
+
 
 export function RuntimeBehaviorAnalysis() {
   return (
