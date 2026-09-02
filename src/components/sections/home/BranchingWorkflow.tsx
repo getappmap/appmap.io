@@ -422,8 +422,21 @@ function RowRails({ row, index }: { row: Row; index: number }) {
   );
 }
 
+function hexToRgba(hex: string, a: number) {
+  const n = parseInt(hex.slice(1), 16);
+  return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
+}
+
+const CMP_W = 59;
+
 function GraphRow({ row, index }: { row: Row; index: number }) {
   const h = row.kind === "flow" ? FLOW_H : ROW_H;
+  const isBaselineRow = row.kind === "commit" && row.rail === 0 && row.msg?.startsWith("Release");
+  const isChoreRow = row.kind === "commit" && row.rail === 0 && row.msg?.startsWith("chore(gold-traces)");
+  const cmpLeft =
+    row.kind === "merge"
+      ? Math.max(RAIL_X[0] + 4, Math.min(RAILS_W - CMP_W - 4, RAIL_X[row.rail] - 6 - CMP_W))
+      : 0;
   return (
     <div className="flex items-stretch">
       <div className="relative shrink-0" style={{ width: RAILS_W, height: h }}>
@@ -436,7 +449,27 @@ function GraphRow({ row, index }: { row: Row; index: number }) {
             <ArtifactChip kind={row.artifact} />
           </span>
         )}
+        {isBaselineRow && (
+          <span className="absolute" style={{ left: RAIL_X[0] + 10, top: (h - 24) / 2 }}>
+            <GoldStack count={index === 0 ? 3 : 2} scale={index === 0 ? 0.8 : 0.62} />
+          </span>
+        )}
+        {isChoreRow && (
+          <span className="absolute" style={{ left: RAIL_X[0] + 10, top: (h - 24) / 2 }}>
+            <span className="relative inline-block">
+              <TraceChip scale={0.8} />
+              <PlusBadge />
+            </span>
+          </span>
+        )}
+        {row.kind === "merge" && (
+          <span className="absolute" style={{ left: cmpLeft, top: 0 }}>
+            <CompareGroup color={hexToRgba(BRANCHES[row.rail - 1].color, 0.55)} />
+          </span>
+        )}
       </div>
+
+
 
       <div className="flex min-w-0 flex-1 items-center gap-2 pl-3" style={{ height: h }}>
         {row.kind === "flow" && (
