@@ -1,44 +1,6 @@
-import type { ReactNode } from "react";
+import { MotionOrPoster } from "@/components/common/MotionOrPoster";
+import { BehavioralReviewCard } from "@/components/sections/home/BehavioralReviewCard";
 
-const steps = [
-  {
-    title: "Coding agent changes the code",
-    body: "The coding agent makes the change.",
-  },
-  {
-    title: "AppMap records fresh traces",
-    body: "The coding agent runs the tests. AppMap records the behavior and shows the traces as maps.",
-  },
-  {
-    title: "AppMap compares the behavior",
-    body: "AppMap compares behavior in the changed revision with behavior in the base revision and reports what changed.",
-  },
-  {
-    title: "The review is written into the pull request",
-    body: "AppMap writes the review into the PR so reviewers see the code change and what it did when it ran.",
-  },
-];
-
-const panels = [
-  {
-    chip: "2-3",
-    image: "/marketing-assets/review/trace-diff-diagram.png",
-    alt: "Sequence diagram of a client request flowing through JWTAuthFilter, ActorService, ActorDao, and Postgres, with the changed order-by query highlighted in amber",
-    caption: "The trace as a sequence diagram. The amber call changed between the base revision and the head revision.",
-    link: {
-      href: "/marketing-assets/review/trace-highlight.png",
-      label: "View the full trace",
-    },
-  },
-];
-
-function Chip({ children }: { children: React.ReactNode }) {
-  return (
-    <span className="absolute -top-3 -left-3 z-10 flex h-7 min-w-7 items-center justify-center rounded-lg bg-[color:var(--color-am-brand)] px-2 text-[13px] font-extrabold text-white shadow-md">
-      {children}
-    </span>
-  );
-}
 
 export function ReviewLoop() {
   return (
