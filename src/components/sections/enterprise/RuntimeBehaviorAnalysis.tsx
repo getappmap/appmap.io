@@ -493,14 +493,10 @@ export function RuntimeBehaviorAnalysis() {
           it reports whatever departed.
         </p>
 
-        <div className="mt-8 overflow-hidden rounded-2xl border border-[#2c2353] bg-[#0d0a1a]">
-          <div className="aspect-[16/9] w-full p-2 sm:p-4">
-            <InteractionWeb />
-          </div>
-          <div className="border-t border-[#2c2353] px-4 py-3 text-center text-[14px] font-bold text-[#ff07aa] sm:px-6">
-            Find the defects in the <em className="italic">interactions</em>.
-          </div>
+        <div className="mt-8">
+          <InteractionWebPanel />
         </div>
+
 
         {/* standards table */}
         <h3 className="mt-16 text-[21px] font-bold tracking-[-0.4px] text-[#f2effb]">
