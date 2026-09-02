@@ -25,6 +25,7 @@ import { Route as CompanyRouteImport } from './routes/company'
 import { Route as CliQuickstartRouteImport } from './routes/cli-quickstart'
 import { Route as BookADemoRouteImport } from './routes/book-a-demo'
 import { Route as BenchmarksRouteImport } from './routes/benchmarks'
+import { Route as BehaviorControlsRouteImport } from './routes/behavior-controls'
 import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BenchmarksIndexRouteImport } from './routes/benchmarks.index'
@@ -112,6 +113,11 @@ const BenchmarksRoute = BenchmarksRouteImport.update({
   path: '/benchmarks',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BehaviorControlsRoute = BehaviorControlsRouteImport.update({
+  id: '/behavior-controls',
+  path: '/behavior-controls',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ArchitectureRoute = ArchitectureRouteImport.update({
   id: '/architecture',
   path: '/architecture',
@@ -146,6 +152,7 @@ const DocsNavieSplatRoute = DocsNavieSplatRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/architecture': typeof ArchitectureRoute
+  '/behavior-controls': typeof BehaviorControlsRoute
   '/benchmarks': typeof BenchmarksRouteWithChildren
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
@@ -170,6 +177,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/architecture': typeof ArchitectureRoute
+  '/behavior-controls': typeof BehaviorControlsRoute
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
   '/company': typeof CompanyRoute
@@ -194,6 +202,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/architecture': typeof ArchitectureRoute
+  '/behavior-controls': typeof BehaviorControlsRoute
   '/benchmarks': typeof BenchmarksRouteWithChildren
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
@@ -220,6 +229,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/architecture'
+    | '/behavior-controls'
     | '/benchmarks'
     | '/book-a-demo'
     | '/cli-quickstart'
@@ -244,6 +254,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/architecture'
+    | '/behavior-controls'
     | '/book-a-demo'
     | '/cli-quickstart'
     | '/company'
@@ -267,6 +278,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/architecture'
+    | '/behavior-controls'
     | '/benchmarks'
     | '/book-a-demo'
     | '/cli-quickstart'
@@ -292,6 +304,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ArchitectureRoute: typeof ArchitectureRoute
+  BehaviorControlsRoute: typeof BehaviorControlsRoute
   BenchmarksRoute: typeof BenchmarksRouteWithChildren
   BookADemoRoute: typeof BookADemoRoute
   CliQuickstartRoute: typeof CliQuickstartRoute
@@ -426,6 +439,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BenchmarksRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/behavior-controls': {
+      id: '/behavior-controls'
+      path: '/behavior-controls'
+      fullPath: '/behavior-controls'
+      preLoaderRoute: typeof BehaviorControlsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/architecture': {
       id: '/architecture'
       path: '/architecture'
@@ -488,6 +508,7 @@ const BenchmarksRouteWithChildren = BenchmarksRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ArchitectureRoute: ArchitectureRoute,
+  BehaviorControlsRoute: BehaviorControlsRoute,
   BenchmarksRoute: BenchmarksRouteWithChildren,
   BookADemoRoute: BookADemoRoute,
   CliQuickstartRoute: CliQuickstartRoute,
