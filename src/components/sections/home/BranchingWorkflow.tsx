@@ -134,10 +134,12 @@ function LaneCard({
   title,
   color,
   main,
+  sublabel,
 }: {
   title: string;
   color: string;
   main?: boolean;
+  sublabel?: string;
 }) {
   return (
     <div
@@ -157,6 +159,14 @@ function LaneCard({
           {title}
         </span>
       </div>
+      {sublabel && (
+        <div
+          className="mt-0.5 text-[10.5px]"
+          style={{ color: main ? "rgba(255,179,224,0.8)" : "#6d6395" }}
+        >
+          {sublabel}
+        </div>
+      )}
       <div className="mt-2 flex items-center gap-1">
         <ArtifactChip kind="dep" />
         <ArtifactChip kind="seq" />
@@ -191,7 +201,7 @@ const ROWS: Row[] = [
   { kind: "commit", rail: 2, color: BRANCHES[1].color, artifact: "seq" },
   { kind: "commit", rail: 3, color: BRANCHES[2].color, artifact: "trace" },
   { kind: "commit", rail: 1, color: BRANCHES[0].color, artifact: "seq" },
-  { kind: "merge", rail: 1, note: "behavior held" },
+  { kind: "merge", rail: 1, note: "compared to the gold traces on main: behavior held" },
   { kind: "flow", note: "ci records fresh traces, the baseline advances" },
   {
     kind: "commit",
@@ -213,7 +223,7 @@ const ROWS: Row[] = [
     tone: "red",
   },
   { kind: "commit", rail: 2, color: BRANCHES[1].color, artifact: "seq" },
-  { kind: "merge", rail: 2, note: "1 changed, 1 new" },
+  { kind: "merge", rail: 2, note: "compared to the gold traces on main: 1 changed, 1 new" },
   { kind: "flow", note: "ci records fresh traces, the baseline advances" },
   {
     kind: "commit",
@@ -225,7 +235,7 @@ const ROWS: Row[] = [
     tone: "gold",
   },
   { kind: "commit", rail: 3, color: BRANCHES[2].color, artifact: "dep" },
-  { kind: "merge", rail: 3, note: "behavior held" },
+  { kind: "merge", rail: 3, note: "compared to the gold traces on main: behavior held" },
   { kind: "flow", note: "ci records fresh traces, the baseline advances" },
   {
     kind: "commit",
@@ -406,9 +416,9 @@ export function BranchingWorkflow() {
         <div className="min-w-[880px] p-4 sm:p-5">
           {/* worktree strip */}
           <div className="flex items-stretch gap-2.5">
-            <LaneCard title="main · gold_traces/" color={MAIN} main />
+            <LaneCard title="main · gold_traces/" color={MAIN} main sublabel="the baseline" />
             {BRANCHES.map((b) => (
-              <LaneCard key={b.name} title={b.name} color={b.color} />
+              <LaneCard key={b.name} title={b.name} color={b.color} sublabel="fresh traces" />
             ))}
           </div>
 
@@ -421,8 +431,8 @@ export function BranchingWorkflow() {
         </div>
       </div>
       <div className="border-t border-[#2c2353] px-4 py-3 text-[12.5px] text-[#6d6395] sm:px-5">
-        Every branch is cut from main and returns to main. The baseline advances on main, and new
-        branches inherit it from there.
+        Every branch is cut from main and returns to main. The Gold Traces live on main. Fresh traces
+        from the branch are compared against them at review, and the baseline advances after the merge.
       </div>
     </div>
   );
