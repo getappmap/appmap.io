@@ -495,14 +495,14 @@ export function InteractionWebPanel() {
 
 export function RuntimeBehaviorAnalysis() {
   return (
-    <section id="runtime-behavior-analysis" className="border-t border-[#2c2353] px-6 py-20">
+    <section id="runtime-behavior-analysis" className="px-6 pt-14 pb-20">
       <div className="mx-auto max-w-[1120px]">
         <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">
           Runtime behavior analysis
         </div>
-        <h2 className="mt-4 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
+        <h1 className="mt-4 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
           Runtime behavior analysis finds the bugs that are code interactions.
-        </h2>
+        </h1>
         <p className="mt-4 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
           Every interaction in the codebase, times every way behavior can depart. A rule catalog
           cannot enumerate this space. The comparison against your own Gold Traces does not have to:
