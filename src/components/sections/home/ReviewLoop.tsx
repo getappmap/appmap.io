@@ -1,6 +1,25 @@
 import { MotionOrPoster } from "@/components/common/MotionOrPoster";
 import { BehavioralReviewCard } from "@/components/sections/home/BehavioralReviewCard";
 
+const steps = [
+  {
+    title: "Coding agent changes the code",
+    body: "The coding agent makes the change.",
+  },
+  {
+    title: "AppMap records fresh traces",
+    body: "The coding agent runs the tests. AppMap records the behavior and shows the traces as maps.",
+  },
+  {
+    title: "AppMap compares the behavior",
+    body: "AppMap compares behavior in the changed revision with behavior in the base revision and reports what changed.",
+  },
+  {
+    title: "The review is written into the pull request",
+    body: "AppMap writes the review into the PR so reviewers see the code change and what it did when it ran.",
+  },
+];
+
 
 export function ReviewLoop() {
   return (
