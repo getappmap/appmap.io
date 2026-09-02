@@ -281,6 +281,17 @@ function GoldTracesPage() {
           </p>
         </Section>
 
+        <Section heading="When the team is mostly agents" alt>
+          <p>
+            Multiple agent sessions can touch the same code in a day. No agent sees the whole, and no
+            agent remembers yesterday. The Gold Trace set is the part that persists: the behaviors the
+            team has approved, in the repository, where every session reads them. The review checks
+            every change against that baseline no matter which agent or lane produced it, and the
+            drift watch covers pushes that skip the pull request. The application described above runs
+            this way.
+          </p>
+        </Section>
+
         <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[26px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[32px]">
