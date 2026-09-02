@@ -195,6 +195,21 @@ function GoldTracesPage() {
             future branch inherits them. Checkout is the delivery mechanism: a developer or coding
             agent opening the repository starts with the same Gold Traces.
           </p>
+          <p className="mt-4">
+            Every trace conforms to one published specification, the same format for every language.
+            A <code className="font-mono text-[#f2effb]">gold_traces/</code> directory is portable: any
+            MCP-capable agent can consume it, and any tool written against the specification can
+            process it. The specification is open, at{" "}
+            <a
+              href="https://github.com/getappmap/appmap"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#f2effb] underline decoration-[#ff07aa] underline-offset-2"
+            >
+              github.com/getappmap/appmap
+            </a>
+            .
+          </p>
         </Section>
 
         <Section heading="One person configures. The team expands.">
