@@ -243,6 +243,22 @@ function GoldTracesPage() {
           </p>
         </Section>
 
+        <Section heading="What issues does the review find?" alt>
+          <p>
+            Not issues from a list. A linter or a static analyzer carries a catalog of known-bad
+            patterns and finds instances of them in your code. A behavioral review carries no
+            catalog. It compares the change against the recorded behavior the team has approved, and
+            reports what departed from it. That means it finds the defects that are on no list: the
+            ones specific to your application, produced by parts that are each correct alone. No
+            rule says &quot;two clocks in AI fallback calls,&quot; and no rule could. Every test can pass
+            while the behavior changes. The comparison surfaces it because the behavior changed. A
+            catalog of known-bad patterns finds what everyone&apos;s code gets wrong. A baseline of
+            known-good behavior finds what your change got wrong. AppMap also includes a rule-based
+            scanner for the bounded class of known problems, such as N+1 queries. The review&apos;s work
+            is the unbounded class: departure from your own baseline.
+          </p>
+        </Section>
+
         <Section heading="Sanitized before commit" alt>
           <p>
             Gold Traces are data, not code. Every trace is processed by the AppMap CLI's sanitize
