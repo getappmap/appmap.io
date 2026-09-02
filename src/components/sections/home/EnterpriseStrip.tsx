@@ -1,10 +1,4 @@
-const points = [
-  "Runtime evidence at codebase scale, in every repository",
-  "Airgapped deployment, offline activation, and internal distribution",
-  "Centrally managed configuration and organization-registered installs",
-  "Logging and telemetry routed to your internal observability systems",
-  "Organization-wide Gold Trace programs, sanitized and repository-owned",
-];
+import { InteractionWeb } from "@/components/sections/enterprise/RuntimeBehaviorAnalysis";
 
 export function EnterpriseStrip() {
   return (
@@ -17,16 +11,15 @@ export function EnterpriseStrip() {
           AppMap runs across large codebases and many teams. Reviewers, coding agents, and compliance
           see the same record of what each change did, so organizations can accept changes faster.
         </p>
-        <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          {points.map((p) => (
-            <li
-              key={p}
-              className="rounded-xl border border-[#2c2353] bg-[#0d0a1a] p-4 text-[14px] leading-snug text-[#f2effb]"
-            >
-              {p}
-            </li>
-          ))}
-        </ul>
+        <div className="mt-8 overflow-hidden rounded-2xl border border-[#2c2353] bg-[#0d0a1a]">
+          <div className="aspect-[16/9] w-full p-2 sm:p-4">
+            <InteractionWeb />
+          </div>
+          <div className="border-t border-[#2c2353] px-4 py-3 text-center text-[14px] font-bold text-[#ff07aa] sm:px-6">
+            Find the defects in the <em className="italic">interactions</em>.
+          </div>
+        </div>
+
         <div className="mt-8 flex flex-wrap gap-3.5">
           <a
             href="/enterprise"

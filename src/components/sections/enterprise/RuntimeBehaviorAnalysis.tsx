@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useId, useState } from "react";
 
 /* ---------------- seeded PRNG ---------------- */
 
@@ -214,7 +214,7 @@ function Glyph({ kind, x, y }: { kind: GlyphKind; x: number; y: number }) {
 
 /* ---------------- bug ---------------- */
 
-function Bug({ x, y, angle }: { x: number; y: number; angle: number }) {
+function Bug({ x, y, angle, eyeId }: { x: number; y: number; angle: number; eyeId: string }) {
   const s = { fill: "none", stroke: "#F87171", strokeWidth: 1.2, strokeLinecap: "round" as const };
   return (
     <g transform={`translate(${x},${y}) rotate(${angle})`}>
@@ -225,8 +225,8 @@ function Bug({ x, y, angle }: { x: number; y: number; angle: number }) {
       <path d="M-6 0 H6" {...s} strokeWidth={0.9} />
       {/* head */}
       <circle cx={10} cy={0} r={3.6} fill="#17102c" stroke="#F87171" strokeWidth={1.3} />
-      <circle cx={11.4} cy={-1.5} r={1} fill="#ff2d2d" filter="url(#rba-eye)" />
-      <circle cx={11.4} cy={1.5} r={1} fill="#ff2d2d" filter="url(#rba-eye)" />
+      <circle cx={11.4} cy={-1.5} r={1} fill="#ff2d2d" filter={`url(#${eyeId})`} />
+      <circle cx={11.4} cy={1.5} r={1} fill="#ff2d2d" filter={`url(#${eyeId})`} />
       {/* antennae */}
       <path d="M12 -2.6 Q16 -5 17.5 -8 M12 2.6 Q16 5 17.5 8" {...s} />
     </g>
@@ -235,7 +235,11 @@ function Bug({ x, y, angle }: { x: number; y: number; angle: number }) {
 
 /* ---------------- web graphic ---------------- */
 
-function InteractionWeb() {
+export function InteractionWeb() {
+  const uid = useId().replace(/:/g, "");
+  const glowId = `rba-glow-${uid}`;
+  const eyeId = `rba-eye-${uid}`;
+  const edgeId = (i: number) => `rba-edge-${uid}-${i}`;
   const [defects, setDefects] = useState<Defect[]>(INITIAL_DEFECTS);
   const [visible, setVisible] = useState(1);
 
@@ -263,14 +267,14 @@ function InteractionWeb() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <defs>
-        <filter id="rba-glow" x="-60%" y="-60%" width="220%" height="220%">
+        <filter id={glowId} x="-60%" y="-60%" width="220%" height="220%">
           <feGaussianBlur stdDeviation="3.2" result="b" />
           <feMerge>
             <feMergeNode in="b" />
             <feMergeNode in="SourceGraphic" />
           </feMerge>
         </filter>
-        <filter id="rba-eye" x="-200%" y="-200%" width="500%" height="500%">
+        <filter id={eyeId} x="-200%" y="-200%" width="500%" height="500%">
           <feGaussianBlur stdDeviation="1.1" result="b" />
           <feMerge>
             <feMergeNode in="b" />
@@ -283,7 +287,7 @@ function InteractionWeb() {
           return (
             <linearGradient
               key={i}
-              id={`rba-edge-${i}`}
+              id={edgeId(i)}
               gradientUnits="userSpaceOnUse"
               x1={a.x}
               y1={a.y}
@@ -343,13 +347,13 @@ function InteractionWeb() {
                 y1={a.y}
                 x2={b.x}
                 y2={b.y}
-                stroke={`url(#rba-edge-${i})`}
+                stroke={`url(#${edgeId(i)})`}
                 strokeWidth={2.6}
-                filter="url(#rba-glow)"
+                filter={`url(#${glowId})`}
               />
-              <circle cx={a.x} cy={a.y} r={4.2} fill="#F87171" filter="url(#rba-glow)" />
-              <circle cx={b.x} cy={b.y} r={4.2} fill="#F87171" filter="url(#rba-glow)" />
-              <Bug x={mx} y={my} angle={angle} />
+              <circle cx={a.x} cy={a.y} r={4.2} fill="#F87171" filter={`url(#${glowId})`} />
+              <circle cx={b.x} cy={b.y} r={4.2} fill="#F87171" filter={`url(#${glowId})`} />
+              <Bug x={mx} y={my} angle={angle} eyeId={eyeId} />
               <text
                 x={labelX}
                 y={my - 22}
