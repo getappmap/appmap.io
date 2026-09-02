@@ -29,6 +29,7 @@ import { Route as BehaviorControlsRouteImport } from './routes/behavior-controls
 import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BenchmarksIndexRouteImport } from './routes/benchmarks.index'
+import { Route as ResearchRuntimeRcaDotpdfRouteImport } from './routes/research.runtime-rca[.]pdf'
 import { Route as ResearchRuntimeRcaRouteImport } from './routes/research.runtime-rca'
 import { Route as NavieSplatRouteImport } from './routes/navie.$'
 import { Route as BenchmarksSweBenchRouteImport } from './routes/benchmarks.swe-bench'
@@ -134,6 +135,12 @@ const BenchmarksIndexRoute = BenchmarksIndexRouteImport.update({
   path: '/',
   getParentRoute: () => BenchmarksRoute,
 } as any)
+const ResearchRuntimeRcaDotpdfRoute =
+  ResearchRuntimeRcaDotpdfRouteImport.update({
+    id: '/research/runtime-rca.pdf',
+    path: '/research/runtime-rca.pdf',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ResearchRuntimeRcaRoute = ResearchRuntimeRcaRouteImport.update({
   id: '/research/runtime-rca',
   path: '/research/runtime-rca',
@@ -178,6 +185,7 @@ export interface FileRoutesByFullPath {
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/navie/$': typeof NavieSplatRoute
   '/research/runtime-rca': typeof ResearchRuntimeRcaRoute
+  '/research/runtime-rca.pdf': typeof ResearchRuntimeRcaDotpdfRoute
   '/benchmarks/': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -203,6 +211,7 @@ export interface FileRoutesByTo {
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/navie/$': typeof NavieSplatRoute
   '/research/runtime-rca': typeof ResearchRuntimeRcaRoute
+  '/research/runtime-rca.pdf': typeof ResearchRuntimeRcaDotpdfRoute
   '/benchmarks': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -230,6 +239,7 @@ export interface FileRoutesById {
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/navie/$': typeof NavieSplatRoute
   '/research/runtime-rca': typeof ResearchRuntimeRcaRoute
+  '/research/runtime-rca.pdf': typeof ResearchRuntimeRcaDotpdfRoute
   '/benchmarks/': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -258,6 +268,7 @@ export interface FileRouteTypes {
     | '/benchmarks/swe-bench'
     | '/navie/$'
     | '/research/runtime-rca'
+    | '/research/runtime-rca.pdf'
     | '/benchmarks/'
     | '/docs/navie/$'
   fileRoutesByTo: FileRoutesByTo
@@ -283,6 +294,7 @@ export interface FileRouteTypes {
     | '/benchmarks/swe-bench'
     | '/navie/$'
     | '/research/runtime-rca'
+    | '/research/runtime-rca.pdf'
     | '/benchmarks'
     | '/docs/navie/$'
   id:
@@ -309,6 +321,7 @@ export interface FileRouteTypes {
     | '/benchmarks/swe-bench'
     | '/navie/$'
     | '/research/runtime-rca'
+    | '/research/runtime-rca.pdf'
     | '/benchmarks/'
     | '/docs/navie/$'
   fileRoutesById: FileRoutesById
@@ -335,6 +348,7 @@ export interface RootRouteChildren {
   TeamRoute: typeof TeamRoute
   NavieSplatRoute: typeof NavieSplatRoute
   ResearchRuntimeRcaRoute: typeof ResearchRuntimeRcaRoute
+  ResearchRuntimeRcaDotpdfRoute: typeof ResearchRuntimeRcaDotpdfRoute
   DocsNavieSplatRoute: typeof DocsNavieSplatRoute
 }
 
@@ -480,6 +494,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BenchmarksIndexRouteImport
       parentRoute: typeof BenchmarksRoute
     }
+    '/research/runtime-rca.pdf': {
+      id: '/research/runtime-rca.pdf'
+      path: '/research/runtime-rca.pdf'
+      fullPath: '/research/runtime-rca.pdf'
+      preLoaderRoute: typeof ResearchRuntimeRcaDotpdfRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/research/runtime-rca': {
       id: '/research/runtime-rca'
       path: '/research/runtime-rca'
@@ -547,6 +568,7 @@ const rootRouteChildren: RootRouteChildren = {
   TeamRoute: TeamRoute,
   NavieSplatRoute: NavieSplatRoute,
   ResearchRuntimeRcaRoute: ResearchRuntimeRcaRoute,
+  ResearchRuntimeRcaDotpdfRoute: ResearchRuntimeRcaDotpdfRoute,
   DocsNavieSplatRoute: DocsNavieSplatRoute,
 }
 export const routeTree = rootRouteImport
