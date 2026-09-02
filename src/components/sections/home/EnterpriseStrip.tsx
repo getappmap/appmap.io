@@ -1,4 +1,4 @@
-import { InteractionWeb } from "@/components/sections/enterprise/RuntimeBehaviorAnalysis";
+import { InteractionWebPanel } from "@/components/sections/enterprise/RuntimeBehaviorAnalysis";
 
 export function EnterpriseStrip() {
   return (
@@ -11,14 +11,15 @@ export function EnterpriseStrip() {
           AppMap runs across large codebases and many teams. Reviewers, coding agents, and compliance
           see the same record of what each change did, so organizations can accept changes faster.
         </p>
-        <div className="mt-8 overflow-hidden rounded-2xl border border-[#2c2353] bg-[#0d0a1a]">
-          <div className="aspect-[16/9] w-full p-2 sm:p-4">
-            <InteractionWeb />
-          </div>
-          <div className="border-t border-[#2c2353] px-4 py-3 text-center text-[14px] font-bold text-[#ff07aa] sm:px-6">
-            Find the defects in the <em className="italic">interactions</em>.
-          </div>
+        <div className="mt-8">
+          <InteractionWebPanel />
         </div>
+
+        <p className="mt-6 text-[15px] text-[#a99fc7]">
+          <a href="/enterprise" className="text-[#ff07aa] hover:underline">
+            See the full runtime behavior analysis, with the standards it maps to &rarr;
+          </a>
+        </p>
 
         <div className="mt-8 flex flex-wrap gap-3.5">
           <a
