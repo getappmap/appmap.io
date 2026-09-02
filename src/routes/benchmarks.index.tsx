@@ -471,6 +471,14 @@ grep -rn "ledger.write" src/
               </table>
             </div>
           </div>
+
+          <div className="mt-10">
+            <h3 className="text-[19px] font-bold text-[#f2effb]">What the cost result means</h3>
+            <p className="mt-3 max-w-[820px] text-[15.5px] leading-[1.7] text-[#a99fc7]">
+              The lowest-cost configuration that fixed every bug was a compact model reading traces. A frontier model was needed for the hardest implementation steps, and for nothing else. A trace carries information the model would otherwise spend tool calls gathering, so the same diagnosis completes with a smaller model, fewer calls, and lower spend. For an organization running coding agents across many repositories, that is the same review at lower cost per change. This is one internal study. The limits below apply.
+            </p>
+          </div>
+
           <Caveat />
         </div>
       </section>

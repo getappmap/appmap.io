@@ -134,6 +134,17 @@ function GoldTracesPage() {
           </p>
         </Section>
 
+        <Section heading="Three kinds of context">
+          <p>
+            A coding agent works from three kinds of context. Source context is the code as written.
+            Documentation context is the code as described. Runtime context is a record of what the
+            code did when it ran: the calls it made, in what order, and the queries it issued. The
+            first two can be read from the repository. Runtime context can&apos;t, because running is
+            not reading. Most agents work without it. AppMap records it, and Gold Traces version it
+            with the code, so all three kinds of context arrive with a checkout.
+          </p>
+        </Section>
+
         <Section heading="The team's approved baseline">
           <p>
             Gold Traces are the behaviors a team has approved: the flows that must hold across every
@@ -184,6 +195,21 @@ function GoldTracesPage() {
             future branch inherits them. Checkout is the delivery mechanism: a developer or coding
             agent opening the repository starts with the same Gold Traces.
           </p>
+          <p className="mt-4">
+            Every trace conforms to one published specification, the same format for every language.
+            A <code className="font-mono text-[#f2effb]">gold_traces/</code> directory is portable: any
+            MCP-capable agent can consume it, and any tool written against the specification can
+            process it. The specification is open, at{" "}
+            <a
+              href="https://github.com/getappmap/appmap"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#f2effb] underline decoration-[#ff07aa] underline-offset-2"
+            >
+              github.com/getappmap/appmap
+            </a>
+            .
+          </p>
         </Section>
 
         <Section heading="One person configures. The team expands.">
@@ -217,6 +243,22 @@ function GoldTracesPage() {
           </p>
         </Section>
 
+        <Section heading="What issues does the review find?" alt>
+          <p>
+            Not issues from a list. A linter or a static analyzer carries a catalog of known-bad
+            patterns and finds instances of them in your code. A behavioral review carries no
+            catalog. It compares the change against the recorded behavior the team has approved, and
+            reports what departed from it. That means it finds the defects that are on no list: the
+            ones specific to your application, produced by parts that are each correct alone. No
+            rule says &quot;two clocks in AI fallback calls,&quot; and no rule could. Every test can pass
+            while the behavior changes. The comparison surfaces it because the behavior changed. A
+            catalog of known-bad patterns finds what everyone&apos;s code gets wrong. A baseline of
+            known-good behavior finds what your change got wrong. AppMap also includes a rule-based
+            scanner for the bounded class of known problems, such as N+1 queries. The review&apos;s work
+            is the unbounded class: departure from your own baseline.
+          </p>
+        </Section>
+
         <Section heading="Sanitized before commit" alt>
           <p>
             Gold Traces are data, not code. Every trace is processed by the AppMap CLI's sanitize
@@ -236,6 +278,17 @@ function GoldTracesPage() {
             breaks for a user if it fails. Four months of ordinary development later, the set guards
             forty behaviors across content integrity, authorization, ingest, and security paths,
             maintained by a team that is mostly AI agents.
+          </p>
+        </Section>
+
+        <Section heading="When the team is mostly agents" alt>
+          <p>
+            Multiple agent sessions can touch the same code in a day. No agent sees the whole, and no
+            agent remembers yesterday. The Gold Trace set is the part that persists: the behaviors the
+            team has approved, in the repository, where every session reads them. The review checks
+            every change against that baseline no matter which agent or lane produced it, and the
+            drift watch covers pushes that skip the pull request. The application described above runs
+            this way.
           </p>
         </Section>
 

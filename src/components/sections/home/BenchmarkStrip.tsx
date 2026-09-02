@@ -14,6 +14,9 @@ export function BenchmarkStrip() {
         <p className="mt-3 max-w-[720px] text-[16px] font-semibold text-[#f2effb]">
           The AppMap condition also used 3.4 times less model spend.
         </p>
+        <p className="mt-3 max-w-[720px] text-[16px] leading-relaxed text-[#a99fc7]">
+          The lowest-cost passing configuration was a compact model reading traces.
+        </p>
         <p className="mt-3 max-w-[720px] text-[13px] text-[#7c8aa6]">
           One internal study, Claude models. Method and limits in the benchmark.
         </p>
