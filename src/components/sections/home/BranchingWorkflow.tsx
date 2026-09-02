@@ -201,7 +201,7 @@ const ROWS: Row[] = [
   { kind: "commit", rail: 2, color: BRANCHES[1].color, artifact: "seq" },
   { kind: "commit", rail: 3, color: BRANCHES[2].color, artifact: "trace" },
   { kind: "commit", rail: 1, color: BRANCHES[0].color, artifact: "seq" },
-  { kind: "merge", rail: 1, note: "behavior held" },
+  { kind: "merge", rail: 1, note: "compared to the gold traces on main: behavior held" },
   { kind: "flow", note: "ci records fresh traces, the baseline advances" },
   {
     kind: "commit",
@@ -223,7 +223,7 @@ const ROWS: Row[] = [
     tone: "red",
   },
   { kind: "commit", rail: 2, color: BRANCHES[1].color, artifact: "seq" },
-  { kind: "merge", rail: 2, note: "1 changed, 1 new" },
+  { kind: "merge", rail: 2, note: "compared to the gold traces on main: 1 changed, 1 new" },
   { kind: "flow", note: "ci records fresh traces, the baseline advances" },
   {
     kind: "commit",
@@ -235,7 +235,7 @@ const ROWS: Row[] = [
     tone: "gold",
   },
   { kind: "commit", rail: 3, color: BRANCHES[2].color, artifact: "dep" },
-  { kind: "merge", rail: 3, note: "behavior held" },
+  { kind: "merge", rail: 3, note: "compared to the gold traces on main: behavior held" },
   { kind: "flow", note: "ci records fresh traces, the baseline advances" },
   {
     kind: "commit",
