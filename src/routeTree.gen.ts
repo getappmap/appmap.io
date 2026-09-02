@@ -29,6 +29,7 @@ import { Route as BehaviorControlsRouteImport } from './routes/behavior-controls
 import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BenchmarksIndexRouteImport } from './routes/benchmarks.index'
+import { Route as ResearchRuntimeRcaRouteImport } from './routes/research.runtime-rca'
 import { Route as NavieSplatRouteImport } from './routes/navie.$'
 import { Route as BenchmarksSweBenchRouteImport } from './routes/benchmarks.swe-bench'
 import { Route as DocsNavieSplatRouteImport } from './routes/docs.navie.$'
@@ -133,6 +134,11 @@ const BenchmarksIndexRoute = BenchmarksIndexRouteImport.update({
   path: '/',
   getParentRoute: () => BenchmarksRoute,
 } as any)
+const ResearchRuntimeRcaRoute = ResearchRuntimeRcaRouteImport.update({
+  id: '/research/runtime-rca',
+  path: '/research/runtime-rca',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const NavieSplatRoute = NavieSplatRouteImport.update({
   id: '/navie/$',
   path: '/navie/$',
@@ -171,6 +177,7 @@ export interface FileRoutesByFullPath {
   '/team': typeof TeamRoute
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/navie/$': typeof NavieSplatRoute
+  '/research/runtime-rca': typeof ResearchRuntimeRcaRoute
   '/benchmarks/': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -195,6 +202,7 @@ export interface FileRoutesByTo {
   '/team': typeof TeamRoute
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/navie/$': typeof NavieSplatRoute
+  '/research/runtime-rca': typeof ResearchRuntimeRcaRoute
   '/benchmarks': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -221,6 +229,7 @@ export interface FileRoutesById {
   '/team': typeof TeamRoute
   '/benchmarks/swe-bench': typeof BenchmarksSweBenchRoute
   '/navie/$': typeof NavieSplatRoute
+  '/research/runtime-rca': typeof ResearchRuntimeRcaRoute
   '/benchmarks/': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -248,6 +257,7 @@ export interface FileRouteTypes {
     | '/team'
     | '/benchmarks/swe-bench'
     | '/navie/$'
+    | '/research/runtime-rca'
     | '/benchmarks/'
     | '/docs/navie/$'
   fileRoutesByTo: FileRoutesByTo
@@ -272,6 +282,7 @@ export interface FileRouteTypes {
     | '/team'
     | '/benchmarks/swe-bench'
     | '/navie/$'
+    | '/research/runtime-rca'
     | '/benchmarks'
     | '/docs/navie/$'
   id:
@@ -297,6 +308,7 @@ export interface FileRouteTypes {
     | '/team'
     | '/benchmarks/swe-bench'
     | '/navie/$'
+    | '/research/runtime-rca'
     | '/benchmarks/'
     | '/docs/navie/$'
   fileRoutesById: FileRoutesById
@@ -322,6 +334,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TeamRoute: typeof TeamRoute
   NavieSplatRoute: typeof NavieSplatRoute
+  ResearchRuntimeRcaRoute: typeof ResearchRuntimeRcaRoute
   DocsNavieSplatRoute: typeof DocsNavieSplatRoute
 }
 
@@ -467,6 +480,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BenchmarksIndexRouteImport
       parentRoute: typeof BenchmarksRoute
     }
+    '/research/runtime-rca': {
+      id: '/research/runtime-rca'
+      path: '/research/runtime-rca'
+      fullPath: '/research/runtime-rca'
+      preLoaderRoute: typeof ResearchRuntimeRcaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/navie/$': {
       id: '/navie/$'
       path: '/navie/$'
@@ -526,6 +546,7 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TeamRoute: TeamRoute,
   NavieSplatRoute: NavieSplatRoute,
+  ResearchRuntimeRcaRoute: ResearchRuntimeRcaRoute,
   DocsNavieSplatRoute: DocsNavieSplatRoute,
 }
 export const routeTree = rootRouteImport
