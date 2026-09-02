@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
+import { RuntimeBehaviorAnalysis } from "@/components/sections/enterprise/RuntimeBehaviorAnalysis";
+
 
 const reviewerImages = [
   { src: "/marketing-assets/img/appmap/call-tree.webp", caption: "The call tree the agent queried" },
@@ -384,6 +386,9 @@ function EnterprisePageInner() {
             </p>
           </div>
         </section>
+
+        <RuntimeBehaviorAnalysis />
+
 
         <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
