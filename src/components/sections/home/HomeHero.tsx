@@ -1,6 +1,6 @@
 import { VSCODE_INSTALL_URL, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
-import { Em } from "@/components/common/Em";
 import { BranchingWorkflow } from "@/components/sections/home/BranchingWorkflow";
+
 
 
 
