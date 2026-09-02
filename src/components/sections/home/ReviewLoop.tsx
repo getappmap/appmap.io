@@ -1,4 +1,5 @@
-import type { ReactNode } from "react";
+import { MotionOrPoster } from "@/components/common/MotionOrPoster";
+import { BehavioralReviewCard } from "@/components/sections/home/BehavioralReviewCard";
 
 const steps = [
   {
@@ -19,26 +20,6 @@ const steps = [
   },
 ];
 
-const panels = [
-  {
-    chip: "2-3",
-    image: "/marketing-assets/review/trace-diff-diagram.png",
-    alt: "Sequence diagram of a client request flowing through JWTAuthFilter, ActorService, ActorDao, and Postgres, with the changed order-by query highlighted in amber",
-    caption: "The trace as a sequence diagram. The amber call changed between the base revision and the head revision.",
-    link: {
-      href: "/marketing-assets/review/trace-highlight.png",
-      label: "View the full trace",
-    },
-  },
-];
-
-function Chip({ children }: { children: React.ReactNode }) {
-  return (
-    <span className="absolute -top-3 -left-3 z-10 flex h-7 min-w-7 items-center justify-center rounded-lg bg-[color:var(--color-am-brand)] px-2 text-[13px] font-extrabold text-white shadow-md">
-      {children}
-    </span>
-  );
-}
 
 export function ReviewLoop() {
   return (
@@ -78,39 +59,24 @@ export function ReviewLoop() {
           ))}
         </ol>
 
-        <div className="mt-6 flex w-full justify-center">
-          {panels.map((p) => (
-            <div key={p.chip + p.image} className="relative w-full min-w-0 max-w-[720px]">
-              <Chip>{p.chip}</Chip>
-              <figure className="flex w-full flex-col overflow-hidden rounded-2xl border border-[color:var(--color-am-line)] bg-white/95 shadow-lg">
-                <a
-                  href={p.image}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full"
-                >
-                  <img
-                    src={p.image}
-                    alt={p.alt}
-                    loading="lazy"
-                    className="block h-auto w-full"
-                  />
-                </a>
-                <figcaption className="flex min-h-[4.5rem] items-center justify-between gap-4 border-t border-black/10 bg-[color:var(--color-am-card)] px-4 py-3 text-[13px] leading-[1.55] text-[color:var(--color-am-muted)]">
-                  <span className="line-clamp-2">{p.caption}</span>
-                  <a
-                    href={p.link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="shrink-0 text-[12px] font-medium text-[color:var(--color-am-brand)] hover:underline"
-                  >
-                    {p.link.label}
-                  </a>
-                </figcaption>
-              </figure>
-            </div>
-          ))}
+        <div className="mt-6">
+          <BehavioralReviewCard />
         </div>
+
+        <div className="mt-6">
+          <MotionOrPoster
+            src="/marketing-assets/video/dependency-map.mp4"
+            poster="/marketing-assets/img/appmap/dependency-map.webp"
+            alt="AppMap dependency map of a running application, generated from recorded traces."
+            width={1600}
+            height={900}
+            className="block w-full rounded-2xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] object-cover"
+          />
+          <div className="mt-2 text-[12.5px] text-[#6d6395]">
+            The same traces, as living diagrams developers open in the editor.
+          </div>
+        </div>
+
 
         <p className="mt-5 max-w-3xl text-[20px] font-semibold text-[color:var(--color-am-ink)]">
           Every pull request explains its behavior and impact.
