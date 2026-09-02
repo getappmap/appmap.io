@@ -477,7 +477,7 @@ function RowRails({ row, index }: { row: Row; index: number }) {
   );
 }
 
-function isRejectedRow(row: Row) {
+function isRejectedRow(row: Row): row is Extract<Row, { kind: "commit" }> {
   return row.kind === "commit" && row.tone === "red" && !!row.msg?.startsWith("Behavioral review");
 }
 
