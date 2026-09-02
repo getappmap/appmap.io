@@ -37,15 +37,8 @@ export const Route = createFileRoute("/")({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: "https://appmap.io/marketing-assets/og/og-card.png" },
     ],
-    links: [
-      { rel: "canonical", href: "https://appmap.io/" },
-      {
-        rel: "preload",
-        as: "image",
-        href: "https://appmap.io/marketing-assets/img/appmap/dependency-map.webp",
-        fetchPriority: "high",
-      },
-    ],
+    links: [{ rel: "canonical", href: "https://appmap.io/" }],
+
     scripts: [
       {
         type: "application/ld+json",
