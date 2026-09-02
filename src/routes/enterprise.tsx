@@ -261,7 +261,9 @@ function EnterprisePageInner() {
           </div>
         </section>
 
-        <section id="security-faq" className="border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
+        <RuntimeBehaviorAnalysis />
+
+        <section id="security-faq" className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Architecture and trust</h2>
 
