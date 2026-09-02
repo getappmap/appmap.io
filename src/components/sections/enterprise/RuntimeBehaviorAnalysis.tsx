@@ -509,11 +509,7 @@ export function RuntimeBehaviorAnalysis() {
           it reports whatever departed.
         </p>
 
-        <div className="mt-8">
-          <InteractionWebPanel />
-        </div>
-
-        <section className="px-6 py-16">
+        <section className="px-0 pt-10 pb-2">
           <div className="mx-auto max-w-[840px] border-t border-b border-[#2c2353] py-10 text-center">
             <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Independent runtime evidence</div>
             <p className="mt-4 text-[17px] leading-[1.65] text-[#f2effb]">
@@ -521,6 +517,11 @@ export function RuntimeBehaviorAnalysis() {
             </p>
           </div>
         </section>
+
+        <div className="mt-8">
+          <InteractionWebPanel />
+        </div>
+
 
         {/* standards table */}
         <h3 className="mt-16 text-[21px] font-bold tracking-[-0.4px] text-[#f2effb]">

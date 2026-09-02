@@ -16,7 +16,9 @@ import { EnterpriseStrip } from "@/components/sections/home/EnterpriseStrip";
 
 const title = "AppMap: Runtime evidence for AI-assisted development";
 const description =
-  "Code changes outrun our understanding. See how every change behaves before it merges. AppMap records and compares application behavior for developers and coding agents.";
+  "Code changes outrun our understanding. See how every change behaves before it merges. AppMap records and compares application behavior, and the recordings live in your repository with the code. Developers inspect the diagrams. Coding agents query the same traces and verify their changes against them.";
+
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -36,15 +38,8 @@ export const Route = createFileRoute("/")({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: "https://appmap.io/marketing-assets/og/og-card.png" },
     ],
-    links: [
-      { rel: "canonical", href: "https://appmap.io/" },
-      {
-        rel: "preload",
-        as: "image",
-        href: "https://appmap.io/marketing-assets/img/appmap/dependency-map.webp",
-        fetchPriority: "high",
-      },
-    ],
+    links: [{ rel: "canonical", href: "https://appmap.io/" }],
+
     scripts: [
       {
         type: "application/ld+json",
