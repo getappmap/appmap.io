@@ -134,6 +134,17 @@ function GoldTracesPage() {
           </p>
         </Section>
 
+        <Section heading="Three kinds of context">
+          <p>
+            A coding agent works from three kinds of context. Source context is the code as written.
+            Documentation context is the code as described. Runtime context is a record of what the
+            code did when it ran: the calls it made, in what order, and the queries it issued. The
+            first two can be read from the repository. Runtime context can&apos;t, because running is
+            not reading. Most agents work without it. AppMap records it, and Gold Traces version it
+            with the code, so all three kinds of context arrive with a checkout.
+          </p>
+        </Section>
+
         <Section heading="The team's approved baseline">
           <p>
             Gold Traces are the behaviors a team has approved: the flows that must hold across every
