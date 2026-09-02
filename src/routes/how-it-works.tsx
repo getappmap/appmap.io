@@ -489,3 +489,148 @@ function FlowNode({
     </div>
   );
 }
+function TraceGlyph({ scale = 1 }: { scale?: number }) {
+  const bars: Array<[number, number, number]> = [
+    [3, 3, 22],
+    [7, 8, 17],
+    [11, 13, 12],
+    [7, 18, 15],
+  ];
+  return (
+    <svg width={30 * scale} height={22 * scale} viewBox="0 0 30 22" aria-hidden="true">
+      {bars.map(([x, y, w], i) => (
+        <g key={i}>
+          <rect x={x + 4} y={y - 1.6} width={w - 4} height={3.2} rx={1.4} fill="#3a3068" />
+          <circle cx={x + 1.5} cy={y} r={1.4} fill="#FF07AA" />
+        </g>
+      ))}
+    </svg>
+  );
+}
+
+function TraceChip({ gold = false, scale = 1 }: { gold?: boolean; scale?: number }) {
+  return (
+    <span
+      className="inline-flex items-center rounded-[6px] px-1.5 py-1"
+      style={{
+        border: gold ? "1.4px solid rgba(255,7,170,.55)" : "1px solid #2c2353",
+        background: gold ? "rgba(255,7,170,.08)" : "#0f0b1d",
+      }}
+    >
+      <TraceGlyph scale={scale} />
+    </span>
+  );
+}
+
+function StageArrow() {
+  return (
+    <svg width="22" height="12" viewBox="0 0 22 12" aria-hidden="true" className="flex-shrink-0">
+      <path d="M0 6 H15" stroke="#FF07AA" strokeWidth="1.6" />
+      <path d="M14 2 L20 6 L14 10 z" fill="#FF07AA" />
+    </svg>
+  );
+}
+
+function Stage({ visual, title, sub }: { visual: React.ReactNode; title: string; sub: string }) {
+  return (
+    <div className="flex w-[132px] flex-shrink-0 flex-col items-center text-center">
+      <div className="flex h-[40px] items-center justify-center">{visual}</div>
+      <div className="mt-2 text-[13px] font-bold text-[#f2effb]">{title}</div>
+      <div className="text-[11.5px] text-[#6d6395]">{sub}</div>
+    </div>
+  );
+}
+
+function LifecycleStrip() {
+  return (
+    <div className="mt-8 max-w-[900px]">
+      <div className="overflow-x-auto rounded-2xl border border-[#2c2353] bg-[#0d0a1a] p-5">
+        <div className="flex min-w-[760px] items-start justify-between gap-2">
+          <Stage visual={<TraceChip />} title="Record locally" sub="tests, requests, processes" />
+          <div className="pt-3.5">
+            <StageArrow />
+          </div>
+          <Stage
+            visual={
+              <span className="relative inline-block">
+                <TraceChip gold />
+                <span className="absolute -right-1.5 -top-1.5 flex h-[14px] w-[14px] items-center justify-center rounded-full bg-[#FF07AA] text-[10px] font-bold leading-none text-[#0f0b1d]">
+                  +
+                </span>
+              </span>
+            }
+            title="Commit the key traces"
+            sub="gold_traces/ with the code"
+          />
+          <div className="pt-3.5">
+            <StageArrow />
+          </div>
+          <Stage
+            visual={
+              <span className="inline-flex items-center rounded-[6px] border border-[#2c2353] bg-[#0f0b1d] px-2.5 py-1.5 text-[12px] font-bold text-[#f2effb]">
+                MCP
+              </span>
+            }
+            title="Agents query"
+            sub="call tree, queries, requests"
+          />
+          <div className="pt-3.5">
+            <StageArrow />
+          </div>
+          <Stage
+            visual={
+              <span className="inline-flex items-center gap-1">
+                <TraceChip scale={0.85} />
+                <svg width="16" height="12" viewBox="0 0 16 12" aria-hidden="true">
+                  <path d="M2 4 H14 M4 2 L2 4 L4 6" stroke="#a99fc7" strokeWidth="1.2" fill="none" />
+                  <path d="M14 8 H2 M12 6 L14 8 L12 10" stroke="#a99fc7" strokeWidth="1.2" fill="none" />
+                </svg>
+                <TraceChip gold scale={0.85} />
+              </span>
+            }
+            title="Compare at review"
+            sub="fresh against the baseline"
+          />
+          <div className="pt-3.5">
+            <StageArrow />
+          </div>
+          <Stage
+            visual={
+              <span className="relative inline-block">
+                <span className="absolute left-1.5 top-1.5 opacity-70">
+                  <TraceChip gold />
+                </span>
+                <span className="relative">
+                  <TraceChip gold />
+                </span>
+              </span>
+            }
+            title="The baseline advances"
+            sub="after the merge"
+          />
+        </div>
+      </div>
+      <p className="mt-3 text-[12.5px] text-[#6d6395]">
+        Record locally. Commit the key traces. Query over MCP. Compare at review. The baseline advances after the merge.
+      </p>
+    </div>
+  );
+}
+
+function CoverageChips() {
+  const chip = "rounded-lg border border-[#2c2353] bg-[#1c1538] px-3 py-2 text-[13px] text-[#f2effb]";
+  return (
+    <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
+      <span className={chip}>Important path</span>
+      <StageArrow />
+      <span className={chip}>Existing test or suggested test</span>
+      <StageArrow />
+      <span
+        className="rounded-lg px-3 py-2 text-[13px] text-[#f2effb]"
+        style={{ border: "1.4px solid rgba(255,7,170,.55)", background: "rgba(255,7,170,.08)" }}
+      >
+        AppMap trace
+      </span>
+    </div>
+  );
+}
