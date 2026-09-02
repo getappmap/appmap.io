@@ -69,7 +69,7 @@ function MicroSeq() {
   );
 }
 
-function MicroTrace() {
+function MicroTrace({ scale = 1 }: { scale?: number }) {
   const bars = [
     [3, 3, 22],
     [7, 8, 17],
@@ -77,7 +77,7 @@ function MicroTrace() {
     [7, 18, 15],
   ];
   return (
-    <svg width={30} height={22} viewBox="0 0 30 22" aria-hidden="true">
+    <svg width={30 * scale} height={22 * scale} viewBox="0 0 30 22" aria-hidden="true">
       {bars.map(([x, y, w], i) => (
         <g key={i}>
           <rect x={x + 4} y={y - 1.6} width={w - 4} height={3.2} rx={1.4} fill="#3a3068" />
@@ -103,6 +103,87 @@ function ArtifactChip({ kind }: { kind: Artifact }) {
     </span>
   );
 }
+
+/* ---------------- trace lifecycle chips ---------------- */
+
+const GOLD_BORDER = "rgba(255,7,170,.55)";
+const GOLD_BG = "rgba(255,7,170,.08)";
+
+function TraceChip({
+  scale = 1,
+  borderColor = GOLD_BORDER,
+  background = GOLD_BG,
+  compact = false,
+}: {
+  scale?: number;
+  borderColor?: string;
+  background?: string;
+  compact?: boolean;
+}) {
+  return (
+    <span
+      className={`inline-flex items-center rounded-[5px] border ${compact ? "px-[2px] py-[1px]" : "px-1 py-0.5"}`}
+      style={{ borderColor, background }}
+      aria-hidden="true"
+    >
+      <MicroTrace scale={scale} />
+    </span>
+  );
+}
+
+/* fanned stack of gold chips docked at the main rail */
+function GoldStack({ count, scale = 0.8 }: { count: number; scale?: number }) {
+  const step = 13;
+  return (
+    <span className="relative inline-block" aria-hidden="true">
+      {Array.from({ length: count }).map((_, i) => (
+        <span
+          key={i}
+          className="absolute"
+          style={{ left: i * step, top: 0, zIndex: i }}
+        >
+          <TraceChip scale={scale} />
+        </span>
+      ))}
+    </span>
+  );
+}
+
+function PlusBadge() {
+  return (
+    <span
+      className="absolute inline-flex items-center justify-center rounded-full text-[8px] font-bold leading-none text-white"
+      style={{ width: 10, height: 10, background: MAIN, right: -4, top: -4 }}
+      aria-hidden="true"
+    >
+      +
+    </span>
+  );
+}
+
+function CompareGlyph() {
+  return (
+    <svg width={12} height={12} viewBox="0 0 12 12" aria-hidden="true">
+      <g stroke="#a99fc7" strokeWidth={1} strokeLinecap="round" fill="none">
+        <line x1={1.5} y1={4} x2={10.5} y2={4} />
+        <path d="M8.6 2.6 L10.5 4 L8.6 5.4" />
+        <line x1={10.5} y1={8} x2={1.5} y2={8} />
+        <path d="M3.4 6.6 L1.5 8 L3.4 9.4" />
+      </g>
+    </svg>
+  );
+}
+
+function CompareGroup({ color }: { color: string }) {
+  return (
+    <span className="inline-flex items-center gap-[2px]" aria-hidden="true">
+      <TraceChip scale={0.45} borderColor={color} background="#0f0b1d" compact />
+      <CompareGlyph />
+      <TraceChip scale={0.45} compact />
+    </span>
+  );
+}
+
 
 /* ---------------- lane icons ---------------- */
 
@@ -343,8 +424,21 @@ function RowRails({ row, index }: { row: Row; index: number }) {
   );
 }
 
+function hexToRgba(hex: string, a: number) {
+  const n = parseInt(hex.slice(1), 16);
+  return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
+}
+
+const CMP_W = 55;
+
 function GraphRow({ row, index }: { row: Row; index: number }) {
   const h = row.kind === "flow" ? FLOW_H : ROW_H;
+  const isBaselineRow = row.kind === "commit" && row.rail === 0 && row.msg?.startsWith("Release");
+  const isChoreRow = row.kind === "commit" && row.rail === 0 && row.msg?.startsWith("chore(gold-traces)");
+  const cmpLeft =
+    row.kind === "merge"
+      ? Math.max(RAIL_X[0] + 4, Math.min(RAILS_W - CMP_W - 4, RAIL_X[row.rail] - 6 - CMP_W))
+      : 0;
   return (
     <div className="flex items-stretch">
       <div className="relative shrink-0" style={{ width: RAILS_W, height: h }}>
@@ -357,7 +451,27 @@ function GraphRow({ row, index }: { row: Row; index: number }) {
             <ArtifactChip kind={row.artifact} />
           </span>
         )}
+        {isBaselineRow && (
+          <span className="absolute" style={{ left: RAIL_X[0] + 10, top: (h - 24) / 2 }}>
+            <GoldStack count={index === 0 ? 3 : 2} scale={index === 0 ? 0.8 : 0.62} />
+          </span>
+        )}
+        {isChoreRow && (
+          <span className="absolute" style={{ left: RAIL_X[0] + 10, top: (h - 24) / 2 }}>
+            <span className="relative inline-block">
+              <TraceChip scale={0.8} />
+              <PlusBadge />
+            </span>
+          </span>
+        )}
+        {row.kind === "merge" && (
+          <span className="absolute" style={{ left: cmpLeft, top: 0 }}>
+            <CompareGroup color={hexToRgba(BRANCHES[row.rail - 1].color, 0.55)} />
+          </span>
+        )}
       </div>
+
+
 
       <div className="flex min-w-0 flex-1 items-center gap-2 pl-3" style={{ height: h }}>
         {row.kind === "flow" && (
