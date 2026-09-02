@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
+import { RuntimeBehaviorAnalysis } from "@/components/sections/enterprise/RuntimeBehaviorAnalysis";
+
 
 const reviewerImages = [
   { src: "/marketing-assets/img/appmap/call-tree.webp", caption: "The call tree the agent queried" },
