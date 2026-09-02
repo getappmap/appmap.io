@@ -134,10 +134,12 @@ function LaneCard({
   title,
   color,
   main,
+  sublabel,
 }: {
   title: string;
   color: string;
   main?: boolean;
+  sublabel?: string;
 }) {
   return (
     <div
@@ -157,6 +159,14 @@ function LaneCard({
           {title}
         </span>
       </div>
+      {sublabel && (
+        <div
+          className="mt-0.5 text-[10.5px]"
+          style={{ color: main ? "rgba(255,179,224,0.8)" : "#6d6395" }}
+        >
+          {sublabel}
+        </div>
+      )}
       <div className="mt-2 flex items-center gap-1">
         <ArtifactChip kind="dep" />
         <ArtifactChip kind="seq" />
