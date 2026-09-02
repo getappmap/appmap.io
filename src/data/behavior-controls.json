@@ -1,0 +1,5260 @@
+{
+ "generated": "2026-09-02",
+ "stats": {
+  "bySource": {
+   "OWASP ASVS 4.0.3": 128,
+   "CWE v4.20": 75,
+   "NIST SP 800-53r5": 546
+  },
+  "byTier": {
+   "shows": 262,
+   "supports": 487
+  },
+  "total": 749
+ },
+ "pool": [
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.1.1",
+   "text": "Verify the application never reveals session tokens in URL parameters.",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.2.1",
+   "text": "Verify the application generates a new session token on user authentication. ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering))",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.2.2",
+   "text": "Verify that session tokens possess at least 64 bits of entropy. ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering))",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.2.3",
+   "text": "Verify the application only stores session tokens in the browser using secure methods such as appropriately secured cookies (see section 3.4) or HTML 5 session ",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.2.4",
+   "text": "Verify that session tokens are generated using approved cryptographic algorithms. ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering))",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.3.1",
+   "text": "Verify that logout and expiration invalidate the session token, such that the back button or a downstream relying party does not resume an authenticated session",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.3.2",
+   "text": "If authenticators permit users to remain logged in, verify that re-authentication occurs periodically both when actively used or after an idle period. ([C6](htt",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.3.3",
+   "text": "Verify that the application gives the option to terminate all other active sessions after a successful password change (including change via password reset/reco",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.3.4",
+   "text": "Verify that users are able to view and (having re-entered login credentials) log out of any or all currently active sessions and devices.",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.4.1",
+   "text": "Verify that cookie-based session tokens have the 'Secure' attribute set. ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering))",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.4.2",
+   "text": "Verify that cookie-based session tokens have the 'HttpOnly' attribute set. ([C6](https://owasp.org/www-project-proactive-controls/#div-numbering))",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.4.3",
+   "text": "Verify that cookie-based session tokens utilize the 'SameSite' attribute to limit exposure to cross-site request forgery attacks. ([C6](https://owasp.org/www-pr",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.4.4",
+   "text": "Verify that cookie-based session tokens use the \"__Host-\" prefix so cookies are only sent to the host that initially set the cookie.",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.4.5",
+   "text": "Verify that if the application is published under a domain name with other applications that set or use session cookies that might disclose the session cookies,",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.5.1",
+   "text": "Verify the application allows users to revoke OAuth tokens that form trust relationships with linked applications.",
+   "domain": "session management",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.5.2",
+   "text": "Verify the application uses session tokens rather than static API secrets and keys, except with legacy implementations.",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.5.3",
+   "text": "Verify that stateless session tokens use digital signatures, encryption, and other countermeasures to protect against tampering, enveloping, replay, null cipher",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.6.1",
+   "text": "Verify that Relying Parties (RPs) specify the maximum authentication time to Credential Service Providers (CSPs) and that CSPs re-authenticate the user if they ",
+   "domain": "session management",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.6.2",
+   "text": "Verify that Credential Service Providers (CSPs) inform Relying Parties (RPs) of the last authentication event, to allow RPs to determine if they need to re-auth",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V3.7.1",
+   "text": "Verify the application ensures a full, valid login session or requires re-authentication or secondary verification before allowing any sensitive transactions or",
+   "domain": "session management",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V4.1.1",
+   "text": "Verify that the application enforces access control rules on a trusted service layer, especially if client-side access control is present and could be bypassed.",
+   "domain": "access control",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V4.1.2",
+   "text": "Verify that all user and data attributes and policy information used by access controls cannot be manipulated by end users unless specifically authorized.",
+   "domain": "access control",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V4.1.3",
+   "text": "Verify that the principle of least privilege exists - users should only be able to access functions, data files, URLs, controllers, services, and other resource",
+   "domain": "access control",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V4.1.4",
+   "text": "[DELETED, DUPLICATE OF 4.1.3]",
+   "domain": "access control",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V4.1.5",
+   "text": "Verify that access controls fail securely including when an exception occurs. ([C10](https://owasp.org/www-project-proactive-controls/#div-numbering))",
+   "domain": "access control",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V4.2.1",
+   "text": "Verify that sensitive data and APIs are protected against Insecure Direct Object Reference (IDOR) attacks targeting creation, reading, updating and deletion of ",
+   "domain": "access control",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V4.2.2",
+   "text": "Verify that the application or framework enforces a strong anti-CSRF mechanism to protect authenticated functionality, and effective anti-automation or anti-CSR",
+   "domain": "access control",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V4.3.1",
+   "text": "Verify administrative interfaces use appropriate multi-factor authentication to prevent unauthorized use.",
+   "domain": "access control",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V4.3.2",
+   "text": "Verify that directory browsing is disabled unless deliberately desired. Additionally, applications should not allow discovery or disclosure of file or directory",
+   "domain": "access control",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V4.3.3",
+   "text": "Verify the application has additional authorization (such as step up or adaptive authentication) for lower value systems, and / or segregation of duties for hig",
+   "domain": "access control",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.1.1",
+   "text": "Verify that the application has defenses against HTTP parameter pollution attacks, particularly if the application framework makes no distinction about the sour",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.1.2",
+   "text": "Verify that frameworks protect against mass parameter assignment attacks, or that the application has countermeasures to protect against unsafe parameter assign",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.1.3",
+   "text": "Verify that all input (HTML form fields, REST requests, URL parameters, HTTP headers, cookies, batch files, RSS feeds, etc) is validated using positive validati",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.1.4",
+   "text": "Verify that structured data is strongly typed and validated against a defined schema including allowed characters, length and pattern (e.g. credit card numbers,",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.1.5",
+   "text": "Verify that URL redirects and forwards only allow destinations which appear on an allow list, or show a warning when redirecting to potentially untrusted conten",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.2.1",
+   "text": "Verify that all untrusted HTML input from WYSIWYG editors or similar is properly sanitized with an HTML sanitizer library or framework feature. ([C5](https://ow",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.2.2",
+   "text": "Verify that unstructured data is sanitized to enforce safety measures such as allowed characters and length.",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.2.3",
+   "text": "Verify that the application sanitizes user input before passing to mail systems to protect against SMTP or IMAP injection.",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.2.4",
+   "text": "Verify that the application avoids the use of eval() or other dynamic code execution features. Where there is no alternative, any user input being included must",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.2.5",
+   "text": "Verify that the application protects against template injection attacks by ensuring that any user input being included is sanitized or sandboxed.",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.2.6",
+   "text": "Verify that the application protects against SSRF attacks, by validating or sanitizing untrusted data or HTTP file metadata, such as filenames and URL input fie",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.2.7",
+   "text": "Verify that the application sanitizes, disables, or sandboxes user-supplied Scalable Vector Graphics (SVG) scriptable content, especially as they relate to XSS ",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.2.8",
+   "text": "Verify that the application sanitizes, disables, or sandboxes user-supplied scriptable or expression template language content, such as Markdown, CSS or XSL sty",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.3.1",
+   "text": "Verify that output encoding is relevant for the interpreter and context required. For example, use encoders specifically for HTML values, HTML attributes, JavaS",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.3.2",
+   "text": "Verify that output encoding preserves the user's chosen character set and locale, such that any Unicode character point is valid and safely handled. ([C4](https",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.3.3",
+   "text": "Verify that context-aware, preferably automated - or at worst, manual - output escaping protects against reflected, stored, and DOM based XSS. ([C4](https://owa",
+   "domain": "validation and encoding",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.3.4",
+   "text": "Verify that data selection or database queries (e.g. SQL, HQL, ORM, NoSQL) use parameterized queries, ORMs, entity frameworks, or are otherwise protected from d",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.3.5",
+   "text": "Verify that where parameterized or safer mechanisms are not present, context-specific output encoding is used to protect against injection attacks, such as the ",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.3.6",
+   "text": "Verify that the application protects against JSON injection attacks, JSON eval attacks, and JavaScript expression evaluation. ([C4](https://owasp.org/www-projec",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.3.7",
+   "text": "Verify that the application protects against LDAP injection vulnerabilities, or that specific security controls to prevent LDAP injection have been implemented.",
+   "domain": "validation and encoding",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.3.8",
+   "text": "Verify that the application protects against OS command injection and that operating system calls use parameterized OS queries or use contextual command line ou",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.3.9",
+   "text": "Verify that the application protects against Local File Inclusion (LFI) or Remote File Inclusion (RFI) attacks.",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.3.10",
+   "text": "Verify that the application protects against XPath injection or XML injection attacks. ([C4](https://owasp.org/www-project-proactive-controls/#div-numbering))",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.4.1",
+   "text": "Verify that the application uses memory-safe string, safer memory copy and pointer arithmetic to detect or prevent stack, buffer, or heap overflows.",
+   "domain": "validation and encoding",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.4.2",
+   "text": "Verify that format strings do not take potentially hostile input, and are constant.",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.4.3",
+   "text": "Verify that sign, range, and input validation techniques are used to prevent integer overflows.",
+   "domain": "validation and encoding",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.5.1",
+   "text": "Verify that serialized objects use integrity checks or are encrypted to prevent hostile object creation or data tampering. ([C5](https://owasp.org/www-project-p",
+   "domain": "validation and encoding",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.5.2",
+   "text": "Verify that the application correctly restricts XML parsers to only use the most restrictive configuration possible and to ensure that unsafe features such as r",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.5.3",
+   "text": "Verify that deserialization of untrusted data is avoided or is protected in both custom code and third-party libraries (such as JSON, XML and YAML parsers).",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V5.5.4",
+   "text": "Verify that when parsing JSON in browsers or JavaScript-based backends, JSON.parse is used to parse the JSON document. Do not use eval() to parse JSON.",
+   "domain": "validation and encoding",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V7.1.1",
+   "text": "Verify that the application does not log credentials or payment details. Session tokens should only be stored in logs in an irreversible, hashed form. ([C9, C10",
+   "domain": "error handling and logging",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V7.1.2",
+   "text": "Verify that the application does not log other sensitive data as defined under local privacy laws or relevant security policy. ([C9](https://owasp.org/www-proje",
+   "domain": "error handling and logging",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V7.1.3",
+   "text": "Verify that the application logs security relevant events including successful and failed authentication events, access control failures, deserialization failur",
+   "domain": "error handling and logging",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V7.1.4",
+   "text": "Verify that each log event includes necessary information that would allow for a detailed investigation of the timeline when an event happens. ([C9](https://owa",
+   "domain": "error handling and logging",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V7.2.1",
+   "text": "Verify that all authentication decisions are logged, without storing sensitive session tokens or passwords. This should include requests with relevant metadata ",
+   "domain": "error handling and logging",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V7.2.2",
+   "text": "Verify that all access control decisions can be logged and all failed decisions are logged. This should include requests with relevant metadata needed for secur",
+   "domain": "error handling and logging",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V7.3.1",
+   "text": "Verify that all logging components appropriately encode data to prevent log injection. ([C9](https://owasp.org/www-project-proactive-controls/#div-numbering))",
+   "domain": "error handling and logging",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V7.3.2",
+   "text": "[DELETED, DUPLICATE OF 7.3.1]",
+   "domain": "error handling and logging",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V7.3.3",
+   "text": "Verify that security logs are protected from unauthorized access and modification. ([C9](https://owasp.org/www-project-proactive-controls/#div-numbering))",
+   "domain": "error handling and logging",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V7.3.4",
+   "text": "Verify that time sources are synchronized to the correct time and time zone. Strongly consider logging only in UTC if systems are global to assist with post-inc",
+   "domain": "error handling and logging",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V7.4.1",
+   "text": "Verify that a generic message is shown when an unexpected or security sensitive error occurs, potentially with a unique ID which support personnel can use to in",
+   "domain": "error handling and logging",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V7.4.2",
+   "text": "Verify that exception handling (or a functional equivalent) is used across the codebase to account for expected and unexpected error conditions. ([C10](https://",
+   "domain": "error handling and logging",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V7.4.3",
+   "text": "Verify that a \"last resort\" error handler is defined which will catch all unhandled exceptions. ([C10](https://owasp.org/www-project-proactive-controls/#div-num",
+   "domain": "error handling and logging",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.1.1",
+   "text": "Verify the application protects sensitive data from being cached in server components such as load balancers and application caches.",
+   "domain": "data protection",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.1.2",
+   "text": "Verify that all cached or temporary copies of sensitive data stored on the server are protected from unauthorized access or purged/invalidated after the authori",
+   "domain": "data protection",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.1.3",
+   "text": "Verify the application minimizes the number of parameters in a request, such as hidden fields, Ajax variables, cookies and header values.",
+   "domain": "data protection",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.1.4",
+   "text": "Verify the application can detect and alert on abnormal numbers of requests, such as by IP, user, total per hour or day, or whatever makes sense for the applica",
+   "domain": "data protection",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.1.5",
+   "text": "Verify that regular backups of important data are performed and that test restoration of data is performed.",
+   "domain": "data protection",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.1.6",
+   "text": "Verify that backups are stored securely to prevent data from being stolen or corrupted.",
+   "domain": "data protection",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.2.1",
+   "text": "Verify the application sets sufficient anti-caching headers so that sensitive data is not cached in modern browsers.",
+   "domain": "data protection",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.2.2",
+   "text": "Verify that data stored in browser storage (such as localStorage, sessionStorage, IndexedDB, or cookies) does not contain sensitive data.",
+   "domain": "data protection",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.2.3",
+   "text": "Verify that authenticated data is cleared from client storage, such as the browser DOM, after the client or session is terminated.",
+   "domain": "data protection",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.3.1",
+   "text": "Verify that sensitive data is sent to the server in the HTTP message body or headers, and that query string parameters from any HTTP verb do not contain sensiti",
+   "domain": "data protection",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.3.2",
+   "text": "Verify that users have a method to remove or export their data on demand.",
+   "domain": "data protection",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.3.3",
+   "text": "Verify that users are provided clear language regarding collection and use of supplied personal information and that users have provided opt-in consent for the ",
+   "domain": "data protection",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.3.4",
+   "text": "Verify that all sensitive data created and processed by the application has been identified, and ensure that a policy is in place on how to deal with sensitive ",
+   "domain": "data protection",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.3.5",
+   "text": "Verify accessing sensitive data is audited (without logging the sensitive data itself), if the data is collected under relevant data protection directives or wh",
+   "domain": "data protection",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.3.6",
+   "text": "Verify that sensitive information contained in memory is overwritten as soon as it is no longer required to mitigate memory dumping attacks, using zeroes or ran",
+   "domain": "data protection",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.3.7",
+   "text": "Verify that sensitive or private information that is required to be encrypted, is encrypted using approved algorithms that provide both confidentiality and inte",
+   "domain": "data protection",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V8.3.8",
+   "text": "Verify that sensitive personal information is subject to data retention classification, such that old or out of date data is deleted automatically, on a schedul",
+   "domain": "data protection",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V11.1.1",
+   "text": "Verify that the application will only process business logic flows for the same user in sequential step order and without skipping steps.",
+   "domain": "business logic",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V11.1.2",
+   "text": "Verify that the application will only process business logic flows with all steps being processed in realistic human time, i.e. transactions are not submitted t",
+   "domain": "business logic",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V11.1.3",
+   "text": "Verify the application has appropriate limits for specific business actions or transactions which are correctly enforced on a per user basis.",
+   "domain": "business logic",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V11.1.4",
+   "text": "Verify that the application has anti-automation controls to protect against excessive calls such as mass data exfiltration, business logic requests, file upload",
+   "domain": "business logic",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V11.1.5",
+   "text": "Verify the application has business logic limits or validation to protect against likely business risks or threats, identified using threat modeling or similar ",
+   "domain": "business logic",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V11.1.6",
+   "text": "Verify that the application does not suffer from \"Time Of Check to Time Of Use\" (TOCTOU) issues or other race conditions for sensitive operations.",
+   "domain": "business logic",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V11.1.7",
+   "text": "Verify that the application monitors for unusual events or activity from a business logic perspective. For example, attempts to perform actions out of order or ",
+   "domain": "business logic",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V11.1.8",
+   "text": "Verify that the application has configurable alerting when automated attacks or unusual activity is detected.",
+   "domain": "business logic",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.1.1",
+   "text": "Verify that the application will not accept large files that could fill up storage or cause a denial of service.",
+   "domain": "files and resources",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.1.2",
+   "text": "Verify that the application checks compressed files (e.g. zip, gz, docx, odt) against maximum allowed uncompressed size and against maximum number of files befo",
+   "domain": "files and resources",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.1.3",
+   "text": "Verify that a file size quota and maximum number of files per user is enforced to ensure that a single user cannot fill up the storage with too many files, or e",
+   "domain": "files and resources",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.2.1",
+   "text": "Verify that files obtained from untrusted sources are validated to be of expected type based on the file's content.",
+   "domain": "files and resources",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.3.1",
+   "text": "Verify that user-submitted filename metadata is not used directly by system or framework filesystems and that a URL API is used to protect against path traversa",
+   "domain": "files and resources",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.3.2",
+   "text": "Verify that user-submitted filename metadata is validated or ignored to prevent the disclosure, creation, updating or removal of local files (LFI).",
+   "domain": "files and resources",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.3.3",
+   "text": "Verify that user-submitted filename metadata is validated or ignored to prevent the disclosure or execution of remote files via Remote File Inclusion (RFI) or S",
+   "domain": "files and resources",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.3.4",
+   "text": "Verify that the application protects against Reflective File Download (RFD) by validating or ignoring user-submitted filenames in a JSON, JSONP, or URL paramete",
+   "domain": "files and resources",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.3.5",
+   "text": "Verify that untrusted file metadata is not used directly with system API or libraries, to protect against OS command injection.",
+   "domain": "files and resources",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.3.6",
+   "text": "Verify that the application does not include and execute functionality from untrusted sources, such as unverified content distribution networks, JavaScript libr",
+   "domain": "files and resources",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.4.1",
+   "text": "Verify that files obtained from untrusted sources are stored outside the web root, with limited permissions.",
+   "domain": "files and resources",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.4.2",
+   "text": "Verify that files obtained from untrusted sources are scanned by antivirus scanners to prevent upload and serving of known malicious content.",
+   "domain": "files and resources",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.5.1",
+   "text": "Verify that the web tier is configured to serve only files with specific file extensions to prevent unintentional information and source code leakage. For examp",
+   "domain": "files and resources",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.5.2",
+   "text": "Verify that direct requests to uploaded files will never be executed as HTML/JavaScript content.",
+   "domain": "files and resources",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V12.6.1",
+   "text": "Verify that the web or application server is configured with an allow list of resources or systems to which the server can send requests or load data/files from",
+   "domain": "files and resources",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.1.1",
+   "text": "Verify that all application components use the same encodings and parsers to avoid parsing attacks that exploit different URI or file parsing behavior that coul",
+   "domain": "API and web service",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.1.2",
+   "text": "[DELETED, DUPLICATE OF 4.3.1]",
+   "domain": "API and web service",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.1.3",
+   "text": "Verify API URLs do not expose sensitive information, such as the API key, session tokens etc.",
+   "domain": "API and web service",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.1.4",
+   "text": "Verify that authorization decisions are made at both the URI, enforced by programmatic or declarative security at the controller or router, and at the resource ",
+   "domain": "API and web service",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.1.5",
+   "text": "Verify that requests containing unexpected or missing content types are rejected with appropriate headers (HTTP response status 406 Unacceptable or 415 Unsuppor",
+   "domain": "API and web service",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.2.1",
+   "text": "Verify that enabled RESTful HTTP methods are a valid choice for the user or action, such as preventing normal users using DELETE or PUT on protected API or reso",
+   "domain": "API and web service",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.2.2",
+   "text": "Verify that JSON schema validation is in place and verified before accepting input.",
+   "domain": "API and web service",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.2.3",
+   "text": "Verify that RESTful web services that utilize cookies are protected from Cross-Site Request Forgery via the use of at least one or more of the following: double",
+   "domain": "API and web service",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.2.4",
+   "text": "[DELETED, DUPLICATE OF 11.1.4]",
+   "domain": "API and web service",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.2.5",
+   "text": "Verify that REST services explicitly check the incoming Content-Type to be the expected one, such as application/xml or application/json.",
+   "domain": "API and web service",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.2.6",
+   "text": "Verify that the message headers and payload are trustworthy and not modified in transit. Requiring strong encryption for transport (TLS only) may be sufficient ",
+   "domain": "API and web service",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.3.1",
+   "text": "Verify that XSD schema validation takes place to ensure a properly formed XML document, followed by validation of each input field before any processing of that",
+   "domain": "API and web service",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.3.2",
+   "text": "Verify that the message payload is signed using WS-Security to ensure reliable transport between client and service.",
+   "domain": "API and web service",
+   "tier": "supports"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.4.1",
+   "text": "Verify that a query allow list or a combination of depth limiting and amount limiting is used to prevent GraphQL or data layer expression Denial of Service (DoS",
+   "domain": "API and web service",
+   "tier": "shows"
+  },
+  {
+   "src": "OWASP ASVS 4.0.3",
+   "id": "V13.4.2",
+   "text": "Verify that GraphQL or other data layer authorization logic should be implemented at the business logic layer instead of the GraphQL layer.",
+   "domain": "API and web service",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-1004",
+   "text": "Sensitive Cookie Without 'HttpOnly' Flag",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-116",
+   "text": "Improper Encoding or Escaping of Output",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-117",
+   "text": "Improper Output Neutralization for Logs",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-120",
+   "text": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-1275",
+   "text": "Sensitive Cookie with Improper SameSite Attribute",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-134",
+   "text": "Use of Externally-Controlled Format String",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-138",
+   "text": "Improper Neutralization of Special Elements",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-147",
+   "text": "Improper Neutralization of Input Terminators",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-159",
+   "text": "Improper Handling of Invalid Use of Special Elements",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-176",
+   "text": "Improper Handling of Unicode Encoding",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-190",
+   "text": "Integer Overflow or Wraparound",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-20",
+   "text": "Improper Input Validation",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-200",
+   "text": "Exposure of Sensitive Information to an Unauthorized Actor",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-210",
+   "text": "Self-generated Error Message Containing Sensitive Information",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-212",
+   "text": "Improper Removal of Sensitive Information Before Storage or Transfer",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-22",
+   "text": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-226",
+   "text": "Sensitive Information in Resource Not Removed Before Reuse",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-233",
+   "text": "Improper Handling of Parameters",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-235",
+   "text": "Improper Handling of Extra Parameters",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-285",
+   "text": "Improper Authorization",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-290",
+   "text": "Authentication Bypass by Spoofing",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-306",
+   "text": "Missing Authentication for Critical Function",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-319",
+   "text": "Cleartext Transmission of Sensitive Information",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-327",
+   "text": "Use of a Broken or Risky Cryptographic Algorithm",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-331",
+   "text": "Insufficient Entropy",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-345",
+   "text": "Insufficient Verification of Data Authenticity",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-352",
+   "text": "Cross-Site Request Forgery (CSRF)",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-367",
+   "text": "Time-of-check Time-of-use (TOCTOU) Race Condition",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-384",
+   "text": "Session Fixation",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-390",
+   "text": "Detection of Error Condition Without Action",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-400",
+   "text": "Uncontrolled Resource Consumption",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-409",
+   "text": "Improper Handling of Highly Compressed Data (Data Amplification)",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-419",
+   "text": "Unprotected Primary Channel",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-431",
+   "text": "Missing Handler",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-434",
+   "text": "Unrestricted Upload of File with Dangerous Type",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-436",
+   "text": "Interpretation Conflict",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-502",
+   "text": "Deserialization of Untrusted Data",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-509",
+   "text": "Replicating Malicious Code (Virus or Worm)",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-524",
+   "text": "Use of Cache Containing Sensitive Information",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-525",
+   "text": "Use of Web Browser Cache Containing Sensitive Information",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-532",
+   "text": "Insertion of Sensitive Information into Log File",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-539",
+   "text": "Use of Persistent Cookies Containing Sensitive Information",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-544",
+   "text": "Missing Standardized Error Handling Mechanism",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-548",
+   "text": "Exposure of Information Through Directory Listing",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-552",
+   "text": "Files or Directories Accessible to External Parties",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-598",
+   "text": "Use of HTTP Request With Sensitive Query String",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-601",
+   "text": "URL Redirection to Untrusted Site ('Open Redirect')",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-602",
+   "text": "Client-Side Enforcement of Server-Side Security",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-611",
+   "text": "Improper Restriction of XML External Entity Reference",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-613",
+   "text": "Insufficient Session Expiration",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-614",
+   "text": "Sensitive Cookie in HTTPS Session Without 'Secure' Attribute",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-639",
+   "text": "Authorization Bypass Through User-Controlled Key",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-641",
+   "text": "Improper Restriction of Names for Files and Other Resources",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-643",
+   "text": "Improper Neutralization of Data within XPath Expressions ('XPath Injection')",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-650",
+   "text": "Trusting HTTP Permission Methods on the Server Side",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-73",
+   "text": "External Control of File Name or Path",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-732",
+   "text": "Incorrect Permission Assignment for Critical Resource",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-754",
+   "text": "Improper Check for Unusual or Exceptional Conditions",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-770",
+   "text": "Allocation of Resources Without Limits or Throttling",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-778",
+   "text": "Insufficient Logging",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-78",
+   "text": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-79",
+   "text": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-798",
+   "text": "Use of Hard-coded Credentials",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-799",
+   "text": "Improper Control of Interaction Frequency",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-829",
+   "text": "Inclusion of Functionality from Untrusted Control Sphere",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-830",
+   "text": "Inclusion of Web Functionality from an Untrusted Source",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-841",
+   "text": "Improper Enforcement of Behavioral Workflow",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-89",
+   "text": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-90",
+   "text": "Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection')",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-915",
+   "text": "Improperly Controlled Modification of Dynamically-Determined Object Attributes",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-918",
+   "text": "Server-Side Request Forgery (SSRF)",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-922",
+   "text": "Insecure Storage of Sensitive Information",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-94",
+   "text": "Improper Control of Generation of Code ('Code Injection')",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-95",
+   "text": "Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "CWE v4.20",
+   "id": "CWE-98",
+   "text": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')",
+   "domain": "weakness class",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-2",
+   "text": "Account Management",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-2.1",
+   "text": "Automated System Account Management",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-2.2",
+   "text": "Automated Temporary and Emergency Account Management",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-2.3",
+   "text": "Disable Accounts",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-2.4",
+   "text": "Automated Audit Actions",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-2.5",
+   "text": "Inactivity Logout",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-2.6",
+   "text": "Dynamic Privilege Management",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-2.7",
+   "text": "Privileged User Accounts",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-2.8",
+   "text": "Dynamic Account Management",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-2.9",
+   "text": "Restrictions on Use of Shared and Group Accounts",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-2.10",
+   "text": "Shared and Group Account Credential Change",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-2.11",
+   "text": "Usage Conditions",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-2.12",
+   "text": "Account Monitoring for Atypical Usage",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-2.13",
+   "text": "Disable Accounts for High-risk Individuals",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3",
+   "text": "Access Enforcement",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.1",
+   "text": "Restricted Access to Privileged Functions",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.2",
+   "text": "Dual Authorization",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.3",
+   "text": "Mandatory Access Control",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.4",
+   "text": "Discretionary Access Control",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.5",
+   "text": "Security-relevant Information",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.6",
+   "text": "Protection of User and System Information",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.7",
+   "text": "Role-based Access Control",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.8",
+   "text": "Revocation of Access Authorizations",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.9",
+   "text": "Controlled Release",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.10",
+   "text": "Audited Override of Access Control Mechanisms",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.11",
+   "text": "Restrict Access to Specific Information Types",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.12",
+   "text": "Assert and Enforce Application Access",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.13",
+   "text": "Attribute-based Access Control",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.14",
+   "text": "Individual Access",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-3.15",
+   "text": "Discretionary and Mandatory Access Control",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4",
+   "text": "Information Flow Enforcement",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.1",
+   "text": "Object Security and Privacy Attributes",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.2",
+   "text": "Processing Domains",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.3",
+   "text": "Dynamic Information Flow Control",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.4",
+   "text": "Flow Control of Encrypted Information",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.5",
+   "text": "Embedded Data Types",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.6",
+   "text": "Metadata",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.7",
+   "text": "One-way Flow Mechanisms",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.8",
+   "text": "Security and Privacy Policy Filters",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.9",
+   "text": "Human Reviews",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.10",
+   "text": "Enable and Disable Security or Privacy Policy Filters",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.11",
+   "text": "Configuration of Security or Privacy Policy Filters",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.12",
+   "text": "Data Type Identifiers",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.13",
+   "text": "Decomposition into Policy-relevant Subcomponents",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.14",
+   "text": "Security or Privacy Policy Filter Constraints",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.16",
+   "text": "Information Transfers on Interconnected Systems",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.17",
+   "text": "Domain Authentication",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.18",
+   "text": "Security Attribute Binding",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.19",
+   "text": "Validation of Metadata",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.20",
+   "text": "Approved Solutions",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.22",
+   "text": "Access Only",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.23",
+   "text": "Modify Non-releasable Information",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.24",
+   "text": "Internal Normalized Format",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.25",
+   "text": "Data Sanitization",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.26",
+   "text": "Audit Filtering Actions",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.27",
+   "text": "Redundant/Independent Filtering Mechanisms",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.28",
+   "text": "Linear Filter Pipelines",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.29",
+   "text": "Filter Orchestration Engines",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.30",
+   "text": "Filter Mechanisms Using Multiple Processes",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.31",
+   "text": "Failed Content Transfer Prevention",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-4.32",
+   "text": "Process Requirements for Information Transfer",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-5",
+   "text": "Separation of Duties",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-6",
+   "text": "Least Privilege",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-6.1",
+   "text": "Authorize Access to Security Functions",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-6.2",
+   "text": "Non-privileged Access for Nonsecurity Functions",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-6.3",
+   "text": "Network Access to Privileged Commands",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-6.4",
+   "text": "Separate Processing Domains",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-6.5",
+   "text": "Privileged Accounts",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-6.6",
+   "text": "Privileged Access by Non-organizational Users",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-6.7",
+   "text": "Review of User Privileges",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-6.8",
+   "text": "Privilege Levels for Code Execution",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-6.9",
+   "text": "Log Use of Privileged Functions",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-6.10",
+   "text": "Prohibit Non-privileged Users from Executing Privileged Functions",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-7",
+   "text": "Unsuccessful Logon Attempts",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-7.1",
+   "text": "Automatic Account Lock",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-7.2",
+   "text": "Purge or Wipe Mobile Device",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-7.3",
+   "text": "Biometric Attempt Limiting",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-7.4",
+   "text": "Use of Alternate Authentication Factor",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-8",
+   "text": "System Use Notification",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-9",
+   "text": "Previous Logon Notification",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-9.1",
+   "text": "Unsuccessful Logons",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-9.2",
+   "text": "Successful and Unsuccessful Logons",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-9.3",
+   "text": "Notification of Account Changes",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-9.4",
+   "text": "Additional Logon Information",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-10",
+   "text": "Concurrent Session Control",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-11",
+   "text": "Device Lock",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-11.1",
+   "text": "Pattern-hiding Displays",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-12",
+   "text": "Session Termination",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-12.1",
+   "text": "User-initiated Logouts",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-12.2",
+   "text": "Termination Message",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-12.3",
+   "text": "Timeout Warning Message",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-13",
+   "text": "Supervision and Review \u2014 Access Control",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-14",
+   "text": "Permitted Actions Without Identification or Authentication",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-14.1",
+   "text": "Necessary Uses",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-15",
+   "text": "Automated Marking",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-16",
+   "text": "Security and Privacy Attributes",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-16.1",
+   "text": "Dynamic Attribute Association",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-16.2",
+   "text": "Attribute Value Changes by Authorized Individuals",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-16.3",
+   "text": "Maintenance of Attribute Associations by System",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-16.4",
+   "text": "Association of Attributes by Authorized Individuals",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-16.5",
+   "text": "Attribute Displays on Objects to Be Output",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-16.6",
+   "text": "Maintenance of Attribute Association",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-16.7",
+   "text": "Consistent Attribute Interpretation",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-16.8",
+   "text": "Association Techniques and Technologies",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-16.9",
+   "text": "Attribute Reassignment \u2014 Regrading Mechanisms",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-16.10",
+   "text": "Attribute Configuration by Authorized Individuals",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-17",
+   "text": "Remote Access",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-17.1",
+   "text": "Monitoring and Control",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-17.2",
+   "text": "Protection of Confidentiality and Integrity Using Encryption",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-17.3",
+   "text": "Managed Access Control Points",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-17.4",
+   "text": "Privileged Commands and Access",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-17.5",
+   "text": "Monitoring for Unauthorized Connections",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-17.6",
+   "text": "Protection of Mechanism Information",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-17.7",
+   "text": "Additional Protection for Security Function Access",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-17.8",
+   "text": "Disable Nonsecure Network Protocols",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-17.9",
+   "text": "Disconnect or Disable Access",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-17.10",
+   "text": "Authenticate Remote Commands",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-18",
+   "text": "Wireless Access",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-18.1",
+   "text": "Authentication and Encryption",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-18.2",
+   "text": "Monitoring Unauthorized Connections",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-18.3",
+   "text": "Disable Wireless Networking",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-18.4",
+   "text": "Restrict Configurations by Users",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-18.5",
+   "text": "Antennas and Transmission Power Levels",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-19",
+   "text": "Access Control for Mobile Devices",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-19.1",
+   "text": "Use of Writable and Portable Storage Devices",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-19.2",
+   "text": "Use of Personally Owned Portable Storage Devices",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-19.3",
+   "text": "Use of Portable Storage Devices with No Identifiable Owner",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-19.4",
+   "text": "Restrictions for Classified Information",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-19.5",
+   "text": "Full Device or Container-based Encryption",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-20",
+   "text": "Use of External Systems",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-20.1",
+   "text": "Limits on Authorized Use",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-20.2",
+   "text": "Portable Storage Devices \u2014 Restricted Use",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-20.3",
+   "text": "Non-organizationally Owned Systems \u2014 Restricted Use",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-20.4",
+   "text": "Network Accessible Storage Devices \u2014 Prohibited Use",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-20.5",
+   "text": "Portable Storage Devices \u2014 Prohibited Use",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-21",
+   "text": "Information Sharing",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-21.1",
+   "text": "Automated Decision Support",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-21.2",
+   "text": "Information Search and Retrieval",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-22",
+   "text": "Publicly Accessible Content",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-23",
+   "text": "Data Mining Protection",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-24",
+   "text": "Access Control Decisions",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-24.1",
+   "text": "Transmit Access Authorization Information",
+   "domain": "Access Control",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-24.2",
+   "text": "No User or Process Identity",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AC-25",
+   "text": "Reference Monitor",
+   "domain": "Access Control",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-2",
+   "text": "Event Logging",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-2.1",
+   "text": "Compilation of Audit Records from Multiple Sources",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-2.2",
+   "text": "Selection of Audit Events by Component",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-2.3",
+   "text": "Reviews and Updates",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-2.4",
+   "text": "Privileged Functions",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-3",
+   "text": "Content of Audit Records",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-3.1",
+   "text": "Additional Audit Information",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-3.2",
+   "text": "Centralized Management of Planned Audit Record Content",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-3.3",
+   "text": "Limit Personally Identifiable Information Elements",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-4",
+   "text": "Audit Log Storage Capacity",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-4.1",
+   "text": "Transfer to Alternate Storage",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-5",
+   "text": "Response to Audit Logging Process Failures",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-5.1",
+   "text": "Storage Capacity Warning",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-5.2",
+   "text": "Real-time Alerts",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-5.3",
+   "text": "Configurable Traffic Volume Thresholds",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-5.4",
+   "text": "Shutdown on Failure",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-5.5",
+   "text": "Alternate Audit Logging Capability",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-6",
+   "text": "Audit Record Review, Analysis, and Reporting",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-6.1",
+   "text": "Automated Process Integration",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-6.2",
+   "text": "Automated Security Alerts",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-6.3",
+   "text": "Correlate Audit Record Repositories",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-6.4",
+   "text": "Central Review and Analysis",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-6.5",
+   "text": "Integrated Analysis of Audit Records",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-6.7",
+   "text": "Permitted Actions",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-6.8",
+   "text": "Full Text Analysis of Privileged Commands",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-6.9",
+   "text": "Correlation with Information from Nontechnical Sources",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-6.10",
+   "text": "Audit Level Adjustment",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-7",
+   "text": "Audit Record Reduction and Report Generation",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-7.1",
+   "text": "Automatic Processing",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-7.2",
+   "text": "Automatic Sort and Search",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-8",
+   "text": "Time Stamps",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-8.1",
+   "text": "Synchronization with Authoritative Time Source",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-8.2",
+   "text": "Secondary Authoritative Time Source",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-9",
+   "text": "Protection of Audit Information",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-9.1",
+   "text": "Hardware Write-once Media",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-9.3",
+   "text": "Cryptographic Protection",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-9.4",
+   "text": "Access by Subset of Privileged Users",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-9.5",
+   "text": "Dual Authorization",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-9.6",
+   "text": "Read-only Access",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-9.7",
+   "text": "Store on Component with Different Operating System",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-10",
+   "text": "Non-repudiation",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-10.1",
+   "text": "Association of Identities",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-10.2",
+   "text": "Validate Binding of Information Producer Identity",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-10.3",
+   "text": "Chain of Custody",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-10.4",
+   "text": "Validate Binding of Information Reviewer Identity",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-10.5",
+   "text": "Digital Signatures",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-11",
+   "text": "Audit Record Retention",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-11.1",
+   "text": "Long-term Retrieval Capability",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-12",
+   "text": "Audit Record Generation",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-12.1",
+   "text": "System-wide and Time-correlated Audit Trail",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-12.2",
+   "text": "Standardized Formats",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-12.3",
+   "text": "Changes by Authorized Individuals",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-12.4",
+   "text": "Query Parameter Audits of Personally Identifiable Information",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-13",
+   "text": "Monitoring for Information Disclosure",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-13.1",
+   "text": "Use of Automated Tools",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-13.2",
+   "text": "Review of Monitored Sites",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-13.3",
+   "text": "Unauthorized Replication of Information",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-14",
+   "text": "Session Audit",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-14.1",
+   "text": "System Start-up",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-14.2",
+   "text": "Capture and Record Content",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-14.3",
+   "text": "Remote Viewing and Listening",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-15",
+   "text": "Alternate Audit Logging Capability",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-16",
+   "text": "Cross-organizational Audit Logging",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-16.1",
+   "text": "Identity Preservation",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-16.2",
+   "text": "Sharing of Audit Information",
+   "domain": "Audit and Accountability",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "AU-16.3",
+   "text": "Disassociability",
+   "domain": "Audit and Accountability",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-2",
+   "text": "Baseline Configuration",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-2.1",
+   "text": "Reviews and Updates",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-2.2",
+   "text": "Automation Support for Accuracy and Currency",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-2.3",
+   "text": "Retention of Previous Configurations",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-2.4",
+   "text": "Unauthorized Software",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-2.5",
+   "text": "Authorized Software",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-2.6",
+   "text": "Development and Test Environments",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-2.7",
+   "text": "Configure Systems and Components for High-risk Areas",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-3",
+   "text": "Configuration Change Control",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-3.1",
+   "text": "Automated Documentation, Notification, and Prohibition of Changes",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-3.2",
+   "text": "Testing, Validation, and Documentation of Changes",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-3.3",
+   "text": "Automated Change Implementation",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-3.4",
+   "text": "Security and Privacy Representatives",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-3.5",
+   "text": "Automated Security Response",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-3.6",
+   "text": "Cryptography Management",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-3.7",
+   "text": "Review System Changes",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-3.8",
+   "text": "Prevent or Restrict Configuration Changes",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-4",
+   "text": "Impact Analyses",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-4.1",
+   "text": "Separate Test Environments",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-4.2",
+   "text": "Verification of Controls",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-5",
+   "text": "Access Restrictions for Change",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-5.1",
+   "text": "Automated Access Enforcement and Audit Records",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-5.2",
+   "text": "Review System Changes",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-5.3",
+   "text": "Signed Components",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-5.4",
+   "text": "Dual Authorization",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-5.5",
+   "text": "Privilege Limitation for Production and Operation",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-5.6",
+   "text": "Limit Library Privileges",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-5.7",
+   "text": "Automatic Implementation of Security Safeguards",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-6",
+   "text": "Configuration Settings",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-6.1",
+   "text": "Automated Management, Application, and Verification",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-6.2",
+   "text": "Respond to Unauthorized Changes",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-6.3",
+   "text": "Unauthorized Change Detection",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-6.4",
+   "text": "Conformance Demonstration",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-7",
+   "text": "Least Functionality",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-7.1",
+   "text": "Periodic Review",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-7.2",
+   "text": "Prevent Program Execution",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-7.3",
+   "text": "Registration Compliance",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-7.4",
+   "text": "Unauthorized Software \u2014 Deny-by-exception",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-7.5",
+   "text": "Authorized Software \u2014 Allow-by-exception",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-7.6",
+   "text": "Confined Environments with Limited Privileges",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-7.7",
+   "text": "Code Execution in Protected Environments",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-7.8",
+   "text": "Binary or Machine Executable Code",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-7.9",
+   "text": "Prohibiting The Use of Unauthorized Hardware",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-8",
+   "text": "System Component Inventory",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-8.1",
+   "text": "Updates During Installation and Removal",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-8.2",
+   "text": "Automated Maintenance",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-8.3",
+   "text": "Automated Unauthorized Component Detection",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-8.4",
+   "text": "Accountability Information",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-8.5",
+   "text": "No Duplicate Accounting of Components",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-8.6",
+   "text": "Assessed Configurations and Approved Deviations",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-8.7",
+   "text": "Centralized Repository",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-8.8",
+   "text": "Automated Location Tracking",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-8.9",
+   "text": "Assignment of Components to Systems",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-9.1",
+   "text": "Assignment of Responsibility",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-10",
+   "text": "Software Usage Restrictions",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-10.1",
+   "text": "Open-source Software",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-11",
+   "text": "User-installed Software",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-11.1",
+   "text": "Alerts for Unauthorized Installations",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-11.2",
+   "text": "Software Installation with Privileged Status",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-11.3",
+   "text": "Automated Enforcement and Monitoring",
+   "domain": "Configuration Management",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-12",
+   "text": "Information Location",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-12.1",
+   "text": "Automated Tools to Support Information Location",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-13",
+   "text": "Data Action Mapping",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "CM-14",
+   "text": "Signed Components",
+   "domain": "Configuration Management",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-2",
+   "text": "Separation of System and User Functionality",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-2.1",
+   "text": "Interfaces for Non-privileged Users",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-2.2",
+   "text": "Disassociability",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-3",
+   "text": "Security Function Isolation",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-3.1",
+   "text": "Hardware Separation",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-3.2",
+   "text": "Access and Flow Control Functions",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-3.3",
+   "text": "Minimize Nonsecurity Functionality",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-3.4",
+   "text": "Module Coupling and Cohesiveness",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-3.5",
+   "text": "Layered Structures",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-4",
+   "text": "Information in Shared System Resources",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-4.1",
+   "text": "Security Levels",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-4.2",
+   "text": "Multilevel or Periods Processing",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-5",
+   "text": "Denial-of-service Protection",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-5.1",
+   "text": "Restrict Ability to Attack Other Systems",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-5.2",
+   "text": "Capacity, Bandwidth, and Redundancy",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-5.3",
+   "text": "Detection and Monitoring",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-6",
+   "text": "Resource Availability",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7",
+   "text": "Boundary Protection",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.2",
+   "text": "Public Access",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.3",
+   "text": "Access Points",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.4",
+   "text": "External Telecommunications Services",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.5",
+   "text": "Deny by Default \u2014 Allow by Exception",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.6",
+   "text": "Response to Recognized Failures",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.7",
+   "text": "Split Tunneling for Remote Devices",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.8",
+   "text": "Route Traffic to Authenticated Proxy Servers",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.9",
+   "text": "Restrict Threatening Outgoing Communications Traffic",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.10",
+   "text": "Prevent Exfiltration",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.11",
+   "text": "Restrict Incoming Communications Traffic",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.12",
+   "text": "Host-based Protection",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.13",
+   "text": "Isolation of Security Tools, Mechanisms, and Support Components",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.15",
+   "text": "Networked Privileged Accesses",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.16",
+   "text": "Prevent Discovery of System Components",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.17",
+   "text": "Automated Enforcement of Protocol Formats",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.18",
+   "text": "Fail Secure",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.19",
+   "text": "Block Communication from Non-organizationally Configured Hosts",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.20",
+   "text": "Dynamic Isolation and Segregation",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.21",
+   "text": "Isolation of System Components",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.22",
+   "text": "Separate Subnets for Connecting to Different Security Domains",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.23",
+   "text": "Disable Sender Feedback on Protocol Validation Failure",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.24",
+   "text": "Personally Identifiable Information",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.25",
+   "text": "Unclassified National Security System Connections",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.26",
+   "text": "Classified National Security System Connections",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.27",
+   "text": "Unclassified Non-national Security System Connections",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.28",
+   "text": "Connections to Public Networks",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-7.29",
+   "text": "Separate Subnets to Isolate Functions",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-8",
+   "text": "Transmission Confidentiality and Integrity",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-8.1",
+   "text": "Cryptographic Protection",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-8.2",
+   "text": "Pre- and Post-transmission Handling",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-8.3",
+   "text": "Cryptographic Protection for Message Externals",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-8.4",
+   "text": "Conceal or Randomize Communications",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-8.5",
+   "text": "Protected Distribution System",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-9",
+   "text": "Transmission Confidentiality",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-10",
+   "text": "Network Disconnect",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-11",
+   "text": "Trusted Path",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-11.1",
+   "text": "Irrefutable Communications Path",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-12",
+   "text": "Cryptographic Key Establishment and Management",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-12.1",
+   "text": "Availability",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-12.2",
+   "text": "Symmetric Keys",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-12.3",
+   "text": "Asymmetric Keys",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-12.4",
+   "text": "PKI Certificates",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-12.5",
+   "text": "PKI Certificates / Hardware Tokens",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-13",
+   "text": "Cryptographic Protection",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-13.1",
+   "text": "FIPS-validated Cryptography",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-13.2",
+   "text": "NSA-approved Cryptography",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-13.3",
+   "text": "Individuals Without Formal Access Approvals",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-13.4",
+   "text": "Digital Signatures",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-14",
+   "text": "Public Access Protections",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-15",
+   "text": "Collaborative Computing Devices and Applications",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-15.2",
+   "text": "Blocking Inbound and Outbound Communications Traffic",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-15.3",
+   "text": "Disabling and Removal in Secure Work Areas",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-15.4",
+   "text": "Explicitly Indicate Current Participants",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-16",
+   "text": "Transmission of Security and Privacy Attributes",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-16.1",
+   "text": "Integrity Verification",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-16.2",
+   "text": "Anti-spoofing Mechanisms",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-16.3",
+   "text": "Cryptographic Binding",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-17",
+   "text": "Public Key Infrastructure Certificates",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-18",
+   "text": "Mobile Code",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-18.1",
+   "text": "Identify Unacceptable Code and Take Corrective Actions",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-18.2",
+   "text": "Acquisition, Development, and Use",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-18.3",
+   "text": "Prevent Downloading and Execution",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-18.4",
+   "text": "Prevent Automatic Execution",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-18.5",
+   "text": "Allow Execution Only in Confined Environments",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-19",
+   "text": "Voice Over Internet Protocol",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-20",
+   "text": "Secure Name/Address Resolution Service (Authoritative Source)",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-20.1",
+   "text": "Child Subspaces",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-20.2",
+   "text": "Data Origin and Integrity",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-21",
+   "text": "Secure Name/Address Resolution Service (Recursive or Caching Resolver)",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-21.1",
+   "text": "Data Origin and Integrity",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-22",
+   "text": "Architecture and Provisioning for Name/Address Resolution Service",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-23",
+   "text": "Session Authenticity",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-23.1",
+   "text": "Invalidate Session Identifiers at Logout",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-23.2",
+   "text": "User-initiated Logouts and Message Displays",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-23.3",
+   "text": "Unique System-generated Session Identifiers",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-23.4",
+   "text": "Unique Session Identifiers with Randomization",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-23.5",
+   "text": "Allowed Certificate Authorities",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-24",
+   "text": "Fail in Known State",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-25",
+   "text": "Thin Nodes",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-26",
+   "text": "Decoys",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-26.1",
+   "text": "Detection of Malicious Code",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-27",
+   "text": "Platform-independent Applications",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-28",
+   "text": "Protection of Information at Rest",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-28.1",
+   "text": "Cryptographic Protection",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-28.2",
+   "text": "Offline Storage",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-28.3",
+   "text": "Cryptographic Keys",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-29",
+   "text": "Heterogeneity",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-29.1",
+   "text": "Virtualization Techniques",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-30",
+   "text": "Concealment and Misdirection",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-30.1",
+   "text": "Virtualization Techniques",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-30.2",
+   "text": "Randomness",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-30.3",
+   "text": "Change Processing and Storage Locations",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-30.4",
+   "text": "Misleading Information",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-30.5",
+   "text": "Concealment of System Components",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-31",
+   "text": "Covert Channel Analysis",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-31.1",
+   "text": "Test Covert Channels for Exploitability",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-31.2",
+   "text": "Maximum Bandwidth",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-31.3",
+   "text": "Measure Bandwidth in Operational Environments",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-32",
+   "text": "System Partitioning",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-33",
+   "text": "Transmission Preparation Integrity",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-34",
+   "text": "Non-modifiable Executable Programs",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-34.1",
+   "text": "No Writable Storage",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-34.2",
+   "text": "Integrity Protection on Read-only Media",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-34.3",
+   "text": "Hardware-based Protection",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-35",
+   "text": "External Malicious Code Identification",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-36",
+   "text": "Distributed Processing and Storage",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-36.1",
+   "text": "Polling Techniques",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-36.2",
+   "text": "Synchronization",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-37",
+   "text": "Out-of-band Channels",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-37.1",
+   "text": "Ensure Delivery and Transmission",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-38",
+   "text": "Operations Security",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-39",
+   "text": "Process Isolation",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-39.1",
+   "text": "Hardware Separation",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-39.2",
+   "text": "Separate Execution Domain Per Thread",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-40",
+   "text": "Wireless Link Protection",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-40.1",
+   "text": "Electromagnetic Interference",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-40.2",
+   "text": "Reduce Detection Potential",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-40.3",
+   "text": "Imitative or Manipulative Communications Deception",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-40.4",
+   "text": "Signal Parameter Identification",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-41",
+   "text": "Port and I/O Device Access",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-42",
+   "text": "Sensor Capability and Data",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-42.1",
+   "text": "Reporting to Authorized Individuals or Roles",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-42.2",
+   "text": "Authorized Use",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-42.3",
+   "text": "Prohibit Use of Devices",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-42.4",
+   "text": "Notice of Collection",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-42.5",
+   "text": "Collection Minimization",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-43",
+   "text": "Usage Restrictions",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-44",
+   "text": "Detonation Chambers",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-45",
+   "text": "System Time Synchronization",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-45.1",
+   "text": "Synchronization with Authoritative Time Source",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-45.2",
+   "text": "Secondary Authoritative Time Source",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-46",
+   "text": "Cross Domain Policy Enforcement",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-47",
+   "text": "Alternate Communications Paths",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-48",
+   "text": "Sensor Relocation",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-48.1",
+   "text": "Dynamic Relocation of Sensors or Monitoring Capabilities",
+   "domain": "System and Communications Protection",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-49",
+   "text": "Hardware-enforced Separation and Policy Enforcement",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-50",
+   "text": "Software-enforced Separation and Policy Enforcement",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SC-51",
+   "text": "Hardware-based Protection",
+   "domain": "System and Communications Protection",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-2",
+   "text": "Flaw Remediation",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-2.1",
+   "text": "Central Management",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-2.2",
+   "text": "Automated Flaw Remediation Status",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-2.3",
+   "text": "Time to Remediate Flaws and Benchmarks for Corrective Actions",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-2.4",
+   "text": "Automated Patch Management Tools",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-2.5",
+   "text": "Automatic Software and Firmware Updates",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-2.6",
+   "text": "Removal of Previous Versions of Software and Firmware",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-2.7",
+   "text": "Root Cause Analysis",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-3",
+   "text": "Malicious Code Protection",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-3.1",
+   "text": "Central Management",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-3.2",
+   "text": "Automatic Updates",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-3.3",
+   "text": "Non-privileged Users",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-3.4",
+   "text": "Updates Only by Privileged Users",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-3.5",
+   "text": "Portable Storage Devices",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-3.6",
+   "text": "Testing and Verification",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-3.7",
+   "text": "Nonsignature-based Detection",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-3.8",
+   "text": "Detect Unauthorized Commands",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-3.9",
+   "text": "Authenticate Remote Commands",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-3.10",
+   "text": "Malicious Code Analysis",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4",
+   "text": "System Monitoring",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.1",
+   "text": "System-wide Intrusion Detection System",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.2",
+   "text": "Automated Tools and Mechanisms for Real-time Analysis",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.3",
+   "text": "Automated Tool and Mechanism Integration",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.4",
+   "text": "Inbound and Outbound Communications Traffic",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.5",
+   "text": "System-generated Alerts",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.6",
+   "text": "Restrict Non-privileged Users",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.7",
+   "text": "Automated Response to Suspicious Events",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.8",
+   "text": "Protection of Monitoring Information",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.9",
+   "text": "Testing of Monitoring Tools and Mechanisms",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.10",
+   "text": "Visibility of Encrypted Communications",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.11",
+   "text": "Analyze Communications Traffic Anomalies",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.12",
+   "text": "Automated Organization-generated Alerts",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.13",
+   "text": "Analyze Traffic and Event Patterns",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.14",
+   "text": "Wireless Intrusion Detection",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.15",
+   "text": "Wireless to Wireline Communications",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.16",
+   "text": "Correlate Monitoring Information",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.18",
+   "text": "Analyze Traffic and Covert Exfiltration",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.19",
+   "text": "Risk for Individuals",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.20",
+   "text": "Privileged Users",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.21",
+   "text": "Probationary Periods",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.22",
+   "text": "Unauthorized Network Services",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.23",
+   "text": "Host-based Devices",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.24",
+   "text": "Indicators of Compromise",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-4.25",
+   "text": "Optimize Network Traffic Analysis",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-5",
+   "text": "Security Alerts, Advisories, and Directives",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-5.1",
+   "text": "Automated Alerts and Advisories",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-6",
+   "text": "Security and Privacy Function Verification",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-6.1",
+   "text": "Notification of Failed Security Tests",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-6.2",
+   "text": "Automation Support for Distributed Testing",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-6.3",
+   "text": "Report Verification Results",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7",
+   "text": "Software, Firmware, and Information Integrity",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.1",
+   "text": "Integrity Checks",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.2",
+   "text": "Automated Notifications of Integrity Violations",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.3",
+   "text": "Centrally Managed Integrity Tools",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.4",
+   "text": "Tamper-evident Packaging",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.5",
+   "text": "Automated Response to Integrity Violations",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.6",
+   "text": "Cryptographic Protection",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.7",
+   "text": "Integration of Detection and Response",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.8",
+   "text": "Auditing Capability for Significant Events",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.9",
+   "text": "Verify Boot Process",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.10",
+   "text": "Protection of Boot Firmware",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.11",
+   "text": "Confined Environments with Limited Privileges",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.12",
+   "text": "Integrity Verification",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.13",
+   "text": "Code Execution in Protected Environments",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.14",
+   "text": "Binary or Machine Executable Code",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.15",
+   "text": "Code Authentication",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.16",
+   "text": "Time Limit on Process Execution Without Supervision",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-7.17",
+   "text": "Runtime Application Self-protection",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-8",
+   "text": "Spam Protection",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-8.1",
+   "text": "Central Management",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-8.2",
+   "text": "Automatic Updates",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-8.3",
+   "text": "Continuous Learning Capability",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-9",
+   "text": "Information Input Restrictions",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-10",
+   "text": "Information Input Validation",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-10.1",
+   "text": "Manual Override Capability",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-10.2",
+   "text": "Review and Resolve Errors",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-10.3",
+   "text": "Predictable Behavior",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-10.4",
+   "text": "Timing Interactions",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-10.5",
+   "text": "Restrict Inputs to Trusted Sources and Approved Formats",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-10.6",
+   "text": "Injection Prevention",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-11",
+   "text": "Error Handling",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-12",
+   "text": "Information Management and Retention",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-12.1",
+   "text": "Limit Personally Identifiable Information Elements",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-12.3",
+   "text": "Information Disposal",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-13",
+   "text": "Predictable Failure Prevention",
+   "domain": "System and Information Integrity",
+   "tier": "shows"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-13.1",
+   "text": "Transferring Component Responsibilities",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-13.2",
+   "text": "Time Limit on Process Execution Without Supervision",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-13.3",
+   "text": "Manual Transfer Between Components",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-13.4",
+   "text": "Standby Component Installation and Notification",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-13.5",
+   "text": "Failover Capability",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-14",
+   "text": "Non-persistence",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-14.1",
+   "text": "Refresh from Trusted Sources",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-14.2",
+   "text": "Non-persistent Information",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-14.3",
+   "text": "Non-persistent Connectivity",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-15",
+   "text": "Information Output Filtering",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-16",
+   "text": "Memory Protection",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-17",
+   "text": "Fail-safe Procedures",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-18",
+   "text": "Personally Identifiable Information Quality Operations",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-18.1",
+   "text": "Automation Support",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-18.2",
+   "text": "Data Tags",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-18.3",
+   "text": "Collection",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-18.4",
+   "text": "Individual Requests",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-18.5",
+   "text": "Notice of Correction or Deletion",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-19",
+   "text": "De-identification",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-19.1",
+   "text": "Collection",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-19.2",
+   "text": "Archiving",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-19.3",
+   "text": "Release",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-19.4",
+   "text": "Removal, Masking, Encryption, Hashing, or Replacement of Direct Identifiers",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-19.5",
+   "text": "Statistical Disclosure Control",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-19.6",
+   "text": "Differential Privacy",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-19.7",
+   "text": "Validated Algorithms and Software",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-19.8",
+   "text": "Motivated Intruder",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-20",
+   "text": "Tainting",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-21",
+   "text": "Information Refresh",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-22",
+   "text": "Information Diversity",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  },
+  {
+   "src": "NIST SP 800-53r5",
+   "id": "SI-23",
+   "text": "Information Fragmentation",
+   "domain": "System and Information Integrity",
+   "tier": "supports"
+  }
+ ]
+}
