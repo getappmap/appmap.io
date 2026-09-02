@@ -28,7 +28,7 @@ export function BenchmarkStrip() {
             Read the benchmark
           </a>
           <a
-            href="/research/runtime-rca.pdf"
+            href="/research/runtime-rca"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-lg border border-[#2c2353] px-5 py-2.5 text-[14px] font-semibold text-[#f2effb] transition hover:border-[#a99fc7]"
