@@ -39,6 +39,16 @@ const faqs = [
     a: "Traces are captured locally, typically to a tmp/appmap directory in the project. Gold Traces can be used locally during development. When a team versions the Gold Trace set with the code, it is stored in the repository and follows the team's existing Git workflow. Gold Traces are sanitized before they are committed.",
     doc: { href: "https://appmap.io/docs/reference/appmap-client-cli.html", label: "AppMap client CLI reference" },
   },
+  {
+    q: "What are AppMap Gold Traces?",
+    a: "Gold Traces are the recorded runtime behaviors a team has approved, committed to the repository in a gold_traces/ directory. They give coding agents and developers recorded runtime behavior they could not otherwise obtain, current at every commit, on every branch, and usable as the baseline every change is verified against.",
+    doc: { href: "/gold-traces", label: "AppMap Gold Traces" },
+  },
+  {
+    q: "What issues does the behavioral review find?",
+    a: "Not issues from a list. A linter carries a catalog of known-bad patterns and finds instances of them. A behavioral review compares the change against the recorded behavior the team has approved and reports what departed from it. It finds the defects specific to your application, produced by parts that are each correct alone. A catalog of known-bad patterns finds what everyone's code gets wrong. A baseline of known-good behavior finds what your change got wrong.",
+    doc: { href: "/gold-traces", label: "What the review finds" },
+  },
 ];
 
 export const Route = createFileRoute("/how-it-works")({
@@ -154,7 +164,7 @@ function HowItWorksPage() {
               Source code tells you what software <span className="italic text-[#ff07aa]">could do</span>. Runtime behavior tells you what it <span className="italic text-[#ff07aa]">actually does</span>.
             </h1>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              AppMap runs in development and CI. It records traces from tests, requests, and running processes. Developers inspect them as maps, and coding agents query them directly.
+              AppMap runs in development and CI. It records traces from tests, requests, and running processes. Coding agents query them directly, and developers inspect them as maps.
             </p>
           </div>
         </section>
@@ -237,9 +247,8 @@ function HowItWorksPage() {
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
               The Gold Traces skill analyzes the codebase and existing tests to identify the paths that matter. When an important path is already covered, AppMap records it. When coverage is missing, AppMap suggests a focused test case and the coding agent can create it. AppMap then records the path and adds the trace to the Gold Trace set.
             </p>
-            <p className="mt-6 text-center text-[14px] text-[#a99fc7]">
-              Important path → Existing test or suggested test → AppMap trace
-            </p>
+            <CoverageChips />
+
             <div className="mx-auto mt-8 max-w-[820px] rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
               <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Example</div>
               <h3 className="mt-2 text-[18px] font-bold text-[#f2effb]">The password reset that has no test</h3>
@@ -340,7 +349,7 @@ function HowItWorksPage() {
               </div>
 
               <p className="mt-8 max-w-[820px] text-[14px] leading-[1.6] text-[#a99fc7]">
-                Everything here runs in the developer environment. The coding agent queries over MCP locally, and AppMap answers from the working traces and the Gold Traces in the repository checkout. AppMap sends nothing off the machine. The traces carry runtime facts an agent cannot infer from source, current at the commit it checked out.
+                Everything here runs in the developer environment. The coding agent queries over MCP locally, and AppMap answers from the working traces and the Gold Traces in the repository checkout. AppMap sends nothing off the machine. The traces carry runtime facts an agent cannot infer from source, current at the commit it checked out. They are also the baseline the change is verified against, evidence the agent did not create.
               </p>
               <p className="mt-2 text-[12.5px] text-[#a99fc7]/70">
                 MCP tools: get_call_tree, find_calls, find_queries, find_requests. Details in Docs.
@@ -372,6 +381,7 @@ function HowItWorksPage() {
             <p className="mt-3 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
               When AppMap compares a change against the set, everyone judges the change against the same behavior. The Gold Traces skill uses existing tests to cover the paths that matter and suggests new test cases when coverage is missing.
             </p>
+            <LifecycleStrip />
             <div className="mt-5">
               {/* TODO: point to /gold-traces when that page ships */}
               <Link to="/gold-traces" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
@@ -411,14 +421,23 @@ function HowItWorksPage() {
                   </summary>
                   <p className="mt-3 text-[14.5px] leading-[1.6] text-[#a99fc7]">{f.a}</p>
                   {f.doc ? (
-                    <a
-                      href={f.doc.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-2 inline-block text-[13.5px] font-semibold text-[#ff07aa] hover:underline"
-                    >
-                      Read: {f.doc.label} →
-                    </a>
+                    f.doc.href.startsWith("/") ? (
+                      <a
+                        href={f.doc.href}
+                        className="mt-2 inline-block text-[13.5px] font-semibold text-[#ff07aa] hover:underline"
+                      >
+                        Read: {f.doc.label} →
+                      </a>
+                    ) : (
+                      <a
+                        href={f.doc.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-2 inline-block text-[13.5px] font-semibold text-[#ff07aa] hover:underline"
+                      >
+                        Read: {f.doc.label} →
+                      </a>
+                    )
                   ) : null}
                 </details>
               ))}
