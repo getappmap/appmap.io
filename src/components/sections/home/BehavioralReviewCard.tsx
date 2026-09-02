@@ -89,7 +89,7 @@ export function BehavioralReviewCard() {
           </span>
         </div>
         <h3 className="mt-3 text-[16.5px] font-bold text-[#f2effb]">
-          A star captured in battle could be silently handed back to the buyer
+          A real review, from a production application maintained mostly by AI agents
         </h3>
         <p className="mt-1.5 text-[13px] text-[#a99fc7]">
           Two processes write the same column. Each is correct alone. Every test passed.
@@ -156,10 +156,7 @@ export function BehavioralReviewCard() {
 
       <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[#2c2353] px-5 py-3">
         <span className="font-mono text-[11.5px] text-[#6d6395]">
-          gold traces 41 · server tests 427 passed · generated 2026-09-02
-        </span>
-        <span className="text-[11.5px] font-bold text-[#ff8ad2]">
-          A real review, from a production application maintained mostly by AI agents
+          gold traces 41 · server tests 427 passed
         </span>
       </div>
     </div>
