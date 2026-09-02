@@ -33,9 +33,10 @@ export function HomeHero() {
           </span>
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          AppMap records and compares application behavior, and the recordings live in your
-          repository with the code. Developers inspect the diagrams. Coding agents query the same
-          traces and verify their changes against them.
+          AppMap records and compares application behavior. Recording happens locally, in your
+          environment, and the key traces are committed to the repository with the code. Coding
+          agents query those traces and verify their changes against them. Developers inspect the
+          same behavior as diagrams.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
