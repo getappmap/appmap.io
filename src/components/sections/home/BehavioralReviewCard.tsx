@@ -145,7 +145,7 @@ export function BehavioralReviewCard() {
             <span className="text-[#34d399]">✓</span> behavior the change did not touch: none moved
           </span>
           <span>
-            <span className="text-[#34d399]">✓</span> ownership checked at offer and again at accept,
+            <span className="text-[#34d399]">✓</span> ownership checked before and after the write,
             visible in the traces
           </span>
           <span>
