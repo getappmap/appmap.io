@@ -3,7 +3,7 @@ import { BehavioralReviewCard } from "@/components/sections/home/BehavioralRevie
 
 export function ReviewLoop() {
   return (
-    <section className="border-b border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] px-6 py-12">
+    <section className="border-b border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] px-6 pt-12 pb-10">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[color:var(--color-am-ink)] sm:text-[34px]">
           Review behavior before it ships.
