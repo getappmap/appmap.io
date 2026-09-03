@@ -520,7 +520,7 @@ export function RuntimeBehaviorAnalysis() {
 
         {/* standards table */}
         <h3 className="mt-16 text-[21px] font-bold tracking-[-0.4px] text-[#f2effb]">
-          Where these questions already appear
+          Answers to the questions you are already asking
         </h3>
         <p className="mt-3 max-w-[820px] text-[15px] leading-[1.65] text-[#a99fc7]">
           Release and compliance reviews already ask what changed and what was tested. Today, the
