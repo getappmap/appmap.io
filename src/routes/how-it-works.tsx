@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { LanguageCoverage } from "@/components/common/LanguageCoverage";
 import { Header } from "@/components/layout/Header";
-import { ReviewStepStrip } from "@/components/sections/common/ReviewStepStrip";
 import { BehavioralReviewCard } from "@/components/sections/home/BehavioralReviewCard";
 
 const title = "How AppMap works";
