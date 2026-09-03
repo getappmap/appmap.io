@@ -118,6 +118,9 @@ function EnterprisePageInner() {
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
               Centrally managed, organization-registered
             </h2>
+            <p className="mt-4 max-w-[820px] text-[16px] leading-[1.6] text-[#a99fc7]">
+              AppMap is open source. AppMap Enterprise is how organizations run it: supported, centrally managed, and customized for your environment, with the AppMap team behind it.
+            </p>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {[
                 {
@@ -139,6 +142,32 @@ function EnterprisePageInner() {
                 </div>
               ))}
             </div>
+
+            <div className="mt-8 rounded-2xl border border-[#2c2353] bg-[#16112b] p-6">
+              <h3 className="text-[15px] font-bold text-[#f2effb]">When you need Enterprise</h3>
+              <ul className="mt-4 space-y-3">
+                {[
+                  "You deploy AppMap to developers centrally, rather than developers choosing it themselves.",
+                  "You need airgapped operation, organization configuration, or telemetry routing.",
+                  "You need an SLA, training, or customization for your stack.",
+                ].map((item) => (
+                  <li key={item} className="flex gap-3 text-[14.5px] leading-[1.55] text-[#a99fc7]">
+                    <svg
+                      viewBox="0 0 20 20"
+                      className="mt-[3px] h-4 w-4 flex-none text-[#ff07aa]"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M8.143 13.314 4.9 10.07l-1.414 1.415 4.657 4.656L18.657 5.628 17.243 4.214z"
+                      />
+                    </svg>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             <div className="mt-8 flex flex-col gap-4 rounded-2xl border border-[rgba(255,7,170,0.5)] bg-[rgba(255,7,170,0.07)] px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-3">
                 <span className="rounded-full border border-[rgba(255,7,170,0.55)] bg-[rgba(255,7,170,0.08)] px-2 py-0.5 text-[10.5px] font-bold uppercase tracking-wider text-[#ff8ad2]">
