@@ -11,35 +11,35 @@ function Pill({ label, value }: { label: string; value: string }) {
 function RaceDiagram() {
   return (
     <div className="rounded-xl border border-[#2c2353] bg-[#0d0a1a] p-3">
-      <svg viewBox="0 0 660 190" className="block w-full" role="img" aria-label="Two processes write the same star ownership column. The engine commit is silently erased by a stale check in the API process.">
+      <svg viewBox="0 0 660 190" className="block w-full" role="img" aria-label="Two processes write the same ownership column. The background job's commit is silently erased by a stale check in the request handler.">
         <text x="120" y="16" textAnchor="middle" fill="#c9c1ea" fontSize="12.5" fontWeight="700">
-          API process (accept)
+          Request handler
         </text>
         <text x="520" y="16" textAnchor="middle" fill="#c9c1ea" fontSize="12.5" fontWeight="700">
-          Engine process (battle tick)
+          Background job
         </text>
         <line x1="120" y1="24" x2="120" y2="180" stroke="#3a2f66" strokeDasharray="4 4" />
         <line x1="520" y1="24" x2="520" y2="180" stroke="#3a2f66" strokeDasharray="4 4" />
 
         <rect x="10" y="30" width="220" height="24" rx="5" fill="#17102c" stroke="#2c2353" />
         <text x="120" y="46" textAnchor="middle" fill="#a99fc7" fontSize="11.5" fontFamily="ui-monospace, monospace">
-          read star → owner = seller
+          read record → owner = A
         </text>
 
         <rect x="400" y="64" width="240" height="40" rx="5" fill="#17102c" stroke="rgba(248,113,113,.55)" />
         <text x="520" y="80" textAnchor="middle" fill="#fda4a4" fontSize="11.5" fontFamily="ui-monospace, monospace">
-          battle: attacker captures star
+          job updates the record
         </text>
         <text x="520" y="95" textAnchor="middle" fill="#fda4a4" fontSize="11.5" fontFamily="ui-monospace, monospace">
-          COMMIT owner = attacker
+          COMMIT owner = C
         </text>
 
         <rect x="10" y="110" width="240" height="40" rx="5" fill="#17102c" stroke="rgba(248,113,113,.55)" />
         <text x="130" y="126" textAnchor="middle" fill="#fda4a4" fontSize="11.5" fontFamily="ui-monospace, monospace">
-          check owner == seller ✓ (stale)
+          check owner == A ✓ (stale)
         </text>
         <text x="130" y="141" textAnchor="middle" fill="#fda4a4" fontSize="11.5" fontFamily="ui-monospace, monospace">
-          COMMIT owner = buyer
+          COMMIT owner = B
         </text>
 
         <defs>
@@ -56,7 +56,7 @@ function RaceDiagram() {
           markerEnd="url(#brc-arrow)"
         />
         <text x="330" y="172" textAnchor="middle" fill="#F87171" fontSize="12" fontFamily="ui-monospace, monospace">
-          the capture is silently erased
+          the job's write is silently erased
         </text>
       </svg>
     </div>
@@ -92,7 +92,7 @@ export function BehavioralReviewCard() {
           A real review, from a production application maintained mostly by AI agents
         </h3>
         <p className="mt-1.5 text-[13px] text-[#a99fc7]">
-          The application is a multiplayer strategy game. A player can sell a star to another player, and a battle can capture it. The sale and the battle wrote the same owner column, each correct alone. Every test passed.
+          Two code paths wrote the same record. Each was correct alone. Every test passed.
         </p>
 
         <div className="mt-4 overflow-x-auto">
@@ -107,8 +107,8 @@ export function BehavioralReviewCard() {
               FIX, APPLIED AND RE-RECORDED
             </div>
             <p className="mt-2 text-[13px] leading-[1.55] text-[#a99fc7]">
-              The accept now locks the star row before the ownership check. The recorded SQL
-              confirms it: the star read is now{" "}
+              The handler now locks the row before the ownership check. The recorded SQL confirms
+              it: the read is now{" "}
               <span className="font-mono text-[#f2effb]">SELECT … FOR UPDATE</span>.
             </p>
           </div>
@@ -145,7 +145,7 @@ export function BehavioralReviewCard() {
             <span className="text-[#34d399]">✓</span> behavior the change did not touch: none moved
           </span>
           <span>
-            <span className="text-[#34d399]">✓</span> ownership checked at offer and again at accept,
+            <span className="text-[#34d399]">✓</span> ownership checked before and after the write,
             visible in the traces
           </span>
           <span>
