@@ -373,41 +373,41 @@ export function InteractionWeb() {
 
 /* ---------------- tables data ---------------- */
 
-const STANDARD_ROWS: { s: string; asks: string; domains: string }[] = [
+const STANDARD_ROWS: { s: string; asks: string; answered: string }[] = [
   {
-    s: "OWASP Top 10 / ASVS",
+    s: "OWASP Top 10 (2025) / ASVS 5.0",
     asks: "Their domains: broken access control, injection, identification and session management, security logging failures.",
-    domains: "auth + security · data flow · failure handling · side effects",
+    answered: "6 of 10 categories: access control, cryptographic failures, injection, authentication, logging, exceptional conditions. ASVS: 242 of 345 requirements, in 11 of 17 chapters.",
   },
   {
-    s: "CWE",
+    s: "CWE Top 25 (2025)",
     asks: "Their weakness classes are interaction defects by definition: race conditions, missing authorization on a path, uncontrolled resource consumption, improper error handling.",
-    domains: "concurrency · auth + security · performance · failure handling",
+    answered: "19 of 25. The six left out are native memory-safety weaknesses no call trace shows.",
   },
   {
     s: "NIST SSDF (SP 800-218)",
     asks: "Their practices: verify the software meets requirements, review and test code before release.",
-    domains: "execution paths · API contract · business logic",
+    answered: "8 of 19 practices. PW.7 (review code), PW.8 (test executable code), and RV.1 to RV.3 (confirm, remediate, root-cause) are the direct fits.",
   },
   {
     s: "SOC 2 (change management) / SOX ITGC",
     asks: "Their domain: change management. Changes authorized, tested, approved, with evidence of what changed.",
-    domains: "all eleven · the comparison is the evidence",
+    answered: "CC8.1: 9 of 17 points of focus, including tests changes, documents changes, tracks changes, creates a baseline. CC7: 2 of 5. SOX ITGCs are not enumerated by statute. Change management is one of the four conventional domains.",
   },
   {
-    s: "PCI DSS (Req 6)",
+    s: "PCI DSS v4.0.1 (Req 6)",
     asks: "Their domain: secure development and change control. Code changes reviewed before release, including security impact.",
-    domains: "auth + security · persistence + SQL · data flow · side effects",
+    answered: "8 of 19 requirements. 6.2.3 (code review before release), 6.2.4 (injection and access control), 6.5.1 (security impact of changes), and 6.5.2 (controls confirmed after change) are the direct fits.",
   },
   {
-    s: "FFIEC guidance",
+    s: "FFIEC guidance (Development, Acquisition, and Maintenance, 2024)",
     asks: "Their domain: development and change management for systems in regulated banking, with an evidenced process.",
-    domains: "all eleven · audit-ready record per change",
+    answered: "3 of the 6 development-related examination objectives: testing, implementation and assessment, change management. 66 examination procedures in the booklet.",
   },
   {
     s: "SRE production readiness",
     asks: "Their domains: reliability, capacity, failure modes, dependencies. Timeouts, retries, and behavior under change.",
-    domains: "interactions · failure handling · performance · concurrency · execution paths",
+    answered: "4 of 6 review areas: dependencies, instrumentation, change management, performance. Google publishes no fixed checklist count.",
   },
 ];
 
@@ -537,7 +537,7 @@ export function RuntimeBehaviorAnalysis() {
                   What it asks
                 </th>
                 <th className="px-5 py-4 text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">
-                  Domains that answer it
+                  Answered by AppMap
                 </th>
               </tr>
             </thead>
@@ -546,14 +546,14 @@ export function RuntimeBehaviorAnalysis() {
                 <tr key={r.s} className="border-b border-[#2c2353] last:border-b-0 align-top">
                   <td className="px-5 py-4 text-[14px] font-semibold text-[#f2effb]">{r.s}</td>
                   <td className="px-5 py-4 text-[14px] leading-[1.55] text-[#a99fc7]">{r.asks}</td>
-                  <td className="px-5 py-4 text-[13.5px] leading-[1.55] text-[#a99fc7]">{r.domains}</td>
+                  <td className="px-5 py-4 text-[13.5px] leading-[1.55] text-[#a99fc7]">{r.answered}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
         <p className="mt-3 text-[12.5px] text-[#a99fc7]/70">
-          Illustrative mapping for discussion, not a compliance certification.
+          Illustrative mapping for discussion, not a compliance certification. Counts are our reading of each standard's public text.
         </p>
         <p className="mt-3 text-[14px]">
           <a href="/behavior-controls" className="font-semibold text-[#ff07aa] hover:underline">
