@@ -877,7 +877,7 @@ export function BranchingWorkflow() {
   return (
     <>
       <div className="block sm:hidden">
-        <MobileLifecycle />
+        <MobileGraph />
       </div>
 
       <div
