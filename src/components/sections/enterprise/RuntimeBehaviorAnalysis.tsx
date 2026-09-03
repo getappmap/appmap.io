@@ -580,7 +580,7 @@ export function RuntimeBehaviorAnalysis() {
                   When it runs
                 </th>
                 <th className="px-5 py-4 text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">
-                  What it misses
+                  Why AI is outrunning review
                 </th>
               </tr>
             </thead>
