@@ -70,7 +70,7 @@ function EnterprisePageInner() {
               Runtime context that stays in your environment.
             </h2>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              Airgapped and on-prem by design. There is no AppMap cloud for traces.
+              Airgapped and on-prem by design.
             </p>
             <p className="mt-6 max-w-[760px] text-[22px] font-semibold leading-[1.25] tracking-[-0.3px] text-[#f2effb] sm:text-[26px]">
               Bring your model. Keep your evidence.
@@ -110,7 +110,7 @@ function EnterprisePageInner() {
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">From one workstation to CI</h2>
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Adoption at scale: from one workstation to CI</h2>
             <ol className="mt-8 grid gap-4 lg:grid-cols-2 lg:items-start">
               {pilotSteps.map((s, i) => (
                 <li
@@ -151,11 +151,6 @@ function EnterprisePageInner() {
                 </li>
               ))}
             </ol>
-            <div className="mt-10">
-              <Link to="/book-a-demo" className="inline-block rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
-                Book a Demo
-              </Link>
-            </div>
           </div>
         </section>
 
