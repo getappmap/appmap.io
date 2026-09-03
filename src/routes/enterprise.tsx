@@ -105,6 +105,9 @@ function EnterprisePageInner() {
               <ExternalLink href="https://github.com/getappmap/appmap">published data spec</ExternalLink>. Developers and
               security reviewers can audit what AppMap records and what it sends to the agent.
             </p>
+            <p className="mt-4 max-w-[820px] text-[14px] leading-[1.6] text-[#a99fc7]">
+              AppMap Enterprise adds organization configuration pushed from one endpoint, organization-registered installs with no license keys on developer machines, and usage telemetry routed to your own systems.
+            </p>
           </div>
         </section>
 
