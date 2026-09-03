@@ -586,104 +586,290 @@ function GraphRow({ row, index }: { row: Row; index: number }) {
   );
 }
 
-/* ---------------- mobile lifecycle strip ---------------- */
+/* ---------------- mobile terse graph ---------------- */
 
-function Connector() {
+function SmallBot({ color, size = 14 }: { color: string; size?: number }) {
   return (
-    <div className="flex justify-start" style={{ paddingLeft: 21 }} aria-hidden="true">
-      <svg width={10} height={16} viewBox="0 0 10 16">
-        <line x1={5} y1={0} x2={5} y2={12} stroke={MAIN} strokeWidth={2} />
-        <path d="M1.8 11 L5 15 L8.2 11" fill="none" stroke={MAIN} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    </div>
+    <svg width={size} height={size} viewBox="0 0 16 16" aria-hidden="true">
+      <line x1={8} y1={1} x2={8} y2={3} stroke={color} strokeWidth={1.1} strokeLinecap="round" />
+      <circle cx={8} cy={1} r={1} fill={color} />
+      <rect x={2.5} y={3} width={11} height={7.5} rx={2.5} fill="none" stroke={color} strokeWidth={1.2} />
+      <circle cx={5.8} cy={6.8} r={1.1} fill={color} />
+      <circle cx={10.2} cy={6.8} r={1.1} fill={color} />
+      <rect x={5} y={11.5} width={6} height={3} rx={1.2} fill="none" stroke={color} strokeWidth={1.1} />
+    </svg>
   );
 }
 
-function MobileStage({
-  visual,
+function MonitorBot({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 16 16" aria-hidden="true">
+      <line x1={8} y1={1} x2={8} y2={3} stroke={MAIN} strokeWidth={1.1} strokeLinecap="round" />
+      <circle cx={8} cy={1} r={1} fill={MAIN} />
+      <rect x={2.5} y={3} width={11} height={7.5} rx={2.5} fill="none" stroke={MAIN} strokeWidth={1.2} />
+      <rect x={4.2} y={5.4} width={7.6} height={3} rx={1.2} fill="none" stroke={MAIN} strokeWidth={1} />
+      <circle cx={6.2} cy={6.9} r={0.8} fill={MAIN} />
+      <circle cx={9.8} cy={6.9} r={0.8} fill={MAIN} />
+      <rect x={5} y={11.5} width={6} height={3} rx={1.2} fill="none" stroke={MAIN} strokeWidth={1.1} />
+    </svg>
+  );
+}
+
+function RoleCard({
+  icon,
   title,
-  sub,
+  titleColor,
+  role,
+  pink,
 }: {
-  visual: React.ReactNode;
+  icon: React.ReactNode;
   title: string;
-  sub: string;
+  titleColor: string;
+  role: string;
+  pink?: boolean;
 }) {
   return (
-    <div className="flex items-center gap-3">
-      <span className="flex w-[46px] shrink-0 items-center justify-start">{visual}</span>
-      <span className="min-w-0">
-        <span className="block text-[13.5px] font-bold text-[#f2effb]">{title}</span>
-        <span className="block text-[12px] text-[#6d6395]">{sub}</span>
-      </span>
+    <div
+      className="min-w-0 rounded-lg border p-2"
+      style={
+        pink
+          ? { borderColor: "rgba(255,7,170,.45)", background: "rgba(255,7,170,.05)" }
+          : { borderColor: "#2c2353", background: "#0f0b1d" }
+      }
+    >
+      <div className="flex items-center gap-1.5">
+        {icon}
+        <span className="truncate text-[10.5px] font-bold" style={{ color: titleColor }}>
+          {title}
+        </span>
+      </div>
+      <div className="mt-0.5 truncate text-[9.5px]" style={{ color: pink ? "rgba(255,179,224,0.8)" : "#6d6395" }}>
+        {role}
+      </div>
     </div>
   );
 }
 
-function MobileLifecycle() {
+const M_RAIL_X = [20, 72, 124];
+const M_RAILS_W = 150;
+const M_BRANCH_COLORS = ["#8b5cf6", "#f59e0b"];
+
+type MRow =
+  | { kind: "commit"; rail: number; color: string; label?: string; labelColor?: string; art?: "stack3" | "stack2" | "plus" | "chip" | "bot0" | "bot1" }
+  | { kind: "out"; rail: number }
+  | { kind: "blocked"; rail: number; label: string }
+  | { kind: "merge"; rail: number; label: string }
+  | { kind: "flow" };
+
+const M_ROWS: MRow[] = [
+  { kind: "commit", rail: 0, color: MAIN, art: "stack3", label: "38 Gold Traces on main", labelColor: "#ffb3e0" },
+  { kind: "out", rail: 1 },
+  { kind: "out", rail: 2 },
+  { kind: "commit", rail: 1, color: M_BRANCH_COLORS[0], art: "chip" },
+  { kind: "commit", rail: 2, color: M_BRANCH_COLORS[1], art: "chip" },
+  { kind: "blocked", rail: 2, label: "blocked before merge" },
+  { kind: "commit", rail: 2, color: M_BRANCH_COLORS[1], art: "chip" },
+  { kind: "merge", rail: 2, label: "1 changed, 1 new" },
+  { kind: "flow" },
+  { kind: "commit", rail: 0, color: MAIN, art: "plus", label: "baseline advances", labelColor: "#6d6395" },
+  { kind: "commit", rail: 1, color: M_BRANCH_COLORS[0], art: "chip" },
+  { kind: "merge", rail: 1, label: "behavior held" },
+  { kind: "flow" },
+  { kind: "commit", rail: 0, color: MAIN, art: "stack2", label: "v1.4.0, baseline frozen", labelColor: "#ffb3e0" },
+];
+
+const M_OUT: Record<number, number> = {};
+const M_MERGE: Record<number, number> = {};
+M_ROWS.forEach((r, i) => {
+  if (r.kind === "out") M_OUT[r.rail] = i;
+  if (r.kind === "merge") M_MERGE[r.rail] = i;
+});
+
+function mRowHeight(row: MRow) {
+  if (row.kind === "flow") return 24;
+  if (row.kind === "blocked") return 34;
+  return 28;
+}
+
+function mRailAlive(rail: number, index: number) {
+  const out = M_OUT[rail];
+  const merge = M_MERGE[rail];
+  if (out === undefined) return false;
+  if (index < out) return false;
+  if (merge !== undefined && index > merge) return false;
+  return true;
+}
+
+function MRowRails({ row, index }: { row: MRow; index: number }) {
+  const h = mRowHeight(row);
+  const mid = h / 2;
+  const mainX = M_RAIL_X[0];
+  const lines: React.ReactNode[] = [];
+
+  for (let rail = 1; rail <= 2; rail++) {
+    if (!mRailAlive(rail, index)) continue;
+    const x = M_RAIL_X[rail];
+    const isOut = M_OUT[rail] === index;
+    const isMerge = M_MERGE[rail] === index;
+    const y1 = isOut ? mid : 0;
+    const y2 = isMerge ? mid : h;
+    if (y2 > y1) {
+      lines.push(
+        <line
+          key={`r${rail}`}
+          x1={x}
+          y1={y1}
+          x2={x}
+          y2={y2}
+          stroke={M_BRANCH_COLORS[rail - 1]}
+          strokeWidth={1.8}
+          strokeOpacity={0.85}
+        />,
+      );
+    }
+  }
+
+  const isCurve = row.kind === "out" || row.kind === "merge";
+  const branchColor = isCurve ? M_BRANCH_COLORS[(row as { rail: number }).rail - 1] : MAIN;
+  const bx = isCurve ? M_RAIL_X[(row as { rail: number }).rail] : mainX;
+  const curve =
+    row.kind === "out"
+      ? `M ${mainX} 0 C ${mainX} ${mid * 0.9}, ${bx} ${mid * 0.4}, ${bx} ${mid}`
+      : row.kind === "merge"
+        ? `M ${bx} ${mid} C ${bx} ${h - mid * 0.4}, ${mainX} ${h - mid * 0.9}, ${mainX} ${h}`
+        : null;
+
+  return (
+    <svg width={M_RAILS_W} height={h} viewBox={`0 0 ${M_RAILS_W} ${h}`} className="block shrink-0" aria-hidden="true">
+      {row.kind === "flow" ? (
+        <>
+          <line x1={mainX} y1={0} x2={mainX} y2={h - 6} stroke={MAIN} strokeWidth={1.8} strokeDasharray="3 3" strokeOpacity={0.9} />
+          <path d={`M ${mainX - 3.2} ${h - 7} L ${mainX} ${h - 2.5} L ${mainX + 3.2} ${h - 7}`} fill="none" stroke={MAIN} strokeWidth={1.5} strokeLinecap="round" />
+        </>
+      ) : (
+        <line x1={mainX} y1={0} x2={mainX} y2={h} stroke={MAIN} strokeWidth={1.8} />
+      )}
+
+      {lines}
+
+      {curve && (
+        <>
+          <path d={curve} fill="none" stroke={CASING} strokeWidth={5.5} strokeLinecap="round" />
+          <path d={curve} fill="none" stroke={branchColor} strokeWidth={1.8} strokeLinecap="round" />
+        </>
+      )}
+
+      {row.kind === "out" && <circle cx={bx} cy={mid} r={3.4} fill={branchColor} />}
+      {row.kind === "merge" && <circle cx={mainX} cy={h} r={3.4} fill={CASING} stroke={MAIN} strokeWidth={1.5} />}
+      {row.kind === "commit" && <circle cx={M_RAIL_X[row.rail]} cy={mid} r={3.6} fill={row.color} />}
+      {row.kind === "blocked" && <circle cx={M_RAIL_X[row.rail]} cy={mid} r={3.6} fill="#F87171" />}
+    </svg>
+  );
+}
+
+function MGraphRow({ row, index }: { row: MRow; index: number }) {
+  const h = mRowHeight(row);
+  const label =
+    row.kind === "blocked"
+      ? { text: row.label, color: "#fda4a4" }
+      : row.kind === "merge"
+        ? { text: row.label, color: "#a99fc7" }
+        : row.kind === "commit" && row.label
+          ? { text: row.label, color: row.labelColor ?? "#c9c1ea" }
+          : null;
+
+  return (
+    <div className="flex items-stretch">
+      <div className="relative shrink-0" style={{ width: M_RAILS_W, height: h }}>
+        <MRowRails row={row} index={index} />
+
+        {row.kind === "out" && (
+          <span className="absolute" style={{ left: M_RAIL_X[row.rail] + 7, top: (h - 14) / 2 }}>
+            <SmallBot color={M_BRANCH_COLORS[row.rail - 1]} size={14} />
+          </span>
+        )}
+
+        {row.kind === "commit" && row.art === "chip" && (
+          <span className="absolute" style={{ left: M_RAIL_X[row.rail] + 7, top: (h - 18) / 2 }}>
+            <TraceChip scale={0.55} borderColor="#2c2353" background="#0f0b1d" compact />
+          </span>
+        )}
+        {row.kind === "commit" && row.art === "stack3" && (
+          <span className="absolute" style={{ left: M_RAIL_X[0] + 7, top: (h - 18) / 2 }}>
+            <GoldStack count={3} scale={0.55} />
+          </span>
+        )}
+        {row.kind === "commit" && row.art === "stack2" && (
+          <span className="absolute" style={{ left: M_RAIL_X[0] + 7, top: (h - 18) / 2 }}>
+            <GoldStack count={2} scale={0.55} />
+          </span>
+        )}
+        {row.kind === "commit" && row.art === "plus" && (
+          <span className="absolute" style={{ left: M_RAIL_X[0] + 7, top: (h - 18) / 2 }}>
+            <span className="relative inline-block">
+              <TraceChip scale={0.55} />
+              <PlusBadge />
+            </span>
+          </span>
+        )}
+
+        {row.kind === "blocked" && (
+          <>
+            <span className="absolute" style={{ left: M_RAIL_X[row.rail] - 22, top: (h - 14) / 2 }}>
+              <MonitorBot size={14} />
+            </span>
+            <span className="absolute scale-[0.62] origin-left" style={{ left: M_RAIL_X[row.rail] + 8, top: 6 }}>
+              <RejectedMapChip />
+            </span>
+          </>
+        )}
+
+        {row.kind === "merge" && (
+          <span className="absolute flex items-center gap-1" style={{ left: 30, top: (h - 14) / 2 }}>
+            <MonitorBot size={13} />
+            <CompareGroup color={hexToRgba(M_BRANCH_COLORS[row.rail - 1], 0.55)} />
+          </span>
+        )}
+      </div>
+
+      <div className="flex min-w-0 flex-1 items-center pl-2" style={{ height: h }}>
+        {label && (
+          <span className="truncate whitespace-nowrap text-[11px]" style={{ color: label.color }}>
+            {label.text}
+          </span>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function MobileGraph() {
   return (
     <div
-      className="rounded-2xl border border-[#2c2353] p-4"
+      className="overflow-hidden rounded-2xl border border-[#2c2353] p-3"
       style={{ background: "linear-gradient(180deg, #131024 0%, #0f0b1d 100%)" }}
     >
-      <MobileStage
-        visual={<TraceChip scale={0.8} borderColor="#2c2353" background="#0f0b1d" />}
-        title="Record locally"
-        sub="tests, requests, processes"
-      />
-      <Connector />
-      <MobileStage
-        visual={
-          <span className="relative inline-block">
-            <TraceChip scale={0.8} />
-            <PlusBadge />
-          </span>
-        }
-        title="Commit the key traces"
-        sub="gold_traces/ with the code"
-      />
-      <Connector />
-      <MobileStage
-        visual={
-          <span className="inline-flex items-center rounded-[5px] border border-[#2c2353] bg-[#0f0b1d] px-1.5 py-1 text-[12px] font-bold text-[#f2effb]">
-            MCP
-          </span>
-        }
-        title="Agents query"
-        sub="call tree, queries, requests"
-      />
-      <Connector />
-      <MobileStage
-        visual={<CompareGroup color="rgba(201,193,234,.55)" />}
-        title="Compare at review"
-        sub="fresh against the baseline"
-      />
-
-      <div className="mt-2.5 flex items-center gap-2" style={{ paddingLeft: 18 }}>
-        <span className="shrink-0 scale-[0.85]">
-          <RejectedMapChip />
-        </span>
-        <span className="text-[11.5px] text-[#fda4a4]">drift is blocked before merge</span>
+      <div className="grid grid-cols-2" style={{ gap: 6 }}>
+        <RoleCard icon={<TargetIcon />} title="main · gold_traces/" titleColor="#ffb3e0" role="the baseline" pink />
+        <RoleCard icon={<MonitorBot />} title="appmap-review" titleColor="#ff8ad2" role="monitoring with Gold Traces" pink />
+        <RoleCard icon={<SmallBot color="#8b5cf6" size={16} />} title="agents/frontend" titleColor="#8b5cf6" role="coding" />
+        <RoleCard icon={<SmallBot color="#f59e0b" size={16} />} title="agents/paid-api" titleColor="#f59e0b" role="coding" />
       </div>
 
-      <div className="mt-2.5">
-        <Connector />
+      <div className="mt-3">
+        {M_ROWS.map((row, i) => (
+          <MGraphRow key={i} row={row} index={i} />
+        ))}
       </div>
-      <MobileStage
-        visual={
-          <span className="relative inline-block" style={{ width: 40, height: 22 }}>
-            <GoldStack count={2} scale={0.7} />
-          </span>
-        }
-        title="The baseline advances"
-        sub="after the merge"
-      />
 
-      <div className="mt-4 border-t border-[#2c2353] pt-3 text-[11.5px] text-[#6d6395]">
-        Gold Traces live on main. Every change is compared against them before it merges.
+      <div className="mt-3 border-t border-[#2c2353] pt-2.5 text-[11px] text-[#6d6395]">
+        Coding agents work the branches. The monitor compares every change against the Gold Traces on main. The
+        release freezes the set.
       </div>
     </div>
   );
 }
+
 
 /* ---------------- panel ---------------- */
 
