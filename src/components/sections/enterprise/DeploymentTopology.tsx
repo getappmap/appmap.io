@@ -325,8 +325,8 @@ export function DeploymentTopology() {
           </Body>
           <path d="M 600 358 C 540 352, 470 344, 424 326" fill="none" stroke={GRAY} strokeWidth={1.5} strokeDasharray="5 4" markerEnd="url(#dt-arrow-gray)" />
           <text x={512} y={348} textAnchor="middle" fill="#a99fc7" fontSize={9.5}>config</text>
-          <path d="M 720 358 C 790 352, 852 344, 892 326" fill="none" stroke={GRAY} strokeWidth={1.5} strokeDasharray="5 4" markerEnd="url(#dt-arrow-gray)" />
-          <text x={812} y={348} textAnchor="middle" fill="#a99fc7" fontSize={9.5}>config</text>
+          <path d="M 700 358 C 760 352, 812 344, 848 326" fill="none" stroke={GRAY} strokeWidth={1.5} strokeDasharray="5 4" markerEnd="url(#dt-arrow-gray)" />
+          <text x={772} y={348} textAnchor="middle" fill="#a99fc7" fontSize={9.5}>config</text>
 
           {/* 7. internal observability */}
           <Card x={812} y={360} w={236} h={112} />
@@ -334,10 +334,10 @@ export function DeploymentTopology() {
           <Body x={826} y={392} w={208} h={72}>
             usage telemetry routed to your own stack (Splunk or similar), or disabled
           </Body>
-          <path d="M 300 322 C 300 340, 700 336, 1000 340 L 1000 356" fill="none" stroke={GRAY} strokeWidth={1.5} strokeDasharray="5 4" markerEnd="url(#dt-arrow-gray)" />
-          <text x={620} y={332} textAnchor="middle" fill="#a99fc7" fontSize={9.5}>telemetry</text>
-          <path d="M 950 322 C 950 338, 930 340, 930 356" fill="none" stroke={GRAY} strokeWidth={1.5} strokeDasharray="5 4" markerEnd="url(#dt-arrow-gray)" />
-          <text x={886} y={342} textAnchor="middle" fill="#a99fc7" fontSize={9.5}>telemetry</text>
+          <path d="M 300 322 C 300 334, 700 328, 1010 330 L 1010 356" fill="none" stroke={GRAY} strokeWidth={1.5} strokeDasharray="5 4" markerEnd="url(#dt-arrow-gray)" />
+          <text x={600} y={324} textAnchor="middle" fill="#a99fc7" fontSize={9.5}>telemetry</text>
+          <path d="M 950 322 L 950 356" fill="none" stroke={GRAY} strokeWidth={1.5} strokeDasharray="5 4" markerEnd="url(#dt-arrow-gray)" />
+          <text x={926} y={344} textAnchor="end" fill="#a99fc7" fontSize={9.5}>telemetry</text>
 
           {/* ---------------- row 3 ---------------- */}
           <Card x={32} y={490} w={1016} h={80} />
@@ -347,7 +347,7 @@ export function DeploymentTopology() {
 
           {/* ---------------- outside the boundary ---------------- */}
           <path
-            d="M 396 209 C 444 209, 452 246, 452 292 C 452 322, 285 326, 285 350 L 285 584 L 660 584 C 690 584, 690 604, 690 632"
+            d="M 396 209 C 450 209, 458 246, 458 300 C 458 332, 400 346, 340 346 L 44 346 C 28 346, 24 358, 24 382 L 24 566 C 24 582, 36 584, 60 584 L 660 584 C 690 584, 690 604, 690 632"
             fill="none"
             stroke={GRAY}
             strokeWidth={1.5}
