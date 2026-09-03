@@ -189,6 +189,43 @@ function HowItWorksPage() {
           </div>
         </section>
 
+        <section className="px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Ground truth behavior, versioned with the code</h2>
+            <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
+              Gold Traces are the team's shared record of how the application behaves. The set lives in the repository, so developers, coding agents, and CI all read from the same place.
+            </p>
+            <p className="mt-3 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
+              When AppMap compares a change against the set, everyone judges the change against the same behavior. The Gold Traces skill uses existing tests to cover the paths that matter and suggests new test cases when coverage is missing.
+            </p>
+            <LifecycleStrip />
+            <div className="mt-5">
+              {/* TODO: point to /gold-traces when that page ships */}
+              <Link to="/gold-traces" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
+                Learn about AppMap Gold Traces →
+              </Link>
+            </div>
+
+            <div className="mt-8 max-w-[720px]">
+              <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGES · BEHAVIOR CHANGES</div>
+                <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Changes as intended</h3>
+                <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">
+                  For an N+1 fix, a new timeout, a circuit breaker, or added audit logging, behavior should change in a specific way. If the trace does not change, the fix is not there.
+                </p>
+                <img
+                  src="/marketing-assets/img/appmap/waltzbeforeafter_branded.svg"
+                  alt="AppMap traces of FINOS Waltz involvement-kind permission lookup: 7 per-id SELECTs replaced by a single batched findAll, 6 fewer round-trips."
+                  loading="lazy"
+                  decoding="async"
+                  className="mt-5 w-full h-auto rounded-lg border border-[#2c2353] bg-[#0d0a1a]"
+                />
+                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap trace · FINOS Waltz</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Every detail of the paths that matter</h2>
@@ -273,11 +310,11 @@ function HowItWorksPage() {
         </section>
 
 
-        <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
+        <section id="compatibility" className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the traces reach your agent</h2>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              Coding agents read the traces alongside the source, and answer from what the code did. AppMap exposes the recorded calls, queries, and requests through MCP.
+              Coding agents read the traces alongside the source, and answer from what the code did. AppMap exposes the recorded calls, queries, and requests through MCP, so the agent can change without changing the runtime context. The model can change too: hosted, self-hosted, frontier, and compact models all read the same traces.
             </p>
             <div className="mt-10 rounded-2xl border border-[#2c2353] bg-[#0d0a1a] p-6 sm:p-8">
               <div className="relative rounded-2xl border-2 border-dashed border-[#3f3566] bg-[#0d0a1a]/50 p-6 pt-8 sm:p-8 sm:pt-9">
@@ -301,6 +338,7 @@ function HowItWorksPage() {
                       <span className="text-[11px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">query</span>
                       <span className="text-[#ff07aa]">▼</span>
                     </div>
+
                     <div className="rounded-2xl border border-[#ff07aa]/50 bg-[#1c1538] px-6 py-5 text-center shadow-[0_0_28px_rgba(255,7,170,0.18)]">
                       <div className="text-[15px] font-extrabold text-[#f2effb]">MCP</div>
                     </div>
@@ -332,57 +370,8 @@ function HowItWorksPage() {
               <p className="mt-2 text-[12.5px] text-[#a99fc7]/70">
                 MCP tools: get_call_tree, find_calls, find_queries, find_requests. Details in Docs.
               </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="compatibility" className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-12">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Works with the coding agent you already use</h2>
-            <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              AppMap exposes traces over MCP, so the coding agent can change without changing the runtime context. The model can change too: hosted, self-hosted, frontier, and compact models all read the same traces.
-            </p>
-            <p className="mt-4 text-[15px] font-semibold text-[#ff07aa]">
-              The agent can change. The evidence does not have to.
-            </p>
-            <LanguageCoverage className="mt-6 max-w-[820px]" />
-
-          </div>
-        </section>
-
-        <section className="px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Ground truth behavior, versioned with the code</h2>
-            <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              Gold Traces are the team's shared record of how the application behaves. The set lives in the repository, so developers, coding agents, and CI all read from the same place.
-            </p>
-            <p className="mt-3 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              When AppMap compares a change against the set, everyone judges the change against the same behavior. The Gold Traces skill uses existing tests to cover the paths that matter and suggests new test cases when coverage is missing.
-            </p>
-            <LifecycleStrip />
-            <div className="mt-5">
-              {/* TODO: point to /gold-traces when that page ships */}
-              <Link to="/gold-traces" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
-                Learn about AppMap Gold Traces →
-              </Link>
-            </div>
-
-            <div className="mt-8 max-w-[720px]">
-              <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGES · BEHAVIOR CHANGES</div>
-                <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Changes as intended</h3>
-                <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">
-                  For an N+1 fix, a new timeout, a circuit breaker, or added audit logging, behavior should change in a specific way. If the trace does not change, the fix is not there.
-                </p>
-                <img
-                  src="/marketing-assets/img/appmap/waltzbeforeafter_branded.svg"
-                  alt="AppMap traces of FINOS Waltz involvement-kind permission lookup: 7 per-id SELECTs replaced by a single batched findAll, 6 fewer round-trips."
-                  loading="lazy"
-                  decoding="async"
-                  className="mt-5 w-full h-auto rounded-lg border border-[#2c2353] bg-[#0d0a1a]"
-                />
-                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap trace · FINOS Waltz</p>
-              </div>
+              <p className="mt-6 text-[15px] font-semibold text-[#ff07aa]">The agent can change. The evidence does not have to.</p>
+              <LanguageCoverage className="mt-4 max-w-[820px]" />
             </div>
           </div>
         </section>
