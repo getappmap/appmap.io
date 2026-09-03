@@ -622,11 +622,13 @@ export function RuntimeBehaviorAnalysis() {
 
         {/* approaches table */}
         <h3 className="mt-16 text-[21px] font-bold tracking-[-0.4px] text-[#f2effb]">
-          How teams do this today, and when
+          Agents outrun every check
         </h3>
         <p className="mt-3 max-w-[820px] text-[15px] leading-[1.65] text-[#a99fc7]">
-          Most controls inspect source, check selected outcomes, or wait until after deployment. AppMap
-          compares runtime behavior during development and again in CI, before merge.
+          Agents now produce more changes than any stage of the pipeline can absorb. Reviewers skim,
+          test suites check only what was asserted, scanners match a catalog, and production finds the
+          rest. The agent that wrote the change is the one that has to fix it, and it is working in
+          development. AppMap compares runtime behavior there, and again in CI, before merge.
         </p>
         <div className="mt-6 overflow-x-auto rounded-2xl border border-[#2c2353] bg-[#16112b]">
           <table className="w-full min-w-[900px] border-collapse text-left">
