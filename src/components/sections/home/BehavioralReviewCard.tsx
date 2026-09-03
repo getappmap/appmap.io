@@ -107,8 +107,8 @@ export function BehavioralReviewCard() {
               FIX, APPLIED AND RE-RECORDED
             </div>
             <p className="mt-2 text-[13px] leading-[1.55] text-[#a99fc7]">
-              The accept now locks the star row before the ownership check. The recorded SQL
-              confirms it: the star read is now{" "}
+              The handler now locks the row before the ownership check. The recorded SQL confirms
+              it: the read is now{" "}
               <span className="font-mono text-[#f2effb]">SELECT … FOR UPDATE</span>.
             </p>
           </div>
