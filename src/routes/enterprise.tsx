@@ -186,41 +186,7 @@ function EnterprisePageInner() {
           </div>
         </section>
 
-        <section className="border-t border-[#2c2353] px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-              Not a monitoring tool
-            </h2>
-            <div className="mt-4 max-w-[820px] space-y-4 text-[16px] leading-[1.7] text-[#a99fc7]">
-              <p>
-                AppMap is not an APM or monitoring product. It records function calls and SQL in
-                pre-production, not spans and timing in production. It runs while developers and CI
-                run the application, and its output is used for code review and behavioral comparison,
-                not uptime alerts.
-              </p>
-              <p>
-                Organizations that already run monitoring keep it. AppMap covers the stage those tools
-                do not: development and review, before the change merges.
-              </p>
-            </div>
-          </div>
-        </section>
 
-        <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-              Security review of AI code changes
-            </h2>
-            <p className="mt-4 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
-              A behavioral comparison detects security-affecting changes that a diff does not show: an
-              authorization check that no longer runs on a path, a security-critical function newly
-              reached from a route, a changed flow around sensitive operations. AppMap security labels
-              mark the security-critical functions, and the comparison reports when their invocation
-              appears or disappears. A test suite can pass through all of it, because the code still
-              returns correct answers. The review flags the change before it merges.
-            </p>
-          </div>
-        </section>
 
         <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
