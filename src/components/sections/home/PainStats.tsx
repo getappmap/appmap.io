@@ -30,7 +30,7 @@ export function PainStats() {
           With AI coding agents, code is shipping fast. <span className="text-[#F87171]">Confidence is not.</span>
         </h2>
         <p className="mt-3 text-[17px] text-[#a99fc7]">
-          AI writes more of your codebase every month, and almost no one knows what it actually does.
+          AI writes more of the code every month. Developers and coding agents still have to work out what each change will do when it runs.
         </p>
 
         <ul className="mt-10 grid gap-5 grid-cols-1 sm:grid-cols-3">

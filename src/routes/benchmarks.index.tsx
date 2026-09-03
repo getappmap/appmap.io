@@ -128,7 +128,7 @@ function BenchmarksIndexPage() {
             Bug reports arrive as symptoms. Pull requests arrive as diffs. Neither tells you what the running system actually did.
           </p>
           <p className="mt-10 max-w-[760px] text-[17px] leading-[1.6] text-[#a99fc7]">
-            Developers and coding agents still have to discover the execution path, affected code, queries, dependencies, and behavioral consequences. So we measured the impact runtime context makes on this process.
+            Developers and coding agents still have to discover the execution path, affected code, queries, dependencies, and behavioral consequences. So we measured the difference runtime context makes.
           </p>
           <p className="mt-4 text-[17px] font-semibold text-[#f2effb]">
             This study measures the reactive case, root-cause analysis, so the value of runtime evidence can be isolated from patch generation.
@@ -252,7 +252,7 @@ function BenchmarksIndexPage() {
           </div>
 
           <p className="mt-7 max-w-[880px] text-[15px] leading-[1.65] text-[#a99fc7]">
-            One issue contains its own answer. The other requires finding it. The SWE-Bench+ audit documents fix leakage like this in roughly one third of SWE-bench issues. This benchmark&apos;s tickets are constructed to make it impossible.
+            One issue contains its own answer. The other requires finding it. The SWE-Bench+ audit documents fix leakage like this in roughly one third of SWE-bench issues. These tickets were written to prevent that kind of solution leakage.
           </p>
 
           <div className="mt-7 flex flex-wrap gap-x-8 gap-y-5 rounded-2xl border border-[#2c2353] bg-[#1c1538] px-6 py-5">
@@ -346,7 +346,7 @@ function BenchmarksIndexPage() {
         <div className="mx-auto max-w-[1120px]">
           <h2 className="max-w-[900px] text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">One query can return what fifteen searches are looking for</h2>
           <p className="mt-5 max-w-[820px] text-[16px] leading-[1.7] text-[#a99fc7]">
-            In all 216 runs we analyzed, the agent used <code className="font-mono text-[#f2effb]">get_call_tree</code>, and on average it needed just over one call. That one call returned the execution path that held the answer. The code-only lane had to list files, read imports, search for identifiers, and read code, one step at a time.
+            In the 216 runs included in the tool-use analysis, every agent used <code className="font-mono text-[#f2effb]">get_call_tree</code>, averaging just over one call per run. That one call returned the execution path that held the answer. The code-only lane had to list files, read imports, search for identifiers, and read code, one step at a time.
           </p>
 
           <div className="mt-9 flex flex-col gap-5 border-t border-b border-[#2c2353] py-7 sm:flex-row sm:items-start sm:gap-12">
@@ -427,7 +427,7 @@ grep -rn "ledger.write" src/
           <div className="mt-9 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6 sm:p-8">
             <h3 className="text-[19px] font-bold text-[#f2effb]">Matched performance in the primary sweep</h3>
             <p className="mt-3 max-w-[760px] text-[15.5px] leading-[1.7] text-[#a99fc7]">
-              In the primary study, both lanes eventually fixed every bug. The lane with runtime evidence got there for about 3.4 times less spend.
+              In the primary study, both lanes eventually fixed every bug. The source-only lane cost about 3.4 times as much.
             </p>
           </div>
 
@@ -475,7 +475,7 @@ grep -rn "ledger.write" src/
           <div className="mt-10">
             <h3 className="text-[19px] font-bold text-[#f2effb]">What the cost result means</h3>
             <p className="mt-3 max-w-[820px] text-[15.5px] leading-[1.7] text-[#a99fc7]">
-              The lowest-cost configuration that fixed every bug was a compact model reading traces. A frontier model was needed for the hardest implementation steps, and for nothing else. A trace carries information the model would otherwise spend tool calls gathering, so the same diagnosis completes with a smaller model, fewer calls, and lower spend. For an organization running coding agents across many repositories, that is the same review at lower cost per change. This is one internal study. The limits below apply.
+              In the primary study, a compact model reading traces solved every case at the lowest cost. Across the broader suite, the hybrid used a compact model for diagnosis and a frontier model for harder fixes. The trace reduced the search work before implementation. This is one internal study. The limits below apply.
             </p>
           </div>
 

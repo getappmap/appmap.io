@@ -422,12 +422,12 @@ const APPROACH_ROWS: { name: string; active: string[]; misses: string; appmap?: 
   {
     name: "AI code reviewers",
     active: ["PR"],
-    misses: "Reads the same diff faster, at the pull request. Still inference from source.",
+    misses: "Reviews the same source diff more quickly, but still has to infer runtime behavior.",
   },
   {
     name: "Test suites in CI",
     active: ["CI"],
-    misses: "Verifies the assertions someone wrote, after the change is written. Samples outcomes, not behavior.",
+    misses: "Checks the assertions that were written. Behavior nobody asserted can still change.",
   },
   {
     name: "Linters, SAST, scanners",
@@ -442,13 +442,13 @@ const APPROACH_ROWS: { name: string; active: string[]; misses: string; appmap?: 
   {
     name: "Canaries, APM, incident review",
     active: ["Deploy", "Prod"],
-    misses: "Finds interaction defects after merge, in production, at user blast radius.",
+    misses: "Finds problems after merge, when users may already be affected.",
   },
   {
     name: "AppMap behavioral comparison",
     active: ["Develop", "Push", "PR", "CI"],
     misses:
-      "Compares recorded behavior against the approved baseline at the earliest point where behavior exists, and repeats the same review at PR and in CI.",
+      "Compares recorded behavior with the base revision during development, then repeats the review in the pull request and CI.",
     appmap: true,
   },
 ];
@@ -513,7 +513,7 @@ export function RuntimeBehaviorAnalysis() {
           <div className="mx-auto max-w-[840px] border-t border-b border-[#2c2353] py-10 text-center">
             <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Independent runtime evidence</div>
             <p className="mt-4 text-[17px] leading-[1.65] text-[#f2effb]">
-              Architecture governance cannot rely on the AI grading its own homework. AppMap adds an independent evidence layer inside your environment: runtime behavior captured from the application itself, outside the AI's reasoning loop. The agent can consume it, the reviewer can see the same evidence, and the organization can govern against it. The AI explains the evidence. It does not create the evidence.
+              A coding agent should not be the only judge of its own change. AppMap records behavior from the running application, outside the agent's reasoning. The agent can query it, the reviewer can inspect it, and the organization can keep the evidence in its own environment. The agent explains the evidence. It does not create it.
             </p>
           </div>
         </section>
@@ -528,8 +528,8 @@ export function RuntimeBehaviorAnalysis() {
           Where these questions already appear
         </h3>
         <p className="mt-3 max-w-[820px] text-[15px] leading-[1.65] text-[#a99fc7]">
-          Release and compliance reviews already ask about this space. Today the answers are
-          assertions. The comparison answers with recordings.
+          Release and compliance reviews already ask what changed and what was tested. Today, the
+          answers are usually attestations. AppMap adds a record of how the application behaved.
         </p>
         <div className="mt-6 overflow-x-auto rounded-2xl border border-[#2c2353] bg-[#16112b]">
           <table className="w-full min-w-[860px] border-collapse text-left">
@@ -571,8 +571,8 @@ export function RuntimeBehaviorAnalysis() {
           How teams do this today, and when
         </h3>
         <p className="mt-3 max-w-[820px] text-[15px] leading-[1.65] text-[#a99fc7]">
-          Every current approach reads, samples, catalogs, or ships. The behavioral comparison runs
-          all the way left: while the code is being written, before it merges.
+          Most controls inspect source, check selected outcomes, or wait until after deployment. AppMap
+          compares runtime behavior during development and again in CI, before merge.
         </p>
         <div className="mt-6 overflow-x-auto rounded-2xl border border-[#2c2353] bg-[#16112b]">
           <table className="w-full min-w-[900px] border-collapse text-left">

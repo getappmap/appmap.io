@@ -33,7 +33,7 @@ const secondaryBtn =
 const cards = [
   {
     h: "Blast radius",
-    b: "The routes, functions, and queries a change actually moved.",
+    b: "The routes, functions, and queries affected by a change.",
   },
   {
     h: "Architectural drift",
@@ -139,8 +139,7 @@ function GoldTracesPage() {
             A coding agent works from three kinds of context. Source context is the code as written.
             Documentation context is the code as described. Runtime context is a record of what the
             code did when it ran: the calls it made, in what order, and the queries it issued. The
-            first two can be read from the repository. Runtime context can&apos;t, because running is
-            not reading. Most agents work without it. AppMap records it, and Gold Traces version it
+            first two can be read from the repository. Runtime context can&apos;t. Most agents work without it. AppMap records it, and Gold Traces version it
             with the code, so all three kinds of context arrive with a checkout.
           </p>
         </Section>
@@ -220,8 +219,8 @@ function GoldTracesPage() {
             <code className="font-mono text-[#f2effb]">gold_traces/manifest.yml</code>. Where
             coverage is missing, the skill suggests the test that would close it, and the coding
             agent can write it. After that, no one else configures anything. Coverage grows as a
-            byproduct of normal work: a bug gets fixed, the path gets a trace, and the behavior can
-            never silently regress again.
+            byproduct of normal work: a bug gets fixed, the path gets a trace, and later changes are compared
+            against it.
           </p>
         </Section>
 
@@ -248,23 +247,22 @@ function GoldTracesPage() {
             Not issues from a list. A linter or a static analyzer carries a catalog of known-bad
             patterns and finds instances of them in your code. A behavioral review carries no
             catalog. It compares the change against the recorded behavior the team has approved, and
-            reports what departed from it. That means it finds the defects that are on no list: the
+            reports what departed from it. That means it can expose the defects that are on no list: the
             ones specific to your application, produced by parts that are each correct alone. No
             rule says &quot;two clocks in AI fallback calls,&quot; and no rule could. Every test can pass
             while the behavior changes. The comparison surfaces it because the behavior changed. A
             catalog of known-bad patterns finds what everyone&apos;s code gets wrong. A baseline of
             known-good behavior finds what your change got wrong. AppMap also includes a rule-based
-            scanner for the bounded class of known problems, such as N+1 queries. The review&apos;s work
-            is the unbounded class: departure from your own baseline.
+            scanner for known problems, such as N+1 queries.
           </p>
         </Section>
 
         <Section heading="Sanitized before commit" alt>
           <p>
-            Gold Traces are data, not code. Every trace is processed by the AppMap CLI's sanitize
-            command before it is committed, removing data values that could contain PII, secrets, or
-            credentials. Traces serve no purpose to a running application and are excluded from the
-            built artifact, the same way test and documentation directories are.
+            Before a Gold Trace is committed, the AppMap CLI's sanitize command removes data values that
+            may contain PII, secrets, or credentials. Gold Traces are development artifacts and are
+            excluded from the built application, the same way test and documentation directories
+            are.
           </p>
         </Section>
 

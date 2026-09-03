@@ -9,7 +9,7 @@ export function ReviewLoop() {
           Review behavior before it ships.
         </h2>
         <p className="mt-2 max-w-[680px] text-[17px] text-[color:var(--color-am-muted)]">
-          Keep the code review. Add a review of what the change did when it ran. AppMap records how the application behaves and compares that behavior across revisions. As the code changes, AppMap records fresh traces and shows what held and what changed. Developers inspect the diagrams. Coding agents query the same traces. The review can go straight to the pull request.
+          Keep the code review. Add a review of what the change did when it ran. AppMap compares fresh traces with the base revision and shows what held and what changed. Developers inspect the diagrams. Coding agents query the same traces. The findings can go straight to the pull request.
         </p>
 
         <div className="mt-8">
@@ -27,7 +27,7 @@ export function ReviewLoop() {
             className="block w-full rounded-2xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] object-cover"
           />
           <div className="mt-2 text-[12.5px] text-[#6d6395]">
-            The same traces, as living diagrams developers open in the editor.
+            Developers open the same traces as interactive diagrams in the editor.
           </div>
         </div>
 
