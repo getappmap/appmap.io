@@ -564,37 +564,55 @@ export function RuntimeBehaviorAnalysis() {
           Answers to the questions you are already asking
         </h3>
         <p className="mt-3 max-w-[820px] text-[15px] leading-[1.65] text-[#a99fc7]">
-          Release and compliance reviews already ask what changed and what was tested. Today, the
-          answers are usually attestations. AppMap adds a record of how the application behaved.
+          Every review below asks what changed and what was tested. AppMap answers with a record of how the application behaved.
         </p>
         <div className="mt-6 overflow-x-auto rounded-2xl border border-[#2c2353] bg-[#16112b]">
-          <table className="w-full min-w-[860px] border-collapse text-left">
+          <table className="w-full min-w-[760px] border-collapse text-left">
             <thead>
               <tr className="border-b border-[#2c2353]">
                 <th className="px-5 py-4 text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">
-                  Public standard
+                  Standard
                 </th>
                 <th className="px-5 py-4 text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">
                   What it asks
                 </th>
                 <th className="px-5 py-4 text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">
-                  Answered by AppMap
+                  Captured in dev and CI by AppMap
                 </th>
               </tr>
             </thead>
             <tbody>
-              {STANDARD_ROWS.map((r) => (
-                <tr key={r.s} className="border-b border-[#2c2353] last:border-b-0 align-top">
-                  <td className="px-5 py-4 text-[14px] font-semibold text-[#f2effb]">{r.s}</td>
-                  <td className="px-5 py-4 text-[14px] leading-[1.55] text-[#a99fc7]">{r.asks}</td>
-                  <td className="px-5 py-4 text-[13.5px] leading-[1.55] text-[#a99fc7]">{r.answered}</td>
-                </tr>
-              ))}
+              {STANDARD_ITEMS.map((item, idx) =>
+                item.type === "group" ? (
+                  <tr key={`g-${idx}`} className="border-b border-[#2c2353]">
+                    <td
+                      colSpan={3}
+                      className="bg-[#ff07aa]/[0.05] px-5 py-2 text-[11px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]"
+                    >
+                      {item.label}
+                    </td>
+                  </tr>
+                ) : (
+                  <tr key={item.s} className="border-b border-[#2c2353] last:border-b-0 align-top">
+                    <td className="px-5 py-3.5 text-[14px] font-semibold text-[#f2effb]">{item.s}</td>
+                    <td className="px-5 py-3.5 text-[14px] leading-[1.55] text-[#a99fc7]">{item.asks}</td>
+                    <td className="lg:whitespace-nowrap px-5 py-3.5 text-[14px] font-semibold text-[#f2effb]">
+                      {item.captured.map((c, i) => (
+                        <span key={i}>
+                          {c.value}
+                          {c.unit && <span className="font-normal text-[#a99fc7]"> {c.unit}</span>}
+                          {i < item.captured.length - 1 && <span className="text-[#a99fc7]"> · </span>}
+                        </span>
+                      ))}
+                    </td>
+                  </tr>
+                )
+              )}
             </tbody>
           </table>
         </div>
         <p className="mt-3 text-[12.5px] text-[#a99fc7]/70">
-          Illustrative mapping for discussion, not a compliance certification. Counts are our reading of each standard's public text.
+          Illustrative mapping, not a compliance certification. Counts are our reading of each standard's public text.
         </p>
         <p className="mt-3 text-[14px]">
           <a href="/behavior-controls" className="font-semibold text-[#ff07aa] hover:underline">
