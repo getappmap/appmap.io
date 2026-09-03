@@ -92,7 +92,7 @@ export function BehavioralReviewCard() {
           A real review, from a production application maintained mostly by AI agents
         </h3>
         <p className="mt-1.5 text-[13px] text-[#a99fc7]">
-          Two processes write the same column. Each is correct alone. Every test passed.
+          The application is a multiplayer strategy game. A player can sell a star to another player, and a battle can capture it. The sale and the battle wrote the same owner column, each correct alone. Every test passed.
         </p>
 
         <div className="mt-4 overflow-x-auto">

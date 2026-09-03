@@ -137,26 +137,6 @@ const capture = [
   },
 ];
 
-const views = [
-  {
-    title: "Dependency map",
-    body: "The whole running app at a glance: services, code, SQL, and how they connect.",
-    image: "/marketing-assets/img/appmap/dependency-map.webp",
-    alt: "AppMap dependency map of a running application.",
-  },
-  {
-    title: "SQL inspection",
-    body: "Every query in the trace, with its bindings and where it came from.",
-    image: "/marketing-assets/img/appmap/queries.jpg",
-    alt: "AppMap SQL inspection view of executed queries.",
-  },
-  {
-    title: "Code Objects",
-    body: "Packages, classes, and functions, navigable from the same trace.",
-    image: "/marketing-assets/img/appmap/code-map.jpg",
-    alt: "AppMap code map of packages, classes, and functions.",
-  },
-];
 
 const agentChips = ["Claude Code", "Cursor", "GitHub Copilot", "Windsurf", "Any MCP client"];
 
@@ -292,31 +272,6 @@ function HowItWorksPage() {
           </div>
         </section>
 
-        <section className="px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">See the trace as a map.</h2>
-            <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              The same trace can be viewed as a dependency map, sequence diagram, SQL activity, or code objects. Each view shows the same recorded behavior from a different angle.
-            </p>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {views.map((v) => (
-                <div key={v.title} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                  <img
-                    src={v.image}
-                    alt={v.alt}
-                    width={800}
-                    height={450}
-                    loading="lazy"
-                    decoding="async"
-                    className="mb-4 aspect-[16/9] w-full rounded-lg border border-[#2c2353] bg-[#16112b] object-cover"
-                  />
-                  <h3 className="text-[17px] font-bold text-[#f2effb]">{v.title}</h3>
-                  <p className="mt-2 text-[14.5px] text-[#a99fc7]">{v.body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
