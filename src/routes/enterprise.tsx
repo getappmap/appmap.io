@@ -4,11 +4,6 @@ import { RuntimeBehaviorAnalysis } from "@/components/sections/enterprise/Runtim
 import { DeploymentTopology } from "@/components/sections/enterprise/DeploymentTopology";
 
 
-const reviewerImages = [
-  { src: "/marketing-assets/img/appmap/call-tree.webp", caption: "The call tree the agent queried" },
-  { src: "/marketing-assets/img/appmap/queries.jpg", caption: "Every SQL query from the real run" },
-  { src: "/marketing-assets/img/appmap/sequence.jpg", caption: "The full request path, HTTP to database" },
-];
 
 const pilotSteps = [
   {
@@ -113,6 +108,57 @@ function EnterprisePageInner() {
           </div>
         </section>
 
+        <section className="px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">From one workstation to CI</h2>
+            <ol className="mt-8 grid gap-4 lg:grid-cols-2 lg:items-start">
+              {pilotSteps.map((s, i) => (
+                <li
+                  key={s.h}
+                  className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6"
+                >
+                  <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Step {i + 1}</div>
+                  <h3 className="mt-2 text-[17px] font-bold text-[#f2effb]">{s.h}</h3>
+                  <p className="mt-2 text-[14.5px] leading-[1.55] text-[#a99fc7]">{s.b}</p>
+                  {i === 0 && (
+                    <figure className="mt-5 rounded-lg border border-[#2c2353] bg-[#0d0a1a] p-2">
+                      <img
+                        src="/marketing-assets/img/appmap/call-tree.webp"
+                        alt="The call tree AppMap recorded on a developer workstation, as shown in the editor."
+                        className="w-full h-auto rounded"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <figcaption className="px-1 pt-2 text-[12px] text-[#a99fc7]">
+                        Recorded in the editor: the call tree the agent queried
+                      </figcaption>
+                    </figure>
+                  )}
+                  {i === 1 && (
+                    <figure className="mt-5 rounded-lg border border-[#2c2353] bg-[#0d0a1a] p-2">
+                      <img
+                        src="/marketing-assets/img/appmap/waltzbehaviorheld_branded.svg"
+                        alt="AppMap demo traces of the public open-source FINOS Waltz project, comparing the same endpoint before and after an unrelated change."
+                        className="w-full h-auto rounded"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <figcaption className="px-1 pt-2 text-[12px] text-[#a99fc7]">
+                        Public open-source demo: FINOS Waltz
+                      </figcaption>
+                    </figure>
+                  )}
+                </li>
+              ))}
+            </ol>
+            <div className="mt-10">
+              <Link to="/book-a-demo" className="inline-block rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
+                Book a Demo
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section className="border-t border-[#2c2353] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
@@ -183,68 +229,6 @@ function EnterprisePageInner() {
               </Link>
             </div>
 
-          </div>
-        </section>
-
-
-
-        <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What the reviewer sees</h2>
-            <p className="mt-3 max-w-[760px] text-[15px] text-[#a99fc7]">
-              The same runtime evidence the agent queried, generated locally and attached to the change.
-            </p>
-            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {reviewerImages.map((img) => (
-                <figure key={img.src} className="rounded-2xl border border-[#2c2353] bg-[#0d0a1a] p-2">
-                  <img
-                    src={img.src}
-                    alt={img.caption}
-                    className="w-full h-auto rounded-lg"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <figcaption className="px-2 pt-2 pb-1 text-[12.5px] text-[#a99fc7]">{img.caption}</figcaption>
-                </figure>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">From one workstation to CI</h2>
-            <ol className="mt-8 grid gap-4 lg:grid-cols-2 lg:items-start">
-              {pilotSteps.map((s, i) => (
-                <li
-                  key={s.h}
-                  className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6"
-                >
-                  <div className="text-[12px] font-bold uppercase tracking-[1.5px] text-[#ff07aa]">Step {i + 1}</div>
-                  <h3 className="mt-2 text-[17px] font-bold text-[#f2effb]">{s.h}</h3>
-                  <p className="mt-2 text-[14.5px] leading-[1.55] text-[#a99fc7]">{s.b}</p>
-                  {i === 1 && (
-                    <figure className="mt-5 rounded-lg border border-[#2c2353] bg-[#0d0a1a] p-2">
-                      <img
-                        src="/marketing-assets/img/appmap/waltzbehaviorheld_branded.svg"
-                        alt="AppMap demo traces of the public open-source FINOS Waltz project, comparing the same endpoint before and after an unrelated change."
-                        className="w-full h-auto rounded"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                      <figcaption className="px-1 pt-2 text-[12px] text-[#a99fc7]">
-                        Public open-source demo: FINOS Waltz
-                      </figcaption>
-                    </figure>
-                  )}
-                </li>
-              ))}
-            </ol>
-            <div className="mt-10">
-              <Link to="/book-a-demo" className="inline-block rounded-lg bg-gradient-to-r from-[#ff07aa] to-[#a21caf] px-5 py-2.5 text-[14px] font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,7,170,0.55)]">
-                Book a Demo
-              </Link>
-            </div>
           </div>
         </section>
       </main>
