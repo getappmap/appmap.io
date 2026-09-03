@@ -483,7 +483,7 @@ const APPROACH_ROWS: { name: string; active: string[]; misses: string; appmap?: 
   {
     name: "Canaries, APM, incident review",
     active: ["Deploy", "Prod"],
-    misses: "Every fix is code and token churn. The customer found it first.",
+    misses: "Every fix is code and token churn. Or the customer finds it first.",
   },
   {
     name: "AppMap behavioral comparison",
