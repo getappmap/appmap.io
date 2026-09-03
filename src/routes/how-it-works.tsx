@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { LanguageCoverage } from "@/components/common/LanguageCoverage";
 import { Header } from "@/components/layout/Header";
-import { ReviewStepStrip } from "@/components/sections/common/ReviewStepStrip";
 import { BehavioralReviewCard } from "@/components/sections/home/BehavioralReviewCard";
 
 const title = "How AppMap works";
@@ -157,78 +156,10 @@ function HowItWorksPage() {
           </div>
         </section>
 
-        <section className="px-6 pt-8 pb-20">
-          <div className="mx-auto max-w-[1120px]">
-            <img
-              src="/marketing-assets/img/workflow/appmap-runtime-review.png"
-              alt="AppMap workflow: the coding agent runs the tests, AppMap records fresh traces, and AppMap compares Gold Traces for the head and base revisions before merge"
-              width={2000}
-              height={960}
-              loading="lazy"
-              decoding="async"
-              className="w-full rounded-2xl border border-[#2c2353] bg-[#0d0a1a]"
-            />
-            <p className="mt-4 max-w-[820px] text-[13px] leading-[1.6] text-[#a99fc7]">
-              AppMap fits into the development loop your coding agent already runs. Tests execute, AppMap records fresh traces, and AppMap compares the behavior before merge.
-            </p>
-            <ReviewStepStrip className="mt-10" />
-
-            <h3 className="mt-14 text-[22px] font-extrabold tracking-[-0.6px] text-[#f2effb] sm:text-[26px]">
-              Every pull request explains its behavior and impact.
-            </h3>
-            <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the change behaved as intended.
-            </p>
-
-            <div className="mt-10">
-              <BehavioralReviewCard />
-            </div>
-            <p className="mt-3 text-[12.5px] text-[#6d6395]">
-              A review posted to a pull request. Same card as on the homepage, from the same production application.
-            </p>
-          </div>
-        </section>
-
-        <section className="px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Ground truth behavior, versioned with the code</h2>
-            <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              Gold Traces are the team's shared record of how the application behaves. The set lives in the repository, so developers, coding agents, and CI all read from the same place.
-            </p>
-            <p className="mt-3 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              When AppMap compares a change against the set, everyone judges the change against the same behavior. The Gold Traces skill uses existing tests to cover the paths that matter and suggests new test cases when coverage is missing.
-            </p>
-            <LifecycleStrip />
-            <div className="mt-5">
-              {/* TODO: point to /gold-traces when that page ships */}
-              <Link to="/gold-traces" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
-                Learn about AppMap Gold Traces →
-              </Link>
-            </div>
-
-            <div className="mt-8 max-w-[720px]">
-              <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGES · BEHAVIOR CHANGES</div>
-                <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Changes as intended</h3>
-                <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">
-                  For an N+1 fix, a new timeout, a circuit breaker, or added audit logging, behavior should change in a specific way. If the trace does not change, the fix is not there.
-                </p>
-                <img
-                  src="/marketing-assets/img/appmap/waltzbeforeafter_branded.svg"
-                  alt="AppMap traces of FINOS Waltz involvement-kind permission lookup: 7 per-id SELECTs replaced by a single batched findAll, 6 fewer round-trips."
-                  loading="lazy"
-                  decoding="async"
-                  className="mt-5 w-full h-auto rounded-lg border border-[#2c2353] bg-[#0d0a1a]"
-                />
-                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap trace · FINOS Waltz</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Every detail of the paths that matter</h2>
+            <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Step 1 · Record</div>
+            <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Every detail of the paths that matter</h2>
             <p className="mt-3 max-w-[720px] text-[15px] text-[#a99fc7]">
               An AppMap trace records the calls, SQL queries, HTTP traffic, exceptions, and code paths from a run. Each recorded run adds another trace to the local set. The goal is not to record everything. It is to capture the behavior the application depends on, in full detail.
             </p>
@@ -283,7 +214,8 @@ function HowItWorksPage() {
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">AppMap suggests recording paths your tests are missing.</h2>
+            <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Step 2 · Cover</div>
+            <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">AppMap suggests recording paths your tests are missing.</h2>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
               The Gold Traces skill analyzes the codebase and existing tests to identify the paths that matter. When an important path is already covered, AppMap records it. When coverage is missing, AppMap suggests a focused test case and the coding agent can create it. AppMap then records the path and adds the trace to the Gold Trace set.
             </p>
@@ -309,10 +241,30 @@ function HowItWorksPage() {
           </div>
         </section>
 
-
-        <section id="compatibility" className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
+        <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the traces reach your agent</h2>
+            <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Step 3 · Commit</div>
+            <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Ground truth behavior, versioned with the code</h2>
+            <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
+              Gold Traces are the team's shared record of how the application behaves. The set lives in the repository, so developers, coding agents, and CI all read from the same place.
+            </p>
+            <p className="mt-3 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
+              When AppMap compares a change against the set, everyone judges the change against the same behavior.
+            </p>
+            <LifecycleStrip />
+            <div className="mt-5">
+              {/* TODO: point to /gold-traces when that page ships */}
+              <Link to="/gold-traces" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
+                Learn about AppMap Gold Traces →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section id="compatibility" className="px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Step 4 · Query</div>
+            <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the traces reach your agent</h2>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
               Coding agents read the traces alongside the source, and answer from what the code did. AppMap exposes the recorded calls, queries, and requests through MCP, so the agent can change without changing the runtime context. The model can change too: hosted, self-hosted, frontier, and compact models all read the same traces.
             </p>
@@ -375,6 +327,44 @@ function HowItWorksPage() {
             </div>
           </div>
         </section>
+
+        <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
+          <div className="mx-auto max-w-[1120px]">
+            <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Step 5 · Review</div>
+            <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
+              Every pull request explains its behavior and impact.
+            </h2>
+            <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
+              A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the change behaved as intended.
+            </p>
+
+            <div className="mt-10">
+              <BehavioralReviewCard />
+            </div>
+            <p className="mt-3 text-[12.5px] text-[#6d6395]">
+              A review posted to a pull request. Same card as on the homepage, from the same production application.
+            </p>
+
+            <div className="mt-10 max-w-[720px]">
+              <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+                <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGES · BEHAVIOR CHANGES</div>
+                <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Changes as intended</h3>
+                <p className="mt-2 text-[14.5px] leading-[1.6] text-[#a99fc7]">
+                  For an N+1 fix, a new timeout, a circuit breaker, or added audit logging, behavior should change in a specific way. If the trace does not change, the fix is not there.
+                </p>
+                <img
+                  src="/marketing-assets/img/appmap/waltzbeforeafter_branded.svg"
+                  alt="AppMap traces of FINOS Waltz involvement-kind permission lookup: 7 per-id SELECTs replaced by a single batched findAll, 6 fewer round-trips."
+                  loading="lazy"
+                  decoding="async"
+                  className="mt-5 w-full h-auto rounded-lg border border-[#2c2353] bg-[#0d0a1a]"
+                />
+                <p className="mt-2 text-[12px] text-[#a99fc7]">Real AppMap trace · FINOS Waltz</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
