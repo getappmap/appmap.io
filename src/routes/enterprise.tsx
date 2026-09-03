@@ -329,7 +329,17 @@ function EnterprisePageInner() {
                 </div>
               ))}
             </div>
-            <p className="mt-6 text-[14px] text-[#a99fc7]">Available with AppMap Enterprise.</p>
+            <Link
+              to="/enterprise"
+              className="mt-6 inline-flex items-center gap-2.5"
+            >
+              <span className="rounded-full border border-[rgba(255,7,170,0.55)] bg-[rgba(255,7,170,0.08)] px-2 py-0.5 text-[10.5px] font-bold tracking-wider text-[#ff8ad2] uppercase">
+                Enterprise
+              </span>
+              <span className="text-[16px] font-bold text-[#f2effb]">
+                Available with AppMap Enterprise.
+              </span>
+            </Link>
           </div>
         </section>
 
