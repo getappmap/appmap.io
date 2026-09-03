@@ -478,7 +478,7 @@ function FlowNode({
   c,
   side,
 }: {
-  c: { title: string; descriptor: string; image: string; objectPosition: string };
+  c: { title: string; descriptor: string; image: string; alt: string; objectPosition: string };
   side: "top" | "bottom";
 }) {
   return (
@@ -489,7 +489,7 @@ function FlowNode({
       <div className="w-full max-w-[220px] rounded-lg border border-[#2c2353] bg-[#16112b] p-2 shadow-[0_8px_24px_rgba(0,0,0,0.35)]">
         <img
           src={c.image}
-          alt=""
+          alt={c.alt}
           loading="lazy"
           decoding="async"
           style={{ objectPosition: c.objectPosition }}
