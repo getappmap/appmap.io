@@ -458,38 +458,38 @@ const APPROACH_ROWS: { name: string; active: string[]; misses: string; appmap?: 
   {
     name: "Senior engineers reading diffs",
     active: ["PR"],
-    misses: "Reads source at the pull request. Cannot see composed behavior, and does not scale with change volume.",
+    misses: "Too many diffs to read. Approval becomes a formality.",
   },
   {
     name: "AI code reviewers",
     active: ["PR"],
-    misses: "Reviews the same source diff more quickly, but still has to infer runtime behavior.",
+    misses: "Faster approval of the same guess about what the code does.",
   },
   {
     name: "Test suites in CI",
     active: ["CI"],
-    misses: "Checks the assertions that were written. Behavior nobody asserted can still change.",
+    misses: "Green on every assertion. Silent on everything nobody asserted.",
   },
   {
     name: "Linters, SAST, scanners",
     active: ["PR", "CI"],
-    misses: "Matches a bounded catalog of known-bad patterns at PR and CI.",
+    misses: "Clean against the list. The bug is not on the list.",
   },
   {
     name: "Change boards, checklists",
     active: ["Deploy"],
-    misses: "Collects attestations before release, without an evidence artifact behind them.",
+    misses: "Everyone signed. No one saw it run.",
   },
   {
     name: "Canaries, APM, incident review",
     active: ["Deploy", "Prod"],
-    misses: "Finds problems after merge, when users may already be affected.",
+    misses: "The customer found it first.",
   },
   {
     name: "AppMap behavioral comparison",
     active: ["Develop", "Push", "PR", "CI"],
     misses:
-      "Compares recorded behavior with the base revision during development, then repeats the review in the pull request and CI.",
+      "Compares what the change did when it ran against the baseline, in development and again in CI.",
     appmap: true,
   },
 ];
@@ -559,6 +559,56 @@ export function RuntimeBehaviorAnalysis() {
         </div>
 
 
+        {/* approaches table */}
+        <h3 className="mt-16 text-[21px] font-bold tracking-[-0.4px] text-[#f2effb]">
+          Agents outrun every check
+        </h3>
+        <p className="mt-3 max-w-[820px] text-[15px] leading-[1.65] text-[#a99fc7]">
+          Agents now produce more changes than any stage of the pipeline can absorb. Reviewers skim,
+          test suites check only what was asserted, scanners match a catalog, and production finds the
+          rest. The agent that wrote the change is the one that has to fix it, and it is working in
+          development. AppMap compares runtime behavior there, and again in CI, before merge.
+        </p>
+        <div className="mt-6 overflow-x-auto rounded-2xl border border-[#2c2353] bg-[#16112b]">
+          <table className="w-full min-w-[900px] border-collapse text-left">
+            <thead>
+              <tr className="border-b border-[#2c2353]">
+                <th className="px-5 py-4 text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">
+                  Approach
+                </th>
+                <th className="px-5 py-4 text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">
+                  When it runs
+                </th>
+                <th className="px-5 py-4 text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">
+                  What it misses
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {APPROACH_ROWS.map((r) => (
+                <tr
+                  key={r.name}
+                  className={`border-b border-[#2c2353] last:border-b-0 align-top ${
+                    r.appmap ? "bg-[#ff07aa]/[0.07]" : ""
+                  }`}
+                >
+                  <td
+                    className={`px-5 py-4 text-[14px] ${
+                      r.appmap ? "font-bold text-[#ff07aa]" : "font-semibold text-[#f2effb]"
+                    }`}
+                  >
+                    {r.name}
+                  </td>
+                  <td className="px-5 py-4">
+                    <StageTrack active={r.active} appmap={r.appmap} />
+                  </td>
+                  <td className="px-5 py-4 text-[14px] leading-[1.55] text-[#a99fc7]">{r.misses}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
         {/* standards table */}
         <h3 className="mt-16 text-[21px] font-bold tracking-[-0.4px] text-[#f2effb]">
           Answers to the questions you are already asking
@@ -619,56 +669,6 @@ export function RuntimeBehaviorAnalysis() {
             The control list behind this mapping &rarr;
           </a>
         </p>
-
-        {/* approaches table */}
-        <h3 className="mt-16 text-[21px] font-bold tracking-[-0.4px] text-[#f2effb]">
-          Agents outrun every check
-        </h3>
-        <p className="mt-3 max-w-[820px] text-[15px] leading-[1.65] text-[#a99fc7]">
-          Agents now produce more changes than any stage of the pipeline can absorb. Reviewers skim,
-          test suites check only what was asserted, scanners match a catalog, and production finds the
-          rest. The agent that wrote the change is the one that has to fix it, and it is working in
-          development. AppMap compares runtime behavior there, and again in CI, before merge.
-        </p>
-        <div className="mt-6 overflow-x-auto rounded-2xl border border-[#2c2353] bg-[#16112b]">
-          <table className="w-full min-w-[900px] border-collapse text-left">
-            <thead>
-              <tr className="border-b border-[#2c2353]">
-                <th className="px-5 py-4 text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">
-                  Approach
-                </th>
-                <th className="px-5 py-4 text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">
-                  When it runs
-                </th>
-                <th className="px-5 py-4 text-[12px] font-bold uppercase tracking-[1.2px] text-[#a99fc7]">
-                  What it misses
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {APPROACH_ROWS.map((r) => (
-                <tr
-                  key={r.name}
-                  className={`border-b border-[#2c2353] last:border-b-0 align-top ${
-                    r.appmap ? "bg-[#ff07aa]/[0.07]" : ""
-                  }`}
-                >
-                  <td
-                    className={`px-5 py-4 text-[14px] ${
-                      r.appmap ? "font-bold text-[#ff07aa]" : "font-semibold text-[#f2effb]"
-                    }`}
-                  >
-                    {r.name}
-                  </td>
-                  <td className="px-5 py-4">
-                    <StageTrack active={r.active} appmap={r.appmap} />
-                  </td>
-                  <td className="px-5 py-4 text-[14px] leading-[1.55] text-[#a99fc7]">{r.misses}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
       </div>
     </section>
   );
