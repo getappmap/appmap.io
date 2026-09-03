@@ -373,41 +373,82 @@ export function InteractionWeb() {
 
 /* ---------------- tables data ---------------- */
 
-const STANDARD_ROWS: { s: string; asks: string; answered: string }[] = [
+type StandardItem =
+  | { type: "group"; label: string }
+  | { type: "row"; s: string; asks: string; captured: { value: string; unit?: string }[] };
+
+const STANDARD_ITEMS: StandardItem[] = [
+  { type: "group", label: "Resilience, reliability, stability" },
   {
+    type: "row",
+    s: "ISO/IEC 25010:2023",
+    asks: "Faultlessness, availability, fault tolerance, recoverability, time behaviour.",
+    captured: [{ value: "26 of 40", unit: "sub-characteristics" }],
+  },
+  {
+    type: "row",
+    s: "AWS Well-Architected, Reliability",
+    asks: "Timeouts, retries, idempotency, changes tested before deploy.",
+    captured: [{ value: "7 of 13", unit: "questions" }],
+  },
+  {
+    type: "row",
+    s: "DORA metrics / SRE readiness",
+    asks: "Change failure rate, rework rate, dependencies, performance.",
+    captured: [
+      { value: "3 of 5", unit: "metrics" },
+      { value: "4 of 6", unit: "areas" },
+    ],
+  },
+  {
+    type: "row",
+    s: "Operational resilience (US Sound Practices, UK PRA SS1/21)",
+    asks: "Resilient system management, dependency mapping, scenario testing.",
+    captured: [{ value: "2 of 7 · 2 of 5" }],
+  },
+  { type: "group", label: "Change control and audit" },
+  {
+    type: "row",
+    s: "EU DORA (2022/2554)",
+    asks: "Every change tested, assessed, and verified. Dynamic testing in code review.",
+    captured: [{ value: "10 of 18", unit: "provisions" }],
+  },
+  {
+    type: "row",
+    s: "SOC 2 CC8 / SOX ITGC",
+    asks: "Changes tested, documented, tracked, compared to a baseline.",
+    captured: [{ value: "9 of 17", unit: "points of focus" }],
+  },
+  {
+    type: "row",
+    s: "FFIEC (Development and Maintenance, 2024)",
+    asks: "Test results kept. Unanticipated effects of a change found.",
+    captured: [{ value: "3 of 6", unit: "objectives" }],
+  },
+  { type: "group", label: "Security and secure development" },
+  {
+    type: "row",
     s: "OWASP Top 10 (2025) / ASVS 5.0",
-    asks: "Their domains: broken access control, injection, identification and session management, security logging failures.",
-    answered: "6 of 10 categories: access control, cryptographic failures, injection, authentication, logging, exceptional conditions. ASVS: 242 of 345 requirements, in 11 of 17 chapters.",
+    asks: "Access control, injection, authentication, logging, error handling.",
+    captured: [{ value: "6 of 10 · 242 of 345", unit: "requirements" }],
   },
   {
+    type: "row",
     s: "CWE Top 25 (2025)",
-    asks: "Their weakness classes are interaction defects by definition: race conditions, missing authorization on a path, uncontrolled resource consumption, improper error handling.",
-    answered: "19 of 25. The six left out are native memory-safety weaknesses no call trace shows.",
+    asks: "Race conditions, missing authorization, unbounded resource use.",
+    captured: [{ value: "19 of 25" }],
   },
   {
+    type: "row",
     s: "NIST SSDF (SP 800-218)",
-    asks: "Their practices: verify the software meets requirements, review and test code before release.",
-    answered: "8 of 19 practices. PW.7 (review code), PW.8 (test executable code), and RV.1 to RV.3 (confirm, remediate, root-cause) are the direct fits.",
+    asks: "Test executable code before release. Root-cause vulnerabilities.",
+    captured: [{ value: "8 of 19", unit: "practices" }],
   },
   {
-    s: "SOC 2 (change management) / SOX ITGC",
-    asks: "Their domain: change management. Changes authorized, tested, approved, with evidence of what changed.",
-    answered: "CC8.1: 9 of 17 points of focus, including tests changes, documents changes, tracks changes, creates a baseline. CC7: 2 of 5. SOX ITGCs are not enumerated by statute. Change management is one of the four conventional domains.",
-  },
-  {
-    s: "PCI DSS v4.0.1 (Req 6)",
-    asks: "Their domain: secure development and change control. Code changes reviewed before release, including security impact.",
-    answered: "8 of 19 requirements. 6.2.3 (code review before release), 6.2.4 (injection and access control), 6.5.1 (security impact of changes), and 6.5.2 (controls confirmed after change) are the direct fits.",
-  },
-  {
-    s: "FFIEC guidance (Development, Acquisition, and Maintenance, 2024)",
-    asks: "Their domain: development and change management for systems in regulated banking, with an evidenced process.",
-    answered: "3 of the 6 development-related examination objectives: testing, implementation and assessment, change management. 66 examination procedures in the booklet.",
-  },
-  {
-    s: "SRE production readiness",
-    asks: "Their domains: reliability, capacity, failure modes, dependencies. Timeouts, retries, and behavior under change.",
-    answered: "4 of 6 review areas: dependencies, instrumentation, change management, performance. Google publishes no fixed checklist count.",
+    type: "row",
+    s: "PCI DSS v4.0.1, Req 6",
+    asks: "Code reviewed before release. Security impact of every change.",
+    captured: [{ value: "8 of 19", unit: "requirements" }],
   },
 ];
 
