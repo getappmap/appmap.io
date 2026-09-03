@@ -139,17 +139,21 @@ function EnterprisePageInner() {
                 </div>
               ))}
             </div>
-            <Link
-              to="/enterprise"
-              className="mt-6 inline-flex items-center gap-2.5"
-            >
-              <span className="rounded-full border border-[rgba(255,7,170,0.55)] bg-[rgba(255,7,170,0.08)] px-2 py-0.5 text-[10.5px] font-bold tracking-wider text-[#ff8ad2] uppercase">
-                Enterprise
-              </span>
-              <span className="text-[16px] font-bold text-[#f2effb]">
-                Available with AppMap Enterprise.
-              </span>
-            </Link>
+            <div className="mt-8 flex flex-col gap-4 rounded-2xl border border-[rgba(255,7,170,0.5)] bg-[rgba(255,7,170,0.07)] px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex items-center gap-3">
+                <span className="rounded-full border border-[rgba(255,7,170,0.55)] bg-[rgba(255,7,170,0.08)] px-2 py-0.5 text-[10.5px] font-bold uppercase tracking-wider text-[#ff8ad2]">
+                  Enterprise
+                </span>
+                <span className="text-[20px] font-bold text-[#f2effb]">Available with AppMap Enterprise.</span>
+              </div>
+              <Link
+                to="/book-a-demo"
+                className="inline-flex shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-[#ff07aa] to-[#b31383] px-6 py-3 text-[15px] font-bold text-white transition-opacity hover:opacity-90"
+              >
+                Book a Demo
+              </Link>
+            </div>
+
           </div>
         </section>
 
