@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { LanguageCoverage } from "@/components/common/LanguageCoverage";
 import { Header } from "@/components/layout/Header";
 import { ReviewStepStrip } from "@/components/sections/common/ReviewStepStrip";
+import { BehavioralReviewCard } from "@/components/sections/home/BehavioralReviewCard";
 
 const title = "How AppMap works";
 const description =
@@ -197,6 +198,13 @@ function HowItWorksPage() {
             </h3>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
               A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the change behaved as intended.
+            </p>
+
+            <div className="mt-10">
+              <BehavioralReviewCard />
+            </div>
+            <p className="mt-3 text-[12.5px] text-[#6d6395]">
+              A review posted to a pull request. Same card as on the homepage, from the same production application.
             </p>
           </div>
         </section>
