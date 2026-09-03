@@ -185,6 +185,13 @@ function HowItWorksPage() {
               AppMap fits into the development loop your coding agent already runs. Tests execute, AppMap records fresh traces, and AppMap compares the behavior before merge.
             </p>
             <ReviewStepStrip className="mt-10" />
+
+            <h3 className="mt-14 text-[22px] font-extrabold tracking-[-0.6px] text-[#f2effb] sm:text-[26px]">
+              Every pull request explains its behavior and impact.
+            </h3>
+            <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
+              A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the change behaved as intended.
+            </p>
           </div>
         </section>
 
