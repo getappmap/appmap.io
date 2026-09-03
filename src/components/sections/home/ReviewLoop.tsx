@@ -32,17 +32,6 @@ export function ReviewLoop() {
         </div>
 
 
-        <p className="mt-5 max-w-3xl text-[20px] font-semibold text-[color:var(--color-am-ink)]">
-          Every pull request explains its behavior and impact.
-        </p>
-        <p className="mt-3 max-w-3xl text-[14px] text-[color:var(--color-am-muted)]">
-          A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the change behaved as intended.
-        </p>
-        <div className="mt-6 rounded-xl border border-[color:var(--color-am-line)] bg-[color:var(--color-am-card)] p-4">
-          <p className="text-[14px] leading-[1.55] text-[color:var(--color-am-muted)]">
-            Developers can inspect the diagrams. Coding agents can query the same traces. The pull request carries the resulting behavioral review. The evidence comes from the running application, not from the AI evaluating its own work. AppMap works with Claude Code, Cursor, GitHub Copilot, Windsurf, and any MCP-capable coding agent.
-          </p>
-        </div>
       </div>
     </section>
   );
