@@ -8,7 +8,7 @@ export function EnterpriseStrip() {
           Accelerate review and acceptance of AI code changes
         </h2>
         <p className="mt-4 max-w-[760px] text-[16px] leading-relaxed text-[#a99fc7]">
-          AppMap runs locally in development and centrally in the pull request flow and CI, across large codebases and many teams. Reviewers, coding agents, and compliance see the same record of what each change did, so organizations can accept changes faster.
+          AppMap runs locally in development and centrally in the pull request flow and CI, across large codebases and many teams. Reviewers, coding agents, and compliance teams see the same record of what each change did, so organizations can accept changes faster.
         </p>
         <a
           href="/enterprise#runtime-behavior-analysis"

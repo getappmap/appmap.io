@@ -7,15 +7,16 @@ export function BenchmarkStrip() {
         </h2>
         <p className="mt-4 max-w-[720px] text-[16px] leading-relaxed text-[#a99fc7]">
           In one internal study, yes. Under a three-tool-call limit, agents using AppMap reached
-          100% root-cause accuracy. Source-only agents reached 28%. For organizations, that
-          difference is review time and acceptance confidence at scale.
+          100% root-cause accuracy. Source-only agents reached 28%. For an organization running
+          agents across many repositories, that means fewer investigations ending without a
+          diagnosis.
         </p>
 
         <p className="mt-3 max-w-[720px] text-[16px] font-semibold text-[#f2effb]">
-          The AppMap condition also used 3.4 times less model spend.
+          In the primary study, the source-only condition cost about 3.4 times as much.
         </p>
         <p className="mt-3 max-w-[720px] text-[16px] leading-relaxed text-[#a99fc7]">
-          The lowest-cost passing configuration was a compact model reading traces.
+          The lowest-cost configuration that solved every primary-study case was a compact model reading traces.
         </p>
         <p className="mt-3 max-w-[720px] text-[13px] text-[#7c8aa6]">
           One internal study, Claude models. Method and limits in the benchmark.
