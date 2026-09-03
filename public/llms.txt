@@ -8,7 +8,7 @@ AppMap Gold Traces are recordings promoted into approved before/after behavioral
 
 - Runtime context: Coding agents often work without the application environment, database, or credentials. Source code can show possible execution paths, but not which calls, queries, and side effects occurred in a specific run. AppMap traces supply those runtime facts with the repository.
 
-- Independent evidence: the traces are observed from the running application, outside the agent's own reasoning. The agent can explain the evidence; it does not create it. This is what makes AI-generated change reviewable and governable: the AI is checked against evidence it did not invent.
+- Independent evidence: AppMap records traces from the running application, outside the agent's reasoning. Agents can query the traces, but they do not create them.
 
 ## Where to look
 - Home: https://appmap.io/
