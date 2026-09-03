@@ -586,36 +586,149 @@ function GraphRow({ row, index }: { row: Row; index: number }) {
   );
 }
 
-/* ---------------- panel ---------------- */
+/* ---------------- mobile lifecycle strip ---------------- */
 
-export function BranchingWorkflow() {
+function Connector() {
+  return (
+    <div className="flex justify-start" style={{ paddingLeft: 21 }} aria-hidden="true">
+      <svg width={10} height={16} viewBox="0 0 10 16">
+        <line x1={5} y1={0} x2={5} y2={12} stroke={MAIN} strokeWidth={2} />
+        <path d="M1.8 11 L5 15 L8.2 11" fill="none" stroke={MAIN} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    </div>
+  );
+}
+
+function MobileStage({
+  visual,
+  title,
+  sub,
+}: {
+  visual: React.ReactNode;
+  title: string;
+  sub: string;
+}) {
+  return (
+    <div className="flex items-center gap-3">
+      <span className="flex w-[46px] shrink-0 items-center justify-start">{visual}</span>
+      <span className="min-w-0">
+        <span className="block text-[13.5px] font-bold text-[#f2effb]">{title}</span>
+        <span className="block text-[12px] text-[#6d6395]">{sub}</span>
+      </span>
+    </div>
+  );
+}
+
+function MobileLifecycle() {
   return (
     <div
-      className="overflow-hidden rounded-2xl border border-[#2c2353]"
+      className="rounded-2xl border border-[#2c2353] p-4"
       style={{ background: "linear-gradient(180deg, #131024 0%, #0f0b1d 100%)" }}
     >
-      <div className="overflow-x-auto">
-        <div className="min-w-[880px] p-4 sm:p-5">
-          {/* worktree strip */}
-          <div className="flex items-stretch gap-2.5">
-            <LaneCard title="main · gold_traces/" color={MAIN} main sublabel="the baseline" />
-            {BRANCHES.map((b) => (
-              <LaneCard key={b.name} title={b.name} color={b.color} sublabel="fresh traces" />
-            ))}
-          </div>
+      <MobileStage
+        visual={<TraceChip scale={0.8} borderColor="#2c2353" background="#0f0b1d" />}
+        title="Record locally"
+        sub="tests, requests, processes"
+      />
+      <Connector />
+      <MobileStage
+        visual={
+          <span className="relative inline-block">
+            <TraceChip scale={0.8} />
+            <PlusBadge />
+          </span>
+        }
+        title="Commit the key traces"
+        sub="gold_traces/ with the code"
+      />
+      <Connector />
+      <MobileStage
+        visual={
+          <span className="inline-flex items-center rounded-[5px] border border-[#2c2353] bg-[#0f0b1d] px-1.5 py-1 text-[12px] font-bold text-[#f2effb]">
+            MCP
+          </span>
+        }
+        title="Agents query"
+        sub="call tree, queries, requests"
+      />
+      <Connector />
+      <MobileStage
+        visual={<CompareGroup color="rgba(201,193,234,.55)" />}
+        title="Compare at review"
+        sub="fresh against the baseline"
+      />
 
-          {/* git graph */}
-          <div className="mt-5">
-            {ROWS.map((row, i) => (
-              <GraphRow key={i} row={row} index={i} />
-            ))}
-          </div>
-        </div>
+      <div className="mt-2.5 flex items-center gap-2" style={{ paddingLeft: 18 }}>
+        <span className="shrink-0 scale-[0.85]">
+          <RejectedMapChip />
+        </span>
+        <span className="text-[11.5px] text-[#fda4a4]">drift is blocked before merge</span>
       </div>
-      <div className="border-t border-[#2c2353] px-4 py-3 text-[12.5px] text-[#6d6395] sm:px-5">
-        Every branch is cut from main and returns to main. The Gold Traces live on main. Fresh traces
-        from the branch are compared against them at review, and the baseline advances after the merge.
+
+      <div className="mt-2.5">
+        <Connector />
+      </div>
+      <MobileStage
+        visual={
+          <span className="relative inline-block" style={{ width: 40, height: 22 }}>
+            <GoldStack count={2} scale={0.7} />
+          </span>
+        }
+        title="The baseline advances"
+        sub="after the merge"
+      />
+
+      <div className="mt-4 border-t border-[#2c2353] pt-3 text-[11.5px] text-[#6d6395]">
+        Gold Traces live on main. Every change is compared against them before it merges.
       </div>
     </div>
   );
 }
+
+/* ---------------- panel ---------------- */
+
+export function BranchingWorkflow() {
+  return (
+    <>
+      <div className="block sm:hidden">
+        <MobileLifecycle />
+      </div>
+
+      <div
+        className="hidden overflow-hidden rounded-2xl border border-[#2c2353] sm:block"
+        style={{ background: "linear-gradient(180deg, #131024 0%, #0f0b1d 100%)" }}
+      >
+        <div className="relative">
+          <div className="overflow-x-auto">
+            <div className="min-w-[880px] p-4 sm:p-5">
+              {/* worktree strip */}
+              <div className="flex items-stretch gap-2.5">
+                <LaneCard title="main · gold_traces/" color={MAIN} main sublabel="the baseline" />
+                {BRANCHES.map((b) => (
+                  <LaneCard key={b.name} title={b.name} color={b.color} sublabel="fresh traces" />
+                ))}
+              </div>
+
+              {/* git graph */}
+              <div className="mt-5">
+                {ROWS.map((row, i) => (
+                  <GraphRow key={i} row={row} index={i} />
+                ))}
+              </div>
+            </div>
+          </div>
+          <div
+            className="pointer-events-none absolute inset-y-0 right-0 w-10 xl:hidden"
+            style={{ background: "linear-gradient(90deg, rgba(15,11,29,0) 0%, #0f0b1d 100%)" }}
+            aria-hidden="true"
+          />
+        </div>
+        <div className="border-t border-[#2c2353] px-4 py-3 text-[12.5px] text-[#6d6395] sm:px-5">
+          Every branch is cut from main and returns to main. The Gold Traces live on main. Fresh traces
+          from the branch are compared against them at review, and the baseline advances after the merge.
+        </div>
+      </div>
+    </>
+  );
+}
+
