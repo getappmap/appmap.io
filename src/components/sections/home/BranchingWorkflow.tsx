@@ -818,7 +818,7 @@ function MGraphRow({ row, index }: { row: MRow; index: number }) {
             <span className="absolute" style={{ left: M_RAIL_X[row.rail] - 22, top: (h - 14) / 2 }}>
               <MonitorBot size={14} />
             </span>
-            <span className="absolute scale-[0.5] origin-left" style={{ left: M_RAIL_X[row.rail] + 6, top: 7 }}>
+            <span className="absolute scale-[0.45] origin-left" style={{ left: M_RAIL_X[row.rail] + 5, top: 8 }}>
               <RejectedMapChip />
             </span>
           </>
