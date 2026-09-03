@@ -90,6 +90,7 @@ const capture = [
     title: "Function calls",
     descriptor: "Params and returns",
     image: "/marketing-assets/img/appmap/call-tree.webp",
+    alt: "AppMap call tree showing function calls, parameters, and return values.",
     objectPosition: "left top",
     side: "top" as const,
   },
@@ -97,6 +98,7 @@ const capture = [
     title: "SQL queries",
     descriptor: "Bindings and source",
     image: "/marketing-assets/img/appmap/queries.jpg",
+    alt: "AppMap SQL query view showing executed queries, bindings, and source locations.",
     objectPosition: "left top",
     side: "bottom" as const,
   },
@@ -104,6 +106,7 @@ const capture = [
     title: "HTTP traffic",
     descriptor: "Requests and responses",
     image: "/marketing-assets/img/appmap/sequence.jpg",
+    alt: "AppMap sequence diagram showing HTTP requests and responses.",
     objectPosition: "left top",
     side: "top" as const,
   },
@@ -111,6 +114,7 @@ const capture = [
     title: "Exceptions",
     descriptor: "Class, message, source",
     image: "/marketing-assets/img/appmap/sequence.jpg",
+    alt: "AppMap exception view showing exception class, message, and source location.",
     objectPosition: "right center",
     side: "bottom" as const,
   },
@@ -118,6 +122,7 @@ const capture = [
     title: "Code structure",
     descriptor: "Packages and classes",
     image: "/marketing-assets/img/appmap/code-map.jpg",
+    alt: "AppMap code structure map of packages, classes, and functions.",
     objectPosition: "center",
     side: "top" as const,
   },
@@ -125,6 +130,7 @@ const capture = [
     title: "Full path",
     descriptor: "Request to database",
     image: "/marketing-assets/img/appmap/dependency-map.webp",
+    alt: "AppMap dependency map tracing the full request path from endpoint to database.",
     objectPosition: "center",
     side: "bottom" as const,
   },
@@ -233,7 +239,7 @@ function HowItWorksPage() {
                 <div key={c.title} className="flex items-center gap-3 rounded-xl border border-[#2c2353] bg-[#1c1538] p-3">
                   <img
                     src={c.image}
-                    alt=""
+                    alt={c.alt}
                     loading="lazy"
                     decoding="async"
                     style={{ objectPosition: c.objectPosition }}
@@ -472,7 +478,7 @@ function FlowNode({
   c,
   side,
 }: {
-  c: { title: string; descriptor: string; image: string; objectPosition: string };
+  c: { title: string; descriptor: string; image: string; alt: string; objectPosition: string };
   side: "top" | "bottom";
 }) {
   return (
@@ -483,7 +489,7 @@ function FlowNode({
       <div className="w-full max-w-[220px] rounded-lg border border-[#2c2353] bg-[#16112b] p-2 shadow-[0_8px_24px_rgba(0,0,0,0.35)]">
         <img
           src={c.image}
-          alt=""
+          alt={c.alt}
           loading="lazy"
           decoding="async"
           style={{ objectPosition: c.objectPosition }}
