@@ -105,6 +105,9 @@ function EnterprisePageInner() {
               <ExternalLink href="https://github.com/getappmap/appmap">published data spec</ExternalLink>. Developers and
               security reviewers can audit what AppMap records and what it sends to the agent.
             </p>
+            <p className="mt-4 max-w-[820px] text-[14px] leading-[1.6] text-[#a99fc7]">
+              AppMap Enterprise adds organization configuration pushed from one endpoint, organization-registered installs with no license keys on developer machines, and usage telemetry routed to your own systems.
+            </p>
           </div>
         </section>
 
@@ -151,40 +154,8 @@ function EnterprisePageInner() {
                 </li>
               ))}
             </ol>
-          </div>
-        </section>
 
-        <section className="border-t border-[#2c2353] px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-              AppMap Enterprise
-            </h2>
-            <p className="mt-4 max-w-[820px] text-[16px] leading-[1.6] text-[#a99fc7]">
-              AppMap is open source. AppMap Enterprise is how organizations run it when they deploy AppMap to developers centrally, need airgapped operation, or need an SLA, training, or customization for their stack.
-            </p>
-            <div className="mt-8 grid gap-4 md:grid-cols-3">
-              {[
-                {
-                  t: "Organization configuration",
-                  b: "Administrators push one set of AppMap settings to every install from a single endpoint, through group policy, MDM, or a URL.",
-                },
-                {
-                  t: "Organization-registered installs",
-                  b: "Installs sign in with a customer ID assigned to your organization. No individual accounts, no license keys on developer machines.",
-                },
-                {
-                  t: "Telemetry routing",
-                  b: "Usage telemetry goes to your internal observability systems, not AppMap's.",
-                },
-              ].map((c) => (
-                <div key={c.t} className="rounded-2xl border border-[#2c2353] bg-[#16112b] p-6">
-                  <h3 className="text-[17px] font-bold text-[#f2effb]">{c.t}</h3>
-                  <p className="mt-2 text-[15px] leading-relaxed text-[#a99fc7]">{c.b}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-8 flex flex-col gap-4 rounded-2xl border border-[rgba(255,7,170,0.5)] bg-[rgba(255,7,170,0.07)] px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
+            <div className="mt-10 flex flex-col gap-4 rounded-2xl border border-[rgba(255,7,170,0.5)] bg-[rgba(255,7,170,0.07)] px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-3">
                 <span className="rounded-full border border-[rgba(255,7,170,0.55)] bg-[rgba(255,7,170,0.08)] px-2 py-0.5 text-[10.5px] font-bold uppercase tracking-wider text-[#ff8ad2]">
                   Enterprise
@@ -198,7 +169,6 @@ function EnterprisePageInner() {
                 Book a Demo
               </Link>
             </div>
-
           </div>
         </section>
       </main>
