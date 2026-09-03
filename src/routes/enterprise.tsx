@@ -4,11 +4,6 @@ import { RuntimeBehaviorAnalysis } from "@/components/sections/enterprise/Runtim
 import { DeploymentTopology } from "@/components/sections/enterprise/DeploymentTopology";
 
 
-const reviewerImages = [
-  { src: "/marketing-assets/img/appmap/call-tree.webp", caption: "The call tree the agent queried" },
-  { src: "/marketing-assets/img/appmap/queries.jpg", caption: "Every SQL query from the real run" },
-  { src: "/marketing-assets/img/appmap/sequence.jpg", caption: "The full request path, HTTP to database" },
-];
 
 const pilotSteps = [
   {
@@ -186,30 +181,6 @@ function EnterprisePageInner() {
           </div>
         </section>
 
-
-
-        <section className="border-t border-[#2c2353] bg-[#16112b] px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">What the reviewer sees</h2>
-            <p className="mt-3 max-w-[760px] text-[15px] text-[#a99fc7]">
-              The same runtime evidence the agent queried, generated locally and attached to the change.
-            </p>
-            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {reviewerImages.map((img) => (
-                <figure key={img.src} className="rounded-2xl border border-[#2c2353] bg-[#0d0a1a] p-2">
-                  <img
-                    src={img.src}
-                    alt={img.caption}
-                    className="w-full h-auto rounded-lg"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <figcaption className="px-2 pt-2 pb-1 text-[12.5px] text-[#a99fc7]">{img.caption}</figcaption>
-                </figure>
-              ))}
-            </div>
-          </div>
-        </section>
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
