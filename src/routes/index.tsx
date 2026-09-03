@@ -103,8 +103,8 @@ function Index() {
         <PainStats />
         <EnterpriseStrip />
         <Reviews />
-        <ReviewWhatAIDid />
         <ReviewLoop />
+        <ReviewWhatAIDid />
         <BenchmarkStrip />
         <TrustBar />
         <HowItWorksReveal />
