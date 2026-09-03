@@ -3,12 +3,12 @@ export function BenchmarkStrip() {
     <section className="border-b border-[#2c2353] bg-[#0d0a1a] px-6 py-20">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="max-w-[820px] text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-          Runtime context changed the result.
+          Does runtime context improve AI coding performance?
         </h2>
         <p className="mt-4 max-w-[720px] text-[16px] leading-relaxed text-[#a99fc7]">
-          Under a three-tool-call limit, agents using AppMap reached 100% root-cause accuracy.
-          Source-only agents reached 28%. For organizations, that difference is review time and
-          acceptance confidence at scale.
+          In one internal study, yes. Under a three-tool-call limit, agents using AppMap reached
+          100% root-cause accuracy. Source-only agents reached 28%. For organizations, that
+          difference is review time and acceptance confidence at scale.
         </p>
 
         <p className="mt-3 max-w-[720px] text-[16px] font-semibold text-[#f2effb]">
