@@ -239,7 +239,7 @@ function HowItWorksPage() {
                 <div key={c.title} className="flex items-center gap-3 rounded-xl border border-[#2c2353] bg-[#1c1538] p-3">
                   <img
                     src={c.image}
-                    alt=""
+                    alt={c.alt}
                     loading="lazy"
                     decoding="async"
                     style={{ objectPosition: c.objectPosition }}
