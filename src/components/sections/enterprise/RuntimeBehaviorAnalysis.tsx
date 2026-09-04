@@ -1,4 +1,4 @@
-import { useEffect, useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 
 /* ---------------- seeded PRNG ---------------- */
 
@@ -43,30 +43,26 @@ const DOMAINS: { label: string; x: number; y: number; glyph: GlyphKind }[] = [
 ];
 
 const LABELS = [
-  "auth check skipped on new path",
-  "two timeouts, two clocks",
-  "WHERE clause quietly loosened",
-  "write reached from read-only route",
-  "retry doubles the side effect",
-  "admin function reachable from user route",
-  "transaction boundary moved",
-  "exception newly swallowed",
-  "cache hit became a miss",
-  "event processed twice",
-  "cleanup skipped on failure",
-  "eager load became lazy",
-  "payment call on a new path",
-  "blocking call on the async path",
-  "audit log no longer written",
-  "cascade delete appeared",
-  "fallback hits the wrong service",
-  "batch write degraded to singles",
-  "token check reordered after use",
-  "tenant filter missing from query",
-  "email sent from an untested path",
-  "idempotency quietly broken",
-  "sync work moved into the request path",
-  "error payload shape changed",
+  "AI-01 · two timeouts, two clocks",
+  "AI-02 · retry wrapped around retry",
+  "AI-03 · duplicate fallback path",
+  "AI-04 · helper reimplemented beside the original",
+  "AI-05 · hallucinated parameter silently ignored",
+  "AI-06 · catch-all swallows real failures",
+  "AI-07 · auth check removed as cleanup",
+  "AI-08 · cache with no invalidation",
+  "AI-09 · eager load flipped to lazy",
+  "AI-10 · N+1 from a new abstraction",
+  "AI-11 · retry now doubles the side effect",
+  "AI-12 · event handler registered twice",
+  "AI-13 · sync work on the request path",
+  "AI-14 · test-only branch left reachable",
+  "AI-15 · feature flag bypassed on new route",
+  "AI-16 · billing event emitted twice",
+  "AI-17 · cleanup step dropped in refactor",
+  "AI-18 · migration and code disagree",
+  "AI-19 · PII in the new log line",
+  "AI-20 · two agent sessions, each correct alone",
 ];
 
 /* ---------------- static web geometry (seed 1337) ---------------- */
@@ -242,6 +238,7 @@ export function InteractionWeb() {
   const edgeId = (i: number) => `rba-edge-${uid}-${i}`;
   const [defects, setDefects] = useState<Defect[]>(INITIAL_DEFECTS);
   const [visible, setVisible] = useState(1);
+  const tickRef = useRef(0);
 
   useEffect(() => {
     const reduced =
@@ -251,12 +248,14 @@ export function InteractionWeb() {
     const id = window.setInterval(() => {
       setVisible(0);
       window.setTimeout(() => {
-        setDefects(pickDefects(mulberry32(Math.floor(Math.random() * 1e9))));
+        tickRef.current += 1;
+        setDefects(pickDefects(mulberry32(4242 + tickRef.current)));
         setVisible(1);
       }, 60);
     }, 3200);
     return () => window.clearInterval(id);
   }, []);
+
 
   return (
     <svg
@@ -338,7 +337,7 @@ export function InteractionWeb() {
           const my = (a.y + b.y) / 2;
           let angle = (Math.atan2(b.y - a.y, b.x - a.x) * 180) / Math.PI;
           if (angle > 90 || angle < -90) angle += 180;
-          const approxWidth = d.label.length * 7.2;
+          const approxWidth = d.label.length * 8.1;
           const labelX = Math.min(Math.max(mx + 22, 8), 960 - approxWidth - 8);
           return (
             <g key={`${d.a}-${d.b}-${i}`}>
@@ -557,6 +556,7 @@ export function RuntimeBehaviorAnalysis() {
         <div className="mt-8">
           <InteractionWebPanel />
         </div>
+        <p className="mt-3 text-[12.5px] text-[#a99fc7]/70">AppMap reports every behavior defect, whether it has a name or not. We have named 496 of them so far. <a href="https://github.com/evlawler/appmap-rules" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#ff07aa] hover:underline">Read the list &rarr;</a></p>
 
 
         {/* approaches table */}
@@ -664,6 +664,7 @@ export function RuntimeBehaviorAnalysis() {
         <p className="mt-3 text-[12.5px] text-[#a99fc7]/70">
           Illustrative mapping, not a compliance certification. Counts are our reading of each standard's public text.
         </p>
+        <p className="mt-2 text-[12.5px] text-[#a99fc7]/70">These are the questions reviewers already ask. The recording also answers the ones no standard has written down yet.</p>
         <p className="mt-3 text-[14px]">
           <a href="/behavior-controls" className="font-semibold text-[#ff07aa] hover:underline">
             The control list behind this mapping &rarr;
