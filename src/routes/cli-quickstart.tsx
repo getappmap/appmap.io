@@ -49,7 +49,7 @@ const steps: { n: number; title: string; body: React.ReactNode }[] = [
     title: "Set up your project",
     body: (
       <>
-        Run <code className={code}>appmap install</code> in your project root. It configures the AppMap trace agent for Java, Python, Ruby, or Node and writes <code className={code}>appmap.yml</code>.
+        Run <code className={code}>appmap install</code> in your project root. It configures the AppMap trace agent for Java, Kotlin, Python, Ruby, or Node.js (TypeScript and JavaScript), and in alpha .NET, React, Swift, and Go, then writes <code className={code}>appmap.yml</code>.
       </>
     ),
   },
@@ -150,7 +150,7 @@ function CliQuickstartPage() {
               </a>
             </div>
             <p className="mt-6 text-[14.5px] text-[#a99fc7]">
-              <span className="font-semibold text-[#f2effb]">Already using a VS Code or JetBrains extension? The CLI is bundled; you have all of this today.</span>
+              <span className="font-semibold text-[#f2effb]">Already using a VS Code or JetBrains extension? The CLI is bundled, so you have all of this today.</span>
             </p>
           </div>
         </section>

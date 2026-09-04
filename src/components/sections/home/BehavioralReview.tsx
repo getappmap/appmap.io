@@ -28,8 +28,15 @@ export function BehavioralReview() {
           Find problems that only show up when the code runs.
         </h2>
         <p className="mt-3 max-w-[700px] text-[16px] text-[color:var(--color-am-muted)]">
-          Deep runtime evidence exposes failures in behavior, not just structure. See performance problems, security and correctness issues, and unexpected changes while the code is still in development.
+          Deep runtime evidence adds to what the code review shows. See performance problems, security and correctness issues, and unexpected changes while the code is still in development.
         </p>
+        <p className="mt-3 max-w-[700px] text-[16px] text-[color:var(--color-am-muted)]">
+          The traces give coding agents runtime knowledge they cannot obtain any other way, current at every commit.
+        </p>
+        <p className="mt-3 max-w-[700px] text-[16px] text-[color:var(--color-am-muted)]">
+          Teams start free in their own repositories. AppMap Enterprise adds airgapped deployment, internal distribution, organization-registered installs, and telemetry into your internal observability systems for running Gold Trace programs at scale.
+        </p>
+
 
         <div className="mt-8">
           <MotionOrPoster

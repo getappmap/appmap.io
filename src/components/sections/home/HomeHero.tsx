@@ -1,6 +1,7 @@
 import { VSCODE_INSTALL_URL, JETBRAINS_INSTALL_URL } from "@/components/layout/Header";
-import { Em } from "@/components/common/Em";
-import { MotionOrPoster } from "@/components/common/MotionOrPoster";
+import { BranchingWorkflow } from "@/components/sections/home/BranchingWorkflow";
+
+
 
 
 export function HomeHero() {
@@ -32,7 +33,10 @@ export function HomeHero() {
           </span>
         </h1>
         <p className="mt-5 max-w-[680px] text-[19px] leading-[1.6] text-[#a99fc7]">
-          AppMap records and compares application behavior. Developers inspect the diagrams. Coding agents query the same traces.
+          AppMap records and compares application behavior. Recording happens locally, in your
+          environment, and the key traces are committed to the repository with the code. Coding
+          agents query those traces and verify their changes against them. Developers inspect the
+          same behavior as diagrams.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3.5">
@@ -53,21 +57,11 @@ export function HomeHero() {
             Install for JetBrains
           </a>
         </div>
-        
 
         <div className="mt-11">
-          <MotionOrPoster
-            src="/marketing-assets/video/dependency-map.mp4"
-            poster="/marketing-assets/img/appmap/dependency-map.webp"
-            alt="AppMap dependency map of a running application, showing packages, classes, and the calls between them."
-            width={1600}
-            height={900}
-            className="aspect-[16/9] w-full rounded-xl border border-[#2c2353] bg-[#16112b] object-cover object-left shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
-          />
-          <p className="mt-5 text-center text-[13px] font-semibold text-[#f2effb]">
-            Map. Analyze. Share. Repeat.
-          </p>
+          <BranchingWorkflow />
         </div>
+
       </div>
     </section>
   );

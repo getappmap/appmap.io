@@ -2,9 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/layout/Header";
 
 const title =
-  "Pricing: Community free, Professional support, Enterprise control | AppMap";
+  "Pricing: free for developers, paid when an organization deploys it | AppMap";
 const description =
-  "Community is free for developers and teams, including AppMap Gold Traces. Professional is $15 per developer per month for priority support. Enterprise adds organizational control and deployment.";
+  "Community is free for developers and teams up to 25. Team is $15 per developer per month with priority support. Enterprise is required when an organization deploys AppMap centrally.";
 const url = "https://appmap.io/pricing";
 
 export const Route = createFileRoute("/pricing")({
@@ -59,23 +59,33 @@ const community = [
   "Runtime traces and interactive diagrams",
   "Maps for developers in VS Code and JetBrains",
   "Runtime context for coding agents over MCP",
-  "AppMap Gold Traces, which the team can version with the code",
+  "AppMap Gold Traces, versioned with the code",
+  "The behavioral review, locally and in CI on your own repositories",
   "Community support",
 ];
 
-const professional = [
-  "Everything in Community. The product is the same, with no feature gates",
+const team = [
+  "Everything in Community. Same product, no feature gates",
+  "The behavioral review in CI, supported",
   "Priority help with installation and configuration",
   "Gold Trace and review workflow assistance",
   "Faster answers from the AppMap team",
 ];
 
 const enterprise = [
-  "Controlled deployment and internal distribution",
-  "Organizational configuration and integrations",
-  "CI enforcement and telemetry routing",
-  "Air-gapped operation",
-  "Training, SLAs, and enterprise support",
+  "Organization configuration and organization-registered installs",
+  "Internal distribution and offline activation",
+  "Airgapped operation",
+  "Telemetry routing to your observability stack",
+  "CI enforcement across repositories",
+  "Customization for your stack: rules, security labels, integrations, language priorities",
+  "Training, SLAs, and a named AppMap engineer",
+];
+
+const whenYouNeed = [
+  "You deploy AppMap to developers centrally, rather than developers choosing it themselves.",
+  "You need airgapped operation, organization configuration, or telemetry routing.",
+  "You need an SLA, training, or customization for your stack.",
 ];
 
 function PricingPage() {
@@ -89,10 +99,10 @@ function PricingPage() {
               Pricing
             </div>
             <h1 className="mt-4 text-[40px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#f2effb] sm:text-[54px]">
-              Start free locally. Scale AppMap Gold Traces across your team.
+              Free for developers. Paid when your organization deploys it.
             </h1>
             <p className="mt-5 max-w-[760px] text-[17px] leading-[1.65] text-[#a99fc7]">
-              Community is free for developers and teams, including AppMap Gold Traces. Professional is $15 per developer per month and adds priority support. Enterprise adds organizational control, deployment, and support. AppMap starts in the developer environment, where traces are created, explored, and used by coding agents.
+              AppMap is open source. Community is free for individuals and teams up to 25 developers, with everything included. Team adds priority support at $15 per developer per month. Enterprise is how organizations run AppMap: supported, centrally managed, and customized for your environment.
             </p>
           </div>
         </section>
@@ -106,7 +116,7 @@ function PricingPage() {
                 Free
               </div>
               <p className="mt-3 text-[14px] text-[#a99fc7]">
-                For developers who can self-serve.
+                For developers and teams who self-serve. Individuals, and organizations up to 25 developers.
               </p>
               <div className="mt-6 border-t border-[#2c2353]" />
               <Bullets items={community} />
@@ -116,9 +126,9 @@ function PricingPage() {
               </Link>
             </div>
 
-            {/* Professional */}
+            {/* Team */}
             <div className="flex flex-col rounded-2xl border border-[#2c2353] bg-[#1c1538] p-8">
-              <h2 className="text-[22px] font-bold text-[#f2effb]">Professional</h2>
+              <h2 className="text-[22px] font-bold text-[#f2effb]">Team</h2>
               <div className="mt-4 flex h-[40px] items-end text-[40px] font-extrabold leading-none text-[#f2effb]">
                 $15
                 <span className="ml-2 pb-[3px] text-[14px] font-semibold text-[#a99fc7]">
@@ -126,13 +136,13 @@ function PricingPage() {
                 </span>
               </div>
               <p className="mt-3 text-[14px] text-[#a99fc7]">
-                For an individual developer who wants AppMap with priority support.
+                For teams running the behavioral review in CI who want the AppMap team on call. Required above 25 developers.
               </p>
               <div className="mt-6 border-t border-[#2c2353]" />
-              <Bullets items={professional} />
+              <Bullets items={team} />
               <div className="mt-8 flex-1" />
               <a href="mailto:info@appmap.io" className={primaryBtn}>
-                Get Professional
+                Get Team
               </a>
             </div>
 
@@ -143,7 +153,7 @@ function PricingPage() {
                 Contact us
               </div>
               <p className="mt-3 text-[14px] text-[#a99fc7]">
-                For the organization.
+                Required when an organization deploys AppMap centrally.
               </p>
               <div className="mt-6 border-t border-[#2c2353]" />
               <Bullets items={enterprise} />
@@ -158,6 +168,27 @@ function PricingPage() {
                 </a>
               </p>
             </div>
+          </div>
+        </section>
+
+        <section className="px-6 pb-24">
+          <div className="mx-auto max-w-[1040px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
+              When you need Enterprise
+            </h2>
+            <div className="mt-6 rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
+              <ul className="space-y-3">
+                {whenYouNeed.map((item) => (
+                  <li key={item} className="flex gap-3 text-[15px] leading-[1.55] text-[#a99fc7]">
+                    <Check />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <p className="mt-6 max-w-[820px] text-[16px] font-semibold leading-[1.6] text-[#f2effb]">
+              AppMap is open source. AppMap Enterprise is how organizations run it: supported, centrally managed, and customized for your environment, with the AppMap team behind it.
+            </p>
           </div>
         </section>
 

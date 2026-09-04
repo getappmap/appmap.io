@@ -27,10 +27,10 @@ export function PainStats() {
     <section className="border-t border-b border-[#2c2353] bg-[#0d0a1a] px-6 py-20">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="text-[28px] font-extrabold leading-tight tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-          The code is shipping. <span className="text-[#F87171]">Confidence is not.</span>
+          With AI coding agents, code is shipping fast. <span className="text-[#F87171]">Confidence is not.</span>
         </h2>
         <p className="mt-3 text-[17px] text-[#a99fc7]">
-          AI writes more of your codebase every month. Almost no one knows what it actually does.
+          AI writes more of the code every month. Developers and coding agents still have to work out what each change will do when it runs.
         </p>
 
         <ul className="mt-10 grid gap-5 grid-cols-1 sm:grid-cols-3">

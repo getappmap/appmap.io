@@ -15,8 +15,7 @@ const cols: {
     heading: "Product",
     links: [
       { label: "How it works", href: "/how-it-works" },
-      // Temporary target: repoint to /gold-traces when that page ships.
-      { label: "Gold Traces", href: "/architecture" },
+      { label: "Gold Traces", href: "/gold-traces" },
       { label: "Benchmarks", href: "/benchmarks" },
       { label: "Pricing", href: "/pricing" },
     ],

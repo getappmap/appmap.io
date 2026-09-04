@@ -19,6 +19,7 @@ import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PlatformRouteImport } from './routes/platform'
 import { Route as HowItWorksRouteImport } from './routes/how-it-works'
+import { Route as GoldTracesRouteImport } from './routes/gold-traces'
 import { Route as GetAppmapRouteImport } from './routes/get-appmap'
 import { Route as EnterpriseRouteImport } from './routes/enterprise'
 import { Route as CompatibilityRouteImport } from './routes/compatibility'
@@ -26,9 +27,12 @@ import { Route as CompanyRouteImport } from './routes/company'
 import { Route as CliQuickstartRouteImport } from './routes/cli-quickstart'
 import { Route as BookADemoRouteImport } from './routes/book-a-demo'
 import { Route as BenchmarksRouteImport } from './routes/benchmarks'
+import { Route as BehaviorControlsRouteImport } from './routes/behavior-controls'
 import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BenchmarksIndexRouteImport } from './routes/benchmarks.index'
+import { Route as ResearchRuntimeRcaDotpdfRouteImport } from './routes/research.runtime-rca[.]pdf'
+import { Route as ResearchRuntimeRcaRouteImport } from './routes/research.runtime-rca'
 import { Route as NavieSplatRouteImport } from './routes/navie.$'
 import { Route as CommunityTermsAndConditionsDothtmlRouteImport } from './routes/community.terms-and-conditions[.]html'
 import { Route as CommunityTermsAndConditionsRouteImport } from './routes/community.terms-and-conditions'
@@ -89,6 +93,11 @@ const HowItWorksRoute = HowItWorksRouteImport.update({
   path: '/how-it-works',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GoldTracesRoute = GoldTracesRouteImport.update({
+  id: '/gold-traces',
+  path: '/gold-traces',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GetAppmapRoute = GetAppmapRouteImport.update({
   id: '/get-appmap',
   path: '/get-appmap',
@@ -124,6 +133,11 @@ const BenchmarksRoute = BenchmarksRouteImport.update({
   path: '/benchmarks',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BehaviorControlsRoute = BehaviorControlsRouteImport.update({
+  id: '/behavior-controls',
+  path: '/behavior-controls',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ArchitectureRoute = ArchitectureRouteImport.update({
   id: '/architecture',
   path: '/architecture',
@@ -138,6 +152,17 @@ const BenchmarksIndexRoute = BenchmarksIndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => BenchmarksRoute,
+} as any)
+const ResearchRuntimeRcaDotpdfRoute =
+  ResearchRuntimeRcaDotpdfRouteImport.update({
+    id: '/research/runtime-rca.pdf',
+    path: '/research/runtime-rca.pdf',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ResearchRuntimeRcaRoute = ResearchRuntimeRcaRouteImport.update({
+  id: '/research/runtime-rca',
+  path: '/research/runtime-rca',
+  getParentRoute: () => rootRouteImport,
 } as any)
 const NavieSplatRoute = NavieSplatRouteImport.update({
   id: '/navie/$',
@@ -192,6 +217,7 @@ const DocsNavieSplatRoute = DocsNavieSplatRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/architecture': typeof ArchitectureRoute
+  '/behavior-controls': typeof BehaviorControlsRoute
   '/benchmarks': typeof BenchmarksRouteWithChildren
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
@@ -199,6 +225,7 @@ export interface FileRoutesByFullPath {
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/get-appmap': typeof GetAppmapRoute
+  '/gold-traces': typeof GoldTracesRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
@@ -217,18 +244,22 @@ export interface FileRoutesByFullPath {
   '/community/terms-and-conditions': typeof CommunityTermsAndConditionsRoute
   '/community/terms-and-conditions.html': typeof CommunityTermsAndConditionsDothtmlRoute
   '/navie/$': typeof NavieSplatRoute
+  '/research/runtime-rca': typeof ResearchRuntimeRcaRoute
+  '/research/runtime-rca.pdf': typeof ResearchRuntimeRcaDotpdfRoute
   '/benchmarks/': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/architecture': typeof ArchitectureRoute
+  '/behavior-controls': typeof BehaviorControlsRoute
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
   '/company': typeof CompanyRoute
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/get-appmap': typeof GetAppmapRoute
+  '/gold-traces': typeof GoldTracesRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
@@ -247,6 +278,8 @@ export interface FileRoutesByTo {
   '/community/terms-and-conditions': typeof CommunityTermsAndConditionsRoute
   '/community/terms-and-conditions.html': typeof CommunityTermsAndConditionsDothtmlRoute
   '/navie/$': typeof NavieSplatRoute
+  '/research/runtime-rca': typeof ResearchRuntimeRcaRoute
+  '/research/runtime-rca.pdf': typeof ResearchRuntimeRcaDotpdfRoute
   '/benchmarks': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -254,6 +287,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/architecture': typeof ArchitectureRoute
+  '/behavior-controls': typeof BehaviorControlsRoute
   '/benchmarks': typeof BenchmarksRouteWithChildren
   '/book-a-demo': typeof BookADemoRoute
   '/cli-quickstart': typeof CliQuickstartRoute
@@ -261,6 +295,7 @@ export interface FileRoutesById {
   '/compatibility': typeof CompatibilityRoute
   '/enterprise': typeof EnterpriseRoute
   '/get-appmap': typeof GetAppmapRoute
+  '/gold-traces': typeof GoldTracesRoute
   '/how-it-works': typeof HowItWorksRoute
   '/platform': typeof PlatformRoute
   '/pricing': typeof PricingRoute
@@ -279,6 +314,8 @@ export interface FileRoutesById {
   '/community/terms-and-conditions': typeof CommunityTermsAndConditionsRoute
   '/community/terms-and-conditions.html': typeof CommunityTermsAndConditionsDothtmlRoute
   '/navie/$': typeof NavieSplatRoute
+  '/research/runtime-rca': typeof ResearchRuntimeRcaRoute
+  '/research/runtime-rca.pdf': typeof ResearchRuntimeRcaDotpdfRoute
   '/benchmarks/': typeof BenchmarksIndexRoute
   '/docs/navie/$': typeof DocsNavieSplatRoute
 }
@@ -287,6 +324,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/architecture'
+    | '/behavior-controls'
     | '/benchmarks'
     | '/book-a-demo'
     | '/cli-quickstart'
@@ -294,6 +332,7 @@ export interface FileRouteTypes {
     | '/compatibility'
     | '/enterprise'
     | '/get-appmap'
+    | '/gold-traces'
     | '/how-it-works'
     | '/platform'
     | '/pricing'
@@ -312,18 +351,22 @@ export interface FileRouteTypes {
     | '/community/terms-and-conditions'
     | '/community/terms-and-conditions.html'
     | '/navie/$'
+    | '/research/runtime-rca'
+    | '/research/runtime-rca.pdf'
     | '/benchmarks/'
     | '/docs/navie/$'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/architecture'
+    | '/behavior-controls'
     | '/book-a-demo'
     | '/cli-quickstart'
     | '/company'
     | '/compatibility'
     | '/enterprise'
     | '/get-appmap'
+    | '/gold-traces'
     | '/how-it-works'
     | '/platform'
     | '/pricing'
@@ -342,12 +385,15 @@ export interface FileRouteTypes {
     | '/community/terms-and-conditions'
     | '/community/terms-and-conditions.html'
     | '/navie/$'
+    | '/research/runtime-rca'
+    | '/research/runtime-rca.pdf'
     | '/benchmarks'
     | '/docs/navie/$'
   id:
     | '__root__'
     | '/'
     | '/architecture'
+    | '/behavior-controls'
     | '/benchmarks'
     | '/book-a-demo'
     | '/cli-quickstart'
@@ -355,6 +401,7 @@ export interface FileRouteTypes {
     | '/compatibility'
     | '/enterprise'
     | '/get-appmap'
+    | '/gold-traces'
     | '/how-it-works'
     | '/platform'
     | '/pricing'
@@ -373,6 +420,8 @@ export interface FileRouteTypes {
     | '/community/terms-and-conditions'
     | '/community/terms-and-conditions.html'
     | '/navie/$'
+    | '/research/runtime-rca'
+    | '/research/runtime-rca.pdf'
     | '/benchmarks/'
     | '/docs/navie/$'
   fileRoutesById: FileRoutesById
@@ -380,6 +429,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ArchitectureRoute: typeof ArchitectureRoute
+  BehaviorControlsRoute: typeof BehaviorControlsRoute
   BenchmarksRoute: typeof BenchmarksRouteWithChildren
   BookADemoRoute: typeof BookADemoRoute
   CliQuickstartRoute: typeof CliQuickstartRoute
@@ -387,6 +437,7 @@ export interface RootRouteChildren {
   CompatibilityRoute: typeof CompatibilityRoute
   EnterpriseRoute: typeof EnterpriseRoute
   GetAppmapRoute: typeof GetAppmapRoute
+  GoldTracesRoute: typeof GoldTracesRoute
   HowItWorksRoute: typeof HowItWorksRoute
   PlatformRoute: typeof PlatformRoute
   PricingRoute: typeof PricingRoute
@@ -404,6 +455,8 @@ export interface RootRouteChildren {
   CommunityTermsAndConditionsRoute: typeof CommunityTermsAndConditionsRoute
   CommunityTermsAndConditionsDothtmlRoute: typeof CommunityTermsAndConditionsDothtmlRoute
   NavieSplatRoute: typeof NavieSplatRoute
+  ResearchRuntimeRcaRoute: typeof ResearchRuntimeRcaRoute
+  ResearchRuntimeRcaDotpdfRoute: typeof ResearchRuntimeRcaDotpdfRoute
   DocsNavieSplatRoute: typeof DocsNavieSplatRoute
 }
 
@@ -479,6 +532,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HowItWorksRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/gold-traces': {
+      id: '/gold-traces'
+      path: '/gold-traces'
+      fullPath: '/gold-traces'
+      preLoaderRoute: typeof GoldTracesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/get-appmap': {
       id: '/get-appmap'
       path: '/get-appmap'
@@ -528,6 +588,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BenchmarksRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/behavior-controls': {
+      id: '/behavior-controls'
+      path: '/behavior-controls'
+      fullPath: '/behavior-controls'
+      preLoaderRoute: typeof BehaviorControlsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/architecture': {
       id: '/architecture'
       path: '/architecture'
@@ -548,6 +615,20 @@ declare module '@tanstack/react-router' {
       fullPath: '/benchmarks/'
       preLoaderRoute: typeof BenchmarksIndexRouteImport
       parentRoute: typeof BenchmarksRoute
+    }
+    '/research/runtime-rca.pdf': {
+      id: '/research/runtime-rca.pdf'
+      path: '/research/runtime-rca.pdf'
+      fullPath: '/research/runtime-rca.pdf'
+      preLoaderRoute: typeof ResearchRuntimeRcaDotpdfRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/research/runtime-rca': {
+      id: '/research/runtime-rca'
+      path: '/research/runtime-rca'
+      fullPath: '/research/runtime-rca'
+      preLoaderRoute: typeof ResearchRuntimeRcaRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/navie/$': {
       id: '/navie/$'
@@ -632,6 +713,7 @@ const BenchmarksRouteWithChildren = BenchmarksRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ArchitectureRoute: ArchitectureRoute,
+  BehaviorControlsRoute: BehaviorControlsRoute,
   BenchmarksRoute: BenchmarksRouteWithChildren,
   BookADemoRoute: BookADemoRoute,
   CliQuickstartRoute: CliQuickstartRoute,
@@ -639,6 +721,7 @@ const rootRouteChildren: RootRouteChildren = {
   CompatibilityRoute: CompatibilityRoute,
   EnterpriseRoute: EnterpriseRoute,
   GetAppmapRoute: GetAppmapRoute,
+  GoldTracesRoute: GoldTracesRoute,
   HowItWorksRoute: HowItWorksRoute,
   PlatformRoute: PlatformRoute,
   PricingRoute: PricingRoute,
@@ -657,6 +740,8 @@ const rootRouteChildren: RootRouteChildren = {
   CommunityTermsAndConditionsDothtmlRoute:
     CommunityTermsAndConditionsDothtmlRoute,
   NavieSplatRoute: NavieSplatRoute,
+  ResearchRuntimeRcaRoute: ResearchRuntimeRcaRoute,
+  ResearchRuntimeRcaDotpdfRoute: ResearchRuntimeRcaDotpdfRoute,
   DocsNavieSplatRoute: DocsNavieSplatRoute,
 }
 export const routeTree = rootRouteImport

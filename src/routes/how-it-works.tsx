@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { LanguageCoverage } from "@/components/common/LanguageCoverage";
 import { Header } from "@/components/layout/Header";
+import { BehavioralReviewCard } from "@/components/sections/home/BehavioralReviewCard";
 
 const title = "How AppMap works";
 const description =
@@ -37,6 +39,16 @@ const faqs = [
     q: "Where does AppMap store runtime behavior?",
     a: "Traces are captured locally, typically to a tmp/appmap directory in the project. Gold Traces can be used locally during development. When a team versions the Gold Trace set with the code, it is stored in the repository and follows the team's existing Git workflow. Gold Traces are sanitized before they are committed.",
     doc: { href: "https://appmap.io/docs/reference/appmap-client-cli.html", label: "AppMap client CLI reference" },
+  },
+  {
+    q: "What are AppMap Gold Traces?",
+    a: "Gold Traces are the recorded runtime behaviors a team has approved, committed to the repository in a gold_traces/ directory. They give coding agents and developers recorded runtime behavior they could not otherwise obtain, current at every commit, on every branch, and usable as the baseline every change is verified against.",
+    doc: { href: "/gold-traces", label: "AppMap Gold Traces" },
+  },
+  {
+    q: "What issues does the behavioral review find?",
+    a: "Not issues from a list. A linter carries a catalog of known-bad patterns and finds instances of them. A behavioral review compares the change against the recorded behavior the team has approved and reports what departed from it. It finds the defects specific to your application, produced by parts that are each correct alone. A catalog of known-bad patterns finds what everyone's code gets wrong. A baseline of known-good behavior finds what your change got wrong.",
+    doc: { href: "/gold-traces", label: "What the review finds" },
   },
 ];
 
@@ -78,6 +90,7 @@ const capture = [
     title: "Function calls",
     descriptor: "Params and returns",
     image: "/marketing-assets/img/appmap/call-tree.webp",
+    alt: "AppMap call tree showing function calls, parameters, and return values.",
     objectPosition: "left top",
     side: "top" as const,
   },
@@ -85,6 +98,7 @@ const capture = [
     title: "SQL queries",
     descriptor: "Bindings and source",
     image: "/marketing-assets/img/appmap/queries.jpg",
+    alt: "AppMap SQL query view showing executed queries, bindings, and source locations.",
     objectPosition: "left top",
     side: "bottom" as const,
   },
@@ -92,6 +106,7 @@ const capture = [
     title: "HTTP traffic",
     descriptor: "Requests and responses",
     image: "/marketing-assets/img/appmap/sequence.jpg",
+    alt: "AppMap sequence diagram showing HTTP requests and responses.",
     objectPosition: "left top",
     side: "top" as const,
   },
@@ -99,6 +114,7 @@ const capture = [
     title: "Exceptions",
     descriptor: "Class, message, source",
     image: "/marketing-assets/img/appmap/sequence.jpg",
+    alt: "AppMap exception view showing exception class, message, and source location.",
     objectPosition: "right center",
     side: "bottom" as const,
   },
@@ -106,6 +122,7 @@ const capture = [
     title: "Code structure",
     descriptor: "Packages and classes",
     image: "/marketing-assets/img/appmap/code-map.jpg",
+    alt: "AppMap code structure map of packages, classes, and functions.",
     objectPosition: "center",
     side: "top" as const,
   },
@@ -113,31 +130,12 @@ const capture = [
     title: "Full path",
     descriptor: "Request to database",
     image: "/marketing-assets/img/appmap/dependency-map.webp",
+    alt: "AppMap dependency map tracing the full request path from endpoint to database.",
     objectPosition: "center",
     side: "bottom" as const,
   },
 ];
 
-const views = [
-  {
-    title: "Dependency map",
-    body: "The whole running app at a glance: services, code, SQL, and how they connect.",
-    image: "/marketing-assets/img/appmap/dependency-map.webp",
-    alt: "AppMap dependency map of a running application.",
-  },
-  {
-    title: "SQL inspection",
-    body: "Every query in the trace, with its bindings and where it came from.",
-    image: "/marketing-assets/img/appmap/queries.jpg",
-    alt: "AppMap SQL inspection view of executed queries.",
-  },
-  {
-    title: "Code Objects",
-    body: "Packages, classes, and functions, navigable from the same trace.",
-    image: "/marketing-assets/img/appmap/code-map.jpg",
-    alt: "AppMap code map of packages, classes, and functions.",
-  },
-];
 
 const agentChips = ["Claude Code", "Cursor", "GitHub Copilot", "Windsurf", "Any MCP client"];
 
@@ -153,31 +151,15 @@ function HowItWorksPage() {
               Source code tells you what software <span className="italic text-[#ff07aa]">could do</span>. Runtime behavior tells you what it <span className="italic text-[#ff07aa]">actually does</span>.
             </h1>
             <p className="mt-5 max-w-[760px] text-[19px] leading-[1.6] text-[#a99fc7]">
-              AppMap runs in development and CI. It records traces from tests, requests, and running processes. Developers inspect them as maps, and coding agents query them directly.
-            </p>
-          </div>
-        </section>
-
-        <section className="px-6 pt-8 pb-20">
-          <div className="mx-auto max-w-[1120px]">
-            <img
-              src="/marketing-assets/img/workflow/appmap-runtime-review.png"
-              alt="AppMap workflow: the coding agent runs the tests, AppMap records fresh traces, and AppMap compares Gold Traces for the head and base revisions before merge"
-              width={2000}
-              height={960}
-              loading="lazy"
-              decoding="async"
-              className="w-full rounded-2xl border border-[#2c2353] bg-[#0d0a1a]"
-            />
-            <p className="mt-4 max-w-[820px] text-[13px] leading-[1.6] text-[#a99fc7]">
-              AppMap fits into the development loop your coding agent already runs. Tests execute, AppMap records fresh traces, and AppMap compares the behavior before merge.
+              AppMap runs in development and CI. It records traces from tests, requests, and running processes. Coding agents query them directly, and developers inspect them as maps.
             </p>
           </div>
         </section>
 
         <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Every detail of the paths that matter</h2>
+            <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Step 1 · Record</div>
+            <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Every detail of the paths that matter</h2>
             <p className="mt-3 max-w-[720px] text-[15px] text-[#a99fc7]">
               An AppMap trace records the calls, SQL queries, HTTP traffic, exceptions, and code paths from a run. Each recorded run adds another trace to the local set. The goal is not to record everything. It is to capture the behavior the application depends on, in full detail.
             </p>
@@ -213,7 +195,7 @@ function HowItWorksPage() {
                 <div key={c.title} className="flex items-center gap-3 rounded-xl border border-[#2c2353] bg-[#1c1538] p-3">
                   <img
                     src={c.image}
-                    alt=""
+                    alt={c.alt}
                     loading="lazy"
                     decoding="async"
                     style={{ objectPosition: c.objectPosition }}
@@ -232,13 +214,13 @@ function HowItWorksPage() {
 
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">AppMap suggests paths your tests are missing.</h2>
+            <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Step 2 · Cover</div>
+            <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">AppMap suggests recording paths your tests are missing.</h2>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              The Gold Traces skill analyzes the codebase and existing tests to identify the paths that matter. When an important path is already covered, AppMap records it. When coverage is missing, AppMap suggests a new test case and the coding agent can create it. AppMap then records the path and adds the trace to the Gold Trace set.
+              The Gold Traces skill analyzes the codebase and existing tests to identify the paths that matter. When an important path is already covered, AppMap records it. When coverage is missing, AppMap suggests a focused test case and the coding agent can create it. AppMap then records the path and adds the trace to the Gold Trace set.
             </p>
-            <p className="mt-6 text-center text-[14px] text-[#a99fc7]">
-              Important path → Existing test or suggested test → AppMap trace
-            </p>
+            <CoverageChips />
+
             <div className="mx-auto mt-8 max-w-[820px] rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
               <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Example</div>
               <h3 className="mt-2 text-[18px] font-bold text-[#f2effb]">The password reset that has no test</h3>
@@ -259,37 +241,32 @@ function HowItWorksPage() {
           </div>
         </section>
 
-        <section className="px-6 py-20">
+        <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">See the trace as a map.</h2>
-            <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              The same trace can be viewed as a dependency map, sequence diagram, SQL activity, or code objects. Each view shows the same recorded behavior from a different angle.
+            <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Step 3 · Commit</div>
+            <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Ground truth behavior, versioned with the code</h2>
+            <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
+              Gold Traces are the team's shared record of how the application behaves. The set lives in the repository, so developers, coding agents, and CI all read from the same place.
             </p>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {views.map((v) => (
-                <div key={v.title} className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
-                  <img
-                    src={v.image}
-                    alt={v.alt}
-                    width={800}
-                    height={450}
-                    loading="lazy"
-                    decoding="async"
-                    className="mb-4 aspect-[16/9] w-full rounded-lg border border-[#2c2353] bg-[#16112b] object-cover"
-                  />
-                  <h3 className="text-[17px] font-bold text-[#f2effb]">{v.title}</h3>
-                  <p className="mt-2 text-[14.5px] text-[#a99fc7]">{v.body}</p>
-                </div>
-              ))}
+            <p className="mt-3 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
+              When AppMap compares a change against the set, everyone judges the change against the same behavior.
+            </p>
+            <LifecycleStrip />
+            <div className="mt-5">
+              {/* TODO: point to /gold-traces when that page ships */}
+              <Link to="/gold-traces" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
+                Learn about AppMap Gold Traces →
+              </Link>
             </div>
           </div>
         </section>
 
-        <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
+        <section id="compatibility" className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the traces reach your agent</h2>
+            <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Step 4 · Query</div>
+            <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">How the traces reach your agent</h2>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              Coding agents query the traces instead of inferring the execution path from source. AppMap exposes the recorded calls, queries, and requests through MCP.
+              Coding agents read the traces alongside the source, and answer from what the code did. AppMap exposes the recorded calls, queries, and requests through MCP, so the agent can change without changing the runtime context. The model can change too: hosted, self-hosted, frontier, and compact models all read the same traces.
             </p>
             <div className="mt-10 rounded-2xl border border-[#2c2353] bg-[#0d0a1a] p-6 sm:p-8">
               <div className="relative rounded-2xl border-2 border-dashed border-[#3f3566] bg-[#0d0a1a]/50 p-6 pt-8 sm:p-8 sm:pt-9">
@@ -313,6 +290,7 @@ function HowItWorksPage() {
                       <span className="text-[11px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">query</span>
                       <span className="text-[#ff07aa]">▼</span>
                     </div>
+
                     <div className="rounded-2xl border border-[#ff07aa]/50 bg-[#1c1538] px-6 py-5 text-center shadow-[0_0_28px_rgba(255,7,170,0.18)]">
                       <div className="text-[15px] font-extrabold text-[#f2effb]">MCP</div>
                     </div>
@@ -339,44 +317,35 @@ function HowItWorksPage() {
               </div>
 
               <p className="mt-8 max-w-[820px] text-[14px] leading-[1.6] text-[#a99fc7]">
-                Everything here runs in the developer environment. The coding agent queries over MCP locally, and AppMap answers from the working traces and the Gold Traces in the repository checkout. AppMap sends nothing off the machine.
+                Everything here runs in the developer environment. The coding agent queries over MCP locally, and AppMap answers from the working traces and the Gold Traces in the repository checkout. AppMap sends nothing off the machine. The traces carry runtime facts an agent cannot infer from source, current at the commit it checked out. They are also the baseline the change is verified against, evidence the agent did not create.
               </p>
               <p className="mt-2 text-[12.5px] text-[#a99fc7]/70">
                 MCP tools: get_call_tree, find_calls, find_queries, find_requests. Details in Docs.
               </p>
+              <p className="mt-6 text-[15px] font-semibold text-[#ff07aa]">The agent can change. The evidence does not have to.</p>
+              <LanguageCoverage className="mt-4 max-w-[820px]" />
             </div>
           </div>
         </section>
 
-        <section id="compatibility" className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-12">
+        <section className="border-t border-b border-[#2c2353] bg-[#16112b] px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Works with the coding agent you already use</h2>
+            <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">Step 5 · Review</div>
+            <h2 className="mt-3 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
+              Every pull request explains its behavior and impact.
+            </h2>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.6] text-[#a99fc7]">
-              AppMap exposes traces over MCP, so the coding agent can change without changing the runtime context. The model can change too: hosted, self-hosted, frontier, and compact models all read the same traces.
+              A pull request should show more than what code changed. AppMap adds visual runtime evidence and a behavioral write-up: what ran, what changed, and whether the change behaved as intended.
             </p>
-            <p className="mt-4 text-[15px] font-semibold text-[#ff07aa]">
-              The agent can change. The evidence does not have to.
-            </p>
-          </div>
-        </section>
 
-        <section className="px-6 py-20">
-          <div className="mx-auto max-w-[1120px]">
-            <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Ground truth behavior, versioned with the code</h2>
-            <p className="mt-4 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              Gold Traces are the team's shared record of how the application behaves. The set lives in the repository, so developers, coding agents, and CI all read from the same place.
-            </p>
-            <p className="mt-3 max-w-[820px] text-[17px] leading-[1.6] text-[#a99fc7]">
-              When AppMap compares a change against the set, everyone judges the change against the same behavior. The Gold Traces skill uses existing tests to cover the paths that matter and suggests new test cases when coverage is missing.
-            </p>
-            <div className="mt-5">
-              {/* TODO: point to /gold-traces when that page ships */}
-              <Link to="/architecture" className="text-[15px] font-semibold text-[#ff07aa] hover:underline">
-                Learn about AppMap Gold Traces →
-              </Link>
+            <div className="mt-10">
+              <BehavioralReviewCard />
             </div>
+            <p className="mt-3 text-[12.5px] text-[#6d6395]">
+              A review posted to a pull request. Same card as on the homepage, from the same production application.
+            </p>
 
-            <div className="mt-8 max-w-[720px]">
+            <div className="mt-10 max-w-[720px]">
               <div className="rounded-2xl border border-[#2c2353] bg-[#1c1538] p-6">
                 <div className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#ff07aa]">CODE CHANGES · BEHAVIOR CHANGES</div>
                 <h3 className="mt-3 text-[19px] font-bold text-[#f2effb]">Changes as intended</h3>
@@ -396,6 +365,7 @@ function HowItWorksPage() {
           </div>
         </section>
 
+
         <section className="px-6 py-20">
           <div className="mx-auto max-w-[1120px]">
             <h2 className="text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">Frequently asked questions</h2>
@@ -408,14 +378,23 @@ function HowItWorksPage() {
                   </summary>
                   <p className="mt-3 text-[14.5px] leading-[1.6] text-[#a99fc7]">{f.a}</p>
                   {f.doc ? (
-                    <a
-                      href={f.doc.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-2 inline-block text-[13.5px] font-semibold text-[#ff07aa] hover:underline"
-                    >
-                      Read: {f.doc.label} →
-                    </a>
+                    f.doc.href.startsWith("/") ? (
+                      <a
+                        href={f.doc.href}
+                        className="mt-2 inline-block text-[13.5px] font-semibold text-[#ff07aa] hover:underline"
+                      >
+                        Read: {f.doc.label} →
+                      </a>
+                    ) : (
+                      <a
+                        href={f.doc.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-2 inline-block text-[13.5px] font-semibold text-[#ff07aa] hover:underline"
+                      >
+                        Read: {f.doc.label} →
+                      </a>
+                    )
                   ) : null}
                 </details>
               ))}
@@ -441,7 +420,7 @@ function FlowNode({
   c,
   side,
 }: {
-  c: { title: string; descriptor: string; image: string; objectPosition: string };
+  c: { title: string; descriptor: string; image: string; alt: string; objectPosition: string };
   side: "top" | "bottom";
 }) {
   return (
@@ -452,7 +431,7 @@ function FlowNode({
       <div className="w-full max-w-[220px] rounded-lg border border-[#2c2353] bg-[#16112b] p-2 shadow-[0_8px_24px_rgba(0,0,0,0.35)]">
         <img
           src={c.image}
-          alt=""
+          alt={c.alt}
           loading="lazy"
           decoding="async"
           style={{ objectPosition: c.objectPosition }}
@@ -464,6 +443,151 @@ function FlowNode({
       {side === "top" ? (
         <div className="mt-2 h-10 w-px bg-gradient-to-b from-[#8b5cf6] to-transparent" aria-hidden />
       ) : null}
+    </div>
+  );
+}
+function TraceGlyph({ scale = 1 }: { scale?: number }) {
+  const bars: Array<[number, number, number]> = [
+    [3, 3, 22],
+    [7, 8, 17],
+    [11, 13, 12],
+    [7, 18, 15],
+  ];
+  return (
+    <svg width={30 * scale} height={22 * scale} viewBox="0 0 30 22" aria-hidden="true">
+      {bars.map(([x, y, w], i) => (
+        <g key={i}>
+          <rect x={x + 4} y={y - 1.6} width={w - 4} height={3.2} rx={1.4} fill="#3a3068" />
+          <circle cx={x + 1.5} cy={y} r={1.4} fill="#FF07AA" />
+        </g>
+      ))}
+    </svg>
+  );
+}
+
+function TraceChip({ gold = false, scale = 1 }: { gold?: boolean; scale?: number }) {
+  return (
+    <span
+      className="inline-flex items-center rounded-[6px] px-1.5 py-1"
+      style={{
+        border: gold ? "1.4px solid rgba(255,7,170,.55)" : "1px solid #2c2353",
+        background: gold ? "rgba(255,7,170,.08)" : "#0f0b1d",
+      }}
+    >
+      <TraceGlyph scale={scale} />
+    </span>
+  );
+}
+
+function StageArrow() {
+  return (
+    <svg width="22" height="12" viewBox="0 0 22 12" aria-hidden="true" className="flex-shrink-0">
+      <path d="M0 6 H15" stroke="#FF07AA" strokeWidth="1.6" />
+      <path d="M14 2 L20 6 L14 10 z" fill="#FF07AA" />
+    </svg>
+  );
+}
+
+function Stage({ visual, title, sub }: { visual: React.ReactNode; title: string; sub: string }) {
+  return (
+    <div className="flex w-[132px] flex-shrink-0 flex-col items-center text-center">
+      <div className="flex h-[40px] items-center justify-center">{visual}</div>
+      <div className="mt-2 text-[13px] font-bold text-[#f2effb]">{title}</div>
+      <div className="text-[11.5px] text-[#6d6395]">{sub}</div>
+    </div>
+  );
+}
+
+function LifecycleStrip() {
+  return (
+    <div className="mt-8 max-w-[900px]">
+      <div className="overflow-x-auto rounded-2xl border border-[#2c2353] bg-[#0d0a1a] p-5">
+        <div className="flex min-w-[760px] items-start justify-between gap-2">
+          <Stage visual={<TraceChip />} title="Record locally" sub="tests, requests, processes" />
+          <div className="pt-3.5">
+            <StageArrow />
+          </div>
+          <Stage
+            visual={
+              <span className="relative inline-block">
+                <TraceChip gold />
+                <span className="absolute -right-1.5 -top-1.5 flex h-[14px] w-[14px] items-center justify-center rounded-full bg-[#FF07AA] text-[10px] font-bold leading-none text-[#0f0b1d]">
+                  +
+                </span>
+              </span>
+            }
+            title="Commit the key traces"
+            sub="gold_traces/ with the code"
+          />
+          <div className="pt-3.5">
+            <StageArrow />
+          </div>
+          <Stage
+            visual={
+              <span className="inline-flex items-center rounded-[6px] border border-[#2c2353] bg-[#0f0b1d] px-2.5 py-1.5 text-[12px] font-bold text-[#f2effb]">
+                MCP
+              </span>
+            }
+            title="Agents query"
+            sub="call tree, queries, requests"
+          />
+          <div className="pt-3.5">
+            <StageArrow />
+          </div>
+          <Stage
+            visual={
+              <span className="inline-flex items-center gap-1">
+                <TraceChip scale={0.85} />
+                <svg width="16" height="12" viewBox="0 0 16 12" aria-hidden="true">
+                  <path d="M2 4 H14 M4 2 L2 4 L4 6" stroke="#a99fc7" strokeWidth="1.2" fill="none" />
+                  <path d="M14 8 H2 M12 6 L14 8 L12 10" stroke="#a99fc7" strokeWidth="1.2" fill="none" />
+                </svg>
+                <TraceChip gold scale={0.85} />
+              </span>
+            }
+            title="Compare at review"
+            sub="fresh against the baseline"
+          />
+          <div className="pt-3.5">
+            <StageArrow />
+          </div>
+          <Stage
+            visual={
+              <span className="relative inline-block">
+                <span className="absolute left-1.5 top-1.5 opacity-70">
+                  <TraceChip gold />
+                </span>
+                <span className="relative">
+                  <TraceChip gold />
+                </span>
+              </span>
+            }
+            title="The baseline advances"
+            sub="after the merge"
+          />
+        </div>
+      </div>
+      <p className="mt-3 text-[12.5px] text-[#6d6395]">
+        Record locally. Commit the key traces. Query over MCP. Compare at review. The baseline advances after the merge.
+      </p>
+    </div>
+  );
+}
+
+function CoverageChips() {
+  const chip = "rounded-lg border border-[#2c2353] bg-[#1c1538] px-3 py-2 text-[13px] text-[#f2effb]";
+  return (
+    <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
+      <span className={chip}>Important path</span>
+      <StageArrow />
+      <span className={chip}>Existing test or suggested test</span>
+      <StageArrow />
+      <span
+        className="rounded-lg px-3 py-2 text-[13px] text-[#f2effb]"
+        style={{ border: "1.4px solid rgba(255,7,170,.55)", background: "rgba(255,7,170,.08)" }}
+      >
+        AppMap trace
+      </span>
     </div>
   );
 }

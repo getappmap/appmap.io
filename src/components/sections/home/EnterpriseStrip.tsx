@@ -1,31 +1,29 @@
-const points = [
-  "Local, self-hosted, and airgapped deployment",
-  "Model-independent agent access through MCP",
-  "Organization-wide Git and CI controls",
-  "Sanitized, repository-owned Gold Traces",
-];
+import { InteractionWebPanel } from "@/components/sections/enterprise/RuntimeBehaviorAnalysis";
 
 export function EnterpriseStrip() {
   return (
     <section className="border-b border-[color:var(--color-am-line)] bg-[color:var(--color-am-bg2)] px-6 py-20">
       <div className="mx-auto max-w-[1120px]">
         <h2 className="max-w-[820px] text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-          Use AppMap across the development pipeline
+          Accelerate review and acceptance of AI code changes
         </h2>
-        <p className="mt-4 max-w-[720px] text-[16px] leading-relaxed text-[#a99fc7]">
-          Run AppMap on developer machines and in CI. Keep traces in your environment. Connect your
-          approved coding agents and model endpoints.
+        <p className="mt-4 max-w-[760px] text-[16px] leading-relaxed text-[#a99fc7]">
+          AppMap runs locally in development and centrally in the pull request flow and CI, across large codebases and many teams. Reviewers, coding agents, and compliance teams see the same record of what each change did, so organizations can accept changes faster.
         </p>
-        <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {points.map((p) => (
-            <li
-              key={p}
-              className="rounded-xl border border-[#2c2353] bg-[#0d0a1a] p-4 text-[14px] leading-snug text-[#f2effb]"
-            >
-              {p}
-            </li>
-          ))}
-        </ul>
+        <a
+          href="/enterprise#runtime-behavior-analysis"
+          aria-label="See the full runtime behavior analysis, including the standards mapping and timing comparison"
+          className="mt-8 block cursor-pointer"
+        >
+          <InteractionWebPanel />
+        </a>
+
+        <p className="mt-6 text-[15px] text-[#a99fc7]">
+          <a href="/enterprise" className="text-[#ff07aa] hover:underline">
+            See the full runtime behavior analysis, with the standards it maps to &rarr;
+          </a>
+        </p>
+
         <div className="mt-8 flex flex-wrap gap-3.5">
           <a
             href="/enterprise"

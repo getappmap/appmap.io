@@ -8,6 +8,7 @@ const entries = [
   { path: "/how-it-works", priority: "0.9", changefreq: "weekly" as const },
   { path: "/architecture", priority: "0.8", changefreq: "monthly" as const },
   { path: "/benchmarks", priority: "0.9", changefreq: "monthly" as const },
+  { path: "/gold-traces", priority: "0.9", changefreq: "monthly" as const },
   
   { path: "/enterprise", priority: "0.8", changefreq: "monthly" as const },
   { path: "/pricing", priority: "0.8", changefreq: "monthly" as const },
@@ -16,6 +17,7 @@ const entries = [
   { path: "/security-faq", priority: "0.6", changefreq: "monthly" as const },
   { path: "/book-a-demo", priority: "0.6", changefreq: "monthly" as const },
   { path: "/cli-quickstart", priority: "0.6", changefreq: "monthly" as const },
+  { path: "/research/runtime-rca", priority: "0.6", changefreq: "yearly" as const },
   { path: "/release-notes", priority: "0.6", changefreq: "weekly" as const },
   { path: "/support", priority: "0.6", changefreq: "monthly" as const },
   { path: "/community/privacy-policy", priority: "0.3", changefreq: "yearly" as const },
