@@ -238,7 +238,7 @@ export function InteractionWeb() {
   const edgeId = (i: number) => `rba-edge-${uid}-${i}`;
   const [defects, setDefects] = useState<Defect[]>(INITIAL_DEFECTS);
   const [visible, setVisible] = useState(1);
-  const [tick, setTick] = useState(0);
+  const tickRef = useRef(0);
 
   useEffect(() => {
     const reduced =
@@ -248,16 +248,14 @@ export function InteractionWeb() {
     const id = window.setInterval(() => {
       setVisible(0);
       window.setTimeout(() => {
-        setTick((t) => {
-          const next = t + 1;
-          setDefects(pickDefects(mulberry32(4242 + next)));
-          return next;
-        });
+        tickRef.current += 1;
+        setDefects(pickDefects(mulberry32(4242 + tickRef.current)));
         setVisible(1);
       }, 60);
     }, 3200);
     return () => window.clearInterval(id);
   }, []);
+
 
   return (
     <svg
