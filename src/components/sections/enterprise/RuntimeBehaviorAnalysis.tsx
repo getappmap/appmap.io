@@ -337,7 +337,7 @@ export function InteractionWeb() {
           const my = (a.y + b.y) / 2;
           let angle = (Math.atan2(b.y - a.y, b.x - a.x) * 180) / Math.PI;
           if (angle > 90 || angle < -90) angle += 180;
-          const approxWidth = d.label.length * 7.2;
+          const approxWidth = d.label.length * 8.1;
           const labelX = Math.min(Math.max(mx + 22, 8), 960 - approxWidth - 8);
           return (
             <g key={`${d.a}-${d.b}-${i}`}>
