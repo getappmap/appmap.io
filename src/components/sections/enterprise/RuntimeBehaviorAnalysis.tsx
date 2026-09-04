@@ -541,7 +541,7 @@ export function RuntimeBehaviorAnalysis() {
           Runtime behavior analysis
         </div>
         <h1 className="mt-4 text-[28px] font-extrabold tracking-[-0.8px] text-[#f2effb] sm:text-[34px]">
-          Find the bugs that live in the interactions between components.
+          Find the bugs between the components.
         </h1>
 
         <section className="px-0 pt-10 pb-2">
