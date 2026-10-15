@@ -23,7 +23,7 @@ jobs:
       (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude')) ||
       (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@claude')) ||
       (github.event_name == 'issues' && contains(github.event.issue.body, '@claude'))
-    uses: siteforward-ai/workflows/.github/workflows/claude-pr-assistant.yml@main
+    uses: .github/workflows/claude-pr-assistant.yml
     with:
       install_playwright: true
     secrets: inherit
