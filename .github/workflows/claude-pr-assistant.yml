@@ -1,0 +1,80 @@
+name: Claude PR Assistant
+
+on:
+  workflow_call:
+    inputs:
+      install_playwright:
+        description: "Install Playwright browsers for browser automation"
+        type: boolean
+        default: false
+      timeout_minutes:
+        description: "Timeout in minutes for the job"
+        type: number
+        default: 60
+    secrets:
+      ANTHROPIC_API_KEY:
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+
+jobs:
+  claude:
+    runs-on: ubuntu-latest
+    timeout-minutes: ${{ inputs.timeout_minutes }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: package.json
+          cache: "npm"
+
+      - name: Install Node.js dependencies
+        run: |
+          echo "📦 Installing Node.js dependencies..."
+          npm ci --prefer-offline --no-audit --no-fund
+
+      - name: Cache Playwright browsers
+        if: inputs.install_playwright
+        id: cache-playwright
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+
+      - name: Install Playwright browsers
+        if: inputs.install_playwright && steps.cache-playwright.outputs.cache-hit != 'true'
+        run: |
+          echo "🎭 Installing Playwright browsers (cache miss)..."
+          npx playwright install --with-deps chromium
+
+      - name: Run Claude PR Action
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          settings: |
+            {
+              "defaultMode": "bypassPermissions",
+              "permissions": {
+                "allow": ["Bash", "Read", "Write", "Edit", "Glob", "Grep", "WebFetch", "WebSearch"],
+                "deny": []
+              }
+            }
+      - name: Upload Claude execution logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: claude-execution-output
+          path: /home/runner/work/_temp/claude-execution-output.json
+          if-no-files-found: ignore
