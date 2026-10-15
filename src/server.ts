@@ -20,12 +20,12 @@ async function getServerEntry(): Promise<ServerEntry> {
   return serverEntryPromise;
 }
 
-// The legacy Jekyll site (docs, blog, and not-yet-ported pages) stays deployed
-// on Render. Any GET/HEAD request this app 404s on is retried against that
-// origin, so all pre-existing appmap.io URLs keep working unchanged.
-// Preview deploys can override the origin (e.g. to a Render branch preview)
+// The legacy Jekyll site (docs, blog, and not-yet-ported pages) is deployed on
+// Cloudflare Pages. Any GET/HEAD request this app 404s on is retried against
+// that origin, so all pre-existing appmap.io URLs keep working unchanged.
+// Preview deploys can override the origin (e.g. to a Pages branch preview)
 // with a LEGACY_ORIGIN var; production uses the default.
-const DEFAULT_LEGACY_ORIGIN = "https://appland-com.onrender.com";
+const DEFAULT_LEGACY_ORIGIN = "https://applandinc-github-io.pages.dev";
 
 function legacyOrigin(env: unknown): string {
   // The nitro cloudflare entry does not pass `env` through to this handler
@@ -142,8 +142,8 @@ function shouldTryLegacyFallback(request: Request, response: Response): boolean 
 async function fetchFromLegacySite(request: Request, origin: string): Promise<Response | undefined> {
   const url = new URL(request.url);
   try {
-    // redirect: "manual" passes the legacy site's redirects (e.g. Render's
-    // .html-stripping 301s) through to the browser on our own domain.
+    // redirect: "manual" passes the legacy site's redirects (e.g. Pages'
+    // .html-stripping 308s) through to the browser on our own domain.
     const response = await fetch(new Request(origin + url.pathname + url.search, request), {
       redirect: "manual",
     });
