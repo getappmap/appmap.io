@@ -11,9 +11,11 @@
   "vars": {
     "SUPABASE_URL": "https://ulrbnkrvxzbtqancxmtn.supabase.co",
     // Legacy docs/blog proxy origin: no LEGACY_ORIGIN var here means the
-    // worker uses its default, the Render build of applandinc.github.io
-    // master (see DEFAULT_LEGACY_ORIGIN in src/server.ts). PR #1583 merged
-    // 2026-09-04, so master is the post-cutover old site.
+    // worker uses its default, the Cloudflare Pages build of
+    // applandinc.github.io master (see DEFAULT_LEGACY_ORIGIN in
+    // src/server.ts). PR #1583 merged 2026-09-04, so master is the
+    // post-cutover old site. Render was retired as the legacy origin
+    // 2026-10-15.
   },
   // Preview deploys use wrangler.preview.jsonc (a standalone config), NOT a
   // wrangler environment: nitro copies this file into the build output as a
