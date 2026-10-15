@@ -8,6 +8,17 @@
   "compatibility_flags": ["nodejs_compat"],
   "main": "src/server.ts",
   "routes": [{ "pattern": "appmap.io/*", "zone_name": "appmap.io" }],
+  // Paired with `wrangler preview` in deploy-preview.yml. Worker Previews
+  // require this block to exist; it may be empty when the Preview needs no
+  // settings of its own. If a Preview should ever point at a branch build of
+  // the legacy site rather than its production deploy, a
+  // "vars": { "LEGACY_ORIGIN": "..." } here is the hook for it (see
+  // legacyOrigin() in src/server.ts).
+  //
+  // Unlike environments, "previews" is accepted in the redirected config
+  // nitro writes to .output/server/wrangler.json — verified by a passing
+  // deploy-preview run, not assumed.
+  "previews": {},
   "vars": {
     "SUPABASE_URL": "https://ulrbnkrvxzbtqancxmtn.supabase.co",
     // Legacy docs/blog proxy origin: no LEGACY_ORIGIN var here means the
